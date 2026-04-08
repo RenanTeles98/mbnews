@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB News | Edição #001 — Abril 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --navy:    #003956;
+      --blue:    #005580;
+      --cyan:    #0099dd;
+      --accent:  #FF6B35;
+      --gold:    #F5A623;
+      --white:   #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100:#EEF2F7;
+      --gray-400:#94A3B8;
+      --gray-600:#475569;
+      --gray-800:#1E293B;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      overflow-x: hidden;
+    }
+
+    /* ─── LOADING SCREEN ─────────────────────────────── */
+    #loader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 20px;
+      transition: opacity .5s, visibility .5s;
+    }
+    #loader.hide { opacity: 0; visibility: hidden; }
+    .loader-logo {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem; font-weight: 700; color: var(--white);
+      letter-spacing: -1px;
+    }
+    .loader-logo span { color: var(--cyan); }
+    .loader-bar {
+      width: 200px; height: 3px; background: rgba(255,255,255,.15);
+      border-radius: 99px; overflow: hidden;
+    }
+    .loader-bar::after {
+      content: '';
+      display: block; height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--blue));
+      border-radius: 99px;
+      animation: loading 1.4s ease forwards;
+    }
+    @keyframes loading { from { width: 0 } to { width: 100% } }
+
+    /* ─── NAV ─────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(11,26,46,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,153,221,.15);
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.35rem; font-weight: 700;
+      color: var(--white); text-decoration: none; letter-spacing: -.5px;
+    }
+    .nav-logo span { color: var(--cyan); }
+    .nav-links {
+      display: flex; gap: 6px; list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.7); text-decoration: none;
+      font-size: .82rem; font-weight: 500; padding: 6px 14px;
+      border-radius: 8px; transition: all .2s;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(0,153,221,.12); }
+    .nav-edition {
+      font-size: .75rem; color: var(--cyan); font-weight: 600;
+      border: 1px solid rgba(0,153,221,.3); padding: 4px 12px;
+      border-radius: 99px;
+    }
+
+    /* ─── HERO ────────────────────────────────────────── */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(135deg, var(--navy) 0%, #003060 60%, #004470 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 60px 24px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 110%, rgba(0,153,221,.18) 0%, transparent 70%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(0,153,221,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0,153,221,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,153,221,.12); border: 1px solid rgba(0,153,221,.3);
+      color: var(--cyan); font-size: .75rem; font-weight: 600;
+      padding: 6px 16px; border-radius: 99px; margin-bottom: 24px;
+      position: relative; letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+    .hero-badge::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--cyan);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: .5; transform: scale(1.4); }
+    }
+    .hero-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      font-weight: 800; line-height: .95;
+      color: var(--white); letter-spacing: -3px;
+      position: relative; margin-bottom: 8px;
+    }
+    .hero-title .highlight {
+      background: linear-gradient(90deg, var(--cyan), #33bbff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.4rem); color: rgba(255,255,255,.55);
+      font-weight: 400; margin: 18px 0 40px;
+      position: relative; letter-spacing: .5px;
+    }
+    .hero-sub strong { color: rgba(255,255,255,.85); font-weight: 600; }
+    .hero-ctas {
+      display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+      position: relative;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--cyan), #007ab8);
+      color: var(--navy); font-weight: 700; font-size: .9rem;
+      padding: 14px 28px; border-radius: 12px; text-decoration: none;
+      transition: all .2s; border: none; cursor: pointer;
+      box-shadow: 0 8px 32px rgba(0,153,221,.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,153,221,.5); }
+    .btn-ghost {
+      background: transparent; color: rgba(255,255,255,.8);
+      border: 1px solid rgba(255,255,255,.25); font-weight: 500; font-size: .9rem;
+      padding: 14px 28px; border-radius: 12px; text-decoration: none;
+      transition: all .2s; cursor: pointer;
+    }
+    .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,153,221,.06); }
+
+    .hero-cards {
+      display: flex; gap: 16px; margin-top: 60px; flex-wrap: wrap; justify-content: center;
+      position: relative;
+    }
+    .hero-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 14px; padding: 18px 24px;
+      display: flex; align-items: center; gap: 14px;
+      backdrop-filter: blur(8px); min-width: 180px;
+    }
+    .hero-card-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .hero-card-text strong {
+      display: block; color: var(--white); font-size: 1.2rem;
+      font-weight: 700; font-family: 'Inter', sans-serif;
+    }
+    .hero-card-text span {
+      color: rgba(255,255,255,.5); font-size: .75rem;
+    }
+
+    /* ─── SECTION COMMON ──────────────────────────────── */
+    section { padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--cyan); margin-bottom: 12px;
+    }
+    .section-eyebrow::before {
+      content: ''; width: 20px; height: 2px;
+      background: var(--cyan); border-radius: 99px;
+    }
+    .section-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
+      color: var(--gray-800); line-height: 1.15; letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .section-desc {
+      color: var(--gray-600); font-size: 1rem; line-height: 1.7;
+      max-width: 600px;
+    }
+
+    /* ─── PROMOTIONS ──────────────────────────────────── */
+    #promocoes { background: var(--white); }
+    .promo-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px; margin-top: 48px;
+    }
+    .promo-card {
+      border-radius: 24px; overflow: hidden;
+      border: 1px solid var(--gray-100);
+      box-shadow: 0 4px 24px rgba(0,0,0,.06);
+      transition: all .3s; cursor: pointer;
+    }
+    .promo-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,.12); }
+    .promo-card-banner {
+      height: 220px; position: relative; overflow: hidden;
+      display: flex; align-items: flex-end;
+    }
+    .promo-card-banner img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .4s;
+    }
+    .promo-card:hover .promo-card-banner img { transform: scale(1.06); }
+    .promo-card-banner-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+    }
+    .promo-card-banner-placeholder .avatar-circle {
+      width: 90px; height: 90px; border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.2rem; font-weight: 800; color: white;
+      font-family: 'Inter', sans-serif;
+      background: rgba(255,255,255,.15);
+      backdrop-filter: blur(4px);
+    }
+    .promo-card-banner-placeholder .name-label {
+      color: white; font-weight: 700; font-size: 1.1rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .promo-badge {
+      position: absolute; top: 16px; right: 16px;
+      background: rgba(255,255,255,.15); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.3);
+      color: white; font-size: .7rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 99px; letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+    .promo-card-body { padding: 28px; }
+    .promo-role-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .72rem; font-weight: 700; letter-spacing: .5px;
+      text-transform: uppercase; padding: 5px 12px;
+      border-radius: 8px; margin-bottom: 16px;
+    }
+    .promo-card-body h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem; font-weight: 700; color: var(--gray-800);
+      margin-bottom: 8px; letter-spacing: -.5px;
+    }
+    .promo-card-body .role-arrow {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
+      font-size: .85rem;
+    }
+    .role-from {
+      background: var(--gray-100); color: var(--gray-600);
+      padding: 4px 12px; border-radius: 8px; font-weight: 500;
+    }
+    .role-to {
+      padding: 4px 12px; border-radius: 8px; font-weight: 700; color: white;
+    }
+    .promo-card-body p {
+      color: var(--gray-600); font-size: .9rem; line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .promo-stats {
+      display: flex; gap: 20px; padding-top: 20px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .promo-stat strong {
+      display: block; font-size: 1.3rem; font-weight: 800;
+      font-family: 'Inter', sans-serif; color: var(--gray-800);
+    }
+    .promo-stat span { font-size: .75rem; color: var(--gray-400); }
+
+    /* ─── EASTER ──────────────────────────────────────── */
+    #pascoa {
+      background: linear-gradient(135deg, #fef3e2 0%, #fff8f0 100%);
+      position: relative; overflow: hidden;
+    }
+    #pascoa::before {
+      content: '🐣';
+      position: absolute; font-size: 20rem; opacity: .04;
+      right: -60px; top: -40px; line-height: 1;
+    }
+    .pascoa-layout {
+      display: grid; grid-template-columns: 1fr;
+      gap: 48px; align-items: center; margin-top: 48px;
+    }
+    .pascoa-img-grid {
+      display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;
+      gap: 12px;
+    }
+    .pascoa-img-item {
+      border-radius: 16px; overflow: hidden;
+      background: linear-gradient(135deg, #f5a623, #ff9500);
+      aspect-ratio: 1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; color: white; position: relative;
+    }
+    .pascoa-img-item img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .pascoa-img-item.tall {
+      grid-row: span 2; aspect-ratio: auto;
+    }
+    .pascoa-img-item.tall img { height: 100%; }
+    .pascoa-content h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700;
+      color: var(--gray-800); letter-spacing: -1px; margin-bottom: 16px;
+    }
+    .pascoa-content p {
+      color: var(--gray-600); font-size: 1rem; line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .pascoa-highlight {
+      background: white; border-radius: 16px;
+      padding: 20px 24px; display: flex; align-items: center; gap: 16px;
+      box-shadow: 0 4px 20px rgba(245,166,35,.15);
+      border: 1px solid rgba(245,166,35,.2);
+    }
+    .pascoa-highlight-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--gold), #ff9500);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; flex-shrink: 0;
+    }
+    .pascoa-highlight-text strong {
+      display: block; font-size: 1.8rem; font-weight: 800;
+      font-family: 'Inter', sans-serif; color: var(--gray-800);
+    }
+    .pascoa-highlight-text span {
+      color: var(--gray-600); font-size: .88rem;
+    }
+    .pascoa-gallery-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px;
+      color: var(--gray-800);
+    }
+    .pascoa-media-row {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      align-items: start;
+      margin-top: 28px;
+    }
+    .pascoa-video-wrap .pascoa-gallery-title,
+    .pascoa-gallery-wrap .pascoa-gallery-title { margin-top: 0; }
+    .pascoa-video-container {
+      width: 220px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,.15);
+      background: #000;
+    }
+    .pascoa-video-container video {
+      width: 100%; height: auto;
+      display: block;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .gallery-grid .gallery-thumb {
+      width: 100%; height: 100px;
+    }
+    .gallery-strip {
+      display: flex; gap: 12px; overflow-x: auto;
+      padding-bottom: 12px; scrollbar-width: thin;
+      scrollbar-color: var(--gold) transparent;
+    }
+    .gallery-strip::-webkit-scrollbar { height: 4px; }
+    .gallery-strip::-webkit-scrollbar-track { background: transparent; }
+    .gallery-strip::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 99px; }
+    .gallery-thumb {
+      width: 150px; height: 150px; flex-shrink: 0;
+      border-radius: 12px; overflow: hidden;
+      background: linear-gradient(135deg, #f5a623, #ff6b35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; cursor: pointer; transition: transform .2s;
+    }
+    .gallery-thumb:hover { transform: scale(1.04); }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ─── EVENT ───────────────────────────────────────── */
+    #evento {
+      background: linear-gradient(135deg, var(--navy) 0%, #002d47 100%);
+      position: relative; overflow: hidden;
+    }
+    #evento::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 70% at 80% 50%, rgba(0,153,221,.1) 0%, transparent 60%);
+    }
+    #evento .section-title { color: var(--white); }
+    #evento .section-desc  { color: rgba(255,255,255,.55); }
+    #evento .section-eyebrow { color: var(--cyan); }
+    .evento-layout {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center; margin-top: 48px;
+      position: relative;
+    }
+    .evento-card {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 24px; overflow: hidden;
+    }
+    .evento-card-header {
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+      padding: 32px;
+      border-bottom: 1px solid rgba(196,154,0,.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .evento-card-header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at top right, rgba(196,154,0,.12), transparent 60%);
+      pointer-events: none;
+    }
+    .evento-logo-area {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
+    }
+    .evento-logo-box {
+      width: 64px; height: 40px; border-radius: 10px;
+      background: #000;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(196,154,0,.4);
+      overflow: hidden;
+      padding: 6px 8px;
+    }
+    .evento-logo-box img {
+      width: 100%; height: 100%; object-fit: contain;
+    }
+    .evento-logo-text strong {
+      display: block; color: var(--white); font-size: 1rem; font-weight: 700;
+    }
+    .evento-logo-text span {
+      color: #C49A00; font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+    }
+    .evento-card-header h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.6rem; font-weight: 700; color: var(--white); letter-spacing: -.5px;
+      margin-bottom: 12px;
+    }
+    .evento-card-header p {
+      color: rgba(255,255,255,.6); font-size: .9rem; line-height: 1.6;
+    }
+    .evento-card-body { padding: 24px 32px; }
+    .evento-info-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .evento-info-list li {
+      display: flex; align-items: center; gap: 14px;
+      color: rgba(255,255,255,.75); font-size: .9rem;
+    }
+    .evento-info-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: rgba(0,153,221,.12); border: 1px solid rgba(0,153,221,.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; flex-shrink: 0;
+    }
+    .evento-right { display: flex; flex-direction: column; gap: 20px; }
+    .evento-award-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px; padding: 24px; display: flex; gap: 16px;
+      align-items: flex-start; transition: all .2s;
+    }
+    .evento-award-card:hover {
+      background: rgba(0,153,221,.08); border-color: rgba(0,153,221,.25);
+    }
+    .evento-award-icon {
+      width: 48px; height: 48px; border-radius: 14px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+    }
+    .evento-award-card h4 {
+      color: var(--white); font-weight: 700; font-size: .95rem;
+      margin-bottom: 6px;
+    }
+    .evento-award-card p {
+      color: rgba(255,255,255,.5); font-size: .82rem; line-height: 1.6;
+    }
+    .countdown-block {
+      background: linear-gradient(135deg, var(--cyan), #007ab8);
+      border-radius: 18px; padding: 28px; text-align: center;
+    }
+    .countdown-block p { color: rgba(11,26,46,.7); font-size: .85rem; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .countdown-block h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem; font-weight: 800; color: var(--navy);
+    }
+    .countdown-block span { font-size: .95rem; color: rgba(11,26,46,.6); font-weight: 500; }
+
+    /* ─── NUMBERS / STATS ─────────────────────────────── */
+    #numeros { background: var(--white); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px; margin-top: 48px;
+    }
+    .stat-card {
+      border-radius: 20px; padding: 32px 24px; text-align: center;
+      border: 1px solid var(--gray-100);
+      transition: all .3s;
+    }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,.08); }
+    .stat-emoji { font-size: 2rem; margin-bottom: 12px; display: block; }
+    .stat-number {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.8rem; font-weight: 800; display: block;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .stat-label { color: var(--gray-600); font-size: .85rem; font-weight: 500; }
+
+    /* ─── VIDEO SECTION ───────────────────────────────── */
+    #videos { background: var(--gray-50); }
+    .video-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px; margin-top: 40px;
+    }
+    .video-card {
+      border-radius: 20px; overflow: hidden;
+      background: var(--white); border: 1px solid var(--gray-100);
+      box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: all .3s;
+    }
+    .video-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,.1); }
+    .video-thumb {
+      position: relative; aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; overflow: hidden;
+    }
+    .video-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .video-play {
+      position: absolute; width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(255,255,255,.95); display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; box-shadow: 0 8px 24px rgba(0,0,0,.3);
+      transition: all .2s;
+    }
+    .video-thumb:hover .video-play { transform: scale(1.1); background: white; }
+    .video-thumb-placeholder {
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 8px; width: 100%; height: 100%;
+      color: rgba(255,255,255,.5); font-size: .8rem; text-align: center; padding: 20px;
+    }
+    .video-card-body { padding: 20px; }
+    .video-card-body h4 {
+      font-weight: 700; color: var(--gray-800); margin-bottom: 6px;
+      font-size: .95rem;
+    }
+    .video-card-body p { font-size: .82rem; color: var(--gray-400); }
+    .video-tag {
+      display: inline-block; font-size: .68rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 6px; margin-bottom: 8px;
+      text-transform: uppercase; letter-spacing: .5px;
+    }
+
+    /* ─── GALLERY LIGHTBOX ────────────────────────────── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,.9); display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; transition: all .3s;
+    }
+    .lightbox.open { opacity: 1; visibility: visible; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 12px; }
+    .lightbox-close {
+      position: absolute; top: 20px; right: 20px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      color: white; font-size: 1.2rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,.2); }
+
+    /* ─── EDITORIAL ───────────────────────────────────── */
+    #editorial {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+    }
+    .editorial-card {
+      background: var(--white); border-radius: 24px;
+      padding: 40px 48px; max-width: 800px; margin: 40px auto 0;
+      border: 1px solid var(--gray-100);
+      box-shadow: 0 8px 40px rgba(0,0,0,.06);
+      position: relative;
+    }
+    .editorial-card::before {
+      content: '"';
+      position: absolute; top: 20px; left: 32px;
+      font-size: 8rem; color: var(--cyan); opacity: .15;
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .editorial-card p {
+      font-size: 1.05rem; line-height: 1.85; color: var(--gray-600);
+      margin-bottom: 20px; position: relative;
+    }
+    .editorial-card p:last-of-type { margin-bottom: 0; }
+    .editorial-signature {
+      display: flex; align-items: center; gap: 16px;
+      margin-top: 32px; padding-top: 24px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .editorial-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 800; font-size: 1.1rem;
+      font-family: 'Inter', sans-serif; flex-shrink: 0;
+    }
+    .editorial-signature-text strong { display: block; font-weight: 700; color: var(--gray-800); }
+    .editorial-signature-text span  { font-size: .82rem; color: var(--gray-400); }
+
+    /* ─── FOOTER ──────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem; font-weight: 700; color: white; letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    .footer-logo span { color: var(--cyan); }
+    footer p { color: rgba(255,255,255,.4); font-size: .82rem; margin-bottom: 24px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+    .footer-links a {
+      color: rgba(255,255,255,.5); font-size: .82rem; text-decoration: none;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--cyan); }
+    .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,.08); margin-bottom: 24px; }
+    .footer-copy { color: rgba(255,255,255,.25); font-size: .75rem; }
+
+    /* ─── FLOATING NAV ────────────────────────────────── */
+    .fab-nav {
+      position: fixed; right: 24px; bottom: 24px; z-index: 200;
+      display: flex; flex-direction: column; gap: 8px; align-items: center;
+    }
+    .fab-btn {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--navy); border: 1px solid rgba(255,255,255,.12);
+      color: white; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all .2s; text-decoration: none; font-size: 1.1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+    }
+    .fab-btn:hover { background: var(--blue); border-color: var(--cyan); transform: scale(1.08); }
+    .fab-btn.main {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, var(--cyan), #007ab8);
+      color: var(--navy); border: none; font-size: 1.3rem;
+    }
+
+    /* ─── LUCIDE ICONS ───────────────────────────────────*/
+    .lucide { display:inline-block; vertical-align:middle; stroke-width:1.8; }
+    .hero-card-icon .lucide { width:22px; height:22px; }
+    .stat-emoji .lucide { width:30px; height:30px; }
+    .evento-info-icon .lucide { width:18px; height:18px; }
+    .evento-award-icon .lucide { width:22px; height:22px; }
+    .pascoa-highlight-icon .lucide { width:28px; height:28px; }
+    .fab-btn .lucide { width:18px; height:18px; }
+    #lightbox-download .lucide { width:20px; height:20px; }
+    .video-thumb-placeholder .lucide { width:40px; height:40px; opacity:.7; }
+
+    /* ─── ANIMATIONS ──────────────────────────────────── */
+    .fade-up {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity .6s, transform .6s;
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 0 16px; }
+      .nav-links { display: none; }
+      .pascoa-layout { grid-template-columns: 1fr; }
+      .pascoa-media-row { grid-template-columns: 1fr; }
+      .pascoa-video-container { width: 100%; max-width: 320px; }
+      .evento-layout  { grid-template-columns: 1fr; }
+      .editorial-card { padding: 28px 24px; }
+      .hero-cards { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">MB<span>News</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <a id="lightbox-download" href="" download
+    onclick="event.stopPropagation()"
+    style="position:absolute;top:20px;right:72px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;font-size:1.1rem;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .2s;"
+    title="Baixar imagem"><i data-lucide="download"></i></a>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">MB<span>News</span></a>
+  <ul class="nav-links">
+    <li><a href="#editorial">Editorial</a></li>
+    <li><a href="#promocoes">Promoções</a></li>
+    <li><a href="#pascoa">Páscoa</a></li>
+    <li><a href="#evento">Evento</a></li>
+  </ul>
+  <span class="nav-edition">Edição #001 · Abril 2026</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-badge">Edição especial de Abril 2026</div>
+  <h1 class="hero-title">
+    MB<span class="highlight">News</span>
+  </h1>
+  <p class="hero-sub">
+    Sua revista interna de <strong>novidades, conquistas</strong> e <strong>celebrações</strong> da MB Finance.
+  </p>
+  <div class="hero-ctas">
+    <a href="#editorial" class="btn-primary">Ler edição completa</a>
+    <a href="#promocoes" class="btn-ghost">Ver promoções 🎉</a>
+  </div>
+  <div class="hero-cards">
+    <div class="hero-card">
+      <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
+      <div class="hero-card-text">
+        <strong>2</strong>
+        <span>Promoções internas</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
+      <div class="hero-card-text">
+        <strong>+150</strong>
+        <span>Ovos de Páscoa</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="trophy" style="color:#FF6B35"></i></div>
+      <div class="hero-card-text">
+        <strong>09/04</strong>
+        <span>Conexão Awards 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL -->
+<section id="editorial">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Editorial</span>
+      <h2 class="section-title">Palavra da semana</h2>
+    </div>
+    <div class="editorial-card fade-up">
+      <p>
+        Que semana incrível! A MB não para — e esse é o nosso maior orgulho. Entre entregas, metas e desafios do dia a dia, a gente também se conecta, celebra e cresce junto. Esta edição é pra isso: parar um segundo, olhar ao redor e perceber o quanto estamos construindo algo especial.
+      </p>
+      <p>
+        Duas colegas que dedicaram anos à MB chegaram a um novo patamar nas suas carreiras. Celebramos a Páscoa com chocolate, sorrisos e uma pausa merecida. E olhando pra frente, a MB chega com força ao palco do <strong>Conexão Awards 2026</strong>. Temos muito a comemorar — e ainda mais a conquistar.
+      </p>
+      <p>
+        Aproveite cada história que preparamos para você nesta edição. Isso aqui é feito com carinho, de colaborador para colaborador. Bem-vindo à MB News! 🚀
+      </p>
+      <div class="editorial-signature">
+        <div class="editorial-avatar">MB</div>
+        <div class="editorial-signature-text">
+          <strong>Equipe MB News</strong>
+          <span>Comunicação Interna · MB Finance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOÇÕES -->
+<section id="promocoes">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Destaque da semana</span>
+      <h2 class="section-title">Parabéns para quem chegou lá</h2>
+      <p class="section-desc">Crescimento que se conquista com dedicação, consistência e paixão pelo que faz. Conheça as nossas novas líderes.</p>
+    </div>
+    <div style="margin-bottom:40px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 8px 40px rgba(0,0,0,.12);">
+      <img src="https://i.ibb.co/2p2sF27/Whats-App-Image-2026-04-08-at-11-41-44-1.jpg"
+        alt="Laiane e Victoria — dia da promoção"
+        style="width:100%;height:480px;object-fit:cover;object-position:50% 35%;display:block;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(11,26,46,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:32px;pointer-events:none;">
+        <div>
+          <span style="display:inline-block;background:rgba(0,153,221,.2);border:1px solid rgba(0,153,221,.4);color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:99px;margin-bottom:10px;">📸 Dia da Promoção</span>
+          <p style="color:white;font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.5px;">Laiane Sousa &amp; Victoria Lemos — 08 de Abril de 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="promo-grid">
+
+      <!-- Card Laiane -->
+      <div class="promo-card fade-up" style="transition-delay:.1s">
+        <div class="promo-card-body">
+          <span class="promo-role-badge" style="background:#e8f4ff;color:#005580;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Área Comercial</span>
+          <h3>Laiane Sousa</h3>
+          <span class="role-to" style="background:linear-gradient(135deg,#005580,#0099dd);display:inline-block;margin-bottom:16px;">Coordenação Comercial</span>
+          <p>
+            Com 3 anos dedicados à MB Finance, Laiane construiu sua jornada com muito comprometimento, empatia e visão estratégica. Iniciou como Analista de Relacionamento e, passo a passo, foi fortalecendo laços, processos e resultados. Hoje, ela lidera a área comercial com o mesmo entusiasmo do primeiro dia — e com muito mais experiência. Que essa nova fase seja repleta de conquistas, Laiane! 🙌
+          </p>
+          <div class="promo-stats">
+            <div class="promo-stat">
+              <strong>3+</strong>
+              <span>Anos na MB</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#005580"></i></strong>
+              <span>Nova liderança</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="briefcase" style="width:20px;height:20px;color:#005580"></i></strong>
+              <span>Comercial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Victoria -->
+      <div class="promo-card fade-up" style="transition-delay:.2s">
+        <div class="promo-card-body">
+          <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Crédito &amp; Canal</span>
+          <h3>Victoria Lemos</h3>
+          <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);display:inline-block;margin-bottom:16px;">Supervisora de Canal</span>
+          <p>
+            Com quase 3 anos no setor de crédito da MB Finance. Victoria Lemos construiu expertise sólida, contribuindo com rigor, análise apurada e visão de canal. Sua trajetória dedicada a resultados reais a levou a um novo patamar: a supervisão de canal, onde vai potencializar ainda mais seu impacto. Parabéns, Victoria — você chegou lá! 💜
+          </p>
+          <div class="promo-stats">
+            <div class="promo-stat">
+              <strong>3+</strong>
+              <span>Anos na MB</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="bar-chart-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+              <span>Setor de Crédito</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="layers" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+              <span>Canal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /promo-grid -->
+  </div>
+</section>
+
+<!-- PÁSCOA -->
+<section id="pascoa">
+  <div class="container">
+    <div class="pascoa-layout">
+
+      <!-- Conteúdo -->
+      <div class="pascoa-content fade-up" style="transition-delay:.15s">
+        <span class="section-eyebrow" style="color:var(--gold)">Celebração</span>
+        <h2>A MB também<br>celebra!</h2>
+        <p>
+          Na quinta-feira, um mimo especial esperava cada colaborador da MB Finance: ovos de Páscoa! Foram <strong>mais de 150 ovos</strong> distribuídos com carinho, marcando um momento de partilha e descontração depois de um trimestre cheio e intenso.
+        </p>
+        <p>
+          Esse gesto é mais do que chocolate — é a MB lembrando que, por trás de cada meta batida, existe uma equipe que merece reconhecimento, afeto e um chocolatinho bem gostoso! 🍫
+        </p>
+        <div class="pascoa-highlight">
+          <div class="pascoa-highlight-icon"><i data-lucide="gift" style="color:white"></i></div>
+          <div class="pascoa-highlight-text">
+            <strong>+150</strong>
+            <span>ovos de Páscoa distribuídos para os colaboradores da MB Finance em celebração ao feriado</span>
+          </div>
+        </div>
+
+        <div class="pascoa-media-row">
+          <div class="pascoa-video-wrap">
+            <p class="pascoa-gallery-title">Vídeo da Páscoa</p>
+            <div class="pascoa-video-container">
+              <video controls playsinline>
+                <source src="pascoa.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="pascoa-gallery-wrap">
+            <p class="pascoa-gallery-title">Galeria da Páscoa</p>
+            <div class="gallery-grid">
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/xt5Yd7CM/Whats-App-Image-2026-04-08-at-15-01-10.jpg')"><img src="https://i.ibb.co/xt5Yd7CM/Whats-App-Image-2026-04-08-at-15-01-10.jpg" alt="Páscoa 1" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/cXTPCCB6/Whats-App-Image-2026-04-08-at-15-01-10-1.jpg')"><img src="https://i.ibb.co/cXTPCCB6/Whats-App-Image-2026-04-08-at-15-01-10-1.jpg" alt="Páscoa 2" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/QjTzTRYJ/Whats-App-Image-2026-04-08-at-15-01-10-2.jpg')"><img src="https://i.ibb.co/QjTzTRYJ/Whats-App-Image-2026-04-08-at-15-01-10-2.jpg" alt="Páscoa 3" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/sdCyL7fK/Whats-App-Image-2026-04-08-at-15-01-11.jpg')"><img src="https://i.ibb.co/sdCyL7fK/Whats-App-Image-2026-04-08-at-15-01-11.jpg" alt="Páscoa 4" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/ycpNfCNR/Whats-App-Image-2026-04-08-at-15-01-11-1.jpg')"><img src="https://i.ibb.co/ycpNfCNR/Whats-App-Image-2026-04-08-at-15-01-11-1.jpg" alt="Páscoa 5" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/hFyhcddY/Whats-App-Image-2026-04-08-at-15-01-12.jpg')"><img src="https://i.ibb.co/hFyhcddY/Whats-App-Image-2026-04-08-at-15-01-12.jpg" alt="Páscoa 6" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/j9S508PV/Whats-App-Image-2026-04-08-at-15-08-33.jpg')"><img src="https://i.ibb.co/j9S508PV/Whats-App-Image-2026-04-08-at-15-08-33.jpg" alt="Páscoa 7" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EVENTO -->
+<section id="evento">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Novidade da semana</span>
+      <h2 class="section-title" style="color:white">MB no palco nacional 🏆</h2>
+      <p class="section-desc">A MB Finance marca presença em um dos eventos mais relevantes do setor financeiro no Brasil.</p>
+    </div>
+    <div class="evento-layout">
+
+      <!-- Card evento -->
+      <div class="evento-card fade-up" style="transition-delay:.1s">
+        <div class="evento-card-header">
+          <div class="evento-logo-area">
+            <div class="evento-logo-box">
+              <img src="https://i.ibb.co/FLKk3bkx/Logo-C6.jpg" alt="C6 Bank" />
+            </div>
+            <div class="evento-logo-text">
+              <strong>Banco C6</strong>
+              <span>Realização</span>
+            </div>
+          </div>
+          <h3>Conexão Awards 2026</h3>
+          <p>O maior prêmio para escritórios do setor financeiro. Um palco para os melhores do Brasil se encontrarem, trocarem experiências e serem reconhecidos pela excelência.</p>
+        </div>
+        <div class="evento-card-body">
+          <ul class="evento-info-list">
+            <li>
+              <div class="evento-info-icon"><i data-lucide="calendar" style="color:#C49A00"></i></div>
+              <div>
+                <strong style="color:white;display:block">09 de Abril de 2026</strong>
+                <span>Amanhã!</span>
+              </div>
+            </li>
+            <li>
+              <div class="evento-info-icon"><i data-lucide="map-pin" style="color:#C49A00"></i></div>
+              <div>
+                <strong style="color:white;display:block">São Paulo, SP</strong>
+                <span>Evento presencial</span>
+              </div>
+            </li>
+            <li>
+              <div class="evento-info-icon"><i data-lucide="building-2" style="color:#C49A00"></i></div>
+              <div>
+                <strong style="color:white;display:block">MB Finance</strong>
+                <span>Participante oficial</span>
+              </div>
+            </li>
+            <li>
+              <div class="evento-info-icon"><i data-lucide="users" style="color:#C49A00"></i></div>
+              <div>
+                <strong style="color:white;display:block">Líderes de todo o Brasil</strong>
+                <span>Networking de alto nível</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Direita -->
+      <div class="evento-right fade-up" style="transition-delay:.2s">
+
+        <div class="countdown-block">
+          <p>Acontece amanhã</p>
+          <h3>09 de Abril de 2026</h3>
+          <span>São Paulo · Conexão Awards 2026</span>
+        </div>
+
+        <div class="evento-award-card">
+          <div class="evento-award-icon" style="background:rgba(245,166,35,.15)"><i data-lucide="trophy" style="color:#F5A623"></i></div>
+          <div>
+            <h4>Premiação dos melhores</h4>
+            <p>O evento reconhece os escritórios e parceiros que se destacaram no ano com resultados excepcionais e excelência operacional.</p>
+          </div>
+        </div>
+
+        <div class="evento-award-card">
+          <div class="evento-award-icon" style="background:rgba(0,153,221,.12)"><i data-lucide="handshake" style="color:#0099dd"></i></div>
+          <div>
+            <h4>Encontro entre líderes</h4>
+            <p>Networking com líderes de todo o Brasil — troca de experiências, visão de mercado e conexões que impulsionam negócios.</p>
+          </div>
+        </div>
+
+        <div class="evento-award-card">
+          <div class="evento-award-icon" style="background:rgba(168,85,247,.12)"><i data-lucide="trending-up" style="color:#A855F7"></i></div>
+          <div>
+            <h4>MB representando!</h4>
+            <p>A MB Finance chega ao evento representando o que há de melhor em serviço, relacionamento e entrega para o mercado financeiro.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS -->
+<section id="numeros" style="display:none">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="section-eyebrow">Em números</span>
+      <h2 class="section-title">A semana em dados</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0f7ff,#e8f4ff);border-color:#c7dff7;transition-delay:.05s">
+        <span class="stat-emoji"><i data-lucide="trending-up" style="color:var(--blue)"></i></span>
+        <span class="stat-number" style="color:var(--blue)">2</span>
+        <span class="stat-label">Promoções internas<br>nesta semana</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fef3e2,#fff8f0);border-color:#fde68a;transition-delay:.1s">
+        <span class="stat-emoji"><i data-lucide="gift" style="color:#F5A623"></i></span>
+        <span class="stat-number" style="color:var(--gold)">+150</span>
+        <span class="stat-label">Ovos de Páscoa<br>distribuídos</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0fff4,#e8fff0);border-color:#a7f3d0;transition-delay:.15s">
+        <span class="stat-emoji"><i data-lucide="target" style="color:#059669"></i></span>
+        <span class="stat-number" style="color:#059669">3+</span>
+        <span class="stat-label">Anos de casa de<br>cada promovida</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fdf4ff,#f8f0ff);border-color:#e9d5ff;transition-delay:.2s">
+        <span class="stat-emoji"><i data-lucide="trophy" style="color:#7c3aed"></i></span>
+        <span class="stat-number" style="color:#7c3aed">09/04</span>
+        <span class="stat-label">Data do<br>Conexão Awards</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fff1f0,#ffe8e8);border-color:#fecaca;transition-delay:.25s">
+        <span class="stat-emoji"><i data-lucide="map-pin" style="color:#dc2626"></i></span>
+        <span class="stat-number" style="color:#dc2626">SP</span>
+        <span class="stat-label">São Paulo recebe<br>a MB Finance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA / VÍDEOS -->
+<section id="videos" style="display:none">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Galeria &amp; Vídeos</span>
+      <h2 class="section-title">Momentos que ficam</h2>
+      <p class="section-desc">Adicione os vídeos e fotos dos momentos especiais da semana para compartilhar com toda a equipe.</p>
+    </div>
+    <div class="video-grid" style="margin-top:40px">
+
+      <!-- Vídeo 1 - Páscoa -->
+      <div class="video-card fade-up" style="transition-delay:.05s">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#f5a623,#ff6b35)">
+          <!-- Para adicionar vídeo real, substitua o div abaixo por:
+               <video width="100%" controls poster="./images/thumb-pascoa.jpg">
+                 <source src="./videos/pascoa.mp4" type="video/mp4" />
+               </video>
+          -->
+          <div class="video-thumb-placeholder">
+            <i data-lucide="play-circle" style="color:white"></i>
+            <span>Adicione o vídeo<br>da Páscoa aqui</span>
+          </div>
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-card-body">
+          <span class="video-tag" style="background:#fef3e2;color:#d4890a">Páscoa</span>
+          <h4>Entrega dos ovos de Páscoa</h4>
+          <p>Os melhores momentos da celebração de Páscoa na MB Finance</p>
+        </div>
+      </div>
+
+      <!-- Vídeo 2 - Promoções -->
+      <div class="video-card fade-up" style="transition-delay:.1s">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#005580,#0099dd)">
+          <div class="video-thumb-placeholder">
+            <i data-lucide="play-circle" style="color:white"></i>
+            <span>Adicione o vídeo<br>das promoções aqui</span>
+          </div>
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-card-body">
+          <span class="video-tag" style="background:#e8f4ff;color:#005580">Promoção</span>
+          <h4>Laiane &amp; Victoria — novas líderes</h4>
+          <p>Celebração das promoções internas desta semana</p>
+        </div>
+      </div>
+
+      <!-- Vídeo 3 - Evento -->
+      <div class="video-card fade-up" style="transition-delay:.15s">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#003956,#004470)">
+          <div class="video-thumb-placeholder">
+            <i data-lucide="play-circle" style="color:white"></i>
+            <span>Adicione o vídeo<br>do Conexão Awards</span>
+          </div>
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-card-body">
+          <span class="video-tag" style="background:#e8f0ff;color:#3b4fa8">Evento</span>
+          <h4>Conexão Awards 2026 — São Paulo</h4>
+          <p>A MB Finance rumo ao maior prêmio do setor financeiro</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Galeria fotos Páscoa expandida -->
+    <div class="fade-up" style="margin-top:48px">
+      <p style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:600;color:var(--gray-800);margin-bottom:16px">
+        Fotos da semana — clique para ampliar
+      </p>
+      <div class="gallery-strip">
+        <!-- Duplique estes itens e substitua os src pelas imagens reais da pasta Drive -->
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#005580,#0099dd);color:white;flex-direction:column;display:flex;align-items:center;justify-content:center;gap:6px;font-size:.7rem;text-align:center">
+          <span style="font-size:1.8rem">📷</span>Laiane
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#6B21A8,#A855F7);color:white;flex-direction:column;display:flex;align-items:center;justify-content:center;gap:6px;font-size:.7rem;text-align:center">
+          <span style="font-size:1.8rem">📷</span>Victoria
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#f5a623,#ff9500)">🥚</div>
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#ff6b35,#ff4500)">🐣</div>
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#ffd700,#f5a623)">🍫</div>
+        <div class="gallery-thumb" onclick="openLightbox('')" style="background:linear-gradient(135deg,#003956,#004470);color:white;flex-direction:column;display:flex;align-items:center;justify-content:center;gap:6px;font-size:.7rem;text-align:center">
+          <span style="font-size:1.8rem">🏆</span>Awards
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAB NAV -->
+<div class="fab-nav">
+  <a href="#home" class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
+  <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
+  <a href="#pascoa"   class="fab-btn" title="Páscoa"><i data-lucide="gift"></i></a>
+  <a href="#evento"   class="fab-btn" title="Evento"><i data-lucide="trophy"></i></a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">MB<span>News</span></div>
+  <p>Revista interna MB Finance · Edição #001 · Abril 2026</p>
+  <div class="footer-links">
+    <a href="#editorial">Editorial</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#pascoa">Páscoa</a>
+    <a href="#evento">Evento</a>
+  </div>
+  <hr class="footer-divider" />
+  <p class="footer-copy">© 2026 MB Finance · Material de comunicação interna · Todos os direitos reservados</p>
+</footer>
+
+<script>
+  // ── LUCIDE ICONS
+  lucide.createIcons();
+
+  // ── LOADER
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hide');
+    }, 1600);
+  });
+
+  // ── SCROLL ANIMATIONS
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ── LIGHTBOX
+  function openLightbox(src) {
+    if (!src) return;
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-download').href = src;
+    lb.classList.add('open');
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // ── NAV ACTIVE LINK
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--cyan)' : '';
+    });
+  }, { passive: true });
+</script>
+</body>
+</html>
