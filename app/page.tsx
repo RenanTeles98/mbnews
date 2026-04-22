@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function Home() {
-  redirect("/mbnews.html");
+  redirect("/mb-finance-completo.html");
 }
