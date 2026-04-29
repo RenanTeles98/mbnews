@@ -632,80 +632,129 @@
     .editorial-signature-text span  { font-size: .82rem; color: var(--gray-400); }
 
     /* ─── AWARDS ─────────────────────────────────────────── */
-    #awards {
-      background: linear-gradient(135deg, var(--navy) 0%, #001f35 100%);
-      position: relative; overflow: hidden;
+    #awards { background: var(--gray-50); }
+
+    .awards-hero {
+      display: grid; grid-template-columns: 1fr 400px;
+      gap: 64px; align-items: center; margin-bottom: 64px;
     }
-    #awards::before {
-      content: '🏆';
-      position: absolute; font-size: 22rem; opacity: .03;
-      right: -80px; top: -60px; line-height: 1;
+    .awards-eyebrow {
+      font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--gray-400);
+      margin-bottom: 20px; display: block;
     }
-    #awards .section-title { color: var(--white); }
-    #awards .section-desc  { color: rgba(255,255,255,.55); }
-    #awards .section-eyebrow { color: #C49A00; }
-    #awards .section-eyebrow::before { background: #C49A00; }
-    .awards-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px; margin-top: 48px;
-    }
-    .awards-indicator {
-      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
-      border-radius: 20px; padding: 28px 24px; text-align: center;
-      transition: all .3s;
-    }
-    .awards-indicator:hover {
-      background: rgba(196,154,0,.1); border-color: rgba(196,154,0,.3);
-      transform: translateY(-4px);
-    }
-    .awards-indicator-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
-    .awards-indicator strong {
-      display: block; font-family: 'Inter', sans-serif;
-      font-size: 2rem; font-weight: 800; color: var(--white);
-      line-height: 1; margin-bottom: 6px;
-    }
-    .awards-indicator span { color: rgba(255,255,255,.5); font-size: .82rem; }
-    .awards-cta-banner {
-      margin-top: 48px; border-radius: 24px; padding: 44px 48px;
-      background: linear-gradient(135deg, #b8860b 0%, #C49A00 40%, #f5a623 100%);
-      text-align: center; position: relative; overflow: hidden;
-    }
-    .awards-cta-banner::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,.18) 0%, transparent 65%);
-    }
-    .awards-cta-banner h3 {
+    .awards-headline {
       font-family: 'Inter', sans-serif;
-      font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800;
-      color: var(--navy); letter-spacing: -.5px; margin-bottom: 12px;
-      position: relative;
+      font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800;
+      color: var(--gray-800); line-height: 1.1; letter-spacing: -2px;
+      margin-bottom: 20px;
     }
-    .awards-cta-banner p {
-      color: rgba(11,26,46,.72); font-size: 1rem; line-height: 1.75;
-      max-width: 600px; margin: 0 auto; position: relative;
+    .awards-headline u { text-decoration-color: #F5A623; text-underline-offset: 4px; }
+    .awards-hero-desc {
+      color: var(--gray-600); font-size: 1rem; line-height: 1.75;
+      max-width: 480px; margin-bottom: 28px;
+    }
+    .awards-badges {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .awards-badge {
+      background: var(--white); border: 1px solid var(--gray-100);
+      border-radius: 99px; padding: 7px 18px;
+      font-size: .8rem; font-weight: 600; color: var(--gray-600);
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
     }
 
-    .awards-images-row {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 40px; margin-top: 56px; align-items: center; justify-items: center;
+    .awards-cert-card {
+      background: #111; border-radius: 24px;
+      padding: 40px 36px; text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,.2);
+      position: relative; overflow: hidden;
     }
-    .awards-images-row img {
-      width: 100%; max-width: 340px; border-radius: 20px;
-      object-fit: contain;
+    .awards-cert-card::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,154,0,.15), transparent 70%);
     }
-    .awards-cert-img {
-      filter: drop-shadow(0 16px 48px rgba(196,154,0,.45));
+    .awards-cert-logo {
+      font-family: 'Inter', sans-serif; font-size: 1.5rem;
+      font-weight: 800; color: white; letter-spacing: -1px;
+      margin-bottom: 6px;
     }
-    .awards-trophy-img {
-      filter: drop-shadow(0 16px 48px rgba(255,255,255,.18));
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.1);
-      padding: 24px;
+    .awards-cert-logo span { color: var(--cyan); }
+    .awards-cert-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.8rem; font-weight: 900; color: white;
+      line-height: .95; letter-spacing: -2px; margin: 24px 0 6px;
     }
-    @media (max-width: 600px) {
-      .awards-images-row { grid-template-columns: 1fr; gap: 28px; }
-      .awards-images-row img { max-width: 260px; }
+    .awards-cert-year { color: #C49A00; font-size: 1rem; font-weight: 700; margin-bottom: 20px; }
+    .awards-cert-divider {
+      border: none; border-top: 1px solid rgba(196,154,0,.3); margin: 20px 0;
+    }
+    .awards-cert-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: #C49A00; margin-bottom: 8px;
+    }
+    .awards-cert-tag::before, .awards-cert-tag::after {
+      content: '·'; opacity: .5;
+    }
+    .awards-cert-subtitle {
+      color: rgba(255,255,255,.5); font-size: .82rem; line-height: 1.5;
+    }
+    .awards-cert-brand {
+      margin-top: 24px; display: flex; align-items: center;
+      justify-content: center; gap: 6px;
+      color: rgba(255,255,255,.35); font-size: .78rem; font-weight: 600;
+    }
+    .awards-cert-brand strong { color: rgba(255,255,255,.6); }
+
+    .awards-years-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .awards-year-card {
+      background: var(--white); border: 1px solid var(--gray-100);
+      border-radius: 20px; padding: 32px 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: all .3s;
+    }
+    .awards-year-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,.1); }
+    .awards-year-card.highlight {
+      background: #F5A623; border-color: #F5A623;
+    }
+    .awards-year-card-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .awards-year-label {
+      font-size: .68rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--gray-400);
+    }
+    .awards-year-card.highlight .awards-year-label { color: rgba(0,0,0,.5); }
+    .awards-champ-badge {
+      background: #111; color: white; font-size: .62rem;
+      font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 99px;
+    }
+    .awards-year-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 3.2rem; font-weight: 900; line-height: 1;
+      color: var(--gray-800); margin-bottom: 16px; letter-spacing: -2px;
+    }
+    .awards-year-card.highlight .awards-year-num { color: var(--gray-800); }
+    .awards-year-title {
+      font-weight: 700; font-size: 1rem; color: var(--gray-800);
+      margin-bottom: 10px;
+    }
+    .awards-year-desc {
+      color: var(--gray-600); font-size: .85rem; line-height: 1.7;
+    }
+    .awards-year-card.highlight .awards-year-desc { color: rgba(0,0,0,.65); }
+
+    @media (max-width: 900px) {
+      .awards-hero { grid-template-columns: 1fr; gap: 40px; }
+      .awards-cert-card { max-width: 360px; }
+      .awards-years-grid { grid-template-columns: 1fr; }
     }
 
     /* ─── SAÚDE ──────────────────────────────────────────── */
@@ -1091,53 +1140,81 @@
 <!-- AWARDS 2025 -->
 <section id="awards">
   <div class="container">
-    <div class="fade-up">
-      <span class="section-eyebrow">Prêmio</span>
-      <h2 class="section-title">Conexão Awards 2025</h2>
-      <p class="section-desc">Veja como a MB Finance se destacou no maior prêmio do setor financeiro do Brasil no ano passado.</p>
-    </div>
 
-    <div class="awards-images-row fade-up" style="transition-delay:.05s">
-      <img
-        class="awards-cert-img"
-        src="public/images/ConexaoAwards_LinkedIn_melhor-escritorio-MB-FINANCE.png"
-        alt="Conexão Awards 2025 — Melhor Escritório MB Finance"
-      />
-      <img
-        class="awards-trophy-img"
-        src="public/images/premios/premio-2024.png"
-        alt="Troféu Conexão Awards — Melhor Escritório"
-      />
-    </div>
+    <!-- Hero: texto + card certificado -->
+    <div class="awards-hero fade-up">
+      <div>
+        <span class="awards-eyebrow">Reconhecimentos · Conexão Awards</span>
+        <h2 class="awards-headline">
+          <u>Melhor escritório</u><br>tricampeão 2023–2025.
+        </h2>
+        <p class="awards-hero-desc">
+          O Conexão Awards é o reconhecimento oficial do programa Parceiros C6 Empresas. A MB Finance é o único escritório a vencer três anos seguidos — e essa conquista é de cada um de vocês.
+        </p>
+        <div class="awards-badges">
+          <span class="awards-badge">Melhor Escritório · 2023</span>
+          <span class="awards-badge">Melhor Escritório · 2024</span>
+          <span class="awards-badge">Melhor Escritório · 2025</span>
+        </div>
+      </div>
 
-    <div class="awards-grid">
-      <div class="awards-indicator fade-up" style="transition-delay:.05s">
-        <span class="awards-indicator-icon">🎯</span>
-        <strong>Indicador 1</strong>
-        <span>Preencha com o indicador</span>
-      </div>
-      <div class="awards-indicator fade-up" style="transition-delay:.1s">
-        <span class="awards-indicator-icon">📈</span>
-        <strong>Indicador 2</strong>
-        <span>Preencha com o indicador</span>
-      </div>
-      <div class="awards-indicator fade-up" style="transition-delay:.15s">
-        <span class="awards-indicator-icon">⭐</span>
-        <strong>Indicador 3</strong>
-        <span>Preencha com o indicador</span>
-      </div>
-      <div class="awards-indicator fade-up" style="transition-delay:.2s">
-        <span class="awards-indicator-icon">🤝</span>
-        <strong>Indicador 4</strong>
-        <span>Preencha com o indicador</span>
+      <!-- Card preto certificado -->
+      <div class="awards-cert-card fade-up" style="transition-delay:.1s">
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px">
+          Conexão Awards
+        </div>
+        <div class="awards-cert-title">Awards</div>
+        <div class="awards-cert-year">2025</div>
+        <hr class="awards-cert-divider" />
+        <div class="awards-cert-logo">mb<span>finance.</span></div>
+        <hr class="awards-cert-divider" />
+        <div class="awards-cert-tag">Melhor Escritório de 2025</div>
+        <p class="awards-cert-subtitle">
+          Referência máxima do programa<br>por alcançar resultados de excelência!
+        </p>
+        <div class="awards-cert-brand">
+          <strong>c6</strong> Empresas
+        </div>
       </div>
     </div>
 
-    <div class="awards-cta-banner fade-up" style="transition-delay:.25s">
-      <h3>2026: Vamos ser ainda melhores! 🚀</h3>
-      <p>
-        O que conquistamos em 2025 foi apenas o começo. Este ano, a MB Finance entra no Conexão Awards 2026 com mais preparo, mais união e ainda mais determinação. Cada entrega do dia a dia nos aproxima do topo — e juntos, vamos chegar lá.
-      </p>
+    <!-- Cards dos 3 anos -->
+    <div class="awards-years-grid">
+
+      <div class="awards-year-card fade-up" style="transition-delay:.05s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2023</span>
+        </div>
+        <div class="awards-year-num">1º <span style="font-size:1.8rem;font-weight:700;color:var(--gray-400)">ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          O início de uma história. Reconhecidos nacionalmente em volume de contas ativadas e NPS de clientes — o time MB provou que estava pronto para o topo.
+        </p>
+      </div>
+
+      <div class="awards-year-card fade-up" style="transition-delay:.1s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2024</span>
+        </div>
+        <div class="awards-year-num">2º <span style="font-size:1.8rem;font-weight:700;color:var(--gray-400)">ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          Bicampeões! Com destaque em retenção de clientes PJ e uso integrado de C6 Pay, vocês mostraram que o primeiro ano não foi sorte — foi competência.
+        </p>
+      </div>
+
+      <div class="awards-year-card highlight fade-up" style="transition-delay:.15s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2025</span>
+          <span class="awards-champ-badge">Tricampeão</span>
+        </div>
+        <div class="awards-year-num">3º <span style="font-size:1.8rem;font-weight:700;color:rgba(0,0,0,.35)">ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          Tricampeões! Primeiros no Brasil a ultrapassar 10 mil contas PJ ativas via parceria. Esse troféu tem o nome de cada colaborador que deu o seu melhor.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
