@@ -109,7 +109,7 @@
       transform: translateY(12px); transition: transform .25s;
     }
     .month-modal-overlay.open .month-modal { transform: none; }
-    .month-modal-icon { font-size: 3rem; margin-bottom: 16px; display: block; }
+    .month-modal-icon { margin-bottom: 20px; display: flex; justify-content: center; }
     .month-modal h3 {
       font-family: 'Inter', sans-serif; font-size: 1.4rem;
       font-weight: 800; color: #121212; margin-bottom: 10px; letter-spacing: -.5px;
@@ -1723,20 +1723,23 @@
 
   // ── MONTH MODAL
   const lockedMessages = [
-    'Essa edição ainda não foi ao ar, mas tudo que aconteceu nesses meses fez parte da nossa história. Em breve você poderá revisitar esse período.',
-    'Ainda estamos compilando os melhores momentos desse mês. Fique ligado!',
-    'Cada mês tem uma história. Essa ainda está sendo escrita. Em breve disponível!'
+    'Esse mês já ficou para trás, mas o que foi vivido aqui dentro moldou quem somos hoje. O melhor ainda está por vir.',
+    'Cada dia passado foi um tijolo na construção da mb. O passado nos fortalece — e o futuro vai ser ainda maior.',
+    'Esse capítulo já foi escrito por vocês. Agora é hora de escrever os próximos com ainda mais força e determinação.'
   ];
   const futureMessages = [
-    'Esse mês ainda está sendo construído — e você faz parte disso! Continue entregando o seu melhor que a história vai sendo escrita a cada dia. 🚀',
-    'O futuro pertence a quem acredita na beleza dos seus sonhos. Esse mês vai chegar cheio de conquistas. Segura a emoção! ✨',
-    'Grandes coisas estão por vir! Cada entrega de hoje é o destaque de amanhã. Vamos juntos! 💪',
-    'A próxima edição está sendo construída por cada um de vocês. Continue fazendo história na mb! 🏆',
-    'Em breve mais novidades! A mb nunca para — e nem você. Esse mês vai ser incrível. 🌟',
-    'O melhor ainda está por vir! Foque no presente, que o futuro vai surpreender. 🎯',
-    'Cada mês é uma nova oportunidade. Esse está chegando com tudo! Prepare-se. ⚡',
-    'Quase lá! Esse mês vai chegar repleto de histórias incríveis para compartilhar. 🙌'
+    'Esse mês ainda não chegou, mas já está sendo construído por cada entrega do dia a dia. Continue fazendo história.',
+    'O futuro da mb está nas mãos de quem não para. Cada meta de hoje vira o destaque de amanhã.',
+    'Grandes conquistas estão a caminho. O que você entrega hoje é o que vai aparecer nessa edição.',
+    'A mb não para — e nem você. Esse mês vai chegar com muito mais para celebrar.',
+    'Ainda vamos escrever muita coisa juntos. Foco no presente, que o futuro vai surpreender.',
+    'Cada mês é uma nova página. Esse ainda está em branco — e você vai ajudar a preenchê-lo.',
+    'O melhor ainda está por vir. Continue entregando o seu melhor que a história se escreve sozinha.',
+    'Esse mês chega em breve. E quando chegar, vai ter o nome de cada um de vocês nele.'
   ];
+
+  const iconLocked = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#003956" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="#003956"/></svg>`;
+  const iconFuture = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#003956" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>`;
 
   function openMonthModal(month, type) {
     const overlay = document.getElementById('monthModal');
@@ -1745,10 +1748,10 @@
     const desc = document.getElementById('modalDesc');
     title.textContent = month;
     if (type === 'locked') {
-      icon.textContent = '🗓️';
+      icon.innerHTML = iconLocked;
       desc.textContent = lockedMessages[Math.floor(Math.random() * lockedMessages.length)];
     } else {
-      icon.textContent = ['🚀','✨','💪','🏆','🌟','🎯','⚡','🙌'][Math.floor(Math.random() * 8)];
+      icon.innerHTML = iconFuture;
       desc.textContent = futureMessages[Math.floor(Math.random() * futureMessages.length)];
     }
     overlay.classList.add('open');
