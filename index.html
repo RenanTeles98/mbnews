@@ -686,6 +686,28 @@
       max-width: 600px; margin: 0 auto; position: relative;
     }
 
+    .awards-images-row {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; margin-top: 56px; align-items: center; justify-items: center;
+    }
+    .awards-images-row img {
+      width: 100%; max-width: 340px; border-radius: 20px;
+      object-fit: contain;
+    }
+    .awards-cert-img {
+      filter: drop-shadow(0 16px 48px rgba(196,154,0,.45));
+    }
+    .awards-trophy-img {
+      filter: drop-shadow(0 16px 48px rgba(255,255,255,.18));
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 24px;
+    }
+    @media (max-width: 600px) {
+      .awards-images-row { grid-template-columns: 1fr; gap: 28px; }
+      .awards-images-row img { max-width: 260px; }
+    }
+
     /* ─── SAÚDE ──────────────────────────────────────────── */
     #saude {
       background: linear-gradient(135deg, #f0fdf4 0%, #e8f9ee 100%);
@@ -721,7 +743,7 @@
       width: 52px; height: 52px; border-radius: 14px;
       background: linear-gradient(135deg, #059669, #10b981);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 16px;
+      margin-bottom: 16px;
     }
     .saude-right-tag {
       display: inline-block; background: #d1fae5; color: #065f46;
@@ -1075,6 +1097,19 @@
       <p class="section-desc">Veja como a MB Finance se destacou no maior prêmio do setor financeiro do Brasil no ano passado.</p>
     </div>
 
+    <div class="awards-images-row fade-up" style="transition-delay:.05s">
+      <img
+        class="awards-cert-img"
+        src="public/images/ConexaoAwards_LinkedIn_melhor-escritorio-MB-FINANCE.png"
+        alt="Conexão Awards 2025 — Melhor Escritório MB Finance"
+      />
+      <img
+        class="awards-trophy-img"
+        src="public/images/premios/premio-2024.png"
+        alt="Troféu Conexão Awards — Melhor Escritório"
+      />
+    </div>
+
     <div class="awards-grid">
       <div class="awards-indicator fade-up" style="transition-delay:.05s">
         <span class="awards-indicator-icon">🎯</span>
@@ -1123,22 +1158,74 @@
     </div>
     <div class="saude-rights-grid">
       <div class="saude-right-card fade-up" style="transition-delay:.1s">
-        <div class="saude-right-icon">🩺</div>
+        <div class="saude-right-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
         <span class="saude-right-tag">Até 3 dias/ano</span>
         <strong>Exames preventivos de câncer</strong>
         <p>Você tem direito a até 3 dias por ano para realizar exames preventivos de câncer, devidamente comprovados, <strong>sem desconto salarial</strong>.</p>
       </div>
       <div class="saude-right-card fade-up" style="transition-delay:.15s">
-        <div class="saude-right-icon">👶</div>
+        <div class="saude-right-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M20 21a8 8 0 1 0-16 0"/>
+          </svg>
+        </div>
         <span class="saude-right-tag">1 dia/ano</span>
         <strong>Consulta do filho até 6 anos</strong>
         <p>1 dia por ano para acompanhar filho de até 6 anos em <strong>consulta médica</strong>, também sem perda de remuneração.</p>
       </div>
       <div class="saude-right-card fade-up" style="transition-delay:.2s">
-        <div class="saude-right-icon">🤰</div>
+        <div class="saude-right-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
         <span class="saude-right-tag">Até 2 dias</span>
         <strong>Consultas e exames na gestação</strong>
         <p>Até 2 dias para acompanhar a esposa ou companheira grávida em consultas médicas e exames complementares durante a <strong>gestação</strong>.</p>
+      </div>
+    </div>
+
+    <!-- AVISO: Alteração de Plano de Saúde -->
+    <div class="fade-up" style="transition-delay:.22s;margin-bottom:32px">
+      <div style="background:linear-gradient(135deg,#003956 0%,#005580 100%);border-radius:24px;padding:36px 40px;position:relative;overflow:hidden;border:1px solid rgba(0,153,221,.25);box-shadow:0 8px 40px rgba(0,57,86,.25)">
+        <div style="position:absolute;top:-30px;right:-30px;font-size:10rem;opacity:.05;line-height:1">📋</div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+          <div style="background:rgba(0,153,221,.2);border:1px solid rgba(0,153,221,.4);border-radius:99px;padding:5px 16px;display:inline-flex;align-items:center;gap:8px">
+            <span style="width:8px;height:8px;border-radius:50%;background:#0099dd;display:inline-block;animation:pulse 2s infinite"></span>
+            <span style="color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase">Alteração de Plano · Data Marcada</span>
+          </div>
+        </div>
+        <h3 style="font-family:'Inter',sans-serif;font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:white;letter-spacing:-.5px;margin-bottom:14px;line-height:1.2">
+          Novo plano de saúde: <span style="color:#0099dd">Rede Sulamerica</span>
+        </h3>
+        <p style="color:rgba(255,255,255,.72);font-size:.97rem;line-height:1.8;margin-bottom:28px;max-width:640px">
+          A partir do dia <strong style="color:white">10 de junho de 2026</strong>, a MB Finance adotará oficialmente a <strong style="color:white">Rede Sulamerica</strong> como plano de saúde para todos os colaboradores CLTs. Essa mudança representa mais uma conquista para o nosso time — mais cobertura, mais parceiros e mais cuidado com quem faz a MB acontecer.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <div style="background:rgba(0,153,221,.15);border:1px solid rgba(0,153,221,.3);border-radius:16px;padding:18px 28px;display:flex;align-items:center;gap:14px">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#0099dd,#007ab8);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">📅</div>
+            <div>
+              <strong style="display:block;color:white;font-size:1.3rem;font-family:'Inter',sans-serif;font-weight:800">10/06/2026</strong>
+              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Início oficial da nova rede</span>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 28px;display:flex;align-items:center;gap:14px">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🏥</div>
+            <div>
+              <strong style="display:block;color:white;font-size:1rem;font-family:'Inter',sans-serif;font-weight:700">Rede Sulamerica</strong>
+              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Para colaboradores CLTs</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:24px;padding:14px 18px;background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.3);border-radius:12px;display:flex;gap:10px;align-items:flex-start">
+          <span style="font-size:1.1rem;flex-shrink:0">⚠️</span>
+          <p style="color:rgba(255,255,255,.75);font-size:.87rem;line-height:1.65;margin:0"><strong style="color:white">Fique atento:</strong> em breve o RH enviará mais detalhes sobre a transição, carteirinhas e cobertura. Qualquer dúvida, entre em contato com o departamento de Recursos Humanos.</p>
+        </div>
       </div>
     </div>
 
