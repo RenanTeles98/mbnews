@@ -128,7 +128,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5 text-white/40 text-sm">
                 <MapPin size={14} className="flex-shrink-0 mt-0.5" />
-                São Paulo, SP — Brasil
+                São Paulo, SP · Brasil
               </li>
             </ul>
 

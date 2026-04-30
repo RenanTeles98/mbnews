@@ -31,6 +31,13 @@
 
 ### MB News
 - [x] Ajustar copy editorial da edição de abril para referência mensal e tom mais natural.
+- [x] Revisar textos visíveis da MB News para tom mais humano e menos artificial.
+
+### Copy do site
+- [x] Revisar copy da home principal e páginas comerciais com linguagem mais direta.
+- [x] Revisar componentes Next/React de hero, produtos, processo, CTA e depoimentos.
+- [ ] Revisar artigos longos do blog em uma rodada editorial separada, preservando SEO e estrutura de conteúdo.
+- [ ] Normalizar encoding dos HTMLs legados antes de novas revisões amplas em páginas antigas.
 
 ### Conteúdo real
 - [ ] Substituir depoimentos fictícios por depoimentos reais de clientes

@@ -11,10 +11,10 @@ const WHATSAPP_MSG = encodeURIComponent(
 );
 
 const steps = [
-  { icon: MessageCircle, num: "01", title: "Fale com um especialista", desc: "Entre em contato via WhatsApp. Sem compromisso, sem burocracia, sem custo." },
-  { icon: Search, num: "02", title: "Análise inteligente", desc: "Nossa IA analisa o perfil da sua empresa e mapeia as melhores oportunidades entre todos os parceiros." },
-  { icon: FileCheck, num: "03", title: "Receba as propostas", desc: "Você recebe propostas personalizadas com as melhores taxas disponíveis no mercado para o seu caso." },
-  { icon: Handshake, num: "04", title: "Contratação e acompanhamento", desc: "Escolha a melhor opção, finalize de forma digital e conte com nosso time de forma contínua." },
+  { icon: MessageCircle, num: "01", title: "Fale com um especialista", desc: "Conte pelo WhatsApp o que sua empresa precisa e qual é o prazo ideal." },
+  { icon: Search, num: "02", title: "Análise do perfil", desc: "Avaliamos o cenário da empresa e buscamos parceiros com maior aderência." },
+  { icon: FileCheck, num: "03", title: "Compare as propostas", desc: "Você recebe opções organizadas para entender taxa, prazo, parcela e próximos passos." },
+  { icon: Handshake, num: "04", title: "Contratação acompanhada", desc: "Depois da escolha, nosso time acompanha a formalização até a conclusão." },
 ];
 
 export default function HowItWorks() {
@@ -37,7 +37,7 @@ export default function HowItWorks() {
         >
           <p className="text-brand-secondary text-xs font-semibold tracking-widest uppercase mb-3">Como funciona</p>
           <h2 className="text-3xl sm:text-5xl font-black text-brand-primary leading-tight tracking-tight">
-            Do contato ao crédito em{" "}
+            Do primeiro contato à proposta em{" "}
             <span className="text-brand-secondary">4 passos</span>
           </h2>
         </motion.div>
@@ -80,7 +80,7 @@ export default function HowItWorks() {
             className="inline-flex items-center justify-center gap-2.5 bg-brand-primary text-white font-bold w-full sm:w-auto px-8 py-4 rounded-lg text-sm transition-all duration-200 hover:bg-brand-secondary hover:-translate-y-0.5 hover:shadow-lg"
           >
             <MessageCircle size={16} />
-            Começar agora — é gratuito
+            Começar agora
           </a>
         </motion.div>
       </div>

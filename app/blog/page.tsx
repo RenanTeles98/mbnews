@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Blog MB Finance",
   description:
-    "Conteudos sobre credito empresarial, conta PJ, antecipacao de recebiveis e gestao financeira.",
+    "Conteudos sobre credito empresarial, conta PJ, antecipacao de recebiveis e gestao financeira para decidir melhor.",
 };
 
 function formatDate(date: string) {
@@ -32,10 +32,10 @@ export default async function BlogIndexPage() {
             Blog MB Finance
           </p>
           <h1 className="max-w-4xl font-sans text-4xl font-bold leading-tight md:text-6xl">
-            Conteudo para empresas que querem decidir melhor.
+            Conteúdo financeiro para decidir com mais clareza.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
-            Artigos praticos sobre credito, liquidez, conta PJ e gestao financeira.
+            Guias diretos sobre crédito, caixa, conta PJ e gestão financeira.
           </p>
         </div>
       </section>

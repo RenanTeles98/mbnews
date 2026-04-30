@@ -45,7 +45,7 @@ export default function NewsletterSignup() {
           Conteúdo financeiro direto no seu email
         </h2>
         <p className="mt-4 text-base text-white/60">
-          Receba artigos sobre crédito empresarial, gestão financeira e oportunidades para PJ. Sem spam.
+          Receba artigos sobre crédito, caixa e gestão financeira para empresas. Sem spam.
         </p>
 
         {status === "success" ? (

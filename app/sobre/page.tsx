@@ -12,42 +12,42 @@ const timeline = [
     year: "2013",
     title: "Fundação no Rio de Janeiro",
     description:
-      "Mauro Barbosa e Fabiano Ribeiro fundam a MB Finance com o propósito de democratizar o acesso a produtos financeiros de qualidade para empresas de todos os portes no Brasil.",
+      "Mauro Barbosa e Fabiano Ribeiro fundam a MB Finance para dar às empresas mais acesso, comparação e clareza na hora de contratar produtos financeiros.",
     badge: "Fundação",
   },
   {
     year: "2014",
     title: "Soluções de Crédito Customizadas",
     description:
-      "Introdução das primeiras soluções de crédito personalizadas para clientes PJ, ampliando o portfólio de produtos financeiros da MB Finance e fortalecendo o relacionamento com a carteira inicial.",
+      "Primeiras operações de crédito para clientes PJ, com análise mais próxima da realidade de cada empresa e relacionamento mais consultivo com a carteira inicial.",
     badge: null,
   },
   {
     year: "2015",
     title: "Estruturação Financeira para Saúde",
     description:
-      "Estruturação de soluções financeiras especializadas para o setor de saúde e reabertura da carteira do SUS, consolidando a MB Finance como referência em crédito para segmentos estratégicos.",
+      "Estruturação de operações para o setor de saúde e reabertura da carteira do SUS, ampliando a presença da MB em segmentos que exigem análise mais cuidadosa.",
     badge: null,
   },
   {
     year: "2017",
     title: "Real Estate e Expansão da Estrutura",
     description:
-      "Incorporação de produtos de Real Estate ao portfólio e significativa expansão da estrutura operacional, preparando a empresa para um novo ciclo de crescimento acelerado.",
+      "Entrada em produtos de Real Estate e expansão da estrutura operacional, preparando a empresa para atender demandas maiores e mais complexas.",
     badge: null,
   },
   {
     year: "2020",
     title: "Parceria com Conexão C6",
     description:
-      "Início da parceria estratégica com o Conexão C6, com foco na abertura de contas C6 Pay para MEIs em todo o Brasil. Um novo capítulo que abriria o caminho para o crescimento exponencial da MB Finance.",
+      "Início da parceria com o Conexão C6, com foco na abertura de contas C6 Pay para MEIs em todo o Brasil. Foi um novo capítulo para o crescimento da MB.",
     badge: null,
   },
   {
     year: "2021",
     title: "Consultoria Financeira e Consolidação no C6",
     description:
-      "Foco intenso em consultoria financeira e consolidação da posição da MB Finance dentro do ecossistema Conexão C6, estruturando processos, governança e equipe para suportar o crescimento acelerado que viria a seguir.",
+      "A MB fortalece processos, governança e equipe para sustentar o crescimento dentro do Conexão C6, com uma atuação mais próxima e consultiva.",
     badge: null,
     trophy: { src: "/images/premios/premio-2021.png", label: "AgRio 2021 - 1º Lugar" },
   },
@@ -55,7 +55,7 @@ const timeline = [
     year: "2022",
     title: "TOP 3 + Criação do Fomenta Mais",
     description:
-      "No final do ano, a MB Finance estava entre os TOP 3 do projeto Conexão C6, superando a marca de 600 contas abertas por mês. Neste mesmo ano, criamos o Fomenta Mais — ampliando nossa capacidade de atender e fomentar o ecossistema de negócios parceiros.",
+      "A MB chega ao TOP 3 do Conexão C6, superando 600 contas abertas por mês. No mesmo ano, nasce o Fomenta Mais, ampliando a capacidade de atender negócios parceiros.",
     badge: "TOP 3 · Fomenta Mais",
     trophy: { src: "/images/premios/premio-2022.png", label: "Destaque 2022 - Conexão C6" },
   },
@@ -63,7 +63,7 @@ const timeline = [
     year: "2023",
     title: "Melhor Parceiro Conexão C6",
     description:
-      "Primeiros a superar 1.500 contas/mês, chegando a 2.500 em julho. Investimos em governança e processos. Conquistamos o título de Melhor Parceiro do Conexão C6 — com lucro 3× maior que os demais parceiros do canal.",
+      "A MB supera 1.500 contas por mês e chega a 2.500 em julho. Com mais governança e processos, conquista o título de Melhor Parceiro do Conexão C6.",
     badge: "Melhor Parceiro",
     trophy: { src: "/images/premios/premio-2023.png", label: "Awards 2023 - Melhor Escritório" },
   },
@@ -79,14 +79,14 @@ const timeline = [
     year: "2025",
     title: "Novo Recorde 95.000 Contas PJ e R$ 100Mi com Mercado Pago",
     description:
-      "Superamos o próprio recorde: 95.000 contas PJ abertas em um único ano e conquistamos novamente o prêmio de melhor escritório do Conexão C6. Em parceria com o Mercado Pago, atingimos a marca de R$ 100 milhões em movimentação em tempo recorde — consolidando a MB Finance como referência nacional em soluções financeiras para empresas.",
+      "A MB supera o próprio recorde, com 95.000 contas PJ abertas em um único ano, e conquista novamente o prêmio de melhor escritório do Conexão C6. Em parceria com o Mercado Pago, alcança R$ 100 milhões em movimentação.",
     badge: "95.000 contas PJ · R$ 100Mi · Mercado Pago",
   },
   {
     year: "2026",
     title: "Expansão do Portfólio de Produtos",
     description:
-      "Iniciamos 2026 com o propósito de expandir nosso portfólio além do crédito. Lançamos soluções em Seguros e Consórcios, Soluções Tributárias e Telemedicina — consolidando a MB Finance como um Hub completo de soluções para empresas.",
+      "A MB amplia o portfólio para além do crédito, com seguros, consórcios, soluções tributárias e telemedicina. Mais frentes para atender melhor a rotina das empresas.",
     badge: "Seguros · Tributário · Telemedicina",
   },
 ];
@@ -121,8 +121,8 @@ function HorizontalTimeline() {
             Nossa trajetória
           </p>
           <h2 className="text-[#001e2e] text-4xl md:text-5xl font-black leading-tight">
-            Evolução e{" "}
-            <span className="text-[#0099dd]">Excelência</span>
+            Evolução com{" "}
+            <span className="text-[#0099dd]">consistência</span>
           </h2>
         </div>
 
@@ -220,8 +220,8 @@ export default function SobrePage() {
               Sobre a MB Finance
             </p>
             <h1 className="text-white text-4xl md:text-6xl font-light tracking-[-0.04em] leading-[1.02] mb-8 max-w-5xl">
-              <span className="block">Conectamos empresas às</span>
-              <span className="block text-[#0099dd] font-normal">melhores soluções financeiras</span>
+              <span className="block">Ajudamos empresas a negociar</span>
+              <span className="block text-[#0099dd] font-normal">com mais opções na mesa</span>
             </h1>
           </motion.div>
 
@@ -233,20 +233,17 @@ export default function SobrePage() {
           >
             <div>
               <p className="text-white/80 text-lg leading-relaxed mb-6">
-                A MB Finance tem como missão conectar empresas brasileiras às
-                soluções financeiras mais adequadas para cada etapa da sua
-                trajetória, com tecnologia, visão financeira e soluções inovadoras.
+                A MB Finance ajuda empresas brasileiras a encontrar alternativas
+                financeiras mais adequadas para cada etapa da sua trajetória,
+                combinando tecnologia, experiência de mercado e atendimento humano.
                 Nossa evolução para um{" "}
                 <strong className="text-white">Hub de Produtos Financeiros</strong>{" "}
-                reflete o compromisso de oferecer ao mercado uma atuação mais
-                ampla, consultiva e eficiente, reunindo em um só ecossistema
-                diferentes alternativas de crédito, serviços bancários e
-                soluções complementares.
+                reflete esse compromisso: reunir crédito, serviços bancários e
+                soluções complementares em uma estrutura que facilita a comparação.
               </p>
               <p className="text-white/60 text-base leading-relaxed">
-                Dessa forma, proporcionamos às empresas mais autonomia na tomada
-                de decisão, acesso a condições mais competitivas e um portfólio
-                diversificado, que vai além das opções limitadas de uma única
+                Assim, a empresa ganha mais autonomia para decidir, compara mais
+                opções e deixa de depender apenas das condições de uma única
                 instituição financeira.
               </p>
             </div>
@@ -303,12 +300,12 @@ export default function SobrePage() {
               Vamos conversar
             </p>
             <h2 className="text-white text-4xl md:text-6xl font-black leading-[1.08] mb-8 max-w-4xl mx-auto">
-              Pronto para descobrir como a MB Finance pode{" "}
-              <span className="text-[#0099dd]">impulsionar sua empresa</span>?
+              Pronto para ver quais caminhos fazem sentido para{" "}
+              <span className="text-[#0099dd]">a sua empresa</span>?
             </h2>
             <p className="text-white/70 text-base md:text-xl mb-10 md:mb-14 max-w-2xl mx-auto font-light leading-relaxed">
-              Fale com um consultor MB Finance e acesse soluções mais
-              inteligentes, competitivas e aderentes ao momento do seu negócio.
+              Conte o que sua empresa precisa. Um consultor MB Finance ajuda a
+              comparar alternativas e entender os próximos passos.
             </p>
             <Link
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}

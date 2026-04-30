@@ -38,7 +38,7 @@ export default function CTASection() {
           </p>
 
           <h2 className="text-3xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.05] tracking-tight">
-            Seu negócio merece as
+            Sua empresa merece comparar
             <br className="hidden sm:block" />
             {" "}<span
               style={{
@@ -47,12 +47,12 @@ export default function CTASection() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              melhores condições.
+              antes de decidir.
             </span>
           </h2>
 
           <p className="text-white/60 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-            Fale agora com um especialista e descubra quanto você está deixando de ganhar com o banco atual.
+            Fale com um especialista e entenda quais opções fazem sentido para o momento do seu negócio.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">

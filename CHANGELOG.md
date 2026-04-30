@@ -13,6 +13,15 @@
 
 ---
 
+## 2026-04-30 — Revisão editorial do site
+
+### Modificado
+- Textos da MB News, home principal, páginas comerciais e componentes React revisados para tom mais natural e direto.
+- Promessas genéricas e estruturas artificiais foram substituídas por copy mais clara, focada em comparação de opções, atendimento humano e decisão financeira.
+- CTAs e descrições de produtos ajustados para reduzir exageros comerciais.
+
+---
+
 ## 2026-04-14 — Refatoração estrutural + organização
 
 ### Adicionado

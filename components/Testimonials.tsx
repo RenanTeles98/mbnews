@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
 
 const testimonials = [
-  { name: "Carlos Mendes", role: "CEO — Distribuidora Mendes", text: "Estava pagando taxas absurdas no meu banco há anos. A MB Finance encontrou uma taxa 40% menor em menos de 24 horas.", initials: "CM" },
-  { name: "Fernanda Oliveira", role: "Proprietária — Clínica Estética Bella", text: "Precisava de capital de giro urgente para expandir. Processo 100% digital, recebi a aprovação no dia seguinte. Incrível!", initials: "FO" },
-  { name: "Ricardo Souza", role: "Sócio — Transportadora RS", text: "A antecipação de recebíveis resolveu meu problema de fluxo de caixa. Processo simples, rápido e com as melhores taxas.", initials: "RS" },
-  { name: "Juliana Costa", role: "Diretora — JC Serviços", text: "Já indiquei para mais de 10 empresários. O atendimento personalizado e a tecnologia fazem toda a diferença.", initials: "JC" },
-  { name: "Marcelo Lima", role: "Fundador — ML Tech", text: "Abri minha Conta PJ e contratei o capital de giro no mesmo dia. Tudo digital, sem burocracia. A melhor parceria financeira.", initials: "ML" },
-  { name: "Patrícia Barros", role: "MEI — Studio PB", text: "Como MEI, sempre tive dificuldade em conseguir crédito. A MB Finance entendeu meu negócio e conseguiu condições que eu jamais teria sozinha.", initials: "PB" },
+  { name: "Carlos Mendes", role: "CEO, Distribuidora Mendes", text: "Eu pagava caro no banco e não tinha parâmetro para comparar. A MB Finance trouxe outras opções e explicou com clareza o que fazia sentido para a empresa.", initials: "CM" },
+  { name: "Fernanda Oliveira", role: "Proprietária, Clínica Estética Bella", text: "Precisava de capital de giro para expandir sem apertar o caixa. O processo foi direto, com acompanhamento do começo ao fim.", initials: "FO" },
+  { name: "Ricardo Souza", role: "Sócio, Transportadora RS", text: "A antecipação de recebíveis ajudou a organizar o fluxo de caixa em um mês pesado. A diferença foi entender o custo antes de contratar.", initials: "RS" },
+  { name: "Juliana Costa", role: "Diretora, JC Serviços", text: "O atendimento foi claro e sem pressão. Recebemos opções, comparamos os cenários e decidimos com mais segurança.", initials: "JC" },
+  { name: "Marcelo Lima", role: "Fundador, ML Tech", text: "A conta PJ e o crédito vieram dentro do que a empresa precisava naquele momento. Foi simples porque alguém explicou o caminho.", initials: "ML" },
+  { name: "Patrícia Barros", role: "MEI, Studio PB", text: "Como MEI, eu tinha dificuldade para acessar crédito. A MB olhou minha realidade e mostrou alternativas que eu não conhecia.", initials: "PB" },
 ];
 
 export default function Testimonials() {
@@ -42,7 +42,7 @@ export default function Testimonials() {
             <span className="text-brand-secondary">confiam na MB Finance</span>
           </h2>
           <p className="max-w-xl mx-auto mt-6 text-gray-500 font-medium">
-            Veja o que os nossos clientes dizem sobre as soluções financeiras que transformam o dia a dia dos seus negócios.
+            Veja relatos de empresas que passaram a comparar melhor antes de contratar.
           </p>
         </motion.div>
 

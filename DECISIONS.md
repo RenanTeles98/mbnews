@@ -299,3 +299,30 @@ Aplicar o ajuste diretamente em `index.html`, onde a edição atual da MB News e
 
 - O conteúdo fica alinhado ao recorte mensal da edição.
 - A estrutura da página permanece estável para publicação rápida.
+
+---
+
+## ADR-015: Revisão editorial ampla sem refatoração estrutural
+
+**Data:** 2026-04-30
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+O dono do projeto pediu uma revisão dos textos do site para seguir o tom mais natural aplicado na MB News: menos estrutura artificial, menos travessões e menos promessas genéricas.
+
+### Decisão
+
+Aplicar a revisão diretamente nos textos visíveis de maior impacto, preservando a estrutura HTML/React atual. Páginas legais longas foram mantidas com tom jurídico. Artigos extensos do blog ficaram para uma rodada separada, por exigirem cuidado de SEO e consistência editorial.
+
+### Alternativas Consideradas
+
+- **Reescrever todo o conteúdo, incluindo artigos e termos legais:** maior abrangência, mas com risco de mexer em SEO, precisão jurídica e conteúdo longo sem validação.
+- **Revisão focada nas páginas e componentes de maior visibilidade (escolhida):** melhora rapidamente a percepção do site com menor risco.
+
+### Consequências
+
+- A linguagem do site fica mais direta, humana e consistente.
+- A estrutura técnica não muda, reduzindo risco de regressão visual.
+- Fica pendente uma revisão específica dos artigos longos e a normalização de encoding dos HTMLs legados.

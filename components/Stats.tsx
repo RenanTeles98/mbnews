@@ -8,7 +8,7 @@ const stats = [
   { value: 130000, suffix: "+", prefix: "", label: "Empresas atendidas", sub: "De MEI a médias empresas" },
   { value: 13, suffix: " anos", prefix: "", label: "No mercado", sub: "Fundada em 2013" },
   { value: 98, suffix: "%", prefix: "", label: "Satisfação", sub: "Índice de aprovação" },
-  { value: 24, suffix: "h", prefix: "", label: "Aprovação média", sub: "Processo 100% digital" },
+  { value: 24, suffix: "h", prefix: "", label: "Resposta média", sub: "Após análise inicial" },
 ];
 
 function Counter({ value, prefix, suffix, active }: { value: number; prefix: string; suffix: string; active: boolean }) {

@@ -12,7 +12,7 @@ const products = [
     icon: Building2,
     title: "Conta PJ",
     tag: "Zero tarifas",
-    description: "Conta empresarial completa com Pix ilimitado, cartão e gestão financeira integrada — sem taxas ocultas.",
+    description: "Conta empresarial com Pix, cartão e recursos para organizar melhor a rotina financeira.",
     features: ["Pix ilimitado", "Cartão empresarial", "Internet Banking 24/7", "Sem taxa de manutenção"],
     msg: "Olá! Tenho interesse em abrir uma Conta PJ na MB Finance.",
     accent: "#0099dd",
@@ -21,7 +21,7 @@ const products = [
     icon: CreditCard,
     title: "Máquina de Cartão",
     tag: "Melhores taxas",
-    description: "Aceite todas as bandeiras com as menores taxas. Receba suas vendas com antecipação e sem surpresas.",
+    description: "Compare taxas, receba com mais previsibilidade e acompanhe melhor seus recebíveis.",
     features: ["Todas as bandeiras", "Recebimento em D+1", "App de gestão", "Suporte 24h"],
     msg: "Olá! Quero conhecer as taxas da Máquina de Cartão da MB Finance.",
     accent: "#3b82f6",
@@ -30,7 +30,7 @@ const products = [
     icon: TrendingUp,
     title: "Capital de Giro",
     tag: "Aprovação em 24h",
-    description: "Crédito para impulsionar seu negócio. Nossa IA encontra a melhor oferta entre todos os nossos parceiros.",
+    description: "Crédito para caixa, estoque ou crescimento, com propostas comparadas entre parceiros.",
     features: ["A partir de 1,2% a.m.", "Aprovação em 24h", "Parcelas flexíveis", "Sem garantia real"],
     msg: "Olá! Preciso de Capital de Giro para minha empresa.",
     accent: "#10b981",
@@ -39,8 +39,8 @@ const products = [
     icon: Clock,
     title: "Antecipação de Recebíveis",
     tag: "Liquidez imediata",
-    description: "Transforme vendas a prazo em dinheiro imediato. Antecipe recebíveis de cartão, duplicatas e NFs.",
-    features: ["Antecipação de cartões", "Antecipação de duplicatas", "Dinheiro em conta hoje", "100% digital"],
+    description: "Antecipe vendas a prazo quando fizer sentido para o caixa e para o custo da operação.",
+    features: ["Antecipação de cartões", "Antecipação de duplicatas", "Dinheiro em conta hoje", "Processo online"],
     msg: "Olá! Quero antecipar meus recebíveis. Quais as condições?",
     accent: "#8b5cf6",
   },
@@ -69,11 +69,11 @@ export default function Products() {
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <h2 className="text-3xl sm:text-5xl font-black text-brand-primary leading-tight tracking-tight max-w-lg">
-              Tudo que sua empresa precisa,{" "}
-              <span className="text-brand-secondary">em um só lugar</span>
+              Produtos financeiros para a{" "}
+              <span className="text-brand-secondary">rotina da sua empresa</span>
             </h2>
             <p className="text-gray-500 text-sm max-w-xs leading-relaxed">
-              Produtos financeiros com as melhores condições do mercado, negociados especialmente para o seu negócio.
+              Compare opções antes de decidir. A proposta certa depende do momento da sua empresa.
             </p>
           </div>
         </motion.div>

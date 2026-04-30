@@ -227,7 +227,7 @@ export default function Hero() {
               fontWeight: 500,
             }}
           >
-            Conectamos sua empresa a diversos produtos financeiros em um único lugar, com as melhores condições entre os nossos parceiros.
+            Ajudamos sua empresa a comparar crédito, conta PJ, maquininha e outros produtos financeiros sem depender de um único banco.
           </motion.p>
 
           {/* CTA */}
@@ -260,7 +260,7 @@ export default function Hero() {
                 boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               }}
             >
-              Falar com Especialista
+              Falar com especialista
               <ArrowRight size={16} className="cta-arrow" />
             </a>
 
@@ -295,7 +295,7 @@ export default function Hero() {
                 e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)";
               }}
             >
-              Conhecer Nossos Produtos
+              Conhecer produtos
             </a>
           </motion.div>
 

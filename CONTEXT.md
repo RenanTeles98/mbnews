@@ -108,6 +108,44 @@ Estado atual: ajuste de conteúdo concluído e pronto para publicação no GitHu
 
 Próximo passo recomendado: validar visualmente a página MB News em produção após o deploy.
 
+---
+
+## Sessão 2026-04-30 — Revisão editorial ampla
+
+- Revisada a copy principal do site para um tom mais natural, direto e menos artificial.
+- Ajustados textos da MB News, home principal, páginas Sobre, Blog, Capital de Giro e MB Tributos.
+- Ajustados textos dos componentes React/Next de hero, produtos, processo, CTA, newsletter, números, depoimentos e páginas `/blog` e `/sobre`.
+- Removidas estruturas com travessão e promessas genéricas em textos visíveis, priorizando clareza, comparação de opções e atendimento humano.
+- Textos legais longos foram preservados para manter tom jurídico.
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `public/mb-finance-completo.html`
+- `public/pages/blog.html`
+- `public/pages/capital-de-giro.html`
+- `public/pages/mb-tributos.html`
+- `public/pages/sobre.html`
+- `app/blog/page.tsx`
+- `app/sobre/page.tsx`
+- `components/CTASection.tsx`
+- `components/Footer.tsx`
+- `components/Hero.tsx`
+- `components/HowItWorks.tsx`
+- `components/NewsletterSignup.tsx`
+- `components/PainSolution.tsx`
+- `components/Products.tsx`
+- `components/Stats.tsx`
+- `components/Testimonials.tsx`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-04-30.md`
+
+Estado atual: revisão editorial concluída nos textos de maior visibilidade. O arquivo `public/pages/mb-tributos.html` ainda usa encoding legado e foi alterado apenas pontualmente.
+
+Próximo passo recomendado: validar visualmente as páginas principais após o deploy e, em uma próxima sessão, normalizar encoding dos HTMLs legados.
+
 
 ---
 

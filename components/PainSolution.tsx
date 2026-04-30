@@ -14,11 +14,11 @@ const pains = [
 ];
 
 const solutions = [
-  "Acesso às melhores taxas de múltiplos parceiros",
-  "IA que maximiza suas chances de aprovação",
-  "Processo 100% digital, aprovação em até 24h",
-  "Comparativo automático entre instituições",
-  "Especialista dedicado ao seu negócio",
+  "Mais parceiros para comparar taxas e prazos",
+  "Análise mais clara do perfil da empresa",
+  "Processo digital com acompanhamento humano",
+  "Propostas lado a lado para facilitar a decisão",
+  "Especialista olhando para o seu objetivo",
 ];
 
 export default function PainSolution() {
@@ -43,10 +43,10 @@ export default function PainSolution() {
             O problema que resolvemos
           </p>
           <h2 className="text-3xl sm:text-5xl font-black text-brand-primary leading-tight tracking-tight">
-            Empresários limitados a{" "}
+            Empresa que depende de{" "}
             <span className="text-red-400">um único banco</span>
             <br className="hidden sm:block" />
-            {" "}perdem dinheiro todo mês
+            {" "}pode pagar mais caro
           </h2>
         </motion.div>
 
