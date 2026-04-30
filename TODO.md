@@ -32,6 +32,11 @@
 ### MB News
 - [x] Ajustar copy editorial da edição de abril para referência mensal e tom mais natural.
 - [x] Revisar textos visíveis da MB News para tom mais humano e menos artificial.
+- [x] Adicionar ponto final no título da seção de saúde da MB News.
+- [x] Corrigir pontuação solta nos cards de direitos de saúde da MB News.
+- [x] Corrigir quebra de linha do prazo "48h após a emissão" na seção de saúde.
+- [x] Melhorar o aproveitamento de largura do quadro "Novo plano de saúde".
+- [x] Atualizar rótulo do atendimento WhatsApp para "RH MB Finance".
 
 ### Copy do site
 - [x] Revisar copy da home principal e páginas comerciais com linguagem mais direta.

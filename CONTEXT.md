@@ -146,6 +146,26 @@ Estado atual: revisão editorial concluída nos textos de maior visibilidade. O 
 
 Próximo passo recomendado: validar visualmente as páginas principais após o deploy e, em uma próxima sessão, normalizar encoding dos HTMLs legados.
 
+---
+
+## Sessão 2026-04-30 — Ajuste pontual MB News
+
+- Adicionado ponto final no título "Saúde em dia: seus exames, seu direito." em `index.html`.
+- Ajustada a pontuação dos três cards de direitos de saúde para remover pontos e vírgula isolados no layout.
+- Ajustado o texto do passo 3 para manter "48h após a emissão" na mesma linha.
+- Ajustado o bloco "Novo plano de saúde" para usar melhor a largura do quadro, ampliando o texto e distribuindo os cards internos em grid.
+- Alterado o rótulo do atendimento do WhatsApp para "RH MB Finance".
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `docs/sessions/2026-04-30.md`
+
+Estado atual: ajustes de pontuação, quebra de linha, aproveitamento de espaço no quadro e rótulo do WhatsApp concluídos.
+
+Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
+
 
 ---
 
