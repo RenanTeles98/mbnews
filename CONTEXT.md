@@ -1,6 +1,6 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-04-22
+> Última atualização: 2026-04-30
 > Atualizado por: IA - Antigravity
 
 ---
@@ -86,6 +86,27 @@ Arquivos modificados nesta sessão:
 - [x] Limpeza total de scripts legados e duplicados no dashboard.
 
 Próximo passo recomendado: Ajustar o endpoint do Blog no Next.js para respeitar a data/hora e não exibir posts agendados (futuros). Outro ponto fundamental é iniciar a refatoração das páginas de política de privacidade e termos de uso para o padrão modular.
+
+---
+
+## Sessão 2026-04-30 — Ajuste de copy MB News
+
+- Atualizado o texto editorial da MB News em `index.html`.
+- Trocado "Que semana incrível!" por "Que mês incrível!".
+- Removidos travessões do bloco editorial e ajustada a escrita para um tom mais natural.
+- Alterado o rótulo "Destaque da semana" para "Destaque do mês".
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-04-30.md`
+
+Estado atual: ajuste de conteúdo concluído e pronto para publicação no GitHub/Vercel.
+
+Próximo passo recomendado: validar visualmente a página MB News em produção após o deploy.
 
 
 ---

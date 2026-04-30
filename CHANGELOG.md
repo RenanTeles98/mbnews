@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-04-30 — Ajuste de copy da MB News
+
+### Modificado
+- `index.html` — texto editorial atualizado de referência semanal para mensal.
+- `index.html` — travessões removidos do bloco editorial e tom do texto refinado.
+- `index.html` — rótulo "Destaque da semana" alterado para "Destaque do mês".
+
+---
+
 ## 2026-04-14 — Refatoração estrutural + organização
 
 ### Adicionado

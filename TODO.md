@@ -29,6 +29,9 @@
 
 ## 🟡 Importante (próximas sessões)
 
+### MB News
+- [x] Ajustar copy editorial da edição de abril para referência mensal e tom mais natural.
+
 ### Conteúdo real
 - [ ] Substituir depoimentos fictícios por depoimentos reais de clientes
 - [ ] Adicionar logos dos bancos parceiros na seção de parceiros (carrossel)

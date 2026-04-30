@@ -273,3 +273,29 @@ Implementar um padrão de **Single Page Application (SPA)** simplificado usando 
 ### Consequências
 - **Positivas:** Isolamento total entre funcionalidades; navegação limpa e previsível; facilidade para adicionar novas telas.
 - **Negativas:** Requer cuidado extra com o balanço de tags `div` durante refatorações.
+
+---
+
+## ADR-014: Ajuste pontual de copy da MB News no HTML atual
+
+**Data:** 2026-04-30
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+O texto editorial da MB News precisava trocar a referência de semana para mês e remover uma estrutura com travessões que deixava o texto com aparência artificial.
+
+### Decisão
+
+Aplicar o ajuste diretamente em `index.html`, onde a edição atual da MB News está publicada, sem alterar estrutura, estilos ou componentes.
+
+### Alternativas Consideradas
+
+- **Refatorar a MB News antes do ajuste:** esforço desproporcional para uma alteração de conteúdo.
+- **Ajuste direto no HTML atual (escolhida):** resolve a demanda imediata com baixo risco.
+
+### Consequências
+
+- O conteúdo fica alinhado ao recorte mensal da edição.
+- A estrutura da página permanece estável para publicação rápida.
