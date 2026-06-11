@@ -503,8 +503,12 @@
       box-shadow: 0 8px 28px rgba(0,0,0,.06);
     }
     .totalpass-rank-card:first-child {
-      border-color: rgba(245,166,35,.36);
-      box-shadow: 0 12px 32px rgba(245,166,35,.16);
+      position: relative;
+      align-items: flex-start;
+      padding: 24px;
+      border-color: rgba(245,166,35,.52);
+      background: linear-gradient(135deg, #fff 0%, #fff8ec 100%);
+      box-shadow: 0 18px 44px rgba(245,166,35,.2);
     }
     .totalpass-avatar {
       width: 62px;
@@ -518,7 +522,28 @@
       background: var(--gray-100);
     }
     .totalpass-rank-card:first-child .totalpass-avatar {
+      width: 82px;
+      height: 82px;
       box-shadow: 0 0 0 2px rgba(245,166,35,.45);
+    }
+    .totalpass-rank-card:first-child .totalpass-rank-info strong {
+      color: #9a4b00;
+      font-size: 1.25rem;
+    }
+    .totalpass-champion-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245,166,35,.16);
+      color: #9a4b00;
+      border: 1px solid rgba(245,166,35,.28);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: .66rem;
+      font-weight: 900;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
     .totalpass-rank-info {
       min-width: 0;
@@ -1317,6 +1342,7 @@
                 <span class="totalpass-position">1º</span>
                 <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
                 <div class="totalpass-rank-info">
+                  <span class="totalpass-champion-badge"><i data-lucide="crown" style="width:12px;height:12px"></i> Grande campeão</span>
                   <strong>Antonio Costa</strong>
                   <span>22 check-ins</span>
                 </div>

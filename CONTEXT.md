@@ -177,6 +177,7 @@ Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
 - Ajustado o bloco de promoção para exibir a foto da Maria Eduarda ao lado do texto, com enquadramento mais vertical para mostrar mais o corpo.
 - Removida a caixa flutuante do texto da promoção, deixando a copy alinhada diretamente com a imagem.
 - Refeito o ranking Total Pass com fotos circulares de Antonio Costa, Julia Goulart e Raphael Machado ao lado dos nomes.
+- Card do Antonio Costa destacado como grande campeão do ranking Total Pass.
 - Removido o bloco de aniversariantes da edição de maio.
 - A porcentagem da trimestral ficou como `--%` com aviso de atualização, pois o número oficial não foi informado.
 

@@ -44,6 +44,7 @@
 - [x] Ajustar layout da promoção da Maria Eduarda com texto ao lado da foto e enquadramento mais aberto.
 - [x] Remover caixa flutuante do texto da promoção e alinhar copy com a imagem.
 - [x] Refazer ranking Total Pass com fotos circulares ao lado dos nomes.
+- [x] Destacar Antonio Costa como grande campeão do ranking Total Pass.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site
