@@ -175,6 +175,7 @@ Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
 - Incluídas as pautas: ranking Total Pass top 3, benefícios da atividade física, promoção da Maria Eduarda, novo site da MB Finance, RH no WhatsApp, canal de denúncia via bot, NR1, benefícios da terapia, absenteísmo/pontualidade e acompanhamento da trimestral.
 - Inserida a foto oficial da Maria Eduarda em `public/images/maria-eduarda-lider-qualidade.jpeg`.
 - Ajustado o bloco de promoção para exibir a foto da Maria Eduarda ao lado do texto, com enquadramento mais vertical para mostrar mais o corpo.
+- Removida a caixa flutuante do texto da promoção, deixando a copy alinhada diretamente com a imagem.
 - Removido o bloco de aniversariantes da edição de maio.
 - A porcentagem da trimestral ficou como `--%` com aviso de atualização, pois o número oficial não foi informado.
 

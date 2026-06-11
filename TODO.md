@@ -42,6 +42,7 @@
 - [x] Inserir foto oficial da Maria Eduarda na edição de maio da MB News.
 - [x] Corrigir cargo da Maria Eduarda: de Analista de Negócios para Líder de Qualidade.
 - [x] Ajustar layout da promoção da Maria Eduarda com texto ao lado da foto e enquadramento mais aberto.
+- [x] Remover caixa flutuante do texto da promoção e alinhar copy com a imagem.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site

@@ -354,5 +354,6 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - A edição fica pronta para validação com todas as pautas estruturadas.
 - A promoção da Maria Eduarda usa a foto oficial e o cargo correto: de Analista de Negócios para Líder de Qualidade.
 - O bloco de promoção usa layout lado a lado no desktop e empilhado no mobile para valorizar a foto e manter leitura confortável.
+- O texto da promoção fica fora de card/caixa para alinhar melhor com a imagem e evitar sensação de elemento flutuante.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.

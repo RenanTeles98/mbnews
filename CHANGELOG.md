@@ -12,6 +12,7 @@
 - Foto oficial da Maria Eduarda adicionada em `public/images/maria-eduarda-lider-qualidade.jpeg`.
 - Cargo da Maria Eduarda corrigido: de Analista de Negócios para Líder de Qualidade.
 - Layout da promoção da Maria Eduarda ajustado com texto ao lado da imagem e enquadramento mais aberto da foto.
+- Texto da promoção removido da caixa flutuante e alinhado diretamente com a imagem.
 - Removido o bloco de aniversariantes da edição de maio.
 - Placeholder mantido apenas para a porcentagem da trimestral ainda não informada.
 
