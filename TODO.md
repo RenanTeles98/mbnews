@@ -38,7 +38,7 @@
 - [x] Melhorar o aproveitamento de largura do quadro "Novo plano de saúde".
 - [x] Atualizar rótulo do atendimento WhatsApp para "RH MB Finance".
 - [x] Atualizar edição de maio da MB News com ranking Total Pass, RH no WhatsApp, canal de denúncia, NR1, terapia, absenteísmo, novo site e promoção da Maria Eduarda.
-- [ ] Inserir foto oficial dos aniversariantes na edição de maio da MB News.
+- [x] Remover bloco de aniversariantes da edição de maio da MB News.
 - [x] Inserir foto oficial da Maria Eduarda na edição de maio da MB News.
 - [x] Corrigir cargo da Maria Eduarda: de Analista de Negócios para Líder de Qualidade.
 - [x] Ajustar layout da promoção da Maria Eduarda com texto ao lado da foto e enquadramento mais aberto.
