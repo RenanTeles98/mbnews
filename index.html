@@ -275,6 +275,72 @@
 
     /* ─── PROMOTIONS ──────────────────────────────────── */
     #promocoes { background: var(--white); }
+    .promo-feature {
+      display: grid;
+      grid-template-columns: minmax(320px, .95fr) minmax(320px, 1fr);
+      gap: 32px;
+      align-items: stretch;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .promo-feature-photo {
+      border-radius: 24px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 40px rgba(0,0,0,.12);
+      background: #003956;
+      min-height: 680px;
+    }
+    .promo-feature-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 60%;
+      display: block;
+    }
+    .promo-feature-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11,26,46,.78) 0%, rgba(11,26,46,.08) 48%, transparent 72%);
+      pointer-events: none;
+    }
+    .promo-feature-caption {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 28px;
+      z-index: 1;
+    }
+    .promo-feature-caption span {
+      display: inline-block;
+      background: rgba(0,153,221,.2);
+      border: 1px solid rgba(0,153,221,.4);
+      color: #0099dd;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 99px;
+      margin-bottom: 10px;
+    }
+    .promo-feature-caption p {
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -.5px;
+    }
+    .promo-feature-card {
+      align-self: center;
+    }
+    .promo-feature-card .promo-card {
+      cursor: default;
+    }
+    .promo-feature-card .promo-card:hover {
+      transform: none;
+    }
     .promo-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 28px; margin-top: 48px;
@@ -975,6 +1041,8 @@
       .evento-layout  { grid-template-columns: 1fr; }
       .editorial-card { padding: 28px 24px; }
       .hero-cards { flex-direction: column; }
+      .promo-feature { grid-template-columns: 1fr; }
+      .promo-feature-photo { min-height: 620px; }
     }
   </style>
 </head>
@@ -1119,50 +1187,49 @@
       <h2 class="section-title">Duda, parabéns pela promoção</h2>
       <p class="section-desc">De Analista de Negócios para Líder de Qualidade: uma nova etapa construída com dedicação, evolução e entrega.</p>
     </div>
-    <div style="margin-bottom:40px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 8px 40px rgba(0,0,0,.12);background:#003956;">
-      <img src="public/images/maria-eduarda-lider-qualidade.jpeg"
-        alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade"
-        style="width:100%;height:620px;object-fit:cover;object-position:50% 36%;display:block;" />
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(11,26,46,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:32px;pointer-events:none;">
-        <div>
-          <span style="display:inline-block;background:rgba(0,153,221,.2);border:1px solid rgba(0,153,221,.4);color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:99px;margin-bottom:10px;">Promoção do mês</span>
-          <p style="color:white;font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.5px;">Maria Eduarda · Líder de Qualidade</p>
+    <div class="promo-feature fade-up">
+      <div class="promo-feature-photo">
+        <img src="public/images/maria-eduarda-lider-qualidade.jpeg"
+          alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade" />
+        <div class="promo-feature-caption">
+          <span>Promoção do mês</span>
+          <p>Maria Eduarda · Líder de Qualidade</p>
+        </div>
+      </div>
+
+      <div class="promo-feature-card">
+        <div class="promo-card">
+          <div class="promo-card-body">
+            <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Promoção</span>
+            <h3>Maria Eduarda</h3>
+            <div class="role-arrow">
+              <span class="role-from">Analista de Negócios</span>
+              <span style="color:#94A3B8">→</span>
+              <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);">Líder de Qualidade</span>
+            </div>
+            <p>
+              Maria Eduarda, nossa Duda, foi promovida de Analista de Negócios para Líder de Qualidade. Esse reconhecimento mostra o valor de aprender, se desenvolver e entregar com responsabilidade no dia a dia. Parabéns, Duda. Que essa nova etapa venha com ainda mais crescimento.
+            </p>
+            <div class="promo-stats">
+              <div class="promo-stat">
+                <strong><i data-lucide="check-circle-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+                <span>Promovida</span>
+              </div>
+              <div class="promo-stat">
+                <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+                <span>Qualidade</span>
+              </div>
+              <div class="promo-stat">
+                <strong><i data-lucide="sparkles" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+                <span>Nova fase</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="promo-grid">
-
-      <!-- Card Maria Eduarda -->
-      <div class="promo-card fade-up" style="transition-delay:.1s">
-        <div class="promo-card-body">
-          <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Promoção</span>
-          <h3>Maria Eduarda</h3>
-          <div class="role-arrow">
-            <span class="role-from">Analista de Negócios</span>
-            <span style="color:#94A3B8">→</span>
-            <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);">Líder de Qualidade</span>
-          </div>
-          <p>
-            Maria Eduarda, nossa Duda, foi promovida de Analista de Negócios para Líder de Qualidade. Esse reconhecimento mostra o valor de aprender, se desenvolver e entregar com responsabilidade no dia a dia. Parabéns, Duda. Que essa nova etapa venha com ainda mais crescimento.
-          </p>
-          <div class="promo-stats">
-            <div class="promo-stat">
-              <strong><i data-lucide="check-circle-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-              <span>Promovida</span>
-            </div>
-            <div class="promo-stat">
-              <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-              <span>Qualidade</span>
-            </div>
-            <div class="promo-stat">
-              <strong><i data-lucide="sparkles" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-              <span>Nova fase</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Card Aniversariantes -->
       <div class="promo-card fade-up" style="transition-delay:.2s">
         <div class="promo-card-body">

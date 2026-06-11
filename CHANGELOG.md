@@ -11,6 +11,7 @@
 - Incluídos ranking Total Pass, promoção da Maria Eduarda, aniversariantes, novo site da MB Finance, RH no WhatsApp, canal de denúncia, NR1, terapia, absenteísmo e quadro da trimestral.
 - Foto oficial da Maria Eduarda adicionada em `public/images/maria-eduarda-lider-qualidade.jpeg`.
 - Cargo da Maria Eduarda corrigido: de Analista de Negócios para Líder de Qualidade.
+- Layout da promoção da Maria Eduarda ajustado com texto ao lado da imagem e enquadramento mais aberto da foto.
 - Placeholders mantidos para foto dos aniversariantes e porcentagem da trimestral ainda não informadas.
 
 ---
