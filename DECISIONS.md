@@ -337,11 +337,11 @@ Aplicar a revisão diretamente nos textos visíveis de maior impacto, preservand
 
 ### Contexto
 
-A edição de maio da MB News precisava incluir novas pautas internas, mas algumas informações vieram incompletas: fotos oficiais de aniversariantes/promovidos e porcentagem alcançada da trimestral.
+A edição de maio da MB News precisava incluir novas pautas internas, mas algumas informações vieram incompletas: fotos oficiais e porcentagem alcançada da trimestral.
 
 ### Decisão
 
-Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders explícitos para os itens pendentes, sem reutilizar foto antiga como se fosse atual e sem inventar a porcentagem da trimestral.
+Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders explícitos para os itens pendentes, sem reutilizar foto antiga como se fosse atual e sem inventar a porcentagem da trimestral. Após envio da foto da Maria Eduarda, mover o arquivo para `public/images/` e referenciar a imagem pública no HTML.
 
 ### Alternativas Consideradas
 
@@ -352,4 +352,5 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 ### Consequências
 
 - A edição fica pronta para validação com todas as pautas estruturadas.
-- Fotos e porcentagem oficial ainda precisam ser fornecidas para fechar a publicação final.
+- A promoção da Maria Eduarda usa a foto oficial e o cargo correto: de Analista de Negócios para Líder de Qualidade.
+- A foto dos aniversariantes e a porcentagem oficial ainda precisam ser fornecidas para fechar a publicação final.

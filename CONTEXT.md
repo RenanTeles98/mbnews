@@ -172,22 +172,23 @@ Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
 
 - Atualizada a MB News em `index.html` para a edição #002 de Maio de 2026.
 - Atualizados título, navegação, hero, editorial, rodapé e navegação flutuante.
-- Incluídas as pautas: ranking Total Pass top 3, benefícios da atividade física, aniversariantes, efetivação da Maria Eduarda, novo site da MB Finance, RH no WhatsApp, canal de denúncia via bot, NR1, benefícios da terapia, absenteísmo/pontualidade e acompanhamento da trimestral.
-- A foto das pessoas promovidas/efetivadas foi deixada como placeholder visual neutro porque não havia arquivo novo no repositório.
+- Incluídas as pautas: ranking Total Pass top 3, benefícios da atividade física, aniversariantes, promoção da Maria Eduarda, novo site da MB Finance, RH no WhatsApp, canal de denúncia via bot, NR1, benefícios da terapia, absenteísmo/pontualidade e acompanhamento da trimestral.
+- Inserida a foto oficial da Maria Eduarda em `public/images/maria-eduarda-lider-qualidade.jpeg`.
 - A foto dos aniversariantes foi deixada como placeholder textual porque não havia arquivo novo no repositório.
 - A porcentagem da trimestral ficou como `--%` com aviso de atualização, pois o número oficial não foi informado.
 
 Arquivos modificados nesta sessão:
 - `index.html`
+- `public/images/maria-eduarda-lider-qualidade.jpeg`
 - `CONTEXT.md`
 - `TODO.md`
 - `DECISIONS.md`
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-11.md`
 
-Estado atual: conteúdo da edição de maio aplicado e pronto para validação visual. Dados pendentes dependem do envio das fotos oficiais e da porcentagem da trimestral.
+Estado atual: conteúdo da edição de maio aplicado e pronto para validação visual. A promoção da Maria Eduarda já usa foto oficial e cargo correto: de Analista de Negócios para Líder de Qualidade. Dados pendentes dependem do envio da foto dos aniversariantes e da porcentagem da trimestral.
 
-Próximo passo recomendado: informar a porcentagem oficial da trimestral e enviar as fotos de aniversariantes/promovidos para substituir os placeholders.
+Próximo passo recomendado: informar a porcentagem oficial da trimestral e enviar a foto dos aniversariantes para substituir o placeholder.
 
 
 ---
