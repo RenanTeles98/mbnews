@@ -37,6 +37,10 @@
 - [x] Corrigir quebra de linha do prazo "48h após a emissão" na seção de saúde.
 - [x] Melhorar o aproveitamento de largura do quadro "Novo plano de saúde".
 - [x] Atualizar rótulo do atendimento WhatsApp para "RH MB Finance".
+- [x] Atualizar edição de maio da MB News com ranking Total Pass, RH no WhatsApp, canal de denúncia, NR1, terapia, absenteísmo, novo site e efetivação da Maria Eduarda.
+- [ ] Inserir foto oficial dos aniversariantes na edição de maio da MB News.
+- [ ] Inserir foto oficial das pessoas promovidas/efetivadas na edição de maio da MB News.
+- [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site
 - [x] Revisar copy da home principal e páginas comerciais com linguagem mais direta.

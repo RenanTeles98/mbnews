@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-11 — Atualização MB News Maio
+
+### Modificado
+- `index.html` — MB News atualizada para a edição #002 de Maio de 2026.
+- Incluídos ranking Total Pass, efetivação da Maria Eduarda, aniversariantes, novo site da MB Finance, RH no WhatsApp, canal de denúncia, NR1, terapia, absenteísmo e quadro da trimestral.
+- Placeholders adicionados para fotos oficiais e porcentagem da trimestral ainda não informadas.
+
+---
+
 ## 2026-04-30 — Ajuste de copy da MB News
 
 ### Modificado

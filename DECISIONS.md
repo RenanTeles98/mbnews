@@ -326,3 +326,30 @@ Aplicar a revisão diretamente nos textos visíveis de maior impacto, preservand
 - A linguagem do site fica mais direta, humana e consistente.
 - A estrutura técnica não muda, reduzindo risco de regressão visual.
 - Fica pendente uma revisão específica dos artigos longos e a normalização de encoding dos HTMLs legados.
+
+---
+
+## ADR-016: Atualização editorial da MB News de maio sem inventar dados pendentes
+
+**Data:** 2026-06-11
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+A edição de maio da MB News precisava incluir novas pautas internas, mas algumas informações vieram incompletas: fotos oficiais de aniversariantes/promovidos e porcentagem alcançada da trimestral.
+
+### Decisão
+
+Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders explícitos para os itens pendentes, sem reutilizar foto antiga como se fosse atual e sem inventar a porcentagem da trimestral.
+
+### Alternativas Consideradas
+
+- **Inventar ou estimar a porcentagem:** rejeitado por risco de publicar dado interno incorreto.
+- **Reutilizar foto antiga do bloco de promoções:** rejeitado por risco de confundir a edição atual.
+- **Publicar placeholders claros (escolhida):** permite avançar a edição e mantém pendências visíveis para troca posterior.
+
+### Consequências
+
+- A edição fica pronta para validação com todas as pautas estruturadas.
+- Fotos e porcentagem oficial ainda precisam ser fornecidas para fechar a publicação final.
