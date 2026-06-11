@@ -43,6 +43,7 @@
 - [x] Corrigir cargo da Maria Eduarda: de Analista de Negócios para Líder de Qualidade.
 - [x] Ajustar layout da promoção da Maria Eduarda com texto ao lado da foto e enquadramento mais aberto.
 - [x] Remover caixa flutuante do texto da promoção e alinhar copy com a imagem.
+- [x] Refazer ranking Total Pass com fotos circulares ao lado dos nomes.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site

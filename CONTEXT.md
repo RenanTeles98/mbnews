@@ -176,12 +176,16 @@ Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
 - Inserida a foto oficial da Maria Eduarda em `public/images/maria-eduarda-lider-qualidade.jpeg`.
 - Ajustado o bloco de promoção para exibir a foto da Maria Eduarda ao lado do texto, com enquadramento mais vertical para mostrar mais o corpo.
 - Removida a caixa flutuante do texto da promoção, deixando a copy alinhada diretamente com a imagem.
+- Refeito o ranking Total Pass com fotos circulares de Antonio Costa, Julia Goulart e Raphael Machado ao lado dos nomes.
 - Removido o bloco de aniversariantes da edição de maio.
 - A porcentagem da trimestral ficou como `--%` com aviso de atualização, pois o número oficial não foi informado.
 
 Arquivos modificados nesta sessão:
 - `index.html`
 - `public/images/maria-eduarda-lider-qualidade.jpeg`
+- `public/images/total-pass-antonio-costa.jpg`
+- `public/images/total-pass-julia-goulart.png`
+- `public/images/total-pass-raphael-machado.jpg`
 - `CONTEXT.md`
 - `TODO.md`
 - `DECISIONS.md`

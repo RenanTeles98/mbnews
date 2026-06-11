@@ -487,6 +487,77 @@
       align-items: start;
       margin-top: 28px;
     }
+    .totalpass-ranking {
+      display: grid;
+      gap: 14px;
+      min-width: 320px;
+    }
+    .totalpass-rank-card {
+      background: #fff;
+      border: 1px solid rgba(0,153,221,.16);
+      border-radius: 18px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.06);
+    }
+    .totalpass-rank-card:first-child {
+      border-color: rgba(245,166,35,.36);
+      box-shadow: 0 12px 32px rgba(245,166,35,.16);
+    }
+    .totalpass-avatar {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 2px rgba(0,153,221,.18);
+      flex-shrink: 0;
+      background: var(--gray-100);
+    }
+    .totalpass-rank-card:first-child .totalpass-avatar {
+      box-shadow: 0 0 0 2px rgba(245,166,35,.45);
+    }
+    .totalpass-rank-info {
+      min-width: 0;
+      flex: 1;
+    }
+    .totalpass-rank-info strong {
+      display: block;
+      color: var(--gray-800);
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -.2px;
+      line-height: 1.2;
+    }
+    .totalpass-rank-info span {
+      color: var(--gray-600);
+      font-size: .88rem;
+    }
+    .totalpass-position {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fef3e2;
+      color: #FF6B35;
+      font-size: .8rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .totalpass-rank-card:nth-child(2) .totalpass-position {
+      background: #e8f4ff;
+      color: #005580;
+    }
+    .totalpass-rank-card:nth-child(3) .totalpass-position {
+      background: #e8fff0;
+      color: #059669;
+    }
     .pascoa-video-wrap .pascoa-gallery-title,
     .pascoa-gallery-wrap .pascoa-gallery-title { margin-top: 0; }
     .pascoa-video-container {
@@ -1241,18 +1312,30 @@
         <div class="pascoa-media-row">
           <div class="pascoa-video-wrap">
             <p class="pascoa-gallery-title">Pódio do mês</p>
-            <div style="display:grid;gap:12px;min-width:260px">
-              <div style="background:#fff;border:1px solid rgba(245,166,35,.25);border-radius:16px;padding:18px 20px;box-shadow:0 8px 24px rgba(245,166,35,.12)">
-                <strong style="display:block;color:#FF6B35;font-size:1.4rem;font-family:'Inter',sans-serif">1º Antonio</strong>
-                <span style="color:#475569;font-size:.9rem">22 check-ins</span>
+            <div class="totalpass-ranking">
+              <div class="totalpass-rank-card">
+                <span class="totalpass-position">1º</span>
+                <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
+                <div class="totalpass-rank-info">
+                  <strong>Antonio Costa</strong>
+                  <span>22 check-ins</span>
+                </div>
               </div>
-              <div style="background:#fff;border:1px solid rgba(0,153,221,.2);border-radius:16px;padding:18px 20px">
-                <strong style="display:block;color:#005580;font-size:1.2rem;font-family:'Inter',sans-serif">2º Julia Lopes</strong>
-                <span style="color:#475569;font-size:.9rem">20 check-ins</span>
+              <div class="totalpass-rank-card">
+                <span class="totalpass-position">2º</span>
+                <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
+                <div class="totalpass-rank-info">
+                  <strong>Julia Goulart</strong>
+                  <span>20 check-ins</span>
+                </div>
               </div>
-              <div style="background:#fff;border:1px solid rgba(5,150,105,.2);border-radius:16px;padding:18px 20px">
-                <strong style="display:block;color:#059669;font-size:1.2rem;font-family:'Inter',sans-serif">3º Raphael Machado</strong>
-                <span style="color:#475569;font-size:.9rem">17 check-ins</span>
+              <div class="totalpass-rank-card">
+                <span class="totalpass-position">3º</span>
+                <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
+                <div class="totalpass-rank-info">
+                  <strong>Raphael Machado</strong>
+                  <span>17 check-ins</span>
+                </div>
               </div>
             </div>
           </div>
@@ -1590,7 +1673,7 @@
       <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fef3e2,#fff8f0);border-color:#fde68a;transition-delay:.1s">
         <span class="stat-emoji"><i data-lucide="gift" style="color:#F5A623"></i></span>
         <span class="stat-number" style="color:var(--gold)">20</span>
-        <span class="stat-label">Check-ins da<br>Julia Lopes</span>
+        <span class="stat-label">Check-ins da<br>Julia Goulart</span>
       </div>
       <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0fff4,#e8fff0);border-color:#a7f3d0;transition-delay:.15s">
         <span class="stat-emoji"><i data-lucide="target" style="color:#059669"></i></span>
