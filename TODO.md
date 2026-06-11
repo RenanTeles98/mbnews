@@ -45,6 +45,7 @@
 - [x] Remover caixa flutuante do texto da promoção e alinhar copy com a imagem.
 - [x] Refazer ranking Total Pass com fotos circulares ao lado dos nomes.
 - [x] Destacar Antonio Costa como grande campeão do ranking Total Pass.
+- [x] Ampliar pódio do Total Pass e aumentar fotos/cards para melhorar destaque e nitidez percebida.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site

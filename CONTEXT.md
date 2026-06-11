@@ -178,6 +178,7 @@ Próximo passo recomendado: publicar o ajuste se desejar refletir em produção.
 - Removida a caixa flutuante do texto da promoção, deixando a copy alinhada diretamente com a imagem.
 - Refeito o ranking Total Pass com fotos circulares de Antonio Costa, Julia Goulart e Raphael Machado ao lado dos nomes.
 - Card do Antonio Costa destacado como grande campeão do ranking Total Pass.
+- Pódio do Total Pass ampliado, com cards, fotos e tipografia maiores para reduzir a sensação de imagem embaçada e reforçar o destaque do campeão.
 - Removido o bloco de aniversariantes da edição de maio.
 - A porcentagem da trimestral ficou como `--%` com aviso de atualização, pois o número oficial não foi informado.
 

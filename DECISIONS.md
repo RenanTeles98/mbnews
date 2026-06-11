@@ -357,5 +357,6 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - O texto da promoção fica fora de card/caixa para alinhar melhor com a imagem e evitar sensação de elemento flutuante.
 - Fotos do ranking Total Pass são copiadas para `public/images/` e exibidas como avatares circulares para seguir a regra de imagens públicas do projeto.
 - O primeiro colocado do Total Pass recebe tratamento visual de destaque para reforçar o reconhecimento do campeão.
+- O pódio do Total Pass usa avatares e cards maiores para melhorar leitura e reduzir perda visual percebida em fotos pequenas.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.

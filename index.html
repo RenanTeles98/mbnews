@@ -489,46 +489,52 @@
     }
     .totalpass-ranking {
       display: grid;
-      gap: 14px;
-      min-width: 320px;
+      gap: 18px;
+      min-width: 440px;
     }
     .totalpass-rank-card {
       background: #fff;
       border: 1px solid rgba(0,153,221,.16);
-      border-radius: 18px;
-      padding: 16px 18px;
+      border-radius: 22px;
+      padding: 20px 24px;
       display: flex;
       align-items: center;
-      gap: 14px;
-      box-shadow: 0 8px 28px rgba(0,0,0,.06);
+      gap: 18px;
+      box-shadow: 0 12px 34px rgba(0,0,0,.07);
     }
     .totalpass-rank-card:first-child {
       position: relative;
-      align-items: flex-start;
-      padding: 24px;
-      border-color: rgba(245,166,35,.52);
-      background: linear-gradient(135deg, #fff 0%, #fff8ec 100%);
-      box-shadow: 0 18px 44px rgba(245,166,35,.2);
+      align-items: center;
+      padding: 28px 30px;
+      border: 1.5px solid rgba(245,166,35,.62);
+      background: linear-gradient(135deg, #fff 0%, #fff7e8 64%, #fff1d7 100%);
+      box-shadow: 0 24px 60px rgba(245,166,35,.24);
+      gap: 22px;
     }
     .totalpass-avatar {
-      width: 62px;
-      height: 62px;
+      width: 78px;
+      height: 78px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center;
-      border: 3px solid #fff;
-      box-shadow: 0 0 0 2px rgba(0,153,221,.18);
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 3px rgba(0,153,221,.18);
       flex-shrink: 0;
       background: var(--gray-100);
     }
     .totalpass-rank-card:first-child .totalpass-avatar {
-      width: 82px;
-      height: 82px;
-      box-shadow: 0 0 0 2px rgba(245,166,35,.45);
+      width: 122px;
+      height: 122px;
+      box-shadow: 0 0 0 4px rgba(245,166,35,.48), 0 16px 34px rgba(154,75,0,.14);
     }
     .totalpass-rank-card:first-child .totalpass-rank-info strong {
       color: #9a4b00;
-      font-size: 1.25rem;
+      font-size: 1.72rem;
+      letter-spacing: -.6px;
+    }
+    .totalpass-rank-card:first-child .totalpass-rank-info span:not(.totalpass-champion-badge) {
+      font-size: 1.05rem;
+      color: #6b3a08;
     }
     .totalpass-champion-badge {
       display: inline-flex;
@@ -538,12 +544,12 @@
       color: #9a4b00;
       border: 1px solid rgba(245,166,35,.28);
       border-radius: 999px;
-      padding: 4px 10px;
-      font-size: .66rem;
+      padding: 6px 13px;
+      font-size: .72rem;
       font-weight: 900;
       letter-spacing: .8px;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .totalpass-rank-info {
       min-width: 0;
@@ -553,27 +559,35 @@
       display: block;
       color: var(--gray-800);
       font-family: 'Inter', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.28rem;
       font-weight: 800;
       letter-spacing: -.2px;
       line-height: 1.2;
     }
     .totalpass-rank-info span {
       color: var(--gray-600);
-      font-size: .88rem;
+      font-size: .98rem;
     }
     .totalpass-position {
-      width: 34px;
-      height: 34px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       background: #fef3e2;
       color: #FF6B35;
-      font-size: .8rem;
+      font-size: .96rem;
       font-weight: 900;
       flex-shrink: 0;
+    }
+    .totalpass-rank-card:first-child .totalpass-position {
+      width: 52px;
+      height: 52px;
+      background: #fff0d1;
+      color: #FF6B35;
+      font-size: 1.06rem;
+      box-shadow: inset 0 0 0 1px rgba(245,166,35,.24);
     }
     .totalpass-rank-card:nth-child(2) .totalpass-position {
       background: #e8f4ff;
@@ -1130,6 +1144,19 @@
       .promo-feature { grid-template-columns: 1fr; }
       .promo-feature-photo { min-height: 620px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
+      .totalpass-ranking { min-width: 0; }
+      .totalpass-rank-card,
+      .totalpass-rank-card:first-child {
+        padding: 18px;
+        gap: 14px;
+      }
+      .totalpass-rank-card:first-child .totalpass-avatar {
+        width: 94px;
+        height: 94px;
+      }
+      .totalpass-rank-card:first-child .totalpass-rank-info strong {
+        font-size: 1.32rem;
+      }
     }
   </style>
 </head>
