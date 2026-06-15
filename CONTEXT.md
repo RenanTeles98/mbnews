@@ -206,6 +206,7 @@ Próximo passo recomendado: informar a porcentagem oficial da trimestral para su
 - Reduzida a largura máxima da imagem para evitar que ela ocupe altura excessiva no bloco de promoção.
 - Mantido o layout lado a lado com o texto e comportamento responsivo no mobile.
 - Atualizados os textos visíveis da promoção para usar `Maria Eduarda`, sem o sobrenome Mendes.
+- Reescrita a seção da promoção para reduzir repetição de `Maria Eduarda` e `Líder de Qualidade`, usando o título `Nova Líder de Qualidade`.
 
 Arquivos modificados nesta sessão:
 - `index.html`
@@ -215,7 +216,7 @@ Arquivos modificados nesta sessão:
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-15.md`
 
-Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, mantendo alinhamento com o texto.
+Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido e menor repetição de nome/cargo.
 
 Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
 
