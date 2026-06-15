@@ -13,6 +13,7 @@
 - `index.html` — subtítulo da promoção ajustado para ficar em uma linha no desktop.
 - `index.html` — cards do pódio Total Pass colocados lado a lado com controle de posicionamento das fotos por variáveis CSS.
 - `index.html` — pódio Total Pass teve o botão `Ajustar fotos` removido, reposicionamento travado e fotos da Julia/Raphael ampliadas.
+- `index.html` — Antonio Costa colocado no centro do pódio Total Pass no desktop.
 
 ---
 
