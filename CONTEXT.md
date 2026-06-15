@@ -214,16 +214,19 @@ Próximo passo recomendado: informar a porcentagem oficial da trimestral para su
 - Ajustado o grid do Total Pass para não esticar os cards da Julia e do Raphael até a altura do card do campeão.
 - Aumentado o tamanho das fotos da Julia e do Raphael para equilibrar melhor imagem, texto e fundo dos cards.
 - Reordenado visualmente o pódio Total Pass no desktop para manter Antonio Costa, grande campeão, no centro.
+- Recuperada a edição de Abril de 2026 em `public/pages/mb-news-abril-2026.html`.
+- Ajustada a navegação mensal para manter conteúdos publicados acessíveis independentemente do mês atual.
 
 Arquivos modificados nesta sessão:
 - `index.html`
+- `public/pages/mb-news-abril-2026.html`
 - `CONTEXT.md`
 - `TODO.md`
 - `DECISIONS.md`
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-15.md`
 
-Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop. O pódio do Total Pass está lado a lado no desktop, com Antonio no centro, cards secundários mais proporcionais, avatares maiores para Julia/Raphael e enquadramento fixo por CSS no HTML.
+Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop. O pódio do Total Pass está lado a lado no desktop, com Antonio no centro, cards secundários mais proporcionais, avatares maiores para Julia/Raphael e enquadramento fixo por CSS no HTML. A edição de Abril permanece acessível pelo menu mensal, sem depender do mês atual.
 
 Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
 

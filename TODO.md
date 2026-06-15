@@ -56,6 +56,7 @@
 - [x] Colocar Antonio Costa no centro do pódio Total Pass no desktop.
 - [x] Recolocar a função `Ajustar fotos` no pódio Total Pass com sliders X/Y por competidor.
 - [x] Desativar novamente a função `Ajustar fotos`, removendo botão, sliders e JavaScript.
+- [x] Restaurar a edição de Abril e manter conteúdos publicados acessíveis pelo menu mensal.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site

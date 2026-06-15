@@ -14,6 +14,8 @@
 - `index.html` — cards do pódio Total Pass colocados lado a lado com controle de posicionamento das fotos por variáveis CSS.
 - `index.html` — função `Ajustar fotos` do pódio Total Pass desativada novamente, removendo botão, sliders e JavaScript.
 - `index.html` — Antonio Costa colocado no centro do pódio Total Pass no desktop.
+- `public/pages/mb-news-abril-2026.html` — edição de Abril recuperada como arquivo navegável.
+- `index.html` — botão `Abr` do menu mensal atualizado para abrir a edição de Abril em vez de bloquear o conteúdo.
 
 ---
 

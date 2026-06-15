@@ -367,5 +367,6 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - O grid do pódio usa `align-items: start` para impedir que os cards da Julia e do Raphael fiquem artificialmente altos por causa do card maior do campeão.
 - As fotos da Julia e do Raphael foram aumentadas para melhorar proporção entre avatar, texto e área branca dos cards secundários.
 - A posição visual do pódio no desktop usa `order` em CSS para colocar Antonio Costa no centro sem alterar a ordem semântica do conteúdo no HTML.
+- Edições já publicadas da MB News devem ficar acessíveis como páginas de arquivo em `public/pages/`, e o menu mensal deve apontar para essas páginas em vez de bloquear meses anteriores.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.
