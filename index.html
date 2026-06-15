@@ -574,6 +574,71 @@
       text-transform: uppercase;
       margin-bottom: 10px;
     }
+    .totalpass-podium-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .totalpass-podium-head .pascoa-gallery-title { margin-bottom: 0; }
+    .totalpass-edit-toggle {
+      border: 1px solid rgba(0,153,221,.2);
+      background: #fff;
+      color: var(--blue);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: .78rem;
+      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+      white-space: nowrap;
+    }
+    .totalpass-edit-toggle:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .totalpass-editor.is-editing .totalpass-edit-toggle {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+    .totalpass-avatar-tools {
+      display: none;
+      width: min(100%, 190px);
+      margin-top: 4px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(0,57,86,.08);
+      gap: 8px;
+    }
+    .totalpass-editor.is-editing .totalpass-avatar-tools {
+      display: grid;
+    }
+    .totalpass-avatar-control {
+      display: grid;
+      grid-template-columns: 18px 1fr 34px;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-500);
+      font-size: .7rem;
+      font-weight: 700;
+    }
+    .totalpass-avatar-control input {
+      width: 100%;
+      accent-color: var(--cyan);
+      cursor: pointer;
+    }
+    .totalpass-avatar-value {
+      color: var(--gray-500);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
     .totalpass-rank-info {
       min-width: 0;
     }
@@ -1167,6 +1232,7 @@
       .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .section-desc.nowrap-desktop { white-space: normal; }
+      .totalpass-podium-head { align-items: flex-start; }
       .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
@@ -1177,6 +1243,7 @@
         width: 92px;
         height: 92px;
       }
+      .totalpass-avatar-tools { width: min(100%, 220px); }
       .totalpass-rank-card:first-child .totalpass-avatar {
         width: 94px;
         height: 94px;
@@ -1389,8 +1456,14 @@
         </div>
 
         <div class="pascoa-media-row">
-          <div class="pascoa-video-wrap">
-            <p class="pascoa-gallery-title">Pódio do mês</p>
+          <div class="pascoa-video-wrap totalpass-editor">
+            <div class="totalpass-podium-head">
+              <p class="pascoa-gallery-title">Pódio do mês</p>
+              <button class="totalpass-edit-toggle" type="button" data-totalpass-edit aria-pressed="false">
+                <i data-lucide="sliders-horizontal" style="width:14px;height:14px"></i>
+                Ajustar fotos
+              </button>
+            </div>
             <div class="totalpass-ranking">
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
@@ -1402,6 +1475,10 @@
                   <strong>Antonio Costa</strong>
                   <span>22 check-ins</span>
                 </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Antonio Costa">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="36" data-avatar-axis="y"> <span class="totalpass-avatar-value">36%</span></label>
+                </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
@@ -1411,6 +1488,10 @@
                 <div class="totalpass-rank-info">
                   <strong>Julia Goulart</strong>
                   <span>20 check-ins</span>
+                </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Julia Goulart">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="34" data-avatar-axis="y"> <span class="totalpass-avatar-value">34%</span></label>
                 </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
@@ -1422,18 +1503,40 @@
                   <strong>Raphael Machado</strong>
                   <span>17 check-ins</span>
                 </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Raphael Machado">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="32" data-avatar-axis="y"> <span class="totalpass-avatar-value">32%</span></label>
+                </div>
               </div>
             </div>
           </div>
           <div class="pascoa-gallery-wrap">
             <p class="pascoa-gallery-title">Benefícios da atividade física</p>
             <div class="gallery-grid">
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#003956,#0099dd);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Mais energia no dia a dia</div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#059669,#10b981);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Redução do estresse</div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#f5a623,#ff6b35);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Mais foco e disposição</div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#6B21A8,#A855F7);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Sono de melhor qualidade</div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#005580,#007ab8);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Prevenção de doenças</div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#1e293b,#475569);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:.78rem;font-weight:700">Cuidado com a mente</div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#003956,#0099dd);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="zap" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Mais energia no dia a dia</span>
+              </div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#059669,#10b981);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="smile" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Redução do estresse</span>
+              </div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#f5a623,#ff6b35);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="target" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Mais foco e disposição</span>
+              </div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#6B21A8,#A855F7);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="moon" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Sono de melhor qualidade</span>
+              </div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#005580,#007ab8);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="shield-check" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Prevenção de doenças</span>
+              </div>
+              <div class="gallery-thumb" style="background:linear-gradient(135deg,#1e293b,#475569);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
+                <i data-lucide="brain" style="width:28px;height:28px;opacity:.9"></i>
+                <span style="font-size:.78rem;font-weight:700">Cuidado com a mente</span>
+              </div>
             </div>
           </div>
         </div>
