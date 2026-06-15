@@ -54,6 +54,7 @@
 - [x] Exibir controles visuais para ajustar o posicionamento das fotos do Total Pass e compactar os cards secundários.
 - [x] Remover botão de ajuste das fotos, travar o reposicionamento e aumentar os avatares da Julia e do Raphael.
 - [x] Colocar Antonio Costa no centro do pódio Total Pass no desktop.
+- [x] Recolocar a função `Ajustar fotos` no pódio Total Pass com sliders X/Y por competidor.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
 
 ### Copy do site
