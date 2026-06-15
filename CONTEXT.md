@@ -208,6 +208,8 @@ Próximo passo recomendado: informar a porcentagem oficial da trimestral para su
 - Atualizados os textos visíveis da promoção para usar `Maria Eduarda`, sem o sobrenome Mendes.
 - Reescrita a seção da promoção para reduzir repetição de `Maria Eduarda` e `Líder de Qualidade`, usando o título `Nova Líder de Qualidade`.
 - Ajustado o subtítulo da promoção para permanecer em uma linha no desktop.
+- Ajustado o pódio do Total Pass para exibir os três cards lado a lado no desktop.
+- Adicionadas variáveis CSS por card (`--avatar-x` e `--avatar-y`) para controlar o enquadramento individual das fotos do ranking.
 
 Arquivos modificados nesta sessão:
 - `index.html`
@@ -217,7 +219,7 @@ Arquivos modificados nesta sessão:
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-15.md`
 
-Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop.
+Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop. O pódio do Total Pass está lado a lado no desktop e cada avatar pode ter o enquadramento ajustado por variáveis CSS no próprio card.
 
 Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
 

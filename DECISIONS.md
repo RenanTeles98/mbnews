@@ -361,5 +361,7 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - Fotos do ranking Total Pass são copiadas para `public/images/` e exibidas como avatares circulares para seguir a regra de imagens públicas do projeto.
 - O primeiro colocado do Total Pass recebe tratamento visual de destaque para reforçar o reconhecimento do campeão.
 - O pódio do Total Pass usa avatares e cards maiores para melhorar leitura e reduzir perda visual percebida em fotos pequenas.
+- O pódio do Total Pass usa três colunas no desktop e uma coluna no mobile para equilibrar destaque e responsividade.
+- O enquadramento dos avatares do Total Pass é controlado por variáveis CSS (`--avatar-x` e `--avatar-y`) aplicadas em cada card, permitindo ajuste fino sem alterar os arquivos de imagem.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.

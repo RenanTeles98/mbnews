@@ -11,6 +11,7 @@
 - `index.html` — textos da promoção atualizados para usar `Maria Eduarda`, sem o sobrenome Mendes.
 - `index.html` — seção da promoção reescrita para reduzir repetição e usar o título "Nova Líder de Qualidade".
 - `index.html` — subtítulo da promoção ajustado para ficar em uma linha no desktop.
+- `index.html` — cards do pódio Total Pass colocados lado a lado com controle de posicionamento das fotos por variáveis CSS.
 
 ---
 

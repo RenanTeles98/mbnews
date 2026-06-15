@@ -488,24 +488,28 @@
     }
     .pascoa-media-row {
       display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 28px;
+      grid-template-columns: 1fr;
+      gap: 34px;
       align-items: start;
       margin-top: 28px;
     }
     .totalpass-ranking {
       display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
-      min-width: 440px;
+      width: 100%;
+      min-width: 0;
     }
     .totalpass-rank-card {
       background: #fff;
       border: 1px solid rgba(0,153,221,.16);
       border-radius: 22px;
-      padding: 20px 24px;
+      padding: 24px 22px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 18px;
+      text-align: center;
+      gap: 16px;
       box-shadow: 0 12px 34px rgba(0,0,0,.07);
     }
     .totalpass-rank-card:first-child {
@@ -515,14 +519,14 @@
       border: 1.5px solid rgba(245,166,35,.62);
       background: linear-gradient(135deg, #fff 0%, #fff7e8 64%, #fff1d7 100%);
       box-shadow: 0 24px 60px rgba(245,166,35,.24);
-      gap: 22px;
+      gap: 18px;
     }
     .totalpass-avatar {
       width: 78px;
       height: 78px;
       border-radius: 50%;
       object-fit: cover;
-      object-position: center;
+      object-position: var(--avatar-x, 50%) var(--avatar-y, 50%);
       border: 4px solid #fff;
       box-shadow: 0 0 0 3px rgba(0,153,221,.18);
       flex-shrink: 0;
@@ -1151,7 +1155,7 @@
       .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .section-desc.nowrap-desktop { white-space: normal; }
-      .totalpass-ranking { min-width: 0; }
+      .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
         padding: 18px;
@@ -1372,7 +1376,7 @@
           <div class="pascoa-video-wrap">
             <p class="pascoa-gallery-title">Pódio do mês</p>
             <div class="totalpass-ranking">
-              <div class="totalpass-rank-card">
+              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
                 <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
                 <div class="totalpass-rank-info">
@@ -1381,7 +1385,7 @@
                   <span>22 check-ins</span>
                 </div>
               </div>
-              <div class="totalpass-rank-card">
+              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
                 <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
                 <div class="totalpass-rank-info">
@@ -1389,7 +1393,7 @@
                   <span>20 check-ins</span>
                 </div>
               </div>
-              <div class="totalpass-rank-card">
+              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
                 <span class="totalpass-position">3º</span>
                 <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
                 <div class="totalpass-rank-info">
@@ -1717,43 +1721,6 @@
   </div>
 </section>
 
-<!-- NÚMEROS -->
-<section id="numeros">
-  <div class="container">
-    <div class="fade-up" style="text-align:center">
-      <span class="section-eyebrow">Em números</span>
-      <h2 class="section-title">A edição em dados</h2>
-    </div>
-    <div class="stats-grid">
-      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0f7ff,#e8f4ff);border-color:#c7dff7;transition-delay:.05s">
-        <span class="stat-emoji"><i data-lucide="trending-up" style="color:var(--blue)"></i></span>
-        <span class="stat-number" style="color:var(--blue)">22</span>
-        <span class="stat-label">Check-ins do Antonio<br>no Total Pass</span>
-      </div>
-      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fef3e2,#fff8f0);border-color:#fde68a;transition-delay:.1s">
-        <span class="stat-emoji"><i data-lucide="gift" style="color:#F5A623"></i></span>
-        <span class="stat-number" style="color:var(--gold)">20</span>
-        <span class="stat-label">Check-ins da<br>Julia Goulart</span>
-      </div>
-      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0fff4,#e8fff0);border-color:#a7f3d0;transition-delay:.15s">
-        <span class="stat-emoji"><i data-lucide="target" style="color:#059669"></i></span>
-        <span class="stat-number" style="color:#059669">17</span>
-        <span class="stat-label">Check-ins do<br>Raphael Machado</span>
-      </div>
-      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fdf4ff,#f8f0ff);border-color:#e9d5ff;transition-delay:.2s">
-        <span class="stat-emoji"><i data-lucide="trophy" style="color:#7c3aed"></i></span>
-        <span class="stat-number" style="color:#7c3aed">RH</span>
-        <span class="stat-label">WhatsApp e canal<br>de denúncia</span>
-      </div>
-      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fff1f0,#ffe8e8);border-color:#fecaca;transition-delay:.25s">
-        <span class="stat-emoji"><i data-lucide="map-pin" style="color:#dc2626"></i></span>
-        <span class="stat-number" style="color:#dc2626">--%</span>
-        <span class="stat-label">Trimestral em<br>atualização</span>
-      </div>
-    </div>
-    <p class="section-desc" style="margin-top:24px">A porcentagem alcançada da trimestral será inserida assim que o número oficial for confirmado.</p>
-  </div>
-</section>
 
 <!-- GALERIA / VÍDEOS -->
 <section id="videos" style="display:none">
