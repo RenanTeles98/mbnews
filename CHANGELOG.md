@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-06-15 — Ajuste visual da foto da Duda
+
+### Modificado
+- `index.html` — foto da Maria Eduarda ajustada para proporção 3:4 e largura máxima menor no bloco de promoção.
+
+---
+
 ## 2026-06-11 — Atualização MB News Maio
 
 ### Modificado

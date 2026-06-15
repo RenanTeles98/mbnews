@@ -355,6 +355,7 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - A promoção da Maria Eduarda usa a foto oficial e o cargo correto: de Analista de Negócios para Líder de Qualidade.
 - O bloco de promoção usa layout lado a lado no desktop e empilhado no mobile para valorizar a foto e manter leitura confortável.
 - O texto da promoção fica fora de card/caixa para alinhar melhor com a imagem e evitar sensação de elemento flutuante.
+- A foto da promoção da Maria Eduarda usa moldura 3:4 com largura máxima controlada para preservar o enquadramento sem dominar a seção.
 - Fotos do ranking Total Pass são copiadas para `public/images/` e exibidas como avatares circulares para seguir a regra de imagens públicas do projeto.
 - O primeiro colocado do Total Pass recebe tratamento visual de destaque para reforçar o reconhecimento do campeão.
 - O pódio do Total Pass usa avatares e cards maiores para melhorar leitura e reduzir perda visual percebida em fotos pequenas.

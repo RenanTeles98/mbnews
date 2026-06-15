@@ -277,7 +277,7 @@
     #promocoes { background: var(--white); }
     .promo-feature {
       display: grid;
-      grid-template-columns: minmax(320px, .95fr) minmax(320px, 1fr);
+      grid-template-columns: minmax(280px, 420px) minmax(320px, 1fr);
       gap: 44px;
       align-items: start;
       margin-top: 40px;
@@ -289,7 +289,9 @@
       position: relative;
       box-shadow: 0 8px 40px rgba(0,0,0,.12);
       background: #003956;
-      min-height: 680px;
+      aspect-ratio: 3 / 4;
+      width: 100%;
+      max-width: 420px;
     }
     .promo-feature-photo img {
       width: 100%;
@@ -1142,7 +1144,7 @@
       .editorial-card { padding: 28px 24px; }
       .hero-cards { flex-direction: column; }
       .promo-feature { grid-template-columns: 1fr; }
-      .promo-feature-photo { min-height: 620px; }
+      .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .totalpass-ranking { min-width: 0; }
       .totalpass-rank-card,

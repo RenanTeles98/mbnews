@@ -198,6 +198,26 @@ Estado atual: conteúdo da edição de maio aplicado e pronto para validação v
 
 Próximo passo recomendado: informar a porcentagem oficial da trimestral para substituir `--%`.
 
+---
+
+## Sessão 2026-06-15 — Ajuste de proporção da foto da Duda
+
+- Ajustada a moldura da foto da Maria Eduarda em `index.html` para proporção 3:4.
+- Reduzida a largura máxima da imagem para evitar que ela ocupe altura excessiva no bloco de promoção.
+- Mantido o layout lado a lado com o texto e comportamento responsivo no mobile.
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-06-15.md`
+
+Estado atual: bloco da promoção da Duda com imagem menor, em 3:4, mantendo alinhamento com o texto.
+
+Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
+
 
 ---
 
