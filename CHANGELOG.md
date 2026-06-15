@@ -8,6 +8,7 @@
 
 ### Modificado
 - `index.html` — foto da Maria Eduarda ajustada para proporção 3:4 e largura máxima menor no bloco de promoção.
+- `index.html` — textos da promoção atualizados para usar `Maria Eduarda Mendes` no lugar de `Duda`.
 
 ---
 
