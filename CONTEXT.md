@@ -205,7 +205,7 @@ Próximo passo recomendado: informar a porcentagem oficial da trimestral para su
 - Ajustada a moldura da foto da Maria Eduarda em `index.html` para proporção 3:4.
 - Reduzida a largura máxima da imagem para evitar que ela ocupe altura excessiva no bloco de promoção.
 - Mantido o layout lado a lado com o texto e comportamento responsivo no mobile.
-- Atualizados os textos visíveis da promoção para usar o nome completo `Maria Eduarda Mendes` no lugar de `Duda`.
+- Atualizados os textos visíveis da promoção para usar `Maria Eduarda`, sem o sobrenome Mendes.
 
 Arquivos modificados nesta sessão:
 - `index.html`
@@ -215,7 +215,7 @@ Arquivos modificados nesta sessão:
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-15.md`
 
-Estado atual: bloco da promoção da Maria Eduarda Mendes com imagem menor, em 3:4, mantendo alinhamento com o texto.
+Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, mantendo alinhamento com o texto.
 
 Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
 
