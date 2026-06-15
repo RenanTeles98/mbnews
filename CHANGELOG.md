@@ -12,7 +12,7 @@
 - `index.html` — seção da promoção reescrita para reduzir repetição e usar o título "Nova Líder de Qualidade".
 - `index.html` — subtítulo da promoção ajustado para ficar em uma linha no desktop.
 - `index.html` — cards do pódio Total Pass colocados lado a lado com controle de posicionamento das fotos por variáveis CSS.
-- `index.html` — pódio Total Pass recebeu novamente o botão `Ajustar fotos` com sliders X/Y por competidor.
+- `index.html` — função `Ajustar fotos` do pódio Total Pass desativada novamente, removendo botão, sliders e JavaScript.
 - `index.html` — Antonio Costa colocado no centro do pódio Total Pass no desktop.
 
 ---

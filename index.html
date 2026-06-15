@@ -574,71 +574,6 @@
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .totalpass-podium-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 16px;
-    }
-    .totalpass-podium-head .pascoa-gallery-title { margin-bottom: 0; }
-    .totalpass-edit-toggle {
-      border: 1px solid rgba(0,153,221,.2);
-      background: #fff;
-      color: var(--blue);
-      border-radius: 999px;
-      padding: 8px 13px;
-      font-size: .78rem;
-      font-weight: 800;
-      font-family: 'Inter', sans-serif;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: background .2s ease, border-color .2s ease, transform .2s ease;
-      white-space: nowrap;
-    }
-    .totalpass-edit-toggle:hover {
-      background: var(--blue);
-      border-color: var(--blue);
-      color: #fff;
-      transform: translateY(-1px);
-    }
-    .totalpass-editor.is-editing .totalpass-edit-toggle {
-      background: var(--blue);
-      border-color: var(--blue);
-      color: #fff;
-    }
-    .totalpass-avatar-tools {
-      display: none;
-      width: min(100%, 190px);
-      margin-top: 4px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(0,57,86,.08);
-      gap: 8px;
-    }
-    .totalpass-editor.is-editing .totalpass-avatar-tools {
-      display: grid;
-    }
-    .totalpass-avatar-control {
-      display: grid;
-      grid-template-columns: 18px 1fr 34px;
-      align-items: center;
-      gap: 8px;
-      color: var(--gray-500);
-      font-size: .7rem;
-      font-weight: 700;
-    }
-    .totalpass-avatar-control input {
-      width: 100%;
-      accent-color: var(--cyan);
-      cursor: pointer;
-    }
-    .totalpass-avatar-value {
-      color: var(--gray-500);
-      font-variant-numeric: tabular-nums;
-      text-align: right;
-    }
     .totalpass-rank-info {
       min-width: 0;
     }
@@ -1232,7 +1167,6 @@
       .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .section-desc.nowrap-desktop { white-space: normal; }
-      .totalpass-podium-head { align-items: flex-start; }
       .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
@@ -1243,7 +1177,6 @@
         width: 92px;
         height: 92px;
       }
-      .totalpass-avatar-tools { width: min(100%, 220px); }
       .totalpass-rank-card:first-child .totalpass-avatar {
         width: 94px;
         height: 94px;
@@ -1456,14 +1389,8 @@
         </div>
 
         <div class="pascoa-media-row">
-          <div class="pascoa-video-wrap totalpass-editor">
-            <div class="totalpass-podium-head">
-              <p class="pascoa-gallery-title">Pódio do mês</p>
-              <button class="totalpass-edit-toggle" type="button" data-totalpass-edit aria-pressed="false">
-                <i data-lucide="sliders-horizontal" style="width:14px;height:14px"></i>
-                Ajustar fotos
-              </button>
-            </div>
+          <div class="pascoa-video-wrap">
+            <p class="pascoa-gallery-title">Pódio do mês</p>
             <div class="totalpass-ranking">
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
@@ -1475,10 +1402,6 @@
                   <strong>Antonio Costa</strong>
                   <span>22 check-ins</span>
                 </div>
-                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Antonio Costa">
-                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
-                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="36" data-avatar-axis="y"> <span class="totalpass-avatar-value">36%</span></label>
-                </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
@@ -1489,10 +1412,6 @@
                   <strong>Julia Goulart</strong>
                   <span>20 check-ins</span>
                 </div>
-                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Julia Goulart">
-                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
-                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="34" data-avatar-axis="y"> <span class="totalpass-avatar-value">34%</span></label>
-                </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
                 <span class="totalpass-position">3º</span>
@@ -1502,10 +1421,6 @@
                 <div class="totalpass-rank-info">
                   <strong>Raphael Machado</strong>
                   <span>17 check-ins</span>
-                </div>
-                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Raphael Machado">
-                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
-                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="32" data-avatar-axis="y"> <span class="totalpass-avatar-value">32%</span></label>
                 </div>
               </div>
             </div>
@@ -1546,75 +1461,79 @@
   </div>
 </section>
 
-<!-- NOVO SITE -->
+<!-- NOVOS SITES -->
 <section id="awards">
   <div class="container">
 
-    <!-- Hero: texto + preview do site -->
-    <div class="awards-hero fade-up">
-      <div>
-        <span class="awards-eyebrow" style="color:#0099dd">Novidade · MB Finance</span>
-        <h2 class="awards-headline">
-          O novo site da<br>MB Finance está no ar.
-        </h2>
-        <p class="awards-hero-desc">
-          A MB Finance ganhou uma nova presença digital, mais moderna, clara e conectada com a forma como atendemos empresas todos os dias. O novo site reforça nossos produtos, diferenciais e canais de contato.
-        </p>
-        <div class="awards-badges">
-          <span class="awards-badge">Conta PJ</span>
-          <span class="awards-badge">Capital de Giro</span>
-          <span class="awards-badge">Máquina de Cartão</span>
-          <span class="awards-badge">Antecipação</span>
-        </div>
-      </div>
-
-      <div class="fade-up" style="transition-delay:.1s">
-        <div style="width:100%;max-width:440px;border-radius:20px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.18);background:#fff;border:1px solid #e2e8f0">
-          <div style="height:34px;background:#f1f5f9;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:7px;padding:0 14px">
-            <span style="width:10px;height:10px;border-radius:50%;background:#ef4444"></span>
-            <span style="width:10px;height:10px;border-radius:50%;background:#f59e0b"></span>
-            <span style="width:10px;height:10px;border-radius:50%;background:#22c55e"></span>
-          </div>
-          <iframe src="public/mb-finance-completo.html" title="Prévia do novo site da MB Finance" loading="lazy" style="width:100%;height:320px;border:0;display:block;background:#fff"></iframe>
-        </div>
-      </div>
+    <!-- Cabeçalho -->
+    <div class="fade-up" style="text-align:center;margin-bottom:48px">
+      <span class="section-eyebrow" style="color:#0099dd">Novidade · MB Finance</span>
+      <h2 class="section-title">Dois novos sites no ar.</h2>
+      <p class="section-desc" style="max-width:560px;margin:0 auto">
+        A MB Finance renovou sua presença digital com dois sites pensados para públicos diferentes — mas com o mesmo padrão de qualidade e clareza que a equipe já conhece.
+      </p>
     </div>
 
-    <!-- Cards do novo site -->
-    <div class="awards-years-grid">
+    <!-- Dois cards de site -->
+    <div class="new-sites-grid fade-up" style="transition-delay:.05s">
 
-      <div class="awards-year-card fade-up" style="transition-delay:.05s">
-        <div class="awards-year-card-top">
-          <span class="awards-year-label">Experiência</span>
+      <!-- MB Finance Oficial -->
+      <div class="new-site-card">
+        <div class="new-site-browser">
+          <div class="new-site-bar">
+            <span class="new-site-dot" style="background:#ef4444"></span>
+            <span class="new-site-dot" style="background:#f59e0b"></span>
+            <span class="new-site-dot" style="background:#22c55e"></span>
+            <span class="new-site-url">mbfinance.com.br</span>
+          </div>
+          <iframe src="https://www.mbfinance.com.br/" title="MB Finance" loading="lazy" style="width:100%;height:280px;border:0;display:block"></iframe>
         </div>
-        <div class="awards-year-num"><i data-lucide="monitor-smartphone" style="width:42px;height:42px;color:#003956"></i></div>
-        <div class="awards-year-title">Mais moderno e responsivo</div>
-        <p class="awards-year-desc">
-          A navegação foi pensada para funcionar melhor no celular e no computador, com leitura mais simples e visual mais profissional.
-        </p>
+        <div class="new-site-info">
+          <div class="new-site-badge-row">
+            <span class="new-site-tag" style="background:#e6f4fb;color:#003956">Site oficial</span>
+          </div>
+          <h3 class="new-site-title">MB Finance</h3>
+          <p class="new-site-desc">O site institucional da MB Finance — apresentando produtos, diferenciais e o canal de atendimento para empresas PJ de todo o Brasil.</p>
+          <div class="new-site-pills">
+            <span>Conta PJ</span>
+            <span>Capital de Giro</span>
+            <span>Máquina de Cartão</span>
+            <span>Antecipação</span>
+          </div>
+          <a href="https://www.mbfinance.com.br/" target="_blank" rel="noopener" class="new-site-btn">
+            <i data-lucide="external-link" style="width:16px;height:16px"></i>
+            Acessar site
+          </a>
+        </div>
       </div>
 
-      <div class="awards-year-card fade-up" style="transition-delay:.1s">
-        <div class="awards-year-card-top">
-          <span class="awards-year-label">Produtos</span>
+      <!-- MB Conexão -->
+      <div class="new-site-card">
+        <div class="new-site-browser">
+          <div class="new-site-bar">
+            <span class="new-site-dot" style="background:#ef4444"></span>
+            <span class="new-site-dot" style="background:#f59e0b"></span>
+            <span class="new-site-dot" style="background:#22c55e"></span>
+            <span class="new-site-url">mbnegocios.com.br</span>
+          </div>
+          <iframe src="https://www.mbnegocios.com.br/" title="MB Conexão" loading="lazy" style="width:100%;height:280px;border:0;display:block"></iframe>
         </div>
-        <div class="awards-year-num"><i data-lucide="layers" style="width:42px;height:42px;color:#003956"></i></div>
-        <div class="awards-year-title">Soluções melhor apresentadas</div>
-        <p class="awards-year-desc">
-          Conta PJ, crédito, adquirência e antecipação aparecem com mais clareza, facilitando o entendimento de clientes e parceiros.
-        </p>
-      </div>
-
-      <div class="awards-year-card highlight fade-up" style="transition-delay:.15s">
-        <div class="awards-year-card-top">
-          <span class="awards-year-label">Contato</span>
-          <span class="awards-champ-badge">WhatsApp</span>
+        <div class="new-site-info">
+          <div class="new-site-badge-row">
+            <span class="new-site-tag" style="background:#fff8e6;color:#b45309">MB Conexão</span>
+          </div>
+          <h3 class="new-site-title">MB Negócios</h3>
+          <p class="new-site-desc">A plataforma de negócios e parcerias da MB — conectando empresas, parceiros e oportunidades com a agilidade que o mercado exige.</p>
+          <div class="new-site-pills">
+            <span>Parcerias</span>
+            <span>Negócios PJ</span>
+            <span>Conectividade</span>
+          </div>
+          <a href="https://www.mbnegocios.com.br/" target="_blank" rel="noopener" class="new-site-btn" style="background:#003956">
+            <i data-lucide="external-link" style="width:16px;height:16px"></i>
+            Acessar site
+          </a>
         </div>
-        <div class="awards-year-num"><i data-lucide="message-circle" style="width:42px;height:42px;color:#121212"></i></div>
-        <div class="awards-year-title">Atendimento mais direto</div>
-        <p class="awards-year-desc">
-          As CTAs levam o cliente ao WhatsApp, mantendo o contato humano e rápido que já faz parte da rotina comercial da MB.
-        </p>
       </div>
 
     </div>
@@ -2043,29 +1962,6 @@
   });
 
   // ── NAV ACTIVE LINK
-  // TOTAL PASS AVATAR EDITOR
-  const totalPassEditor = document.querySelector('.totalpass-editor');
-  const totalPassEditToggle = document.querySelector('[data-totalpass-edit]');
-  if (totalPassEditor && totalPassEditToggle) {
-    totalPassEditToggle.addEventListener('click', () => {
-      const isEditing = totalPassEditor.classList.toggle('is-editing');
-      totalPassEditToggle.setAttribute('aria-pressed', String(isEditing));
-    });
-
-    document.querySelectorAll('.totalpass-rank-card').forEach(card => {
-      card.querySelectorAll('[data-avatar-axis]').forEach(input => {
-        const valueLabel = input.closest('.totalpass-avatar-control')?.querySelector('.totalpass-avatar-value');
-        const updateAvatarPosition = () => {
-          const axis = input.dataset.avatarAxis;
-          card.style.setProperty(`--avatar-${axis}`, `${input.value}%`);
-          if (valueLabel) valueLabel.textContent = `${input.value}%`;
-        };
-        input.addEventListener('input', updateAvatarPosition);
-        updateAvatarPosition();
-      });
-    });
-  }
-
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {

@@ -210,7 +210,7 @@ Próximo passo recomendado: informar a porcentagem oficial da trimestral para su
 - Ajustado o subtítulo da promoção para permanecer em uma linha no desktop.
 - Ajustado o pódio do Total Pass para exibir os três cards lado a lado no desktop.
 - Adicionadas variáveis CSS por card (`--avatar-x` e `--avatar-y`) para controlar o enquadramento individual das fotos do ranking.
-- Recolocado o botão `Ajustar fotos` no pódio Total Pass para abrir sliders X/Y e ajustar o enquadramento dos avatares.
+- Desativado o botão `Ajustar fotos` no pódio Total Pass, removendo sliders e JavaScript do editor visual.
 - Ajustado o grid do Total Pass para não esticar os cards da Julia e do Raphael até a altura do card do campeão.
 - Aumentado o tamanho das fotos da Julia e do Raphael para equilibrar melhor imagem, texto e fundo dos cards.
 - Reordenado visualmente o pódio Total Pass no desktop para manter Antonio Costa, grande campeão, no centro.
@@ -223,7 +223,7 @@ Arquivos modificados nesta sessão:
 - `CHANGELOG.md`
 - `docs/sessions/2026-06-15.md`
 
-Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop. O pódio do Total Pass está lado a lado no desktop, com Antonio no centro, cards secundários mais proporcionais, avatares maiores para Julia/Raphael e botão `Ajustar fotos` para controlar o enquadramento por sliders.
+Estado atual: bloco da promoção da Maria Eduarda com imagem menor, em 3:4, texto mais fluido, menor repetição de nome/cargo e subtítulo em linha única no desktop. O pódio do Total Pass está lado a lado no desktop, com Antonio no centro, cards secundários mais proporcionais, avatares maiores para Julia/Raphael e enquadramento fixo por CSS no HTML.
 
 Próximo passo recomendado: validar visualmente a seção da promoção em produção ou preview após deploy.
 
