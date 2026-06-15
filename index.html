@@ -2043,6 +2043,29 @@
   });
 
   // ── NAV ACTIVE LINK
+  // TOTAL PASS AVATAR EDITOR
+  const totalPassEditor = document.querySelector('.totalpass-editor');
+  const totalPassEditToggle = document.querySelector('[data-totalpass-edit]');
+  if (totalPassEditor && totalPassEditToggle) {
+    totalPassEditToggle.addEventListener('click', () => {
+      const isEditing = totalPassEditor.classList.toggle('is-editing');
+      totalPassEditToggle.setAttribute('aria-pressed', String(isEditing));
+    });
+
+    document.querySelectorAll('.totalpass-rank-card').forEach(card => {
+      card.querySelectorAll('[data-avatar-axis]').forEach(input => {
+        const valueLabel = input.closest('.totalpass-avatar-control')?.querySelector('.totalpass-avatar-value');
+        const updateAvatarPosition = () => {
+          const axis = input.dataset.avatarAxis;
+          card.style.setProperty(`--avatar-${axis}`, `${input.value}%`);
+          if (valueLabel) valueLabel.textContent = `${input.value}%`;
+        };
+        input.addEventListener('input', updateAvatarPosition);
+        updateAvatarPosition();
+      });
+    });
+  }
+
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
