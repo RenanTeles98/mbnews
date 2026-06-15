@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MB News | Edição #002 · Maio 2026</title>
+  <title>MB News | Edição #001 · Abril 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -273,71 +273,9 @@
       color: var(--gray-600); font-size: 1rem; line-height: 1.7;
       max-width: 600px;
     }
-    .section-desc.nowrap-desktop {
-      max-width: none;
-      white-space: nowrap;
-    }
 
     /* ─── PROMOTIONS ──────────────────────────────────── */
     #promocoes { background: var(--white); }
-    .promo-feature {
-      display: grid;
-      grid-template-columns: minmax(280px, 420px) minmax(320px, 1fr);
-      gap: 44px;
-      align-items: start;
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-    .promo-feature-photo {
-      border-radius: 24px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 8px 40px rgba(0,0,0,.12);
-      background: #003956;
-      aspect-ratio: 3 / 4;
-      width: 100%;
-      max-width: 420px;
-    }
-    .promo-feature-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 55%;
-      display: block;
-    }
-    .promo-feature-copy {
-      padding-top: 6px;
-      max-width: 520px;
-    }
-    .promo-feature-copy .promo-role-badge {
-      margin-bottom: 20px;
-    }
-    .promo-feature-copy h3 {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.7rem);
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -1.2px;
-      color: var(--gray-800);
-      margin-bottom: 16px;
-    }
-    .promo-feature-copy .role-arrow {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-      font-size: .9rem;
-    }
-    .promo-feature-copy p {
-      color: var(--gray-600);
-      font-size: 1rem;
-      line-height: 1.85;
-      margin-bottom: 28px;
-    }
-    .promo-feature-copy .promo-stats {
-      max-width: 440px;
-    }
     .promo-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 28px; margin-top: 48px;
@@ -489,136 +427,10 @@
     }
     .pascoa-media-row {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 34px;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
       align-items: start;
       margin-top: 28px;
-    }
-    .totalpass-ranking {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      width: 100%;
-      min-width: 0;
-      align-items: start;
-    }
-    @media (min-width: 769px) {
-      .totalpass-rank-card:first-child { order: 2; }
-      .totalpass-rank-card:nth-child(2) { order: 1; }
-      .totalpass-rank-card:nth-child(3) { order: 3; }
-    }
-    .totalpass-rank-card {
-      background: #fff;
-      border: 1px solid rgba(0,153,221,.16);
-      border-radius: 22px;
-      padding: 20px 22px 22px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 12px;
-      box-shadow: 0 12px 34px rgba(0,0,0,.07);
-    }
-    .totalpass-rank-card:first-child {
-      position: relative;
-      align-items: center;
-      padding: 28px 30px;
-      border: 1.5px solid rgba(245,166,35,.62);
-      background: linear-gradient(135deg, #fff 0%, #fff7e8 64%, #fff1d7 100%);
-      box-shadow: 0 24px 60px rgba(245,166,35,.24);
-      gap: 18px;
-    }
-    .totalpass-avatar-frame {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .totalpass-avatar {
-      width: 104px;
-      height: 104px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: var(--avatar-x, 50%) var(--avatar-y, 50%);
-      border: 4px solid #fff;
-      box-shadow: 0 0 0 3px rgba(0,153,221,.18);
-      flex-shrink: 0;
-      background: var(--gray-100);
-    }
-    .totalpass-rank-card:first-child .totalpass-avatar {
-      width: 122px;
-      height: 122px;
-      box-shadow: 0 0 0 4px rgba(245,166,35,.48), 0 16px 34px rgba(154,75,0,.14);
-    }
-    .totalpass-rank-card:first-child .totalpass-rank-info strong {
-      color: #9a4b00;
-      font-size: 1.72rem;
-      letter-spacing: -.6px;
-    }
-    .totalpass-rank-card:first-child .totalpass-rank-info span:not(.totalpass-champion-badge) {
-      font-size: 1.05rem;
-      color: #6b3a08;
-    }
-    .totalpass-champion-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(245,166,35,.16);
-      color: #9a4b00;
-      border: 1px solid rgba(245,166,35,.28);
-      border-radius: 999px;
-      padding: 6px 13px;
-      font-size: .72rem;
-      font-weight: 900;
-      letter-spacing: .8px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-    .totalpass-rank-info {
-      min-width: 0;
-    }
-    .totalpass-rank-info strong {
-      display: block;
-      color: var(--gray-800);
-      font-family: 'Inter', sans-serif;
-      font-size: 1.28rem;
-      font-weight: 800;
-      letter-spacing: -.2px;
-      line-height: 1.2;
-    }
-    .totalpass-rank-info span {
-      color: var(--gray-600);
-      font-size: .98rem;
-    }
-    .totalpass-position {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #fef3e2;
-      color: #FF6B35;
-      font-size: .96rem;
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-    .totalpass-rank-card:first-child .totalpass-position {
-      width: 52px;
-      height: 52px;
-      background: #fff0d1;
-      color: #FF6B35;
-      font-size: 1.06rem;
-      box-shadow: inset 0 0 0 1px rgba(245,166,35,.24);
-    }
-    .totalpass-rank-card:nth-child(2) .totalpass-position {
-      background: #e8f4ff;
-      color: #005580;
-    }
-    .totalpass-rank-card:nth-child(3) .totalpass-position {
-      background: #e8fff0;
-      color: #059669;
     }
     .pascoa-video-wrap .pascoa-gallery-title,
     .pascoa-gallery-wrap .pascoa-gallery-title { margin-top: 0; }
@@ -883,73 +695,135 @@
     .editorial-signature-text strong { display: block; font-weight: 700; color: var(--gray-800); }
     .editorial-signature-text span  { font-size: .82rem; color: var(--gray-400); }
 
-    /* ─── NOVOS SITES ────────────────────────────────────── */
+    /* ─── AWARDS ─────────────────────────────────────────── */
     #awards { background: #f7f7f5; }
 
-    .new-sites-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 32px; align-items: start;
+    .awards-hero {
+      display: grid; grid-template-columns: 1fr 400px;
+      gap: 64px; align-items: center; margin-bottom: 64px;
     }
-    .new-site-card {
-      background: #fff; border-radius: 20px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 8px 40px rgba(0,0,0,.07);
-      overflow: hidden; transition: transform .3s, box-shadow .3s;
+    .awards-eyebrow {
+      font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: #888;
+      margin-bottom: 20px; display: block;
     }
-    .new-site-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,.12); }
-    .new-site-browser {
-      border-bottom: 1px solid #e2e8f0;
-      overflow: hidden;
+    .awards-headline {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800;
+      color: #121212; line-height: 1.1; letter-spacing: -2px;
+      margin-bottom: 20px;
     }
-    .new-site-bar {
-      height: 36px; background: #f1f5f9;
-      border-bottom: 1px solid #e2e8f0;
-      display: flex; align-items: center; gap: 6px; padding: 0 14px;
+    .awards-headline u {
+      text-decoration-color: #fbd717;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 4px;
     }
-    .new-site-dot {
-      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    .awards-hero-desc {
+      color: #555; font-size: 1rem; line-height: 1.75;
+      max-width: 480px; margin-bottom: 28px;
     }
-    .new-site-url {
-      margin-left: 10px; font-size: .72rem; color: #94a3b8;
-      font-weight: 500; letter-spacing: .3px;
+    .awards-badges {
+      display: flex; flex-wrap: wrap; gap: 10px;
     }
-    .new-site-info {
-      padding: 28px 28px 32px;
+    .awards-badge {
+      background: #fff; border: 1px solid #e2e2e2;
+      border-radius: 99px; padding: 7px 18px;
+      font-size: .8rem; font-weight: 600; color: #555;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
     }
-    .new-site-badge-row { margin-bottom: 12px; }
-    .new-site-tag {
-      display: inline-block; font-size: .68rem; font-weight: 700;
-      letter-spacing: .8px; text-transform: uppercase;
-      padding: 4px 12px; border-radius: 99px;
+
+    .awards-cert-card {
+      background: #121212; border-radius: 24px;
+      padding: 40px 36px; text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,.25);
+      position: relative; overflow: hidden;
     }
-    .new-site-title {
-      font-family: 'Inter', sans-serif; font-size: 1.4rem;
-      font-weight: 800; color: #0f172a; letter-spacing: -.5px;
+    .awards-cert-card::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(251,215,23,.12), transparent 70%);
+    }
+    .awards-cert-logo {
+      font-family: 'Inter', sans-serif; font-size: 1.5rem;
+      font-weight: 800; color: white; letter-spacing: -1px;
+      margin-bottom: 6px;
+    }
+    .awards-cert-logo span { color: #fbd717; }
+    .awards-cert-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.8rem; font-weight: 900; color: white;
+      line-height: .95; letter-spacing: -2px; margin: 24px 0 6px;
+    }
+    .awards-cert-year { color: #fbd717; font-size: 1rem; font-weight: 700; margin-bottom: 20px; }
+    .awards-cert-divider {
+      border: none; border-top: 1px solid rgba(251,215,23,.25); margin: 20px 0;
+    }
+    .awards-cert-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: #fbd717; margin-bottom: 8px;
+    }
+    .awards-cert-tag::before, .awards-cert-tag::after {
+      content: '·'; opacity: .5;
+    }
+    .awards-cert-subtitle {
+      color: rgba(255,255,255,.45); font-size: .82rem; line-height: 1.5;
+    }
+    .awards-cert-brand {
+      margin-top: 24px; display: flex; align-items: center;
+      justify-content: center; gap: 6px;
+      color: rgba(255,255,255,.3); font-size: .78rem; font-weight: 600;
+    }
+    .awards-cert-brand strong { color: rgba(255,255,255,.55); }
+
+    .awards-years-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .awards-year-card {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 20px; padding: 32px 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: all .3s;
+    }
+    .awards-year-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,.1); }
+    .awards-year-card.highlight {
+      background: #fbd717; border-color: #fbd717;
+    }
+    .awards-year-card-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .awards-year-label {
+      font-size: .68rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: #aaa;
+    }
+    .awards-year-card.highlight .awards-year-label { color: rgba(0,0,0,.45); }
+    .awards-champ-badge {
+      background: #121212; color: #fbd717; font-size: .62rem;
+      font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 99px;
+    }
+    .awards-year-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 3.2rem; font-weight: 900; line-height: 1;
+      color: #121212; margin-bottom: 16px; letter-spacing: -2px;
+    }
+    .awards-year-num span { font-size: 1.8rem; font-weight: 700; color: #bbb; }
+    .awards-year-card.highlight .awards-year-num span { color: rgba(0,0,0,.3); }
+    .awards-year-title {
+      font-weight: 700; font-size: 1rem; color: #121212;
       margin-bottom: 10px;
     }
-    .new-site-desc {
-      color: #64748b; font-size: .9rem; line-height: 1.7;
-      margin-bottom: 18px;
+    .awards-year-desc {
+      color: #666; font-size: .85rem; line-height: 1.7;
     }
-    .new-site-pills {
-      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;
-    }
-    .new-site-pills span {
-      background: #f1f5f9; color: #475569;
-      font-size: .72rem; font-weight: 600;
-      padding: 5px 12px; border-radius: 99px;
-    }
-    .new-site-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #0099dd; color: white;
-      font-size: .82rem; font-weight: 700;
-      padding: 12px 22px; border-radius: 10px;
-      text-decoration: none; transition: opacity .2s;
-    }
-    .new-site-btn:hover { opacity: .85; }
+    .awards-year-card.highlight .awards-year-desc { color: rgba(0,0,0,.6); }
 
     @media (max-width: 900px) {
-      .new-sites-grid { grid-template-columns: 1fr; }
+      .awards-hero { grid-template-columns: 1fr; gap: 40px; }
+      .awards-cert-card { max-width: 360px; }
+      .awards-years-grid { grid-template-columns: 1fr; }
     }
 
     /* ─── SAÚDE ──────────────────────────────────────────── */
@@ -1102,27 +976,6 @@
       .evento-layout  { grid-template-columns: 1fr; }
       .editorial-card { padding: 28px 24px; }
       .hero-cards { flex-direction: column; }
-      .promo-feature { grid-template-columns: 1fr; }
-      .promo-feature-photo { max-width: 420px; }
-      .promo-feature-copy { max-width: none; padding-top: 0; }
-      .section-desc.nowrap-desktop { white-space: normal; }
-      .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
-      .totalpass-rank-card,
-      .totalpass-rank-card:first-child {
-        padding: 18px;
-        gap: 14px;
-      }
-      .totalpass-avatar {
-        width: 92px;
-        height: 92px;
-      }
-      .totalpass-rank-card:first-child .totalpass-avatar {
-        width: 94px;
-        height: 94px;
-      }
-      .totalpass-rank-card:first-child .totalpass-rank-info strong {
-        font-size: 1.32rem;
-      }
     }
   </style>
 </head>
@@ -1146,15 +999,15 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">mb <span>news</span></a>
+  <a href="/index.html" class="nav-logo">mb <span>news</span></a>
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
-    <li><a href="#promocoes">Promoção</a></li>
-    <li><a href="#pascoa">Total Pass</a></li>
-    <li><a href="#awards">Novo site</a></li>
-    <li><a href="#saude">RH & Bem-estar</a></li>
+    <li><a href="#promocoes">Promoções</a></li>
+    <li><a href="#pascoa">Páscoa</a></li>
+    <li><a href="#awards">Awards 2025</a></li>
+    <li><a href="#saude">Saúde</a></li>
   </ul>
-  <span class="nav-edition">Edição #002 · Maio 2026</span>
+  <span class="nav-edition">Edição #001 · Abril 2026</span>
 </nav>
 
 <!-- MODAL MENSAL -->
@@ -1181,8 +1034,8 @@
     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
     Mar
   </button>
-  <a class="month-btn" href="/pages/mb-news-abril-2026.html">Abr</a>
-  <button class="month-btn active">✦ Maio 2026</button>
+  <button class="month-btn active">✦ Abril 2026</button>
+  <a class="month-btn" href="/index.html">Mai</a>
   <button class="month-btn future" onclick="openMonthModal('Junho 2026','future')">Jun</button>
   <button class="month-btn future" onclick="openMonthModal('Julho 2026','future')">Jul</button>
   <button class="month-btn future" onclick="openMonthModal('Agosto 2026','future')">Ago</button>
@@ -1195,7 +1048,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
-  <div class="hero-badge">Edição de Maio 2026</div>
+  <div class="hero-badge">Edição especial de Abril 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
   </h1>
@@ -1204,28 +1057,28 @@
   </p>
   <div class="hero-ctas">
     <a href="#editorial" class="btn-primary">Ler edição completa</a>
-    <a href="#pascoa" class="btn-ghost">Ver ranking Total Pass</a>
+    <a href="#promocoes" class="btn-ghost">Ver promoções 🎉</a>
   </div>
   <div class="hero-cards">
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-        <strong>22</strong>
-        <span>Check-ins no topo</span>
+        <strong>2</strong>
+        <span>Promoções internas</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
       <div class="hero-card-text">
-        <strong>RH</strong>
-        <span>Agora no WhatsApp</span>
+        <strong>+150</strong>
+        <span>Ovos de Páscoa</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="trophy" style="color:#FF6B35"></i></div>
       <div class="hero-card-text">
-        <strong>Site</strong>
-        <span>Nova MB Finance no ar</span>
+        <strong>09/04</strong>
+        <span>Conexão Awards 2026</span>
       </div>
     </div>
   </div>
@@ -1240,13 +1093,13 @@
     </div>
     <div class="editorial-card fade-up">
       <p>
-        Maio chegou com muita coisa boa para compartilhar. Nesta edição, reunimos reconhecimento, cuidado com a saúde, novidades de comunicação interna e informações importantes para o nosso dia a dia na MB.
+        Que mês incrível! A MB não para, e esse é um dos nossos maiores orgulhos. Entre entregas, metas e desafios do dia a dia, também encontramos tempo para nos conectar, celebrar e crescer juntos. Esta edição é um convite para olhar ao redor e perceber o quanto estamos construindo algo especial.
       </p>
       <p>
-        Tem ranking do Total Pass, promoção da Maria Eduarda, novo site da MB Finance, canal de denúncia pelo WhatsApp, atualização sobre NR1, benefícios da terapia, reforço sobre pontualidade e acompanhamento da nossa meta trimestral.
+        Duas colegas que dedicaram anos à MB chegaram a um novo patamar nas suas carreiras. Também celebramos a Páscoa com chocolate, sorrisos e uma pausa merecida. E, olhando para frente, a MB chega com força ao palco do <strong>Conexão Awards 2026</strong>. Temos muito a comemorar e ainda mais a conquistar.
       </p>
       <p>
-        A ideia é simples: manter todo mundo bem informado, valorizar quem faz acontecer e deixar claro onde buscar apoio quando precisar. Boa leitura!
+        Aproveite cada história que preparamos para você nesta edição. Tudo aqui foi feito com carinho, de colaborador para colaborador. Bem-vindo à MB News! 🚀
       </p>
       <div class="editorial-signature">
         <div class="editorial-avatar">MB</div>
@@ -1263,134 +1116,122 @@
 <section id="promocoes">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow">Reconhecimento</span>
-      <h2 class="section-title">Nova Líder de Qualidade</h2>
-      <p class="section-desc nowrap-desktop">Maria Eduarda assume um novo desafio depois de uma trajetória marcada por dedicação, evolução e entrega.</p>
+      <span class="section-eyebrow">Destaque do mês</span>
+      <h2 class="section-title">Parabéns para quem chegou lá</h2>
+      <p class="section-desc">Duas trajetórias que cresceram junto com a MB e agora chegam a uma nova etapa.</p>
     </div>
-    <div class="promo-feature fade-up">
-      <div class="promo-feature-photo">
-        <img src="public/images/maria-eduarda-lider-qualidade.jpeg"
-          alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade" />
-      </div>
-
-      <div class="promo-feature-copy">
-        <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Promoção do mês</span>
-        <h3>Parabéns pela promoção, Maria Eduarda</h3>
-        <div class="role-arrow">
-          <span class="role-from">Analista de Negócios</span>
-          <span style="color:#94A3B8">→</span>
-          <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);">Líder de Qualidade</span>
-        </div>
-        <p>
-          Antes como Analista de Negócios, Maria Eduarda agora passa a liderar a área de Qualidade. Esse reconhecimento valoriza sua evolução, seu compromisso com a entrega e a forma como vem construindo sua história dentro da MB. Que essa nova fase venha com ainda mais crescimento.
-        </p>
-        <div class="promo-stats">
-          <div class="promo-stat">
-            <strong><i data-lucide="check-circle-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-            <span>Promovida</span>
-          </div>
-          <div class="promo-stat">
-            <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-            <span>Qualidade</span>
-          </div>
-          <div class="promo-stat">
-            <strong><i data-lucide="sparkles" style="width:20px;height:20px;color:#6B21A8"></i></strong>
-            <span>Nova fase</span>
-          </div>
+    <div style="margin-bottom:40px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 8px 40px rgba(0,0,0,.12);">
+      <img src="https://i.ibb.co/2p2sF27/Whats-App-Image-2026-04-08-at-11-41-44-1.jpg"
+        alt="Laiane e Victoria no dia da promoção"
+        style="width:100%;height:480px;object-fit:cover;object-position:50% 35%;display:block;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(11,26,46,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:32px;pointer-events:none;">
+        <div>
+          <span style="display:inline-block;background:rgba(0,153,221,.2);border:1px solid rgba(0,153,221,.4);color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:99px;margin-bottom:10px;">📸 Dia da Promoção</span>
+          <p style="color:white;font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.5px;">Laiane Sousa &amp; Victoria Lemos · 08 de Abril de 2026</p>
         </div>
       </div>
     </div>
 
+    <div class="promo-grid">
+
+      <!-- Card Victoria -->
+      <div class="promo-card fade-up" style="transition-delay:.1s">
+        <div class="promo-card-body">
+          <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Crédito &amp; Canal</span>
+          <h3>Victoria Lemos</h3>
+          <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);display:inline-block;margin-bottom:16px;">Supervisora de Canal</span>
+          <p>
+            Há quase 3 anos no setor de crédito, Victoria construiu uma trajetória marcada por atenção aos detalhes, visão de canal e entrega consistente. Agora assume a supervisão de canal para ampliar ainda mais o impacto do seu trabalho. Parabéns, Victoria. Você chegou lá! 💜
+          </p>
+          <div class="promo-stats">
+            <div class="promo-stat">
+              <strong>3+</strong>
+              <span>Anos na MB</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="bar-chart-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+              <span>Setor de Crédito</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="layers" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+              <span>Canal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Laiane -->
+      <div class="promo-card fade-up" style="transition-delay:.2s">
+        <div class="promo-card-body">
+          <span class="promo-role-badge" style="background:#e8f4ff;color:#005580;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Área Comercial</span>
+          <h3>Laiane Sousa</h3>
+          <span class="role-to" style="background:linear-gradient(135deg,#005580,#0099dd);display:inline-block;margin-bottom:16px;">Coordenação Comercial</span>
+          <p>
+            Em 3 anos de MB, Laiane cresceu com comprometimento, empatia e visão de negócio. Começou como Analista de Relacionamento e, passo a passo, fortaleceu processos, conexões e resultados. Agora lidera a área comercial com a mesma energia do início e muito mais experiência. Que venha uma nova fase cheia de conquistas, Laiane! 🙌
+          </p>
+          <div class="promo-stats">
+            <div class="promo-stat">
+              <strong>3+</strong>
+              <span>Anos na MB</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#005580"></i></strong>
+              <span>Nova liderança</span>
+            </div>
+            <div class="promo-stat">
+              <strong><i data-lucide="briefcase" style="width:20px;height:20px;color:#005580"></i></strong>
+              <span>Comercial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /promo-grid -->
   </div>
 </section>
 
-<!-- TOTAL PASS -->
+<!-- PÁSCOA -->
 <section id="pascoa">
   <div class="container">
     <div class="pascoa-layout">
 
       <!-- Conteúdo -->
       <div class="pascoa-content fade-up" style="transition-delay:.15s">
-        <span class="section-eyebrow" style="color:#FF6B35">Total Pass</span>
-        <h2 style="white-space:nowrap">Cada treino conta. O seu também.</h2>
+        <span class="section-eyebrow" style="color:#FF6B35">Celebração</span>
+        <h2>A MB também<br>celebra!</h2>
         <p>
-          Cuidar do corpo também é cuidar do trabalho. Mais disposição, menos estresse e mais foco no dia a dia — é isso que a atividade física traz. O ranking do Total Pass celebra quem fez disso um hábito.
+          Na quinta-feira, um mimo especial esperava cada colaborador da mb news: ovos de Páscoa! Foram <strong>mais de 150 ovos</strong> distribuídos com carinho, marcando um momento de partilha e descontração depois de um trimestre cheio e intenso.
         </p>
         <p>
-          Parabéns a todos que se movimentaram nesta edição. Cada check-in é uma escolha pelo seu bem-estar — e isso merece reconhecimento.
+          Mais do que chocolate, foi um jeito simples de lembrar que por trás de cada meta existe uma equipe que merece reconhecimento, cuidado e uma pausa gostosa no meio da rotina. 🍫
         </p>
         <div class="pascoa-highlight">
-          <div class="pascoa-highlight-icon"><i data-lucide="dumbbell" style="color:white"></i></div>
+          <div class="pascoa-highlight-icon"><i data-lucide="gift" style="color:white"></i></div>
           <div class="pascoa-highlight-text">
-            <strong>Top 3 da edição</strong>
-            <span>Os colaboradores com mais check-ins no Total Pass neste período</span>
+            <strong>+150</strong>
+            <span>ovos de Páscoa distribuídos para os colaboradores da mb news em celebração ao feriado</span>
           </div>
         </div>
 
         <div class="pascoa-media-row">
           <div class="pascoa-video-wrap">
-            <p class="pascoa-gallery-title">Pódio do mês</p>
-            <div class="totalpass-ranking">
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
-                <span class="totalpass-position">1º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <span class="totalpass-champion-badge"><i data-lucide="crown" style="width:12px;height:12px"></i> Grande campeão</span>
-                  <strong>Antonio Costa</strong>
-                  <span>22 check-ins</span>
-                </div>
-              </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
-                <span class="totalpass-position">2º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <strong>Julia Goulart</strong>
-                  <span>20 check-ins</span>
-                </div>
-              </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
-                <span class="totalpass-position">3º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <strong>Raphael Machado</strong>
-                  <span>17 check-ins</span>
-                </div>
-              </div>
+            <p class="pascoa-gallery-title">Vídeo da Páscoa</p>
+            <div class="pascoa-video-container">
+              <video controls playsinline>
+                <source src="pascoa.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
           <div class="pascoa-gallery-wrap">
-            <p class="pascoa-gallery-title">Benefícios da atividade física</p>
+            <p class="pascoa-gallery-title">Galeria da Páscoa</p>
             <div class="gallery-grid">
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#003956,#0099dd);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="zap" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Mais energia no dia a dia</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#059669,#10b981);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="smile" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Redução do estresse</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#f5a623,#ff6b35);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="target" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Mais foco e disposição</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#6B21A8,#A855F7);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="moon" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Sono de melhor qualidade</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#005580,#007ab8);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="shield-check" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Prevenção de doenças</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#1e293b,#475569);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="brain" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Cuidado com a mente</span>
-              </div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/xt5Yd7CM/Whats-App-Image-2026-04-08-at-15-01-10.jpg')"><img src="https://i.ibb.co/xt5Yd7CM/Whats-App-Image-2026-04-08-at-15-01-10.jpg" alt="Páscoa 1" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/cXTPCCB6/Whats-App-Image-2026-04-08-at-15-01-10-1.jpg')"><img src="https://i.ibb.co/cXTPCCB6/Whats-App-Image-2026-04-08-at-15-01-10-1.jpg" alt="Páscoa 2" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/QjTzTRYJ/Whats-App-Image-2026-04-08-at-15-01-10-2.jpg')"><img src="https://i.ibb.co/QjTzTRYJ/Whats-App-Image-2026-04-08-at-15-01-10-2.jpg" alt="Páscoa 3" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/sdCyL7fK/Whats-App-Image-2026-04-08-at-15-01-11.jpg')"><img src="https://i.ibb.co/sdCyL7fK/Whats-App-Image-2026-04-08-at-15-01-11.jpg" alt="Páscoa 4" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/ycpNfCNR/Whats-App-Image-2026-04-08-at-15-01-11-1.jpg')"><img src="https://i.ibb.co/ycpNfCNR/Whats-App-Image-2026-04-08-at-15-01-11-1.jpg" alt="Páscoa 5" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/hFyhcddY/Whats-App-Image-2026-04-08-at-15-01-12.jpg')"><img src="https://i.ibb.co/hFyhcddY/Whats-App-Image-2026-04-08-at-15-01-12.jpg" alt="Páscoa 6" /></div>
+              <div class="gallery-thumb" onclick="openLightbox('https://i.ibb.co/j9S508PV/Whats-App-Image-2026-04-08-at-15-08-33.jpg')"><img src="https://i.ibb.co/j9S508PV/Whats-App-Image-2026-04-08-at-15-08-33.jpg" alt="Páscoa 7" /></div>
             </div>
           </div>
         </div>
@@ -1400,79 +1241,72 @@
   </div>
 </section>
 
-<!-- NOVOS SITES -->
+<!-- AWARDS 2025 -->
 <section id="awards">
   <div class="container">
 
-    <!-- Cabeçalho -->
-    <div class="fade-up" style="text-align:center;margin-bottom:48px">
-      <span class="section-eyebrow" style="color:#0099dd">Novidade · MB Finance</span>
-      <h2 class="section-title">Dois novos sites no ar.</h2>
-      <p class="section-desc" style="max-width:560px;margin:0 auto">
-        A MB Finance renovou sua presença digital com dois sites pensados para públicos diferentes — mas com o mesmo padrão de qualidade e clareza que a equipe já conhece.
-      </p>
-    </div>
-
-    <!-- Dois cards de site -->
-    <div class="new-sites-grid fade-up" style="transition-delay:.05s">
-
-      <!-- MB Finance Oficial -->
-      <div class="new-site-card">
-        <div class="new-site-browser">
-          <div class="new-site-bar">
-            <span class="new-site-dot" style="background:#ef4444"></span>
-            <span class="new-site-dot" style="background:#f59e0b"></span>
-            <span class="new-site-dot" style="background:#22c55e"></span>
-            <span class="new-site-url">mbfinance.com.br</span>
-          </div>
-          <img src="public/images/mb-finance-site-print.png" alt="MB Finance" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
-        </div>
-        <div class="new-site-info">
-          <div class="new-site-badge-row">
-            <span class="new-site-tag" style="background:#e6f4fb;color:#003956">Site oficial</span>
-          </div>
-          <h3 class="new-site-title">MB Finance</h3>
-          <p class="new-site-desc">O site institucional da MB Finance — apresentando produtos, diferenciais e o canal de atendimento para empresas PJ de todo o Brasil.</p>
-          <div class="new-site-pills">
-            <span>Conta PJ</span>
-            <span>Capital de Giro</span>
-            <span>Máquina de Cartão</span>
-            <span>Antecipação</span>
-          </div>
-          <a href="https://www.mbfinance.com.br/" target="_blank" rel="noopener" class="new-site-btn">
-            <i data-lucide="external-link" style="width:16px;height:16px"></i>
-            Acessar site
-          </a>
+    <!-- Hero: texto + card certificado -->
+    <div class="awards-hero fade-up">
+      <div>
+        <span class="awards-eyebrow" style="color:#fbd717">Reconhecimentos · Conexão Awards</span>
+        <h2 class="awards-headline">
+          Melhor escritório<br>três anos seguidos.
+        </h2>
+        <p class="awards-hero-desc">
+          O Conexão Awards reconhece os destaques do programa Parceiros C6 Empresas. A MB venceu por três anos seguidos, e essa conquista também carrega o nome de cada pessoa que faz parte dessa história.
+        </p>
+        <div class="awards-badges">
+          <span class="awards-badge">Melhor Escritório · 2023</span>
+          <span class="awards-badge">Melhor Escritório · 2024</span>
+          <span class="awards-badge">Melhor Escritório · 2025</span>
         </div>
       </div>
 
-      <!-- MB Conexão -->
-      <div class="new-site-card">
-        <div class="new-site-browser">
-          <div class="new-site-bar">
-            <span class="new-site-dot" style="background:#ef4444"></span>
-            <span class="new-site-dot" style="background:#f59e0b"></span>
-            <span class="new-site-dot" style="background:#22c55e"></span>
-            <span class="new-site-url">mbnegocios.com.br</span>
-          </div>
-          <img src="public/images/mb-negocios-site-print.png" alt="MB Negócios" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
+      <!-- Imagem certificado -->
+      <div class="fade-up" style="transition-delay:.1s">
+        <img
+          src="/images/conexao-awards-2025.png"
+          alt="Conexão Awards 2025, Melhor Escritório mb news"
+          style="width:100%;max-width:400px;border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.18);display:block;"
+        />
+      </div>
+    </div>
+
+    <!-- Cards dos 3 anos -->
+    <div class="awards-years-grid">
+
+      <div class="awards-year-card fade-up" style="transition-delay:.05s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2023</span>
         </div>
-        <div class="new-site-info">
-          <div class="new-site-badge-row">
-            <span class="new-site-tag" style="background:#fff8e6;color:#b45309">MB Conexão</span>
-          </div>
-          <h3 class="new-site-title">MB Negócios</h3>
-          <p class="new-site-desc">A plataforma de negócios e parcerias da MB — conectando empresas, parceiros e oportunidades com a agilidade que o mercado exige.</p>
-          <div class="new-site-pills">
-            <span>Parcerias</span>
-            <span>Negócios PJ</span>
-            <span>Conectividade</span>
-          </div>
-          <a href="https://www.mbnegocios.com.br/" target="_blank" rel="noopener" class="new-site-btn" style="background:#003956">
-            <i data-lucide="external-link" style="width:16px;height:16px"></i>
-            Acessar site
-          </a>
+        <div class="awards-year-num">1º <span>ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          Foi o começo de uma nova fase. O time MB se destacou em contas ativadas e NPS de clientes, mostrando que estava pronto para competir entre os maiores.
+        </p>
+      </div>
+
+      <div class="awards-year-card fade-up" style="transition-delay:.1s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2024</span>
         </div>
+        <div class="awards-year-num">2º <span>ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          No segundo ano, veio a confirmação. A MB se destacou em retenção de clientes PJ e uso integrado do C6 Pay, provando que resultado consistente não nasce por acaso.
+        </p>
+      </div>
+
+      <div class="awards-year-card highlight fade-up" style="transition-delay:.15s">
+        <div class="awards-year-card-top">
+          <span class="awards-year-label">Conexão Awards · 2025</span>
+          <span class="awards-champ-badge">Tricampeão</span>
+        </div>
+        <div class="awards-year-num">3º <span>ano</span></div>
+        <div class="awards-year-title">Melhor escritório parceiro</div>
+        <p class="awards-year-desc">
+          No terceiro ano, veio o tricampeonato. A MB foi a primeira no Brasil a ultrapassar 10 mil contas PJ ativas via parceria. Esse troféu tem um pouco de cada colaborador que deu o seu melhor.
+        </p>
       </div>
 
     </div>
@@ -1483,124 +1317,131 @@
 <section id="saude">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow">RH &amp; Bem-estar</span>
-      <h2 class="section-title">Informação, cuidado e canais de apoio.</h2>
+      <span class="section-eyebrow">Saúde &amp; Bem-estar</span>
+      <h2 class="section-title">Saúde em dia: seus exames, seu direito.</h2>
     </div>
     <p class="saude-intro fade-up">
-      Esta edição reúne avisos importantes para o time: o RH agora também está no WhatsApp, o canal de denúncia fica disponível por bot, a NR1 segue em atualização e o cuidado com saúde mental continua sendo parte da nossa rotina.
+      Cuidar da saúde faz parte da vida e a legislação trabalhista reconhece isso. Em alguns casos, é possível se ausentar para exames sem desconto de salário. Nesta edição, explicamos de forma simples quais são esses direitos e como usar cada um deles no dia a dia.
     </p>
 
     <div class="fade-up" style="transition-delay:.05s">
-      <span class="section-eyebrow" style="color:#059669;margin-bottom:20px">Canais e orientações</span>
+      <span class="section-eyebrow" style="color:#059669;margin-bottom:20px">O que a lei garante hoje</span>
     </div>
     <div class="saude-rights-grid">
       <div class="saude-right-card fade-up" style="transition-delay:.1s">
         <div class="saude-right-icon">
-          <i data-lucide="message-circle" style="color:white;width:26px;height:26px"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
         </div>
-        <span class="saude-right-tag">WhatsApp</span>
-        <strong>Você sabia que agora o RH está no WhatsApp?</strong>
-        <p>O canal facilita dúvidas do dia a dia, orientações internas e direcionamentos rápidos. Sempre que precisar, chame o RH pelo WhatsApp oficial.</p>
+        <span class="saude-right-tag">Até 3 dias/ano</span>
+        <strong>Exames preventivos de câncer</strong>
+        <p>Você tem direito a até 3 dias por ano para realizar exames preventivos de câncer, devidamente comprovados e <strong>sem desconto salarial</strong></p>
       </div>
       <div class="saude-right-card fade-up" style="transition-delay:.15s">
         <div class="saude-right-icon">
-          <i data-lucide="shield-alert" style="color:white;width:26px;height:26px"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M20 21a8 8 0 1 0-16 0"/>
+          </svg>
         </div>
-        <span class="saude-right-tag">Canal de denúncia</span>
-        <strong>Canal seguro pelo bot do WhatsApp</strong>
-        <p>O canal de denúncia também fica no WhatsApp. Ele existe para registrar situações sensíveis com seriedade, sigilo e encaminhamento correto.</p>
+        <span class="saude-right-tag">1 dia/ano</span>
+        <strong>Consulta do filho até 6 anos</strong>
+        <p>Você pode usar 1 dia por ano para acompanhar filho de até 6 anos em consulta médica, <strong>sem perda de remuneração</strong></p>
       </div>
       <div class="saude-right-card fade-up" style="transition-delay:.2s">
         <div class="saude-right-icon">
-          <i data-lucide="clipboard-check" style="color:white;width:26px;height:26px"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
         </div>
-        <span class="saude-right-tag">NR1</span>
-        <strong>Atualização sobre saúde e segurança</strong>
-        <p>A NR1 reforça a importância de identificar riscos ocupacionais, orientar equipes e manter práticas preventivas no ambiente de trabalho.</p>
+        <span class="saude-right-tag">Até 2 dias</span>
+        <strong>Consultas e exames na gestação</strong>
+        <p>Até 2 dias para acompanhar a esposa ou companheira grávida em consultas médicas e exames complementares durante a <strong>gestação</strong></p>
       </div>
     </div>
 
     <div class="saude-how-box fade-up" style="transition-delay:.25s">
-      <h3>Como acessar o canal de denúncia no WhatsApp</h3>
+      <h3>Como comprovar a ausência para exames</h3>
       <p style="color:var(--gray-600);font-size:.95rem;line-height:1.75;margin-bottom:28px">
-        O canal fica dentro do atendimento do RH no WhatsApp. Veja o passo a passo para chegar até ele:
+        Para que a ausência seja justificada, sem desconto de salário, é importante apresentar a comprovação correta. Veja o passo a passo:
       </p>
       <div class="saude-steps">
         <div class="saude-step">
           <div class="saude-step-num">1</div>
           <div class="saude-step-body">
-            <strong>Abra a conversa com o RH MB Finance</strong>
-            <p>Entre no WhatsApp oficial do RH e envie uma mensagem para iniciar o atendimento automático.</p>
+            <strong>Comunique a liderança ou o RH com antecedência</strong>
+            <p>Combine previamente o período em que pretende realizar o exame, sempre que possível, para facilitar o planejamento da equipe.</p>
           </div>
         </div>
         <div class="saude-step">
           <div class="saude-step-num">2</div>
           <div class="saude-step-body">
-            <strong>Escolha a opção de canal de denúncia</strong>
-            <p>No menu do bot, selecione a opção correspondente ao canal de denúncia para registrar sua solicitação.</p>
+            <strong>Solicite a declaração de comparecimento</strong>
+            <p>Peça ao serviço de saúde uma declaração de comparecimento ou atestado médico, constando data, horário e identificação do profissional.</p>
           </div>
         </div>
         <div class="saude-step">
           <div class="saude-step-num">3</div>
           <div class="saude-step-body">
-            <strong>Siga as instruções do bot</strong>
-            <p>Preencha as informações solicitadas com atenção. O registro será direcionado para análise responsável.</p>
+            <strong>Anexe no sistema de Gestão de Ponto</strong>
+            <p>Registre o documento no sistema de Gestão de Ponto em até <span style="font-weight:700;color:var(--gray-800)">48h</span> após a emissão.</p>
           </div>
         </div>
       </div>
       <div class="saude-alert">
-        <div class="saude-alert-icon">!</div>
-        <p><strong>Importante:</strong> use o canal com responsabilidade. Ele existe para acolher relatos reais, proteger pessoas e fortalecer um ambiente de trabalho mais seguro.</p>
+        <div class="saude-alert-icon">💡</div>
+        <p><strong>Importante:</strong> para exames preventivos de câncer, não é necessário apresentar o resultado. Basta comprovar que o exame foi realizado, preservando suas informações de saúde.</p>
       </div>
     </div>
 
-    <!-- AVISO: Terapia e Pontualidade -->
+    <!-- AVISO: Alteração de Plano de Saúde -->
     <div class="fade-up" style="transition-delay:.3s;margin-top:32px">
       <div style="background:linear-gradient(135deg,#003956 0%,#005580 100%);border-radius:24px;padding:36px 40px;position:relative;overflow:hidden;border:1px solid rgba(0,153,221,.25);box-shadow:0 8px 40px rgba(0,57,86,.25)">
-        <div style="position:absolute;top:-30px;right:-30px;font-size:10rem;opacity:.05;line-height:1">+</div>
+        <div style="position:absolute;top:-30px;right:-30px;font-size:10rem;opacity:.05;line-height:1">📋</div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
           <div style="background:rgba(0,153,221,.2);border:1px solid rgba(0,153,221,.4);border-radius:99px;padding:5px 16px;display:inline-flex;align-items:center;gap:8px">
             <span style="width:8px;height:8px;border-radius:50%;background:#0099dd;display:inline-block;animation:pulse 2s infinite"></span>
-            <span style="color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase">Bem-estar · Rotina de trabalho</span>
+            <span style="color:#0099dd;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase">Alteração de Plano · Data Marcada</span>
           </div>
         </div>
         <h3 style="font-family:'Inter',sans-serif;font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:white;letter-spacing:-.5px;margin-bottom:14px;line-height:1.2">
-          Terapia, cuidado emocional e compromisso com horários
+          Novo plano de saúde: <span style="color:#0099dd">Rede Sulamerica</span>
         </h3>
         <p style="color:rgba(255,255,255,.72);font-size:.97rem;line-height:1.8;margin-bottom:28px;max-width:900px">
-          Fazer terapia ajuda a organizar pensamentos, lidar melhor com pressões, desenvolver autoconhecimento e melhorar relações dentro e fora do trabalho. Ao mesmo tempo, cuidar da rotina também faz parte do nosso compromisso: absenteísmo inclui faltas e atrasos, por isso é importante chegar no horário acordado com a empresa.
+          A partir do dia <strong style="color:white">10 de junho de 2026</strong>, a MB adotará oficialmente a <strong style="color:white">Rede Sulamerica</strong> como plano de saúde para todos os colaboradores CLTs. É mais uma conquista para o nosso time, com mais cobertura, mais parceiros e mais cuidado com quem faz a MB acontecer.
         </p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:stretch;width:100%;max-width:900px">
           <div style="background:rgba(0,153,221,.15);border:1px solid rgba(0,153,221,.3);border-radius:16px;padding:18px 28px;display:flex;align-items:center;gap:14px;min-width:0">
-            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#0099dd,#007ab8);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i data-lucide="heart-pulse" style="color:white;width:22px;height:22px"></i></div>
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#0099dd,#007ab8);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
             <div>
-              <strong style="display:block;color:white;font-size:1.1rem;font-family:'Inter',sans-serif;font-weight:800">Benefícios da terapia</strong>
-              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Apoio emocional, clareza e equilíbrio</span>
+              <strong style="display:block;color:white;font-size:1.3rem;font-family:'Inter',sans-serif;font-weight:800">10/06/2026</strong>
+              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Início oficial da nova rede</span>
             </div>
           </div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 28px;display:flex;align-items:center;gap:14px;min-width:0">
-            <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i data-lucide="clock-3" style="color:white;width:22px;height:22px"></i></div>
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 12v4m-2-2h4"/></svg></div>
             <div>
-              <strong style="display:block;color:white;font-size:1rem;font-family:'Inter',sans-serif;font-weight:700">Pontualidade importa</strong>
-              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Chegue no horário combinado</span>
+              <strong style="display:block;color:white;font-size:1rem;font-family:'Inter',sans-serif;font-weight:700">Rede Sulamerica</strong>
+              <span style="color:rgba(255,255,255,.55);font-size:.8rem">Para colaboradores CLTs</span>
             </div>
           </div>
         </div>
         <div style="margin-top:24px;padding:14px 18px;background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.3);border-radius:12px;display:flex;gap:10px;align-items:flex-start">
           <span style="flex-shrink:0;display:flex;align-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(245,166,35,1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
-          <p style="color:rgba(255,255,255,.75);font-size:.87rem;line-height:1.65;margin:0"><strong style="color:white">Fique atento:</strong> se houver algum imprevisto para cumprir seu horário, avise a liderança e o RH o quanto antes. Comunicação rápida evita ruídos e ajuda o planejamento da equipe.</p>
+          <p style="color:rgba(255,255,255,.75);font-size:.87rem;line-height:1.65;margin:0"><strong style="color:white">Fique atento:</strong> em breve o RH enviará mais detalhes sobre a transição, carteirinhas e cobertura. Qualquer dúvida, entre em contato com o departamento de Recursos Humanos.</p>
         </div>
       </div>
     </div>
 
     <!-- Botão WhatsApp -->
     <div class="fade-up" style="transition-delay:.35s;margin-top:32px;text-align:center">
-      <a href="https://wa.me/5521995442142?text=Ol%C3%A1%2C+tudo+bem%3F+Sou+colaborador(a)+da+MB+e+gostaria+de+falar+com+o+RH.+Pode+me+ajudar%3F" target="_blank" rel="noopener"
+      <a href="https://wa.me/5521995442142?text=Ol%C3%A1%2C+tudo+bem%3F+Sou+colaborador(a)+da+mb+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o+plano+de+sa%C3%BAde.+Pode+me+ajudar%3F+%F0%9F%98%8A" target="_blank" rel="noopener"
         style="display:inline-flex;align-items:center;gap:12px;background:#25D366;color:white;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;padding:16px 36px;border-radius:99px;text-decoration:none;transition:all .2s"
         onmouseover="this.style.transform='translateY(-2px)'"
         onmouseout="this.style.transform='none'">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L.057 23.571a.75.75 0 0 0 .921.921l5.709-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.724 9.724 0 0 1-4.946-1.348l-.355-.21-3.668.948.972-3.558-.23-.368A9.724 9.724 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-        Falar com o RH no WhatsApp
+        Tire a sua dúvida
       </a>
       <p style="margin-top:12px;color:#888;font-size:.8rem">Atendimento via WhatsApp · RH MB Finance</p>
     </div>
@@ -1704,6 +1545,42 @@
   </div>
 </section>
 
+<!-- NÚMEROS -->
+<section id="numeros" style="display:none">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="section-eyebrow">Em números</span>
+      <h2 class="section-title">O mês em dados</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0f7ff,#e8f4ff);border-color:#c7dff7;transition-delay:.05s">
+        <span class="stat-emoji"><i data-lucide="trending-up" style="color:var(--blue)"></i></span>
+        <span class="stat-number" style="color:var(--blue)">2</span>
+        <span class="stat-label">Promoções internas<br>neste mês</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fef3e2,#fff8f0);border-color:#fde68a;transition-delay:.1s">
+        <span class="stat-emoji"><i data-lucide="gift" style="color:#F5A623"></i></span>
+        <span class="stat-number" style="color:var(--gold)">+150</span>
+        <span class="stat-label">Ovos de Páscoa<br>distribuídos</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#f0fff4,#e8fff0);border-color:#a7f3d0;transition-delay:.15s">
+        <span class="stat-emoji"><i data-lucide="target" style="color:#059669"></i></span>
+        <span class="stat-number" style="color:#059669">3+</span>
+        <span class="stat-label">Anos de casa de<br>cada promovida</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fdf4ff,#f8f0ff);border-color:#e9d5ff;transition-delay:.2s">
+        <span class="stat-emoji"><i data-lucide="trophy" style="color:#7c3aed"></i></span>
+        <span class="stat-number" style="color:#7c3aed">09/04</span>
+        <span class="stat-label">Data do<br>Conexão Awards</span>
+      </div>
+      <div class="stat-card fade-up" style="background:linear-gradient(135deg,#fff1f0,#ffe8e8);border-color:#fecaca;transition-delay:.25s">
+        <span class="stat-emoji"><i data-lucide="map-pin" style="color:#dc2626"></i></span>
+        <span class="stat-number" style="color:#dc2626">SP</span>
+        <span class="stat-label">São Paulo recebe<br>a mb news</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- GALERIA / VÍDEOS -->
 <section id="videos" style="display:none">
@@ -1798,22 +1675,22 @@
 <!-- FAB NAV -->
 <div class="fab-nav">
   <a href="#home"     class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
-  <a href="#promocoes" class="fab-btn" title="Promoção"><i data-lucide="award"></i></a>
-  <a href="#pascoa"   class="fab-btn" title="Total Pass"><i data-lucide="dumbbell"></i></a>
-  <a href="#awards"   class="fab-btn" title="Novo site"><i data-lucide="monitor-smartphone"></i></a>
-  <a href="#saude"    class="fab-btn" title="RH e bem-estar"><i data-lucide="heart-pulse"></i></a>
+  <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
+  <a href="#pascoa"   class="fab-btn" title="Páscoa"><i data-lucide="gift"></i></a>
+  <a href="#awards"   class="fab-btn" title="Awards 2025"><i data-lucide="trophy"></i></a>
+  <a href="#saude"    class="fab-btn" title="Saúde"><i data-lucide="heart-pulse"></i></a>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">mb <span>news</span></div>
-  <p>Revista interna mb news · Edição #002 · Maio 2026</p>
+  <p>Revista interna mb news · Edição #001 · Abril 2026</p>
   <div class="footer-links">
     <a href="#editorial">Foco Mensal</a>
-    <a href="#promocoes">Promoção</a>
-    <a href="#pascoa">Total Pass</a>
-    <a href="#awards">Novo site</a>
-    <a href="#saude">RH & Bem-estar</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#pascoa">Páscoa</a>
+    <a href="#awards">Awards 2025</a>
+    <a href="#saude">Saúde</a>
   </div>
   <hr class="footer-divider" />
   <p class="footer-copy">© 2026 mb news · Material de comunicação interna · Todos os direitos reservados</p>
