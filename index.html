@@ -499,17 +499,18 @@
       gap: 18px;
       width: 100%;
       min-width: 0;
+      align-items: start;
     }
     .totalpass-rank-card {
       background: #fff;
       border: 1px solid rgba(0,153,221,.16);
       border-radius: 22px;
-      padding: 24px 22px;
+      padding: 20px 22px 22px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 16px;
+      gap: 12px;
       box-shadow: 0 12px 34px rgba(0,0,0,.07);
     }
     .totalpass-rank-card:first-child {
@@ -520,6 +521,13 @@
       background: linear-gradient(135deg, #fff 0%, #fff7e8 64%, #fff1d7 100%);
       box-shadow: 0 24px 60px rgba(245,166,35,.24);
       gap: 18px;
+    }
+    .totalpass-avatar-frame {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
     .totalpass-avatar {
       width: 78px;
@@ -561,9 +569,73 @@
       text-transform: uppercase;
       margin-bottom: 10px;
     }
+    .totalpass-podium-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .totalpass-podium-head .pascoa-gallery-title { margin-bottom: 0; }
+    .totalpass-edit-toggle {
+      border: 1px solid rgba(0,153,221,.2);
+      background: #fff;
+      color: var(--blue);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: .78rem;
+      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+      white-space: nowrap;
+    }
+    .totalpass-edit-toggle:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .totalpass-editor.is-editing .totalpass-edit-toggle {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+    .totalpass-avatar-tools {
+      display: none;
+      width: min(100%, 190px);
+      margin-top: 4px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(0,57,86,.08);
+      gap: 8px;
+    }
+    .totalpass-editor.is-editing .totalpass-avatar-tools {
+      display: grid;
+    }
+    .totalpass-avatar-control {
+      display: grid;
+      grid-template-columns: 18px 1fr 34px;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-500);
+      font-size: .7rem;
+      font-weight: 700;
+    }
+    .totalpass-avatar-control input {
+      width: 100%;
+      accent-color: var(--cyan);
+      cursor: pointer;
+    }
+    .totalpass-avatar-value {
+      color: var(--gray-500);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
     .totalpass-rank-info {
       min-width: 0;
-      flex: 1;
     }
     .totalpass-rank-info strong {
       display: block;
@@ -1155,12 +1227,14 @@
       .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .section-desc.nowrap-desktop { white-space: normal; }
+      .totalpass-podium-head { align-items: flex-start; }
       .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
         padding: 18px;
         gap: 14px;
       }
+      .totalpass-avatar-tools { width: min(100%, 220px); }
       .totalpass-rank-card:first-child .totalpass-avatar {
         width: 94px;
         height: 94px;
@@ -1373,32 +1447,56 @@
         </div>
 
         <div class="pascoa-media-row">
-          <div class="pascoa-video-wrap">
-            <p class="pascoa-gallery-title">Pódio do mês</p>
+          <div class="pascoa-video-wrap totalpass-editor">
+            <div class="totalpass-podium-head">
+              <p class="pascoa-gallery-title">Pódio do mês</p>
+              <button class="totalpass-edit-toggle" type="button" data-totalpass-edit aria-pressed="false">
+                <i data-lucide="sliders-horizontal" style="width:14px;height:14px"></i>
+                Ajustar fotos
+              </button>
+            </div>
             <div class="totalpass-ranking">
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
-                <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
+                <div class="totalpass-avatar-frame">
+                  <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
+                </div>
                 <div class="totalpass-rank-info">
                   <span class="totalpass-champion-badge"><i data-lucide="crown" style="width:12px;height:12px"></i> Grande campeão</span>
                   <strong>Antonio Costa</strong>
                   <span>22 check-ins</span>
                 </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Antonio Costa">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="36" data-avatar-axis="y"> <span class="totalpass-avatar-value">36%</span></label>
+                </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
-                <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
+                <div class="totalpass-avatar-frame">
+                  <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
+                </div>
                 <div class="totalpass-rank-info">
                   <strong>Julia Goulart</strong>
                   <span>20 check-ins</span>
                 </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Julia Goulart">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="34" data-avatar-axis="y"> <span class="totalpass-avatar-value">34%</span></label>
+                </div>
               </div>
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
                 <span class="totalpass-position">3º</span>
-                <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
+                <div class="totalpass-avatar-frame">
+                  <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
+                </div>
                 <div class="totalpass-rank-info">
                   <strong>Raphael Machado</strong>
                   <span>17 check-ins</span>
+                </div>
+                <div class="totalpass-avatar-tools" aria-label="Ajuste da foto de Raphael Machado">
+                  <label class="totalpass-avatar-control">X <input type="range" min="0" max="100" value="50" data-avatar-axis="x"> <span class="totalpass-avatar-value">50%</span></label>
+                  <label class="totalpass-avatar-control">Y <input type="range" min="0" max="100" value="32" data-avatar-axis="y"> <span class="totalpass-avatar-value">32%</span></label>
                 </div>
               </div>
             </div>
@@ -1916,6 +2014,29 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') document.getElementById('monthModal').classList.remove('open');
   });
+
+  // ── TOTAL PASS AVATAR EDITOR
+  const totalPassEditor = document.querySelector('.totalpass-editor');
+  const totalPassEditToggle = document.querySelector('[data-totalpass-edit]');
+  if (totalPassEditor && totalPassEditToggle) {
+    totalPassEditToggle.addEventListener('click', () => {
+      const isEditing = totalPassEditor.classList.toggle('is-editing');
+      totalPassEditToggle.setAttribute('aria-pressed', String(isEditing));
+    });
+
+    document.querySelectorAll('.totalpass-rank-card').forEach(card => {
+      card.querySelectorAll('[data-avatar-axis]').forEach(input => {
+        const valueLabel = input.closest('.totalpass-avatar-control')?.querySelector('.totalpass-avatar-value');
+        const updateAvatarPosition = () => {
+          const axis = input.dataset.avatarAxis;
+          card.style.setProperty(`--avatar-${axis}`, `${input.value}%`);
+          if (valueLabel) valueLabel.textContent = `${input.value}%`;
+        };
+        input.addEventListener('input', updateAvatarPosition);
+        updateAvatarPosition();
+      });
+    });
+  }
 
   // ── NAV ACTIVE LINK
   const sections = document.querySelectorAll('section[id]');

@@ -363,5 +363,7 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - O pódio do Total Pass usa avatares e cards maiores para melhorar leitura e reduzir perda visual percebida em fotos pequenas.
 - O pódio do Total Pass usa três colunas no desktop e uma coluna no mobile para equilibrar destaque e responsividade.
 - O enquadramento dos avatares do Total Pass é controlado por variáveis CSS (`--avatar-x` e `--avatar-y`) aplicadas em cada card, permitindo ajuste fino sem alterar os arquivos de imagem.
+- O ajuste de enquadramento ganhou controles visuais recolhidos por padrão, acionados pelo botão `Ajustar fotos`, para não poluir o pódio durante a leitura normal.
+- O grid do pódio usa `align-items: start` para impedir que os cards da Julia e do Raphael fiquem artificialmente altos por causa do card maior do campeão.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.
