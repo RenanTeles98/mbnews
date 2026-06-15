@@ -10,6 +10,7 @@
 - `index.html` — foto da Maria Eduarda ajustada para proporção 3:4 e largura máxima menor no bloco de promoção.
 - `index.html` — textos da promoção atualizados para usar `Maria Eduarda`, sem o sobrenome Mendes.
 - `index.html` — seção da promoção reescrita para reduzir repetição e usar o título "Nova Líder de Qualidade".
+- `index.html` — subtítulo da promoção ajustado para ficar em uma linha no desktop.
 
 ---
 

@@ -46,6 +46,7 @@
 - [x] Ajustar foto da Maria Eduarda para proporção 3:4 e reduzir tamanho visual.
 - [x] Trocar referência "Duda" por "Maria Eduarda" nos textos visíveis da edição de maio.
 - [x] Reescrever seção da promoção para reduzir repetição e usar o título "Nova Líder de Qualidade".
+- [x] Manter o subtítulo da promoção da Maria Eduarda em uma linha no desktop.
 - [x] Refazer ranking Total Pass com fotos circulares ao lado dos nomes.
 - [x] Destacar Antonio Costa como grande campeão do ranking Total Pass.
 - [x] Ampliar pódio do Total Pass e aumentar fotos/cards para melhorar destaque e nitidez percebida.

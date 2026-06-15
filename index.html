@@ -272,6 +272,10 @@
       color: var(--gray-600); font-size: 1rem; line-height: 1.7;
       max-width: 600px;
     }
+    .section-desc.nowrap-desktop {
+      max-width: none;
+      white-space: nowrap;
+    }
 
     /* ─── PROMOTIONS ──────────────────────────────────── */
     #promocoes { background: var(--white); }
@@ -1146,6 +1150,7 @@
       .promo-feature { grid-template-columns: 1fr; }
       .promo-feature-photo { max-width: 420px; }
       .promo-feature-copy { max-width: none; padding-top: 0; }
+      .section-desc.nowrap-desktop { white-space: normal; }
       .totalpass-ranking { min-width: 0; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
@@ -1301,7 +1306,7 @@
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
       <h2 class="section-title">Nova Líder de Qualidade</h2>
-      <p class="section-desc">Maria Eduarda assume um novo desafio depois de uma trajetória marcada por dedicação, evolução e entrega.</p>
+      <p class="section-desc nowrap-desktop">Maria Eduarda assume um novo desafio depois de uma trajetória marcada por dedicação, evolução e entrega.</p>
     </div>
     <div class="promo-feature fade-up">
       <div class="promo-feature-photo">
