@@ -33,33 +33,6 @@
       overflow-x: hidden;
     }
 
-    /* ─── LOADING SCREEN ─────────────────────────────── */
-    #loader {
-      position: fixed; inset: 0; z-index: 9999;
-      background: var(--navy);
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 20px;
-      transition: opacity .5s, visibility .5s;
-    }
-    #loader.hide { opacity: 0; visibility: hidden; }
-    .loader-logo {
-      font-family: 'Inter', sans-serif;
-      font-size: 2.5rem; font-weight: 700; color: var(--white);
-      letter-spacing: -1px;
-    }
-    .loader-logo span { color: var(--cyan); }
-    .loader-bar {
-      width: 200px; height: 3px; background: rgba(255,255,255,.15);
-      border-radius: 99px; overflow: hidden;
-    }
-    .loader-bar::after {
-      content: '';
-      display: block; height: 100%;
-      background: linear-gradient(90deg, var(--cyan), var(--blue));
-      border-radius: 99px;
-      animation: loading 1.4s ease forwards;
-    }
-    @keyframes loading { from { width: 0 } to { width: 100% } }
 
     /* ─── MONTH NAV ──────────────────────────────────── */
     .month-nav {
@@ -1132,11 +1105,6 @@
 </head>
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-logo">mb <span>news</span></div>
-  <div class="loader-bar"></div>
-</div>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
@@ -1822,12 +1790,6 @@
   // ── LUCIDE ICONS
   lucide.createIcons();
 
-  // ── LOADER
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('loader').classList.add('hide');
-    }, 1600);
-  });
 
   // ── SCROLL ANIMATIONS
   const observer = new IntersectionObserver((entries) => {
