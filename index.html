@@ -282,9 +282,9 @@
     #promocoes { background: var(--white); }
     .promo-feature {
       display: grid;
-      grid-template-columns: minmax(280px, 420px) minmax(320px, 1fr);
+      grid-template-columns: minmax(280px, 380px) minmax(320px, 1fr);
       gap: 44px;
-      align-items: start;
+      align-items: stretch;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -294,9 +294,8 @@
       position: relative;
       box-shadow: 0 8px 40px rgba(0,0,0,.12);
       background: #003956;
-      aspect-ratio: 3 / 4;
       width: 100%;
-      max-width: 320px;
+      min-height: 400px;
     }
     .promo-feature-photo img {
       width: 100%;
