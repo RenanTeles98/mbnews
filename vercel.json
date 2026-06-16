@@ -1,6 +1,16 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/pages/:path*",
+      "destination": "/public/pages/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/public/images/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
