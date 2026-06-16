@@ -94,6 +94,11 @@
     .month-btn.locked svg { opacity: .4; }
     .month-btn.future { color: #aaa; }
     .month-btn.future:hover { background: var(--gray-100); color: var(--navy); }
+    .month-btn.available {
+      color: #059669; border: 1.5px solid #a7f3d0;
+      background: #f0fdf4; font-weight: 700;
+    }
+    .month-btn.available:hover { background: #dcfce7; }
 
     /* Tooltip / modal mensal */
     .month-modal-overlay {
@@ -1180,7 +1185,7 @@
     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
     Mar
   </button>
-  <a class="month-btn" href="/pages/mb-news-abril-2026.html">Abr</a>
+  <a class="month-btn available" href="/pages/mb-news-abril-2026.html">✓ Abr</a>
   <button class="month-btn active">✦ Maio 2026</button>
   <button class="month-btn future" onclick="openMonthModal('Junho 2026','future')">Jun</button>
   <button class="month-btn future" onclick="openMonthModal('Julho 2026','future')">Jul</button>
