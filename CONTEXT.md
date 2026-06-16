@@ -251,3 +251,25 @@ Próximo passo recomendado: validar visualmente a seção da promoção em produ
 - Branch principal: `master`
 - Último conjunto de commits: ajustes visuais nas páginas legais e na timeline do `sobre`
 - Rollback disponível via Vercel dashboard ou `git revert`
+
+---
+
+## Sessao 2026-06-16 - Correcao de rota da edicao de Abril
+
+- Corrigido erro 404 em `https://mbnews.vercel.app/pages/mb-news-abril-2026.html`.
+- Identificado que a Vercel esta publicando o projeto como site estatico pela raiz (`outputDirectory: "."`), mantendo arquivos de `public/pages/` acessiveis originalmente em `/public/pages/`.
+- Adicionados rewrites em `vercel.json` para mapear `/pages/:path*` para `/public/pages/:path*`.
+- Adicionado rewrite para `/images/:path*` apontar para `/public/images/:path*`, mantendo os caminhos usados pelos HTMLs da MB News.
+- Deploy de producao executado e validado com `200 OK` para a pagina de Abril, home e imagem publica.
+
+Arquivos modificados nesta sessao:
+- `vercel.json`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-06-16.md`
+
+Estado atual: a edicao de Abril esta publicada e acessivel em `/pages/mb-news-abril-2026.html`; a edicao de Maio continua na home.
+
+Proximo passo recomendado: validar visualmente pelo navegador e informar a porcentagem oficial da trimestral para fechar a edicao de Maio.

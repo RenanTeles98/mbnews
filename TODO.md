@@ -121,3 +121,7 @@
 ### Infraestrutura
 - [ ] Configurar `robots.txt` para bloquear `/admin`
 - [ ] Adicionar error pages customizadas (404, 500) no Next.js
+
+## Atualizacao 2026-06-16
+
+- [x] Corrigir rota de producao da edicao de Abril para `/pages/mb-news-abril-2026.html`.

@@ -370,3 +370,31 @@ Atualizar `index.html` com o conteúdo editorial disponível e usar placeholders
 - Edições já publicadas da MB News devem ficar acessíveis como páginas de arquivo em `public/pages/`, e o menu mensal deve apontar para essas páginas em vez de bloquear meses anteriores.
 - O bloco de aniversariantes foi removido da edição de maio por solicitação editorial.
 - A porcentagem oficial ainda precisa ser fornecida para fechar a publicação final.
+
+---
+
+## ADR-017: Rewrites para rotas estaticas da MB News
+
+**Data:** 2026-06-16
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+A edicao arquivada de Abril foi criada em `public/pages/mb-news-abril-2026.html`, mas a Vercel esta configurada com `outputDirectory: "."`. Nesse modo, o arquivo ficava acessivel em `/public/pages/mb-news-abril-2026.html`, enquanto a navegacao apontava para `/pages/mb-news-abril-2026.html`, gerando 404.
+
+### Decisao
+
+Adicionar rewrites no `vercel.json` para mapear `/pages/:path*` para `/public/pages/:path*` e `/images/:path*` para `/public/images/:path*`.
+
+### Alternativas Consideradas
+
+- **Mover HTMLs arquivados para uma pasta `pages/` na raiz:** rejeitado porque conflita com a regra do projeto de manter HTMLs secundarios em `public/pages/`.
+- **Alterar os links para `/public/pages/...`:** rejeitado por deixar URLs publicas menos limpas e expor detalhe interno da estrutura.
+- **Usar rewrites (escolhida):** preserva a organizacao do projeto e mantem URLs publicas simples.
+
+### Consequencias
+
+- A MB News pode continuar criando arquivos em `public/pages/`.
+- URLs publicas permanecem no padrao `/pages/...`.
+- Imagens referenciadas como `/images/...` tambem sao servidas corretamente no deploy estatico atual.

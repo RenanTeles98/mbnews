@@ -97,3 +97,11 @@ Principais marcos conhecidos:
 - Home mantida em HTML estático (estratégia Strangler Fig)
 - Overflow horizontal mobile corrigido
 - Smooth scroll com Lenis adicionado
+
+---
+
+## 2026-06-16 - Correcao da rota de Abril da MB News
+
+### Corrigido
+- `vercel.json` - adicionados rewrites para publicar `/pages/*` a partir de `public/pages/*` e `/images/*` a partir de `public/images/*`.
+- `https://mbnews.vercel.app/pages/mb-news-abril-2026.html` - rota validada em producao com `200 OK` apos novo deploy.
