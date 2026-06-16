@@ -302,8 +302,76 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 50% 55%;
+      object-position: var(--photo-x, 50%) var(--photo-y, 55%);
       display: block;
+    }
+    .image-adjust-actions {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 14px;
+    }
+    .image-adjust-toggle {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(0,153,221,.22);
+      background: #fff;
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 9px 15px;
+      font-size: .82rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+      transition: transform .18s, border-color .18s, box-shadow .18s;
+    }
+    .image-adjust-toggle:hover {
+      transform: translateY(-1px);
+      border-color: rgba(0,153,221,.42);
+      box-shadow: 0 12px 30px rgba(0,0,0,.1);
+    }
+    .image-adjust-panel {
+      display: none;
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid rgba(0,153,221,.16);
+      border-radius: 18px;
+      background: rgba(255,255,255,.86);
+      box-shadow: 0 14px 36px rgba(0,0,0,.08);
+    }
+    .image-adjust-panel.open {
+      display: grid;
+      gap: 14px;
+    }
+    .image-adjust-group {
+      display: grid;
+      gap: 10px;
+    }
+    .image-adjust-group strong {
+      color: var(--gray-800);
+      font-family: 'Inter', sans-serif;
+      font-size: .9rem;
+      font-weight: 800;
+    }
+    .image-adjust-control {
+      display: grid;
+      grid-template-columns: 86px minmax(120px, 1fr) 38px;
+      align-items: center;
+      gap: 10px;
+      color: var(--gray-600);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .image-adjust-control input[type="range"] {
+      width: 100%;
+      accent-color: var(--cyan);
+      cursor: pointer;
+    }
+    .image-adjust-value {
+      text-align: right;
+      color: var(--gray-500);
+      font-variant-numeric: tabular-nums;
     }
     .promo-feature-copy {
       padding-top: 6px;
@@ -619,6 +687,16 @@
     .totalpass-rank-card:nth-child(3) .totalpass-position {
       background: #e8fff0;
       color: #059669;
+    }
+    .totalpass-adjust-actions {
+      justify-content: center;
+      margin-top: 18px;
+    }
+    .totalpass-adjust-panel {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .pascoa-video-wrap .pascoa-gallery-title,
     .pascoa-gallery-wrap .pascoa-gallery-title { margin-top: 0; }
@@ -1107,6 +1185,8 @@
       .promo-feature-copy { max-width: none; padding-top: 0; }
       .section-desc.nowrap-desktop { white-space: normal; }
       .totalpass-ranking { grid-template-columns: 1fr; min-width: 0; }
+      .totalpass-adjust-panel { grid-template-columns: 1fr; }
+      .image-adjust-control { grid-template-columns: 78px minmax(110px, 1fr) 36px; }
       .totalpass-rank-card,
       .totalpass-rank-card:first-child {
         padding: 18px;
@@ -1268,9 +1348,32 @@
       <p class="section-desc nowrap-desktop">Maria Eduarda assume um novo desafio depois de uma trajetória marcada por dedicação, evolução e entrega.</p>
     </div>
     <div class="promo-feature fade-up">
-      <div class="promo-feature-photo">
-        <img src="public/images/maria-eduarda-lider-qualidade.jpeg"
-          alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade" />
+      <div>
+        <div class="promo-feature-photo" data-image-target="duda-photo" style="--photo-x:50%;--photo-y:55%;">
+          <img src="public/images/maria-eduarda-lider-qualidade.jpeg"
+            alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade" />
+        </div>
+        <div class="image-adjust-actions">
+          <button class="image-adjust-toggle" type="button" data-adjust-toggle="duda-adjuster" aria-expanded="false">
+            <i data-lucide="sliders-horizontal" style="width:16px;height:16px"></i>
+            Ajustar imagem
+          </button>
+        </div>
+        <div class="image-adjust-panel" id="duda-adjuster">
+          <div class="image-adjust-group">
+            <strong>Maria Eduarda</strong>
+            <label class="image-adjust-control">
+              <span>Horizontal</span>
+              <input type="range" min="0" max="100" value="50" data-adjust-target="duda-photo" data-adjust-var="--photo-x">
+              <span class="image-adjust-value">50%</span>
+            </label>
+            <label class="image-adjust-control">
+              <span>Vertical</span>
+              <input type="range" min="0" max="100" value="55" data-adjust-target="duda-photo" data-adjust-var="--photo-y">
+              <span class="image-adjust-value">55%</span>
+            </label>
+          </div>
+        </div>
       </div>
 
       <div class="promo-feature-copy">
@@ -1334,7 +1437,7 @@
           <div class="pascoa-video-wrap">
             <p class="pascoa-gallery-title">Pódio do mês</p>
             <div class="totalpass-ranking">
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
+              <div class="totalpass-rank-card" data-image-target="antonio-avatar" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
                 <div class="totalpass-avatar-frame">
                   <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
@@ -1345,7 +1448,7 @@
                   <span>22 check-ins</span>
                 </div>
               </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
+              <div class="totalpass-rank-card" data-image-target="julia-avatar" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
                 <div class="totalpass-avatar-frame">
                   <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
@@ -1355,7 +1458,7 @@
                   <span>20 check-ins</span>
                 </div>
               </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
+              <div class="totalpass-rank-card" data-image-target="raphael-avatar" style="--avatar-x:50%;--avatar-y:32%;">
                 <span class="totalpass-position">3º</span>
                 <div class="totalpass-avatar-frame">
                   <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
@@ -1364,6 +1467,53 @@
                   <strong>Raphael Machado</strong>
                   <span>17 check-ins</span>
                 </div>
+              </div>
+            </div>
+            <div class="image-adjust-actions totalpass-adjust-actions">
+              <button class="image-adjust-toggle" type="button" data-adjust-toggle="totalpass-adjuster" aria-expanded="false">
+                <i data-lucide="sliders-horizontal" style="width:16px;height:16px"></i>
+                Ajustar fotos
+              </button>
+            </div>
+            <div class="image-adjust-panel totalpass-adjust-panel" id="totalpass-adjuster">
+              <div class="image-adjust-group">
+                <strong>Antonio Costa</strong>
+                <label class="image-adjust-control">
+                  <span>Horizontal</span>
+                  <input type="range" min="0" max="100" value="50" data-adjust-target="antonio-avatar" data-adjust-var="--avatar-x">
+                  <span class="image-adjust-value">50%</span>
+                </label>
+                <label class="image-adjust-control">
+                  <span>Vertical</span>
+                  <input type="range" min="0" max="100" value="36" data-adjust-target="antonio-avatar" data-adjust-var="--avatar-y">
+                  <span class="image-adjust-value">36%</span>
+                </label>
+              </div>
+              <div class="image-adjust-group">
+                <strong>Julia Goulart</strong>
+                <label class="image-adjust-control">
+                  <span>Horizontal</span>
+                  <input type="range" min="0" max="100" value="50" data-adjust-target="julia-avatar" data-adjust-var="--avatar-x">
+                  <span class="image-adjust-value">50%</span>
+                </label>
+                <label class="image-adjust-control">
+                  <span>Vertical</span>
+                  <input type="range" min="0" max="100" value="34" data-adjust-target="julia-avatar" data-adjust-var="--avatar-y">
+                  <span class="image-adjust-value">34%</span>
+                </label>
+              </div>
+              <div class="image-adjust-group">
+                <strong>Raphael Machado</strong>
+                <label class="image-adjust-control">
+                  <span>Horizontal</span>
+                  <input type="range" min="0" max="100" value="50" data-adjust-target="raphael-avatar" data-adjust-var="--avatar-x">
+                  <span class="image-adjust-value">50%</span>
+                </label>
+                <label class="image-adjust-control">
+                  <span>Vertical</span>
+                  <input type="range" min="0" max="100" value="32" data-adjust-target="raphael-avatar" data-adjust-var="--avatar-y">
+                  <span class="image-adjust-value">32%</span>
+                </label>
               </div>
             </div>
           </div>
@@ -1848,6 +1998,34 @@
   }
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
+  });
+
+  // ── IMAGE POSITION ADJUSTERS
+  const imageAdjusters = document.querySelectorAll('[data-adjust-target][data-adjust-var]');
+  const imageAdjustButtons = document.querySelectorAll('[data-adjust-toggle]');
+
+  imageAdjustButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = document.getElementById(button.dataset.adjustToggle);
+      if (!panel) return;
+      const isOpen = panel.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
+
+  imageAdjusters.forEach(input => {
+    const valueLabel = input.parentElement.querySelector('.image-adjust-value');
+    const target = document.querySelector(`[data-image-target="${input.dataset.adjustTarget}"]`);
+    const cssVar = input.dataset.adjustVar;
+
+    function updateImagePosition() {
+      const value = `${input.value}%`;
+      if (target && cssVar) target.style.setProperty(cssVar, value);
+      if (valueLabel) valueLabel.textContent = value;
+    }
+
+    input.addEventListener('input', updateImagePosition);
+    updateImagePosition();
   });
 
   // ── MONTH MODAL

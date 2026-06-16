@@ -398,3 +398,30 @@ Adicionar rewrites no `vercel.json` para mapear `/pages/:path*` para `/public/pa
 - A MB News pode continuar criando arquivos em `public/pages/`.
 - URLs publicas permanecem no padrao `/pages/...`.
 - Imagens referenciadas como `/images/...` tambem sao servidas corretamente no deploy estatico atual.
+
+---
+
+## ADR-018: Controles visuais para enquadramento de fotos da MB News
+
+**Data:** 2026-06-16
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+O usuario pediu para reativar a funcionalidade de reposicionamento das imagens do podio Total Pass e incluir o mesmo recurso na foto da Maria Eduarda.
+
+### Decisao
+
+Adicionar botoes de ajuste com sliders horizontais e verticais que alteram variaveis CSS de `object-position` em tempo real.
+
+### Alternativas Consideradas
+
+- **Editar as imagens originais:** rejeitado para preservar os arquivos enviados.
+- **Criar recortes fixos novos:** rejeitado porque o usuario precisa ajustar visualmente o enquadramento.
+- **Usar sliders por imagem (escolhida):** permite ajuste rapido sem alterar tamanho de cards ou proporcao das molduras.
+
+### Consequencias
+
+- A foto da Maria Eduarda e os avatares do Total Pass podem ser reposicionados diretamente na pagina.
+- O layout permanece estavel, pois os controles alteram somente as variaveis de posicionamento da imagem.

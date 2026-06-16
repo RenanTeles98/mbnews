@@ -105,3 +105,14 @@ Principais marcos conhecidos:
 ### Corrigido
 - `vercel.json` - adicionados rewrites para publicar `/pages/*` a partir de `public/pages/*` e `/images/*` a partir de `public/images/*`.
 - `https://mbnews.vercel.app/pages/mb-news-abril-2026.html` - rota validada em producao com `200 OK` apos novo deploy.
+
+---
+
+## 2026-06-16 - Ajuste de reposicionamento de imagens
+
+### Adicionado
+- `index.html` - botao `Ajustar imagem` na foto da Maria Eduarda, com sliders horizontal e vertical.
+- `index.html` - botao `Ajustar fotos` no podio Total Pass, com sliders por competidor.
+
+### Modificado
+- `index.html` - imagens passam a usar variaveis CSS de `object-position` para ajuste em tempo real.

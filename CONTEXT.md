@@ -273,3 +273,25 @@ Arquivos modificados nesta sessao:
 Estado atual: a edicao de Abril esta publicada e acessivel em `/pages/mb-news-abril-2026.html`; a edicao de Maio continua na home.
 
 Proximo passo recomendado: validar visualmente pelo navegador e informar a porcentagem oficial da trimestral para fechar a edicao de Maio.
+
+---
+
+## Sessao 2026-06-16 - Ajuste visual de reposicionamento de imagens
+
+- Reativada a funcionalidade de ajuste de fotos no podio Total Pass.
+- Adicionado controle de reposicionamento para a imagem da Maria Eduarda.
+- Os controles usam sliders de eixo horizontal e vertical e atualizam o `object-position` em tempo real.
+- Mantido o tamanho dos cards e das imagens; o ajuste altera apenas o enquadramento.
+- Build de producao executado com sucesso.
+
+Arquivos modificados nesta sessao:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-06-16.md`
+
+Estado atual: botoes `Ajustar imagem` e `Ajustar fotos` estao visiveis na edicao de Maio e permitem reposicionar a foto da Maria Eduarda e os avatares do Total Pass.
+
+Proximo passo recomendado: validar visualmente em producao apos deploy.
