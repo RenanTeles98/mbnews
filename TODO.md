@@ -127,3 +127,4 @@
 - [x] Corrigir rota de producao da edicao de Abril para `/pages/mb-news-abril-2026.html`.
 - [x] Reativar controle de reposicionamento das fotos do Total Pass.
 - [x] Adicionar controle de reposicionamento para a foto da Maria Eduarda.
+- [x] Travar os enquadramentos salvos e desativar os botoes de reposicionamento.

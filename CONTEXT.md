@@ -295,3 +295,27 @@ Arquivos modificados nesta sessao:
 Estado atual: botoes `Ajustar imagem` e `Ajustar fotos` estao visiveis na edicao de Maio e permitem reposicionar a foto da Maria Eduarda e os avatares do Total Pass.
 
 Proximo passo recomendado: validar visualmente em producao apos deploy.
+
+---
+
+## Sessao 2026-06-16 - Travamento dos enquadramentos de imagem
+
+- Removidos os botoes e paineis de reposicionamento da foto da Maria Eduarda e do podio Total Pass.
+- Removido o JavaScript dos sliders de ajuste.
+- Mantidos os valores de enquadramento salvos no HTML por variaveis CSS:
+  - Maria Eduarda: `--photo-x:50%; --photo-y:55%;`
+  - Antonio Costa: `--avatar-x:50%; --avatar-y:36%;`
+  - Julia Goulart: `--avatar-x:50%; --avatar-y:34%;`
+  - Raphael Machado: `--avatar-x:50%; --avatar-y:32%;`
+- Build de producao executado com sucesso.
+
+Arquivos modificados nesta sessao:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-06-16.md`
+
+Estado atual: imagens travadas nos valores salvos em codigo, sem interface publica de ajuste.
+
+Proximo passo recomendado: validar visualmente em producao apos deploy.

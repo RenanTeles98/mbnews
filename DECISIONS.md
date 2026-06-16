@@ -425,3 +425,4 @@ Adicionar botoes de ajuste com sliders horizontais e verticais que alteram varia
 
 - A foto da Maria Eduarda e os avatares do Total Pass podem ser reposicionados diretamente na pagina.
 - O layout permanece estavel, pois os controles alteram somente as variaveis de posicionamento da imagem.
+- Apos validacao visual, os controles podem ser removidos e os valores finais podem permanecer travados nas variaveis CSS inline.

@@ -116,3 +116,6 @@ Principais marcos conhecidos:
 
 ### Modificado
 - `index.html` - imagens passam a usar variaveis CSS de `object-position` para ajuste em tempo real.
+
+### Removido
+- `index.html` - botoes e paineis de reposicionamento foram desativados depois de travar os enquadramentos salvos.
