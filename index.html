@@ -274,6 +274,14 @@
       gap: 48px; align-items: start; margin-top: 38px;
     }
     .promotion-list { display: grid; gap: 12px; margin: 24px 0; }
+    .promotion-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .promotion-media-grid .june-photo { aspect-ratio: 3 / 4; }
+    .promotion-media-grid .june-photo:first-child {
+      grid-column: 1 / -1; aspect-ratio: 4 / 3;
+    }
+    .promotion-media-grid .june-photo:first-child img { object-position: center 38%; }
+    .promotion-media-grid .june-photo:nth-child(2) img { object-position: center 44%; }
+    .promotion-media-grid .june-photo:nth-child(3) img { object-position: center 38%; }
     .promotion-person {
       background: var(--gray-50); border: 1px solid #e4eaf0;
       border-radius: 16px; padding: 16px 18px;
@@ -329,6 +337,7 @@
 
     @media (max-width: 760px) {
       .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
+      .promotion-media-grid .june-photo:first-child { aspect-ratio: 3 / 4; }
       .copa-gallery { grid-template-columns: 1fr; }
       .copa-gallery .june-photo { height: auto; min-height: 0; }
       .copa-gallery .june-photo:first-child { aspect-ratio: 4 / 3; }
@@ -1321,9 +1330,19 @@
       <p class="section-desc">Quatro profissionais avançam para novas posições e assumem responsabilidades ainda maiores dentro da MB.</p>
     </div>
     <div class="promotion-team-layout fade-up">
-      <div class="june-photo main">
-        <img src="public/images/mb-news-junho-promocoes-placeholder.svg"
-          alt="Espaço reservado para a foto das promoções de junho" />
+      <div class="promotion-media-grid">
+        <div class="june-photo">
+          <img src="/images/mb-news/junho/promocoes-mayko-juliana-natallia.jpg"
+            alt="Mayko Hentzy, Juliana Leite e Natallia celebrando suas promoções" />
+        </div>
+        <div class="june-photo">
+          <img src="/images/mb-news/junho/promocao-karoline.jpeg"
+            alt="Karoline celebrando sua promoção para Líder de Relacionamento" />
+        </div>
+        <div class="june-photo">
+          <img src="/images/mb-news/junho/efetivacao-thalles.jpeg"
+            alt="Thalles celebrando sua efetivação na MB" />
+        </div>
       </div>
       <div>
         <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoções de junho</span>
