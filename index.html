@@ -286,6 +286,7 @@
       margin-top: 38px; border: 1px solid #dfe8ef; border-radius: 26px;
       background: #fff; overflow: hidden; box-shadow: 0 22px 60px rgba(0,57,86,.1);
     }
+    .promotion-carousel-stage { position: relative; }
     .promotion-slide {
       display: grid; grid-template-columns: minmax(0,1.02fr) minmax(0,.98fr);
       min-height: 610px; animation: promotionCarouselFade .28s ease-out;
@@ -314,29 +315,36 @@
     .promotion-profile span { display: block; color: var(--cyan); font-size: .76rem; font-weight: 700; margin-bottom: 6px; }
     .promotion-profile p { color: var(--gray-600); font-size: .78rem; line-height: 1.55; }
     .promotion-carousel-controls {
-      min-height: 76px; padding: 12px 18px; border-top: 1px solid #e4eaf0;
-      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      min-height: 58px; padding: 7px 18px; border-top: 1px solid #e4eaf0;
+      display: flex; align-items: center; justify-content: center;
       background: var(--gray-50);
     }
     .promotion-carousel-arrow {
       width: 48px; height: 48px; flex: 0 0 48px; border-radius: 50%;
       border: 1px solid #cbd9e2; background: #fff; color: var(--navy);
       display: inline-flex; align-items: center; justify-content: center;
-      cursor: pointer; transition: background .2s ease,color .2s ease,border-color .2s ease;
+      cursor: pointer; position: absolute; top: 50%; z-index: 4;
+      transform: translateY(-50%); box-shadow: 0 8px 24px rgba(0,57,86,.18);
+      transition: background .2s ease,color .2s ease,border-color .2s ease;
     }
+    .promotion-carousel-arrow[data-carousel-prev] { left: 16px; }
+    .promotion-carousel-arrow[data-carousel-next] { right: 16px; }
     .promotion-carousel-arrow:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
     .promotion-carousel-arrow:focus-visible, .promotion-carousel-dot:focus-visible {
       outline: 3px solid rgba(0,153,221,.35); outline-offset: 3px;
     }
     .promotion-carousel-dots { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
     .promotion-carousel-dot {
-      min-height: 44px; padding: 0 15px; border-radius: 99px;
-      border: 1px solid #cbd9e2; background: #fff; color: var(--gray-600);
-      font: 700 .75rem 'Inter',sans-serif; cursor: pointer;
-      transition: background .2s ease,color .2s ease,border-color .2s ease;
+      width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%;
+      background: transparent; cursor: pointer; display: inline-flex;
+      align-items: center; justify-content: center;
     }
-    .promotion-carousel-dot[aria-current="true"] {
-      background: var(--navy); color: #fff; border-color: var(--navy);
+    .promotion-carousel-dot::before {
+      content: ''; width: 9px; height: 9px; border-radius: 99px;
+      background: #aabac5; transition: width .2s ease,background .2s ease;
+    }
+    .promotion-carousel-dot[aria-current="true"]::before {
+      width: 24px; background: var(--navy);
     }
     .promotion-carousel-note {
       padding: 18px 22px; border-top: 1px solid #e4eaf0;
@@ -411,8 +419,9 @@
       .promotion-slide[data-slide="1"] .promotion-slide-media,
       .promotion-slide[data-slide="2"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
       .promotion-slide-copy { padding: 28px 22px 32px; }
-      .promotion-carousel-controls { padding: 12px; }
-      .promotion-carousel-dot { min-width: 44px; padding: 0 11px; }
+      .promotion-carousel-arrow[data-carousel-prev] { left: 10px; }
+      .promotion-carousel-arrow[data-carousel-next] { right: 10px; }
+      .promotion-carousel-controls { padding: 7px 10px; }
       .copa-gallery { grid-template-columns: 1fr; }
       .copa-gallery .june-photo { height: auto; min-height: 0; }
       .copa-gallery .june-photo:first-child { aspect-ratio: 4 / 3; }
@@ -1411,6 +1420,7 @@
     </div>
     <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
       aria-roledescription="carrossel" aria-label="Promoções e efetivações de junho" tabindex="0">
+      <div class="promotion-carousel-stage">
       <article class="promotion-slide is-active" data-slide="0" role="group"
         aria-roledescription="slide" aria-label="1 de 3: novas lideranças na adquirência">
         <div class="promotion-slide-media">
@@ -1483,18 +1493,19 @@
         </div>
       </article>
 
-      <div class="promotion-carousel-controls">
         <button class="promotion-carousel-arrow" type="button" data-carousel-prev aria-label="Ver destaque anterior">
           <i data-lucide="arrow-left" aria-hidden="true"></i>
         </button>
-        <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-current="true">Adquirência</button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-current="false">Karoline</button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-current="false">Thalles</button>
-        </div>
         <button class="promotion-carousel-arrow" type="button" data-carousel-next aria-label="Ver próximo destaque">
           <i data-lucide="arrow-right" aria-hidden="true"></i>
         </button>
+      </div>
+      <div class="promotion-carousel-controls">
+        <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar novas lideranças da adquirência" aria-current="true"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar promoção de Karoline" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivação de Thalles" aria-current="false"></button>
+        </div>
       </div>
       <p class="promotion-carousel-note">Pedro Xavier e Lucas Trajano também iniciaram na MB como estagiários e foram efetivados em junho.</p>
       <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 3: novas lideranças na adquirência</p>
