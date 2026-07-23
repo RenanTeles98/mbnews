@@ -297,6 +297,8 @@
     .promotion-slide[data-slide="0"] .promotion-slide-media img { object-position: center 44%; }
     .promotion-slide[data-slide="1"] .promotion-slide-media img { object-position: center 42%; }
     .promotion-slide[data-slide="2"] .promotion-slide-media img { object-position: center 38%; }
+    .promotion-slide[data-slide="3"] .promotion-slide-media img { object-position: center 40%; }
+    .promotion-slide[data-slide="4"] .promotion-slide-media img { object-position: center 40%; }
     .promotion-slide-copy {
       padding: clamp(28px,4vw,54px); display: flex; flex-direction: column;
       justify-content: center; color: var(--gray-600);
@@ -417,7 +419,9 @@
       .promotion-slide { grid-template-columns: 1fr; min-height: 0; }
       .promotion-slide-media { min-height: 0; aspect-ratio: 4 / 3; }
       .promotion-slide[data-slide="1"] .promotion-slide-media,
-      .promotion-slide[data-slide="2"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
+      .promotion-slide[data-slide="2"] .promotion-slide-media,
+      .promotion-slide[data-slide="3"] .promotion-slide-media,
+      .promotion-slide[data-slide="4"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
       .promotion-slide-copy { padding: 28px 22px 32px; }
       .promotion-carousel-arrow[data-carousel-prev] { left: 10px; }
       .promotion-carousel-arrow[data-carousel-next] { right: 10px; }
@@ -1415,14 +1419,14 @@
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
-      <h2 class="section-title">Novos desafios, novas lideranças.</h2>
-      <p class="section-desc">Quatro profissionais avançam para novas posições e assumem responsabilidades ainda maiores dentro da MB.</p>
+      <h2 class="section-title">Novos desafios, novas conquistas.</h2>
+      <p class="section-desc">Quatro profissionais assumem novas posições de liderança e três talentos iniciam uma nova etapa como contratados CLT.</p>
     </div>
     <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
       aria-roledescription="carrossel" aria-label="Promoções e efetivações de junho" tabindex="0">
       <div class="promotion-carousel-stage">
       <article class="promotion-slide is-active" data-slide="0" role="group"
-        aria-roledescription="slide" aria-label="1 de 3: novas lideranças na adquirência">
+        aria-roledescription="slide" aria-label="1 de 5: novas lideranças na adquirência">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/promocoes-mayko-juliana-natallia.jpg"
             alt="Mayko Hentzy, Juliana Leite e Natallia celebrando suas promoções" />
@@ -1453,7 +1457,7 @@
       </article>
 
       <article class="promotion-slide" data-slide="1" role="group" hidden
-        aria-roledescription="slide" aria-label="2 de 3: promoção de Karoline">
+        aria-roledescription="slide" aria-label="2 de 5: promoção de Karoline">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/promocao-karoline.jpeg"
             alt="Karoline celebrando sua promoção para Líder de Relacionamento" loading="lazy" />
@@ -1473,7 +1477,7 @@
       </article>
 
       <article class="promotion-slide" data-slide="2" role="group" hidden
-        aria-roledescription="slide" aria-label="3 de 3: efetivação de Thalles">
+        aria-roledescription="slide" aria-label="3 de 5: efetivação de Thalles">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/efetivacao-thalles.jpeg"
             alt="Thalles celebrando sua efetivação na MB" loading="lazy" />
@@ -1493,6 +1497,48 @@
         </div>
       </article>
 
+      <article class="promotion-slide" data-slide="3" role="group" hidden
+        aria-roledescription="slide" aria-label="4 de 5: efetivação de Lucas">
+        <div class="promotion-slide-media">
+          <img src="/images/mb-news/junho/efetivacao-lucas.png"
+            alt="Lucas celebrando sua efetivação em regime CLT na MB" loading="lazy" />
+        </div>
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
+          <h3>Lucas dá um novo passo em sua trajetória</h3>
+          <p>Lucas iniciou sua trajetória na MB como estagiário e agora passa a integrar oficialmente o time em regime CLT.</p>
+          <p style="margin-top:14px">A efetivação representa o reconhecimento de seu desenvolvimento durante o estágio e marca o começo de uma nova etapa profissional. Parabéns, Lucas, por essa conquista e pela continuidade da sua história com a MB.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Lucas Trajano</strong>
+              <span>Estagiário → CLT</span>
+              <p>Uma nova fase construída com aprendizado, desenvolvimento e novas oportunidades.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="promotion-slide" data-slide="4" role="group" hidden
+        aria-roledescription="slide" aria-label="5 de 5: efetivação de Pedro Xavier">
+        <div class="promotion-slide-media">
+          <img src="/images/mb-news/junho/efetivacao-pedro-xavier.png"
+            alt="Pedro Xavier celebrando sua efetivação em regime CLT na MB" loading="lazy" />
+        </div>
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
+          <h3>Pedro Xavier inicia uma nova fase na MB</h3>
+          <p>Pedro Xavier deu seus primeiros passos na MB como estagiário e, com sua efetivação em regime CLT, passa a viver uma nova etapa dentro da empresa.</p>
+          <p style="margin-top:14px">A conquista reconhece o desenvolvimento construído durante o estágio e abre espaço para novos aprendizados, responsabilidades e oportunidades. Parabéns, Pedro, por seguir crescendo com a MB.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Pedro Xavier</strong>
+              <span>Estagiário → CLT</span>
+              <p>Uma conquista que transforma o período de estágio em um novo capítulo profissional.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
         <button class="promotion-carousel-arrow" type="button" data-carousel-prev aria-label="Ver destaque anterior">
           <i data-lucide="arrow-left" aria-hidden="true"></i>
         </button>
@@ -1505,10 +1551,11 @@
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar novas lideranças da adquirência" aria-current="true"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar promoção de Karoline" aria-current="false"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivação de Thalles" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar efetivação de Lucas Trajano" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="4" aria-label="Mostrar efetivação de Pedro Xavier" aria-current="false"></button>
         </div>
       </div>
-      <p class="promotion-carousel-note">Pedro Xavier e Lucas Trajano também iniciaram na MB como estagiários e foram efetivados em junho.</p>
-      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 3: novas lideranças na adquirência</p>
+      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 5: novas lideranças na adquirência</p>
     </div>
   </div>
 </section>
@@ -2164,7 +2211,9 @@
   const promotionLabels = [
     'novas lideranças na adquirência',
     'promoção de Karoline',
-    'efetivação de Thalles'
+    'efetivação de Thalles',
+    'efetivação de Lucas Trajano',
+    'efetivação de Pedro Xavier'
   ];
   let currentPromotionSlide = 0;
 
