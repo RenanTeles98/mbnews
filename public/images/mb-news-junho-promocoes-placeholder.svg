@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Promoções da equipe de Máquinas de Cartão</title>
+  <desc id="desc">Espaço reservado para a foto de Maykon Hentzy, Juliana Leite e Nathalia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#003956"/>
+      <stop offset="1" stop-color="#0099dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="600" cy="330" r="120" fill="#fff" opacity=".12"/>
+  <circle cx="450" cy="370" r="88" fill="#fff" opacity=".1"/>
+  <circle cx="750" cy="370" r="88" fill="#fff" opacity=".1"/>
+  <path d="M310 650c22-135 115-210 290-210s268 75 290 210" fill="#fff" opacity=".11"/>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#fff">Novas lideranças</text>
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#fff" opacity=".78">Equipe de Máquinas de Cartão</text>
+</svg>

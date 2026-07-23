@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MB News | Edição #003 · Junho 2026</title>
+  <title>MB News | Edição #002 · Maio 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -254,68 +254,6 @@
     .section-desc.nowrap-desktop {
       max-width: none;
       white-space: nowrap;
-    }
-
-    /* ─── EDIÇÃO DE JUNHO ─────────────────────────────── */
-    .june-photo {
-      width: 100%; border-radius: 24px; overflow: hidden;
-      background: var(--gray-100); box-shadow: 0 18px 50px rgba(0,57,86,.12);
-    }
-    .june-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .june-photo.main { aspect-ratio: 4 / 3; }
-    .june-kicker {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 7px 12px; border-radius: 99px; font-size: .72rem;
-      font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-      background: #e6f4fb; color: var(--navy); margin-bottom: 16px;
-    }
-    .promotion-team-layout, .copa-layout {
-      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-      gap: 48px; align-items: center; margin-top: 38px;
-    }
-    .promotion-list { display: grid; gap: 12px; margin: 24px 0; }
-    .promotion-person {
-      background: var(--gray-50); border: 1px solid #e4eaf0;
-      border-radius: 16px; padding: 16px 18px;
-    }
-    .promotion-person strong { display: block; color: var(--navy); margin-bottom: 6px; }
-    .promotion-person span { color: var(--gray-600); font-size: .88rem; }
-    .partner-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-    .partner-pills span {
-      background: #edf8fd; color: var(--blue); border: 1px solid #c8eafa;
-      padding: 7px 11px; border-radius: 99px; font-size: .75rem; font-weight: 700;
-    }
-    #copa { background: linear-gradient(180deg,#f4fbf5 0%,#fff 100%); }
-    .copa-copy p { color: var(--gray-600); line-height: 1.8; margin-top: 14px; }
-    .copa-gallery {
-      display: grid; grid-template-columns: 1.35fr .65fr; gap: 12px;
-    }
-    .copa-gallery .june-photo:first-child { grid-row: span 2; min-height: 430px; }
-    .copa-gallery .june-photo:not(:first-child) { min-height: 208px; }
-    .preview-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 32px; }
-    .preview-card {
-      border-radius: 20px; padding: 26px; background: #fff;
-      border: 1px solid #e4eaf0; box-shadow: 0 12px 34px rgba(0,57,86,.06);
-    }
-    .preview-card-icon {
-      width: 48px; height: 48px; border-radius: 14px; display: flex;
-      align-items: center; justify-content: center; margin-bottom: 18px;
-      background: #e6f4fb; color: var(--cyan);
-    }
-    .preview-card h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 8px; }
-    .preview-card p { color: var(--gray-600); font-size: .86rem; line-height: 1.6; }
-    .preview-status {
-      display: inline-block; margin-top: 16px; padding: 6px 10px;
-      border-radius: 99px; background: #fff7ed; color: #c2410c;
-      font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px;
-    }
-
-    @media (max-width: 760px) {
-      .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
-      .copa-gallery { grid-template-columns: 1fr 1fr; }
-      .copa-gallery .june-photo:first-child { grid-column: 1 / -1; grid-row: auto; min-height: 300px; }
-      .copa-gallery .june-photo:not(:first-child) { min-height: 150px; }
-      .preview-grid { grid-template-columns: 1fr; }
     }
 
     /* ─── PROMOTIONS ──────────────────────────────────── */
@@ -1183,11 +1121,12 @@
   <a href="#" class="nav-logo">mb <span>news</span></a>
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
-    <li><a href="#promocoes">Promoções</a></li>
-    <li><a href="#copa">Copa</a></li>
-    <li><a href="#em-preparacao">Próximas pautas</a></li>
+    <li><a href="#promocoes">Promoção</a></li>
+    <li><a href="#pascoa">Total Pass</a></li>
+    <li><a href="#awards">Novo site</a></li>
+    <li><a href="#saude">RH & Bem-estar</a></li>
   </ul>
-  <span class="nav-edition">Edição #003 · Junho 2026</span>
+  <span class="nav-edition">Edição #002 · Maio 2026</span>
 </nav>
 
 <!-- MODAL MENSAL -->
@@ -1215,8 +1154,8 @@
     Mar
   </button>
   <a class="month-btn available" href="/pages/mb-news-abril-2026.html">✓ Abr</a>
-  <a class="month-btn available" href="/pages/mb-news-maio-2026.html">✓ Mai</a>
-  <button class="month-btn active">✦ Junho 2026</button>
+  <button class="month-btn active">✦ Maio 2026</button>
+  <a class="month-btn available" href="/">✓ Jun</a>
   <button class="month-btn future" onclick="openMonthModal('Julho 2026','future')">Jul</button>
   <button class="month-btn future" onclick="openMonthModal('Agosto 2026','future')">Ago</button>
   <button class="month-btn future" onclick="openMonthModal('Setembro 2026','future')">Set</button>
@@ -1228,7 +1167,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
-  <div class="hero-badge">Edição de Junho 2026</div>
+  <div class="hero-badge">Edição de Maio 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
   </h1>
@@ -1237,28 +1176,28 @@
   </p>
   <div class="hero-ctas">
     <a href="#editorial" class="btn-primary">Ler edição completa</a>
-    <a href="#copa" class="btn-ghost">Ver momento da Copa</a>
+    <a href="#pascoa" class="btn-ghost">Ver ranking Total Pass</a>
   </div>
   <div class="hero-cards">
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-        <strong>3</strong>
-        <span>Novas lideranças</span>
+        <strong>22</strong>
+        <span>Check-ins no topo</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
       <div class="hero-card-text">
-        <strong>Time</strong>
-        <span>Em clima de Copa</span>
+        <strong>RH</strong>
+        <span>Agora no WhatsApp</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="trophy" style="color:#FF6B35"></i></div>
       <div class="hero-card-text">
-        <strong>Junho</strong>
-        <span>Novas histórias da MB</span>
+        <strong>Site</strong>
+        <span>Nova MB Finance no ar</span>
       </div>
     </div>
   </div>
@@ -1273,13 +1212,13 @@
     </div>
     <div class="editorial-card fade-up">
       <p>
-        Junho foi marcado por reconhecimento, integração e novos capítulos na trajetória de quem constrói a MB todos os dias.
+        Maio chegou com muita coisa boa para compartilhar. Nesta edição, reunimos reconhecimento, cuidado com a saúde, novidades de comunicação interna e informações importantes para o nosso dia a dia na MB.
       </p>
       <p>
-        Nesta edição, celebramos as novas lideranças da equipe de Máquinas de Cartão e relembramos o momento em que o escritório ganhou as cores do Brasil para uma torcida especial em equipe.
+        Tem ranking do Total Pass, promoção da Maria Eduarda, novo site da MB Finance, canal de denúncia pelo WhatsApp, atualização sobre NR1, benefícios da terapia e reforço sobre pontualidade.
       </p>
       <p>
-        As próximas páginas também receberão os aniversariantes, as novas contratações, as demais promoções e o ranking Total Pass de junho. Boa leitura!
+        A ideia é simples: manter todo mundo bem informado, valorizar quem faz acontecer e deixar claro onde buscar apoio quando precisar. Boa leitura!
       </p>
       <div class="editorial-signature">
         <div class="editorial-avatar">MB</div>
@@ -1297,101 +1236,53 @@
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
-      <h2 class="section-title">Novos desafios, novas lideranças.</h2>
-      <p class="section-desc">Três profissionais da equipe de Máquinas de Cartão avançam para novas posições e assumem responsabilidades ainda maiores.</p>
+      <h2 class="section-title">Nova Líder de Qualidade</h2>
+      <p class="section-desc nowrap-desktop">Maria Eduarda assume um novo desafio depois de uma trajetória marcada por dedicação, evolução e entrega.</p>
     </div>
-    <div class="promotion-team-layout fade-up">
-      <div class="june-photo main">
-        <img src="public/images/mb-news-junho-promocoes-placeholder.svg"
-          alt="Espaço reservado para a foto de Maykon Hentzy, Juliana Leite e Nathalia" />
-      </div>
+    <div class="promo-feature fade-up">
       <div>
-        <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Equipe de Máquinas de Cartão</span>
-        <h3 style="font-size:clamp(1.5rem,3vw,2.15rem);color:var(--navy);line-height:1.15">Uma conquista compartilhada</h3>
-        <div class="promotion-list">
-          <div class="promotion-person">
-            <strong>Maykon Hentzy</strong>
-            <span>Supervisor de Canal → Coordenador de Canal</span>
-          </div>
-          <div class="promotion-person">
-            <strong>Juliana Leite</strong>
-            <span>Consultora → Líder</span>
-          </div>
-          <div class="promotion-person">
-            <strong>Nathalia</strong>
-            <span>Líder → Supervisora de Canal</span>
-          </div>
-        </div>
-        <p>
-          As promoções reconhecem a evolução profissional e a contribuição de cada um para uma operação que conecta estratégia, atendimento e resultado.
-        </p>
-        <p style="margin-top:12px">
-          Juntos, eles integram a equipe responsável pelas frentes de Mercado Pago, C6 Pay e PagBank. Em breve, este espaço receberá também a mensagem especial preparada pelo RH e as demais promoções do mês.
-        </p>
-        <div class="partner-pills">
-          <span>Mercado Pago</span><span>C6 Pay</span><span>PagBank</span>
+        <div class="promo-feature-photo" style="--photo-x:50%;--photo-y:55%;">
+          <img src="/images/maria-eduarda-lider-qualidade.jpeg"
+            alt="Maria Eduarda segurando balões em comemoração à promoção para Líder de Qualidade" />
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- COPA -->
-<section id="copa">
-  <div class="container">
-    <div class="copa-layout">
-      <div class="copa-copy fade-up">
-        <span class="section-eyebrow" style="color:#078447">Cultura e integração</span>
-        <h2 class="section-title">Um momento para torcer e estar juntos.</h2>
+      <div class="promo-feature-copy">
+        <span class="promo-role-badge" style="background:#f5f0ff;color:#6B21A8;"><i data-lucide="award" style="width:14px;height:14px;margin-right:4px"></i> Promoção do mês</span>
+        <h3>Parabéns pela promoção, Maria Eduarda</h3>
+        <div class="role-arrow">
+          <span class="role-from">Analista de Negócios</span>
+          <span style="color:#94A3B8">→</span>
+          <span class="role-to" style="background:linear-gradient(135deg,#6B21A8,#A855F7);">Líder de Qualidade</span>
+        </div>
         <p>
-          Em clima de Copa, a MB preparou um momento especial para que todos pudessem acompanhar juntos uma das partidas realizadas durante a semana. O escritório ganhou as cores do Brasil e se transformou em um espaço de torcida, convivência e descontração.
+          Maria Eduarda iniciou sua trajetória na empresa como estagiária, foi efetivada, atuou na área comercial e teve a oportunidade de implementar a área de Qualidade. Agora, avança mais um importante passo em sua carreira, assumindo o cargo de Líder de Qualidade.
         </p>
         <p>
-          A iniciativa reforçou algo importante para a nossa cultura: além dos desafios e resultados do dia a dia, também valorizamos as experiências que aproximam as pessoas e fortalecem o espírito de equipe. Foi um dia para vestir a camisa, compartilhar a emoção do jogo e criar boas lembranças ao lado de quem faz parte da nossa trajetória.
+          Com um olhar atento para melhorias contínuas, Maria Eduarda seguirá contribuindo para a evolução dos processos e para a avaliação da qualidade dos atendimentos aos nossos clientes.
         </p>
-      </div>
-      <div class="copa-gallery fade-up" style="transition-delay:.1s">
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Equipe reunida em clima de Copa" /></div>
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Transmissão do jogo no escritório" /></div>
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Decoração verde e amarela no escritório" /></div>
+        <div class="promo-stats">
+          <div class="promo-stat">
+            <strong><i data-lucide="check-circle-2" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+            <span>Promovida</span>
+          </div>
+          <div class="promo-stat">
+            <strong><i data-lucide="trending-up" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+            <span>Qualidade</span>
+          </div>
+          <div class="promo-stat">
+            <strong><i data-lucide="sparkles" style="width:20px;height:20px;color:#6B21A8"></i></strong>
+            <span>Nova fase</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- CONTEÚDOS EM PREPARAÇÃO -->
-<section id="em-preparacao">
-  <div class="container">
-    <div class="fade-up" style="text-align:center">
-      <span class="section-eyebrow">Edição de junho</span>
-      <h2 class="section-title">Mais histórias chegando.</h2>
-      <p class="section-desc" style="margin:0 auto">A edição será completada à medida que as informações oficiais e as fotos forem reunidas.</p>
-    </div>
-    <div class="preview-grid fade-up">
-      <article class="preview-card">
-        <div class="preview-card-icon"><i data-lucide="cake"></i></div>
-        <h3>Aniversariantes</h3>
-        <p>Um espaço para celebrar quem completou mais um ano de vida em junho.</p>
-        <span class="preview-status">Em preparação</span>
-      </article>
-      <article class="preview-card">
-        <div class="preview-card-icon"><i data-lucide="user-plus"></i></div>
-        <h3>Novas contratações</h3>
-        <p>Boas-vindas aos profissionais que passaram a fazer parte do nosso time.</p>
-        <span class="preview-status">Em preparação</span>
-      </article>
-      <article class="preview-card">
-        <div class="preview-card-icon"><i data-lucide="dumbbell"></i></div>
-        <h3>Ranking Total Pass</h3>
-        <p>O novo pódio do mês será publicado com os resultados oficiais de check-ins.</p>
-        <span class="preview-status">Em preparação</span>
-      </article>
-    </div>
   </div>
 </section>
 
 <!-- TOTAL PASS -->
-<section id="pascoa" style="display:none">
+<section id="pascoa">
   <div class="container">
     <div class="pascoa-layout">
 
@@ -1420,7 +1311,7 @@
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
                 <span class="totalpass-position">1º</span>
                 <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
+                  <img class="totalpass-avatar" src="/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
                 </div>
                 <div class="totalpass-rank-info">
                   <span class="totalpass-champion-badge"><i data-lucide="crown" style="width:12px;height:12px"></i> Grande campeão</span>
@@ -1431,7 +1322,7 @@
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
                 <span class="totalpass-position">2º</span>
                 <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
+                  <img class="totalpass-avatar" src="/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
                 </div>
                 <div class="totalpass-rank-info">
                   <strong>Julia Goulart</strong>
@@ -1441,7 +1332,7 @@
               <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
                 <span class="totalpass-position">3º</span>
                 <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
+                  <img class="totalpass-avatar" src="/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
                 </div>
                 <div class="totalpass-rank-info">
                   <strong>Raphael Machado</strong>
@@ -1487,7 +1378,7 @@
 </section>
 
 <!-- NOVOS SITES -->
-<section id="awards" style="display:none">
+<section id="awards">
   <div class="container">
 
     <!-- Cabeçalho -->
@@ -1511,7 +1402,7 @@
             <span class="new-site-dot" style="background:#22c55e"></span>
             <span class="new-site-url">mbfinance.com.br</span>
           </div>
-          <img src="public/images/mb-finance-site-print.png" alt="MB Finance" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
+          <img src="/images/mb-finance-site-print.png" alt="MB Finance" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
         </div>
         <div class="new-site-info">
           <div class="new-site-badge-row">
@@ -1541,7 +1432,7 @@
             <span class="new-site-dot" style="background:#22c55e"></span>
             <span class="new-site-url">mbnegocios.com.br</span>
           </div>
-          <img src="public/images/mb-negocios-site-print.png" alt="MB Negócios" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
+          <img src="/images/mb-negocios-site-print.png" alt="MB Negócios" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
         </div>
         <div class="new-site-info">
           <div class="new-site-badge-row">
@@ -1566,7 +1457,7 @@
 </section>
 
 <!-- SAÚDE E BEM-ESTAR -->
-<section id="saude" style="display:none">
+<section id="saude">
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">RH &amp; Bem-estar</span>
@@ -1874,20 +1765,22 @@
 <!-- FAB NAV -->
 <div class="fab-nav">
   <a href="#home"     class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
-  <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
-  <a href="#copa" class="fab-btn" title="Copa"><i data-lucide="flag"></i></a>
-  <a href="#em-preparacao" class="fab-btn" title="Próximas pautas"><i data-lucide="layout-grid"></i></a>
+  <a href="#promocoes" class="fab-btn" title="Promoção"><i data-lucide="award"></i></a>
+  <a href="#pascoa"   class="fab-btn" title="Total Pass"><i data-lucide="dumbbell"></i></a>
+  <a href="#awards"   class="fab-btn" title="Novo site"><i data-lucide="monitor-smartphone"></i></a>
+  <a href="#saude"    class="fab-btn" title="RH e bem-estar"><i data-lucide="heart-pulse"></i></a>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">mb <span>news</span></div>
-  <p>Revista interna mb news · Edição #003 · Junho 2026</p>
+  <p>Revista interna mb news · Edição #002 · Maio 2026</p>
   <div class="footer-links">
     <a href="#editorial">Foco Mensal</a>
-    <a href="#promocoes">Promoções</a>
-    <a href="#copa">Copa</a>
-    <a href="#em-preparacao">Próximas pautas</a>
+    <a href="#promocoes">Promoção</a>
+    <a href="#pascoa">Total Pass</a>
+    <a href="#awards">Novo site</a>
+    <a href="#saude">RH & Bem-estar</a>
   </div>
   <hr class="footer-divider" />
   <p class="footer-copy">© 2026 mb news · Material de comunicação interna · Todos os direitos reservados</p>
