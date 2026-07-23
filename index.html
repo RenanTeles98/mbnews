@@ -271,7 +271,7 @@
     }
     .promotion-team-layout, .copa-layout {
       display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-      gap: 48px; align-items: center; margin-top: 38px;
+      gap: 48px; align-items: start; margin-top: 38px;
     }
     .promotion-list { display: grid; gap: 12px; margin: 24px 0; }
     .promotion-person {
@@ -280,6 +280,13 @@
     }
     .promotion-person strong { display: block; color: var(--navy); margin-bottom: 6px; }
     .promotion-person span { color: var(--gray-600); font-size: .88rem; }
+    .promotion-person p { color: var(--gray-600); font-size: .82rem; line-height: 1.65; margin-top: 10px; }
+    .effective-card {
+      margin-top: 22px; padding: 20px; border-radius: 18px;
+      background: linear-gradient(135deg,#003956,#005580); color: #fff;
+    }
+    .effective-card strong { display: block; font-size: 1rem; margin-bottom: 8px; }
+    .effective-card p { color: rgba(255,255,255,.76); font-size: .84rem; line-height: 1.65; }
     .partner-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
     .partner-pills span {
       background: #edf8fd; color: var(--blue); border: 1px solid #c8eafa;
@@ -287,11 +294,21 @@
     }
     #copa { background: linear-gradient(180deg,#f4fbf5 0%,#fff 100%); }
     .copa-copy p { color: var(--gray-600); line-height: 1.8; margin-top: 14px; }
-    .copa-gallery {
-      display: grid; grid-template-columns: 1.35fr .65fr; gap: 12px;
+    .copa-gallery { display: grid; grid-template-columns: 1.35fr .65fr; gap: 12px; }
+    .copa-gallery .june-photo { height: 430px; }
+    .copa-gallery .june-photo:first-child img { object-position: center; }
+    .copa-gallery .june-photo:last-child img { object-position: center 40%; }
+    .copa-videos { grid-column: 1 / -1; margin-top: 14px; }
+    .copa-videos-title {
+      color: var(--navy); font-size: .78rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .8px; margin-bottom: 12px;
     }
-    .copa-gallery .june-photo:first-child { grid-row: span 2; min-height: 430px; }
-    .copa-gallery .june-photo:not(:first-child) { min-height: 208px; }
+    .copa-video-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .copa-video-card {
+      overflow: hidden; border-radius: 16px; background: #001f2f;
+      box-shadow: 0 12px 28px rgba(0,57,86,.14);
+    }
+    .copa-video-card video { width: 100%; aspect-ratio: 9 / 16; max-height: 400px; display: block; object-fit: cover; }
     .preview-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 32px; }
     .preview-card {
       border-radius: 20px; padding: 26px; background: #fff;
@@ -312,9 +329,12 @@
 
     @media (max-width: 760px) {
       .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
-      .copa-gallery { grid-template-columns: 1fr 1fr; }
-      .copa-gallery .june-photo:first-child { grid-column: 1 / -1; grid-row: auto; min-height: 300px; }
-      .copa-gallery .june-photo:not(:first-child) { min-height: 150px; }
+      .copa-gallery { grid-template-columns: 1fr; }
+      .copa-gallery .june-photo { height: auto; min-height: 0; }
+      .copa-gallery .june-photo:first-child { aspect-ratio: 4 / 3; }
+      .copa-gallery .june-photo:nth-child(2) { aspect-ratio: 9 / 14; max-height: 560px; }
+      .copa-video-grid { grid-template-columns: 1fr; }
+      .copa-video-card video { max-height: 560px; }
       .preview-grid { grid-template-columns: 1fr; }
     }
 
@@ -1243,7 +1263,7 @@
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-        <strong>3</strong>
+        <strong>4</strong>
         <span>Novas lideranças</span>
       </div>
     </div>
@@ -1298,38 +1318,47 @@
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
       <h2 class="section-title">Novos desafios, novas lideranças.</h2>
-      <p class="section-desc">Três profissionais da equipe de Máquinas de Cartão avançam para novas posições e assumem responsabilidades ainda maiores.</p>
+      <p class="section-desc">Quatro profissionais avançam para novas posições e assumem responsabilidades ainda maiores dentro da MB.</p>
     </div>
     <div class="promotion-team-layout fade-up">
       <div class="june-photo main">
         <img src="public/images/mb-news-junho-promocoes-placeholder.svg"
-          alt="Espaço reservado para a foto de Maykon Hentzy, Juliana Leite e Nathalia" />
+          alt="Espaço reservado para a foto das promoções de junho" />
       </div>
       <div>
-        <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Equipe de Máquinas de Cartão</span>
-        <h3 style="font-size:clamp(1.5rem,3vw,2.15rem);color:var(--navy);line-height:1.15">Uma conquista compartilhada</h3>
+        <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoções de junho</span>
+        <h3 style="font-size:clamp(1.5rem,3vw,2.15rem);color:var(--navy);line-height:1.15">Crescimento que se constrói todos os dias</h3>
         <div class="promotion-list">
           <div class="promotion-person">
-            <strong>Maykon Hentzy</strong>
-            <span>Supervisor de Canal → Coordenador de Canal</span>
+            <strong>Mayko Hentzy</strong>
+            <span>Supervisor de Canal → Coordenador Comercial</span>
+            <p>Especialista na área de adquirência, Mayko se tornou um dos principais pontos focais da empresa e uma referência no produto. Animado e extrovertido, inicia agora um novo desafio em sua trajetória profissional.</p>
           </div>
           <div class="promotion-person">
             <strong>Juliana Leite</strong>
             <span>Consultora → Líder</span>
+            <p>Com menos de um ano de empresa, Juliana conquistou o cargo de Líder. Responsável por conduzir o time farmer de adquirência, destaca-se pela criatividade, iniciativa e proatividade.</p>
           </div>
           <div class="promotion-person">
-            <strong>Nathalia</strong>
+            <strong>Natallia</strong>
             <span>Líder → Supervisora de Canal</span>
+            <p>Natallia iniciou sua trajetória na MB como estagiária, em 2023. Depois de ser efetivada e continuar evoluindo, assume uma nova etapa como Supervisora de Canal. Estratégica, criativa e autêntica.</p>
+          </div>
+          <div class="promotion-person">
+            <strong>Karoline</strong>
+            <span>Promovida a Líder de Relacionamento</span>
+            <p>Karoline já exercia essa atuação desde 2024 e se tornou um ponto focal do setor, apoiando os colegas e demonstrando disponibilidade para orientar, ajudar e liderar pessoas.</p>
           </div>
         </div>
         <p>
-          As promoções reconhecem a evolução profissional e a contribuição de cada um para uma operação que conecta estratégia, atendimento e resultado.
-        </p>
-        <p style="margin-top:12px">
-          Juntos, eles integram a equipe responsável pelas frentes de Mercado Pago, C6 Pay e PagBank. Em breve, este espaço receberá também a mensagem especial preparada pelo RH e as demais promoções do mês.
+          Mayko, Juliana e Natallia integram a equipe de Máquinas de Cartão, responsável pelas frentes de Mercado Pago, C6 Pay e PagBank.
         </p>
         <div class="partner-pills">
           <span>Mercado Pago</span><span>C6 Pay</span><span>PagBank</span>
+        </div>
+        <div class="effective-card">
+          <strong>Novos passos na carreira</strong>
+          <p>Thalles, Pedro Xavier e Lucas Trajano iniciaram suas trajetórias na MB como estagiários e agora foram efetivados. A conquista reconhece o desenvolvimento, a dedicação e a contribuição de cada um ao longo desse período.</p>
         </div>
       </div>
     </div>
@@ -1351,9 +1380,16 @@
         </p>
       </div>
       <div class="copa-gallery fade-up" style="transition-delay:.1s">
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Equipe reunida em clima de Copa" /></div>
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Transmissão do jogo no escritório" /></div>
-        <div class="june-photo"><img src="public/images/mb-news-junho-copa-placeholder.svg" alt="Decoração verde e amarela no escritório" /></div>
+        <div class="june-photo"><img src="/images/mb-news/junho/copa-equipe.jpeg" alt="Equipe MB reunida com a bandeira do Brasil em clima de Copa" /></div>
+        <div class="june-photo"><img src="/images/mb-news/junho/copa-partida.jpeg" alt="Colaboradores acompanhando a partida no escritório decorado" /></div>
+        <div class="copa-videos">
+          <p class="copa-videos-title">Momentos da nossa torcida</p>
+          <div class="copa-video-grid">
+            <div class="copa-video-card"><video controls preload="metadata" playsinline poster="/images/mb-news/junho/copa-equipe.jpeg"><source src="/videos/mb-news/junho/copa-momento-1.mp4" type="video/mp4" />Seu navegador não suporta vídeo.</video></div>
+            <div class="copa-video-card"><video controls preload="metadata" playsinline poster="/images/mb-news/junho/copa-partida.jpeg"><source src="/videos/mb-news/junho/copa-momento-2.mp4" type="video/mp4" />Seu navegador não suporta vídeo.</video></div>
+            <div class="copa-video-card"><video controls preload="metadata" playsinline poster="/images/mb-news/junho/copa-equipe.jpeg"><source src="/videos/mb-news/junho/copa-momento-3.mp4" type="video/mp4" />Seu navegador não suporta vídeo.</video></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
