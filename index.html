@@ -282,6 +282,74 @@
     .promotion-media-grid .june-photo:first-child img { object-position: center 38%; }
     .promotion-media-grid .june-photo:nth-child(2) img { object-position: center 44%; }
     .promotion-media-grid .june-photo:nth-child(3) img { object-position: center 38%; }
+    .promotion-carousel {
+      margin-top: 38px; border: 1px solid #dfe8ef; border-radius: 26px;
+      background: #fff; overflow: hidden; box-shadow: 0 22px 60px rgba(0,57,86,.1);
+    }
+    .promotion-slide {
+      display: grid; grid-template-columns: minmax(0,1.02fr) minmax(0,.98fr);
+      min-height: 610px; animation: promotionCarouselFade .28s ease-out;
+    }
+    .promotion-slide[hidden] { display: none; }
+    .promotion-slide-media { min-height: 610px; background: var(--gray-100); overflow: hidden; }
+    .promotion-slide-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .promotion-slide[data-slide="0"] .promotion-slide-media img { object-position: center 44%; }
+    .promotion-slide[data-slide="1"] .promotion-slide-media img { object-position: center 42%; }
+    .promotion-slide[data-slide="2"] .promotion-slide-media img { object-position: center 38%; }
+    .promotion-slide-copy {
+      padding: clamp(28px,4vw,54px); display: flex; flex-direction: column;
+      justify-content: center; color: var(--gray-600);
+    }
+    .promotion-slide-copy h3 {
+      color: var(--navy); font-size: clamp(1.55rem,3vw,2.3rem);
+      line-height: 1.14; margin-bottom: 18px; letter-spacing: -.7px;
+    }
+    .promotion-slide-copy > p { font-size: .95rem; line-height: 1.75; }
+    .promotion-profile-list { display: grid; gap: 12px; margin-top: 22px; }
+    .promotion-profile {
+      padding: 14px 16px; background: var(--gray-50); border: 1px solid #e4eaf0;
+      border-radius: 14px;
+    }
+    .promotion-profile strong { display: block; color: var(--navy); font-size: .9rem; margin-bottom: 4px; }
+    .promotion-profile span { display: block; color: var(--cyan); font-size: .76rem; font-weight: 700; margin-bottom: 6px; }
+    .promotion-profile p { color: var(--gray-600); font-size: .78rem; line-height: 1.55; }
+    .promotion-carousel-controls {
+      min-height: 76px; padding: 12px 18px; border-top: 1px solid #e4eaf0;
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      background: var(--gray-50);
+    }
+    .promotion-carousel-arrow {
+      width: 48px; height: 48px; flex: 0 0 48px; border-radius: 50%;
+      border: 1px solid #cbd9e2; background: #fff; color: var(--navy);
+      display: inline-flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background .2s ease,color .2s ease,border-color .2s ease;
+    }
+    .promotion-carousel-arrow:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .promotion-carousel-arrow:focus-visible, .promotion-carousel-dot:focus-visible {
+      outline: 3px solid rgba(0,153,221,.35); outline-offset: 3px;
+    }
+    .promotion-carousel-dots { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+    .promotion-carousel-dot {
+      min-height: 44px; padding: 0 15px; border-radius: 99px;
+      border: 1px solid #cbd9e2; background: #fff; color: var(--gray-600);
+      font: 700 .75rem 'Inter',sans-serif; cursor: pointer;
+      transition: background .2s ease,color .2s ease,border-color .2s ease;
+    }
+    .promotion-carousel-dot[aria-current="true"] {
+      background: var(--navy); color: #fff; border-color: var(--navy);
+    }
+    .promotion-carousel-note {
+      padding: 18px 22px; border-top: 1px solid #e4eaf0;
+      color: var(--gray-600); font-size: .82rem; line-height: 1.6; text-align: center;
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    @keyframes promotionCarouselFade {
+      from { opacity: 0; transform: translateX(10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
     .promotion-person {
       background: var(--gray-50); border: 1px solid #e4eaf0;
       border-radius: 16px; padding: 16px 18px;
@@ -338,6 +406,13 @@
     @media (max-width: 760px) {
       .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
       .promotion-media-grid .june-photo:first-child { aspect-ratio: 3 / 4; }
+      .promotion-slide { grid-template-columns: 1fr; min-height: 0; }
+      .promotion-slide-media { min-height: 0; aspect-ratio: 4 / 3; }
+      .promotion-slide[data-slide="1"] .promotion-slide-media,
+      .promotion-slide[data-slide="2"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
+      .promotion-slide-copy { padding: 28px 22px 32px; }
+      .promotion-carousel-controls { padding: 12px; }
+      .promotion-carousel-dot { min-width: 44px; padding: 0 11px; }
       .copa-gallery { grid-template-columns: 1fr; }
       .copa-gallery .june-photo { height: auto; min-height: 0; }
       .copa-gallery .june-photo:first-child { aspect-ratio: 4 / 3; }
@@ -345,6 +420,11 @@
       .copa-video-grid { grid-template-columns: 1fr; }
       .copa-video-card video { max-height: 560px; }
       .preview-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .promotion-slide { animation: none; }
+      .promotion-carousel-arrow, .promotion-carousel-dot { transition: none; }
     }
 
     /* ─── PROMOTIONS ──────────────────────────────────── */
@@ -1329,57 +1409,95 @@
       <h2 class="section-title">Novos desafios, novas lideranças.</h2>
       <p class="section-desc">Quatro profissionais avançam para novas posições e assumem responsabilidades ainda maiores dentro da MB.</p>
     </div>
-    <div class="promotion-team-layout fade-up">
-      <div class="promotion-media-grid">
-        <div class="june-photo">
+    <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
+      aria-roledescription="carrossel" aria-label="Promoções e efetivações de junho" tabindex="0">
+      <article class="promotion-slide is-active" data-slide="0" role="group"
+        aria-roledescription="slide" aria-label="1 de 3: novas lideranças na adquirência">
+        <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/promocoes-mayko-juliana-natallia.jpg"
             alt="Mayko Hentzy, Juliana Leite e Natallia celebrando suas promoções" />
         </div>
-        <div class="june-photo">
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Máquinas de Cartão</span>
+          <h3>Novas lideranças na adquirência</h3>
+          <p>Mayko, Juliana e Natallia integram a equipe responsável pelas frentes de Mercado Pago, C6 Pay e PagBank. Em junho, os três avançaram para novos desafios profissionais.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Mayko Hentzy</strong>
+              <span>Coordenador Comercial</span>
+              <p>Especialista em adquirência, tornou-se ponto focal da empresa e uma referência no produto.</p>
+            </div>
+            <div class="promotion-profile">
+              <strong>Juliana Leite</strong>
+              <span>Líder</span>
+              <p>Com menos de um ano de empresa, assume a liderança do time farmer de adquirência.</p>
+            </div>
+            <div class="promotion-profile">
+              <strong>Natallia</strong>
+              <span>Supervisora de Canal</span>
+              <p>Iniciou na MB como estagiária em 2023 e segue evoluindo com uma atuação estratégica, criativa e autêntica.</p>
+            </div>
+          </div>
+          <div class="partner-pills"><span>Mercado Pago</span><span>C6 Pay</span><span>PagBank</span></div>
+        </div>
+      </article>
+
+      <article class="promotion-slide" data-slide="1" role="group" hidden
+        aria-roledescription="slide" aria-label="2 de 3: promoção de Karoline">
+        <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/promocao-karoline.jpeg"
-            alt="Karoline celebrando sua promoção para Líder de Relacionamento" />
+            alt="Karoline celebrando sua promoção para Líder de Relacionamento" loading="lazy" />
         </div>
-        <div class="june-photo">
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="users" style="width:15px;height:15px"></i> Relacionamento</span>
+          <h3>Karoline assume a liderança de Relacionamento</h3>
+          <p>Karoline foi promovida ao cargo de Líder de Relacionamento, reconhecendo uma atuação que já vinha desempenhando desde 2024. Como ponto focal do setor, contribui diariamente com os colegas e demonstra disponibilidade para orientar, apoiar e liderar pessoas.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Karoline</strong>
+              <span>Líder de Relacionamento</span>
+              <p>Uma nova etapa construída com proximidade, colaboração e disposição para ajudar o time.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="promotion-slide" data-slide="2" role="group" hidden
+        aria-roledescription="slide" aria-label="3 de 3: efetivação de Thalles">
+        <div class="promotion-slide-media">
           <img src="/images/mb-news/junho/efetivacao-thalles.jpeg"
-            alt="Thalles celebrando sua efetivação na MB" />
+            alt="Thalles celebrando sua efetivação na MB" loading="lazy" />
         </div>
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
+          <h3>Thalles inicia uma nova etapa na MB</h3>
+          <p>Thalles iniciou sua trajetória na MB como estagiário e, ao longo desse período, demonstrou comprometimento, vontade de aprender e disposição para contribuir com a equipe.</p>
+          <p style="margin-top:14px">Sua efetivação reconhece essa evolução e marca o início de uma nova etapa profissional. Parabéns, Thalles, por essa conquista e por seguir construindo sua história com a MB.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Thalles</strong>
+              <span>Estagiário → Efetivado</span>
+              <p>Desenvolvimento, dedicação e uma trajetória que continua crescendo.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="promotion-carousel-controls">
+        <button class="promotion-carousel-arrow" type="button" data-carousel-prev aria-label="Ver destaque anterior">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+        </button>
+        <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-current="true">Adquirência</button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-current="false">Karoline</button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-current="false">Thalles</button>
+        </div>
+        <button class="promotion-carousel-arrow" type="button" data-carousel-next aria-label="Ver próximo destaque">
+          <i data-lucide="arrow-right" aria-hidden="true"></i>
+        </button>
       </div>
-      <div>
-        <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoções de junho</span>
-        <h3 style="font-size:clamp(1.5rem,3vw,2.15rem);color:var(--navy);line-height:1.15">Crescimento que se constrói todos os dias</h3>
-        <div class="promotion-list">
-          <div class="promotion-person">
-            <strong>Mayko Hentzy</strong>
-            <span>Supervisor de Canal → Coordenador Comercial</span>
-            <p>Especialista na área de adquirência, Mayko se tornou um dos principais pontos focais da empresa e uma referência no produto. Animado e extrovertido, inicia agora um novo desafio em sua trajetória profissional.</p>
-          </div>
-          <div class="promotion-person">
-            <strong>Juliana Leite</strong>
-            <span>Consultora → Líder</span>
-            <p>Com menos de um ano de empresa, Juliana conquistou o cargo de Líder. Responsável por conduzir o time farmer de adquirência, destaca-se pela criatividade, iniciativa e proatividade.</p>
-          </div>
-          <div class="promotion-person">
-            <strong>Natallia</strong>
-            <span>Líder → Supervisora de Canal</span>
-            <p>Natallia iniciou sua trajetória na MB como estagiária, em 2023. Depois de ser efetivada e continuar evoluindo, assume uma nova etapa como Supervisora de Canal. Estratégica, criativa e autêntica.</p>
-          </div>
-          <div class="promotion-person">
-            <strong>Karoline</strong>
-            <span>Promovida a Líder de Relacionamento</span>
-            <p>Karoline já exercia essa atuação desde 2024 e se tornou um ponto focal do setor, apoiando os colegas e demonstrando disponibilidade para orientar, ajudar e liderar pessoas.</p>
-          </div>
-        </div>
-        <p>
-          Mayko, Juliana e Natallia integram a equipe de Máquinas de Cartão, responsável pelas frentes de Mercado Pago, C6 Pay e PagBank.
-        </p>
-        <div class="partner-pills">
-          <span>Mercado Pago</span><span>C6 Pay</span><span>PagBank</span>
-        </div>
-        <div class="effective-card">
-          <strong>Novos passos na carreira</strong>
-          <p>Thalles, Pedro Xavier e Lucas Trajano iniciaram suas trajetórias na MB como estagiários e agora foram efetivados. A conquista reconhece o desenvolvimento, a dedicação e a contribuição de cada um ao longo desse período.</p>
-        </div>
-      </div>
+      <p class="promotion-carousel-note">Pedro Xavier e Lucas Trajano também iniciaram na MB como estagiários e foram efetivados em junho.</p>
+      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 3: novas lideranças na adquirência</p>
     </div>
   </div>
 </section>
@@ -2022,6 +2140,69 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') document.getElementById('monthModal').classList.remove('open');
   });
+
+  // ── PROMOTION CAROUSEL
+  const promotionCarousel = document.getElementById('promotionCarousel');
+  const promotionSlides = promotionCarousel
+    ? Array.from(promotionCarousel.querySelectorAll('.promotion-slide'))
+    : [];
+  const promotionDots = promotionCarousel
+    ? Array.from(promotionCarousel.querySelectorAll('[data-carousel-dot]'))
+    : [];
+  const promotionStatus = document.getElementById('promotionCarouselStatus');
+  const promotionLabels = [
+    'novas lideranças na adquirência',
+    'promoção de Karoline',
+    'efetivação de Thalles'
+  ];
+  let currentPromotionSlide = 0;
+
+  function showPromotionSlide(nextIndex) {
+    if (!promotionSlides.length) return;
+
+    currentPromotionSlide = (nextIndex + promotionSlides.length) % promotionSlides.length;
+    promotionSlides.forEach((slide, index) => {
+      const isActive = index === currentPromotionSlide;
+      slide.hidden = !isActive;
+      slide.classList.toggle('is-active', isActive);
+    });
+    promotionDots.forEach((dot, index) => {
+      dot.setAttribute('aria-current', index === currentPromotionSlide ? 'true' : 'false');
+    });
+    if (promotionStatus) {
+      promotionStatus.textContent = `Destaque ${currentPromotionSlide + 1} de ${promotionSlides.length}: ${promotionLabels[currentPromotionSlide]}`;
+    }
+  }
+
+  if (promotionCarousel) {
+    promotionCarousel.querySelector('[data-carousel-prev]').addEventListener('click', () => {
+      showPromotionSlide(currentPromotionSlide - 1);
+    });
+    promotionCarousel.querySelector('[data-carousel-next]').addEventListener('click', () => {
+      showPromotionSlide(currentPromotionSlide + 1);
+    });
+    promotionDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showPromotionSlide(index));
+    });
+    promotionCarousel.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showPromotionSlide(currentPromotionSlide - 1);
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        showPromotionSlide(currentPromotionSlide + 1);
+      }
+      if (event.key === 'Home') {
+        event.preventDefault();
+        showPromotionSlide(0);
+      }
+      if (event.key === 'End') {
+        event.preventDefault();
+        showPromotionSlide(promotionSlides.length - 1);
+      }
+    });
+  }
 
   // ── NAV ACTIVE LINK
   const sections = document.querySelectorAll('section[id]');
