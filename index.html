@@ -383,7 +383,35 @@
     .copa-gallery { display: grid; grid-template-columns: 1.35fr .65fr; gap: 12px; }
     .copa-gallery .june-photo { height: 430px; }
     .copa-gallery .june-photo:first-child img { object-position: center; }
-    .copa-gallery .june-photo:last-child img { object-position: center 40%; }
+    .copa-gallery .june-photo:nth-child(2) img { object-position: center 40%; }
+    .copa-photo-button {
+      position: relative; padding: 0; border: 0; appearance: none;
+      color: inherit; font: inherit; text-align: initial; cursor: zoom-in;
+    }
+    .copa-photo-button::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(0,31,47,.56));
+      opacity: 0; transition: opacity .2s ease; pointer-events: none;
+    }
+    .copa-photo-button:hover::after,
+    .copa-photo-button:focus-visible::after { opacity: 1; }
+    .copa-photo-button:focus-visible { outline: 4px solid #1ea6d9; outline-offset: 4px; }
+    .copa-photo-action {
+      position: absolute; right: 16px; bottom: 16px; z-index: 1;
+      min-height: 44px; padding: 0 16px; border-radius: 99px;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,31,47,.88); color: #fff;
+      font-size: .78rem; font-weight: 800; letter-spacing: .2px;
+      opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease;
+    }
+    .copa-photo-action .lucide { width: 18px; height: 18px; }
+    .copa-photo-button:hover .copa-photo-action,
+    .copa-photo-button:focus-visible .copa-photo-action {
+      opacity: 1; transform: translateY(0);
+    }
+    @media (hover: none) {
+      .copa-photo-action { opacity: 1; transform: translateY(0); }
+    }
     .copa-videos { grid-column: 1 / -1; margin-top: 14px; }
     .copa-videos-title {
       color: var(--navy); font-size: .78rem; font-weight: 800;
@@ -993,9 +1021,10 @@
     .lightbox {
       position: fixed; inset: 0; z-index: 1000;
       background: rgba(0,0,0,.9); display: flex; align-items: center; justify-content: center;
-      opacity: 0; visibility: hidden; transition: all .3s;
+      opacity: 0; visibility: hidden;
+      transition: opacity .3s ease, visibility 0s linear .3s;
     }
-    .lightbox.open { opacity: 1; visibility: visible; }
+    .lightbox.open { opacity: 1; visibility: visible; transition-delay: 0s; }
     .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 12px; }
     .lightbox-close {
       position: absolute; top: 20px; right: 20px;
@@ -1006,6 +1035,19 @@
       transition: all .2s;
     }
     .lightbox-close:hover { background: rgba(255,255,255,.2); }
+    .lightbox-download {
+      position: absolute; top: 20px; right: 72px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      color: white; display: flex; align-items: center; justify-content: center;
+      text-decoration: none; transition: all .2s;
+    }
+    .lightbox-download:hover { background: rgba(255,255,255,.2); }
+    .lightbox-close:focus-visible,
+    .lightbox-download:focus-visible { outline: 3px solid #71d2f3; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .lightbox { transition: none; }
+    }
 
     /* ─── EDITORIAL ───────────────────────────────────── */
     #editorial {
@@ -1291,12 +1333,13 @@
 
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <a id="lightbox-download" href="" download
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true"
+  aria-label="Visualização ampliada da foto" aria-hidden="true" onclick="closeLightbox()">
+  <button class="lightbox-close" type="button" aria-label="Fechar imagem ampliada"
+    onclick="event.stopPropagation(); closeLightbox()">✕</button>
+  <a class="lightbox-download" id="lightbox-download" href="" download
     onclick="event.stopPropagation()"
-    style="position:absolute;top:20px;right:72px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;font-size:1.1rem;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .2s;"
-    title="Baixar imagem"><i data-lucide="download"></i></a>
+    title="Baixar imagem" aria-label="Baixar esta imagem"><i data-lucide="download"></i></a>
   <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
 </div>
 
@@ -1575,8 +1618,20 @@
         </p>
       </div>
       <div class="copa-gallery fade-up" style="transition-delay:.1s">
-        <div class="june-photo"><img src="/images/mb-news/junho/copa-equipe.jpeg" alt="Equipe MB reunida com a bandeira do Brasil em clima de Copa" /></div>
-        <div class="june-photo"><img src="/images/mb-news/junho/copa-partida.jpeg" alt="Colaboradores acompanhando a partida no escritório decorado" /></div>
+        <button class="june-photo copa-photo-button" type="button"
+          data-lightbox-src="/images/mb-news/junho/copa-equipe.jpeg"
+          data-lightbox-alt="Equipe MB reunida com a bandeira do Brasil em clima de Copa"
+          aria-label="Ampliar foto da equipe MB em clima de Copa">
+          <img src="/images/mb-news/junho/copa-equipe.jpeg" alt="Equipe MB reunida com a bandeira do Brasil em clima de Copa" />
+          <span class="copa-photo-action" aria-hidden="true"><i data-lucide="maximize-2"></i>Ampliar</span>
+        </button>
+        <button class="june-photo copa-photo-button" type="button"
+          data-lightbox-src="/images/mb-news/junho/copa-partida.jpeg"
+          data-lightbox-alt="Colaboradores acompanhando a partida no escritório decorado"
+          aria-label="Ampliar foto dos colaboradores assistindo ao jogo">
+          <img src="/images/mb-news/junho/copa-partida.jpeg" alt="Colaboradores acompanhando a partida no escritório decorado" />
+          <span class="copa-photo-action" aria-hidden="true"><i data-lucide="maximize-2"></i>Ampliar</span>
+        </button>
         <div class="copa-videos">
           <p class="copa-videos-title">Momentos da nossa torcida</p>
           <div class="copa-video-grid">
@@ -2142,16 +2197,37 @@
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   // ── LIGHTBOX
-  function openLightbox(src) {
+  let lightboxTrigger = null;
+
+  function openLightbox(src, alt = 'Imagem ampliada') {
     if (!src) return;
     const lb = document.getElementById('lightbox');
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox-download').href = src;
+    const image = document.getElementById('lightbox-img');
+    const download = document.getElementById('lightbox-download');
+    lightboxTrigger = document.activeElement;
+    image.src = src;
+    image.alt = alt;
+    download.href = src;
+    download.download = src.split('/').pop() || 'foto-mb-news';
     lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    window.setTimeout(() => lb.querySelector('.lightbox-close').focus(), 0);
   }
   function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
+    const lb = document.getElementById('lightbox');
+    if (!lb.classList.contains('open')) return;
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lightboxTrigger && typeof lightboxTrigger.focus === 'function') lightboxTrigger.focus();
+    lightboxTrigger = null;
   }
+  document.querySelectorAll('.copa-photo-button').forEach(button => {
+    button.addEventListener('click', () => {
+      openLightbox(button.dataset.lightboxSrc, button.dataset.lightboxAlt);
+    });
+  });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
