@@ -496,6 +496,59 @@
       position: relative; max-width: 820px; margin: 34px auto 0; text-align: center;
       color: var(--gray-600); font-size: .95rem; line-height: 1.75;
     }
+    #totalpass {
+      position: relative; overflow: hidden;
+      background: linear-gradient(145deg,#002b40 0%,#004d70 58%,#00618b 100%);
+    }
+    #totalpass::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background-image: radial-gradient(circle at 12% 18%,rgba(255,255,255,.09) 0 2px,transparent 3px),
+        radial-gradient(circle at 86% 76%,rgba(255,255,255,.07) 0 2px,transparent 3px);
+      background-size: 48px 48px,64px 64px;
+    }
+    .totalpass-header { position: relative; max-width: 760px; margin: 0 auto 58px; text-align: center; }
+    .totalpass-header .section-eyebrow { color: #8de1b7; }
+    .totalpass-header .section-title { color: #fff; }
+    .totalpass-header .section-desc { max-width: 720px; margin: 0 auto; color: rgba(255,255,255,.76); }
+    .totalpass-podium {
+      position: relative; display: grid; grid-template-columns: repeat(4,minmax(0,1fr));
+      grid-template-areas: 'second first third-a third-b'; gap: 16px; align-items: end;
+    }
+    .totalpass-card {
+      position: relative; overflow: hidden; border-radius: 24px; background: #fff;
+      border: 2px solid transparent; box-shadow: 0 20px 48px rgba(0,22,34,.28);
+    }
+    .totalpass-card.rank-first { grid-area: first; border-color: #f6c453; transform: translateY(-26px); }
+    .totalpass-card.rank-second { grid-area: second; border-color: #bac6ce; }
+    .totalpass-card.rank-third-a { grid-area: third-a; border-color: #c9804d; }
+    .totalpass-card.rank-third-b { grid-area: third-b; border-color: #c9804d; }
+    .totalpass-photo { position: relative; aspect-ratio: 1; overflow: hidden; background: #eaf0f3; }
+    .totalpass-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .totalpass-place {
+      position: absolute; top: 14px; left: 14px; z-index: 1;
+      min-width: 52px; height: 40px; padding: 0 12px; border-radius: 99px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      background: rgba(0,31,47,.88); color: #fff; font-size: .82rem; font-weight: 900;
+      box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    }
+    .rank-first .totalpass-place { background: #f6c453; color: #4b3400; }
+    .totalpass-place .lucide { width: 15px; height: 15px; }
+    .totalpass-card-copy { padding: 20px 18px 22px; text-align: center; }
+    .totalpass-card-copy h3 { color: var(--navy); font-size: 1.08rem; margin-bottom: 6px; }
+    .totalpass-card-copy p { color: var(--gray-600); font-size: .78rem; line-height: 1.55; }
+    .totalpass-card-copy strong {
+      display: inline-block; margin-top: 12px; padding: 6px 10px; border-radius: 99px;
+      background: #edf8fd; color: var(--blue); font-size: .68rem;
+      text-transform: uppercase; letter-spacing: .55px;
+    }
+    .totalpass-tie-note {
+      position: relative; max-width: 620px; margin: 34px auto 0; padding: 16px 20px;
+      border: 1px solid rgba(255,255,255,.18); border-radius: 18px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.82);
+      font-size: .84rem; line-height: 1.55; text-align: center;
+    }
+    .totalpass-tie-note .lucide { width: 20px; height: 20px; flex: 0 0 20px; color: #f4b183; }
     .preview-grid {
       display: grid; grid-template-columns: repeat(2,1fr); gap: 18px;
       max-width: 780px; margin: 32px auto 0;
@@ -545,6 +598,18 @@
       @keyframes birthdayCarouselScroll {
         to { transform: translateX(calc(-50% - 5px)); }
       }
+      .totalpass-header { margin-bottom: 36px; text-align: left; }
+      .totalpass-header .section-desc { margin: 0; }
+      .totalpass-podium {
+        grid-template-columns: 1fr; grid-template-areas: 'first' 'second' 'third-a' 'third-b';
+        gap: 14px;
+      }
+      .totalpass-card.rank-first { transform: none; }
+      .totalpass-card { display: grid; grid-template-columns: 42% 58%; border-radius: 20px; }
+      .totalpass-photo { aspect-ratio: 4 / 5; }
+      .totalpass-card-copy { padding: 18px 14px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
+      .totalpass-card-copy strong { align-self: flex-start; }
+      .totalpass-tie-note { align-items: flex-start; text-align: left; }
       .preview-grid { grid-template-columns: 1fr; }
     }
 
@@ -1445,6 +1510,7 @@
     <li><a href="#promocoes">Promoções</a></li>
     <li><a href="#copa">Copa</a></li>
     <li><a href="#aniversariantes">Aniversariantes</a></li>
+    <li><a href="#totalpass">TotalPass</a></li>
   </ul>
   <span class="nav-edition">Edição #003 · Junho 2026</span>
 </nav>
@@ -1538,7 +1604,7 @@
         Nesta edição, celebramos as novas lideranças da equipe de Máquinas de Cartão, os dez aniversariantes de junho e o momento em que o escritório ganhou as cores do Brasil para uma torcida especial em equipe.
       </p>
       <p>
-        Em breve, as próximas páginas também receberão as novas contratações, as demais promoções e o ranking Total Pass de junho. Boa leitura!
+        Também reconhecemos quem fez da atividade física um compromisso com o próprio bem-estar e conquistou seu lugar no ranking TotalPass. Boa leitura!
       </p>
       <div class="editorial-signature">
         <div class="editorial-avatar">MB</div>
@@ -1789,124 +1855,71 @@
   </div>
 </section>
 
-<!-- CONTEÚDOS EM PREPARAÇÃO -->
-<section id="em-preparacao">
+<!-- TOTALPASS -->
+<section id="totalpass">
   <div class="container">
-    <div class="fade-up" style="text-align:center">
-      <span class="section-eyebrow">Edição de junho</span>
-      <h2 class="section-title">Mais histórias chegando.</h2>
-      <p class="section-desc" style="margin:0 auto">A edição será completada à medida que as informações oficiais e as fotos das próximas pautas forem reunidas.</p>
+    <div class="totalpass-header fade-up">
+      <span class="section-eyebrow">Bem-estar em movimento</span>
+      <h2 class="section-title">Quem se movimenta, inspira.</h2>
+      <p class="section-desc">
+        O ranking TotalPass reconhece quem transformou a atividade física em parte da rotina. Mais do que posições, este pódio representa constância, cuidado com a saúde e inspiração para todo o time.
+      </p>
     </div>
-    <div class="preview-grid fade-up">
-      <article class="preview-card">
-        <div class="preview-card-icon"><i data-lucide="user-plus"></i></div>
-        <h3>Novas contratações</h3>
-        <p>Boas-vindas aos profissionais que passaram a fazer parte do nosso time.</p>
-        <span class="preview-status">Em preparação</span>
-      </article>
-      <article class="preview-card">
-        <div class="preview-card-icon"><i data-lucide="dumbbell"></i></div>
-        <h3>Ranking Total Pass</h3>
-        <p>O novo pódio do mês será publicado com os resultados oficiais de check-ins.</p>
-        <span class="preview-status">Em preparação</span>
-      </article>
-    </div>
-  </div>
-</section>
 
-<!-- TOTAL PASS -->
-<section id="pascoa" style="display:none">
-  <div class="container">
-    <div class="pascoa-layout">
-
-      <!-- Conteúdo -->
-      <div class="pascoa-content fade-up" style="transition-delay:.15s">
-        <span class="section-eyebrow" style="color:#FF6B35">Total Pass</span>
-        <h2 style="white-space:nowrap">Cada treino conta. O seu também.</h2>
-        <p>
-          Cuidar do corpo também é cuidar do trabalho. Mais disposição, menos estresse e mais foco no dia a dia — é isso que a atividade física traz. O ranking do Total Pass celebra quem fez disso um hábito.
-        </p>
-        <p>
-          Parabéns a todos que se movimentaram nesta edição. Cada check-in é uma escolha pelo seu bem-estar — e isso merece reconhecimento.
-        </p>
-        <div class="pascoa-highlight">
-          <div class="pascoa-highlight-icon"><i data-lucide="dumbbell" style="color:white"></i></div>
-          <div class="pascoa-highlight-text">
-            <strong>Top 3 da edição</strong>
-            <span>Os colaboradores com mais check-ins no Total Pass neste período</span>
-          </div>
+    <div class="totalpass-podium fade-up" role="list" aria-label="Classificação do ranking TotalPass">
+      <article class="totalpass-card rank-first" role="listitem">
+        <div class="totalpass-photo">
+          <span class="totalpass-place"><i data-lucide="crown"></i>1º</span>
+          <img src="/images/mb-news/junho/totalpass/renata-batista.jpg" alt="Renata Batista, primeira colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
         </div>
-
-        <div class="pascoa-media-row">
-          <div class="pascoa-video-wrap">
-            <p class="pascoa-gallery-title">Pódio do mês</p>
-            <div class="totalpass-ranking">
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:36%;">
-                <span class="totalpass-position">1º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-antonio-costa.jpg" alt="Antonio Costa" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <span class="totalpass-champion-badge"><i data-lucide="crown" style="width:12px;height:12px"></i> Grande campeão</span>
-                  <strong>Antonio Costa</strong>
-                  <span>22 check-ins</span>
-                </div>
-              </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:34%;">
-                <span class="totalpass-position">2º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-julia-goulart.png" alt="Julia Goulart" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <strong>Julia Goulart</strong>
-                  <span>20 check-ins</span>
-                </div>
-              </div>
-              <div class="totalpass-rank-card" style="--avatar-x:50%;--avatar-y:32%;">
-                <span class="totalpass-position">3º</span>
-                <div class="totalpass-avatar-frame">
-                  <img class="totalpass-avatar" src="public/images/total-pass-raphael-machado.jpg" alt="Raphael Machado" />
-                </div>
-                <div class="totalpass-rank-info">
-                  <strong>Raphael Machado</strong>
-                  <span>17 check-ins</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pascoa-gallery-wrap">
-            <p class="pascoa-gallery-title">Benefícios da atividade física</p>
-            <div class="gallery-grid">
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#003956,#0099dd);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="zap" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Mais energia no dia a dia</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#059669,#10b981);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="smile" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Redução do estresse</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#f5a623,#ff6b35);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="target" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Mais foco e disposição</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#6B21A8,#A855F7);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="moon" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Sono de melhor qualidade</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#005580,#007ab8);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="shield-check" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Prevenção de doenças</span>
-              </div>
-              <div class="gallery-thumb" style="background:linear-gradient(135deg,#1e293b,#475569);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px;gap:10px">
-                <i data-lucide="brain" style="width:28px;height:28px;opacity:.9"></i>
-                <span style="font-size:.78rem;font-weight:700">Cuidado com a mente</span>
-              </div>
-            </div>
-          </div>
+        <div class="totalpass-card-copy">
+          <h3>Renata Batista</h3>
+          <p>Conquistou o primeiro lugar e ocupa o topo do nosso pódio.</p>
+          <strong>1º lugar</strong>
         </div>
-      </div>
+      </article>
 
+      <article class="totalpass-card rank-second" role="listitem">
+        <div class="totalpass-photo">
+          <span class="totalpass-place">2º</span>
+          <img src="/images/mb-news/junho/totalpass/maria-seixas.jpg" alt="Maria Seixas, segunda colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
+        </div>
+        <div class="totalpass-card-copy">
+          <h3>Maria Seixas</h3>
+          <p>Garantiu a segunda posição entre os destaques do ranking.</p>
+          <strong>2º lugar</strong>
+        </div>
+      </article>
+
+      <article class="totalpass-card rank-third-a" role="listitem">
+        <div class="totalpass-photo">
+          <span class="totalpass-place">3º</span>
+          <img src="/images/mb-news/junho/totalpass/julia-lopes.jpg" alt="Julia Lopes, terceira colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
+        </div>
+        <div class="totalpass-card-copy">
+          <h3>Julia Lopes</h3>
+          <p>Divide a terceira colocação neste pódio de dedicação.</p>
+          <strong>3º lugar</strong>
+        </div>
+      </article>
+
+      <article class="totalpass-card rank-third-b" role="listitem">
+        <div class="totalpass-photo">
+          <span class="totalpass-place">3º</span>
+          <img src="/images/mb-news/junho/totalpass/rodrigo-gadelha.jpg" alt="Rodrigo Gadelha, terceiro colocado no ranking TotalPass" width="1080" height="1080" loading="lazy" />
+        </div>
+        <div class="totalpass-card-copy">
+          <h3>Rodrigo Gadelha</h3>
+          <p>Também alcançou a terceira posição e completa o ranking.</p>
+          <strong>3º lugar</strong>
+        </div>
+      </article>
     </div>
+
+    <p class="totalpass-tie-note fade-up">
+      <i data-lucide="users"></i>
+      Julia Lopes e Rodrigo Gadelha ficaram empatados e compartilham a terceira colocação.
+    </p>
   </div>
 </section>
 
@@ -2300,7 +2313,7 @@
   <a href="#home"     class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
   <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
   <a href="#copa" class="fab-btn" title="Copa"><i data-lucide="flag"></i></a>
-  <a href="#em-preparacao" class="fab-btn" title="Próximas pautas"><i data-lucide="layout-grid"></i></a>
+  <a href="#totalpass" class="fab-btn" title="Ranking TotalPass"><i data-lucide="dumbbell"></i></a>
 </div>
 
 <!-- FOOTER -->
@@ -2311,7 +2324,8 @@
     <a href="#editorial">Foco Mensal</a>
     <a href="#promocoes">Promoções</a>
     <a href="#copa">Copa</a>
-    <a href="#em-preparacao">Próximas pautas</a>
+    <a href="#aniversariantes">Aniversariantes</a>
+    <a href="#totalpass">TotalPass</a>
   </div>
   <hr class="footer-divider" />
   <p class="footer-copy">© 2026 mb news · Material de comunicação interna · Todos os direitos reservados</p>
