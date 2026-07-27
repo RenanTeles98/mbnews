@@ -544,8 +544,13 @@
     .totalpass-card-copy { padding: 20px 18px 22px; text-align: center; }
     .totalpass-card-copy h3 { color: var(--navy); font-size: 1.08rem; margin-bottom: 6px; }
     .totalpass-card-copy p { color: var(--gray-600); font-size: .78rem; line-height: 1.55; }
+    .totalpass-checkins {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      margin-top: 12px; color: var(--navy); font-size: .8rem; font-weight: 800;
+    }
+    .totalpass-checkins .lucide { width: 15px; height: 15px; color: var(--blue); }
     .totalpass-card-copy strong {
-      display: inline-block; margin-top: 12px; padding: 6px 10px; border-radius: 99px;
+      display: inline-block; margin-top: 8px; padding: 6px 10px; border-radius: 99px;
       background: #edf8fd; color: var(--blue); font-size: .68rem;
       text-transform: uppercase; letter-spacing: .55px;
     }
@@ -620,6 +625,7 @@
       .totalpass-card { display: grid; grid-template-columns: 42% 58%; border-radius: 20px; }
       .totalpass-photo { aspect-ratio: 4 / 5; }
       .totalpass-card-copy { padding: 18px 14px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
+      .totalpass-checkins { align-self: flex-start; }
       .totalpass-card-copy strong { align-self: flex-start; }
       .totalpass-tie-note { align-items: flex-start; text-align: left; }
       .preview-grid { grid-template-columns: 1fr; }
@@ -1886,6 +1892,7 @@
         <div class="totalpass-card-copy">
           <h3>Renata Batista</h3>
           <p>Conquistou o primeiro lugar e ocupa o topo do nosso pódio.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>19 check-ins</span>
           <strong>1º lugar</strong>
         </div>
       </article>
@@ -1898,6 +1905,7 @@
         <div class="totalpass-card-copy">
           <h3>Maria Seixas</h3>
           <p>Garantiu a segunda posição entre os destaques do ranking.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>16 check-ins</span>
           <strong>2º lugar</strong>
         </div>
       </article>
@@ -1910,6 +1918,7 @@
         <div class="totalpass-card-copy">
           <h3>Julia Lopes</h3>
           <p>Divide a terceira colocação neste pódio de dedicação.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>15 check-ins</span>
           <strong>3º lugar</strong>
         </div>
       </article>
@@ -1922,6 +1931,7 @@
         <div class="totalpass-card-copy">
           <h3>Rodrigo Gadelha</h3>
           <p>Também alcançou a terceira posição e completa o ranking.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>15 check-ins</span>
           <strong>3º lugar</strong>
         </div>
       </article>
