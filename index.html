@@ -452,7 +452,7 @@
     .birthday-count span:last-child { display: block; margin-top: 5px; font-size: .75rem; color: rgba(255,255,255,.72); }
     .birthday-carousel { position: relative; }
     .birthday-carousel-toolbar {
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: flex-end;
       gap: 20px; margin-bottom: 14px;
     }
     .birthday-carousel-hint {
@@ -1827,7 +1827,6 @@
 
     <div class="birthday-carousel fade-up" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de junho">
       <div class="birthday-carousel-toolbar">
-        <p class="birthday-carousel-hint">As duas fileiras avançam automaticamente em sentidos opostos e pausam ao passar o mouse.</p>
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
           <span class="birthday-toggle-play-icon" aria-hidden="true"><i data-lucide="play"></i></span>
