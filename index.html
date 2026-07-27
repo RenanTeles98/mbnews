@@ -506,16 +506,22 @@
     }
     #totalpass {
       position: relative; overflow: hidden;
-      background: linear-gradient(145deg,#002b40 0%,#004d70 58%,#00618b 100%);
+      background:
+        linear-gradient(145deg,rgba(0,26,41,.92) 0%,rgba(0,53,76,.86) 55%,rgba(0,81,112,.8) 100%),
+        url('/images/mb-news/junho/totalpass/totalpass-gym-background.png') center / cover no-repeat;
     }
     #totalpass::before {
       content: ''; position: absolute; inset: 0; pointer-events: none;
-      background-image: radial-gradient(circle at 12% 18%,rgba(255,255,255,.09) 0 2px,transparent 3px),
-        radial-gradient(circle at 86% 76%,rgba(255,255,255,.07) 0 2px,transparent 3px);
-      background-size: 48px 48px,64px 64px;
+      background: linear-gradient(90deg,rgba(0,20,33,.32),transparent 34%,transparent 66%,rgba(0,20,33,.32));
     }
     .totalpass-header { position: relative; max-width: 760px; margin: 0 auto 58px; text-align: center; }
     .totalpass-header .section-eyebrow { color: #8de1b7; }
+    .totalpass-header .totalpass-brand-tag {
+      padding: 8px 14px; border: 1px solid rgba(141,225,183,.46); border-radius: 99px;
+      background: rgba(0,28,43,.5); box-shadow: 0 8px 22px rgba(0,12,20,.2);
+    }
+    .totalpass-header .totalpass-brand-tag::before { display: none; }
+    .totalpass-brand-tag .lucide { width: 15px; height: 15px; }
     .totalpass-header .section-title { color: #fff; }
     .totalpass-header .section-desc { max-width: 720px; margin: 0 auto; color: rgba(255,255,255,.76); }
     .totalpass-podium {
@@ -1876,7 +1882,7 @@
 <section id="totalpass">
   <div class="container">
     <div class="totalpass-header fade-up">
-      <span class="section-eyebrow">Bem-estar em movimento</span>
+      <span class="section-eyebrow totalpass-brand-tag"><i data-lucide="dumbbell"></i>TotalPass</span>
       <h2 class="section-title">Quem se movimenta, inspira.</h2>
       <p class="section-desc">
         O ranking TotalPass reconhece quem transformou a atividade física em parte da rotina. Mais do que posições, este pódio representa constância, cuidado com a saúde e inspiração para todo o time.
