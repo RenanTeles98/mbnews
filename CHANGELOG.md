@@ -190,3 +190,4 @@ Principais marcos conhecidos:
 - Pausa automática ao passar o cursor sobre os aniversariantes removida; o controle manual foi mantido.
 - Retratos de Maria Seixas, Antônio Augusto e Luana Alves adicionados ao pódio TotalPass de julho.
 - Corrigida a regra que ocultava os retratos do pódio TotalPass de julho.
+- Reorganizado o passo a passo do Bot Ben para leitura clara das opções de plano de saúde.

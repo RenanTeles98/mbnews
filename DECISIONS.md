@@ -633,3 +633,18 @@ Os retratos tornam o reconhecimento mais pessoal e completam visualmente o pódi
 ### Correção
 
 Foi removida a regra temporária que ocultava `.totalpass-photo` na edição de julho, criada quando o pódio ainda não possuía retratos. Os cards retomam sua estrutura padrão: foto acima e informações abaixo.
+
+---
+
+## ADR-029: Agrupar cada instrução do Bot Ben em um único bloco de leitura
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Encapsular o conteúdo textual de cada etapa em um elemento próprio, mantendo o número como marcador separado à esquerda.
+
+### Motivo
+
+As opções em negrito eram itens independentes do layout flexível e se distribuíam de forma confusa. O agrupamento preserva a ordem do procedimento e torna a leitura imediata.

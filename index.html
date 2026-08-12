@@ -610,6 +610,8 @@
     .health-plan-steps ol { display:grid; gap:14px; margin:20px 0 24px; padding:0; list-style:none; counter-reset:steps; }
     .health-plan-steps li { counter-increment:steps; display:flex; gap:12px; color:var(--gray-600); font-size:.88rem; line-height:1.55; }
     .health-plan-steps li::before { content:counter(steps); width:26px; height:26px; flex:0 0 26px; border-radius:50%; display:grid; place-items:center; background:#e6f4fb; color:var(--blue); font-size:.75rem; font-weight:800; }
+    .health-plan-steps li > span { min-width:0; flex:1; }
+    .health-plan-steps li strong { color:var(--navy); }
     .health-plan-button, .vaccine-download { min-height:48px; padding:0 18px; border-radius:12px; display:inline-flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; font-weight:800; font-size:.84rem; transition:transform .2s ease,box-shadow .2s ease; }
     .health-plan-button { background:#25D366; color:#fff; }
     .health-plan-button:hover, .vaccine-download:hover { transform:translateY(-2px); box-shadow:0 10px 22px rgba(0,57,86,.16); }
@@ -1907,7 +1909,12 @@
         <span class="june-kicker"><i data-lucide="message-circle" style="width:15px;height:15px"></i> Bot Ben</span>
         <h3>Como solicitar</h3>
         <p>O processo é simples e acontece pelo WhatsApp oficial do RH.</p>
-        <ol><li>Acesse o Bot Ben no WhatsApp.</li><li>Escolha <strong>3 — Benefícios</strong>, depois <strong>6 — Plano de Saúde</strong>.</li><li>Selecione <strong>1 — Como Solicitar/Cancelar</strong> e, em seguida, <strong>1 — Solicitar a inclusão</strong>.</li><li>Confirme “Sim” quando o bot perguntar se deseja prosseguir.</li></ol>
+        <ol>
+          <li><span>Acesse o Bot Ben no WhatsApp.</span></li>
+          <li><span>Escolha <strong>3 — Benefícios</strong> e depois <strong>6 — Plano de Saúde</strong>.</span></li>
+          <li><span>Selecione <strong>1 — Como Solicitar/Cancelar</strong> e, em seguida, <strong>1 — Solicitar a inclusão</strong>.</span></li>
+          <li><span>Confirme <strong>“Sim”</strong> quando o bot perguntar se deseja prosseguir.</span></li>
+        </ol>
         <a class="health-plan-button" href="https://wa.me/5521995442142" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Acessar Bot Ben</a>
       </aside>
     </div>

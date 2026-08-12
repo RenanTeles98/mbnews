@@ -334,6 +334,8 @@ Atualização: adicionados os retratos enviados pelo RH para Maria Seixas, Antô
 
 Correção: removida uma regra legada que escondia a área de foto do pódio de julho; os três retratos agora ficam visíveis acima de cada card.
 
+Correção: o passo a passo de inclusão no plano de saúde foi reorganizado para manter cada instrução em um único bloco de leitura, sem separar frases e opções do Bot Ben.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas
