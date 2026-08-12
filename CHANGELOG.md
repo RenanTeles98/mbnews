@@ -119,3 +119,69 @@ Principais marcos conhecidos:
 
 ### Removido
 - `index.html` - botoes e paineis de reposicionamento foram desativados depois de travar os enquadramentos salvos.
+
+---
+
+## 2026-07-21 - Inicio do admin da MB News
+
+### Adicionado
+- `app/admin/mb-news/page.tsx` - nova rota administrativa da MB News.
+- `components/admin/MbNewsAdminApp.tsx` - interface para criar, editar, excluir e salvar edicoes.
+- `app/api/mb-news/editions/route.ts` - endpoint administrativo protegido por token.
+- `lib/mb-news-store.ts` - persistencia das edicoes com Upstash Redis e fallback JSON local.
+- `types/mb-news.ts` - tipos estruturados para edicoes e blocos da MB News.
+- `content/mb-news-editions.json` - arquivo local inicial para desenvolvimento.
+
+### Validado
+- `npm run lint`
+- `npm run build`
+
+---
+
+## 2026-07-23 — Prévia MB News Junho
+
+### Adicionado
+- Seção coletiva de promoções da equipe de Máquinas de Cartão.
+- Seção corporativa sobre o momento de integração em clima de Copa.
+- Cards de preparação para aniversariantes, contratações e ranking Total Pass.
+- Ilustrações temporárias para os espaços das fotos ainda não disponíveis no workspace.
+
+### Modificado
+- `index.html` atualizado para a edição #003 de Junho de 2026.
+- Edição de Maio preservada em `public/pages/mb-news-maio-2026.html`.
+
+### Atualizado
+- Fotos e três vídeos originais da Copa aplicados à edição de junho.
+- Textos de promoções revisados com Mayko Hentzy, Natallia, Juliana Leite e Karoline.
+- Efetivações de Thalles, Pedro Xavier e Lucas Trajano adicionadas.
+- Galeria de promoções atualizada com as fotos reais de Mayko/Juliana/Natallia, Karoline e Thalles.
+- Galeria de promoções convertida em carrossel acessível com imagem e texto sincronizados.
+- Texto específico da efetivação de Thalles adicionado.
+- Controles do carrossel simplificados com setas laterais centralizadas e indicadores sem nomes.
+- Slides de Lucas Trajano e Pedro Xavier adicionados com fotos e textos sobre a efetivação para CLT.
+- Nome de Natalia Araujo corrigido e sua posição alterada para acima de Juliana no primeiro slide.
+- Fotos principais da Copa habilitadas para ampliação em tela cheia e download do arquivo original.
+- Nova seção de aniversariantes de junho adicionada com dez retratos otimizados, galeria responsiva, ampliação e download.
+- Galeria dos aniversariantes convertida em carrossel automático contínuo; ampliação removida e controle de pausa adicionado.
+- Ranking TotalPass publicado com Renata Batista em 1º, Maria Seixas em 2º e Julia Lopes e Rodrigo Gadelha empatados em 3º.
+- Bloco de novas contratações removido da edição de junho.
+- Carrossel dos aniversariantes reorganizado em duas fileiras animadas, com cinco retratos por fileira e movimentos em sentidos opostos.
+- Texto explicativo do carrossel de aniversariantes removido, com o botao de pausa mantido a direita.
+- Secao `RH & Bem-estar` de maio reativada na edicao de junho, com cards de canais e orientacoes e link na navegacao.
+- Quantidade de check-ins adicionada aos quatro cards do ranking TotalPass.
+- Fundo tematico de academia e tag TotalPass adicionados a secao do ranking.
+
+---
+
+## 2026-08-12 — MB News Julho
+
+### Adicionado
+- Seção de plano de saúde para inclusão de dependentes e cônjuges, com tabela de valores e passo a passo no Bot Ben.
+- Lista dos 11 aniversariantes de julho.
+- Botões de download para o Calendário Nacional de Vacinação 2026 e informativos das campanhas de HPV e câncer do colo do útero.
+
+### Modificado
+- `index.html` atualizado para a edição #004 de Julho de 2026.
+- Ranking TotalPass atualizado com Maria Seixas, Antônio Augusto e Luana Alves.
+- Promoções e efetivações de Willian Amaral, Arthur, Evellyn, Julia Ramos, Julia Goulart e Beatriz Assumpção incluídas na edição.
+- Seção de aniversariantes atualizada para o carrossel de duas faixas da edição de junho, com os seis retratos fornecidos para julho.

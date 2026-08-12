@@ -695,6 +695,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       .promotion-slide { animation: none; }
+      .birthday-carousel.is-ready .birthday-carousel-track { animation: none; }
       .promotion-carousel-arrow, .promotion-carousel-dot { transition: none; }
     }
 
@@ -1927,26 +1928,13 @@
           Cada novo ciclo merece ser recebido com carinho. Neste mês, celebramos as pessoas que compartilham conosco sua energia, seu talento e tantos momentos importantes da nossa história.
         </p>
       </div>
-      <div class="birthday-count" aria-label="Onze aniversariantes celebrados em julho">
+      <div class="birthday-count" aria-label="Seis aniversariantes celebrados em julho">
         <span class="birthday-count-icon" aria-hidden="true"><i data-lucide="cake"></i></span>
-        <span><strong>11</strong><span>novos ciclos em julho</span></span>
+        <span><strong>6</strong><span>novos ciclos em julho</span></span>
       </div>
     </div>
 
-    <div class="birthday-list fade-up" role="list" aria-label="Aniversariantes de julho">
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Barbara Rocha da Silva</strong><span>08 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Vanessa Barros Martins</strong><span>09 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Michael Thiago da Silva Rodrigues</strong><span>12 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Edelyn de Souza Oliveira</strong><span>16 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Paula Cavalcanti dos Santos</strong><span>17 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Matheus Teixeira Kauss Sant'Anna</strong><span>18 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Danielle Monteiro</strong><span>18 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Kesia Batista da Conceição Cipriano</strong><span>18 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Rodrigo Netto Santos</strong><span>21 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Mayko William Araujo Hentzy</strong><span>22 de julho</span></span></div>
-      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Ricardo Wolter de França Junior</strong><span>22 de julho</span></span></div>
-    </div>
-    <div class="birthday-carousel" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de junho" style="display:none">
+    <div class="birthday-carousel fade-up" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de julho">
       <div class="birthday-carousel-toolbar">
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
@@ -1958,22 +1946,18 @@
         <div class="birthday-carousel-viewport">
           <div class="birthday-carousel-track">
             <div class="birthday-carousel-group">
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-01.jpg" alt="Retrato 1 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-02.jpg" alt="Retrato 2 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-03.jpg" alt="Retrato 3 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-04.jpg" alt="Retrato 4 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-05.jpg" alt="Retrato 5 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/edelyn-de-souza.png" alt="Edelyn de Souza Oliveira, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/matheus-teixeira-kauss.png" alt="Matheus Teixeira Kauss Sant'Anna, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/mayko-william-araujo.png" alt="Mayko William Araujo Hentzy, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
             </div>
           </div>
         </div>
         <div class="birthday-carousel-viewport birthday-carousel-viewport-reverse">
           <div class="birthday-carousel-track">
             <div class="birthday-carousel-group">
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-06.jpg" alt="Retrato 6 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-07.jpg" alt="Retrato 7 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-08.jpg" alt="Retrato 8 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-09.jpg" alt="Retrato 9 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/junho/aniversariantes/aniversariante-10.jpg" alt="Retrato 10 de integrante da MB aniversariante de junho" width="1080" height="1080" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/paula-cavalcanti-dos-santos.png" alt="Paula Cavalcanti dos Santos, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/ricardo-wolter-de-franca.png" alt="Ricardo Wolter de França Junior, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
+              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/vanessa-barros-martins.png" alt="Vanessa Barros Martins, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
             </div>
           </div>
         </div>

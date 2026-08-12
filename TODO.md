@@ -30,6 +30,11 @@
 ## 🟡 Importante (próximas sessões)
 
 ### MB News
+- [x] Criar MVP administrativo da MB News em `/admin/mb-news` com edicoes estruturadas, endpoint protegido e persistencia Upstash/JSON.
+- [ ] Renderizar a MB News publica a partir das edicoes salvas no CMS.
+- [ ] Criar rotas publicas dinamicas para edicoes antigas da MB News.
+- [ ] Substituir token simples do admin por Supabase Auth com permissoes de usuario.
+- [ ] Adicionar upload permanente de imagens para a MB News via Supabase Storage ou Vercel Blob.
 - [x] Ajustar copy editorial da edição de abril para referência mensal e tom mais natural.
 - [x] Revisar textos visíveis da MB News para tom mais humano e menos artificial.
 - [x] Adicionar ponto final no título da seção de saúde da MB News.
@@ -58,6 +63,17 @@
 - [x] Desativar novamente a função `Ajustar fotos`, removendo botão, sliders e JavaScript.
 - [x] Restaurar a edição de Abril e manter conteúdos publicados acessíveis pelo menu mensal.
 - [ ] Substituir `--%` pela porcentagem oficial alcançada da trimestral na edição de maio da MB News.
+- [x] Criar e publicar a prévia estrutural da edição de junho de 2026.
+- [x] Substituir a ilustração temporária da Copa pelas duas fotos e três vídeos originais.
+- [x] Substituir a ilustração temporária de promoções pelas fotos reais de Mayko/Juliana/Natallia, Karoline e Thalles.
+- [x] Adicionar fotos e slides individuais de Pedro Xavier e Lucas Trajano.
+- [x] Transformar as fotos de promoções em carrossel com imagem e texto sincronizados.
+- [x] Criar texto corporativo específico para a efetivação de Thalles.
+- [x] Centralizar as setas nas laterais do carrossel e remover os nomes dos seletores.
+- [x] Corrigir o nome para Natalia Araujo e posicioná-la acima de Juliana no carrossel.
+- [x] Inserir o texto do RH com Mayko Hentzy, Natallia, Juliana Leite e Karoline.
+- [x] Incluir as efetivações de Thalles, Pedro Xavier e Lucas Trajano.
+- [ ] Completar aniversariantes, contratações e ranking Total Pass de junho.
 
 ### Copy do site
 - [x] Revisar copy da home principal e páginas comerciais com linguagem mais direta.
@@ -128,3 +144,26 @@
 - [x] Reativar controle de reposicionamento das fotos do Total Pass.
 - [x] Adicionar controle de reposicionamento para a foto da Maria Eduarda.
 - [x] Travar os enquadramentos salvos e desativar os botoes de reposicionamento.
+- [x] Permitir ampliar e baixar as fotos principais da secao da Copa.
+- [x] Criar a secao dos dez aniversariantes de junho com os retratos oficiais.
+- [ ] Adicionar nomes e datas aos aniversariantes quando a relacao oficial for enviada pelo RH.
+- [x] Transformar os retratos dos aniversariantes em carrossel automatico sem ampliacao.
+- [x] Criar o ranking TotalPass com Renata Batista, Maria Seixas, Julia Lopes e Rodrigo Gadelha.
+- [x] Remover o bloco de novas contratacoes da edicao.
+- [x] Organizar os dez aniversariantes em duas fileiras animadas de cinco cards.
+- [ ] Validar com o time a velocidade final das fileiras de aniversariantes em producao.
+- [x] Remover a frase explicativa acima das duas fileiras de aniversariantes.
+- [x] Repetir na edicao de junho a secao de maio sobre canais e orientacoes do RH.
+- [x] Exibir a quantidade de check-ins nos cards do ranking TotalPass.
+- [x] Atualizar o fundo da secao TotalPass para um visual relacionado a academia e identificar a headline com uma tag.
+
+## Atualização 2026-08-12 — MB News Julho
+
+- [x] Publicar conteúdo editorial de julho na MB News.
+- [x] Adicionar as promoções e efetivações enviadas pelo RH.
+- [x] Criar seção de plano de saúde para dependentes e cônjuges, com valores e passo a passo.
+- [x] Adicionar aniversariantes de julho.
+- [x] Atualizar ranking TotalPass de julho.
+- [x] Disponibilizar PDFs do calendário de vacinação e das campanhas anuais para download.
+- [x] Validar a disponibilidade da edição de julho após o deploy (HTTP 200 em produção).
+- [x] Atualizar aniversariantes de julho com os seis retratos fornecidos pelo RH, no formato de carrossel de junho.

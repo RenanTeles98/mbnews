@@ -426,3 +426,179 @@ Adicionar botoes de ajuste com sliders horizontais e verticais que alteram varia
 - A foto da Maria Eduarda e os avatares do Total Pass podem ser reposicionados diretamente na pagina.
 - O layout permanece estavel, pois os controles alteram somente as variaveis de posicionamento da imagem.
 - Apos validacao visual, os controles podem ser removidos e os valores finais podem permanecer travados nas variaveis CSS inline.
+
+---
+
+## ADR-019: MVP administrativo da MB News em Next.js com store Upstash/JSON
+
+**Data:** 2026-07-21
+**Status:** Implementado
+**Decisores:** Dono do projeto + IA
+
+### Contexto
+
+O dono do projeto quer uma area administrativa para dar acesso a outra pessoa e permitir cadastro manual de conteudos da MB News sem editar HTML diretamente.
+
+### Decisao
+
+Criar uma primeira vertical do CMS da MB News dentro do Next.js, em `/admin/mb-news`, com:
+- modelo estruturado de edicoes em `types/mb-news.ts`;
+- endpoint protegido por token em `/api/mb-news/editions`;
+- persistencia em `lib/mb-news-store.ts`, reaproveitando Upstash Redis quando configurado e JSON local em desenvolvimento;
+- interface administrativa para metadados, hero, editorial, blocos de conteudo e preview rapido.
+
+### Alternativas Consideradas
+
+- **Editar HTML manualmente:** rejeitado porque nao resolve o acesso administrativo para terceiros.
+- **Migrar diretamente para Supabase completo:** melhor como destino, mas exigiria credenciais e configuracao externa antes de entregar valor.
+- **MVP com Upstash/JSON (escolhida):** aproveita a infraestrutura existente e cria a base do CMS sem bloquear em servicos externos novos.
+
+### Consequencias
+
+- A MB News passa a ter uma estrutura administrativa propria.
+- A pagina publica ainda precisa ser conectada ao novo store.
+- O token simples deve ser substituido por Supabase Auth antes de liberar acesso recorrente para outra pessoa.
+- Upload permanente de imagens ainda precisa ser implementado em Supabase Storage ou Vercel Blob.
+
+---
+
+## ADR-020: Publicar prévia de junho com conteúdo confirmado e imagens temporárias
+
+**Data:** 2026-07-23
+**Status:** Implementado
+
+### Contexto
+
+A edição de junho precisava ser visualizada antes de todas as pautas e arquivos de imagem estarem disponíveis no repositório.
+
+### Decisão
+
+Preservar maio como página de arquivo e publicar junho na página principal apenas com os dados já confirmados. Usar ilustrações temporárias nos espaços das fotos e sinalizar aniversariantes, contratações e ranking Total Pass como conteúdos em preparação.
+
+### Consequências
+
+- A estrutura visual pode ser validada imediatamente.
+- Nenhum nome, resultado ou dado interno pendente é inventado.
+- As fotos originais deverão substituir os SVGs temporários antes do fechamento editorial.
+- As mídias da Copa devem ser publicadas em caminhos próprios sob `public/images/mb-news/junho/` e `public/videos/mb-news/junho/`, com nomes de arquivo estáveis e sem espaços.
+- O bloco de promoções deve usar carrossel manual, sem reprodução automática, com controles visíveis, navegação por teclado, atualização de texto sincronizada e respeito a `prefers-reduced-motion`.
+
+---
+
+## ADR-021: Reutilizar o lightbox da revista na galeria da Copa
+
+**Data:** 2026-07-24
+**Status:** Implementado
+
+### Decisão
+
+Reutilizar a visualização ampliada já existente no `index.html` para as duas fotos principais da Copa, adicionando gatilhos semânticos, nome acessível, gerenciamento de foco e download do arquivo original. Os vídeos ficam fora do lightbox para preservar seus controles nativos.
+
+### Motivo
+
+A solução mantém a interface consistente com a revista, evita duplicação de componentes e separa claramente a ação de visualizar fotos da ação de reproduzir vídeos.
+
+---
+
+## ADR-022: Publicar aniversariantes sem nomes não confirmados
+
+**Data:** 2026-07-24
+**Status:** Implementado
+
+### Decisão
+
+Publicar os dez retratos em uma celebração coletiva, sem atribuir nomes ou datas, porque o ZIP recebido continha apenas imagens numeradas. Reutilizar o lightbox para ampliação e download e converter os PNGs para JPEG com qualidade 88 para reduzir o peso da página.
+
+### Consequências
+
+- Nenhuma identidade ou data é inferida a partir das fotos.
+- Os arquivos publicados foram reduzidos de aproximadamente 12,5 MB para 1,26 MB no total.
+- Nomes e datas poderão ser acrescentados aos cartões quando houver uma relação oficial do RH.
+
+---
+
+## ADR-023: Usar movimento contínuo com controle de pausa nos aniversariantes
+
+**Data:** 2026-07-24
+**Status:** Implementado
+
+### Decisão
+
+Substituir a grade clicável por um carrossel horizontal contínuo, sem lightbox. Repetir visualmente o conjunto de retratos para criar uma transição sem cortes, ocultando a cópia dos leitores de tela. Disponibilizar pausa manual e desativar a animação quando `prefers-reduced-motion` estiver ativo.
+
+### Motivo
+
+O movimento contínuo atende ao formato solicitado sem transformar as fotos em ações de clique. O controle de pausa e a alternativa sem animação evitam que o conteúdo em movimento prejudique a leitura ou a acessibilidade.
+
+---
+
+## ADR-024: Representar empate com dois cartões de terceiro lugar
+
+**Data:** 2026-07-24
+**Status:** Implementado
+
+### Decisão
+
+Exibir Renata Batista em primeiro lugar, Maria Seixas em segundo e dois cartões equivalentes de terceiro lugar para Julia Lopes e Rodrigo Gadelha. No desktop, o primeiro lugar recebe elevação visual; no celular, os cartões seguem a ordem lógica da classificação.
+
+### Motivo
+
+O empate precisa ser comunicado por texto e posição, sem depender apenas da cor. A ordem lógica no HTML também preserva a leitura correta por tecnologias assistivas.
+
+---
+
+## ADR-025: Dividir os aniversariantes em duas faixas de cinco retratos
+
+**Data:** 2026-07-27
+**Status:** Implementado
+
+### Decisao
+
+Separar os dez aniversariantes em dois grupos logicos de cinco cards e animar as faixas horizontalmente em sentidos opostos. Duplicar cada grupo apenas para garantir o ciclo visual continuo, ocultando as copias dos leitores de tela. Um unico botao pausa ou retoma as duas faixas.
+
+### Motivo
+
+A composicao torna evidente que existem dez pessoas, distribui melhor os retratos e cria movimento sem expor uma barra de rolagem. Como a animacao foi solicitada explicitamente, ela permanece ativa no layout; o usuario pode interrompe-la a qualquer momento pelo controle visivel.
+
+Atualizacao de interface: o texto explicativo foi retirado a pedido do responsavel pela revista; o botao de pausa foi preservado e alinhado a direita.
+
+Atualizacao editorial: a secao completa `RH & Bem-estar` foi mantida entre maio e junho para reforcar canais permanentes de orientacao, com acesso direto pela navegacao da edicao.
+
+Atualizacao de dados: os check-ins foram exibidos separadamente da colocacao para manter a leitura do ranking e do volume de participacao igualmente clara.
+
+Atualizacao visual: uma imagem de academia foi aplicada como fundo com sobreposicao azul-petroleo para relacionar a secao ao TotalPass sem reduzir o contraste dos textos e cards.
+
+---
+
+## ADR-026: Disponibilizar materiais de saúde de julho como downloads locais
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Publicar o calendário nacional de vacinação e os informativos das campanhas de HPV e câncer do colo do útero em `public/downloads/mb-news/julho-2026/`, com botões de download direto na edição.
+
+### Motivo
+
+Manter os arquivos dentro do projeto evita links externos instáveis e permite que o material preparado pelo RH seja acessado pela equipe de forma simples. As campanhas usam cores distintas e títulos explícitos, para que a informação não dependa apenas de cor.
+
+### Consequências
+
+- Os PDFs permanecem disponíveis mesmo se as fontes externas mudarem.
+- O botão do calendário oferece a versão completa e os atalhos por faixa etária apontam para o mesmo documento enquanto não forem fornecidos arquivos separados.
+
+---
+
+## ADR-027: Reutilizar o carrossel de junho para aniversariantes de julho
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Substituir a lista textual de aniversariantes de julho pelo carrossel com duas faixas animadas já utilizado em junho. Usar exclusivamente os seis retratos fornecidos pelo RH e preservar o botão de pausa e `prefers-reduced-motion`.
+
+### Motivo
+
+O padrão já é familiar para a equipe e mantém os retratos em destaque, sem utilizar imagens de pessoas que não foram fornecidas para esta edição.

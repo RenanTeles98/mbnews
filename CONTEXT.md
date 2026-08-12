@@ -298,6 +298,174 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 
 ---
 
+## Sessão 2026-08-12 — MB News Julho
+
+- Atualizada a página pública `index.html` para a edição #004 de Julho de 2026.
+- Incluídas as seis promoções/efetivações fornecidas pelo RH.
+- Criada a seção de inclusão de dependentes e cônjuges no plano de saúde, com tabela de valores e acesso ao Bot Ben.
+- Adicionada a lista dos 11 aniversariantes de julho com nome e dia.
+- Atualizado o ranking TotalPass: Maria Seixas (19), Antônio Augusto (18) e Luana Alves (17).
+- Criado o bloco de vacinação com download do calendário nacional e dos informativos das campanhas anuais de HPV e câncer do colo do útero.
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `public/downloads/mb-news/julho-2026/`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-08-12.md`
+
+Estado atual: edição de julho pronta para validação visual e publicação.
+
+Próximo passo recomendado: validar os valores do plano de saúde e os três downloads no ambiente publicado.
+
+Publicação: commit `42754f7` enviado para `main`; a página `https://mbnews.vercel.app/` respondeu com HTTP 200 e conteúdo de julho confirmado em produção.
+
+Atualização: a seção de aniversariantes de julho passou a usar o mesmo carrossel de duas faixas da edição de junho, com seis retratos enviados pelo RH (Edelyn, Matheus, Mayko, Paula, Ricardo e Vanessa), controle de pausa e suporte a redução de movimento.
+
+---
+
+## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas
+
+- Os dez retratos foram divididos em duas fileiras, com cinco pessoas em cada uma.
+- As fileiras passam continuamente em sentidos opostos, sem barra de rolagem visivel.
+- O controle unico de pausa/continuacao foi mantido para as duas animacoes.
+- O tamanho dos cards foi ajustado para exibir cinco retratos completos no desktop e manter boa leitura no celular.
+
+Arquivo funcional modificado: `index.html`.
+
+Estado atual: secao pronta para validacao e publicacao.
+
+Proximo passo recomendado: validar a velocidade das duas fileiras no site publicado.
+
+Atualizacao: o texto explicativo acima do carrossel foi removido, mantendo apenas o controle de pausa alinhado a direita.
+
+Atualizacao: a secao `RH & Bem-estar` da edicao de maio foi reativada em junho, incluindo os cards de canais e orientacoes e o atalho na navegacao.
+
+Atualizacao: o ranking TotalPass passou a mostrar a quantidade de check-ins de cada pessoa classificada.
+
+Atualizacao: a secao TotalPass recebeu fundo visual de academia e uma tag identificadora acima da headline.
+
+---
+
+## Sessao 2026-07-24 - Ampliacao e download das fotos da Copa
+
+- As duas fotos principais da secao da Copa agora abrem em uma visualizacao ampliada.
+- A visualizacao oferece download do arquivo original e fechamento pelo botao, pelo fundo ou pela tecla Escape.
+- Os gatilhos das fotos foram implementados como botoes acessiveis por mouse e teclado.
+- Os videos da mesma secao permaneceram com a interacao de reproducao existente.
+
+Arquivos modificados nesta sessao:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-07-24.md`
+
+Estado atual: galeria da Copa com ampliacao e download funcionais em desktop e celular.
+
+Proximo passo recomendado: validar o comportamento no dominio de producao apos o deploy.
+
+---
+
+## Sessao 2026-07-24 - Secao de aniversariantes de junho
+
+- Adicionada uma secao completa para os dez aniversariantes de junho.
+- Os retratos do ZIP recebido foram convertidos de PNG para JPEG otimizado e publicados em `public/images/mb-news/junho/aniversariantes/`.
+- A galeria usa cinco colunas no desktop e duas no celular, sem rolagem horizontal.
+- Todas as fotos podem ser ampliadas e baixadas pelo lightbox existente.
+- O texto editorial, o destaque da abertura e a navegacao foram atualizados para incluir a nova pauta.
+- Como o pacote nao continha nomes nem datas associados aos retratos, a comunicacao foi mantida coletiva para nao inventar informacoes.
+
+Estado atual: secao pronta, validada localmente e aguardando confirmacao no deploy publico.
+
+Proximo passo recomendado: adicionar nomes e datas quando o RH enviar a relacao oficial.
+
+---
+
+## Sessao 2026-07-24 - Carrossel automatico dos aniversariantes
+
+- Removida a ampliacao das fotos dos aniversariantes.
+- A grade estatica foi substituida por um carrossel horizontal continuo com os dez retratos.
+- O movimento pausa ao passar o mouse e tambem pode ser controlado pelo botao `Pausar/Continuar`.
+- Em dispositivos configurados para reduzir movimento, a animacao e desativada e a galeria passa a aceitar rolagem horizontal manual.
+- O carrossel usa uma copia visual escondida de leitores de tela para manter a repeticao continua sem duplicar o conteudo acessivel.
+
+Estado atual: carrossel automatico validado em desktop, celular e modo de movimento reduzido.
+
+Proximo passo recomendado: validar a velocidade do carrossel no dominio de producao.
+
+---
+
+## Sessao 2026-07-24 - Ranking TotalPass
+
+- Adicionada uma secao completa para o ranking TotalPass com quatro colaboradores.
+- Classificacao publicada: Renata Batista em 1o, Maria Seixas em 2o e empate de Julia Lopes e Rodrigo Gadelha em 3o.
+- As imagens 163, 164, 165 e 166 foram associadas aos nomes informados e convertidas para JPEG otimizado.
+- O conjunto de imagens foi reduzido de aproximadamente 4,15 MB para 612 KB.
+- O podio usa quatro colunas no desktop e ordem vertical por classificacao no celular.
+- Removido o bloco visivel de novas contratacoes e as referencias editoriais a essa pauta.
+- Removido o ranking TotalPass antigo e oculto, que continha dados de outra edicao.
+
+Estado atual: ranking TotalPass pronto e validado localmente em desktop e celular.
+
+Proximo passo recomendado: confirmar o deploy no dominio publico.
+
+---
+
+## Sessão 2026-07-23 — Prévia da MB News Junho
+
+- Atualizada a página pública `index.html` para a edição #003 de Junho de 2026.
+- Preservada a edição de Maio em `public/pages/mb-news-maio-2026.html`.
+- Criado o bloco coletivo de promoções de Maykon Hentzy, Juliana Leite e Nathalia, da equipe de Máquinas de Cartão.
+- Criado o bloco corporativo sobre o momento de integração em clima de Copa.
+- Adicionados espaços de preparação para aniversariantes, contratações e ranking Total Pass.
+- Como as fotos enviadas na conversa não foram disponibilizadas como arquivos no workspace, a prévia usa ilustrações temporárias em `public/images/`.
+- As duas fotos e os três vídeos da Copa foram posteriormente encontrados na pasta `copa/`, organizados em `public/images/mb-news/junho/` e `public/videos/mb-news/junho/` e aplicados à página.
+- A seção de promoções foi ampliada com os textos revisados de Mayko Hentzy, Natallia, Juliana Leite e Karoline, além das efetivações de Thalles, Pedro Xavier e Lucas Trajano.
+- A seção de promoções passou a usar carrossel acessível, sincronizando cada imagem com seu respectivo texto e incluindo conteúdo específico para Thalles.
+- Os controles do carrossel foram simplificados: setas nas laterais centrais e indicadores inferiores sem nomes visíveis.
+- Lucas Trajano e Pedro Xavier foram adicionados ao carrossel com fotos e textos individuais sobre a efetivação de estagiário para CLT.
+- Nome corrigido para Natalia Araujo e ordem do primeiro slide alterada para Mayko, Natalia e Juliana.
+
+Estado atual: prévia de junho pronta para deploy e validação visual.
+
+Próximo passo recomendado: completar aniversariantes, contratações e ranking Total Pass; adicionar fotos de Pedro Xavier e Lucas Trajano caso sejam disponibilizadas.
+
+---
+
+## Sessao 2026-07-21 - Inicio do Admin da MB News
+
+- Criada a primeira base administrativa da MB News em Next.js.
+- Adicionada a rota `/admin/mb-news` com tela para criar, editar, excluir e salvar edicoes.
+- Adicionado modelo estruturado para edicoes da MB News com metadados, hero, editorial e blocos de conteudo.
+- Adicionado endpoint `/api/mb-news/editions` protegido por token administrativo.
+- Adicionada camada de persistencia em `lib/mb-news-store.ts`, usando Upstash Redis quando configurado e JSON local em desenvolvimento.
+- Adicionado arquivo inicial `content/mb-news-editions.json`.
+- Build de producao executado com sucesso.
+- Servidor local iniciado em `http://localhost:3001/admin/mb-news` porque a porta 3000 ja estava ocupada.
+
+Arquivos criados/modificados nesta sessao:
+- `app/admin/mb-news/page.tsx`
+- `app/api/mb-news/editions/route.ts`
+- `components/admin/MbNewsAdminApp.tsx`
+- `types/mb-news.ts`
+- `lib/mb-news-store.ts`
+- `content/mb-news-editions.json`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-07-21.md`
+
+Estado atual: o CMS da MB News ja existe como MVP administrativo, mas ainda nao renderiza a pagina publica da MB News a partir do banco e ainda nao possui login de usuario com Supabase.
+
+Proximo passo recomendado: conectar as edicoes publicadas a uma rota publica dinamica da MB News e, em seguida, substituir o token simples por Supabase Auth com permissoes de editor.
+
+---
+
 ## Sessao 2026-06-16 - Travamento dos enquadramentos de imagem
 
 - Removidos os botoes e paineis de reposicionamento da foto da Maria Eduarda e do podio Total Pass.
