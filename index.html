@@ -484,7 +484,7 @@
     .birthday-carousel.is-ready .birthday-carousel-viewport-reverse .birthday-carousel-track {
       animation-name: birthdayCarouselScrollReverse;
     }
-    .birthday-carousel:hover .birthday-carousel-track,
+    .birthday-carousel.is-ready:not(.is-paused) .birthday-carousel-track { animation-play-state: running; }
     .birthday-carousel.is-paused .birthday-carousel-track { animation-play-state: paused; }
     .birthday-carousel-group { display: flex; gap: 14px; }
     .birthday-photo {
@@ -695,7 +695,6 @@
 
     @media (prefers-reduced-motion: reduce) {
       .promotion-slide { animation: none; }
-      .birthday-carousel.is-ready .birthday-carousel-track { animation: none; }
       .promotion-carousel-arrow, .promotion-carousel-dot { transition: none; }
     }
 

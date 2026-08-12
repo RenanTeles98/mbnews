@@ -187,3 +187,4 @@ Principais marcos conhecidos:
 - Seção de aniversariantes atualizada para o carrossel de duas faixas da edição de junho, com os seis retratos fornecidos para julho.
 - Animação dos aniversariantes ajustada para iniciar independentemente do JavaScript externo e com ciclo mais perceptível.
 - Carrossel dos seis aniversariantes de julho consolidado em uma única faixa.
+- Pausa automática ao passar o cursor sobre os aniversariantes removida; o controle manual foi mantido.

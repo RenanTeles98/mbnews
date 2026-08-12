@@ -610,3 +610,7 @@ A classe que inicia a animação foi movida para o HTML, enquanto o JavaScript f
 ### Atualização de layout
 
 Com seis retratos disponíveis, os cards foram reunidos em uma única faixa. Isso reduz a altura da seção e mantém o carrossel contínuo, pois o grupo é duplicado pelo script existente.
+
+### Correção de interação
+
+A pausa por hover foi removida porque, em uso comum, o cursor permanece sobre a área dos cards e interrompe o movimento sem deixar claro o motivo. A pausa agora ocorre apenas pelo botão com rótulo visível.

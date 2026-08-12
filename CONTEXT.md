@@ -328,6 +328,8 @@ Correção: a classe de animação passou a existir diretamente no HTML e a inic
 
 Atualização: como a edição possui seis aniversariantes com retrato, o carrossel foi simplificado para uma única faixa animada.
 
+Correção: removida a pausa automática ao passar o cursor sobre o carrossel. A faixa agora segue em movimento contínuo e só pausa pelo botão visível.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas
