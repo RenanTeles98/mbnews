@@ -332,6 +332,8 @@ Correção: removida a pausa automática ao passar o cursor sobre o carrossel. A
 
 Atualização: adicionados os retratos enviados pelo RH para Maria Seixas, Antônio Augusto e Luana Alves no pódio TotalPass de julho.
 
+Correção: removida uma regra legada que escondia a área de foto do pódio de julho; os três retratos agora ficam visíveis acima de cada card.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas

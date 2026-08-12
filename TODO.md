@@ -171,3 +171,4 @@
 - [x] Consolidar os seis aniversariantes de julho em uma única faixa animada.
 - [x] Remover pausa automática por hover do carrossel de aniversariantes.
 - [x] Adicionar retratos do pódio TotalPass de julho.
+- [x] Corrigir regra legada que ocultava as fotos do pódio TotalPass.

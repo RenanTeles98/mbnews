@@ -629,3 +629,7 @@ Publicar os três retratos fornecidos pelo RH nos cards de Maria Seixas, Antôni
 ### Motivo
 
 Os retratos tornam o reconhecimento mais pessoal e completam visualmente o pódio sem alterar os dados de check-ins existentes.
+
+### Correção
+
+Foi removida a regra temporária que ocultava `.totalpass-photo` na edição de julho, criada quando o pódio ainda não possuía retratos. Os cards retomam sua estrutura padrão: foto acima e informações abaixo.
