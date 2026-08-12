@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MB News | Edição #003 · Junho 2026</title>
+  <title>MB News | Edição #004 · Julho 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -568,6 +568,11 @@
       font-size: .84rem; line-height: 1.55; text-align: center;
     }
     .totalpass-tie-note .lucide { width: 20px; height: 20px; flex: 0 0 20px; color: #f4b183; }
+    .july-totalpass .totalpass-podium { grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-areas:'second first third-a'; }
+    .july-totalpass .totalpass-photo { display:none; }
+    .july-totalpass .totalpass-card { min-height:210px; display:flex; align-items:center; justify-content:center; }
+    .july-totalpass .totalpass-card-copy { width:100%; }
+    .july-totalpass .rank-third-b { display:none; }
     .preview-grid {
       display: grid; grid-template-columns: repeat(2,1fr); gap: 18px;
       max-width: 780px; margin: 32px auto 0;
@@ -588,6 +593,50 @@
       border-radius: 99px; background: #fff7ed; color: #c2410c;
       font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px;
     }
+
+    /* ─── JULHO 2026 ─────────────────────────────────────────────── */
+    .july-promotions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:34px; }
+    .july-promotion-card { padding:24px; border:1px solid #dce8ef; border-radius:20px; background:#fff; box-shadow:0 12px 30px rgba(0,57,86,.07); }
+    .july-promotion-card i { width:22px; height:22px; color:var(--cyan); margin-bottom:14px; }
+    .july-promotion-card h3 { color:var(--navy); font-size:1.1rem; margin-bottom:6px; }
+    .july-promotion-card p { color:var(--gray-600); font-size:.88rem; line-height:1.65; }
+    .health-plan { background:linear-gradient(180deg,#f2faff 0%,#fff 100%); }
+    .health-plan-grid { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr); gap:28px; align-items:start; margin-top:34px; }
+    .health-plan-card, .health-plan-steps { background:#fff; border:1px solid #cfe5f1; border-radius:24px; padding:30px; box-shadow:0 14px 34px rgba(0,57,86,.08); }
+    .health-plan-card h3, .health-plan-steps h3 { color:var(--navy); font-size:1.25rem; margin-bottom:12px; }
+    .health-plan-card p, .health-plan-steps p { color:var(--gray-600); line-height:1.7; font-size:.92rem; }
+    .health-plan-table { width:100%; border-collapse:collapse; margin-top:22px; font-size:.86rem; }
+    .health-plan-table th, .health-plan-table td { padding:11px 10px; text-align:left; border-bottom:1px solid #e2edf2; }
+    .health-plan-table th { color:var(--blue); font-size:.72rem; letter-spacing:.6px; text-transform:uppercase; }
+    .health-plan-table td:last-child { color:var(--navy); font-weight:800; }
+    .health-plan-steps ol { display:grid; gap:14px; margin:20px 0 24px; padding:0; list-style:none; counter-reset:steps; }
+    .health-plan-steps li { counter-increment:steps; display:flex; gap:12px; color:var(--gray-600); font-size:.88rem; line-height:1.55; }
+    .health-plan-steps li::before { content:counter(steps); width:26px; height:26px; flex:0 0 26px; border-radius:50%; display:grid; place-items:center; background:#e6f4fb; color:var(--blue); font-size:.75rem; font-weight:800; }
+    .health-plan-button, .vaccine-download { min-height:48px; padding:0 18px; border-radius:12px; display:inline-flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; font-weight:800; font-size:.84rem; transition:transform .2s ease,box-shadow .2s ease; }
+    .health-plan-button { background:#25D366; color:#fff; }
+    .health-plan-button:hover, .vaccine-download:hover { transform:translateY(-2px); box-shadow:0 10px 22px rgba(0,57,86,.16); }
+    .birthday-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:30px; }
+    .birthday-person { min-height:74px; padding:14px 16px; border-radius:16px; background:#fff; border:1px solid #f0d9aa; display:flex; align-items:center; gap:12px; box-shadow:0 8px 20px rgba(124,73,0,.06); }
+    .birthday-person i { width:22px; height:22px; flex:0 0 22px; color:#c56b00; }
+    .birthday-person strong { display:block; color:var(--navy); font-size:.84rem; line-height:1.35; }
+    .birthday-person span { display:block; margin-top:3px; color:#a85b00; font-size:.76rem; font-weight:800; }
+    .vaccine-panel { margin-top:34px; padding:30px; border:1px solid #9bd3f3; border-radius:24px; background:#eaf6ff; box-shadow:0 14px 36px rgba(0,91,140,.09); }
+    .vaccine-panel-head { display:flex; gap:18px; align-items:flex-start; }
+    .vaccine-panel-icon { width:54px; height:54px; flex:0 0 54px; display:grid; place-items:center; border-radius:16px; background:#cfeafb; color:#0072b1; }
+    .vaccine-panel-icon .lucide { width:27px; height:27px; }
+    .vaccine-panel h3 { color:#0067a9; font-size:1.25rem; margin:3px 0 5px; }
+    .vaccine-panel p { color:#244d66; font-size:.92rem; line-height:1.7; }
+    .vaccine-source { display:flex; align-items:center; gap:8px; margin-top:18px; padding:10px 12px; border:1px solid #aad5ec; border-radius:10px; color:#0067a9; font-size:.78rem; font-weight:700; }
+    .vaccine-downloads { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px; }
+    .vaccine-download { background:#fff; border:2px solid #0072b1; color:#0067a9; justify-content:space-between; }
+    .vaccine-download small { color:#188ac7; font-size:.7rem; font-weight:700; }
+    .annual-campaigns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:22px; }
+    .annual-campaign { padding:26px; border-radius:22px; color:#fff; }
+    .annual-campaign.hp { background:linear-gradient(135deg,#6d28d9,#9333ea); }
+    .annual-campaign.cervix { background:linear-gradient(135deg,#be185d,#ec4899); }
+    .annual-campaign h3 { font-size:1.18rem; margin:12px 0 10px; }
+    .annual-campaign p { color:rgba(255,255,255,.88); font-size:.88rem; line-height:1.65; }
+    .annual-campaign a { margin-top:18px; min-height:44px; padding:0 14px; border-radius:10px; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.4); color:#fff; display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-size:.78rem; font-weight:800; }
 
     @media (max-width: 760px) {
       .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
@@ -623,11 +672,12 @@
       }
       .totalpass-header { margin-bottom: 36px; text-align: left; }
       .totalpass-header .section-desc { margin: 0; }
-      .totalpass-podium {
+      .totalpass-podium, .july-totalpass .totalpass-podium {
         grid-template-columns: 1fr; grid-template-areas: 'first' 'second' 'third-a' 'third-b';
         gap: 14px;
       }
       .totalpass-card.rank-first { transform: none; }
+      .july-totalpass .totalpass-card { display:block; min-height:0; }
       .totalpass-card { display: grid; grid-template-columns: 42% 58%; border-radius: 20px; }
       .totalpass-photo { aspect-ratio: 4 / 5; }
       .totalpass-card-copy { padding: 18px 14px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
@@ -635,6 +685,12 @@
       .totalpass-card-copy strong { align-self: flex-start; }
       .totalpass-tie-note { align-items: flex-start; text-align: left; }
       .preview-grid { grid-template-columns: 1fr; }
+      .july-promotions, .annual-campaigns { grid-template-columns:1fr; }
+      .health-plan-grid { grid-template-columns:1fr; }
+      .birthday-list { grid-template-columns:1fr; }
+      .vaccine-panel { padding:24px 18px; }
+      .vaccine-panel-head { gap:12px; }
+      .vaccine-downloads { grid-template-columns:1fr; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1523,12 +1579,12 @@
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
     <li><a href="#promocoes">Promoções</a></li>
-    <li><a href="#copa">Copa</a></li>
+    <li><a href="#plano-saude">Plano de saúde</a></li>
     <li><a href="#aniversariantes">Aniversariantes</a></li>
     <li><a href="#totalpass">TotalPass</a></li>
     <li><a href="#saude">RH &amp; Bem-estar</a></li>
   </ul>
-  <span class="nav-edition">Edição #003 · Junho 2026</span>
+  <span class="nav-edition">Edição #004 · Julho 2026</span>
 </nav>
 
 <!-- MODAL MENSAL -->
@@ -1557,8 +1613,8 @@
   </button>
   <a class="month-btn available" href="/pages/mb-news-abril-2026.html">✓ Abr</a>
   <a class="month-btn available" href="/pages/mb-news-maio-2026.html">✓ Mai</a>
-  <button class="month-btn active">✦ Junho 2026</button>
-  <button class="month-btn future" onclick="openMonthModal('Julho 2026','future')">Jul</button>
+  <button class="month-btn locked" onclick="openMonthModal('Junho 2026','locked')">Jun</button>
+  <button class="month-btn active">✦ Julho 2026</button>
   <button class="month-btn future" onclick="openMonthModal('Agosto 2026','future')">Ago</button>
   <button class="month-btn future" onclick="openMonthModal('Setembro 2026','future')">Set</button>
   <button class="month-btn future" onclick="openMonthModal('Outubro 2026','future')">Out</button>
@@ -1569,7 +1625,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
-  <div class="hero-badge">Edição de Junho 2026</div>
+  <div class="hero-badge">Edição de Julho 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
   </h1>
@@ -1578,28 +1634,28 @@
   </p>
   <div class="hero-ctas">
     <a href="#editorial" class="btn-primary">Ler edição completa</a>
-    <a href="#copa" class="btn-ghost">Ver momento da Copa</a>
+    <a href="#saude" class="btn-ghost">Ver campanhas de saúde</a>
   </div>
   <div class="hero-cards">
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-        <strong>4</strong>
-        <span>Novas lideranças</span>
+        <strong>6</strong>
+        <span>Conquistas celebradas</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
       <div class="hero-card-text">
-        <strong>Time</strong>
-        <span>Em clima de Copa</span>
+        <strong>Saúde</strong>
+        <span>Mais cuidado para a família</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="cake" style="color:#FF6B35"></i></div>
       <div class="hero-card-text">
         <strong>10</strong>
-        <span>Aniversariantes de junho</span>
+        <span>Aniversariantes de julho</span>
       </div>
     </div>
   </div>
@@ -1614,13 +1670,13 @@
     </div>
     <div class="editorial-card fade-up">
       <p>
-        Junho foi marcado por reconhecimento, integração e novos capítulos na trajetória de quem constrói a MB todos os dias.
+        Julho foi um mês de reconhecimento e de mais cuidado com quem faz a MB Finance acontecer todos os dias.
       </p>
       <p>
-        Nesta edição, celebramos as novas lideranças da equipe de Máquinas de Cartão, os dez aniversariantes de junho e o momento em que o escritório ganhou as cores do Brasil para uma torcida especial em equipe.
+        Celebramos as promoções e efetivações do time, os aniversariantes do mês e a novidade que permite incluir dependentes diretos e cônjuges no plano de saúde.
       </p>
       <p>
-        Também reconhecemos quem fez da atividade física um compromisso com o próprio bem-estar e conquistou seu lugar no ranking TotalPass. Boa leitura!
+        Também destacamos o ranking TotalPass e informações importantes sobre vacinação, prevenção ao HPV e câncer do colo do útero. Boa leitura!
       </p>
       <div class="editorial-signature">
         <div class="editorial-avatar">MB</div>
@@ -1638,10 +1694,19 @@
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
-      <h2 class="section-title">Novos desafios, novas conquistas.</h2>
-      <p class="section-desc">Quatro profissionais assumem novas posições de liderança e três talentos iniciam uma nova etapa como contratados CLT.</p>
+      <h2 class="section-title">Novos passos, novas conquistas.</h2>
+      <p class="section-desc">Reconhecemos quem abriu um novo capítulo em sua trajetória na MB Finance neste mês.</p>
     </div>
-    <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
+    <div class="july-promotions fade-up" role="list" aria-label="Promoções e efetivações de julho">
+      <article class="july-promotion-card" role="listitem"><i data-lucide="badge-check"></i><h3>Willian Amaral</h3><p>Efetivação</p></article>
+      <article class="july-promotion-card" role="listitem"><i data-lucide="badge-check"></i><h3>Arthur</h3><p>Efetivação</p></article>
+      <article class="july-promotion-card" role="listitem"><i data-lucide="badge-check"></i><h3>Evellyn</h3><p>Efetivação</p></article>
+      <article class="july-promotion-card" role="listitem"><i data-lucide="badge-check"></i><h3>Julia Ramos</h3><p>Efetivação</p></article>
+      <article class="july-promotion-card" role="listitem"><i data-lucide="badge-check"></i><h3>Julia Goulart</h3><p>Efetivação</p></article>
+      <article class="july-promotion-card" role="listitem"><i data-lucide="award"></i><h3>Beatriz Assumpção</h3><p>Promoção para T&amp;D</p></article>
+    </div>
+    <p class="birthday-message fade-up">Parabéns a todos por essa nova etapa, que seja repleta de aprendizado e conquistas.</p>
+    <div class="promotion-carousel" id="promotionCarousel" role="region" style="display:none"
       aria-roledescription="carrossel" aria-label="Promoções e efetivações de junho" tabindex="0">
       <div class="promotion-carousel-stage">
       <article class="promotion-slide is-active" data-slide="0" role="group"
@@ -1780,7 +1845,7 @@
 </section>
 
 <!-- COPA -->
-<section id="copa">
+<section id="copa" style="display:none">
   <div class="container">
     <div class="copa-layout">
       <div class="copa-copy fade-up">
@@ -1822,23 +1887,66 @@
 </section>
 
 <!-- ANIVERSARIANTES -->
+<section class="health-plan" id="plano-saude">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Benefícios</span>
+      <h2 class="section-title">Plano de saúde também para quem está com você.</h2>
+      <p class="section-desc">Agora, colaboradores podem incluir dependentes diretos (filhos) e cônjuges no plano de saúde da empresa.</p>
+    </div>
+    <div class="health-plan-grid fade-up">
+      <div class="health-plan-card">
+        <h3>Inclusão opcional de dependentes</h3>
+        <p>A novidade nasceu da escuta do nosso time e reforça o compromisso da MB Finance com o bem-estar de cada família. A adesão é livre e o valor mensal é integralmente descontado em folha, mediante autorização do colaborador.</p>
+        <table class="health-plan-table">
+          <thead><tr><th>Faixa etária</th><th>Valor mensal</th></tr></thead>
+          <tbody>
+            <tr><td>00 a 18 anos</td><td>R$ 182,76</td></tr><tr><td>19 a 23 anos</td><td>R$ 228,45</td></tr><tr><td>24 a 28 anos</td><td>R$ 283,28</td></tr><tr><td>29 a 33 anos</td><td>R$ 314,43</td></tr><tr><td>34 a 38 anos</td><td>R$ 336,44</td></tr><tr><td>39 a 43 anos</td><td>R$ 390,27</td></tr><tr><td>44 a 48 anos</td><td>R$ 466,54</td></tr><tr><td>49 a 53 anos</td><td>R$ 546,78</td></tr><tr><td>54 a 58 anos</td><td>R$ 650,94</td></tr><tr><td>59 anos ou mais</td><td>R$ 1.096,51</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside class="health-plan-steps">
+        <span class="june-kicker"><i data-lucide="message-circle" style="width:15px;height:15px"></i> Bot Ben</span>
+        <h3>Como solicitar</h3>
+        <p>O processo é simples e acontece pelo WhatsApp oficial do RH.</p>
+        <ol><li>Acesse o Bot Ben no WhatsApp.</li><li>Escolha <strong>3 — Benefícios</strong>, depois <strong>6 — Plano de Saúde</strong>.</li><li>Selecione <strong>1 — Como Solicitar/Cancelar</strong> e, em seguida, <strong>1 — Solicitar a inclusão</strong>.</li><li>Confirme “Sim” quando o bot perguntar se deseja prosseguir.</li></ol>
+        <a class="health-plan-button" href="https://wa.me/5521995442142" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Acessar Bot Ben</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ANIVERSARIANTES -->
 <section id="aniversariantes">
   <div class="container">
     <div class="birthday-header fade-up">
       <div>
         <span class="section-eyebrow" style="color:#c56b00">Gente que faz a MB</span>
-        <h2 class="section-title">Junho também foi mês de celebrar.</h2>
+        <h2 class="section-title">Julho também é mês de celebrar.</h2>
         <p class="section-desc">
           Cada novo ciclo merece ser recebido com carinho. Neste mês, celebramos as pessoas que compartilham conosco sua energia, seu talento e tantos momentos importantes da nossa história.
         </p>
       </div>
-      <div class="birthday-count" aria-label="Dez aniversariantes celebrados em junho">
+      <div class="birthday-count" aria-label="Onze aniversariantes celebrados em julho">
         <span class="birthday-count-icon" aria-hidden="true"><i data-lucide="cake"></i></span>
-        <span><strong>10</strong><span>novos ciclos em junho</span></span>
+        <span><strong>11</strong><span>novos ciclos em julho</span></span>
       </div>
     </div>
 
-    <div class="birthday-carousel fade-up" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de junho">
+    <div class="birthday-list fade-up" role="list" aria-label="Aniversariantes de julho">
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Barbara Rocha da Silva</strong><span>08 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Vanessa Barros Martins</strong><span>09 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Michael Thiago da Silva Rodrigues</strong><span>12 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Edelyn de Souza Oliveira</strong><span>16 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Paula Cavalcanti dos Santos</strong><span>17 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Matheus Teixeira Kauss Sant'Anna</strong><span>18 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Danielle Monteiro</strong><span>18 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Kesia Batista da Conceição Cipriano</strong><span>18 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Rodrigo Netto Santos</strong><span>21 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Mayko William Araujo Hentzy</strong><span>22 de julho</span></span></div>
+      <div class="birthday-person" role="listitem"><i data-lucide="cake"></i><span><strong>Ricardo Wolter de França Junior</strong><span>22 de julho</span></span></div>
+    </div>
+    <div class="birthday-carousel" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de junho" style="display:none">
       <div class="birthday-carousel-toolbar">
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
@@ -1873,19 +1981,19 @@
     </div>
 
     <p class="birthday-message fade-up">
-      A todos os aniversariantes de junho, desejamos um novo ciclo repleto de saúde, realizações e bons encontros. Que não faltem motivos para comemorar dentro e fora da MB. Parabéns!
+      A todos os aniversariantes de julho, desejamos um novo ciclo repleto de saúde, realizações e bons encontros. Que não faltem motivos para comemorar dentro e fora da MB. Parabéns!
     </p>
   </div>
 </section>
 
 <!-- TOTALPASS -->
-<section id="totalpass">
+<section id="totalpass" class="july-totalpass">
   <div class="container">
     <div class="totalpass-header fade-up">
       <span class="section-eyebrow totalpass-brand-tag"><i data-lucide="dumbbell"></i>TotalPass</span>
       <h2 class="section-title">Quem se movimenta, inspira.</h2>
       <p class="section-desc">
-        O ranking TotalPass reconhece quem transformou a atividade física em parte da rotina. Mais do que posições, este pódio representa constância, cuidado com a saúde e inspiração para todo o time.
+        Confira quem transformou a atividade física em parte da rotina neste mês. Mais do que posições, este pódio representa constância e cuidado com a saúde.
       </p>
     </div>
 
@@ -1893,10 +2001,9 @@
       <article class="totalpass-card rank-first" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place"><i data-lucide="crown"></i>1º</span>
-          <img src="/images/mb-news/junho/totalpass/renata-batista.jpg" alt="Renata Batista, primeira colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
         </div>
         <div class="totalpass-card-copy">
-          <h3>Renata Batista</h3>
+          <h3>Maria Seixas</h3>
           <p>Conquistou o primeiro lugar e ocupa o topo do nosso pódio.</p>
           <span class="totalpass-checkins"><i data-lucide="activity"></i>19 check-ins</span>
           <strong>1º lugar</strong>
@@ -1906,12 +2013,11 @@
       <article class="totalpass-card rank-second" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place">2º</span>
-          <img src="/images/mb-news/junho/totalpass/maria-seixas.jpg" alt="Maria Seixas, segunda colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
         </div>
         <div class="totalpass-card-copy">
-          <h3>Maria Seixas</h3>
+          <h3>Antônio Augusto</h3>
           <p>Garantiu a segunda posição entre os destaques do ranking.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>16 check-ins</span>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>18 check-ins</span>
           <strong>2º lugar</strong>
         </div>
       </article>
@@ -1919,12 +2025,11 @@
       <article class="totalpass-card rank-third-a" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place">3º</span>
-          <img src="/images/mb-news/junho/totalpass/julia-lopes.jpg" alt="Julia Lopes, terceira colocada no ranking TotalPass" width="1080" height="1080" loading="lazy" />
         </div>
         <div class="totalpass-card-copy">
-          <h3>Julia Lopes</h3>
-          <p>Divide a terceira colocação neste pódio de dedicação.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>15 check-ins</span>
+          <h3>Luana Alves</h3>
+          <p>Completa o pódio de dedicação deste mês.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>17 check-ins</span>
           <strong>3º lugar</strong>
         </div>
       </article>
@@ -1945,7 +2050,7 @@
 
     <p class="totalpass-tie-note fade-up">
       <i data-lucide="users"></i>
-      Julia Lopes e Rodrigo Gadelha ficaram empatados e compartilham a terceira colocação.
+      Parabéns aos destaques do mês por inspirarem o time a se movimentar.
     </p>
   </div>
 </section>
@@ -2034,12 +2139,31 @@
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">RH &amp; Bem-estar</span>
-      <h2 class="section-title">Informação, cuidado e canais de apoio.</h2>
+      <h2 class="section-title">Vacinação em dia é mais proteção.</h2>
     </div>
     <p class="saude-intro fade-up">
-      Esta edição reúne avisos importantes para o time: o RH agora também está no WhatsApp, o canal de denúncia fica disponível por bot, a NR1 segue em atualização e o cuidado com saúde mental continua sendo parte da nossa rotina.
+      Informação confiável ajuda a cuidar de você, da sua família e de toda a equipe. Consulte os materiais e mantenha sua carteira de vacinação atualizada.
     </p>
 
+    <div class="vaccine-panel fade-up">
+      <div class="vaccine-panel-head">
+        <div class="vaccine-panel-icon"><i data-lucide="syringe"></i></div>
+        <div><span class="june-kicker">Campanha permanente 2026</span><h3>Calendário Nacional de Vacinação 2026</h3><p>O Ministério da Saúde disponibiliza orientações para adolescentes e jovens, adultos e idosos. Baixe o calendário completo ou consulte a versão da sua faixa etária.</p></div>
+      </div>
+      <div class="vaccine-source"><i data-lucide="scale"></i>Ministério da Saúde · SUS · NR-07 / PCMSO</div>
+      <div class="vaccine-downloads">
+        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="file-down"></i> Baixar Calendário Completo</span><small>PDF</small></a>
+        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="users"></i> Adultos (25 a 59 anos)</span><small>PDF</small></a>
+        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="accessibility"></i> Adolescentes e jovens (10 a 24 anos)</span><small>PDF</small></a>
+        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="heart-pulse"></i> Idosos (a partir de 60 anos)</span><small>PDF</small></a>
+      </div>
+      <div class="annual-campaigns">
+        <article class="annual-campaign hp"><i data-lucide="shield-check"></i><h3>Campanha Anual HPV</h3><p>A vacina é gratuita no SUS para pessoas de 9 a 14 anos e imunossuprimidas até 45 anos. Prevenção também inclui preservativo e exames regulares.</p><a href="/downloads/mb-news/julho-2026/campanha-hpv.pdf" download><i data-lucide="file-down"></i>Baixar informativo</a></article>
+        <article class="annual-campaign cervix"><i data-lucide="heart-handshake"></i><h3>Campanha Anual Câncer de Colo do Útero</h3><p>O Papanicolau identifica alterações antes de se tornarem câncer. A prevenção envolve vacina contra HPV, exames periódicos e acompanhamento médico.</p><a href="/downloads/mb-news/julho-2026/campanha-cancer-colo-utero.pdf" download><i data-lucide="file-down"></i>Baixar informativo</a></article>
+      </div>
+    </div>
+
+    <div style="display:none">
     <div class="fade-up" style="transition-delay:.05s">
       <span class="section-eyebrow" style="color:#059669;margin-bottom:20px">Canais e orientações</span>
     </div>
@@ -2144,6 +2268,7 @@
 
     </div>
 
+    </div>
   </div>
 </section>
 
@@ -2339,20 +2464,22 @@
 <div class="fab-nav">
   <a href="#home"     class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
   <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
-  <a href="#copa" class="fab-btn" title="Copa"><i data-lucide="flag"></i></a>
+  <a href="#plano-saude" class="fab-btn" title="Plano de saúde"><i data-lucide="heart-pulse"></i></a>
+  <a href="#saude" class="fab-btn" title="Vacinação"><i data-lucide="syringe"></i></a>
   <a href="#totalpass" class="fab-btn" title="Ranking TotalPass"><i data-lucide="dumbbell"></i></a>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">mb <span>news</span></div>
-  <p>Revista interna mb news · Edição #003 · Junho 2026</p>
+  <p>Revista interna mb news · Edição #004 · Julho 2026</p>
   <div class="footer-links">
     <a href="#editorial">Foco Mensal</a>
     <a href="#promocoes">Promoções</a>
-    <a href="#copa">Copa</a>
+    <a href="#plano-saude">Plano de saúde</a>
     <a href="#aniversariantes">Aniversariantes</a>
     <a href="#totalpass">TotalPass</a>
+    <a href="#saude">Vacinação</a>
   </div>
   <hr class="footer-divider" />
   <p class="footer-copy">© 2026 mb news · Material de comunicação interna · Todos os direitos reservados</p>
