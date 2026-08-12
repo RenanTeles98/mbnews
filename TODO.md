@@ -170,3 +170,4 @@
 - [x] Garantir animação autônoma das duas faixas de aniversariantes, mesmo sem carregamento do script de ícones.
 - [x] Consolidar os seis aniversariantes de julho em uma única faixa animada.
 - [x] Remover pausa automática por hover do carrossel de aniversariantes.
+- [x] Adicionar retratos do pódio TotalPass de julho.

@@ -614,3 +614,18 @@ Com seis retratos disponíveis, os cards foram reunidos em uma única faixa. Iss
 ### Correção de interação
 
 A pausa por hover foi removida porque, em uso comum, o cursor permanece sobre a área dos cards e interrompe o movimento sem deixar claro o motivo. A pausa agora ocorre apenas pelo botão com rótulo visível.
+
+---
+
+## ADR-028: Aplicar retratos oficiais ao pódio TotalPass de julho
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Publicar os três retratos fornecidos pelo RH nos cards de Maria Seixas, Antônio Augusto e Luana Alves, preservando o layout e a classificação já aprovados.
+
+### Motivo
+
+Os retratos tornam o reconhecimento mais pessoal e completam visualmente o pódio sem alterar os dados de check-ins existentes.

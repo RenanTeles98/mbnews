@@ -188,3 +188,4 @@ Principais marcos conhecidos:
 - Animação dos aniversariantes ajustada para iniciar independentemente do JavaScript externo e com ciclo mais perceptível.
 - Carrossel dos seis aniversariantes de julho consolidado em uma única faixa.
 - Pausa automática ao passar o cursor sobre os aniversariantes removida; o controle manual foi mantido.
+- Retratos de Maria Seixas, Antônio Augusto e Luana Alves adicionados ao pódio TotalPass de julho.

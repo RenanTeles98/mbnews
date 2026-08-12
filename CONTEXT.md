@@ -330,6 +330,8 @@ Atualização: como a edição possui seis aniversariantes com retrato, o carros
 
 Correção: removida a pausa automática ao passar o cursor sobre o carrossel. A faixa agora segue em movimento contínuo e só pausa pelo botão visível.
 
+Atualização: adicionados os retratos enviados pelo RH para Maria Seixas, Antônio Augusto e Luana Alves no pódio TotalPass de julho.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas
