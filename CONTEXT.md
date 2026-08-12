@@ -336,6 +336,8 @@ Correção: removida uma regra legada que escondia a área de foto do pódio de 
 
 Correção: o passo a passo de inclusão no plano de saúde foi reorganizado para manter cada instrução em um único bloco de leitura, sem separar frases e opções do Bot Ben.
 
+Correção visual: títulos das campanhas de HPV e câncer do colo do útero ajustados para branco, garantindo contraste com os fundos coloridos.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas

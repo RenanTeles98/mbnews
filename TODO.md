@@ -173,3 +173,4 @@
 - [x] Adicionar retratos do pódio TotalPass de julho.
 - [x] Corrigir regra legada que ocultava as fotos do pódio TotalPass.
 - [x] Corrigir leitura do passo a passo do Bot Ben no plano de saúde.
+- [x] Ajustar contraste dos títulos nas campanhas anuais de saúde.

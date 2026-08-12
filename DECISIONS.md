@@ -648,3 +648,18 @@ Encapsular o conteúdo textual de cada etapa em um elemento próprio, mantendo o
 ### Motivo
 
 As opções em negrito eram itens independentes do layout flexível e se distribuíam de forma confusa. O agrupamento preserva a ordem do procedimento e torna a leitura imediata.
+
+---
+
+## ADR-030: Usar títulos brancos nos cards coloridos de campanhas anuais
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Definir explicitamente a cor branca nos títulos das campanhas de HPV e câncer do colo do útero.
+
+### Motivo
+
+O título herdava o azul escuro da interface e perdia contraste sobre os fundos roxo e rosa. Branco mantém uma leitura nítida e coerente com o restante do conteúdo dos cards.
