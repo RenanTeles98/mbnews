@@ -168,3 +168,4 @@
 - [x] Validar a disponibilidade da edição de julho após o deploy (HTTP 200 em produção).
 - [x] Atualizar aniversariantes de julho com os seis retratos fornecidos pelo RH, no formato de carrossel de junho.
 - [x] Garantir animação autônoma das duas faixas de aniversariantes, mesmo sem carregamento do script de ícones.
+- [x] Consolidar os seis aniversariantes de julho em uma única faixa animada.

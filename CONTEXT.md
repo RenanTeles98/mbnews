@@ -326,6 +326,8 @@ Atualização: a seção de aniversariantes de julho passou a usar o mesmo carro
 
 Correção: a classe de animação passou a existir diretamente no HTML e a inicialização de ícones externos foi protegida. Assim, o movimento das faixas não depende do carregamento do script de ícones; a velocidade foi ajustada para 18 segundos por ciclo.
 
+Atualização: como a edição possui seis aniversariantes com retrato, o carrossel foi simplificado para uma única faixa animada.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas

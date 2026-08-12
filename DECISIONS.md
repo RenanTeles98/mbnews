@@ -606,3 +606,7 @@ O padrão já é familiar para a equipe e mantém os retratos em destaque, sem u
 ### Atualização
 
 A classe que inicia a animação foi movida para o HTML, enquanto o JavaScript ficou responsável apenas pela duplicação visual e pelo botão de pausa. A chamada da biblioteca de ícones também passou a ser condicional, evitando que uma falha externa interrompa a animação.
+
+### Atualização de layout
+
+Com seis retratos disponíveis, os cards foram reunidos em uma única faixa. Isso reduz a altura da seção e mantém o carrossel contínuo, pois o grupo é duplicado pelo script existente.
