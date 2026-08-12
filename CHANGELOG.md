@@ -192,3 +192,4 @@ Principais marcos conhecidos:
 - Corrigida a regra que ocultava os retratos do pódio TotalPass de julho.
 - Reorganizado o passo a passo do Bot Ben para leitura clara das opções de plano de saúde.
 - Títulos das campanhas anuais de saúde ajustados para alto contraste.
+- Rota pública de downloads criada para permitir baixar os três PDFs da edição de julho.

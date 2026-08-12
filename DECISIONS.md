@@ -663,3 +663,18 @@ Definir explicitamente a cor branca nos títulos das campanhas de HPV e câncer 
 ### Motivo
 
 O título herdava o azul escuro da interface e perdia contraste sobre os fundos roxo e rosa. Branco mantém uma leitura nítida e coerente com o restante do conteúdo dos cards.
+
+---
+
+## ADR-031: Criar rewrite público para downloads da MB News
+
+**Data:** 2026-08-12
+**Status:** Implementado
+
+### Decisão
+
+Mapear URLs iniciadas por `/downloads/` para `public/downloads/` no `vercel.json`.
+
+### Motivo
+
+O projeto é publicado com a raiz como saída estática, por isso arquivos dentro de `public/` dependem de rewrites para manter URLs públicas limpas. Sem essa regra, os links de PDF retornavam 404.

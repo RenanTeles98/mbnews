@@ -338,6 +338,8 @@ Correção: o passo a passo de inclusão no plano de saúde foi reorganizado par
 
 Correção visual: títulos das campanhas de HPV e câncer do colo do útero ajustados para branco, garantindo contraste com os fundos coloridos.
 
+Correção de downloads: adicionada regra de rota em `vercel.json` para publicar arquivos de `public/downloads/` em `/downloads/`. Os três PDFs existiam no repositório, mas retornavam 404 em produção por falta desse mapeamento.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas
