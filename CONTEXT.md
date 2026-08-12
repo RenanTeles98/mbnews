@@ -324,6 +324,8 @@ Publicação: commit `42754f7` enviado para `main`; a página `https://mbnews.ve
 
 Atualização: a seção de aniversariantes de julho passou a usar o mesmo carrossel de duas faixas da edição de junho, com seis retratos enviados pelo RH (Edelyn, Matheus, Mayko, Paula, Ricardo e Vanessa), controle de pausa e suporte a redução de movimento.
 
+Correção: a classe de animação passou a existir diretamente no HTML e a inicialização de ícones externos foi protegida. Assim, o movimento das faixas não depende do carregamento do script de ícones; a velocidade foi ajustada para 18 segundos por ciclo.
+
 ---
 
 ## Sessao 2026-07-27 - Aniversariantes em duas fileiras animadas

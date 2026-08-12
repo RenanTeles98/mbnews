@@ -480,7 +480,7 @@
     .birthday-carousel-track {
       display: flex; width: max-content; gap: 14px; will-change: transform;
     }
-    .birthday-carousel.is-ready .birthday-carousel-track { animation: birthdayCarouselScroll 28s linear infinite; }
+    .birthday-carousel.is-ready .birthday-carousel-track { animation: birthdayCarouselScroll 18s linear infinite; }
     .birthday-carousel.is-ready .birthday-carousel-viewport-reverse .birthday-carousel-track {
       animation-name: birthdayCarouselScrollReverse;
     }
@@ -1934,7 +1934,7 @@
       </div>
     </div>
 
-    <div class="birthday-carousel fade-up" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de julho">
+    <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de julho">
       <div class="birthday-carousel-toolbar">
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
@@ -2471,7 +2471,7 @@
 
 <script>
   // ── LUCIDE ICONS
-  lucide.createIcons();
+  if (window.lucide) lucide.createIcons();
 
 
   // ── SCROLL ANIMATIONS

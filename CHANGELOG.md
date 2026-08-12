@@ -185,3 +185,4 @@ Principais marcos conhecidos:
 - Ranking TotalPass atualizado com Maria Seixas, Antônio Augusto e Luana Alves.
 - Promoções e efetivações de Willian Amaral, Arthur, Evellyn, Julia Ramos, Julia Goulart e Beatriz Assumpção incluídas na edição.
 - Seção de aniversariantes atualizada para o carrossel de duas faixas da edição de junho, com os seis retratos fornecidos para julho.
+- Animação dos aniversariantes ajustada para iniciar independentemente do JavaScript externo e com ciclo mais perceptível.

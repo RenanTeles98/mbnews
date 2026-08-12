@@ -602,3 +602,7 @@ Substituir a lista textual de aniversariantes de julho pelo carrossel com duas f
 ### Motivo
 
 O padrão já é familiar para a equipe e mantém os retratos em destaque, sem utilizar imagens de pessoas que não foram fornecidas para esta edição.
+
+### Atualização
+
+A classe que inicia a animação foi movida para o HTML, enquanto o JavaScript ficou responsável apenas pela duplicação visual e pelo botão de pausa. A chamada da biblioteca de ícones também passou a ser condicional, evitando que uma falha externa interrompa a animação.
