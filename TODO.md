@@ -178,3 +178,4 @@
 - [x] Substituir os cards de promoções/efetivações de julho por carrossel com as fotos oficiais.
 - [x] Manter Arthur e Evellyn juntos em um único slide, com setores individuais de Relacionamento e Hunter.
 - [x] Reunir Julia Luiza e Julia Goulart no slide de Abertura de Contas e detalhar a trajetória da Beatriz em T&D.
+- [x] Substituir as fotos individuais das Julias pela foto conjunta oficial.

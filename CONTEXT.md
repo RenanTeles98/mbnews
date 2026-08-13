@@ -513,6 +513,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Arthur foi identificado como efetivado em Relacionamento e Evellyn como efetivada em Hunter.
 - Julia Luiza e Julia Goulart foram reunidas em um único slide de Abertura de Contas, com o texto da trajetória compartilhada no Programa de Estágio.
 - O slide de Beatriz recebeu a trajetória completa até a promoção para Especialista de T&D.
+- Substituídas as duas fotos individuais das Julias pela nova foto conjunta enviada pelo RH.
 
 Arquivos modificados nesta sessão:
 - `index.html`

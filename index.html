@@ -294,8 +294,6 @@
     .promotion-slide[hidden] { display: none; }
     .promotion-slide-media { min-height: 610px; background: var(--gray-100); overflow: hidden; }
     .promotion-slide-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .promotion-slide-media.promotion-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
-    .promotion-slide-media.promotion-pair img { min-width: 0; }
     .promotion-slide[data-slide="0"] .promotion-slide-media img { object-position: center 44%; }
     .promotion-slide[data-slide="1"] .promotion-slide-media img { object-position: center 42%; }
     .promotion-slide[data-slide="2"] .promotion-slide-media img { object-position: center 38%; }
@@ -649,7 +647,6 @@
       .promotion-slide[data-slide="2"] .promotion-slide-media,
       .promotion-slide[data-slide="3"] .promotion-slide-media,
       .promotion-slide[data-slide="4"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
-      .promotion-slide[data-slide="2"] .promotion-slide-media.promotion-pair { aspect-ratio: 1 / 1; }
       .promotion-slide-copy { padding: 28px 22px 32px; }
       .promotion-carousel-arrow[data-carousel-prev] { left: 10px; }
       .promotion-carousel-arrow[data-carousel-next] { right: 10px; }
@@ -1748,11 +1745,9 @@
 
       <article class="promotion-slide" data-slide="2" role="group" hidden
         aria-roledescription="slide" aria-label="3 de 4: efetivações de Julia Luiza e Julia Goulart">
-        <div class="promotion-slide-media promotion-pair">
-          <img src="/images/mb-news/julho/promocoes/julia-ramos.jpeg"
-            alt="Julia Luiza celebrando sua efetivação na MB Finance" loading="lazy" />
-          <img src="/images/mb-news/julho/promocoes/julia-goulart.png"
-            alt="Julia Goulart celebrando sua efetivação na MB Finance" loading="lazy" />
+        <div class="promotion-slide-media">
+          <img src="/images/mb-news/julho/promocoes/julia-luiza-e-julia-goulart.png"
+            alt="Julia Luiza e Julia Goulart celebrando juntas suas efetivações na MB Finance" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>

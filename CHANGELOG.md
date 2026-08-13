@@ -202,3 +202,4 @@ Principais marcos conhecidos:
 - Os cards de texto de promoções e efetivações foram substituídos por um carrossel manual com fotos oficiais.
 - Arthur e Evellyn são apresentados juntos no mesmo slide, com os setores de Relacionamento e Hunter; Julia Luiza e Julia Goulart foram reunidas no destaque de Abertura de Contas.
 - O reconhecimento de Beatriz Assumpção passou a apresentar sua trajetória até a promoção para Especialista de T&D.
+- A foto conjunta oficial de Julia Luiza e Julia Goulart substituiu os dois retratos individuais no carrossel.
