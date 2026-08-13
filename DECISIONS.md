@@ -695,3 +695,5 @@ Usar o componente de carrossel manual já presente em `index.html` para exibir q
 O padrão já possui controles acessíveis por botões e teclado, evita criar uma nova interação e dá o devido destaque às fotos oficiais. Arthur e Evellyn foram agrupados pela foto compartilhada, preservando seus setores individuais. Julia Luiza e Julia Goulart compartilham outro slide porque pertencem a Abertura de Contas e têm a mesma trajetória de efetivação.
 
 Atualização: a composição de duas fotos individuais das Julias foi substituída pela foto conjunta oficial enviada posteriormente, mantendo o mesmo slide e texto.
+
+Atualização: as telas do carrossel passaram a ter altura fixa de 610px no desktop, com adaptação automática preservada no mobile, para manter consistência visual entre os reconhecimentos.
