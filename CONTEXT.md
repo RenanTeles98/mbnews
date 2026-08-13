@@ -518,6 +518,8 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Incluída a trajetória da Evellyn desde o estágio, com a efetivação para Hunter de Adquirência após 11 meses.
 - Corrigido o setor do Arthur para Farmer de Adquirência e incluído o resumo de sua trajetória por projetos internos.
 - Esclarecida a trajetória da Beatriz: efetivação em Adquirência e posterior promoção para Treinamento e Desenvolvimento.
+- Reestruturada a seção de saúde: vacinação separada das campanhas de HPV e câncer do colo do útero; removidos os downloads indevidos dos cards de campanhas e os atalhos por faixa etária.
+- Atualizados os textos informativos e inserido o direito de ausência para exames preventivos, com referência corrigida para o art. 473, XII, da CLT.
 
 Arquivos modificados nesta sessão:
 - `index.html`

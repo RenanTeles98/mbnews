@@ -626,6 +626,8 @@
     .vaccine-panel-icon .lucide { width:27px; height:27px; }
     .vaccine-panel h3 { color:#0067a9; font-size:1.25rem; margin:3px 0 5px; }
     .vaccine-panel p { color:#244d66; font-size:.92rem; line-height:1.7; }
+    .vaccine-audiences { margin:18px 0 0; padding-left:20px; color:#244d66; font-size:.9rem; line-height:1.7; }
+    .vaccine-audiences li + li { margin-top:8px; }
     .vaccine-source { display:flex; align-items:center; gap:8px; margin-top:18px; padding:10px 12px; border:1px solid #aad5ec; border-radius:10px; color:#0067a9; font-size:.78rem; font-weight:700; }
     .vaccine-downloads { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px; }
     .vaccine-download { background:#fff; border:2px solid #0072b1; color:#0067a9; justify-content:space-between; }
@@ -637,6 +639,8 @@
     .annual-campaign h3 { color:#fff; font-size:1.18rem; margin:12px 0 10px; }
     .annual-campaign p { color:rgba(255,255,255,.88); font-size:.88rem; line-height:1.65; }
     .annual-campaign a { margin-top:18px; min-height:44px; padding:0 14px; border-radius:10px; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.4); color:#fff; display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-size:.78rem; font-weight:800; }
+    .prevention-right { margin-top:20px; padding:18px 20px; border:1px solid #9bd3f3; border-radius:16px; background:#fff; color:#244d66; font-size:.88rem; line-height:1.7; }
+    .prevention-right strong { color:#0067a9; }
 
     @media (max-width: 760px) {
       .promotion-team-layout, .copa-layout { grid-template-columns: 1fr; gap: 28px; }
@@ -2095,19 +2099,23 @@
     <div class="vaccine-panel fade-up">
       <div class="vaccine-panel-head">
         <div class="vaccine-panel-icon"><i data-lucide="syringe"></i></div>
-        <div><span class="june-kicker">Campanha permanente 2026</span><h3>Calendário Nacional de Vacinação 2026</h3><p>O Ministério da Saúde disponibiliza orientações para adolescentes e jovens, adultos e idosos. Baixe o calendário completo ou consulte a versão da sua faixa etária.</p></div>
+        <div><span class="june-kicker">Calendário 2026</span><h3>Calendário Nacional de Vacinação 2026</h3><p>Vacinação em dia é mais proteção — para você, sua família e toda a nossa equipe! O Ministério da Saúde disponibilizou o Calendário Nacional de Vacinação 2026, com orientações específicas por faixa etária:</p></div>
       </div>
       <div class="vaccine-source"><i data-lucide="scale"></i>Ministério da Saúde · SUS · NR-07 / PCMSO</div>
       <div class="vaccine-downloads">
         <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="file-down"></i> Baixar Calendário Completo</span><small>PDF</small></a>
-        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="users"></i> Adultos (25 a 59 anos)</span><small>PDF</small></a>
-        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="accessibility"></i> Adolescentes e jovens (10 a 24 anos)</span><small>PDF</small></a>
-        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="heart-pulse"></i> Idosos (a partir de 60 anos)</span><small>PDF</small></a>
       </div>
+      <ul class="vaccine-audiences">
+        <li><strong>Adolescentes e Jovens (10 a 24 anos)</strong> — HPV, dengue, meningite ACWY, hepatite B, dT, febre amarela, tríplice viral, entre outras.</li>
+        <li><strong>Adultos (25 a 59 anos)</strong> — hepatite B, dT, febre amarela, tríplice viral, pneumocócica 23-valente e varicela, conforme histórico vacinal.</li>
+        <li><strong>Idosos (a partir de 60 anos)</strong> — hepatite B, dT, febre amarela, influenza anual, covid-19 semestral, entre outras.</li>
+      </ul>
+      <p style="margin-top:16px">Consulte o calendário completo e mantenha sua carteira de vacinação atualizada.</p>
       <div class="annual-campaigns">
-        <article class="annual-campaign hp"><i data-lucide="shield-check"></i><h3>Campanha Anual HPV</h3><p>A vacina é gratuita no SUS para pessoas de 9 a 14 anos e imunossuprimidas até 45 anos. Prevenção também inclui preservativo e exames regulares.</p><a href="/downloads/mb-news/julho-2026/campanha-hpv.pdf" download><i data-lucide="file-down"></i>Baixar informativo</a></article>
-        <article class="annual-campaign cervix"><i data-lucide="heart-handshake"></i><h3>Campanha Anual Câncer de Colo do Útero</h3><p>O Papanicolau identifica alterações antes de se tornarem câncer. A prevenção envolve vacina contra HPV, exames periódicos e acompanhamento médico.</p><a href="/downloads/mb-news/julho-2026/campanha-cancer-colo-utero.pdf" download><i data-lucide="file-down"></i>Baixar informativo</a></article>
+        <article class="annual-campaign hp"><i data-lucide="shield-check"></i><h3>Campanha Anual HPV</h3><p>O HPV (Papilomavírus Humano) é a infecção sexualmente transmissível mais comum do mundo — mas a boa notícia é que tem prevenção! A vacina é gratuita no SUS (9 a 14 anos; imunossuprimidos até 45 anos), e o uso de preservativo em todas as relações, aliado ao Papanicolau regular (mulheres a partir dos 25 anos), fazem toda a diferença.</p><p style="margin-top:14px">Fique atento(a): verrugas genitais, anais ou na garganta, e sangramento vaginal fora do período menstrual são sinais para procurar o médico. Mesmo sem sintomas, faça o preventivo regularmente.</p></article>
+        <article class="annual-campaign cervix"><i data-lucide="heart-handshake"></i><h3>Campanha Anual Câncer de Colo do Útero</h3><p>É o 3º câncer mais comum em mulheres no Brasil — mas é altamente prevenível! Lesões pré-cancerosas levam anos para se desenvolver, e o Papanicolau detecta tudo isso bem antes de se tornar câncer.</p><p style="margin-top:14px">Como se prevenir: vacina contra HPV gratuita no SUS (meninas e meninos de 9 a 14 anos), Papanicolau a partir dos 25 anos com vida sexual ativa, preservativo em todas as relações e não fumar.</p></article>
       </div>
+      <p class="prevention-right"><strong>Seu direito garantido por lei:</strong> você pode faltar ao trabalho por até 3 dias a cada 12 meses para realizar exames preventivos de câncer, incluindo os relacionados ao HPV, sem desconto no salário, desde que devidamente comprovados — Lei nº 15.377/2026 e art. 473, XII, da CLT. Converse com o RH para usar esse direito.</p>
     </div>
 
     <div style="display:none">

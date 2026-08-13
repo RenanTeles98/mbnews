@@ -703,3 +703,18 @@ Atualização: o slide compartilhado por Arthur e Evellyn passou a detalhar a tr
 Atualização: o setor do Arthur foi corrigido de Relacionamento para Farmer de Adquirência, com o texto sobre sua passagem por projetos internos antes da efetivação.
 
 Atualização: a promoção da Beatriz foi explicitada como uma transição de Adquirência para Treinamento e Desenvolvimento, evitando a interpretação de que sua efetivação ocorreu diretamente em T&D.
+
+---
+
+## ADR-033: Separar vacinação das campanhas de prevenção
+
+**Data:** 2026-08-13
+**Status:** Implementado
+
+### Decisão
+
+Manter na vacinação apenas o download do Calendário Nacional de Vacinação e apresentar as campanhas de HPV e câncer do colo do útero como conteúdos independentes, sem links de download.
+
+### Motivo
+
+As campanhas possuem finalidade educativa própria e não devem ser confundidas com o calendário vacinal. A referência trabalhista foi corrigida para o art. 473, XII, da CLT, conforme a Lei nº 15.377/2026.
