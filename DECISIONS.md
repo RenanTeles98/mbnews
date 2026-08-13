@@ -735,3 +735,5 @@ Exibir Calendário 2026, Campanha Anual HPV e Campanha Anual Câncer de Colo do 
 ### Motivo
 
 Os três conteúdos são informativos e têm a mesma relevância editorial; a grade evita que o calendário pareça um conteúdo principal e as campanhas apareçam como complementares.
+
+Atualização: o resumo do Calendário 2026 substitui a listagem extensa por faixa etária; o PDF continua como fonte do detalhamento completo e os três cards ficam visualmente proporcionais.
