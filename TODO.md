@@ -185,3 +185,4 @@
 - [x] Esclarecer a transição da Beatriz de Adquirência para Treinamento e Desenvolvimento.
 - [x] Separar calendário de vacinação das campanhas de HPV e câncer do colo do útero e atualizar os textos legais e informativos.
 - [x] Reordenar o carrossel de Reconhecimento com Beatriz Assumpção primeiro e Willian Amaral por último.
+- [x] Exibir Calendário 2026, HPV e Câncer de Colo do Útero lado a lado com o mesmo peso visual.

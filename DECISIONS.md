@@ -720,3 +720,18 @@ Manter na vacinação apenas o download do Calendário Nacional de Vacinação e
 As campanhas possuem finalidade educativa própria e não devem ser confundidas com o calendário vacinal. A referência trabalhista foi corrigida para o art. 473, XII, da CLT, conforme a Lei nº 15.377/2026.
 
 Atualização: o carrossel de Reconhecimento foi ordenado para abrir com Beatriz Assumpção e fechar com Willian Amaral, inclusive nos indicadores e na navegação por setas/teclado.
+
+---
+
+## ADR-034: Igualar o peso visual dos conteúdos de saúde
+
+**Data:** 2026-08-13
+**Status:** Implementado
+
+### Decisão
+
+Exibir Calendário 2026, Campanha Anual HPV e Campanha Anual Câncer de Colo do Útero como três cards irmãos em uma grade de três colunas no desktop.
+
+### Motivo
+
+Os três conteúdos são informativos e têm a mesma relevância editorial; a grade evita que o calendário pareça um conteúdo principal e as campanhas apareçam como complementares.

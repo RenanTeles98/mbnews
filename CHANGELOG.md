@@ -209,3 +209,4 @@ Principais marcos conhecidos:
 - Esclarecida a promoção da Beatriz de Adquirência para Treinamento e Desenvolvimento.
 - Separadas as informações de vacinação das campanhas de HPV e câncer do colo do útero; removidos os downloads incorretos e atualizados os textos de prevenção.
 - Carrossel de Reconhecimento reordenado: Beatriz Assumpção primeiro e Willian Amaral por último.
+- Calendário 2026, HPV e Câncer de Colo do Útero passaram a usar cards lado a lado de mesmo peso visual.
