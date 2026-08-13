@@ -701,3 +701,5 @@ Atualização: as telas do carrossel passaram a ter altura fixa de 610px no desk
 Atualização: o slide compartilhado por Arthur e Evellyn passou a detalhar a trajetória individual da Evellyn, preservando o setor de Arthur e a foto conjunta.
 
 Atualização: o setor do Arthur foi corrigido de Relacionamento para Farmer de Adquirência, com o texto sobre sua passagem por projetos internos antes da efetivação.
+
+Atualização: a promoção da Beatriz foi explicitada como uma transição de Adquirência para Treinamento e Desenvolvimento, evitando a interpretação de que sua efetivação ocorreu diretamente em T&D.

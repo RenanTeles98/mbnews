@@ -517,6 +517,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Padronizada a altura das telas do carrossel de reconhecimentos no desktop para preservar o mesmo tamanho entre todos os slides.
 - Incluída a trajetória da Evellyn desde o estágio, com a efetivação para Hunter de Adquirência após 11 meses.
 - Corrigido o setor do Arthur para Farmer de Adquirência e incluído o resumo de sua trajetória por projetos internos.
+- Esclarecida a trajetória da Beatriz: efetivação em Adquirência e posterior promoção para Treinamento e Desenvolvimento.
 
 Arquivos modificados nesta sessão:
 - `index.html`

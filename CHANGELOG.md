@@ -206,3 +206,4 @@ Principais marcos conhecidos:
 - A altura dos cards do carrossel foi padronizada no desktop.
 - Incluído o histórico de estágio e efetivação da Evellyn para Hunter de Adquirência.
 - Corrigido o destaque do Arthur para Farmer de Adquirência, com sua trajetória por projetos internos.
+- Esclarecida a promoção da Beatriz de Adquirência para Treinamento e Desenvolvimento.

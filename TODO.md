@@ -182,3 +182,4 @@
 - [x] Manter a altura padronizada dos cards do carrossel de reconhecimentos.
 - [x] Incluir a trajetória de estágio e efetivação da Evellyn no slide de reconhecimento.
 - [x] Corrigir o setor e incluir a trajetória do Arthur no slide compartilhado.
+- [x] Esclarecer a transição da Beatriz de Adquirência para Treinamento e Desenvolvimento.
