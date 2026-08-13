@@ -1704,7 +1704,7 @@
     <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
       aria-roledescription="carrossel" aria-label="Promoções e efetivações de julho" tabindex="0">
       <div class="promotion-carousel-stage">
-      <article class="promotion-slide is-active" data-slide="0" role="group"
+      <article class="promotion-slide" data-slide="0" role="group" hidden
         aria-roledescription="slide" aria-label="1 de 4: efetivação de Willian Amaral">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/julho/promocoes/willian-amaral.png"
@@ -1769,7 +1769,7 @@
         </div>
       </article>
 
-      <article class="promotion-slide" data-slide="3" role="group" hidden
+      <article class="promotion-slide is-active" data-slide="3" role="group"
         aria-roledescription="slide" aria-label="4 de 4: promoção de Beatriz Assumpção">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/julho/promocoes/beatriz-assuncao.jpeg"
@@ -1799,13 +1799,13 @@
       </div>
       <div class="promotion-carousel-controls">
         <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="true"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="false"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar efetivações de Arthur e Evellyn" aria-current="false"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivações de Julia Luiza e Julia Goulart" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="true"></button>
         </div>
       </div>
-      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 4: efetivação de Willian Amaral</p>
+      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 4: promoção de Beatriz Assumpção</p>
     </div>
   </div>
 </section>
@@ -2576,7 +2576,7 @@
     'efetivações de Julia Luiza e Julia Goulart',
     'promoção de Beatriz Assumpção'
   ];
-  let currentPromotionSlide = 0;
+  let currentPromotionSlide = 3;
 
   function showPromotionSlide(nextIndex) {
     if (!promotionSlides.length) return;

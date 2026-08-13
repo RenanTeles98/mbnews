@@ -718,3 +718,5 @@ Manter na vacinação apenas o download do Calendário Nacional de Vacinação e
 ### Motivo
 
 As campanhas possuem finalidade educativa própria e não devem ser confundidas com o calendário vacinal. A referência trabalhista foi corrigida para o art. 473, XII, da CLT, conforme a Lei nº 15.377/2026.
+
+Atualização: Beatriz Assumpção foi definida como o slide inicial do carrossel de Reconhecimento, valorizando sua promoção já na abertura da seção.

@@ -184,3 +184,4 @@
 - [x] Corrigir o setor e incluir a trajetória do Arthur no slide compartilhado.
 - [x] Esclarecer a transição da Beatriz de Adquirência para Treinamento e Desenvolvimento.
 - [x] Separar calendário de vacinação das campanhas de HPV e câncer do colo do útero e atualizar os textos legais e informativos.
+- [x] Exibir Beatriz Assumpção como primeiro destaque do carrossel de Reconhecimento.
