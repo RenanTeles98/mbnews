@@ -741,3 +741,5 @@ Atualização: o resumo do Calendário 2026 substitui a listagem extensa por fai
 Atualização: o ícone do Calendário 2026 segue a escala de 24 px dos demais cards e usa um espaçamento interno de 12 px para manter o título e a leitura alinhados.
 
 Atualização: os três títulos usam 1,18 rem e altura de linha de 1,25; o rótulo redundante “Calendário 2026” foi removido.
+
+Atualização: o ícone do calendário foi colocado acima do título para repetir a mesma hierarquia visual das campanhas.

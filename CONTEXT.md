@@ -525,6 +525,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Resumido o texto do Calendário 2026 e removida a lista detalhada por faixa etária para equilibrar sua altura com os cards de HPV e câncer do colo do útero.
 - Padronizado o ícone do Calendário 2026 com os demais cards e reduzido o espaço entre ícone e conteúdo para ampliar a área de leitura.
 - Removido o rótulo auxiliar do Calendário 2026 e padronizado o tamanho e a altura de linha dos três títulos de saúde.
+- Reposicionado o ícone do Calendário 2026 acima do título, seguindo o padrão dos cards de campanha.
 
 Arquivos modificados nesta sessão:
 - `index.html`

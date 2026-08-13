@@ -189,3 +189,4 @@
 - [x] Equilibrar o volume de texto dos três cards de saúde para eliminar o espaço visual excessivo.
 - [x] Padronizar o ícone e o espaçamento interno do card Calendário 2026.
 - [x] Padronizar os títulos dos três cards de saúde e remover o rótulo auxiliar do calendário.
+- [x] Posicionar o ícone do Calendário 2026 acima do título, como nos cards de campanha.
