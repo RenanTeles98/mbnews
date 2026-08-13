@@ -678,3 +678,18 @@ Mapear URLs iniciadas por `/downloads/` para `public/downloads/` no `vercel.json
 ### Motivo
 
 O projeto é publicado com a raiz como saída estática, por isso arquivos dentro de `public/` dependem de rewrites para manter URLs públicas limpas. Sem essa regra, os links de PDF retornavam 404.
+
+---
+
+## ADR-032: Reutilizar o carrossel manual de junho para os reconhecimentos de julho
+
+**Data:** 2026-08-13
+**Status:** Implementado
+
+### Decisão
+
+Usar o componente de carrossel manual já presente em `index.html` para exibir quatro telas de reconhecimentos de julho, com texto sincronizado por slide.
+
+### Motivo
+
+O padrão já possui controles acessíveis por botões e teclado, evita criar uma nova interação e dá o devido destaque às fotos oficiais. Arthur e Evellyn foram agrupados pela foto compartilhada, preservando seus setores individuais. Julia Luiza e Julia Goulart compartilham outro slide porque pertencem a Abertura de Contas e têm a mesma trajetória de efetivação.

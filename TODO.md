@@ -175,3 +175,6 @@
 - [x] Corrigir leitura do passo a passo do Bot Ben no plano de saúde.
 - [x] Ajustar contraste dos títulos nas campanhas anuais de saúde.
 - [x] Corrigir rotas públicas dos downloads em PDF da edição de julho.
+- [x] Substituir os cards de promoções/efetivações de julho por carrossel com as fotos oficiais.
+- [x] Manter Arthur e Evellyn juntos em um único slide, com setores individuais de Relacionamento e Hunter.
+- [x] Reunir Julia Luiza e Julia Goulart no slide de Abertura de Contas e detalhar a trajetória da Beatriz em T&D.

@@ -503,3 +503,26 @@ Arquivos modificados nesta sessao:
 Estado atual: imagens travadas nos valores salvos em codigo, sem interface publica de ajuste.
 
 Proximo passo recomendado: validar visualmente em producao apos deploy.
+
+---
+
+## Sessão 2026-08-13 — Carrossel de promoções de julho
+
+- Substituídos os cards textuais de promoções/efetivações de julho pelo carrossel manual já adotado na edição de junho.
+- Incluídas as fotos de Willian Amaral, Arthur e Evellyn (na mesma foto), Julia Luiza, Julia Goulart e Beatriz Assumpção.
+- Arthur foi identificado como efetivado em Relacionamento e Evellyn como efetivada em Hunter.
+- Julia Luiza e Julia Goulart foram reunidas em um único slide de Abertura de Contas, com o texto da trajetória compartilhada no Programa de Estágio.
+- O slide de Beatriz recebeu a trajetória completa até a promoção para Especialista de T&D.
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `public/images/mb-news/julho/promocoes/`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-08-13.md`
+
+Estado atual: o bloco de reconhecimento de julho está pronto para validação visual e publicação.
+
+Próximo passo recomendado: conferir o enquadramento das quatro telas do carrossel no ambiente publicado após o deploy.

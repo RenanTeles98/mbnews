@@ -294,6 +294,8 @@
     .promotion-slide[hidden] { display: none; }
     .promotion-slide-media { min-height: 610px; background: var(--gray-100); overflow: hidden; }
     .promotion-slide-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .promotion-slide-media.promotion-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+    .promotion-slide-media.promotion-pair img { min-width: 0; }
     .promotion-slide[data-slide="0"] .promotion-slide-media img { object-position: center 44%; }
     .promotion-slide[data-slide="1"] .promotion-slide-media img { object-position: center 42%; }
     .promotion-slide[data-slide="2"] .promotion-slide-media img { object-position: center 38%; }
@@ -647,6 +649,7 @@
       .promotion-slide[data-slide="2"] .promotion-slide-media,
       .promotion-slide[data-slide="3"] .promotion-slide-media,
       .promotion-slide[data-slide="4"] .promotion-slide-media { aspect-ratio: 3 / 4; max-height: 580px; }
+      .promotion-slide[data-slide="2"] .promotion-slide-media.promotion-pair { aspect-ratio: 1 / 1; }
       .promotion-slide-copy { padding: 28px 22px 32px; }
       .promotion-carousel-arrow[data-carousel-prev] { left: 10px; }
       .promotion-carousel-arrow[data-carousel-next] { right: 10px; }
@@ -1701,7 +1704,7 @@
       aria-roledescription="carrossel" aria-label="Promoções e efetivações de julho" tabindex="0">
       <div class="promotion-carousel-stage">
       <article class="promotion-slide is-active" data-slide="0" role="group"
-        aria-roledescription="slide" aria-label="1 de 5: efetivação de Willian Amaral">
+        aria-roledescription="slide" aria-label="1 de 4: efetivação de Willian Amaral">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/julho/promocoes/willian-amaral.png"
             alt="Willian Amaral celebrando sua efetivação na MB Finance" />
@@ -1721,7 +1724,7 @@
       </article>
 
       <article class="promotion-slide" data-slide="1" role="group" hidden
-        aria-roledescription="slide" aria-label="2 de 5: efetivação de Arthur e Evellyn">
+        aria-roledescription="slide" aria-label="2 de 4: efetivações de Arthur e Evellyn">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/julho/promocoes/arthur-e-evellyn.jpeg"
             alt="Arthur e Evellyn celebrando juntos suas efetivações na MB Finance" loading="lazy" />
@@ -1729,59 +1732,44 @@
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
           <h3>Arthur e Evellyn</h3>
-          <p>Do mesmo setor, os dois celebram juntos a efetivação e o início de uma nova fase na MB Finance.</p>
+          <p>Mesmo celebrando na mesma foto, cada um inicia essa nova etapa em seu próprio setor na MB Finance.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Arthur e Evellyn</strong>
-              <span>Efetivados</span>
-              <p>Parabéns por essa conquista compartilhada.</p>
+              <strong>Arthur</strong>
+              <span>Efetivado · Relacionamento</span>
+            </div>
+            <div class="promotion-profile">
+              <strong>Evellyn</strong>
+              <span>Efetivada · Hunter</span>
             </div>
           </div>
         </div>
       </article>
 
       <article class="promotion-slide" data-slide="2" role="group" hidden
-        aria-roledescription="slide" aria-label="3 de 5: efetivação de Julia Ramos">
-        <div class="promotion-slide-media">
+        aria-roledescription="slide" aria-label="3 de 4: efetivações de Julia Luiza e Julia Goulart">
+        <div class="promotion-slide-media promotion-pair">
           <img src="/images/mb-news/julho/promocoes/julia-ramos.jpeg"
-            alt="Julia Ramos celebrando sua efetivação na MB Finance" loading="lazy" />
+            alt="Julia Luiza celebrando sua efetivação na MB Finance" loading="lazy" />
+          <img src="/images/mb-news/julho/promocoes/julia-goulart.png"
+            alt="Julia Goulart celebrando sua efetivação na MB Finance" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
-          <h3>Julia Ramos</h3>
-          <p>Uma nova etapa para reconhecer sua caminhada e seguir construindo muitas conquistas com a gente.</p>
+          <h3>Julia Luiza e Julia Goulart</h3>
+          <p>As duas iniciaram o Programa de Estágio em outubro de 2025 e, após oito meses conhecendo a cultura da MB e entregando resultados promissores, foram efetivadas por meritocracia.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Nova etapa</strong>
-              <span>Efetivada</span>
-              <p>Parabéns, Julia, por essa conquista.</p>
+              <strong>Abertura de Contas</strong>
+              <span>Efetivadas</span>
+              <p>Parabéns, meninas. Este é só o início de uma jornada de excelência. Sucesso sempre!</p>
             </div>
           </div>
         </div>
       </article>
 
       <article class="promotion-slide" data-slide="3" role="group" hidden
-        aria-roledescription="slide" aria-label="4 de 5: efetivação de Julia Goulart">
-        <div class="promotion-slide-media">
-          <img src="/images/mb-news/julho/promocoes/julia-goulart.png"
-            alt="Julia Goulart celebrando sua efetivação na MB Finance" loading="lazy" />
-        </div>
-        <div class="promotion-slide-copy">
-          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
-          <h3>Julia Goulart</h3>
-          <p>Que esta efetivação seja o começo de uma jornada ainda mais cheia de aprendizado e realizações.</p>
-          <div class="promotion-profile-list">
-            <div class="promotion-profile">
-              <strong>Nova etapa</strong>
-              <span>Efetivada</span>
-              <p>Parabéns, Julia, por esse novo passo.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="promotion-slide" data-slide="4" role="group" hidden
-        aria-roledescription="slide" aria-label="5 de 5: promoção de Beatriz Assumpção">
+        aria-roledescription="slide" aria-label="4 de 4: promoção de Beatriz Assumpção">
         <div class="promotion-slide-media">
           <img src="/images/mb-news/julho/promocoes/beatriz-assuncao.jpeg"
             alt="Beatriz Assumpção celebrando sua promoção para Especialista de T&D" loading="lazy" />
@@ -1789,12 +1777,13 @@
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoção</span>
           <h3>Beatriz Assumpção</h3>
-          <p>Parabéns pela promoção para Especialista de T&amp;D e por mais essa conquista na sua trajetória.</p>
+          <p>Beatriz iniciou sua jornada na MB em agosto de 2024 como estagiária. Após três meses, foi efetivada na Adquirência, onde atuou no Farmer e no gerenciamento da carteira de clientes.</p>
+          <p style="margin-top:14px">Sempre presente nos treinamentos da equipe, em julho recebeu o convite para integrar o time de Treinamento e Desenvolvimento, com foco em fortalecer a cultura e promover o desenvolvimento dos colaboradores.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
               <strong>Nova função</strong>
               <span>Especialista de T&amp;D</span>
-              <p>Um reconhecimento pelo trabalho e pela dedicação.</p>
+              <p>Uma nova etapa para potencializar pessoas e cultura na MB.</p>
             </div>
           </div>
         </div>
@@ -1810,13 +1799,12 @@
       <div class="promotion-carousel-controls">
         <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="true"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar efetivação de Arthur e Evellyn" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivação de Julia Ramos" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar efetivação de Julia Goulart" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="4" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar efetivações de Arthur e Evellyn" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivações de Julia Luiza e Julia Goulart" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="false"></button>
         </div>
       </div>
-      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 5: efetivação de Willian Amaral</p>
+      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 4: efetivação de Willian Amaral</p>
     </div>
   </div>
 </section>
@@ -2579,9 +2567,8 @@
   const promotionStatus = document.getElementById('promotionCarouselStatus');
   const promotionLabels = [
     'efetivação de Willian Amaral',
-    'efetivação de Arthur e Evellyn',
-    'efetivação de Julia Ramos',
-    'efetivação de Julia Goulart',
+    'efetivações de Arthur e Evellyn',
+    'efetivações de Julia Luiza e Julia Goulart',
     'promoção de Beatriz Assumpção'
   ];
   let currentPromotionSlide = 0;

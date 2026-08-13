@@ -193,3 +193,12 @@ Principais marcos conhecidos:
 - Reorganizado o passo a passo do Bot Ben para leitura clara das opções de plano de saúde.
 - Títulos das campanhas anuais de saúde ajustados para alto contraste.
 - Rota pública de downloads criada para permitir baixar os três PDFs da edição de julho.
+
+---
+
+## 2026-08-13 — Carrossel de reconhecimentos de julho
+
+### Modificado
+- Os cards de texto de promoções e efetivações foram substituídos por um carrossel manual com fotos oficiais.
+- Arthur e Evellyn são apresentados juntos no mesmo slide, com os setores de Relacionamento e Hunter; Julia Luiza e Julia Goulart foram reunidas no destaque de Abertura de Contas.
+- O reconhecimento de Beatriz Assumpção passou a apresentar sua trajetória até a promoção para Especialista de T&D.
