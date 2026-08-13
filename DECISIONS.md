@@ -739,3 +739,5 @@ Os três conteúdos são informativos e têm a mesma relevância editorial; a gr
 Atualização: o resumo do Calendário 2026 substitui a listagem extensa por faixa etária; o PDF continua como fonte do detalhamento completo e os três cards ficam visualmente proporcionais.
 
 Atualização: o ícone do Calendário 2026 segue a escala de 24 px dos demais cards e usa um espaçamento interno de 12 px para manter o título e a leitura alinhados.
+
+Atualização: os três títulos usam 1,18 rem e altura de linha de 1,25; o rótulo redundante “Calendário 2026” foi removido.

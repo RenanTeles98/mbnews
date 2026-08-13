@@ -212,3 +212,4 @@ Principais marcos conhecidos:
 - Calendário 2026, HPV e Câncer de Colo do Útero passaram a usar cards lado a lado de mesmo peso visual.
 - Resumido o card Calendário 2026 para equilibrar o volume de conteúdo e a altura visual dos três cards de saúde.
 - Padronizados o ícone e o espaçamento do card Calendário 2026.
+- Padronizados o tamanho dos títulos dos três cards de saúde e removido o rótulo auxiliar do Calendário 2026.
