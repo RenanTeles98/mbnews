@@ -180,3 +180,4 @@
 - [x] Reunir Julia Luiza e Julia Goulart no slide de Abertura de Contas e detalhar a trajetória da Beatriz em T&D.
 - [x] Substituir as fotos individuais das Julias pela foto conjunta oficial.
 - [x] Manter a altura padronizada dos cards do carrossel de reconhecimentos.
+- [x] Incluir a trajetória de estágio e efetivação da Evellyn no slide de reconhecimento.

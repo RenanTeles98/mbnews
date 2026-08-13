@@ -515,6 +515,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - O slide de Beatriz recebeu a trajetória completa até a promoção para Especialista de T&D.
 - Substituídas as duas fotos individuais das Julias pela nova foto conjunta enviada pelo RH.
 - Padronizada a altura das telas do carrossel de reconhecimentos no desktop para preservar o mesmo tamanho entre todos os slides.
+- Incluída a trajetória da Evellyn desde o estágio, com a efetivação para Hunter de Adquirência após 11 meses.
 
 Arquivos modificados nesta sessão:
 - `index.html`

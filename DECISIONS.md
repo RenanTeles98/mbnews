@@ -697,3 +697,5 @@ O padrão já possui controles acessíveis por botões e teclado, evita criar um
 Atualização: a composição de duas fotos individuais das Julias foi substituída pela foto conjunta oficial enviada posteriormente, mantendo o mesmo slide e texto.
 
 Atualização: as telas do carrossel passaram a ter altura fixa de 610px no desktop, com adaptação automática preservada no mobile, para manter consistência visual entre os reconhecimentos.
+
+Atualização: o slide compartilhado por Arthur e Evellyn passou a detalhar a trajetória individual da Evellyn, preservando o setor de Arthur e a foto conjunta.

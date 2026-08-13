@@ -204,3 +204,4 @@ Principais marcos conhecidos:
 - O reconhecimento de Beatriz Assumpção passou a apresentar sua trajetória até a promoção para Especialista de T&D.
 - A foto conjunta oficial de Julia Luiza e Julia Goulart substituiu os dois retratos individuais no carrossel.
 - A altura dos cards do carrossel foi padronizada no desktop.
+- Incluído o histórico de estágio e efetivação da Evellyn para Hunter de Adquirência.
