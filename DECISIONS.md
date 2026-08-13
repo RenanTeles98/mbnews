@@ -699,3 +699,5 @@ Atualização: a composição de duas fotos individuais das Julias foi substitu�
 Atualização: as telas do carrossel passaram a ter altura fixa de 610px no desktop, com adaptação automática preservada no mobile, para manter consistência visual entre os reconhecimentos.
 
 Atualização: o slide compartilhado por Arthur e Evellyn passou a detalhar a trajetória individual da Evellyn, preservando o setor de Arthur e a foto conjunta.
+
+Atualização: o setor do Arthur foi corrigido de Relacionamento para Farmer de Adquirência, com o texto sobre sua passagem por projetos internos antes da efetivação.

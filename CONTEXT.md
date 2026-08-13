@@ -516,6 +516,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Substituídas as duas fotos individuais das Julias pela nova foto conjunta enviada pelo RH.
 - Padronizada a altura das telas do carrossel de reconhecimentos no desktop para preservar o mesmo tamanho entre todos os slides.
 - Incluída a trajetória da Evellyn desde o estágio, com a efetivação para Hunter de Adquirência após 11 meses.
+- Corrigido o setor do Arthur para Farmer de Adquirência e incluído o resumo de sua trajetória por projetos internos.
 
 Arquivos modificados nesta sessão:
 - `index.html`
