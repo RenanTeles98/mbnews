@@ -187,3 +187,4 @@
 - [x] Reordenar o carrossel de Reconhecimento com Beatriz Assumpção primeiro e Willian Amaral por último.
 - [x] Exibir Calendário 2026, HPV e Câncer de Colo do Útero lado a lado com o mesmo peso visual.
 - [x] Equilibrar o volume de texto dos três cards de saúde para eliminar o espaço visual excessivo.
+- [x] Padronizar o ícone e o espaçamento interno do card Calendário 2026.

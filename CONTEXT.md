@@ -523,6 +523,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Reordenado o carrossel de Reconhecimento: Beatriz Assumpção abre a sequência e Willian Amaral é o último destaque.
 - Reorganizada a seção RH & Bem-estar em três cards de mesmo peso no desktop: Calendário 2026, HPV e Câncer de Colo do Útero.
 - Resumido o texto do Calendário 2026 e removida a lista detalhada por faixa etária para equilibrar sua altura com os cards de HPV e câncer do colo do útero.
+- Padronizado o ícone do Calendário 2026 com os demais cards e reduzido o espaço entre ícone e conteúdo para ampliar a área de leitura.
 
 Arquivos modificados nesta sessão:
 - `index.html`

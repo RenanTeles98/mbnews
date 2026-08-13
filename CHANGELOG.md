@@ -211,3 +211,4 @@ Principais marcos conhecidos:
 - Carrossel de Reconhecimento reordenado: Beatriz Assumpção primeiro e Willian Amaral por último.
 - Calendário 2026, HPV e Câncer de Colo do Útero passaram a usar cards lado a lado de mesmo peso visual.
 - Resumido o card Calendário 2026 para equilibrar o volume de conteúdo e a altura visual dos três cards de saúde.
+- Padronizados o ícone e o espaçamento do card Calendário 2026.
