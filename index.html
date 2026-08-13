@@ -1799,10 +1799,10 @@
       </div>
       <div class="promotion-carousel-controls">
         <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="true"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar efetivações de Arthur e Evellyn" aria-current="false"></button>
           <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivações de Julia Luiza e Julia Goulart" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="true"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="false"></button>
         </div>
       </div>
       <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 4: promoção de Beatriz Assumpção</p>
@@ -2571,48 +2571,50 @@
     : [];
   const promotionStatus = document.getElementById('promotionCarouselStatus');
   const promotionLabels = [
-    'efetivação de Willian Amaral',
+    'promoção de Beatriz Assumpção',
     'efetivações de Arthur e Evellyn',
     'efetivações de Julia Luiza e Julia Goulart',
-    'promoção de Beatriz Assumpção'
+    'efetivação de Willian Amaral'
   ];
-  let currentPromotionSlide = 3;
+  const promotionOrder = [3, 1, 2, 0];
+  let currentPromotionPosition = 0;
 
   function showPromotionSlide(nextIndex) {
     if (!promotionSlides.length) return;
 
-    currentPromotionSlide = (nextIndex + promotionSlides.length) % promotionSlides.length;
+    currentPromotionPosition = (nextIndex + promotionOrder.length) % promotionOrder.length;
+    const currentPromotionSlide = promotionOrder[currentPromotionPosition];
     promotionSlides.forEach((slide, index) => {
       const isActive = index === currentPromotionSlide;
       slide.hidden = !isActive;
       slide.classList.toggle('is-active', isActive);
     });
-    promotionDots.forEach((dot, index) => {
-      dot.setAttribute('aria-current', index === currentPromotionSlide ? 'true' : 'false');
+    promotionDots.forEach(dot => {
+      dot.setAttribute('aria-current', Number(dot.dataset.carouselDot) === currentPromotionSlide ? 'true' : 'false');
     });
     if (promotionStatus) {
-      promotionStatus.textContent = `Destaque ${currentPromotionSlide + 1} de ${promotionSlides.length}: ${promotionLabels[currentPromotionSlide]}`;
+      promotionStatus.textContent = `Destaque ${currentPromotionPosition + 1} de ${promotionSlides.length}: ${promotionLabels[currentPromotionPosition]}`;
     }
   }
 
   if (promotionCarousel) {
     promotionCarousel.querySelector('[data-carousel-prev]').addEventListener('click', () => {
-      showPromotionSlide(currentPromotionSlide - 1);
+      showPromotionSlide(currentPromotionPosition - 1);
     });
     promotionCarousel.querySelector('[data-carousel-next]').addEventListener('click', () => {
-      showPromotionSlide(currentPromotionSlide + 1);
+      showPromotionSlide(currentPromotionPosition + 1);
     });
-    promotionDots.forEach((dot, index) => {
-      dot.addEventListener('click', () => showPromotionSlide(index));
+    promotionDots.forEach(dot => {
+      dot.addEventListener('click', () => showPromotionSlide(promotionOrder.indexOf(Number(dot.dataset.carouselDot))));
     });
     promotionCarousel.addEventListener('keydown', event => {
       if (event.key === 'ArrowLeft') {
         event.preventDefault();
-        showPromotionSlide(currentPromotionSlide - 1);
+        showPromotionSlide(currentPromotionPosition - 1);
       }
       if (event.key === 'ArrowRight') {
         event.preventDefault();
-        showPromotionSlide(currentPromotionSlide + 1);
+        showPromotionSlide(currentPromotionPosition + 1);
       }
       if (event.key === 'Home') {
         event.preventDefault();
@@ -2620,7 +2622,7 @@
       }
       if (event.key === 'End') {
         event.preventDefault();
-        showPromotionSlide(promotionSlides.length - 1);
+        showPromotionSlide(promotionOrder.length - 1);
       }
     });
   }

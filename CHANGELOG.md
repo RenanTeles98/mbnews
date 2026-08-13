@@ -208,4 +208,4 @@ Principais marcos conhecidos:
 - Corrigido o destaque do Arthur para Farmer de Adquirência, com sua trajetória por projetos internos.
 - Esclarecida a promoção da Beatriz de Adquirência para Treinamento e Desenvolvimento.
 - Separadas as informações de vacinação das campanhas de HPV e câncer do colo do útero; removidos os downloads incorretos e atualizados os textos de prevenção.
-- Beatriz Assumpção passou a ser o primeiro destaque exibido no carrossel de Reconhecimento.
+- Carrossel de Reconhecimento reordenado: Beatriz Assumpção primeiro e Willian Amaral por último.

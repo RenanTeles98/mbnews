@@ -520,7 +520,7 @@ Proximo passo recomendado: validar visualmente em producao apos deploy.
 - Esclarecida a trajetória da Beatriz: efetivação em Adquirência e posterior promoção para Treinamento e Desenvolvimento.
 - Reestruturada a seção de saúde: vacinação separada das campanhas de HPV e câncer do colo do útero; removidos os downloads indevidos dos cards de campanhas e os atalhos por faixa etária.
 - Atualizados os textos informativos e inserido o direito de ausência para exames preventivos, com referência corrigida para o art. 473, XII, da CLT.
-- Definida Beatriz Assumpção como primeiro destaque exibido no carrossel de Reconhecimento.
+- Reordenado o carrossel de Reconhecimento: Beatriz Assumpção abre a sequência e Willian Amaral é o último destaque.
 
 Arquivos modificados nesta sessão:
 - `index.html`
