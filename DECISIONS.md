@@ -190,6 +190,21 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 
 ---
 
+## ADR-035: Permitir incorporacao do projeto em iframe
+
+**Data:** 2026-09-01
+**Status:** Implementado
+
+### Decisao
+
+Remover `X-Frame-Options: SAMEORIGIN` e incluir `frame-ancestors *` na Content Security Policy global da Vercel.
+
+### Motivo
+
+O cabecalho `X-Frame-Options` bloqueava qualquer incorporacao por dominio diferente do proprio site. Como nenhum dominio de destino foi informado, a liberacao foi configurada para qualquer origem. Quando o dominio da plataforma estiver definido, `frame-ancestors *` deve ser trocado pela lista explicita de origens autorizadas para reduzir o risco de clickjacking.
+
+---
+
 ## ADR-009: Implementação do Calendário Editorial e Status de Agendamento
 **Data:** 2026-04-20
 **Status:** Aceita

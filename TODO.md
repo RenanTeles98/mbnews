@@ -4,6 +4,10 @@
 
 ---
 
+## Atualizacao 2026-09-01 - Iframe
+
+- [ ] Restringir `frame-ancestors` no `vercel.json` aos dominios de incorporacao autorizados quando forem definidos.
+
 ## 🔴 Crítico (fazer antes do próximo push sério)
 
 - [x] **Filtrar posts agendados no Blog (Next.js)** - Implementado no `lib/blog-store.ts` e API.

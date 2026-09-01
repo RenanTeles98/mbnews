@@ -7,6 +7,24 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-01 - Liberacao para iframe
+
+- Removido o cabecalho global `X-Frame-Options: SAMEORIGIN` do `vercel.json`.
+- Adicionada a diretiva CSP `frame-ancestors *`, permitindo que o projeto seja incorporado em iframe por qualquer origem.
+- Mantido `frame-src 'none'`, que continua bloqueando iframes carregados pelo proprio projeto.
+
+Arquivos modificados nesta sessao:
+- `vercel.json`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-01.md`
+
+Estado atual: a configuracao esta pronta para o proximo deploy da Vercel. A liberacao ampla deve ser substituida por uma lista de dominios em `frame-ancestors` caso a plataforma de incorporacao seja definida.
+
+Proximo passo recomendado: publicar o deploy e validar a pagina dentro do iframe de destino.
+
 ### O que está funcionando
 
 - [x] Home principal (`public/mb-finance-completo.html`) — refatorada com separação total de CSS/JS

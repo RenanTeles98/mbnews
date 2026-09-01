@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-09-01
+
+### Modificado
+- `vercel.json`: o projeto passou a aceitar incorporacao em iframe por qualquer origem, com `frame-ancestors *` e sem `X-Frame-Options: SAMEORIGIN`.
+
 ## 2026-06-15 — Ajuste visual da foto da Duda
 
 ### Modificado
