@@ -31,6 +31,19 @@ Manter a home em HTML estÃ¡tico (`public/mb-finance-completo.html`) e adotar a
 
 ---
 
+## ADR-037: Criar rota histórica própria para julho
+
+**Data:** 2026-09-10
+**Status:** Implementado
+
+### Decisão
+
+Manter a edição de julho em uma página HTML histórica própria (`public/pages/mb-news-julho-2026.html`) e apontar o botão mensal diretamente para ela.
+
+### Motivo
+
+O botão estava apontando para `/`, fazendo o usuário retornar à edição de agosto. Uma rota própria preserva o conteúdo mensal e permite acesso independente.
+
 ## ADR-036: Preparar a edição de agosto sem inventar dados do RH
 
 **Data:** 2026-09-10

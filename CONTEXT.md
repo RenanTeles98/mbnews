@@ -279,6 +279,14 @@ Estado atual: estrutura de agosto aplicada, aguardando dados oficiais do RH para
 
 Próximo passo recomendado: receber os dados pendentes, substituir os avisos e fazer validação visual/build antes do deploy.
 
+## Sessão 2026-09-10 — Correção do acesso à edição de julho
+
+- Criada `public/pages/mb-news-julho-2026.html` com os dados da edição #004.
+- Corrigido o botão de julho em `index.html`, que estava apontando para `/` e recarregando agosto.
+- A edição de julho inclui links para os três PDFs já publicados em `public/downloads/mb-news/julho-2026/`.
+
+Estado atual: julho está disponível em `/pages/mb-news-julho-2026.html`.
+
 ## Arquitetura resumida
 
 - **Frontend principal:** HTML estático (`public/mb-finance-completo.html`) com CSS/JS externos em `public/assets/`

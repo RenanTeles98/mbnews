@@ -161,6 +161,12 @@
 - [x] Exibir a quantidade de check-ins nos cards do ranking TotalPass.
 - [x] Atualizar o fundo da secao TotalPass para um visual relacionado a academia e identificar a headline com uma tag.
 
+## Atualização 2026-09-10 — Correção do acesso à edição de julho
+
+- [x] Criar a página pública `public/pages/mb-news-julho-2026.html`.
+- [x] Corrigir o link de julho na navegação mensal da edição de agosto.
+- [x] Revalidar os links dos PDFs de saúde da edição de julho.
+
 ## Atualização 2026-09-10 — MB News Agosto
 
 - [x] Criar estrutura editorial da edição #005 de agosto.

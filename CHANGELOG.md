@@ -183,6 +183,12 @@ Principais marcos conhecidos:
 
 ---
 
+## 2026-09-10 — Correção do acesso à edição de julho
+
+- Criada a página histórica `public/pages/mb-news-julho-2026.html`.
+- Corrigido o link de julho na navegação mensal da edição de agosto.
+- Restaurados os dados principais de julho e os links dos materiais de saúde.
+
 ## 2026-09-10 — MB News Agosto
 
 - Preparada a edição #005 de agosto em `index.html`.
