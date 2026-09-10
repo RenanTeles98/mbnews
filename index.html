@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MB News | Edição #004 · Julho 2026</title>
+  <title>MB News | Edição #005 · Agosto 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -1583,13 +1583,13 @@
   <a href="#" class="nav-logo">mb <span>news</span></a>
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
-    <li><a href="#promocoes">Promoções</a></li>
+    <li><a href="#evento">Evento interno</a></li>
     <li><a href="#plano-saude">Plano de saúde</a></li>
     <li><a href="#aniversariantes">Aniversariantes</a></li>
     <li><a href="#totalpass">TotalPass</a></li>
     <li><a href="#saude">RH &amp; Bem-estar</a></li>
   </ul>
-  <span class="nav-edition">Edição #004 · Julho 2026</span>
+  <span class="nav-edition">Edição #005 · Agosto 2026</span>
 </nav>
 
 <!-- MODAL MENSAL -->
@@ -1619,8 +1619,8 @@
   <a class="month-btn available" href="/pages/mb-news-abril-2026.html">✓ Abr</a>
   <a class="month-btn available" href="/pages/mb-news-maio-2026.html">✓ Mai</a>
   <a class="month-btn available" href="/pages/mb-news-junho-2026.html">✓ Jun</a>
-  <button class="month-btn active">✦ Jul</button>
-  <button class="month-btn future" onclick="openMonthModal('Agosto 2026','future')">Ago</button>
+  <a class="month-btn available" href="/">✓ Jul</a>
+  <button class="month-btn active">✦ Ago</button>
   <button class="month-btn future" onclick="openMonthModal('Setembro 2026','future')">Set</button>
   <button class="month-btn future" onclick="openMonthModal('Outubro 2026','future')">Out</button>
   <button class="month-btn future" onclick="openMonthModal('Novembro 2026','future')">Nov</button>
@@ -1630,7 +1630,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
-  <div class="hero-badge">Edição de Julho 2026</div>
+  <div class="hero-badge">Edição de Agosto 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
   </h1>
@@ -1639,28 +1639,28 @@
   </p>
   <div class="hero-ctas">
     <a href="#editorial" class="btn-primary">Ler edição completa</a>
-    <a href="#saude" class="btn-ghost">Ver campanhas de saúde</a>
+    <a href="#saude" class="btn-ghost">Ver conteúdos de bem-estar</a>
   </div>
   <div class="hero-cards">
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-        <strong>6</strong>
-        <span>Conquistas celebradas</span>
+      <strong>5</strong>
+        <span>Conteúdos do mês</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
       <div class="hero-card-text">
-        <strong>Saúde</strong>
-        <span>Mais cuidado para a família</span>
+        <strong>Família</strong>
+        <span>Plano de saúde para dependentes</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="cake" style="color:#FF6B35"></i></div>
       <div class="hero-card-text">
-        <strong>10</strong>
-        <span>Aniversariantes de julho</span>
+        <strong>23</strong>
+        <span>check-ins no TotalPass</span>
       </div>
     </div>
   </div>
@@ -1675,13 +1675,13 @@
     </div>
     <div class="editorial-card fade-up">
       <p>
-        Julho foi um mês de reconhecimento e de mais cuidado com quem faz a MB Finance acontecer todos os dias.
+        Agosto é um mês de cuidado, desenvolvimento e conexão com quem faz a MB Finance acontecer todos os dias.
       </p>
       <p>
-        Celebramos as promoções e efetivações do time, os aniversariantes do mês e a novidade que permite incluir dependentes diretos e cônjuges no plano de saúde.
+        Nesta edição, reforçamos a oportunidade de incluir dependentes e cônjuges no plano de saúde até 15/09 e celebramos o início da consultoria do Instituto Cury para o desenvolvimento das nossas lideranças.
       </p>
       <p>
-        Também destacamos o ranking TotalPass e informações importantes sobre vacinação, prevenção ao HPV e câncer do colo do útero. Boa leitura!
+        Também reunimos os destaques do TotalPass, orientações sobre terapia e os conteúdos de saúde do RH. Boa leitura!
       </p>
       <div class="editorial-signature">
         <div class="editorial-avatar">MB</div>
@@ -1695,7 +1695,7 @@
 </section>
 
 <!-- PROMOÇÕES -->
-<section id="promocoes">
+<section id="promocoes" style="display:none">
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">Reconhecimento</span>
@@ -1859,16 +1859,17 @@
     <div class="fade-up">
       <span class="section-eyebrow">Benefícios</span>
       <h2 class="section-title">Plano de saúde também para quem está com você.</h2>
-      <p class="section-desc">Agora, colaboradores podem incluir dependentes diretos (filhos) e cônjuges no plano de saúde da empresa.</p>
+      <p class="section-desc">Até 15/09, colaboradores podem incluir dependentes diretos (filhos) e cônjuges no plano de saúde da empresa.</p>
     </div>
     <div class="health-plan-grid fade-up">
       <div class="health-plan-card">
         <h3>Inclusão opcional de dependentes</h3>
-        <p>A novidade nasceu da escuta do nosso time e reforça o compromisso da MB Finance com o bem-estar de cada família. A adesão é livre e o valor mensal é integralmente descontado em folha, mediante autorização do colaborador.</p>
+        <p>Essa possibilidade nasceu da escuta do nosso time e reforça o compromisso da MB Finance com o bem-estar de cada família. A adesão é livre e opcional, com custo integral da mensalidade sob responsabilidade do colaborador e desconto autorizado em folha.</p>
+        <div class="saude-alert" style="margin:18px 0"><p><strong>Prazo:</strong> solicite a inclusão até <strong>15/09</strong>. Para recém-contratados, a adesão de dependentes já pode ser feita no próprio ato de adesão ao plano.</p></div>
         <table class="health-plan-table">
           <thead><tr><th>Faixa etária</th><th>Valor mensal</th></tr></thead>
           <tbody>
-            <tr><td>00 a 18 anos</td><td>R$ 182,76</td></tr><tr><td>19 a 23 anos</td><td>R$ 228,45</td></tr><tr><td>24 a 28 anos</td><td>R$ 283,28</td></tr><tr><td>29 a 33 anos</td><td>R$ 314,43</td></tr><tr><td>34 a 38 anos</td><td>R$ 336,44</td></tr><tr><td>39 a 43 anos</td><td>R$ 390,27</td></tr><tr><td>44 a 48 anos</td><td>R$ 466,54</td></tr><tr><td>49 a 53 anos</td><td>R$ 546,78</td></tr><tr><td>54 a 58 anos</td><td>R$ 650,94</td></tr><tr><td>59 anos ou mais</td><td>R$ 1.096,51</td></tr>
+            <tr><td>00 a 18 anos</td><td>A confirmar</td></tr><tr><td>19 a 23 anos</td><td>A confirmar</td></tr><tr><td>24 a 28 anos</td><td>A confirmar</td></tr><tr><td>29 a 33 anos</td><td>A confirmar</td></tr><tr><td>34 a 38 anos</td><td>A confirmar</td></tr><tr><td>39 a 43 anos</td><td>A confirmar</td></tr><tr><td>44 a 48 anos</td><td>A confirmar</td></tr><tr><td>49 a 53 anos</td><td>A confirmar</td></tr><tr><td>54 a 58 anos</td><td>A confirmar</td></tr><tr><td>59 anos ou mais</td><td>A confirmar</td></tr>
           </tbody>
         </table>
       </div>
@@ -1894,18 +1895,18 @@
     <div class="birthday-header fade-up">
       <div>
         <span class="section-eyebrow" style="color:#c56b00">Gente que faz a MB</span>
-        <h2 class="section-title">Julho também é mês de celebrar.</h2>
+        <h2 class="section-title">Agosto também é mês de celebrar.</h2>
         <p class="section-desc">
-          Cada novo ciclo merece ser recebido com carinho. Neste mês, celebramos as pessoas que compartilham conosco sua energia, seu talento e tantos momentos importantes da nossa história.
+          Cada novo ciclo merece ser recebido com carinho. A lista oficial de aniversariantes de agosto será atualizada pelo RH nesta edição.
         </p>
       </div>
-      <div class="birthday-count" aria-label="Seis aniversariantes celebrados em julho">
+      <div class="birthday-count" aria-label="Aniversariantes de agosto">
         <span class="birthday-count-icon" aria-hidden="true"><i data-lucide="cake"></i></span>
-        <span><strong>6</strong><span>novos ciclos em julho</span></span>
+        <span><strong>RH</strong><span>lista em atualização</span></span>
       </div>
     </div>
 
-    <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de julho">
+    <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de agosto" style="display:none">
       <div class="birthday-carousel-toolbar">
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
@@ -1930,13 +1931,13 @@
     </div>
 
     <p class="birthday-message fade-up">
-      A todos os aniversariantes de julho, desejamos um novo ciclo repleto de saúde, realizações e bons encontros. Que não faltem motivos para comemorar dentro e fora da MB. Parabéns!
+      Parabéns aos aniversariantes de agosto! Assim que o RH enviar a lista final, este espaço será atualizado com os nomes e as datas de cada celebração.
     </p>
   </div>
 </section>
 
 <!-- TOTALPASS -->
-<section id="totalpass" class="july-totalpass">
+<section id="totalpass">
   <div class="container">
     <div class="totalpass-header fade-up">
       <span class="section-eyebrow totalpass-brand-tag"><i data-lucide="dumbbell"></i>TotalPass</span>
@@ -1950,12 +1951,12 @@
       <article class="totalpass-card rank-first" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place"><i data-lucide="crown"></i>1º</span>
-          <img src="/images/mb-news/julho/totalpass/maria-seixas.png" alt="Maria Seixas, primeira colocada no ranking TotalPass" width="1080" height="1350" loading="lazy" />
+          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,#0099dd,#005580);color:white;font-size:3rem;font-weight:800">AA</div>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Maria Seixas</h3>
+          <h3>Antonio Augusto</h3>
           <p>Conquistou o primeiro lugar e ocupa o topo do nosso pódio.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>19 check-ins</span>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>23 check-ins</span>
           <strong>1º lugar</strong>
         </div>
       </article>
@@ -1963,12 +1964,12 @@
       <article class="totalpass-card rank-second" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place">2º</span>
-          <img src="/images/mb-news/julho/totalpass/antonio-augusto.png" alt="Antônio Augusto, segundo colocado no ranking TotalPass" width="1080" height="1350" loading="lazy" />
+          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,#f5a623,#d97706);color:white;font-size:3rem;font-weight:800">DR</div>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Antônio Augusto</h3>
+          <h3>Douglas Reis</h3>
           <p>Garantiu a segunda posição entre os destaques do ranking.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>18 check-ins</span>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>21 check-ins</span>
           <strong>2º lugar</strong>
         </div>
       </article>
@@ -1976,17 +1977,17 @@
       <article class="totalpass-card rank-third-a" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place">3º</span>
-          <img src="/images/mb-news/julho/totalpass/luana-alves.png" alt="Luana Alves, terceira colocada no ranking TotalPass" width="1080" height="1350" loading="lazy" />
+          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,#ff6b35,#c2410c);color:white;font-size:3rem;font-weight:800">MS</div>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Luana Alves</h3>
+          <h3>Maria Seixas</h3>
           <p>Completa o pódio de dedicação deste mês.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>17 check-ins</span>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>20 check-ins</span>
           <strong>3º lugar</strong>
         </div>
       </article>
 
-      <article class="totalpass-card rank-third-b" role="listitem">
+      <article class="totalpass-card rank-third-b" role="listitem" style="display:none">
         <div class="totalpass-photo">
           <span class="totalpass-place">3º</span>
           <img src="/images/mb-news/junho/totalpass/rodrigo-gadelha.jpg" alt="Rodrigo Gadelha, terceiro colocado no ranking TotalPass" width="1080" height="1080" loading="lazy" />
@@ -2104,9 +2105,7 @@
         <div><h3>Calendário Nacional de Vacinação 2026</h3><p>Vacinação em dia é mais proteção para você, sua família e toda a nossa equipe. O calendário reúne orientações para adolescentes e jovens, adultos e idosos.</p></div>
       </div>
       <div class="vaccine-source"><i data-lucide="scale"></i>Ministério da Saúde · SUS · NR-07 / PCMSO</div>
-      <div class="vaccine-downloads">
-        <a class="vaccine-download" href="/downloads/mb-news/julho-2026/calendario-nacional-vacinacao-2026.pdf" download><span><i data-lucide="file-down"></i> Baixar Calendário Completo</span><small>PDF</small></a>
-      </div>
+      <div class="saude-alert" style="margin-top:16px"><p>O calendário completo deve ser disponibilizado pelo RH nesta edição. Consulte a versão oficial antes de atualizar sua carteira de vacinação.</p></div>
       <p style="margin-top:16px">Consulte o calendário completo para conferir as vacinas indicadas para a sua faixa etária e mantenha sua carteira atualizada.</p>
     </div>
       <div class="annual-campaigns">
@@ -2225,8 +2224,46 @@
   </div>
 </section>
 
-<!-- EVENTO -->
-<section id="evento" style="display:none">
+<!-- EVENTO AGOSTO -->
+<section id="evento">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Desenvolvimento e liderança</span>
+      <h2 class="section-title">Liderar também é cuidar.</h2>
+      <p class="section-desc">Em agosto, iniciamos uma consultoria especializada com o Instituto Cury para preparar nossas lideranças para os desafios da NR-1 e fortalecer o cuidado com a saúde mental no ambiente de trabalho.</p>
+    </div>
+    <div class="health-plan-grid fade-up" style="margin-top:32px">
+      <div class="health-plan-card">
+        <span class="june-kicker"><i data-lucide="users" style="width:15px;height:15px"></i> Instituto Cury</span>
+        <h3>Um passo importante para nossas lideranças</h3>
+        <p>O objetivo é apoiar nossos gestores na identificação, no acolhimento e no encaminhamento de situações relacionadas aos riscos psicossociais, em conformidade com a NR-1.</p>
+        <p>Investir em nossas lideranças é investir no bem-estar de toda a MB. Esta é a primeira etapa de uma jornada que estamos construindo juntos.</p>
+      </div>
+      <aside class="health-plan-steps">
+        <span class="june-kicker"><i data-lucide="heart-pulse" style="width:15px;height:15px"></i> Saúde mental</span>
+        <h3>Você sabe os benefícios da terapia?</h3>
+        <ul>
+          <li><span>Reduzir o estresse e a ansiedade do dia a dia.</span></li>
+          <li><span>Melhorar o autoconhecimento e a tomada de decisões.</span></li>
+          <li><span>Fortalecer relacionamentos e prevenir o esgotamento.</span></li>
+          <li><span>Trazer mais equilíbrio emocional para a rotina.</span></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="saude-how-box fade-up" style="margin-top:24px">
+      <h3>Como agendar pelo plano SulAmérica</h3>
+      <p>O RH deve validar o fluxo oficial antes da publicação. Como referência, o agendamento pode seguir estas etapas:</p>
+      <div class="saude-steps">
+        <div class="saude-step"><div class="saude-step-num">1</div><div class="saude-step-body"><strong>Acesse o Meu SulAmérica</strong><p>Entre no app ou site com seu login e senha de beneficiário.</p></div></div>
+        <div class="saude-step"><div class="saude-step-num">2</div><div class="saude-step-body"><strong>Encontre um profissional</strong><p>Use o Guia Médico e busque por Psicologia, filtrando cidade e modalidade.</p></div></div>
+        <div class="saude-step"><div class="saude-step-num">3</div><div class="saude-step-body"><strong>Agende e compareça</strong><p>Escolha o profissional, agende a consulta e leve sua carteirinha física ou digital.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTO LEGADO -->
+<section id="evento-legado" style="display:none">
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow">Novidade do mês</span>
@@ -2416,7 +2453,7 @@
 <!-- FAB NAV -->
 <div class="fab-nav">
   <a href="#home"     class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
-  <a href="#promocoes" class="fab-btn" title="Promoções"><i data-lucide="award"></i></a>
+  <a href="#evento" class="fab-btn" title="Evento interno"><i data-lucide="users"></i></a>
   <a href="#plano-saude" class="fab-btn" title="Plano de saúde"><i data-lucide="heart-pulse"></i></a>
   <a href="#saude" class="fab-btn" title="Vacinação"><i data-lucide="syringe"></i></a>
   <a href="#totalpass" class="fab-btn" title="Ranking TotalPass"><i data-lucide="dumbbell"></i></a>
@@ -2425,10 +2462,10 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">mb <span>news</span></div>
-  <p>Revista interna mb news · Edição #004 · Julho 2026</p>
+  <p>Revista interna mb news · Edição #005 · Agosto 2026</p>
   <div class="footer-links">
     <a href="#editorial">Foco Mensal</a>
-    <a href="#promocoes">Promoções</a>
+    <a href="#evento">Evento interno</a>
     <a href="#plano-saude">Plano de saúde</a>
     <a href="#aniversariantes">Aniversariantes</a>
     <a href="#totalpass">TotalPass</a>

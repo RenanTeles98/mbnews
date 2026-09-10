@@ -6,7 +6,7 @@
 
 ## Atualizacao 2026-09-01 - Iframe
 
-- [ ] Restringir `frame-ancestors` no `vercel.json` aos dominios de incorporacao autorizados quando forem definidos.
+- [x] Restringir `frame-ancestors` no `vercel.json` a `https://calling.mbfinance.com.br`.
 
 ## 🔴 Crítico (fazer antes do próximo push sério)
 
@@ -160,6 +160,18 @@
 - [x] Repetir na edicao de junho a secao de maio sobre canais e orientacoes do RH.
 - [x] Exibir a quantidade de check-ins nos cards do ranking TotalPass.
 - [x] Atualizar o fundo da secao TotalPass para um visual relacionado a academia e identificar a headline com uma tag.
+
+## Atualização 2026-09-10 — MB News Agosto
+
+- [x] Criar estrutura editorial da edição #005 de agosto.
+- [x] Aplicar plano de saúde para dependentes com prazo até 15/09.
+- [x] Aplicar evento Instituto Cury, NR-1 e conteúdo sobre terapia.
+- [x] Atualizar ranking TotalPass para Antonio Augusto, Douglas Reis e Maria Seixas.
+- [x] Ocultar conteúdo de promoções de julho que não faz parte do briefing de agosto.
+- [ ] Receber do RH os valores oficiais do plano por faixa etária.
+- [ ] Receber do RH a lista e datas dos aniversariantes de agosto.
+- [ ] Validar o fluxo oficial de agendamento SulAmérica.
+- [ ] Disponibilizar o calendário vacinal oficial da edição de agosto.
 
 ## Atualização 2026-08-12 — MB News Julho
 

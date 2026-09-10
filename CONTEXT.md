@@ -7,6 +7,23 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-04 - Restricao de iframe
+
+- Restrita a diretiva CSP `frame-ancestors` para `https://calling.mbfinance.com.br` no `vercel.json`.
+- O projeto deixa de aceitar incorporacao por origens nao autorizadas.
+
+Arquivos modificados nesta sessao:
+- `vercel.json`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-04.md`
+
+Estado atual: apenas `https://calling.mbfinance.com.br` pode incorporar o projeto por iframe apos o proximo deploy.
+
+Proximo passo recomendado: publicar e validar a incorporacao na plataforma Calling.
+
 ### Sessao 2026-09-01 - Liberacao para iframe
 
 - Removido o cabecalho global `X-Frame-Options: SAMEORIGIN` do `vercel.json`.
@@ -250,6 +267,17 @@ Próximo passo recomendado: validar visualmente a seção da promoção em produ
 
 
 ---
+
+## Sessão 2026-09-10 — MB News Agosto
+
+- Atualizada a edição pública em `index.html` para a edição #005 de agosto de 2026.
+- Aplicados os conteúdos de plano de saúde, Instituto Cury/NR-1, terapia, ranking TotalPass e RH & Bem-estar.
+- Promoções de julho foram ocultadas da navegação; a lista de aniversariantes ficou sinalizada como pendência do RH.
+- Valores do plano e fluxo SulAmérica permanecem marcados para validação antes da publicação final.
+
+Estado atual: estrutura de agosto aplicada, aguardando dados oficiais do RH para valores, aniversariantes, calendário vacinal e validação do fluxo SulAmérica.
+
+Próximo passo recomendado: receber os dados pendentes, substituir os avisos e fazer validação visual/build antes do deploy.
 
 ## Arquitetura resumida
 

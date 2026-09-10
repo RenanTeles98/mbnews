@@ -31,6 +31,23 @@ Manter a home em HTML estÃ¡tico (`public/mb-finance-completo.html`) e adotar a
 
 ---
 
+## ADR-036: Preparar a edição de agosto sem inventar dados do RH
+
+**Data:** 2026-09-10
+**Status:** Implementado
+
+### Decisão
+
+Aplicar somente os dados fechados no briefing de agosto. Valores do plano, aniversariantes, fluxo SulAmérica e calendário vacinal permanecem como pendências explícitas até validação do RH.
+
+### Motivo
+
+O arquivo de briefing identifica esses trechos como placeholders. Publicar valores, nomes ou orientações não confirmados poderia gerar comunicação interna incorreta.
+
+### Consequências
+
+A estrutura editorial já está pronta em `index.html`, mas a publicação final depende do retorno do RH.
+
 ## ADR-002: Clean Architecture no JavaScript do HTML legado
 
 **Data:** 2026-04-14
@@ -193,15 +210,15 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 ## ADR-035: Permitir incorporacao do projeto em iframe
 
 **Data:** 2026-09-01
-**Status:** Implementado
+**Status:** Atualizado em 2026-09-04
 
 ### Decisao
 
-Remover `X-Frame-Options: SAMEORIGIN` e incluir `frame-ancestors *` na Content Security Policy global da Vercel.
+Remover `X-Frame-Options: SAMEORIGIN` e incluir `frame-ancestors https://calling.mbfinance.com.br` na Content Security Policy global da Vercel.
 
 ### Motivo
 
-O cabecalho `X-Frame-Options` bloqueava qualquer incorporacao por dominio diferente do proprio site. Como nenhum dominio de destino foi informado, a liberacao foi configurada para qualquer origem. Quando o dominio da plataforma estiver definido, `frame-ancestors *` deve ser trocado pela lista explicita de origens autorizadas para reduzir o risco de clickjacking.
+O cabecalho `X-Frame-Options` bloqueava qualquer incorporacao por dominio diferente do proprio site. A origem autorizada foi definida como `https://calling.mbfinance.com.br`, eliminando a liberacao ampla e reduzindo o risco de clickjacking.
 
 ---
 

@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-09-04
+
+### Modificado
+- `vercel.json`: a incorporacao por iframe foi restrita a `https://calling.mbfinance.com.br`.
+
 ## 2026-09-01
 
 ### Modificado
@@ -177,6 +182,12 @@ Principais marcos conhecidos:
 - Fundo tematico de academia e tag TotalPass adicionados a secao do ranking.
 
 ---
+
+## 2026-09-10 — MB News Agosto
+
+- Preparada a edição #005 de agosto em `index.html`.
+- Incluídos os conteúdos de plano de saúde, Instituto Cury/NR-1, terapia, TotalPass e RH & Bem-estar.
+- Ocultadas promoções de julho e sinalizados dados pendentes de validação do RH.
 
 ## 2026-08-12 — MB News Julho
 
