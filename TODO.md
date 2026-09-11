@@ -161,6 +161,12 @@
 - [x] Exibir a quantidade de check-ins nos cards do ranking TotalPass.
 - [x] Atualizar o fundo da secao TotalPass para um visual relacionado a academia e identificar a headline com uma tag.
 
+## Atualização 2026-09-11 — Correção da navegação histórica da MB News
+
+- [x] Restaurar a edição completa de julho.
+- [x] Corrigir os links de abril, maio, junho e julho para as edições disponíveis.
+- [x] Remover o conflito que abria o modal de agosto como se a edição ainda fosse futura.
+
 ## Atualização 2026-09-11 — Ajuste do plano de saúde em agosto
 
 - [x] Manter tabela, copy e passo a passo do Bot Ben iguais aos da edição anterior.

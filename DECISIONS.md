@@ -31,6 +31,23 @@ Manter a home em HTML estÃ¡tico (`public/mb-finance-completo.html`) e adotar a
 
 ---
 
+## ADR-039: Restaurar a edição completa de julho e corrigir o fluxo mensal
+
+**Data:** 2026-09-11
+**Status:** Implementado
+
+### Decisão
+
+Usar a versão completa de julho anterior à preparação de agosto como conteúdo da página histórica de julho. Atualizar todos os menus mensais para links diretos entre as edições já disponíveis.
+
+### Motivo
+
+A página resumida de julho não preservava a edição editorial original, e os menus de abril, maio, junho e julho ainda tratavam meses já publicados como futuros.
+
+### Consequências
+
+As edições históricas permanecem independentes e navegáveis, enquanto a raiz continua representando agosto.
+
 ## ADR-038: Manter o bloco de plano de saúde igual ao mês anterior
 
 **Data:** 2026-09-11

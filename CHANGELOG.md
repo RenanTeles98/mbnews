@@ -183,6 +183,12 @@ Principais marcos conhecidos:
 
 ---
 
+## 2026-09-11 — Correção da navegação histórica da MB News
+
+- Restaurada a edição completa de julho.
+- Corrigidos os links mensais de abril, maio, junho e julho.
+- Agosto voltou a ser acessível pela raiz sem ser tratado como mês futuro nas edições anteriores.
+
 ## 2026-09-11 — Ajuste do plano de saúde em agosto
 
 - Mantidos copy, tabela e passo a passo do Bot Ben conforme a edição anterior.

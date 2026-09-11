@@ -295,6 +295,14 @@ Estado atual: julho está disponível em `/pages/mb-news-julho-2026.html`.
 
 Estado atual: bloco de plano de saúde alinhado ao mês anterior, com a regra de prazo atualizada.
 
+## Sessão 2026-09-11 — Correção da navegação das edições históricas
+
+- Restaurada a edição completa de julho em `public/pages/mb-news-julho-2026.html`, usando a versão editorial anterior à edição de agosto.
+- Corrigidos os links mensais de abril, maio, junho e julho para que as edições disponíveis sejam acessíveis sem abrir modais de mês futuro.
+- Agosto permanece na raiz (`/`) e julho passou a apontar para sua página histórica própria.
+
+Estado atual: a navegação mensal forma o fluxo abril → maio → junho → julho → agosto, e as edições de julho e agosto têm conteúdos distintos e completos.
+
 ## Arquitetura resumida
 
 - **Frontend principal:** HTML estático (`public/mb-finance-completo.html`) com CSS/JS externos em `public/assets/`
