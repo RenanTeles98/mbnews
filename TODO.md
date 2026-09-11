@@ -167,6 +167,7 @@
 - [x] Manter os dados do ranking de agosto sem reutilizar fotos de outros colaboradores.
 - [x] Usar as fotos existentes de Antonio Augusto e Maria Seixas no pódio de agosto.
 - [x] Centralizar o grid do pódio com o cabeçalho da seção.
+- [x] Adicionar a foto oficial enviada de Douglas Reis ao pódio de agosto.
 
 ## Atualização 2026-09-11 — Correção da navegação histórica da MB News
 

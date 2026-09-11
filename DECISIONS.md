@@ -46,7 +46,7 @@ O layout de julho apresenta os cards com uma hierarquia visual mais clara e foi 
 
 ### Consequências
 
-Os dados permanecem específicos de agosto. As fotos existentes de Antonio Augusto e Maria Seixas foram reutilizadas; Douglas Reis permanece com iniciais porque não há foto específica disponível.
+Os dados permanecem específicos de agosto. As fotos existentes de Antonio Augusto e Maria Seixas foram reutilizadas, e o retrato enviado pelo usuário foi adicionado ao card de Douglas Reis.
 
 ## ADR-039: Restaurar a edição completa de julho e corrigir o fluxo mensal
 

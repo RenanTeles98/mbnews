@@ -310,6 +310,7 @@ Estado atual: a navegação mensal forma o fluxo abril → maio → junho → ju
 - Preservados os dados de agosto: Antonio Augusto (23), Douglas Reis (21) e Maria Seixas (20).
 - Corrigido o alinhamento do pódio para três colunas reais, eliminando o espaço vazio do quarto card.
 - Aplicadas as fotos existentes de Antonio Augusto e Maria Seixas no ranking de agosto.
+- Adicionada a foto enviada pelo usuário de Douglas Reis em `public/images/mb-news/agosto/totalpass/douglas-reis.jpg`.
 
 Estado atual: a composição dos cards do TotalPass de agosto segue o mesmo padrão visual da edição de julho.
 
