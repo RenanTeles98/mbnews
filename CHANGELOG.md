@@ -183,6 +183,11 @@ Principais marcos conhecidos:
 
 ---
 
+## 2026-09-11 — Ajuste do plano de saúde em agosto
+
+- Mantidos copy, tabela e passo a passo do Bot Ben conforme a edição anterior.
+- Atualizado o prazo de inclusão para 15/09 e informada a nova janela de janeiro de 2027.
+
 ## 2026-09-10 — Correção do acesso à edição de julho
 
 - Criada a página histórica `public/pages/mb-news-julho-2026.html`.

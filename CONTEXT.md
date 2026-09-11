@@ -287,6 +287,14 @@ Próximo passo recomendado: receber os dados pendentes, substituir os avisos e f
 
 Estado atual: julho está disponível em `/pages/mb-news-julho-2026.html`.
 
+## Sessão 2026-09-11 — Ajuste do bloco de plano de saúde
+
+- Mantido no conteúdo de agosto o texto, a tabela de valores e o passo a passo do Bot Ben da edição anterior.
+- Atualizado somente o aviso de prazo: solicitações até 15/09 e nova janela em janeiro de 2027.
+- Restaurados os valores oficiais das faixas etárias já utilizados na edição de julho.
+
+Estado atual: bloco de plano de saúde alinhado ao mês anterior, com a regra de prazo atualizada.
+
 ## Arquitetura resumida
 
 - **Frontend principal:** HTML estático (`public/mb-finance-completo.html`) com CSS/JS externos em `public/assets/`

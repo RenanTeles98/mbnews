@@ -31,6 +31,19 @@ Manter a home em HTML estÃ¡tico (`public/mb-finance-completo.html`) e adotar a
 
 ---
 
+## ADR-038: Manter o bloco de plano de saúde igual ao mês anterior
+
+**Data:** 2026-09-11
+**Status:** Implementado
+
+### Decisão
+
+Reutilizar a redação, os valores por faixa etária e o fluxo do Bot Ben da edição anterior. Alterar apenas a comunicação do prazo para 15/09 e informar a nova janela de janeiro de 2027.
+
+### Motivo
+
+O usuário solicitou continuidade editorial e somente uma atualização na regra de prazo.
+
 ## ADR-037: Criar rota histórica própria para julho
 
 **Data:** 2026-09-10
