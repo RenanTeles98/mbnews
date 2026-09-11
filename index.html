@@ -568,7 +568,12 @@
       font-size: .84rem; line-height: 1.55; text-align: center;
     }
     .totalpass-tie-note .lucide { width: 20px; height: 20px; flex: 0 0 20px; color: #f4b183; }
-    .july-totalpass .totalpass-podium { grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-areas:'second first third-a'; }
+    .july-totalpass .totalpass-podium {
+      width: 100%; max-width: 1100px; margin-inline: auto;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-areas:'second first third-a';
+      justify-content: center;
+    }
     .july-totalpass .totalpass-card { min-height:0; display:block; }
     .july-totalpass .rank-third-b { display:none; }
     .preview-grid {
@@ -1937,7 +1942,7 @@
 </section>
 
 <!-- TOTALPASS -->
-<section id="totalpass">
+<section id="totalpass" class="july-totalpass">
   <div class="container">
     <div class="totalpass-header fade-up">
       <span class="section-eyebrow totalpass-brand-tag"><i data-lucide="dumbbell"></i>TotalPass</span>
@@ -1951,7 +1956,7 @@
       <article class="totalpass-card rank-first" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place"><i data-lucide="crown"></i>1º</span>
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,#0099dd,#005580);color:white;font-size:3rem;font-weight:800">AA</div>
+          <img src="/images/mb-news/julho/totalpass/antonio-augusto.png" alt="Antonio Augusto, primeiro colocado no ranking TotalPass" width="1080" height="1350" loading="lazy" />
         </div>
         <div class="totalpass-card-copy">
           <h3>Antonio Augusto</h3>
@@ -1977,7 +1982,7 @@
       <article class="totalpass-card rank-third-a" role="listitem">
         <div class="totalpass-photo">
           <span class="totalpass-place">3º</span>
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,#ff6b35,#c2410c);color:white;font-size:3rem;font-weight:800">MS</div>
+          <img src="/images/mb-news/julho/totalpass/maria-seixas.png" alt="Maria Seixas, terceira colocada no ranking TotalPass" width="1080" height="1350" loading="lazy" />
         </div>
         <div class="totalpass-card-copy">
           <h3>Maria Seixas</h3>

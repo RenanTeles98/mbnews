@@ -183,6 +183,12 @@ Principais marcos conhecidos:
 
 ---
 
+## 2026-09-11 — Padrão visual do TotalPass de agosto
+
+- Aplicado à seção de agosto o mesmo layout de pódio usado em julho.
+- Mantida a hierarquia visual dos cards sem reutilizar retratos de outros meses.
+- Corrigido o alinhamento do pódio e aplicadas as fotos existentes de Antonio Augusto e Maria Seixas.
+
 ## 2026-09-11 — Correção da navegação histórica da MB News
 
 - Restaurada a edição completa de julho.

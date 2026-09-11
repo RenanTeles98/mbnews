@@ -31,6 +31,23 @@ Manter a home em HTML estÃ¡tico (`public/mb-finance-completo.html`) e adotar a
 
 ---
 
+## ADR-040: Reutilizar o layout de pódio do TotalPass de julho em agosto
+
+**Data:** 2026-09-11
+**Status:** Implementado
+
+### Decisão
+
+Aplicar a classe e a composição visual de pódio da edição de julho à seção de agosto, mantendo o campeão central elevado e os demais cards nas laterais.
+
+### Motivo
+
+O layout de julho apresenta os cards com uma hierarquia visual mais clara e foi solicitado como padrão para agosto.
+
+### Consequências
+
+Os dados permanecem específicos de agosto. As fotos existentes de Antonio Augusto e Maria Seixas foram reutilizadas; Douglas Reis permanece com iniciais porque não há foto específica disponível.
+
 ## ADR-039: Restaurar a edição completa de julho e corrigir o fluxo mensal
 
 **Data:** 2026-09-11

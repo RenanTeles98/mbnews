@@ -161,6 +161,13 @@
 - [x] Exibir a quantidade de check-ins nos cards do ranking TotalPass.
 - [x] Atualizar o fundo da secao TotalPass para um visual relacionado a academia e identificar a headline com uma tag.
 
+## Atualização 2026-09-11 — Padrão visual do TotalPass de agosto
+
+- [x] Aplicar à edição de agosto o mesmo pódio visual da edição de julho.
+- [x] Manter os dados do ranking de agosto sem reutilizar fotos de outros colaboradores.
+- [x] Usar as fotos existentes de Antonio Augusto e Maria Seixas no pódio de agosto.
+- [x] Centralizar o grid do pódio com o cabeçalho da seção.
+
 ## Atualização 2026-09-11 — Correção da navegação histórica da MB News
 
 - [x] Restaurar a edição completa de julho.

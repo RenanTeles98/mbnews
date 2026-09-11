@@ -303,6 +303,16 @@ Estado atual: bloco de plano de saúde alinhado ao mês anterior, com a regra de
 
 Estado atual: a navegação mensal forma o fluxo abril → maio → junho → julho → agosto, e as edições de julho e agosto têm conteúdos distintos e completos.
 
+## Sessão 2026-09-11 — Padrão visual do TotalPass de agosto
+
+- Aplicado à seção de agosto o mesmo layout de pódio usado em julho.
+- Mantida a ordem visual: segundo colocado à esquerda, campeão central elevado e terceiro colocado à direita.
+- Preservados os dados de agosto: Antonio Augusto (23), Douglas Reis (21) e Maria Seixas (20).
+- Corrigido o alinhamento do pódio para três colunas reais, eliminando o espaço vazio do quarto card.
+- Aplicadas as fotos existentes de Antonio Augusto e Maria Seixas no ranking de agosto.
+
+Estado atual: a composição dos cards do TotalPass de agosto segue o mesmo padrão visual da edição de julho.
+
 ## Arquitetura resumida
 
 - **Frontend principal:** HTML estático (`public/mb-finance-completo.html`) com CSS/JS externos em `public/assets/`
