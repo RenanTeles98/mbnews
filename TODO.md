@@ -11,7 +11,8 @@
 ## Atualizacao 2026-09-16 - Origens de iframe
 
 - [x] Autorizar `calling.mbfinance.com.br`, `localhost:8090`, `localhost:8091` e `187.77.253.55:8100` em `frame-ancestors`.
-- [ ] Publicar e validar a incorporacao a partir das quatro origens autorizadas.
+- [x] Publicar e validar o cabecalho CSP com as quatro origens autorizadas em producao.
+- [ ] Validar a incorporacao efetiva a partir de cada ambiente consumidor.
 
 ## 🔴 Crítico (fazer antes do próximo push sério)
 
