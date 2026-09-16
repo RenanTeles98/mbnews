@@ -7,6 +7,15 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-16 - Ampliacao de origens autorizadas para iframe
+
+- Atualizada a diretiva CSP `frame-ancestors` no `vercel.json` para aceitar `https://calling.mbfinance.com.br`, `http://localhost:8090`, `http://localhost:8091` e `http://187.77.253.55:8100`.
+- Mantido `frame-src 'none'`, que bloqueia iframes carregados pelo proprio projeto.
+
+Estado atual: a configuracao aguarda deploy para que as quatro origens possam incorporar o projeto por iframe.
+
+Proximo passo recomendado: publicar e validar a incorporacao a partir de cada origem autorizada.
+
 ### Sessao 2026-09-04 - Restricao de iframe
 
 - Restrita a diretiva CSP `frame-ancestors` para `https://calling.mbfinance.com.br` no `vercel.json`.

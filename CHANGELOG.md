@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-09-16 - Origens adicionais para iframe
+
+### Modificado
+- `vercel.json`: adicionadas as origens local e de IP solicitadas a diretiva CSP `frame-ancestors`, mantendo o dominio Calling autorizado.
+
 ## 2026-09-04
 
 ### Modificado

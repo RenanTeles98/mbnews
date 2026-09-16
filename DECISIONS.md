@@ -267,6 +267,25 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 
 ---
 
+## ADR-041: Autorizar origens adicionais para incorporacao por iframe
+
+**Data:** 2026-09-16
+**Status:** Implementado
+
+### Decisao
+
+Expandir `frame-ancestors` na Content Security Policy global da Vercel para `https://calling.mbfinance.com.br`, `http://localhost:8090`, `http://localhost:8091` e `http://187.77.253.55:8100`.
+
+### Motivo
+
+Essas sao as origens solicitadas para incorporar o projeto por iframe. A lista explicita mantem a protecao contra incorporacao por origens nao autorizadas.
+
+### Alternativas consideradas
+
+Manter somente o dominio Calling ou usar `frame-ancestors *`; ambas foram descartadas porque nao atendem ao conjunto solicitado ou ampliam a permissao alem do necessario.
+
+---
+
 ## ADR-035: Permitir incorporacao do projeto em iframe
 
 **Data:** 2026-09-01
