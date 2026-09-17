@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-09-16 - Edicoes de agosto e setembro da MB News
+
+### Adicionado
+- `index.html`: destaques dos setores e entrevista completa de Thays Florencio na edicao de agosto.
+- `public/pages/mb-news-setembro-2026.html`: nova edicao navegavel de setembro, com indicacao de filme e entrevista de Amanda Vieira.
+- `public/images/mb-news/setembro/um-senhor-estagiario.png`: cartaz extraido do material editorial recebido.
+
+### Modificado
+- Edicoes historicas de abril a julho: setembro passou a aparecer como edicao disponivel no menu mensal.
+
 ## 2026-09-16 - Origens adicionais para iframe
 
 ### Modificado

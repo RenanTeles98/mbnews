@@ -14,6 +14,14 @@
 - [x] Publicar e validar o cabecalho CSP com as quatro origens autorizadas em producao.
 - [ ] Validar a incorporacao efetiva a partir de cada ambiente consumidor.
 
+## Atualizacao 2026-09-16 - Edicoes de agosto e setembro
+
+- [x] Acrescentar os destaques dos setores e a entrevista de Thays na edicao de agosto.
+- [x] Criar a edicao de setembro com a indicacao de filme e a apresentacao da entrevista de Amanda.
+- [x] Extrair o cartaz de `Um Senhor Estagiario` para `public/images/mb-news/setembro/`.
+- [x] Atualizar a navegacao das edicoes historicas para setembro.
+- [ ] Receber e publicar as respostas completas da entrevista de Amanda, caso entrem na proxima entrega editorial.
+
 ## 🔴 Crítico (fazer antes do próximo push sério)
 
 - [x] **Filtrar posts agendados no Blog (Next.js)** - Implementado no `lib/blog-store.ts` e API.

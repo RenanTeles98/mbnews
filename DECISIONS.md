@@ -267,6 +267,27 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 
 ---
 
+## ADR-042: Separar as edicoes de agosto e setembro da MB News
+
+**Data:** 2026-09-16
+**Status:** Aceita
+
+### Decisao
+
+Manter agosto na pagina principal existente e criar uma rota historica propria para setembro, distribuindo o material conforme a indicacao explicita de mes no documento recebido.
+
+### Motivo
+
+A abordagem preserva a navegacao e o conteudo ja publicado de agosto, permite acessar as duas edicoes ao mesmo tempo e evita criar respostas para a entrevista de Amanda que nao foram fornecidas.
+
+### Alternativas Consideradas
+
+- **Misturar os dois meses na mesma pagina:** prejudicaria a leitura editorial e a navegacao por edicao.
+- **Preencher a entrevista de Amanda por inferencia:** inventaria informacoes pessoais e profissionais.
+- **Criar rota historica para setembro (escolhida):** mantem cada conteudo no mes definido e usa somente o material disponivel.
+
+---
+
 ## ADR-041: Autorizar origens adicionais para incorporacao por iframe
 
 **Data:** 2026-09-16

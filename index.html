@@ -230,7 +230,7 @@
     }
 
     /* ─── SECTION COMMON ──────────────────────────────── */
-    section { padding: 80px 24px; }
+    section { padding: 80px 24px; scroll-margin-top: 120px; }
     .container { max-width: 1100px; margin: 0 auto; }
     .section-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
@@ -1588,6 +1588,8 @@
   <a href="#" class="nav-logo">mb <span>news</span></a>
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
+    <li><a href="#destaques">Destaques</a></li>
+    <li><a href="#entrevista">Entrevista</a></li>
     <li><a href="#evento">Evento interno</a></li>
     <li><a href="#plano-saude">Plano de saúde</a></li>
     <li><a href="#aniversariantes">Aniversariantes</a></li>
@@ -1626,7 +1628,7 @@
   <a class="month-btn available" href="/pages/mb-news-junho-2026.html">✓ Jun</a>
   <a class="month-btn available" href="/pages/mb-news-julho-2026.html">✓ Jul</a>
   <button class="month-btn active">✦ Ago</button>
-  <button class="month-btn future" onclick="openMonthModal('Setembro 2026','future')">Set</button>
+  <a class="month-btn available" href="/pages/mb-news-setembro-2026.html">✓ Set</a>
   <button class="month-btn future" onclick="openMonthModal('Outubro 2026','future')">Out</button>
   <button class="month-btn future" onclick="openMonthModal('Novembro 2026','future')">Nov</button>
   <button class="month-btn future" onclick="openMonthModal('Dezembro 2026','future')">Dez</button>
@@ -1694,6 +1696,93 @@
           <strong>Equipe MB News</strong>
           <span>Comunicação Interna · mb news</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUES DOS SETORES -->
+<section id="destaques">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Destaques dos setores</span>
+      <h2 class="section-title">Quem fez a diferença em agosto.</h2>
+      <p class="section-desc">Confira os nomes que se destacaram em cada setor e fizeram a diferença nos resultados deste mês.</p>
+    </div>
+
+    <div class="july-promotions fade-up">
+      <article class="july-promotion-card">
+        <i data-lucide="door-open" aria-hidden="true"></i>
+        <h3>Abertura</h3>
+        <p>Thays Florencio</p>
+      </article>
+      <article class="july-promotion-card">
+        <i data-lucide="messages-square" aria-hidden="true"></i>
+        <h3>Relacionamento qualificação</h3>
+        <p>Matheus Oliveira</p>
+      </article>
+      <article class="july-promotion-card">
+        <i data-lucide="credit-card" aria-hidden="true"></i>
+        <h3>Relacionamento venda de máquina</h3>
+        <p>Igor Lira</p>
+      </article>
+      <article class="july-promotion-card">
+        <i data-lucide="wallet-cards" aria-hidden="true"></i>
+        <h3>Mercado Pago</h3>
+        <p>Leticia Perpetua</p>
+      </article>
+      <article class="july-promotion-card">
+        <i data-lucide="landmark" aria-hidden="true"></i>
+        <h3>PagBank</h3>
+        <p>Gabriel Figueiredo</p>
+      </article>
+      <article class="july-promotion-card">
+        <i data-lucide="building-2" aria-hidden="true"></i>
+        <h3>Santander</h3>
+        <p>Kerlen Oliveira</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREVISTA DE AGOSTO -->
+<section id="entrevista">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-eyebrow">Entrevista · Agosto</span>
+      <h2 class="section-title">O que será que existe por trás de um grande resultado?</h2>
+      <p class="section-desc">Mais do que números, bons resultados são construídos diariamente, com abordagem, conhecimento, persistência e, principalmente, disposição para aprender. Por isso, fomos conversar com quem mais se destacou na abertura de contas no escritório para descobrir quais estratégias fazem parte da sua rotina.</p>
+    </div>
+
+    <div class="promotion-list fade-up">
+      <div class="promotion-person">
+        <strong>Thays Florencio</strong>
+        <span>Entrevista de agosto</span>
+        <p><strong>1. Há quanto tempo você está na empresa?</strong></p>
+        <p>Estou na empresa há 2 anos e 5 meses. Entrei como estagiária e, após quase 1 ano, tive a oportunidade de ser efetivada. Desde então, venho buscando evoluir cada vez mais profissionalmente e conquistar novos resultados.</p>
+      </div>
+      <div class="promotion-person">
+        <p><strong>2. O que você acredita que faz diferença para ter um bom resultado em abertura de contas?</strong></p>
+        <p>Acredito que três coisas fazem muita diferença: dedicação, foco e paciência.</p>
+        <p>Dedicação, porque mesmo tendo uma rotina e scripts, o mercado está sempre evoluindo, e precisamos evoluir junto. Busco estudar constantemente para conhecer melhor o C6 Bank, os produtos e também aprimorar minhas técnicas comerciais e a forma de lidar com cada cliente. Foco, porque precisamos ter constância e resiliência para buscar a meta que queremos alcançar, sempre dando o nosso melhor. E paciência, porque existem dias bons e dias muito desafiadores. Não podemos deixar um dia ruim definir nossa semana ou nosso mês. Precisamos entender o que não funcionou, respirar e continuar.</p>
+      </div>
+      <div class="promotion-person">
+        <p><strong>3. Como você costuma iniciar a conversa com o cliente para identificar uma oportunidade?</strong></p>
+        <p>Procuro sempre começar me apresentando de forma clara e com entusiasmo, porque acredito que a nossa energia também transmite interesse ao cliente. Gosto de fazer perguntas para entender o momento da empresa e identificar o que faria aquele cliente considerar abrir uma conta no C6 Bank. A partir disso, consigo direcionar melhor a conversa e apresentar uma solução que realmente faça sentido para ele. Quando o cliente já possui conta em outro banco, também procuro mostrar que o C6 pode ser uma oportunidade complementar, sem precisar substituir imediatamente o relacionamento que ele já possui.</p>
+      </div>
+      <div class="promotion-person">
+        <p><strong>4. Qual é a principal objeção que você encontra e como costuma contorná-la?</strong></p>
+        <p>Uma das principais objeções é a busca por crédito pré-aprovado. Nesses casos, procuro explicar que trabalhamos com análises personalizadas para empresas e que, mais do que buscar apenas crédito, o objetivo é encontrar produtos e benefícios que façam sentido para o momento e para as necessidades daquela empresa. Outra objeção comum é: “Não trabalho com banco digital.” Nesse caso, explico que o C6 Bank é um banco digital regulado pelo Banco Central e que oferece atendimento personalizado por WhatsApp e ligação. Procuro mostrar que o digital pode trazer praticidade sem deixar de lado o relacionamento e o suporte ao cliente.</p>
+      </div>
+      <div class="promotion-person">
+        <p><strong>5. Existe alguma técnica ou hábito que você considera seu “segredo” para converter mais?</strong></p>
+        <p>Acredito muito em trabalhar a mente. Procuro não deixar um dia ruim ou um resultado abaixo do esperado afetar o restante da minha semana. Também tento sempre buscar uma rota nova. Se percebo que determinada abordagem não está funcionando, paro, analiso onde posso estar errando e mudo a estratégia. Para mim, é muito importante não ter medo de ajustar o atendimento e aprender com o que não deu certo.</p>
+      </div>
+      <div class="promotion-person">
+        <p><strong>6. Quais 3 dicas você daria para quem quer melhorar suas aberturas de conta?</strong></p>
+        <p>1. Estude técnicas comerciais: mesmo que seja uma vez por semana, busque aprender algo novo e colocar em prática.</p>
+        <p>2. Conheça os produtos do C6 Bank: quanto mais segurança você tiver sobre o que está oferecendo, melhor conseguirá identificar oportunidades e transmitir confiança ao cliente.</p>
+        <p>3. Tenha paciência e resiliência: nem todos os dias serão bons, mas um dia difícil não define o seu resultado. Continue, analise o que pode melhorar e tente novamente.</p>
       </div>
     </div>
   </div>

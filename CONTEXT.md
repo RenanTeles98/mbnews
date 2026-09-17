@@ -7,6 +7,32 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-16 - Edicoes de agosto e setembro da MB News
+
+- Acrescentados na edicao de agosto (`index.html`) os destaques dos seis setores enviados no material e a entrevista completa de Thays Florencio.
+- Criada a edicao de setembro em `public/pages/mb-news-setembro-2026.html`, com a indicacao de filme sobre `Um Senhor Estagiario` e a apresentacao da entrevista da supervisora Amanda Vieira.
+- Publicado o cartaz fornecido no material em `public/images/mb-news/setembro/um-senhor-estagiario.png`.
+- Atualizada a navegacao das edicoes historicas para apontar para setembro quando a edicao estiver disponivel.
+- A entrevista de Amanda foi mantida somente com a introducao recebida; respostas nao foram inventadas.
+
+Arquivos modificados nesta sessao:
+- `index.html`
+- `public/pages/mb-news-abril-2026.html`
+- `public/pages/mb-news-maio-2026.html`
+- `public/pages/mb-news-junho-2026.html`
+- `public/pages/mb-news-julho-2026.html`
+- `public/pages/mb-news-setembro-2026.html`
+- `public/images/mb-news/setembro/um-senhor-estagiario.png`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-16.md`
+
+Estado atual: as edicoes de agosto e setembro estao navegaveis e foram validadas em desktop e mobile com Playwright.
+
+Proximo passo recomendado: revisar o texto editorial com o RH e completar a entrevista de Amanda quando as respostas estiverem disponiveis.
+
 ### Sessao 2026-09-16 - Ampliacao de origens autorizadas para iframe
 
 - Atualizada a diretiva CSP `frame-ancestors` no `vercel.json` para aceitar `https://calling.mbfinance.com.br`, `http://localhost:8090`, `http://localhost:8091` e `http://187.77.253.55:8100`.
