@@ -152,6 +152,75 @@
   color: var(--september-yellow-deep);
 }
 
+.september-theme #entrevista.interview-section {
+  background: linear-gradient(180deg, #fffdf7 0%, #fff5d5 100%);
+}
+
+.september-theme #entrevista .interview-profile {
+  border-color: rgba(245, 183, 47, .46);
+  background: var(--september-ink);
+  box-shadow: 0 22px 56px rgba(173, 112, 0, .16);
+}
+
+.september-theme #entrevista .interview-profile__edition {
+  border-color: rgba(255, 229, 133, .58);
+  background: rgba(127, 87, 0, .82);
+  color: #fff8d6;
+}
+
+.september-theme #entrevista .interview-profile__label {
+  color: #ffd565;
+}
+
+.september-theme #entrevista .interview-callout--yellow {
+  background: linear-gradient(135deg, #f5b72f 0%, #d88900 100%);
+  color: #332100;
+  box-shadow: 0 18px 42px rgba(173, 112, 0, .16);
+}
+
+.september-theme #entrevista .interview-callout--yellow::after {
+  border-color: rgba(0, 57, 86, .25);
+}
+
+.september-theme #entrevista .interview-callout--yellow .interview-callout__label,
+.september-theme #entrevista .interview-callout--yellow blockquote {
+  color: var(--september-ink);
+}
+
+.september-theme #entrevista .interview-question {
+  border-color: #efd58f;
+  box-shadow: 0 8px 24px rgba(173, 112, 0, .06);
+}
+
+.september-theme #entrevista .interview-question__number {
+  background: var(--september-yellow-soft);
+  color: var(--september-yellow-deep);
+}
+
+.september-theme #entrevista .interview-question__indicator {
+  border-color: #e1c16e;
+  color: var(--september-yellow-deep);
+}
+
+.september-theme #entrevista .interview-question__answer {
+  border-left-color: var(--september-yellow);
+  background: #fffaf0;
+}
+
+.september-theme #entrevista .interview-question.is-open {
+  border-color: #e0bb58;
+}
+
+.september-theme #entrevista .interview-question.is-open .interview-question__trigger {
+  background: #fffaf0;
+}
+
+.september-theme #entrevista .interview-question.is-open .interview-question__indicator {
+  border-color: var(--september-yellow-deep);
+  background: var(--september-yellow-deep);
+  color: #fff8d6;
+}
+
 .september-theme .june-kicker {
   background: var(--september-yellow-soft);
   color: var(--september-yellow-deep);
@@ -165,6 +234,13 @@
 .september-theme .fab-btn:hover {
   background: #8f6300;
   border-color: #f5b72f;
+}
+
+.september-theme .fab-tooltip {
+  border-color: rgba(245, 183, 47, .42);
+  background: #fffdf7;
+  color: var(--september-ink);
+  box-shadow: 0 8px 22px rgba(173, 112, 0, .16);
 }
 
 .september-theme #promocoes {

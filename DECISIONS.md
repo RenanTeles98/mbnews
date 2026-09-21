@@ -1124,3 +1124,22 @@ O usuário solicitou retirar o módulo por enquanto. Ocultar a seção mantém o
 - Apagar todo o conteúdo: descartado porque dificultaria a reativação.
 - Manter o link apontando para uma seção oculta: descartado porque prejudicaria a navegação.
 - Ocultar também agosto: descartado porque o pedido foi específico para setembro.
+
+## ADR-052: Entrevista de Amanda com leitura guiada
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Usar a estrutura visual da entrevista de agosto na edição de setembro, com foto da Amanda, uma frase-chave e oito perguntas em acordeão. As respostas longas foram resumidas editorialmente sem inventar informações.
+
+### Motivo
+
+A seção anterior apresentava apenas um bloco curto e não valorizava o material enviado. A leitura guiada melhora a escaneabilidade e permite que cada pessoa escolha quais respostas aprofundar, enquanto o perfil visual aproxima a entrevista do público.
+
+### Alternativas consideradas
+
+- Manter um bloco corrido: descartado porque criaria uma leitura densa e pouco convidativa.
+- Usar a foto de outra colaboradora: descartado para evitar associação incorreta.
+- Deixar todas as respostas abertas: descartado porque aumentaria muito a altura inicial da seção.

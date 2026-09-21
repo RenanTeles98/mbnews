@@ -4,6 +4,11 @@
 
 ## 2026-09-21 - Conteúdos de setembro
 
+### Entrevista de Amanda
+- Substituído o bloco simples da entrevista por uma experiência guiada com perfil, foto, frase-chave e acordeão de perguntas.
+- Resumidas as oito respostas da Amanda preservando trajetória, liderança, vida pessoal e conselho final.
+- Aplicada a identidade visual amarela do Setembro Amarelo à seção.
+
 ### Adicionado
 - Seção de promovidos com seis destaques: Henrique Goldstein, Rodrigo Netto, Lucas Martins, Maria Seixas, Marcela Pita e Higor Campos.
 - Seção de aniversariantes de setembro com os quinze nomes enviados.

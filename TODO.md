@@ -345,3 +345,10 @@
 - [x] Remover o link TotalPass da navegação de setembro.
 - [x] Preservar o conteúdo no HTML para reativação posterior.
 - [ ] Reavaliar a publicação do TotalPass em setembro quando o conteúdo for aprovado.
+
+## Atualização 2026-09-21 — Entrevista de Amanda
+
+- [x] Substituir o bloco de texto por perfil, frase-chave e acordeão de perguntas.
+- [x] Resumir as oito respostas sem perder contexto e detalhes pessoais.
+- [x] Adicionar a foto da Amanda à edição de setembro.
+- [x] Aplicar a identidade amarela e validar desktop, mobile e interação.

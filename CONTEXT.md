@@ -769,6 +769,15 @@ Estado atual: guia do TotalPass disponível nas edições de agosto e setembro.
 
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
 
+## Sessão 2026-09-21 — Entrevista de Amanda
+
+- A entrevista de setembro passou a usar o mesmo padrão editorial da entrevista de agosto: perfil visual, frase-chave e respostas expansíveis.
+- As oito respostas do documento `Respostas Bia.docx` foram condensadas mantendo os fatos e a voz da Amanda Vieira.
+- A foto enviada foi preparada em recorte vertical e adicionada em `public/images/mb-news/setembro/amanda-vieira.png`.
+- A seção recebeu ajustes de amarelo do Setembro Amarelo, com validação local de imagem, acordeão, responsividade e ausência de erros de console.
+
+Estado atual: entrevista de Amanda pronta para revisão editorial.
+
 ## Sessão 2026-09-21 — Fotos dos promovidos de setembro
 
 - Copiadas as seis fotos recebidas em `fotos e video de momentos/fotos da promoção` para `public/images/mb-news/setembro/promovidos/`.

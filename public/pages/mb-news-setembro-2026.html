@@ -6,7 +6,9 @@
   <title>MB News | Edição #006 · Setembro 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/mb-news-interview.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="/assets/js/ui/mb-news-interview.js" defer></script>
   <style>
     :root {
       --navy:    #003956;
@@ -1508,9 +1510,21 @@
       background: var(--navy); border: 1px solid rgba(255,255,255,.12);
       color: white; display: flex; align-items: center; justify-content: center;
       cursor: pointer; transition: all .2s; text-decoration: none; font-size: 1.1rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      box-shadow: 0 4px 16px rgba(0,0,0,.25); position: relative;
     }
     .fab-btn:hover { background: var(--blue); border-color: var(--cyan); transform: scale(1.08); }
+    .fab-btn:focus-visible { outline: 3px solid rgba(245,183,47,.72); outline-offset: 3px; }
+    .fab-tooltip {
+      position: absolute; right: calc(100% + 10px); top: 50%;
+      padding: 8px 11px; border: 1px solid rgba(255,255,255,.18); border-radius: 10px;
+      background: var(--navy); color: #fff; font-size: .7rem; font-weight: 800;
+      line-height: 1; white-space: nowrap; opacity: 0; pointer-events: none;
+      transform: translate(6px,-50%); transition: opacity .18s ease, transform .18s ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,.2);
+    }
+    .fab-btn:hover .fab-tooltip, .fab-btn:focus-visible .fab-tooltip {
+      opacity: 1; transform: translate(0,-50%);
+    }
     .fab-btn.main {
       width: 56px; height: 56px;
       background: linear-gradient(135deg, var(--cyan), #007ab8);
@@ -1758,7 +1772,7 @@
 </section>
 
 <!-- ENTREVISTA DE SETEMBRO -->
-<section id="entrevista">
+<section id="entrevista" class="interview-section">
   <div class="container">
     <div class="fade-up">
       <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Entrevista · Setembro</span>
@@ -1766,11 +1780,135 @@
       <p class="section-desc">Nesta edição, convidamos a supervisora Amanda Vieira para compartilhar um pouco da sua trajetória na empresa e também conhecer melhor a pessoa por trás da profissional, suas experiências e momentos que marcaram sua caminhada.</p>
     </div>
 
-    <div class="promotion-list fade-up">
-      <div class="promotion-person">
-        <strong>Amanda Vieira</strong>
-        <span>Supervisora</span>
-        <p>Uma conversa sobre trajetória, desafios, conquistas e aprendizados dentro da MB Finance.</p>
+    <div class="interview-experience fade-up">
+      <aside class="interview-profile" aria-label="Perfil da entrevistada">
+        <div class="interview-profile__media">
+          <img src="/images/mb-news/setembro/amanda-vieira.png" alt="Amanda Vieira" loading="lazy">
+          <span class="interview-profile__edition">Setembro 2026</span>
+        </div>
+        <div class="interview-profile__body">
+          <p class="interview-profile__label">Entrevistada do mês</p>
+          <h3>Amanda Vieira</h3>
+          <p class="interview-profile__role">Supervisora</p>
+          <p class="interview-profile__summary">Na MB desde agosto de 2022, Amanda acompanha o crescimento da operação e transforma experiência, escuta e estratégia em ações que desenvolvem pessoas e resultados.</p>
+        </div>
+      </aside>
+
+      <div class="interview-content">
+        <div class="interview-callout interview-callout--yellow">
+          <span class="interview-callout__label">Uma ideia para levar com você</span>
+          <blockquote>“Não tenha medo de ocupar espaços maiores.”</blockquote>
+        </div>
+
+        <div class="interview-accordion" data-interview-accordion>
+          <article class="interview-question is-open">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="true" aria-controls="interview-answer-amanda-1">
+                <span class="interview-question__number">01</span>
+                <span class="interview-question__title">Como começou sua história na MB e o que mudou em você?</span>
+                <span class="interview-question__indicator" aria-hidden="true">−</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-1" role="region">
+              <p>Minha história começou em agosto de 2022, em uma área ligada à comunicação com a qual ainda não tinha trabalhado diretamente. Na época, a operação tinha menos da metade do tamanho atual, e pude acompanhar a construção de processos, contribuir com ideias e criar relações de confiança com meus pares e lideranças.</p>
+              <p>Com o tempo, ganhei experiência, maturidade e confiança para assumir responsabilidades maiores e enxergar a operação de forma mais ampla e estratégica. Hoje, sigo desenvolvendo minha capacidade de liderar, criar estratégias e transformar ideias em ações.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-2">
+                <span class="interview-question__number">02</span>
+                <span class="interview-question__title">Qual momento da sua trajetória mais te marcou?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-2" role="region" hidden>
+              <p>Certamente, minha promoção. Mais do que uma mudança de cargo, ela representou o reconhecimento de uma trajetória construída com esforço, ideias e dedicação. Também foi muito importante perceber a confiança da diretoria na minha capacidade de compartilhar conhecimento, desenvolver pessoas e contribuir para o crescimento da empresa.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-3">
+                <span class="interview-question__number">03</span>
+                <span class="interview-question__title">O que você mais gosta em ser supervisora?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-3" role="region" hidden>
+              <p>Gosto de transformar conhecimento e experiência em ações que fazem diferença. A análise dos números é fundamental para entender resultados e oportunidades, mas meu ponto forte está no que vem depois: pensar estrategicamente, criar abordagens, adaptar scripts, trabalhar objeções e desenvolver ações que melhorem a conversão.</p>
+              <p>Essa combinação entre entender o cenário, agir estrategicamente e ajudar as pessoas a evoluírem junto com a operação é o que mais me realiza.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-4">
+                <span class="interview-question__number">04</span>
+                <span class="interview-question__title">O que o trabalho ensinou e você leva para a vida?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-4" role="region" hidden>
+              <p>Aprendi a ouvir, observar e entender diferentes perfis. Também entendi que acolher e estar disponível não significa deixar de ser firme quando necessário. A função me ajudou a desenvolver resiliência, confiar mais no meu conhecimento e reconhecer que não preciso ter todas as respostas: saber ouvir, pedir ajuda e mudar de estratégia também faz parte do crescimento.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-5">
+                <span class="interview-question__number">05</span>
+                <span class="interview-question__title">Quem é a Amanda quando não está trabalhando?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-5" role="region" hidden>
+              <p>Sou uma canceriana apaixonada por praia, viagens, música e pelo Flamengo. Também gosto de Coca-Cola, Luccas Carlos, RBD, cinema, sair para comer e, ultimamente, estou viciada em futevôlei. Valorizo muito estar perto da família, conversar, rir e aproveitar os momentos simples.</p>
+              <p>No fim, sou alguém que valoriza experiências e relações: gosto de conhecer lugares e experimentar coisas novas, mas também de aproveitar momentos tranquilos ao lado de quem amo.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-6">
+                <span class="interview-question__number">06</span>
+                <span class="interview-question__title">O que você gosta de fazer no tempo livre?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-6" role="region" hidden>
+              <p>Gosto de jogar futevôlei, conhecer lugares novos, fazer programas diferentes, sair para comer e passar tempo de qualidade com as pessoas que amo. E, claro, quando tem Flamengo no meio, fica ainda melhor.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-7">
+                <span class="interview-question__number">07</span>
+                <span class="interview-question__title">Como seria um dia inteiro livre?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-7" role="region" hidden>
+              <p>Começaria sem pressa, provavelmente jogando futevôlei pela manhã e passando o restante do dia com a família. Se estivesse ensolarado, escolheria uma praia ou um lugar novo para conhecer, além de um restaurante diferente. Para fechar, um jogo do Flamengo deixaria o dia perfeito.</p>
+            </div>
+          </article>
+
+          <article class="interview-question">
+            <h3>
+              <button class="interview-question__trigger" type="button" aria-expanded="false" aria-controls="interview-answer-amanda-8">
+                <span class="interview-question__number">08</span>
+                <span class="interview-question__title">Que conselho daria para a Amanda do primeiro dia?</span>
+                <span class="interview-question__indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="interview-question__answer" id="interview-answer-amanda-8" role="region" hidden>
+              <p>Eu diria para confiar mais em si mesma e aproveitar cada parte do processo. Ter calma, continuar dedicada, curiosa e aberta para aprender, sem medo de não ter todas as respostas agora.</p>
+              <p>E, principalmente, não ter medo de ocupar espaços maiores. Com o tempo, você cresce, conquista a confiança das pessoas e descobre que é capaz de fazer muito mais do que imaginava.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </div>
@@ -2616,9 +2754,10 @@
 
 <!-- FAB NAV -->
 <div class="fab-nav">
-  <a href="#home" class="fab-btn main" title="Voltar ao topo"><i data-lucide="arrow-up"></i></a>
-  <a href="#filme" class="fab-btn" title="Indicação de filme"><i data-lucide="film"></i></a>
-  <a href="#entrevista" class="fab-btn" title="Entrevista"><i data-lucide="message-circle"></i></a>
+  <a href="#home" class="fab-btn main" title="Voltar ao topo" aria-label="Voltar ao topo"><span class="fab-tooltip">Voltar ao topo</span><i data-lucide="arrow-up"></i></a>
+  <a href="#filme" class="fab-btn" title="Indicação de filme" aria-label="Ir para a indicação de filme"><span class="fab-tooltip">Filme do mês</span><i data-lucide="film"></i></a>
+  <a href="#entrevista" class="fab-btn" title="Entrevista com Amanda" aria-label="Ir para a entrevista com Amanda"><span class="fab-tooltip">Entrevista · Amanda</span><i data-lucide="message-circle"></i></a>
+  <a href="#evento" class="fab-btn" title="Saúde mental" aria-label="Ir para a seção de saúde mental"><span class="fab-tooltip">Saúde mental</span><i data-lucide="heart-pulse"></i></a>
 </div>
 
 <!-- FOOTER -->
