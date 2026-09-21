@@ -3,6 +3,10 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/assets/:path*",
+      "destination": "/public/assets/:path*"
+    },
+    {
       "source": "/pages/:path*",
       "destination": "/public/pages/:path*"
     },
