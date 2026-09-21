@@ -1,7 +1,7 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-04-30
-> Atualizado por: IA - Antigravity
+> Última atualização: 2026-09-21
+> Atualizado por: Codex
 
 ---
 
@@ -655,3 +655,148 @@ Arquivos modificados nesta sessão:
 Estado atual: o bloco de reconhecimento de julho está pronto para validação visual e publicação.
 
 Próximo passo recomendado: conferir o enquadramento das quatro telas do carrossel no ambiente publicado após o deploy.
+
+## Sessão 2026-09-21 — Carrossel dos destaques de agosto
+
+- Transformada a seção `#destaques` de seis cards agrupados em um carrossel com seis slides individuais.
+- Adicionadas as fotos oficiais de Thays Florencio, Matheus Oliveira, Igor Lira, Leticia Perpetua, Gabriel Figueiredo e Kerlen Oliveira em `public/images/mb-news/agosto/destaques/`.
+- Incluído um texto editorial curto para cada pessoa, associado ao respectivo setor.
+- Criados os arquivos externos `public/assets/css/mb-news-agosto.css` e `public/assets/js/ui/mb-news-sector-carousel.js` para manter a interação e o estilo fora do HTML.
+- Mantidos controles por setas, indicadores, teclado e status acessível; o layout passa para uma coluna no mobile.
+- Validado localmente com Playwright: seis slides, seis imagens carregadas, navegação desktop/mobile e ausência de erros de console ou recursos ausentes.
+
+Arquivos modificados nesta sessão:
+- `index.html`
+- `public/assets/css/mb-news-agosto.css`
+- `public/assets/js/ui/mb-news-sector-carousel.js`
+- `public/images/mb-news/agosto/destaques/`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-21.md`
+
+Estado atual: carrossel pronto para revisão editorial e publicação. Os textos são uma primeira versão criada a partir dos setores e nomes enviados.
+
+Próximo passo recomendado: validar a copy com o RH antes do deploy.
+
+## Sessão 2026-09-21 — Nova experiência da entrevista de agosto
+
+- Reestruturada a seção `#entrevista` de blocos de texto para uma composição editorial com perfil da entrevistada, frase-chave e acordeão de perguntas e respostas.
+- Reutilizada a foto oficial de Thays Florencio em `public/images/mb-news/agosto/destaques/thays-florencio.png`.
+- Mantidas as seis perguntas e respostas recebidas; a primeira resposta inicia aberta e apenas uma resposta permanece aberta por vez.
+- Criados `public/assets/css/mb-news-interview.css` e `public/assets/js/ui/mb-news-interview.js` para separar o novo visual e o comportamento interativo do HTML.
+- Incluídos estados de foco, navegação por teclado, atributos ARIA e adaptação para uma coluna no mobile.
+- Validado localmente com Playwright em desktop e mobile, incluindo foto carregada, troca/fechamento das respostas e ausência de erros de console ou recursos ausentes.
+
+Estado atual: entrevista de agosto pronta para revisão editorial e publicação.
+
+Próximo passo recomendado: revisar com o RH o título, a frase-chave e o resumo do perfil antes do deploy.
+
+## Sessão 2026-09-21 — Indicação de filme de agosto
+
+- Adicionada a seção `#filme` entre o editorial e os destaques da edição de agosto.
+- Incluído o cartaz local em `public/images/mb-news/agosto/o-lobo-de-wall-street-pt.jpg`, com ampliação pelo lightbox já existente.
+- Inserido o texto editorial sobre `O Lobo de Wall Street` e uma síntese visual dos aprendizados comerciais.
+- Atualizados o menu principal, o CTA do hero, a contagem de conteúdos e o texto de abertura da edição.
+- Criado `public/assets/css/mb-news-film.css` com uma composição responsiva de cartaz + leitura editorial, respeitando foco visível e redução de movimento.
+- Validado localmente com Playwright: seção, poster, lightbox, layout desktop/mobile, ausência de erros de console e ausência de recursos ausentes.
+
+Estado atual: indicação de filme de agosto pronta para revisão editorial e publicação.
+
+Próximo passo recomendado: conferir a imagem do cartaz e a copy final com Comunicação/RH antes do deploy.
+
+## Sessão 2026-09-21 — Revisão da identidade de setembro
+
+- Atualizada a indicação de filme de setembro para usar a mesma composição editorial criada para agosto: cartaz em destaque, metadados, texto, síntese e encerramento.
+- Criado `public/assets/css/mb-news-setembro.css` com a identidade amarela do Setembro Amarelo.
+- Aplicado amarelo em hero, navegação, fundos de seções, CTAs, detalhes de cards e estados de interação, mantendo o azul-marinho como contraste.
+- Incluído o símbolo do laço amarelo em pontos de identificação da edição, hero, Palavra do Mês, filme e entrevista.
+- Corrigidos dois caminhos de imagem quebrados na seção oculta de sites, evitando recursos 404 durante o carregamento da edição.
+- Atualizada a Palavra do Mês de agosto para falar de reconhecimento, aprendizados, bem-estar e conquistas de agosto, sem antecipar a comunicação de Setembro Amarelo.
+- Validado localmente com Playwright em desktop e mobile: tema, layout do filme, poster, lightbox, laços amarelos e ausência de erros ou recursos ausentes.
+
+Estado atual: edições de agosto e setembro atualizadas e prontas para revisão editorial.
+
+Próximo passo recomendado: revisar com Comunicação/RH a intensidade do amarelo e a redação final das duas Palavras do Mês.
+
+## Sessão 2026-09-21 — Aniversariantes de agosto
+
+- Atualizada a seção `#aniversariantes` da edição de agosto com os dez nomes enviados pelo usuário.
+- Reativado o carrossel contínuo que estava oculto e atualizado o contador para `10 novos ciclos em agosto`.
+- Como não foram fornecidas fotos dos aniversariantes, cada item usa um cartão visual com iniciais, ícone de bolo e nome completo, sem atribuir retratos incorretos às pessoas.
+- Criado `public/assets/css/mb-news-birthdays.css` para manter a nova apresentação isolada e responsiva.
+- Validado localmente com Playwright: 10 cards originais + grupo duplicado para o loop, controle de pausa, layout mobile, nomes presentes e ausência de erros ou recursos ausentes.
+
+Estado atual: aniversariantes de agosto publicados na página local e prontos para revisão.
+
+Próximo passo recomendado: substituir os cartões de iniciais por fotos oficiais caso o RH envie os retratos.
+
+## Sessão 2026-09-21 — Conteúdos de setembro
+
+- Liberada a seção de promovidos da edição de setembro com seis destaques: Henrique Goldstein, Rodrigo Netto, Lucas Martins, Maria Seixas, Marcela Pita e Higor Campos.
+- Reaproveitado o carrossel editorial de reconhecimentos, agora com cartões de iniciais para não inventar fotos dos profissionais.
+- Liberada a seção de aniversariantes de setembro com os quinze nomes enviados e contador atualizado.
+- Reutilizado o carrossel contínuo e a identidade amarela também nos cartões de aniversariantes.
+- Liberado o módulo de saúde mental do Setembro Amarelo com texto editorial e aviso de que as fotos dos encontros serão incluídas quando recebidas.
+- Incluídos links de navegação para Promovidos, Aniversariantes e Saúde mental.
+- Validado localmente com Playwright: tema amarelo, seis slides e seis dots de promovidos, avanço para Rodrigo, último destaque Higor, 15 aniversariantes, módulo de saúde mental visível e ausência de erros ou recursos ausentes.
+
+Estado atual: edição de setembro com os novos conteúdos publicada na página local e pronta para revisão.
+
+Próximo passo recomendado: inserir as fotos dos encontros de saúde mental e eventuais retratos oficiais dos promovidos/aniversariantes.
+
+## Sessão 2026-09-21 — Guia de uso do TotalPass
+
+- Liberada a seção `#totalpass` da edição de setembro, mantendo o pódio existente.
+- Adicionado, logo após o pódio, o módulo `Como usar o TotalPass` com destaque de cadastro, quatro passos, ativação do plano e orientação de check-in.
+- Incluído link de navegação para TotalPass e atualizada a contagem do hero para refletir o novo conteúdo.
+- Como a imagem recebida veio embutida na conversa e não ficou disponível como arquivo local, o módulo foi reproduzido em HTML/CSS com a mesma lógica visual e uma imagem de apoio já existente no projeto, sem criar recurso quebrado.
+- Validado localmente com Playwright: seção e módulo visíveis, quatro passos, dois passos finais, imagem carregada, mobile sem overflow, ausência de erros de console e ausência de recursos ausentes.
+
+Estado atual: módulo de instruções do TotalPass pronto para revisão na edição de setembro.
+
+Próximo passo recomendado: substituir a reprodução pela arte original caso ela seja enviada como PNG/JPG.
+
+## Sessão 2026-09-21 — Guia de uso do TotalPass em agosto
+
+- Corrigida a edição de agosto, que ainda exibia apenas o pódio do TotalPass.
+- Repetido o módulo `Como usar o TotalPass` logo abaixo do pódio, com os mesmos quatro passos, dois passos finais e orientação de check-in usados em setembro.
+- Criado `public/assets/css/mb-news-totalpass-howto.css` para compartilhar a composição do guia com a edição de agosto.
+- Validado localmente com Playwright: módulo visível em agosto, imagem de apoio carregada, quatro passos, dois passos finais, mobile sem overflow e ausência de erros ou recursos ausentes.
+
+Estado atual: guia do TotalPass disponível nas edições de agosto e setembro.
+
+Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
+
+## Sessão 2026-09-21 — Fotos dos promovidos de setembro
+
+- Copiadas as seis fotos recebidas em `fotos e video de momentos/fotos da promoção` para `public/images/mb-news/setembro/promovidos/`.
+- Substituídos os cards de iniciais do carrossel de promovidos por fotos reais de Henrique Goldstein, Rodrigo Netto, Lucas Martins, Maria Seixas, Marcela Pita e Higor Campos.
+- Mantidos os textos editoriais, controles, dots, acessibilidade e identidade amarela da edição.
+- Aplicados enquadramentos individuais com `object-position` para preservar os rostos e os balões de reconhecimento.
+- Validado localmente com Playwright: seis imagens carregadas ao navegar pelos slides, seis nomes ativos, mobile sem overflow, sem erros de console e sem recursos ausentes.
+
+Estado atual: carrossel de promovidos de setembro com fotos oficiais e pronto para revisão.
+
+Próximo passo recomendado: confirmar com o RH os enquadramentos e a ordem final dos destaques.
+
+## Sessão 2026-09-21 — TotalPass oculto em setembro
+
+- Ocultada temporariamente a seção `#totalpass` da edição de setembro usando o atributo nativo `hidden`.
+- Removido o link TotalPass da navegação de setembro para evitar uma âncora sem destino visível.
+- O conteúdo e os estilos foram preservados no arquivo para reativação posterior sem reconstrução.
+
+Estado atual: TotalPass permanece disponível em agosto e está temporariamente fora da edição de setembro.
+
+## Sessão 2026-09-21 — Guia do TotalPass em formato complementar
+
+- Reduzida a presença visual do módulo `Como usar o TotalPass` nas edições de agosto e setembro.
+- Transformado o guia em um card complementar, com cabeçalho compacto, composição visual menor e passo a passo principal preservado.
+- Removidos no mobile a foto auxiliar e os passos duplicados do mini-card para evitar que a seção volte a ocupar espaço excessivo.
+- Removido o estilo inline da chamada de setembro; a cor agora fica centralizada no CSS da identidade da edição.
+- Validado localmente com Playwright: altura desktop de 401px, altura mobile de 698px, módulo visível, sem overflow, sem erros de console e sem recursos ausentes nas duas edições.
+
+Estado atual: guia do TotalPass mais discreto e complementar em agosto e setembro.
+
+Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.

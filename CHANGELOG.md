@@ -2,6 +2,136 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-09-21 - Conteúdos de setembro
+
+### Adicionado
+- Seção de promovidos com seis destaques: Henrique Goldstein, Rodrigo Netto, Lucas Martins, Maria Seixas, Marcela Pita e Higor Campos.
+- Seção de aniversariantes de setembro com os quinze nomes enviados.
+- Módulo visível de saúde mental para o Setembro Amarelo, preparado para receber as fotos dos encontros.
+- Links de navegação para Promovidos, Aniversariantes e Saúde mental.
+
+### Modificado
+- `public/pages/mb-news-setembro-2026.html`: carrossel de reconhecimentos reconfigurado para os conteúdos de setembro e carrossel de aniversariantes liberado.
+- `public/assets/css/mb-news-setembro.css`: identidade amarela aplicada também aos promovidos, aniversariantes e módulo de saúde mental.
+- Contagem e Palavra do Mês da edição atualizadas para refletir os novos conteúdos.
+
+### Observação
+- Foram usados cartões de iniciais quando não havia retratos; as fotos dos encontros serão inseridas quando recebidas.
+
+## 2026-09-21 - Guia de uso do TotalPass
+
+### Adicionado
+- Seção TotalPass de setembro liberada com o pódio existente.
+- Módulo `Como usar o TotalPass` logo após o pódio, com destaque visual de cadastro e passo a passo.
+- Link de navegação para TotalPass.
+
+### Modificado
+- `public/pages/mb-news-setembro-2026.html`: incluídos quatro passos de cadastro, orientação de plano/check-in e imagem de apoio.
+- `public/assets/css/mb-news-setembro.css`: criada a composição responsiva do guia, alinhada à linguagem visual do TotalPass.
+- Contagem do hero atualizada para refletir o novo conteúdo.
+
+### Observação
+- A arte exata enviada na conversa ainda precisa ser anexada como PNG/JPG para substituir a reprodução HTML/CSS.
+
+## 2026-09-21 - Guia do TotalPass mais compacto
+
+### Modificado
+- Reduzido o módulo de agosto e setembro para um card complementar, com cabeçalho e composição visual compactos.
+- Mantido o passo a passo principal de cadastro, plano e check-in.
+- Removidos no mobile a foto auxiliar e os passos duplicados para reduzir a altura da seção.
+- Centralizada no CSS da edição de setembro a cor da chamada “Como usar o TotalPass”.
+
+### Validação
+- Playwright confirmou módulo visível, 401px no desktop, 698px no mobile, sem overflow, erros de console ou recursos ausentes nas duas edições.
+
+## 2026-09-21 - Fotos dos promovidos de setembro
+
+### Adicionado
+- Seis retratos oficiais em `public/images/mb-news/setembro/promovidos/`.
+
+### Modificado
+- `public/pages/mb-news-setembro-2026.html`: cards de iniciais substituídos pelas fotos de Henrique Goldstein, Rodrigo Netto, Lucas Martins, Maria Seixas, Marcela Pita e Higor Campos.
+- `public/assets/css/mb-news-setembro.css`: enquadramentos individuais aplicados para preservar os rostos e os balões de reconhecimento.
+
+### Validação
+- Playwright confirmou seis imagens carregadas ao navegar pelos slides, seis nomes ativos, mobile sem overflow e ausência de erros ou recursos ausentes.
+
+## 2026-09-21 - TotalPass oculto em setembro
+
+### Modificado
+- Seção `#totalpass` da edição de setembro temporariamente ocultada com o atributo `hidden`.
+- Link TotalPass removido da navegação de setembro.
+- Conteúdo e estilos preservados para possível reativação.
+
+## 2026-09-21 - Guia do TotalPass também em agosto
+
+### Adicionado
+- Módulo `Como usar o TotalPass` na edição de agosto, logo abaixo do pódio.
+- `public/assets/css/mb-news-totalpass-howto.css` com os estilos compartilhados do guia.
+
+### Modificado
+- `index.html`: incluído o passo a passo de cadastro, plano e check-in no TotalPass de agosto.
+- Mantida a mesma experiência visual e responsiva da edição de setembro.
+
+### Observação
+- A arte original ainda depende do envio do arquivo PNG/JPG para substituição da reprodução HTML/CSS.
+
+## 2026-09-21 - Aniversariantes de agosto
+
+### Adicionado
+- Dez nomes de aniversariantes na seção `#aniversariantes` da edição de agosto.
+- `public/assets/css/mb-news-birthdays.css` com cartões nominais responsivos usando iniciais e ícone de bolo.
+
+### Modificado
+- `index.html`: carrossel de aniversariantes reativado, contador atualizado e mensagem de celebração revisada.
+- Mantido o loop contínuo e o controle manual de pausa do carrossel de julho.
+
+### Observação
+- Os cartões de iniciais são provisórios até o recebimento das fotos oficiais pelo RH.
+
+## 2026-09-21 - Identidade de setembro e correção editorial de agosto
+
+### Adicionado
+- `public/assets/css/mb-news-setembro.css` com a identidade amarela do Setembro Amarelo.
+- Laço amarelo em pontos de identificação da edição de setembro.
+- Indicação de filme de setembro reorganizada no formato editorial de agosto.
+
+### Modificado
+- `public/pages/mb-news-setembro-2026.html`: hero, navegação, Palavra do Mês, indicação de filme e entrevista receberam o tratamento amarelo.
+- `index.html`: Palavra do Mês de agosto foi reescrita para refletir reconhecimento, aprendizados, bem-estar e conquistas do mês.
+- Corrigidos caminhos de duas imagens na edição histórica de setembro.
+
+## 2026-09-21 - Indicação de filme da edição de agosto
+
+### Adicionado
+- Seção editorial sobre `O Lobo de Wall Street`, com cartaz e aprendizados comerciais.
+- Cartaz local em `public/images/mb-news/agosto/o-lobo-de-wall-street-pt.jpg`.
+- `public/assets/css/mb-news-film.css` com o layout responsivo da indicação.
+
+### Modificado
+- `index.html`: menu, CTA do hero, contagem de conteúdos e editorial atualizados para incluir a indicação de filme.
+
+## 2026-09-21 - Nova experiência da entrevista de agosto
+
+### Adicionado
+- Perfil visual da entrevistada Thays Florencio com sua foto oficial.
+- Frase-chave e acordeão acessível com as seis perguntas da entrevista.
+- `public/assets/css/mb-news-interview.css` e `public/assets/js/ui/mb-news-interview.js`.
+
+### Modificado
+- `index.html`: a seção `#entrevista` passou de blocos corridos para uma composição editorial responsiva, com uma resposta aberta por vez.
+
+## 2026-09-21 - Carrossel de destaques de agosto da MB News
+
+### Adicionado
+- Fotos oficiais dos seis destaques em `public/images/mb-news/agosto/destaques/`.
+- Carrossel individual com foto, setor e texto editorial curto para cada pessoa.
+- Estilos e comportamento do carrossel em arquivos externos de CSS e JavaScript.
+
+### Modificado
+- `index.html`: a seção `#destaques` passou de cards agrupados para seis slides individuais.
+- Navegação do carrossel atualizada para seis posições, com suporte a setas, dots e teclado.
+
 ---
 
 ## 2026-09-16 - Edicoes de agosto e setembro da MB News

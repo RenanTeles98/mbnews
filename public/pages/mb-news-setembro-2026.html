@@ -1568,8 +1568,11 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/assets/css/mb-news-film.css" />
+  <link rel="stylesheet" href="/assets/css/mb-news-setembro.css" />
+  <link rel="stylesheet" href="/assets/css/mb-news-birthdays.css" />
 </head>
-<body>
+<body class="september-theme">
 
 
 <!-- LIGHTBOX -->
@@ -1588,10 +1591,13 @@
   <a href="#" class="nav-logo">mb <span>news</span></a>
   <ul class="nav-links">
     <li><a href="#editorial">Foco Mensal</a></li>
-    <li><a href="#filme">Indicação de filme</a></li>
+    <li><a href="#filme">Filme do mês</a></li>
     <li><a href="#entrevista">Entrevista</a></li>
+    <li><a href="#promocoes">Promovidos</a></li>
+    <li><a href="#aniversariantes">Aniversariantes</a></li>
+    <li><a href="#evento">Saúde mental</a></li>
   </ul>
-  <span class="nav-edition">Edição #006 · Setembro 2026</span>
+  <span class="nav-edition"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Edição #006 · Setembro 2026</span>
 </nav>
 
 <!-- MODAL MENSAL -->
@@ -1622,7 +1628,7 @@
   <a class="month-btn available" href="/pages/mb-news-maio-2026.html">✓ Mai</a>
   <a class="month-btn available" href="/pages/mb-news-junho-2026.html">✓ Jun</a>
   <a class="month-btn available" href="/pages/mb-news-julho-2026.html">✓ Jul</a>
-  <a class="month-btn available" href="/">✓ Ago</a>
+  <a class="month-btn available" href="/pages/mb-news-agosto-2026.html">✓ Ago</a>
   <button class="month-btn active">✦ Set</button>
   <button class="month-btn future" onclick="openMonthModal('Outubro 2026','future')">Out</button>
   <button class="month-btn future" onclick="openMonthModal('Novembro 2026','future')">Nov</button>
@@ -1632,7 +1638,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
-  <div class="hero-badge">Edição de Setembro 2026</div>
+  <div class="hero-badge"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Edição de Setembro 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
   </h1>
@@ -1647,14 +1653,14 @@
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
       <div class="hero-card-text">
-      <strong>2</strong>
+      <strong>6</strong>
         <span>Conteúdos especiais</span>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
       <div class="hero-card-text">
-        <strong>Cuidado</strong>
+        <strong><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Cuidado</strong>
         <span>Setembro Amarelo</span>
       </div>
     </div>
@@ -1680,7 +1686,7 @@
         Setembro é um convite ao cuidado, à escuta e à valorização das relações que construímos todos os dias.
       </p>
       <p>
-        Nesta edição, reunimos uma indicação de filme que traz reflexões sobre trabalho, relações e equilíbrio, além de uma conversa com a supervisora Amanda Vieira sobre sua trajetória na empresa.
+        Nesta edição, reunimos uma indicação de filme que traz reflexões sobre trabalho, relações e equilíbrio, uma conversa com a supervisora Amanda Vieira, histórias de crescimento profissional, os aniversariantes do mês e um espaço especial para falar sobre saúde mental.
       </p>
       <p>
         Que esse conteúdo nos ajude a olhar para as pessoas além de suas funções e resultados. Boa leitura!
@@ -1691,32 +1697,61 @@
           <strong>Equipe MB News</strong>
           <span>Comunicação Interna · mb news</span>
         </div>
+        <div class="yellow-ribbon-lockup">
+          <span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span>
+          <span>Setembro Amarelo</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- INDICAÇÃO DE FILME -->
-<section id="filme">
+<section id="filme" class="film-section">
   <div class="container">
-    <div class="fade-up">
+    <div class="film-intro fade-up">
       <span class="section-eyebrow">Indicação de filme · Setembro</span>
       <h2 class="section-title">Que tal aproveitar o fim de semana?</h2>
       <p class="section-desc">Um filme leve, divertido e que ainda traz boas reflexões sobre trabalho, relações e equilíbrio.</p>
     </div>
 
-    <div class="copa-layout fade-up">
-      <div class="copa-copy">
-        <span class="june-kicker"><i data-lucide="film" style="width:15px;height:15px"></i> Setembro Amarelo</span>
+    <div class="film-feature fade-up">
+      <div class="film-poster-column">
+        <button class="film-poster" type="button"
+          data-lightbox-src="/images/mb-news/setembro/um-senhor-estagiario.png"
+          data-lightbox-alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
+          aria-label="Ampliar o cartaz de Um Senhor Estagiário">
+          <img src="/images/mb-news/setembro/um-senhor-estagiario.png"
+            alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
+            width="500" height="732" loading="lazy" />
+          <span class="film-poster__action" aria-hidden="true"><i data-lucide="maximize-2"></i>Ampliar cartaz</span>
+        </button>
+        <div class="film-poster-meta" aria-label="Informações do filme">
+          <span>2015</span>
+          <span>Nancy Meyers</span>
+          <span>Robert De Niro · Anne Hathaway</span>
+        </div>
+      </div>
+
+      <div class="film-copy">
+        <span class="june-kicker"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo</span>
         <h3 class="section-title">Um Senhor Estagiário</h3>
+        <p class="film-lede">Uma comédia sobre recomeços, relações e o valor de estar presente — com leveza para o fim de semana e espaço para reflexão.</p>
         <p>Ben Whittaker (Robert De Niro), um viúvo de 70 anos, decide voltar ao mercado de trabalho e se torna estagiário em uma empresa de moda comandada por Jules Ostin (Anne Hathaway). O que começa como uma experiência profissional acaba se transformando em uma relação de amizade, troca e apoio entre os dois.</p>
         <p>Por trás da comédia, o filme mostra como os desafios profissionais, pessoais e a dificuldade de equilibrar diferentes áreas da vida podem afetar qualquer pessoa, mesmo aquelas que parecem estar dando conta de tudo.</p>
         <p>O filme nos lembra da importância de olhar para as pessoas além de suas funções e resultados. Uma conversa, uma escuta atenta, uma amizade ou simplesmente estar presente pode fazer diferença na vida de alguém.</p>
         <p>Neste Setembro Amarelo, fica o convite para levar essa reflexão também para o nosso dia a dia: cuidar das relações, prestar atenção em quem está ao nosso redor e lembrar que ninguém precisa enfrentar tudo sozinho.</p>
-        <p><strong>Então, para o fim de semana: prepare a pipoca e dê o play!</strong></p>
-      </div>
-      <div class="june-photo">
-        <img src="/images/mb-news/setembro/um-senhor-estagiario.png" alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway" width="500" height="732" loading="lazy" />
+
+        <aside class="film-takeaways" aria-label="Reflexões do filme">
+          <h3>Um olhar de cuidado para assistir</h3>
+          <ul>
+            <li>Escuta e presença</li>
+            <li>Troca entre gerações</li>
+            <li>Equilíbrio nas relações</li>
+          </ul>
+        </aside>
+
+        <p class="film-closing"><strong>Então, para o fim de semana:</strong> prepare a pipoca, dê o play e assista com um olhar atento às relações!</p>
       </div>
     </div>
   </div>
@@ -1726,7 +1761,7 @@
 <section id="entrevista">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow">Entrevista · Setembro</span>
+      <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Entrevista · Setembro</span>
       <h2 class="section-title">Por trás de cada profissional existe uma história.</h2>
       <p class="section-desc">Nesta edição, convidamos a supervisora Amanda Vieira para compartilhar um pouco da sua trajetória na empresa e também conhecer melhor a pessoa por trás da profissional, suas experiências e momentos que marcaram sua caminhada.</p>
     </div>
@@ -1742,97 +1777,125 @@
 </section>
 
 <!-- PROMOÇÕES -->
-<section id="promocoes" style="display:none">
+<section id="promocoes">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow">Reconhecimento</span>
-      <h2 class="section-title">Novos passos, novas conquistas.</h2>
-      <p class="section-desc">Reconhecemos quem abriu um novo capítulo em sua trajetória na MB Finance neste mês.</p>
+      <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Reconhecimento</span>
+      <h2 class="section-title">Crescer também é fazer história.</h2>
+      <p class="section-desc">Este mês, a MB Finance celebra o crescimento de profissionais que começaram como estagiários e trilharam caminhos de destaque dentro da empresa, além de novas lideranças que chegam para fortalecer nossos times. Confira quem brilhou:</p>
     </div>
     <div class="promotion-carousel fade-up" id="promotionCarousel" role="region"
-      aria-roledescription="carrossel" aria-label="Promoções e efetivações de julho" tabindex="0">
+      aria-roledescription="carrossel" aria-label="Promoções e efetivações de setembro" tabindex="0">
       <div class="promotion-carousel-stage">
-      <article class="promotion-slide" data-slide="0" role="group" hidden
-        aria-roledescription="slide" aria-label="1 de 4: efetivação de Willian Amaral">
+      <article class="promotion-slide is-active" data-slide="0" role="group"
+        aria-roledescription="slide" aria-label="1 de 6: efetivação de Henrique Goldstein">
         <div class="promotion-slide-media">
-          <img src="/images/mb-news/julho/promocoes/willian-amaral.png"
-            alt="Willian Amaral celebrando sua efetivação na MB Finance" />
+          <img src="/images/mb-news/setembro/promovidos/henrique-goldstein.jpeg" alt="Henrique Goldstein" width="1383" height="1600" fetchpriority="high" />
         </div>
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
-          <h3>Willian Amaral</h3>
-          <p>Parabéns pela efetivação e por este novo passo na sua trajetória com a MB Finance.</p>
+          <h3>Henrique Goldstein</h3>
+          <p>Chegou à área de Projetos e Inovação em maio de 2026 e, apenas três meses depois, foi efetivado. Nesse curto período, já contribuiu com a criação e implantação de sistemas de RH, CRM e outros projetos estratégicos.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Nova etapa</strong>
-              <span>Efetivado</span>
-              <p>Uma conquista construída com dedicação e muito aprendizado.</p>
+              <strong>Projetos e Inovação</strong>
+              <span>Efetivado após três meses</span>
+              <p>Sucesso, Henrique! Que essa nova etapa venha com ainda mais aprendizados e conquistas.</p>
             </div>
           </div>
         </div>
       </article>
 
       <article class="promotion-slide" data-slide="1" role="group" hidden
-        aria-roledescription="slide" aria-label="2 de 4: efetivações de Arthur e Evellyn">
+        aria-roledescription="slide" aria-label="2 de 6: destaque de Rodrigo Netto">
         <div class="promotion-slide-media">
-          <img src="/images/mb-news/julho/promocoes/arthur-e-evellyn.jpeg"
-            alt="Arthur e Evellyn celebrando juntos suas efetivações na MB Finance" loading="lazy" />
+          <img src="/images/mb-news/setembro/promovidos/rodrigo-netto.png" alt="Rodrigo Netto" width="1122" height="1402" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
-          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
-          <h3>Arthur e Evellyn</h3>
-          <p>Mesmo celebrando na mesma foto, cada um inicia essa nova etapa em seu próprio setor na MB Finance.</p>
+          <span class="june-kicker"><i data-lucide="trending-up" style="width:15px;height:15px"></i> Desenvolvimento</span>
+          <h3>Rodrigo Netto</h3>
+          <p>Iniciou sua jornada na empresa em abril de 2026. Passou por diferentes projetos e se desenvolveu na área de Relacionamento com o Cliente, mostrando capacidade, desempenho acima da média e muita vontade de crescer.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Arthur</strong>
-              <span>Efetivado · Farmer de Adquirência</span>
-              <p>Passou por alguns projetos dentro da empresa e foi efetivado na área de Farmer de Adquirência. Desejamos sucesso nessa trajetória!</p>
-            </div>
-            <div class="promotion-profile">
-              <strong>Evellyn</strong>
-              <span>Efetivada · Hunter de Adquirência</span>
-              <p>Iniciou sua experiência na MB em agosto de 2025 como estagiária e, 11 meses depois, foi efetivada. Já foi destaque em alguns setores, e essa conquista reforça que está trilhando uma jornada de excelência.</p>
+              <strong>Relacionamento com o Cliente</strong>
+              <span>Trajetória em expansão</span>
+              <p>Sucesso, Rodrigo! Que sua vontade de crescer continue abrindo novos caminhos.</p>
             </div>
           </div>
         </div>
       </article>
 
       <article class="promotion-slide" data-slide="2" role="group" hidden
-        aria-roledescription="slide" aria-label="3 de 4: efetivações de Julia Luiza e Julia Goulart">
+        aria-roledescription="slide" aria-label="3 de 6: destaque de Lucas Martins">
         <div class="promotion-slide-media">
-          <img src="/images/mb-news/julho/promocoes/julia-luiza-e-julia-goulart.png"
-            alt="Julia Luiza e Julia Goulart celebrando juntas suas efetivações na MB Finance" loading="lazy" />
+          <img src="/images/mb-news/setembro/promovidos/lucas-martins.png" alt="Lucas Martins" width="1122" height="1402" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
-          <span class="june-kicker"><i data-lucide="badge-check" style="width:15px;height:15px"></i> Efetivação</span>
-          <h3>Julia Luiza e Julia Goulart</h3>
-          <p>As duas iniciaram o Programa de Estágio em outubro de 2025 e, após oito meses conhecendo a cultura da MB e entregando resultados promissores, foram efetivadas por meritocracia.</p>
+          <span class="june-kicker"><i data-lucide="trending-up" style="width:15px;height:15px"></i> Desenvolvimento</span>
+          <h3>Lucas Martins</h3>
+          <p>Também chegou em abril de 2026 e, assim como Rodrigo, construiu sua trajetória na área de Relacionamento com o Cliente, com desempenho acima da média e sede de evolução constante.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Abertura de Contas</strong>
-              <span>Efetivadas</span>
-              <p>Parabéns, meninas. Este é só o início de uma jornada de excelência. Sucesso sempre!</p>
+              <strong>Relacionamento com o Cliente</strong>
+              <span>Desempenho acima da média</span>
+              <p>Sucesso, Lucas! Que essa busca por evolução siga inspirando os próximos passos.</p>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="promotion-slide is-active" data-slide="3" role="group"
-        aria-roledescription="slide" aria-label="4 de 4: promoção de Beatriz Assumpção">
+      <article class="promotion-slide" data-slide="3" role="group" hidden
+        aria-roledescription="slide" aria-label="4 de 6: promoção de Maria Seixas">
         <div class="promotion-slide-media">
-          <img src="/images/mb-news/julho/promocoes/beatriz-assuncao.jpeg"
-            alt="Beatriz Assumpção celebrando sua promoção para Especialista de T&D" loading="lazy" />
+          <img src="/images/mb-news/setembro/promovidos/maria-seixas.jpeg" alt="Maria Seixas" width="900" height="1600" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoção</span>
-          <h3>Beatriz Assumpção</h3>
-          <p>Beatriz iniciou sua jornada na MB em agosto de 2024 como estagiária. Após três meses, foi efetivada no setor de Adquirência, onde atuou no Farmer e no gerenciamento da carteira de clientes.</p>
-          <p style="margin-top:14px">Sempre presente nos treinamentos da equipe, em julho foi promovida para o time de Treinamento e Desenvolvimento, com foco em fortalecer a cultura e promover o desenvolvimento dos colaboradores.</p>
+          <h3>Maria Seixas</h3>
+          <p>Começou como estagiária e, com resultados consistentes, foi promovida a Líder. Este mês, deu mais um passo importante em sua carreira: assumiu a posição de Supervisora de Canal.</p>
           <div class="promotion-profile-list">
             <div class="promotion-profile">
-              <strong>Adquirência → Treinamento e Desenvolvimento</strong>
-              <span>Promovida a Especialista de T&amp;D</span>
-              <p>Uma nova etapa para potencializar pessoas e cultura na MB.</p>
+              <strong>Líder → Supervisora de Canal</strong>
+              <span>Nova liderança</span>
+              <p>Sucesso, Maria! Sempre focada em resultados e no desenvolvimento de pessoas, esperamos que essa nova cadeira traga ainda mais excelência à sua jornada.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="promotion-slide" data-slide="4" role="group" hidden
+        aria-roledescription="slide" aria-label="5 de 6: promoção de Marcela Pita">
+        <div class="promotion-slide-media">
+          <img src="/images/mb-news/setembro/promovidos/marcela-pita.jpeg" alt="Marcela Pita" width="960" height="1280" loading="lazy" />
+        </div>
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Nova liderança</span>
+          <h3>Marcela Pita</h3>
+          <p>Nova líder da área de Abertura de Contas, Marcela traz consigo uma sólida bagagem comercial que já chega somando com o time.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Abertura de Contas</strong>
+              <span>Nova líder</span>
+              <p>Parabéns pela promoção, Marcela! Desejamos sucesso nessa nova cadeira.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="promotion-slide" data-slide="5" role="group" hidden
+        aria-roledescription="slide" aria-label="6 de 6: promoção de Higor Campos">
+        <div class="promotion-slide-media">
+          <img src="/images/mb-news/setembro/promovidos/higor-campos.png" alt="Higor Campos" width="1122" height="1402" loading="lazy" />
+        </div>
+        <div class="promotion-slide-copy">
+          <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoção</span>
+          <h3>Higor Campos</h3>
+          <p>Começou como estagiário, foi promovido a Analista — atuando no backoffice, na condução de propostas de crédito e no relacionamento com clientes — e agora assume a posição de Líder de Relacionamento, ajudando a impulsionar um time em franco crescimento.</p>
+          <div class="promotion-profile-list">
+            <div class="promotion-profile">
+              <strong>Analista → Líder de Relacionamento</strong>
+              <span>Nova liderança</span>
+              <p>Sucesso, Higor! Que essa nova etapa seja marcada por grandes conquistas.</p>
             </div>
           </div>
         </div>
@@ -1847,13 +1910,15 @@
       </div>
       <div class="promotion-carousel-controls">
         <div class="promotion-carousel-dots" role="group" aria-label="Escolher destaque">
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Beatriz Assumpção" aria-current="true"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar efetivações de Arthur e Evellyn" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar efetivações de Julia Luiza e Julia Goulart" aria-current="false"></button>
-          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Willian Amaral" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="0" aria-label="Mostrar efetivação de Henrique Goldstein" aria-current="true"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="1" aria-label="Mostrar destaque de Rodrigo Netto" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="2" aria-label="Mostrar destaque de Lucas Martins" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="3" aria-label="Mostrar promoção de Maria Seixas" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="4" aria-label="Mostrar promoção de Marcela Pita" aria-current="false"></button>
+          <button class="promotion-carousel-dot" type="button" data-carousel-dot="5" aria-label="Mostrar promoção de Higor Campos" aria-current="false"></button>
         </div>
       </div>
-      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 4: promoção de Beatriz Assumpção</p>
+      <p class="sr-only" id="promotionCarouselStatus" aria-live="polite">Destaque 1 de 6: efetivação de Henrique Goldstein</p>
     </div>
   </div>
 </section>
@@ -1937,23 +2002,23 @@
 </section>
 
 <!-- ANIVERSARIANTES -->
-<section id="aniversariantes" hidden>
+<section id="aniversariantes">
   <div class="container">
     <div class="birthday-header fade-up">
       <div>
         <span class="section-eyebrow" style="color:#c56b00">Gente que faz a MB</span>
-        <h2 class="section-title">Agosto também é mês de celebrar.</h2>
+        <h2 class="section-title">Setembro também é mês de celebrar.</h2>
         <p class="section-desc">
-          Cada novo ciclo merece ser recebido com carinho. A lista oficial de aniversariantes de agosto será atualizada pelo RH nesta edição.
+          Cada novo ciclo merece ser recebido com carinho. Neste mês, celebramos quinze pessoas que fazem parte da nossa história e ajudam a construir a MB todos os dias.
         </p>
       </div>
-      <div class="birthday-count" aria-label="Aniversariantes de agosto">
+      <div class="birthday-count" aria-label="Quinze aniversariantes celebrados em setembro">
         <span class="birthday-count-icon" aria-hidden="true"><i data-lucide="cake"></i></span>
-        <span><strong>RH</strong><span>lista em atualização</span></span>
+        <span><strong>15</strong><span>novos ciclos em setembro</span></span>
       </div>
     </div>
 
-    <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos aniversariantes de agosto" style="display:none">
+    <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos quinze aniversariantes de setembro">
       <div class="birthday-carousel-toolbar">
         <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
           <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
@@ -1965,12 +2030,21 @@
         <div class="birthday-carousel-viewport">
           <div class="birthday-carousel-track">
             <div class="birthday-carousel-group">
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/edelyn-de-souza.png" alt="Edelyn de Souza Oliveira, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/matheus-teixeira-kauss.png" alt="Matheus Teixeira Kauss Sant'Anna, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/mayko-william-araujo.png" alt="Mayko William Araujo Hentzy, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/paula-cavalcanti-dos-santos.png" alt="Paula Cavalcanti dos Santos, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/ricardo-wolter-de-franca.png" alt="Ricardo Wolter de França Junior, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
-              <figure class="birthday-photo"><img src="/images/mb-news/julho/aniversariantes/vanessa-barros-martins.png" alt="Vanessa Barros Martins, aniversariante de julho" width="1080" height="1350" loading="lazy" /></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">BC</span><figcaption>Bruno de Abreu Couto Monteiro</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">GA</span><figcaption>Guilherme Alfradique Bottino</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">HS</span><figcaption>Hellene Silva dos Santos</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">JC</span><figcaption>Juan Cavalcante Campello da Rosa</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">LA</span><figcaption>Laíza de Almeida</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">MP</span><figcaption>Marcela Gomes Pita</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">MM</span><figcaption>Maria Eduarda Mendes Machado</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">MR</span><figcaption>Maria Eduarda Millani Romanelli</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">MF</span><figcaption>Mateus Fraga da Silva Caruso</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">NS</span><figcaption>Natallia Araujo Silva</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">NA</span><figcaption>Nathan Almeida Amorim</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">PH</span><figcaption>Pablo Henrique de Araujo dos Santos</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">RG</span><figcaption>Rodrigo Gadelha Rodrigues</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">TS</span><figcaption>Thais dos Santos Oliveira</figcaption></figure>
+              <figure class="birthday-photo birthday-name-card"><span class="birthday-name-card__icon" aria-hidden="true"><i data-lucide="cake"></i></span><span class="birthday-name-card__initials" aria-hidden="true">WL</span><figcaption>Wallace Laureano de Souza</figcaption></figure>
             </div>
           </div>
         </div>
@@ -1978,12 +2052,12 @@
     </div>
 
     <p class="birthday-message fade-up">
-      Parabéns aos aniversariantes de agosto! Assim que o RH enviar a lista final, este espaço será atualizado com os nomes e as datas de cada celebração.
+      A todos os aniversariantes de setembro, desejamos um novo ciclo repleto de saúde, realizações e bons encontros. Que não faltem motivos para comemorar dentro e fora da MB. Parabéns!
     </p>
   </div>
 </section>
 
-<!-- TOTALPASS -->
+<!-- TOTALPASS — temporariamente oculto na edição de setembro -->
 <section id="totalpass" class="july-totalpass" hidden>
   <div class="container">
     <div class="totalpass-header fade-up">
@@ -2052,6 +2126,49 @@
       <i data-lucide="users"></i>
       Parabéns aos destaques do mês por inspirarem o time a se movimentar.
     </p>
+
+    <div class="totalpass-howto totalpass-howto--compact fade-up" aria-labelledby="totalpassHowtoTitle">
+      <div class="totalpass-howto-header">
+              <span class="section-eyebrow"><i data-lucide="smartphone"></i> Como usar o TotalPass</span>
+        <h3 id="totalpassHowtoTitle">Faça seu cadastro e comece a cuidar da sua rotina.</h3>
+        <p>Em poucos passos, você ativa seu acesso, escolhe o plano que combina com você e começa a explorar as opções de bem-estar da MB.</p>
+      </div>
+
+      <div class="totalpass-howto-grid">
+        <div class="totalpass-howto-visual" role="img" aria-label="Resumo visual para fazer o cadastro no TotalPass">
+          <div class="totalpass-howto-brand">
+            <span class="totalpass-howto-wordmark">TOTAL<span>PASS</span></span>
+            <strong>FAÇA O SEU<br />CADASTRO</strong>
+            <span class="totalpass-howto-arrows" aria-hidden="true">›››</span>
+          </div>
+          <div class="totalpass-howto-photo">
+            <img src="/images/mb-news/junho/totalpass/totalpass-gym-background.png" alt="Academia disponível para explorar pelo TotalPass" loading="lazy" />
+          </div>
+          <div class="totalpass-howto-callout">
+            Comece a explorar todos os benefícios disponíveis e cuide do seu bem-estar físico e mental em um único app. <strong>Siga o passo a passo para fazer o seu cadastro:</strong>
+          </div>
+          <div class="totalpass-howto-mini-steps" aria-label="Últimos passos do cadastro">
+            <div><span>01</span><strong>Vá em “Minha conta” &gt; “Meu plano”</strong></div>
+            <div><span>02</span><strong>Escolha qual plano combina mais com você</strong></div>
+          </div>
+          <div class="totalpass-howto-footer">#VAMOSTOTALIZAR</div>
+        </div>
+
+        <div class="totalpass-howto-copy">
+          <span class="totalpass-howto-kicker"><i data-lucide="list-checks"></i> Passo a passo</span>
+          <ol>
+            <li><span>01</span><p>Faça o download do app TotalPass e clique em <strong>“Cadastrar”</strong>.</p></li>
+            <li><span>02</span><p>Insira suas informações cadastrais.</p></li>
+            <li><span>03</span><p>Selecione sua empresa e confirme.</p></li>
+            <li><span>04</span><p>Finalize o cadastro preenchendo os dados solicitados.</p></li>
+          </ol>
+          <div class="totalpass-howto-note">
+            <i data-lucide="circle-check"></i>
+            <p>Depois de concluir o cadastro, você já poderá visualizar academias e estúdios próximos. Para fazer o <strong>check-in</strong>, lembre-se de ativar um plano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2080,7 +2197,7 @@
             <span class="new-site-dot" style="background:#22c55e"></span>
             <span class="new-site-url">mbfinance.com.br</span>
           </div>
-          <img src="public/images/mb-finance-site-print.png" alt="MB Finance" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
+          <img src="/images/mb-finance-site-print.png" alt="MB Finance" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
         </div>
         <div class="new-site-info">
           <div class="new-site-badge-row">
@@ -2110,7 +2227,7 @@
             <span class="new-site-dot" style="background:#22c55e"></span>
             <span class="new-site-url">mbnegocios.com.br</span>
           </div>
-          <img src="public/images/mb-negocios-site-print.png" alt="MB Negócios" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
+          <img src="/images/mb-negocios-site-print.png" alt="MB Negócios" style="width:100%;height:280px;object-fit:cover;object-position:top;display:block">
         </div>
         <div class="new-site-info">
           <div class="new-site-badge-row">
@@ -2271,24 +2388,24 @@
   </div>
 </section>
 
-<!-- EVENTO AGOSTO -->
-<section id="evento" hidden>
+<!-- SAÚDE MENTAL · SETEMBRO AMARELO -->
+<section id="evento">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow">Desenvolvimento e liderança</span>
-      <h2 class="section-title">Liderar também é cuidar.</h2>
-      <p class="section-desc">Em agosto, iniciamos uma consultoria especializada com o Instituto Cury para preparar nossas lideranças para os desafios da NR-1 e fortalecer o cuidado com a saúde mental no ambiente de trabalho.</p>
+      <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo</span>
+      <h2 class="section-title">Saúde mental também se constrói em encontros.</h2>
+      <p class="section-desc">Neste mês, abrimos espaço para falar sobre saúde mental, escuta e cuidado no ambiente de trabalho. Em breve, esta seção também vai reunir as fotos dos encontros e os momentos que fizeram parte dessa conversa.</p>
     </div>
     <div class="health-plan-grid fade-up" style="margin-top:32px">
       <div class="health-plan-card">
         <span class="june-kicker"><i data-lucide="users" style="width:15px;height:15px"></i> Instituto Cury</span>
-        <h3>Um passo importante para nossas lideranças</h3>
-        <p>O objetivo é apoiar nossos gestores na identificação, no acolhimento e no encaminhamento de situações relacionadas aos riscos psicossociais, em conformidade com a NR-1.</p>
-        <p>Investir em nossas lideranças é investir no bem-estar de toda a MB. Esta é a primeira etapa de uma jornada que estamos construindo juntos.</p>
+        <h3>Um espaço para acolher e aprender</h3>
+        <p>Falar sobre saúde mental é fortalecer a capacidade de reconhecer sinais, acolher diferentes experiências e construir relações mais cuidadosas no dia a dia.</p>
+        <p>Os encontros desta edição vão ampliar essa conversa com a equipe. Assim que as fotos forem enviadas, elas entram aqui para contar visualmente essa jornada.</p>
       </div>
       <aside class="health-plan-steps">
-        <span class="june-kicker"><i data-lucide="heart-pulse" style="width:15px;height:15px"></i> Saúde mental</span>
-        <h3>Você sabe os benefícios da terapia?</h3>
+        <span class="june-kicker"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Saúde mental</span>
+        <h3>Cuidar de si também é uma forma de presença</h3>
         <ul>
           <li><span>Reduzir o estresse e a ansiedade do dia a dia.</span></li>
           <li><span>Melhorar o autoconhecimento e a tomada de decisões.</span></li>
@@ -2648,12 +2765,14 @@
     : [];
   const promotionStatus = document.getElementById('promotionCarouselStatus');
   const promotionLabels = [
-    'promoção de Beatriz Assumpção',
-    'efetivações de Arthur e Evellyn',
-    'efetivações de Julia Luiza e Julia Goulart',
-    'efetivação de Willian Amaral'
+    'efetivação de Henrique Goldstein',
+    'destaque de Rodrigo Netto',
+    'destaque de Lucas Martins',
+    'promoção de Maria Seixas',
+    'promoção de Marcela Pita',
+    'promoção de Higor Campos'
   ];
-  const promotionOrder = [3, 1, 2, 0];
+  const promotionOrder = [0, 1, 2, 3, 4, 5];
   let currentPromotionPosition = 0;
 
   function showPromotionSlide(nextIndex) {

@@ -875,3 +875,252 @@ Atualização: o ícone do Calendário 2026 segue a escala de 24 px dos demais c
 Atualização: os três títulos usam 1,18 rem e altura de linha de 1,25; o rótulo redundante “Calendário 2026” foi removido.
 
 Atualização: o ícone do calendário foi colocado acima do título para repetir a mesma hierarquia visual das campanhas.
+
+## ADR-035: Exibir um colaborador por slide nos destaques de agosto
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Transformar a seção de destaques dos setores em um carrossel manual com um slide por pessoa, usando a foto oficial à esquerda e um texto editorial curto à direita no desktop. No mobile, a foto fica acima do texto.
+
+### Motivo
+
+Os cards agrupados apresentavam apenas nomes e setores. Um retrato por slide cria reconhecimento individual, dá espaço para uma mensagem específica e mantém a interação já conhecida de setas, indicadores e teclado.
+
+### Alternativas consideradas
+
+- Manter os seis cards em grid: descartado porque reduz o destaque visual das fotos.
+- Agrupar duas pessoas por slide: descartado porque repete a limitação da composição atual.
+- Criar autoplay: descartado nesta etapa para manter o controle de leitura e evitar que o texto mude antes de ser lido.
+
+### Observação editorial
+
+Os textos incluídos são uma primeira versão baseada apenas nos nomes e setores fornecidos. Devem ser revisados pelo RH antes do deploy.
+
+## ADR-042: Dar protagonismo visual à entrevista de agosto
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Apresentar a entrevista de Thays Florencio com sua foto em um cartão de perfil, uma frase-chave em destaque e seis perguntas em acordeão. A primeira resposta começa aberta, sem autoplay, e o acordeão permite apenas uma resposta aberta por vez.
+
+### Motivo
+
+Os blocos corridos dificultavam a escaneabilidade e não deixavam claro quem era a entrevistada. O retrato cria identificação imediata, enquanto o acordeão organiza a leitura sem remover nenhum conteúdo da entrevista.
+
+### Alternativas consideradas
+
+- Manter os blocos de texto: descartado porque preservava a baixa hierarquia visual percebida na seção.
+- Transformar cada pergunta em slide de carrossel: descartado porque respostas longas exigem comparação e leitura no próprio contexto.
+- Abrir todas as respostas: descartado para evitar uma parede de texto e dar ritmo à exploração.
+
+### Observação editorial
+
+As respostas foram preservadas; o título, a frase-chave e o resumo do cartão são textos de apresentação e devem ser revisados pelo RH antes do deploy.
+
+## ADR-043: Apresentar a indicação de filme como conteúdo editorial
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Adicionar `O Lobo de Wall Street` como uma seção própria da edição de agosto, com cartaz em destaque, texto completo, ampliação pelo lightbox e uma síntese dos aprendizados comerciais.
+
+### Motivo
+
+A indicação é um conteúdo de leitura, não apenas um link. O cartaz cria um ponto de entrada visual e a estrutura em duas colunas conecta a experiência de lazer aos temas de vendas, negociação e comunicação.
+
+### Alternativas consideradas
+
+- Inserir a indicação apenas no editorial: descartado porque esconderia o conteúdo e reduziria sua descoberta.
+- Reutilizar o bloco genérico de evento: descartado porque a indicação precisava de uma hierarquia própria para cartaz e texto.
+- Usar um carrossel: descartado porque o conteúdo tem uma narrativa contínua e deve ser lido no próprio ritmo.
+
+### Observação editorial
+
+O texto foi inserido a partir do briefing enviado. A imagem e a copy devem passar pela revisão final de Comunicação/RH antes do deploy.
+
+## ADR-044: Usar identidade amarela na edição de setembro
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Aplicar uma identidade visual amarela à edição de setembro, usando o laço amarelo como marcador recorrente e mantendo o azul-marinho como base de contraste. Reutilizar também a composição editorial da indicação de filme criada para agosto.
+
+### Motivo
+
+Setembro Amarelo precisa ser reconhecido desde a entrada da página, não apenas dentro do texto do filme. A paleta amarela cria unidade entre hero, navegação e seções, enquanto o azul-marinho evita perda de legibilidade e mantém a relação com a marca MB News.
+
+### Alternativas consideradas
+
+- Aplicar amarelo apenas na seção do filme: descartado porque deixaria o tema isolado e pouco reconhecível na edição.
+- Trocar todo o azul da página por amarelo: descartado porque reduziria o contraste e romperia a identidade base da MB News.
+- Usar o laço apenas como texto: descartado porque o símbolo visual recorrente facilita o reconhecimento rápido da campanha.
+
+### Observação editorial
+
+A Palavra do Mês de agosto foi reescrita para refletir agosto; a redação final das duas mensagens deve ser revisada por Comunicação/RH.
+
+## ADR-045: Usar cartões de iniciais até receber as fotos dos aniversariantes
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Reativar o carrossel de aniversariantes de agosto com dez cartões nominais, usando iniciais e ícone de bolo enquanto os retratos oficiais não forem fornecidos.
+
+### Motivo
+
+O pedido trouxe os nomes, mas não trouxe fotos correspondentes. Os cartões preservam a experiência visual e o movimento do carrossel de julho sem associar imagens de outras pessoas aos aniversariantes corretos.
+
+### Alternativas consideradas
+
+- Reutilizar fotos de julho: descartado porque criaria associações visuais incorretas.
+- Manter a seção oculta: descartado porque os nomes já estão disponíveis e a celebração faz parte do conteúdo de agosto.
+- Gerar retratos artificiais: descartado porque não representaria os colaboradores reais.
+
+### Observação editorial
+
+Os cartões devem ser substituídos por fotos oficiais quando o RH enviar os retratos, mantendo os nomes e a estrutura do carrossel.
+
+## ADR-046: Liberar os conteúdos de setembro com placeholders visuais seguros
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Publicar os módulos de promovidos, aniversariantes e saúde mental em setembro usando cartões de iniciais onde não há retratos disponíveis, mantendo o espaço de saúde mental preparado para receber as fotos dos encontros.
+
+### Motivo
+
+O conteúdo textual já foi fornecido, mas as fotos dos encontros ainda serão enviadas e não há retratos correspondentes para todas as pessoas. Os placeholders preservam a hierarquia visual, evitam associações incorretas e permitem que a edição seja revisada agora.
+
+### Alternativas consideradas
+
+- Manter os módulos ocultos até receber todas as fotos: descartado porque os textos de setembro já estão prontos para publicação.
+- Reutilizar fotos de outros meses: descartado porque as imagens não representariam os novos destaques.
+- Publicar os blocos sem identidade visual: descartado porque quebraria a experiência amarela do Setembro Amarelo.
+
+### Observação editorial
+
+As fotos dos encontros de saúde mental devem entrar assim que forem recebidas, sem alterar a estrutura do módulo.
+
+## ADR-047: Reproduzir o guia de cadastro do TotalPass sem depender de arquivo ausente
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Adicionar o guia `Como usar o TotalPass` como módulo HTML/CSS responsivo logo após o pódio, usando o conteúdo visual da referência enviada e uma imagem de apoio já existente no projeto.
+
+### Motivo
+
+A referência foi recebida apenas embutida na conversa e não existe como arquivo local para ser copiada para `public/images`. A reprodução mantém o conteúdo, a hierarquia e a estética do material sem inserir uma URL que resultaria em 404.
+
+### Alternativas consideradas
+
+- Apontar para um caminho de imagem ainda inexistente: descartado porque deixaria um recurso quebrado.
+- Usar uma imagem gerada para substituir a arte: descartado porque não preservaria fielmente o material enviado.
+- Esperar sem liberar o módulo: descartado porque o passo a passo já pode ser útil e revisado no layout final.
+
+### Observação editorial
+
+Quando a arte original for enviada como PNG/JPG, ela pode substituir a reprodução mantendo o contêiner e a navegação da seção.
+
+## ADR-048: Compartilhar o guia do TotalPass entre agosto e setembro
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Reutilizar o mesmo módulo `Como usar o TotalPass` nas edições de agosto e setembro, com estilos compartilhados em `public/assets/css/mb-news-totalpass-howto.css` para a edição de agosto.
+
+### Motivo
+
+O guia havia sido inserido apenas em setembro, mas o pódio também está presente em agosto. Compartilhar a composição evita que a experiência fique diferente entre as duas edições e corrige a ausência percebida no mês de agosto.
+
+### Alternativas consideradas
+
+- Criar uma versão diferente para agosto: descartado porque o conteúdo e o fluxo de cadastro são os mesmos.
+- Copiar todos os estilos para o CSS de agosto: descartado porque aumentaria a duplicação e dificultaria ajustes futuros.
+- Manter agosto apenas com o pódio: descartado porque o passo a passo é útil logo após o ranking.
+
+### Observação editorial
+
+As duas edições ainda usam a reprodução HTML/CSS enquanto a arte original não estiver disponível como arquivo local.
+
+## ADR-049: Tratar o guia do TotalPass como conteúdo complementar
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Reduzir o módulo `Como usar o TotalPass` nas duas edições, usando um cabeçalho compacto, uma composição visual menor e apenas um passo a passo principal. No mobile, ocultar a foto auxiliar e os passos duplicados do mini-card.
+
+### Motivo
+
+O guia é útil como apoio, mas não deve ocupar o mesmo peso visual do pódio ou criar uma segunda seção hero. A redução mantém as instruções acessíveis e melhora a hierarquia da página.
+
+### Alternativas consideradas
+
+- Remover o guia inteiro: descartado porque o cadastro e o check-in continuam sendo informações úteis.
+- Manter o layout grande: descartado porque prolongava a seção e repetia instruções.
+- Exibir somente a arte original: descartado enquanto o arquivo enviado não estiver disponível localmente.
+
+### Observação editorial
+
+Quando a arte original for anexada, ela pode substituir a composição visual menor sem reabrir a seção como um bloco hero.
+
+## ADR-050: Usar fotos oficiais no carrossel de promovidos de setembro
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Substituir os cards de iniciais do carrossel de promovidos de setembro pelos seis retratos recebidos na pasta de promoções, mantendo os textos e a navegação já existentes.
+
+### Motivo
+
+As imagens identificam diretamente cada profissional reconhecido e tornam a seção mais humana e relevante, sem alterar a estrutura editorial do carrossel.
+
+### Alternativas consideradas
+
+- Manter as iniciais: descartado porque as fotos oficiais estavam disponíveis.
+- Usar uma foto genérica por slide: descartado porque poderia associar a imagem à pessoa errada.
+- Alterar o carrossel para uma grade fixa: descartado porque os controles atuais funcionam bem para seis destaques.
+
+### Observação editorial
+
+As fotos são carregadas sob demanda nos slides ocultos para manter o carregamento inicial mais leve; cada retrato foi associado pelo nome do arquivo recebido.
+
+## ADR-051: Ocultar temporariamente o TotalPass de setembro
+
+**Data:** 2026-09-21
+**Status:** Implementado
+
+### Decisão
+
+Ocultar a seção `#totalpass` apenas na edição de setembro com o atributo HTML `hidden` e retirar seu link da navegação, preservando o conteúdo para uma possível reativação.
+
+### Motivo
+
+O usuário solicitou retirar o módulo por enquanto. Ocultar a seção mantém o trabalho já realizado recuperável e evita apagar conteúdo que pode voltar a ser aprovado depois.
+
+### Alternativas consideradas
+
+- Apagar todo o conteúdo: descartado porque dificultaria a reativação.
+- Manter o link apontando para uma seção oculta: descartado porque prejudicaria a navegação.
+- Ocultar também agosto: descartado porque o pedido foi específico para setembro.

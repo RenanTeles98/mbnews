@@ -16,6 +16,12 @@
 
 ## Atualizacao 2026-09-16 - Edicoes de agosto e setembro
 
+## Atualizacao 2026-09-21 - Rota da edicao de agosto
+
+- [x] Criar uma rota publica dedicada para agosto.
+- [x] Atualizar os links “Ago” das edicoes historicas.
+- [x] Validar o carregamento local da edicao de agosto.
+
 - [x] Acrescentar os destaques dos setores e a entrevista de Thays na edicao de agosto.
 - [x] Criar a edicao de setembro com a indicacao de filme e a apresentacao da entrevista de Amanda.
 - [x] Extrair o cartaz de `Um Senhor Estagiario` para `public/images/mb-news/setembro/`.
@@ -246,3 +252,96 @@
 - [x] Padronizar o ícone e o espaçamento interno do card Calendário 2026.
 - [x] Padronizar os títulos dos três cards de saúde e remover o rótulo auxiliar do calendário.
 - [x] Posicionar o ícone do Calendário 2026 acima do título, como nos cards de campanha.
+
+## Atualização 2026-09-21 — Carrossel dos destaques de agosto
+
+- [x] Substituir os cards agrupados de setores por seis slides individuais.
+- [x] Associar as seis fotos de agosto aos respectivos nomes e setores.
+- [x] Adicionar texto editorial curto para cada destaque.
+- [x] Manter navegação por setas, dots e teclado com status acessível.
+- [x] Validar o comportamento responsivo e o carregamento das imagens.
+- [ ] Revisar a copy com o RH antes da publicação.
+
+## Atualização 2026-09-21 — Nova experiência da entrevista de agosto
+
+- [x] Reorganizar a entrevista em perfil visual da Thays e acordeão de perguntas e respostas.
+- [x] Reutilizar a foto oficial da Thays na abertura da seção.
+- [x] Preservar as seis respostas e tornar a leitura progressiva, com uma resposta aberta por vez.
+- [x] Validar acessibilidade básica, responsividade e comportamento do acordeão localmente.
+- [ ] Revisar com o RH o título, a frase-chave e o resumo editorial do perfil.
+
+## Atualização 2026-09-21 — Indicação de filme de agosto
+
+- [x] Adicionar a indicação de `O Lobo de Wall Street` à edição de agosto.
+- [x] Incluir cartaz, ampliação por lightbox e resumo dos aprendizados comerciais.
+- [x] Conectar a seção ao menu e ao CTA principal da edição.
+- [x] Validar a renderização responsiva e o carregamento do cartaz.
+- [ ] Revisar a imagem e a copy final com Comunicação/RH.
+
+## Atualização 2026-09-21 — Identidade de setembro e Palavra do Mês de agosto
+
+- [x] Aplicar à indicação de filme de setembro o mesmo formato editorial criado para agosto.
+- [x] Criar identidade visual amarela para a edição de setembro.
+- [x] Inserir o símbolo do laço amarelo nos principais pontos de identificação da edição.
+- [x] Corrigir a Palavra do Mês de agosto para refletir o conteúdo real da edição.
+- [x] Corrigir caminhos de imagens quebrados na edição de setembro.
+- [ ] Validar com Comunicação/RH a intensidade do amarelo e as duas mensagens editoriais.
+
+## Atualização 2026-09-21 — Aniversariantes de agosto
+
+- [x] Incluir os dez aniversariantes informados na edição de agosto.
+- [x] Reativar o carrossel e atualizar a contagem da seção.
+- [x] Criar cartões responsivos com iniciais para não inventar fotos dos colaboradores.
+- [x] Validar pausa, loop duplicado, nomes e layout mobile localmente.
+- [ ] Substituir as iniciais por fotos oficiais quando o RH enviar os retratos.
+
+## Atualização 2026-09-21 — Conteúdos de setembro
+
+- [x] Liberar a seção de promovidos com os seis destaques enviados.
+- [x] Reconfigurar o carrossel para seis slides e seis indicadores acessíveis.
+- [x] Liberar a seção de aniversariantes com os quinze nomes de setembro.
+- [x] Liberar o módulo de saúde mental do Setembro Amarelo.
+- [x] Adicionar links de navegação para os novos conteúdos.
+- [x] Validar desktop, mobile, navegação do carrossel e carregamento de recursos localmente.
+- [ ] Inserir as fotos dos encontros de saúde mental quando forem enviadas.
+- [ ] Substituir cartões de iniciais por retratos oficiais, caso disponíveis.
+
+## Atualização 2026-09-21 — Guia de uso do TotalPass
+
+- [x] Liberar a seção TotalPass de setembro.
+- [x] Adicionar o módulo de cadastro logo abaixo do pódio.
+- [x] Incluir os passos de download, cadastro, confirmação da empresa, escolha do plano e check-in.
+- [x] Adicionar link de navegação para TotalPass.
+- [x] Validar carregamento da imagem de apoio, responsividade e ausência de overflow mobile.
+- [ ] Substituir a reprodução HTML/CSS pela arte original quando o arquivo PNG/JPG for enviado.
+
+## Atualização 2026-09-21 — Guia de uso do TotalPass em agosto
+
+- [x] Corrigir a ausência do módulo no card/seção TotalPass de agosto.
+- [x] Inserir o mesmo guia de cadastro logo abaixo do pódio de agosto.
+- [x] Compartilhar o estilo do guia em `mb-news-totalpass-howto.css`.
+- [x] Validar desktop, mobile, imagem de apoio, passos e ausência de overflow.
+- [ ] Substituir a reprodução pela arte original nas edições de agosto e setembro quando o arquivo for enviado.
+
+## Atualização 2026-09-21 — Compactação do guia do TotalPass
+
+- [x] Reduzir o módulo para um card complementar, sem competir visualmente com o pódio.
+- [x] Preservar o passo a passo principal e a orientação de check-in.
+- [x] Remover a repetição visual dos mini-passos e a foto auxiliar no mobile.
+- [x] Validar alturas, responsividade, ausência de overflow e recursos ausentes em agosto e setembro.
+- [ ] Substituir a reprodução pela arte original nas duas edições quando o PNG/JPG estiver disponível.
+
+## Atualização 2026-09-21 — Fotos dos promovidos de setembro
+
+- [x] Copiar as seis fotos recebidas para `public/images/mb-news/setembro/promovidos/`.
+- [x] Associar cada retrato ao respectivo slide do carrossel.
+- [x] Ajustar o enquadramento individual das fotos.
+- [x] Validar os seis slides, carregamento das imagens, mobile e recursos ausentes.
+- [ ] Confirmar com o RH os enquadramentos e a ordem editorial final.
+
+## Atualização 2026-09-21 — TotalPass temporariamente oculto em setembro
+
+- [x] Ocultar a seção TotalPass da edição de setembro.
+- [x] Remover o link TotalPass da navegação de setembro.
+- [x] Preservar o conteúdo no HTML para reativação posterior.
+- [ ] Reavaliar a publicação do TotalPass em setembro quando o conteúdo for aprovado.
