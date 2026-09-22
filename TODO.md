@@ -409,3 +409,17 @@
 - [x] Aumentar a largura do card do TotalPass.
 - [x] Colocar o título abaixo do texto “TotalPass · primeiros passos”.
 - [x] Validar desktop, mobile e ausência de overflow.
+
+## Atualização 2026-09-22 — Fotos dos aniversariantes
+
+- [x] Consultar a pasta compartilhada do Google Drive informada pelo usuário.
+- [x] Baixar e organizar 5 fotos de aniversariantes de agosto.
+- [x] Baixar e organizar 8 fotos de aniversariantes de setembro.
+- [x] Aplicar as fotos na home, em agosto e em setembro sem alterar a ordem dos nomes.
+- [x] Validar o carregamento das imagens no navegador e a ausência de falhas locais.
+- [ ] Completar os cards restantes quando as fotos correspondentes forem disponibilizadas.
+- [x] Substituir a foto da Marcela Gomes Pita pela nova imagem adicionada ao Drive.
+- [x] Validar a nova imagem no caminho local do card de setembro.
+- [x] Adicionar a foto existente de Rodrigo Gadelha ao card de aniversariantes de setembro.
+- [x] Adicionar a foto de Matheus Felix Ribeiro ao card de aniversariantes de agosto.
+- [x] Adicionar a foto de Luana Alves Maia Silva ao card de aniversariantes de agosto.

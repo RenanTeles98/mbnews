@@ -1406,3 +1406,88 @@ O cabeçalho lado a lado consumia espaço horizontal e deixava a relação entre
 ### Escopo
 
 Ajuste aplicado no CSS compartilhado `public/assets/css/mb-news-totalpass-howto.css`, refletindo na home e nas edições arquivadas.
+
+## ADR-070: Fotos oficiais nos cards de aniversariantes
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Usar as fotos correspondentes encontradas na pasta compartilhada do Google Drive nos carrosséis de aniversariantes de agosto e setembro, mantendo cards de iniciais para nomes sem correspondência segura.
+
+### Motivo
+
+A pasta contém fotos de vários colaboradores, mas nem todos os nomes da pauta mensal possuem uma correspondência inequívoca. Associar somente os 13 arquivos confirmados evita publicar a foto de outra pessoa e permite completar os cards posteriormente.
+
+### Escopo
+
+Adicionados 5 arquivos em `public/images/mb-news/agosto/aniversariantes/` e 8 em `public/images/mb-news/setembro/aniversariantes/`. As três páginas passaram a renderizar as imagens com recorte quadrado, gradiente de leitura e texto alternativo em pt-BR. Nenhum arquivo original do Drive foi alterado.
+
+## ADR-071: Atualização da foto da Marcela Gomes Pita
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Substituir a imagem anterior da Marcela Gomes Pita pela nova foto JPEG adicionada à pasta compartilhada do Drive.
+
+### Motivo
+
+O usuário sinalizou uma nova foto para uma pessoa que já possuía card em setembro. Atualizar somente a referência do card preserva a ordem, o nome, o enquadramento e a estrutura do carrossel.
+
+### Escopo
+
+Adicionado `public/images/mb-news/setembro/aniversariantes/marcela-gomes-pita.jpeg` e atualizado o card correspondente em `public/pages/mb-news-setembro-2026.html`. O arquivo anterior foi mantido localmente como fallback não referenciado.
+
+## ADR-072: Reutilização da foto de Rodrigo Gadelha
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Reutilizar o retrato de Rodrigo Gadelha já presente no módulo TotalPass de junho no card de aniversariantes de setembro, copiando-o para a pasta de assets do mês.
+
+### Motivo
+
+A foto já estava disponível no projeto e corresponde ao colaborador indicado pelo usuário. A cópia evita dependência entre seções mensais e mantém os assets de setembro organizados em sua própria pasta.
+
+### Escopo
+
+Adicionado `public/images/mb-news/setembro/aniversariantes/rodrigo-gadelha.jpg` e atualizado o card de Rodrigo em `public/pages/mb-news-setembro-2026.html`. A imagem original de junho foi preservada.
+
+## ADR-073: Foto de Matheus Felix Ribeiro no carrossel de agosto
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Usar a foto `Matheus Felix Ribeiro.jpg` encontrada na pasta compartilhada do Drive no card de Matheus Felix Ribeiro em agosto.
+
+### Motivo
+
+O usuário renomeou o arquivo para facilitar a identificação. A correspondência exata com o nome do card permite trocar o placeholder sem alterar a pauta mensal.
+
+### Escopo
+
+Adicionado `public/images/mb-news/agosto/aniversariantes/matheus-felix-ribeiro.jpg` e atualizado o card correspondente em `index.html` e `public/pages/mb-news-agosto-2026.html`.
+
+## ADR-074: Foto de Luana Alves Maia Silva no carrossel de agosto
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Usar a foto `Luana Alves Maia Silva.jpeg` encontrada na pasta compartilhada do Drive no card de Luana Alves Maia Silva em agosto.
+
+### Motivo
+
+O arquivo possui correspondência exata com o nome do card e permite substituir o placeholder sem alterar a ordem ou o conteúdo editorial da seção.
+
+### Escopo
+
+Adicionado `public/images/mb-news/agosto/aniversariantes/luana-alves-maia-silva.jpeg` e atualizado o card correspondente em `index.html` e `public/pages/mb-news-agosto-2026.html`.

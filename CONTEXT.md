@@ -891,4 +891,26 @@ Estado atual: TotalPass permanece disponível em agosto e está temporariamente 
 
 Estado atual: guia do TotalPass mais discreto e complementar em agosto e setembro.
 
+## Sessão 2026-09-22 — Fotos dos aniversariantes de agosto e setembro
+
+- A pasta compartilhada do Google Drive foi consultada pelo ID fornecido pelo usuário.
+- Baixadas 13 fotos para `public/images/mb-news/agosto/aniversariantes/` e `public/images/mb-news/setembro/aniversariantes/`.
+- Aplicadas 5 fotos aos cards de agosto e 8 aos cards de setembro na home, na página arquivada de agosto e na página de setembro.
+- Criada a variante visual `birthday-image-card`, com foto em destaque, recorte quadrado e nome sobreposto em gradiente.
+- Os nomes sem correspondência segura no Drive continuam com o card de iniciais, evitando associação incorreta de pessoas.
+
+Estado atual: 13 fotos oficiais carregadas nos carrosséis de aniversariantes; home, agosto e setembro preservam a mesma ordem e os mesmos nomes editoriais.
+
+Validação: Playwright confirmou 5 imagens carregadas na home, 5 em agosto e 8 em setembro, todas com resposta local 200 e sem falhas locais.
+
+Próximo passo recomendado: receber as fotos restantes, caso o RH queira completar os cards sem correspondência.
+
+Atualização: a nova foto de Marcela Gomes Pita foi baixada do Drive e substituiu a imagem anterior no card de setembro. O arquivo passou a usar a extensão `.jpeg` e respondeu localmente com `200 image/jpeg`.
+
+Atualização: identificado o retrato já existente de Rodrigo Gadelha em `public/images/mb-news/junho/totalpass/rodrigo-gadelha.jpg`. Uma cópia foi organizada em `public/images/mb-news/setembro/aniversariantes/` e vinculada ao card de setembro.
+
+Atualização: a foto `Matheus Felix Ribeiro.jpg` foi localizada na pasta compartilhada do Drive, organizada em `public/images/mb-news/agosto/aniversariantes/` e vinculada ao card de agosto na home e na edição arquivada.
+
+Atualização: a foto `Luana Alves Maia Silva.jpeg` foi localizada no Drive, organizada em `public/images/mb-news/agosto/aniversariantes/` e vinculada ao card de agosto na home e na edição arquivada.
+
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.

@@ -407,6 +407,13 @@ Principais marcos conhecidos:
 
 ## 2026-09-22
 
+- Adicionadas 5 fotos oficiais aos aniversariantes de agosto e 8 aos aniversariantes de setembro, com cards de imagem e nomes preservados.
+- Mantidos cards de iniciais para os nomes sem correspondência segura na pasta compartilhada do Google Drive.
+- Atualizada a foto de Marcela Gomes Pita no card de aniversariantes de setembro.
+- Adicionada a foto de Rodrigo Gadelha ao card de aniversariantes de setembro.
+- Adicionada a foto de Matheus Felix Ribeiro aos cards de aniversariantes de agosto.
+- Adicionada a foto de Luana Alves Maia Silva aos cards de aniversariantes de agosto.
+
 - Corrigido o preview local da MB News para que as edições históricas, imagens, estilos, scripts e vídeos em `public/` sejam encontrados corretamente.
 - Corrigido o caminho do vídeo da Páscoa na edição de abril.
 - Removida a tela de carregamento exclusiva da edição de abril para padronizar a experiência entre as edições.

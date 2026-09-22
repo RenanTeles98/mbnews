@@ -53,6 +53,52 @@
   letter-spacing: 0.7px;
 }
 
+.birthday-photo.birthday-image-card {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: #dce7eb;
+  color: #fff;
+  text-align: left;
+}
+
+.birthday-image-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.birthday-image-card .birthday-name-card__icon,
+.birthday-image-card .birthday-name-card__initials {
+  display: none;
+}
+
+.birthday-image-card figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: none;
+  padding: 46px 18px 16px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 31, 47, .92) 100%);
+  color: #fff;
+  font-size: .82rem;
+  line-height: 1.3;
+}
+
+.birthday-image-card figcaption::before {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffd27a;
+  content: 'Aniversariante';
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 760px) {
   .birthday-photo.birthday-name-card {
     flex-basis: 168px;
@@ -63,6 +109,11 @@
     width: 62px;
     height: 62px;
     font-size: 1.25rem;
+  }
+
+  .birthday-image-card figcaption {
+    padding: 38px 14px 13px;
+    font-size: .76rem;
   }
 }
 
