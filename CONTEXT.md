@@ -769,6 +769,10 @@ Estado atual: guia do TotalPass disponível nas edições de agosto e setembro.
 
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
 
+Publicação: commit `776193f` enviado para `main`; a Vercel publicou a atualização em `https://mbnews.vercel.app/`.
+
+Validação em produção: home, edição de agosto e a imagem de Luana responderam com `200 OK`; a página de agosto contém a referência correta da nova foto.
+
 ## Sessão 2026-09-22 — Foto de equipe do Higor
 
 - Adicionada a foto `public/images/mb-news/setembro/promovidos/higor-campos-equipe.jpeg` a partir do arquivo fornecido.

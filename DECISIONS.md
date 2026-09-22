@@ -1491,3 +1491,20 @@ O arquivo possui correspondência exata com o nome do card e permite substituir 
 ### Escopo
 
 Adicionado `public/images/mb-news/agosto/aniversariantes/luana-alves-maia-silva.jpeg` e atualizado o card correspondente em `index.html` e `public/pages/mb-news-agosto-2026.html`.
+
+## ADR-075: Publicação das atualizações de aniversariantes
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Publicar as atualizações de aniversariantes pelo fluxo padrão do repositório: commit em `main` e deploy automático pela Vercel.
+
+### Motivo
+
+O projeto está configurado para publicar a produção a partir do push para `main`, mantendo o histórico no GitHub e evitando incluir arquivos pessoais não relacionados.
+
+### Resultado
+
+Commit `776193f` enviado com sucesso. Home, página de agosto e a imagem de Luana foram validadas em produção com `200 OK`.

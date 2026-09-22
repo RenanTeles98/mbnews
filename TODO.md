@@ -423,3 +423,4 @@
 - [x] Adicionar a foto existente de Rodrigo Gadelha ao card de aniversariantes de setembro.
 - [x] Adicionar a foto de Matheus Felix Ribeiro ao card de aniversariantes de agosto.
 - [x] Adicionar a foto de Luana Alves Maia Silva ao card de aniversariantes de agosto.
+- [x] Criar commit, enviar para `main` e validar o deploy da atualização na Vercel.

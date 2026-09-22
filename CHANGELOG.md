@@ -432,3 +432,4 @@ Principais marcos conhecidos:
 - Refeito o guia do TotalPass com quatro etapas únicas, painel de benefícios e menos repetição visual/textual.
 - Corrigida a estrutura HTML após o redesign do TotalPass, separando novamente as seções de vacinação e filme.
 - Ampliado o card do TotalPass e colocado o título abaixo do rótulo “TotalPass · primeiros passos”.
+- Publicadas as atualizações de aniversariantes na Vercel pelo commit `776193f`.
