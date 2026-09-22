@@ -20,7 +20,7 @@
 }
 .interview-profile__media {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #dbe8ed;
 }
@@ -37,7 +37,7 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 34%;
+  object-position: center 15%;
 }
 .interview-profile__edition {
   position: absolute;
@@ -217,7 +217,7 @@
 @media (max-width: 760px) {
   .interview-experience { grid-template-columns: 1fr; gap: 18px; }
   .interview-profile { position: relative; top: auto; display: grid; grid-template-columns: minmax(120px, .72fr) minmax(0, 1.28fr); }
-  .interview-profile__media { aspect-ratio: 3 / 4; }
+  .interview-profile__media { aspect-ratio: 1 / 1; }
   .interview-profile__edition { right: 10px; bottom: 10px; font-size: .6rem; }
   .interview-profile__body { padding: 20px 18px 22px; }
   .interview-profile__summary { margin-top: 14px; padding-top: 14px; font-size: .78rem; }

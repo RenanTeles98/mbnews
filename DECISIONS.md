@@ -1143,3 +1143,266 @@ A seção anterior apresentava apenas um bloco curto e não valorizava o materia
 - Manter um bloco corrido: descartado porque criaria uma leitura densa e pouco convidativa.
 - Usar a foto de outra colaboradora: descartado para evitar associação incorreta.
 - Deixar todas as respostas abertas: descartado porque aumentaria muito a altura inicial da seção.
+
+## ADR-053: Mapeamento do preview local para a pasta public
+
+**Data:** 2026-09-22
+**Status:** Implementado no ambiente local
+
+### Decisão
+
+Usar um servidor local que mantenha `index.html` na raiz do projeto e encaminhe `/pages`, `/assets`, `/images` e `/videos` para `public/`.
+
+### Motivo
+
+Os caminhos absolutos usados pela MB News correspondem ao comportamento de publicação do diretório `public`, mas um servidor estático iniciado na raiz do repositório não faz esse mapeamento automaticamente. A correção resolve o preview sem alterar caminhos de produção nem duplicar arquivos.
+
+### Alternativas consideradas
+
+- Alterar os caminhos no `index.html`: descartado porque quebraria a publicação.
+- Servir somente `public/`: descartado porque o `index.html` da edição atual fica na raiz.
+- Duplicar o `index.html` dentro de `public/`: descartado para evitar duas cópias divergentes.
+
+## ADR-054: Caminho absoluto para o vídeo da edição de abril
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Referenciar o vídeo da Páscoa como `/pascoa.mp4` na edição de abril.
+
+### Motivo
+
+O arquivo está na raiz publicada do projeto. Caminhos relativos a `public/pages/` faziam o navegador procurar o vídeo dentro de `/pages` ou `/pages/videos`, gerando 404.
+
+## ADR-055: Remoção do loading exclusivo de abril
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Remover da edição de abril o CSS, o markup e o JavaScript da tela de carregamento.
+
+### Motivo
+
+As demais edições exibem o conteúdo diretamente. O loading de abril era uma implementação isolada que atrasava a visualização e criava uma experiência inconsistente entre os meses.
+
+## ADR-056: Indicação de filme como última seção
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Posicionar a seção `#filme` no final do conteúdo da home/agosto e da edição de setembro, antes da navegação flutuante e do rodapé.
+
+### Motivo
+
+Criar um padrão editorial consistente: a indicação funciona como encerramento da leitura, sem interromper os blocos principais de notícias, entrevistas e benefícios.
+
+### Observação
+
+As edições de abril, maio, junho e julho não possuem atualmente uma seção de indicação de filme para mover. O padrão fica estabelecido para os próximos conteúdos.
+
+## ADR-057: Matheus antes de Thays no carrossel de agosto
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Exibir Matheus Oliveira como destaque 01 e Thays Florencio como destaque 02 no carrossel de setores da edição de agosto.
+
+### Motivo
+
+Essa é a ordem editorial solicitada. A troca foi aplicada ao HTML da home e da página arquivada de agosto, além dos rótulos do JavaScript para manter o carrossel e a acessibilidade sincronizados.
+
+## ADR-058: Painel de descrição nos cards de destaques
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Usar o espaço vertical restante da coluna de informações como um painel de descrição com fundo suave, borda, citação decorativa e alinhamento vertical centralizado.
+
+### Motivo
+
+Os cards tinham uma coluna alta, mas o texto ocupava apenas uma faixa pequena no centro, deixando muito espaço branco sem função. O painel melhora a leitura e a presença visual sem exigir dados editoriais novos.
+
+### Escopo
+
+A alteração foi centralizada em `public/assets/css/mb-news-agosto.css`, compartilhado pela home e pela página arquivada de agosto.
+
+## ADR-059: Ajuste de copy da Thays
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Substituir “cada conversa” por “cada atendimento” na descrição do destaque da Thays.
+
+### Motivo
+
+“Atendimento” representa melhor o contexto de abertura de contas e mantém a mensagem alinhada ao trabalho descrito.
+
+## ADR-060: Rótulo C6 Bank no destaque da Thays
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Alterar o rótulo do card da Thays de “Abertura” para “Abertura C6 Bank”.
+
+### Motivo
+
+Identificar com mais precisão a frente de atuação apresentada no destaque.
+
+## ADR-061: Rótulo C6 Bank no destaque do Matheus
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Alterar o rótulo do card do Matheus de “Relacionamento qualificação” para “Relacionamento C6 Bank”.
+
+### Motivo
+
+Identificar com mais precisão a frente de relacionamento apresentada no destaque.
+
+## ADR-062: Ícones nos destaques de agosto
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Adicionar um ícone de reconhecimento no cabeçalho da seção e ícones específicos por tipo de setor nos seis cards do carrossel.
+
+### Motivo
+
+A seção estava visualmente muito limpa e com pouca sinalização contextual. Os ícones aumentam a leitura escaneável e dão personalidade sem adicionar texto ou alterar o conteúdo editorial.
+
+### Escopo
+
+Os ícones foram inseridos na home e na edição arquivada de agosto, com estilos centralizados em `public/assets/css/mb-news-agosto.css`.
+
+## ADR-063: Prazo de inclusão de dependentes em 30/09
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Atualizar para 30/09 o prazo informado no aviso do plano de saúde na home e nas edições de agosto e setembro.
+
+### Motivo
+
+Aplicar a nova data limite fornecida para a campanha de inclusão de dependentes e manter as versões publicadas consistentes.
+
+## ADR-064: Liderança dentro do Setembro Amarelo
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Exibir a seção “Liderar também é cuidar.” dentro da edição de setembro, identificada como “Setembro Amarelo · Liderança”, e retirar a cópia equivalente da home/agosto.
+
+### Motivo
+
+O conteúdo do Instituto Cury trata diretamente de liderança, riscos psicossociais e cuidado com a saúde mental. A associação com Setembro Amarelo dá ao conteúdo um contexto editorial mais coerente e evita duplicidade entre as edições.
+
+### Escopo
+
+O bloco foi adaptado em `public/pages/mb-news-setembro-2026.html`; a remoção foi aplicada em `index.html` e `public/pages/mb-news-agosto-2026.html`. Os atalhos de evento de agosto também foram removidos, enquanto a âncora de saúde mental de setembro foi preservada.
+
+## ADR-065: Enquadramento da foto de Amanda Vieira
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Exibir a foto da Amanda com enquadramento mais fechado, priorizando rosto e tronco e evitando mostrar a parte inferior da calça.
+
+### Motivo
+
+O enquadramento anterior ocupava espaço vertical demais e mostrava uma área da foto além do necessário para o card de entrevista. O recorte em CSS mantém o arquivo original e melhora a hierarquia do perfil.
+
+### Escopo
+
+Ajuste aplicado em `public/assets/css/mb-news-interview.css`, com proporção quadrada no desktop e adaptação preservada para telas menores.
+
+## ADR-066: Foto de equipe no slide do Higor
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Substituir a foto individual do Higor pela foto com a equipe no slide 06 de promoções de setembro, mantendo o enquadramento estrutural existente do carrossel.
+
+### Motivo
+
+A nova foto foi fornecida para representar a conquista do Higor junto à equipe. Preservar as dimensões e a regra de posicionamento evita alterar a composição visual já aprovada para o carrossel.
+
+### Escopo
+
+Adicionado `public/images/mb-news/setembro/promovidos/higor-campos-equipe.jpeg` e atualizada apenas a referência do slide correspondente em `public/pages/mb-news-setembro-2026.html`. O arquivo anterior foi mantido como fallback.
+
+## ADR-067: Redesign do guia de ativação do TotalPass
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Substituir o card anterior do TotalPass por uma composição com quatro etapas únicas de ativação, nota de plano/check-in e painel visual de benefícios.
+
+### Motivo
+
+O card anterior repetia a ideia de cadastro no título, na arte, no callout e no passo a passo. Isso aumentava a altura percebida e dificultava entender por onde começar. A nova estrutura dá uma sequência única ao usuário e reserva o painel visual para contexto, não para duplicação.
+
+### Escopo
+
+O markup foi atualizado em `index.html`, `public/pages/mb-news-agosto-2026.html` e `public/pages/mb-news-setembro-2026.html`. O CSS compartilhado foi ampliado em `public/assets/css/mb-news-totalpass-howto.css` para desktop e mobile.
+
+## ADR-068: Preservar limites estruturais das seções
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Manter cada seção mensal com seus próprios fechamentos de container e `section`, especialmente após substituições de blocos internos.
+
+### Motivo
+
+Durante o redesign do TotalPass, os fechamentos da seção foram removidos junto com o markup antigo. Isso aninhou vacinação e filme no TotalPass e alterou a largura visual das áreas seguintes. A estrutura independente evita que uma mudança local afete o restante da página.
+
+### Escopo
+
+Restaurados os fechamentos de `#totalpass` em `index.html`, `public/pages/mb-news-agosto-2026.html` e `public/pages/mb-news-setembro-2026.html`. A hierarquia foi validada com Playwright.
+
+## ADR-069: Cabeçalho vertical e card TotalPass mais amplo
+
+**Data:** 2026-09-22
+**Status:** Implementado
+
+### Decisão
+
+Ampliar o card do TotalPass para 1120px e organizar o cabeçalho em fluxo vertical, com o título abaixo do eyebrow “TotalPass · primeiros passos”.
+
+### Motivo
+
+O cabeçalho lado a lado consumia espaço horizontal e deixava a relação entre a identificação do módulo e o título menos clara. A largura maior equilibra os dois painéis do guia e o fluxo vertical melhora a leitura.
+
+### Escopo
+
+Ajuste aplicado no CSS compartilhado `public/assets/css/mb-news-totalpass-howto.css`, refletindo na home e nas edições arquivadas.

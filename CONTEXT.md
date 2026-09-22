@@ -769,6 +769,89 @@ Estado atual: guia do TotalPass disponível nas edições de agosto e setembro.
 
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
 
+## Sessão 2026-09-22 — Foto de equipe do Higor
+
+- Adicionada a foto `public/images/mb-news/setembro/promovidos/higor-campos-equipe.jpeg` a partir do arquivo fornecido.
+- Atualizado o slide 06 de promoções em `public/pages/mb-news-setembro-2026.html` para usar a nova imagem.
+- Mantido o enquadramento do carrossel, sem alterar as dimensões ou a regra de `object-position` do card.
+- A imagem antiga foi preservada no projeto como fallback.
+
+Estado atual: o slide do Higor exibe a foto com a equipe, mantendo o layout original do carrossel.
+
+## Sessão 2026-09-22 — Redesign do guia TotalPass
+
+- Refeito o módulo de orientação do TotalPass na home, na edição arquivada de agosto e no conteúdo preservado de setembro.
+- Removida a arte que repetia “cadastro” em diferentes áreas do mesmo card.
+- O novo layout apresenta quatro etapas únicas, uma nota sobre plano ativo/check-in e um painel visual de apoio com academias, estúdios e check-in.
+- Atualizado o CSS compartilhado em `public/assets/css/mb-news-totalpass-howto.css`, preservando a responsividade.
+- Validado com Playwright: altura desktop de aproximadamente 591px, quatro etapas, imagem carregada, ausência de 4xx/5xx e mobile sem overflow horizontal.
+
+Estado atual: o guia TotalPass está mais direto, escaneável e sem repetição de instruções.
+
+## Sessão 2026-09-22 — Correção da estrutura após o redesign do TotalPass
+
+- Corrigidos os fechamentos HTML da seção `#totalpass` na home, agosto e setembro.
+- O problema fazia as seções seguintes, como vacinação e filme, serem interpretadas como conteúdo interno do TotalPass e perderem a largura correta.
+- Validada a hierarquia: `#totalpass`, `#saude` e `#filme` voltaram a ser seções independentes diretamente no `body`.
+- Confirmado que o filme continua como última seção visível e que não há recursos com erro.
+
+Estado atual: as seções não estão mais aninhadas entre si e a experiência visual voltou ao padrão anterior ao redesign.
+
+## Sessão 2026-09-22 — Cabeçalho do guia TotalPass
+
+- Aumentada a largura máxima do card do TotalPass para 1120px, aproveitando melhor o container da seção.
+- Reorganizado o cabeçalho para colocar o título abaixo de `TotalPass · primeiros passos`.
+- Validado no desktop: card com 1100px renderizados, eyebrow acima do título e sem recursos quebrados.
+- Validado no mobile: ordem do cabeçalho preservada e sem overflow horizontal.
+
+## Sessão 2026-09-22 — Correção do preview local da MB News
+
+- Identificado erro 404 ao abrir `/pages/mb-news-setembro-2026.html` pelo servidor estático local.
+- Causa: o servidor estava servindo a raiz do repositório, enquanto as páginas, imagens, CSS e JS da MB News ficam em `public/`.
+- Ajustado o servidor local para mapear `/pages`, `/assets`, `/images` e `/videos` para as respectivas pastas de `public/`, preservando os caminhos usados pelo site.
+- Validado o carregamento de `index.html`, da edição de setembro, do CSS de setembro e da imagem do filme, todos com HTTP 200.
+
+Estado atual: a MB News está disponível localmente em `http://localhost:8080/index.html` e a edição de setembro abre corretamente em `/pages/mb-news-setembro-2026.html`.
+
+Próximo passo recomendado: manter esse mapeamento no comando de preview local ou criar um script de desenvolvimento dedicado para evitar iniciar o servidor estático com a raiz incorreta.
+
+- Corrigadas as duas referências ao vídeo da Páscoa em `public/pages/mb-news-abril-2026.html`, que apontavam para caminhos relativos inexistentes.
+- Validada novamente a edição de abril com Playwright: HTTP 200, conteúdo principal visível e nenhum recurso respondendo com erro 4xx/5xx.
+- Removida a tela de carregamento exclusiva da edição de abril para alinhar seu comportamento ao das demais edições.
+- Validada novamente a edição de abril sem o elemento `#loader` e sem respostas 4xx/5xx.
+- Reorganizadas as indicações de filme da home/agosto e de setembro para ficarem depois de todas as outras seções, imediatamente antes da navegação flutuante.
+- Mantidos os IDs e os links `#filme`, preservando a navegação existente.
+- Invertida a ordem dos dois primeiros destaques do carrossel de agosto: Matheus Oliveira agora aparece no slide 01 e Thays Florencio no slide 02.
+- Atualizados a numeração, o estado inicial, os dots, o status acessível e a lista de rótulos do JavaScript compartilhado.
+- Redesenhado o bloco de informações dos destaques de agosto para aproveitar o espaço vertical livre com um painel de descrição, melhor hierarquia tipográfica e detalhe visual sutil.
+- Mantido o conteúdo editorial existente, sem inventar novas informações sobre as pessoas, e preservada a responsividade.
+- Ajustada a copy da Thays para trocar “cada conversa” por “cada atendimento” no destaque de abertura de contas.
+- Atualizado o rótulo do destaque da Thays para “Abertura C6 Bank” na home e na edição arquivada de agosto.
+- Atualizado o rótulo do destaque do Matheus para “Relacionamento C6 Bank” na home e na edição arquivada de agosto.
+- Adicionados ícones Lucide no cabeçalho da seção de destaques e nos rótulos dos seis setores do carrossel.
+- Validado o carregamento dos ícones, a ausência de respostas 4xx/5xx e o mobile sem overflow.
+- Atualizada a data limite para inclusão de dependentes no plano de saúde para 30/09 na home e nas edições de agosto e setembro.
+
+## Sessão 2026-09-22 — Liderança no Setembro Amarelo
+
+- Movida a seção `Liderar também é cuidar.` da home/edição de agosto para `public/pages/mb-news-setembro-2026.html`.
+- A seção passou a usar o contexto `Setembro Amarelo · Liderança`, mantendo o conteúdo do Instituto Cury, NR-1, terapia e agendamento pelo SulAmérica.
+- Removidos da home e da edição arquivada de agosto o bloco duplicado e os atalhos `Evento interno` da navegação, FAB e rodapé.
+- Corrigidos os caminhos das imagens institucionais em `index.html` e na edição arquivada de agosto para evitar respostas 404 em `/pages/`.
+- Validados home, agosto e setembro com Playwright: liderança somente em setembro, filme como última seção, ausência de 4xx/5xx e mobile sem overflow horizontal.
+
+Estado atual: a liderança está publicada dentro da seção de Setembro Amarelo e agosto não repete o conteúdo.
+
+Próximo passo recomendado: revisar o texto final com o RH caso haja uma redação oficial para a campanha ou para a consultoria do Instituto Cury.
+
+## Sessão 2026-09-22 — Enquadramento da foto da Amanda
+
+- Ajustado o recorte da foto de Amanda Vieira em `public/assets/css/mb-news-interview.css`.
+- A mídia passou de `4 / 5` para `1 / 1` no desktop e passou a priorizar rosto e tronco, evitando que a imagem desça até a calça.
+- Mantido o recorte responsivo no mobile, com validação de ausência de overflow e recursos quebrados.
+
+Estado atual: o card da entrevista mostra a Amanda até o tronco, com o restante das informações preservado.
+
 ## Sessão 2026-09-21 — Entrevista de Amanda
 
 - A entrevista de setembro passou a usar o mesmo padrão editorial da entrevista de agosto: perfil visual, frase-chave e respostas expansíveis.

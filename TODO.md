@@ -352,3 +352,60 @@
 - [x] Resumir as oito respostas sem perder contexto e detalhes pessoais.
 - [x] Adicionar a foto da Amanda à edição de setembro.
 - [x] Aplicar a identidade amarela e validar desktop, mobile e interação.
+
+## Atualização 2026-09-22 — Preview local da MB News
+
+- [x] Corrigir o 404 das edições históricas no servidor local.
+- [x] Validar a edição de setembro e seus principais recursos estáticos.
+- [ ] Transformar o mapeamento local atual em um comando/script reutilizável de desenvolvimento.
+- [x] Corrigir o caminho do vídeo da Páscoa na edição de abril.
+- [x] Padronizar abril sem tela de carregamento exclusiva.
+- [x] Deixar a indicação de filme como última seção nas edições que possuem esse conteúdo.
+- [x] Reordenar Matheus Oliveira e Thays Florencio no carrossel de destaques de agosto.
+- [x] Melhorar o aproveitamento visual do espaço no card de destaques de agosto.
+- [x] Ajustar a copy da Thays para usar “atendimento”.
+- [x] Atualizar o setor da Thays para “Abertura C6 Bank”.
+- [x] Atualizar o setor do Matheus para “Relacionamento C6 Bank”.
+- [x] Adicionar ícones à seção e aos cards de destaques de agosto.
+- [x] Atualizar a data limite de inclusão de dependentes para 30/09.
+
+## Atualização 2026-09-22 — Liderança no Setembro Amarelo
+
+- [x] Mover a seção “Liderar também é cuidar.” para a edição de setembro.
+- [x] Contextualizar o bloco como conteúdo de Setembro Amarelo e preservar as informações do Instituto Cury/NR-1.
+- [x] Remover a duplicação e os atalhos “Evento interno” de agosto.
+- [x] Corrigir os caminhos das imagens institucionais da home e da edição arquivada de agosto.
+- [x] Validar as três páginas, recursos carregados e layout mobile.
+- [ ] Confirmar com o RH se a copy da consultoria deve seguir uma redação oficial.
+
+## Atualização 2026-09-22 — Enquadramento da entrevista
+
+- [x] Ajustar a foto da Amanda para terminar no tronco.
+- [x] Preservar a imagem original e aplicar o recorte via CSS.
+- [x] Validar desktop, mobile e ausência de recursos 4xx/5xx.
+
+## Atualização 2026-09-22 — Foto de equipe do Higor
+
+- [x] Adicionar a foto de equipe recebida em `public/images/mb-news/setembro/promovidos/`.
+- [x] Substituir a imagem do slide 06 do Higor.
+- [x] Preservar o enquadramento e validar o carregamento no desktop e no mobile.
+
+## Atualização 2026-09-22 — Redesign do guia TotalPass
+
+- [x] Remover a repetição visual e textual de “cadastro”.
+- [x] Consolidar o fluxo em quatro etapas objetivas.
+- [x] Criar painel lateral de benefícios sem repetir o passo a passo.
+- [x] Aplicar o redesign à home e às edições de agosto/setembro.
+- [x] Validar desktop, mobile e recursos carregados.
+
+## Atualização 2026-09-22 — Estrutura das seções após TotalPass
+
+- [x] Corrigir os fechamentos HTML removidos durante o redesign do TotalPass.
+- [x] Garantir que vacinação e filme sejam seções independentes.
+- [x] Validar largura, ordem das seções, mobile e ausência de 4xx/5xx.
+
+## Atualização 2026-09-22 — Cabeçalho do guia TotalPass
+
+- [x] Aumentar a largura do card do TotalPass.
+- [x] Colocar o título abaixo do texto “TotalPass · primeiros passos”.
+- [x] Validar desktop, mobile e ausência de overflow.

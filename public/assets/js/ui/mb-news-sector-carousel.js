@@ -6,8 +6,8 @@
   const sectorDots = Array.from(sectorCarousel.querySelectorAll('[data-sector-dot]'));
   const sectorStatus = document.getElementById('sectorCarouselStatus');
   const sectorLabels = [
-    'Thays Florencio',
     'Matheus Oliveira',
+    'Thays Florencio',
     'Igor Lira',
     'Leticia Perpetua',
     'Gabriel Figueiredo',

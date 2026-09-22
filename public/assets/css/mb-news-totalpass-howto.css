@@ -493,3 +493,240 @@
     display: none;
   }
 }
+
+/* Redesigned guide: one clear activation path, with a supporting benefits panel. */
+.totalpass-howto--compact {
+  max-width: 1120px;
+  margin: 34px auto 0;
+  padding: 28px;
+  border: 1px solid #d8e9df;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #fff 0%, #f4fff9 100%);
+  box-shadow: 0 18px 42px rgba(0, 58, 39, .16);
+}
+
+.totalpass-howto--compact .totalpass-howto-header {
+  display: block;
+  max-width: none;
+  margin: 0 0 22px;
+  text-align: left;
+}
+
+.totalpass-howto--compact .totalpass-howto-header .section-eyebrow {
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.totalpass-howto--compact .totalpass-howto-header h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.35rem, 2.7vw, 1.9rem);
+  line-height: 1.1;
+}
+
+.totalpass-howto--compact .totalpass-howto-header p {
+  max-width: 680px;
+  margin: 7px 0 0;
+  color: var(--gray-600);
+  font-size: .86rem;
+  line-height: 1.55;
+}
+
+.totalpass-howto--compact .totalpass-howto-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(250px, .88fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy {
+  padding: 22px;
+  border: 1px solid #d8e9df;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.totalpass-howto-copy-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.totalpass-howto--compact .totalpass-howto-kicker {
+  font-size: .68rem;
+}
+
+.totalpass-howto-count {
+  padding: 5px 9px;
+  border-radius: 99px;
+  background: #eafff1;
+  color: #007947;
+  font-size: .68rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy ol {
+  gap: 0;
+  margin: 14px 0 18px;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  padding: 12px 0;
+  border-top: 1px solid #e5f0ea;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li > span {
+  width: 30px;
+  height: 30px;
+  flex-basis: 30px;
+  border-radius: 50%;
+  background: #0b9d60;
+  color: #fff;
+  font-size: .62rem;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li p {
+  display: grid;
+  gap: 3px;
+  margin: 1px 0 0;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li strong {
+  color: var(--navy);
+  font-size: .84rem;
+}
+
+.totalpass-howto--compact .totalpass-howto-copy li small {
+  color: var(--gray-600);
+  font-size: .75rem;
+  line-height: 1.45;
+}
+
+.totalpass-howto--compact .totalpass-howto-note {
+  gap: 9px;
+  padding: 12px 14px;
+  border-color: #b6ebca;
+  border-radius: 14px;
+  background: #eafff1;
+  font-size: .75rem;
+  line-height: 1.45;
+}
+
+.totalpass-howto--compact .totalpass-howto-visual {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 168px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #cde6d8;
+  border-radius: 20px;
+  background: #00582f;
+}
+
+.totalpass-howto--compact .totalpass-howto-photo {
+  min-height: 0;
+  background: #07354a;
+}
+
+.totalpass-howto--compact .totalpass-howto-photo img {
+  object-position: center 58%;
+}
+
+.totalpass-howto-side-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  color: rgba(255, 255, 255, .86);
+}
+
+.totalpass-howto-side-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #8af0b7;
+  font-size: .66rem;
+  font-weight: 900;
+  letter-spacing: .75px;
+  text-transform: uppercase;
+}
+
+.totalpass-howto-side-kicker .lucide {
+  width: 15px;
+  height: 15px;
+}
+
+.totalpass-howto-side-copy h4 {
+  margin: 14px 0 7px;
+  color: #fff;
+  font-size: 1.18rem;
+  line-height: 1.15;
+  letter-spacing: -.35px;
+}
+
+.totalpass-howto-side-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, .72);
+  font-size: .76rem;
+  line-height: 1.55;
+}
+
+.totalpass-howto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.totalpass-howto-tags span {
+  padding: 6px 9px;
+  border: 1px solid rgba(138, 240, 183, .42);
+  border-radius: 99px;
+  color: #d8ffe8;
+  font-size: .66rem;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .totalpass-howto--compact {
+    margin-top: 28px;
+    padding: 20px;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-header {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-header .section-eyebrow {
+    margin: 0 0 9px;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-header p {
+    font-size: .78rem;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .totalpass-howto--compact .totalpass-howto-visual {
+    grid-template-rows: 142px minmax(0, 1fr);
+  }
+}

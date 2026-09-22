@@ -404,3 +404,24 @@ Principais marcos conhecidos:
 - Padronizados o ícone e o espaçamento do card Calendário 2026.
 - Padronizados o tamanho dos títulos dos três cards de saúde e removido o rótulo auxiliar do Calendário 2026.
 - Reposicionado o ícone do Calendário 2026 acima do título.
+
+## 2026-09-22
+
+- Corrigido o preview local da MB News para que as edições históricas, imagens, estilos, scripts e vídeos em `public/` sejam encontrados corretamente.
+- Corrigido o caminho do vídeo da Páscoa na edição de abril.
+- Removida a tela de carregamento exclusiva da edição de abril para padronizar a experiência entre as edições.
+- Movida a indicação de filme para a última seção da home/agosto e de setembro.
+- Invertida a ordem de Matheus Oliveira e Thays Florencio no carrossel de destaques de agosto.
+- Melhorado o layout dos cards de destaques de agosto para aproveitar o espaço vazio da coluna de informações.
+- Ajustada a descrição da Thays para usar “cada atendimento”.
+- Atualizado o rótulo do destaque da Thays para “Abertura C6 Bank”.
+- Atualizado o rótulo do destaque do Matheus para “Relacionamento C6 Bank”.
+- Adicionados ícones de reconhecimento e de setor à seção de destaques de agosto.
+- Atualizado para 30/09 o prazo de inclusão de dependentes no plano de saúde.
+- Movida a seção de liderança/Instituto Cury para o contexto de Setembro Amarelo e removida a duplicação de agosto.
+- Removidos os atalhos “Evento interno” de agosto e corrigidos dois caminhos de imagem institucionais que retornavam 404 nas páginas arquivadas.
+- Ajustado o enquadramento da foto de Amanda Vieira para exibir somente rosto e tronco no card da entrevista.
+- Substituída a foto do Higor Campos pela foto com a equipe, mantendo o enquadramento do slide 06.
+- Refeito o guia do TotalPass com quatro etapas únicas, painel de benefícios e menos repetição visual/textual.
+- Corrigida a estrutura HTML após o redesign do TotalPass, separando novamente as seções de vacinação e filme.
+- Ampliado o card do TotalPass e colocado o título abaixo do rótulo “TotalPass · primeiros passos”.

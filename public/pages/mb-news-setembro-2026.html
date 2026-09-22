@@ -482,7 +482,7 @@
     .birthday-carousel-track {
       display: flex; width: max-content; gap: 14px; will-change: transform;
     }
-    .birthday-carousel.is-ready .birthday-carousel-track { animation: birthdayCarouselScroll 18s linear infinite; }
+    .birthday-carousel.is-ready .birthday-carousel-track { animation: birthdayCarouselScroll 36s linear infinite; }
     .birthday-carousel.is-ready .birthday-carousel-viewport-reverse .birthday-carousel-track {
       animation-name: birthdayCarouselScrollReverse;
     }
@@ -1652,6 +1652,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
+  <div class="hero-ribbon-watermark" aria-hidden="true">🎗️</div>
   <div class="hero-badge"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Edição de Setembro 2026</div>
   <h1 class="hero-title">
     mb <span class="highlight">news</span>
@@ -1665,21 +1666,21 @@
   </div>
   <div class="hero-cards">
     <div class="hero-card">
-      <div class="hero-card-icon" style="background:rgba(0,153,221,.15);"><i data-lucide="trending-up" style="color:#0099dd"></i></div>
+      <div class="hero-card-icon" style="background:rgba(0,85,128,.12);"><i data-lucide="trending-up" style="color:#005580"></i></div>
       <div class="hero-card-text">
       <strong>6</strong>
         <span>Conteúdos especiais</span>
       </div>
     </div>
     <div class="hero-card">
-      <div class="hero-card-icon" style="background:rgba(245,166,35,.15);"><i data-lucide="gift" style="color:#F5A623"></i></div>
+      <div class="hero-card-icon" style="background:rgba(0,85,128,.1);"><i data-lucide="gift" style="color:#005580"></i></div>
       <div class="hero-card-text">
         <strong><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Cuidado</strong>
         <span>Setembro Amarelo</span>
       </div>
     </div>
     <div class="hero-card">
-      <div class="hero-card-icon" style="background:rgba(255,107,53,.15);"><i data-lucide="cake" style="color:#FF6B35"></i></div>
+      <div class="hero-card-icon" style="background:rgba(0,57,86,.1);"><i data-lucide="cake" style="color:#003956"></i></div>
       <div class="hero-card-text">
         <strong>Histórias</strong>
         <span>Relações que inspiram</span>
@@ -1715,57 +1716,6 @@
           <span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span>
           <span>Setembro Amarelo</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INDICAÇÃO DE FILME -->
-<section id="filme" class="film-section">
-  <div class="container">
-    <div class="film-intro fade-up">
-      <span class="section-eyebrow">Indicação de filme · Setembro</span>
-      <h2 class="section-title">Que tal aproveitar o fim de semana?</h2>
-      <p class="section-desc">Um filme leve, divertido e que ainda traz boas reflexões sobre trabalho, relações e equilíbrio.</p>
-    </div>
-
-    <div class="film-feature fade-up">
-      <div class="film-poster-column">
-        <button class="film-poster" type="button"
-          data-lightbox-src="/images/mb-news/setembro/um-senhor-estagiario.png"
-          data-lightbox-alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
-          aria-label="Ampliar o cartaz de Um Senhor Estagiário">
-          <img src="/images/mb-news/setembro/um-senhor-estagiario.png"
-            alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
-            width="500" height="732" loading="lazy" />
-          <span class="film-poster__action" aria-hidden="true"><i data-lucide="maximize-2"></i>Ampliar cartaz</span>
-        </button>
-        <div class="film-poster-meta" aria-label="Informações do filme">
-          <span>2015</span>
-          <span>Nancy Meyers</span>
-          <span>Robert De Niro · Anne Hathaway</span>
-        </div>
-      </div>
-
-      <div class="film-copy">
-        <span class="june-kicker"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo</span>
-        <h3 class="section-title">Um Senhor Estagiário</h3>
-        <p class="film-lede">Uma comédia sobre recomeços, relações e o valor de estar presente — com leveza para o fim de semana e espaço para reflexão.</p>
-        <p>Ben Whittaker (Robert De Niro), um viúvo de 70 anos, decide voltar ao mercado de trabalho e se torna estagiário em uma empresa de moda comandada por Jules Ostin (Anne Hathaway). O que começa como uma experiência profissional acaba se transformando em uma relação de amizade, troca e apoio entre os dois.</p>
-        <p>Por trás da comédia, o filme mostra como os desafios profissionais, pessoais e a dificuldade de equilibrar diferentes áreas da vida podem afetar qualquer pessoa, mesmo aquelas que parecem estar dando conta de tudo.</p>
-        <p>O filme nos lembra da importância de olhar para as pessoas além de suas funções e resultados. Uma conversa, uma escuta atenta, uma amizade ou simplesmente estar presente pode fazer diferença na vida de alguém.</p>
-        <p>Neste Setembro Amarelo, fica o convite para levar essa reflexão também para o nosso dia a dia: cuidar das relações, prestar atenção em quem está ao nosso redor e lembrar que ninguém precisa enfrentar tudo sozinho.</p>
-
-        <aside class="film-takeaways" aria-label="Reflexões do filme">
-          <h3>Um olhar de cuidado para assistir</h3>
-          <ul>
-            <li>Escuta e presença</li>
-            <li>Troca entre gerações</li>
-            <li>Equilíbrio nas relações</li>
-          </ul>
-        </aside>
-
-        <p class="film-closing"><strong>Então, para o fim de semana:</strong> prepare a pipoca, dê o play e assista com um olhar atento às relações!</p>
       </div>
     </div>
   </div>
@@ -2023,7 +1973,7 @@
       <article class="promotion-slide" data-slide="5" role="group" hidden
         aria-roledescription="slide" aria-label="6 de 6: promoção de Higor Campos">
         <div class="promotion-slide-media">
-          <img src="/images/mb-news/setembro/promovidos/higor-campos.png" alt="Higor Campos" width="1122" height="1402" loading="lazy" />
+          <img src="/images/mb-news/setembro/promovidos/higor-campos-equipe.jpeg" alt="Higor Campos com a equipe" width="1600" height="900" loading="lazy" />
         </div>
         <div class="promotion-slide-copy">
           <span class="june-kicker"><i data-lucide="award" style="width:15px;height:15px"></i> Promoção</span>
@@ -2111,11 +2061,14 @@
       <h2 class="section-title">Plano de saúde também para quem está com você.</h2>
       <p class="section-desc">Agora, colaboradores podem incluir dependentes diretos (filhos) e cônjuges no plano de saúde da empresa.</p>
     </div>
+    <div class="saude-alert health-plan-alert fade-up">
+      <div class="saude-alert-icon" aria-hidden="true">!</div>
+      <p><strong>Atenção:</strong> a solicitação de inclusão de dependentes poderá ser feita até <strong>30/09</strong>. Em <strong>janeiro de 2027</strong>, abriremos uma nova janela de inclusão para quem ainda não aderiu e decidir mudar de ideia posteriormente. Para recém-contratados, a adesão de dependentes já pode ser feita no próprio ato de adesão ao plano.</p>
+    </div>
     <div class="health-plan-grid fade-up">
       <div class="health-plan-card">
         <h3>Inclusão opcional de dependentes</h3>
         <p>A novidade nasceu da escuta do nosso time e reforça o compromisso da MB Finance com o bem-estar de cada família. A adesão é livre e opcional, com custo integral da mensalidade sob responsabilidade do colaborador e desconto autorizado em folha.</p>
-        <div class="saude-alert" style="margin:18px 0"><p><strong>Atenção:</strong> a solicitação de inclusão de dependentes poderá ser feita até <strong>15/09</strong>. Em <strong>janeiro de 2027</strong>, abriremos uma nova janela de inclusão para quem ainda não aderiu e decidir mudar de ideia posteriormente. Para recém-contratados, a adesão de dependentes já pode ser feita no próprio ato de adesão ao plano.</p></div>
         <table class="health-plan-table">
           <thead><tr><th>Faixa etária</th><th>Valor mensal</th></tr></thead>
           <tbody>
@@ -2157,13 +2110,6 @@
     </div>
 
     <div class="birthday-carousel fade-up is-ready" id="birthdayCarousel" role="region" aria-label="Carrossel automático dos quinze aniversariantes de setembro">
-      <div class="birthday-carousel-toolbar">
-        <button class="birthday-carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar carrossel dos aniversariantes">
-          <span class="birthday-toggle-pause-icon" aria-hidden="true"><i data-lucide="pause"></i></span>
-          <span class="birthday-toggle-play-icon" aria-hidden="true"><i data-lucide="play"></i></span>
-          <span data-birthday-toggle-label>Pausar</span>
-        </button>
-      </div>
       <div class="birthday-carousel-rows">
         <div class="birthday-carousel-viewport">
           <div class="birthday-carousel-track">
@@ -2267,44 +2213,44 @@
 
     <div class="totalpass-howto totalpass-howto--compact fade-up" aria-labelledby="totalpassHowtoTitle">
       <div class="totalpass-howto-header">
-              <span class="section-eyebrow"><i data-lucide="smartphone"></i> Como usar o TotalPass</span>
-        <h3 id="totalpassHowtoTitle">Faça seu cadastro e comece a cuidar da sua rotina.</h3>
-        <p>Em poucos passos, você ativa seu acesso, escolhe o plano que combina com você e começa a explorar as opções de bem-estar da MB.</p>
+        <span class="section-eyebrow"><i data-lucide="smartphone"></i> TotalPass · primeiros passos</span>
+        <h3 id="totalpassHowtoTitle">Comece pelo app. O resto fica mais leve.</h3>
+        <p>Ative seu acesso, escolha um plano e encontre academias e estúdios para incluir movimento na rotina.</p>
       </div>
 
       <div class="totalpass-howto-grid">
-        <div class="totalpass-howto-visual" role="img" aria-label="Resumo visual para fazer o cadastro no TotalPass">
-          <div class="totalpass-howto-brand">
-            <span class="totalpass-howto-wordmark">TOTAL<span>PASS</span></span>
-            <strong>FAÇA O SEU<br />CADASTRO</strong>
-            <span class="totalpass-howto-arrows" aria-hidden="true">›››</span>
-          </div>
-          <div class="totalpass-howto-photo">
-            <img src="/images/mb-news/junho/totalpass/totalpass-gym-background.png" alt="Academia disponível para explorar pelo TotalPass" loading="lazy" />
-          </div>
-          <div class="totalpass-howto-callout">
-            Comece a explorar todos os benefícios disponíveis e cuide do seu bem-estar físico e mental em um único app. <strong>Siga o passo a passo para fazer o seu cadastro:</strong>
-          </div>
-          <div class="totalpass-howto-mini-steps" aria-label="Últimos passos do cadastro">
-            <div><span>01</span><strong>Vá em “Minha conta” &gt; “Meu plano”</strong></div>
-            <div><span>02</span><strong>Escolha qual plano combina mais com você</strong></div>
-          </div>
-          <div class="totalpass-howto-footer">#VAMOSTOTALIZAR</div>
-        </div>
-
         <div class="totalpass-howto-copy">
-          <span class="totalpass-howto-kicker"><i data-lucide="list-checks"></i> Passo a passo</span>
+          <div class="totalpass-howto-copy-heading">
+            <span class="totalpass-howto-kicker"><i data-lucide="list-checks"></i> Como começar</span>
+            <span class="totalpass-howto-count">4 etapas</span>
+          </div>
           <ol>
-            <li><span>01</span><p>Faça o download do app TotalPass e clique em <strong>“Cadastrar”</strong>.</p></li>
-            <li><span>02</span><p>Insira suas informações cadastrais.</p></li>
-            <li><span>03</span><p>Selecione sua empresa e confirme.</p></li>
-            <li><span>04</span><p>Finalize o cadastro preenchendo os dados solicitados.</p></li>
+            <li><span>01</span><p><strong>Baixe o app</strong><small>Toque em “Cadastrar” para iniciar.</small></p></li>
+            <li><span>02</span><p><strong>Preencha seus dados</strong><small>Insira as informações solicitadas no aplicativo.</small></p></li>
+            <li><span>03</span><p><strong>Confirme a MB</strong><small>Selecione sua empresa e confirme o vínculo.</small></p></li>
+            <li><span>04</span><p><strong>Escolha seu plano</strong><small>Em “Minha conta” &gt; “Meu plano”, escolha a opção que combina com você.</small></p></li>
           </ol>
           <div class="totalpass-howto-note">
             <i data-lucide="circle-check"></i>
-            <p>Depois de concluir o cadastro, você já poderá visualizar academias e estúdios próximos. Para fazer o <strong>check-in</strong>, lembre-se de ativar um plano.</p>
+            <p>Com o plano ativo, você pode consultar academias e estúdios próximos e fazer seu <strong>check-in</strong>.</p>
           </div>
         </div>
+
+        <aside class="totalpass-howto-visual" aria-label="Benefícios do TotalPass">
+          <div class="totalpass-howto-photo">
+            <img src="/images/mb-news/junho/totalpass/totalpass-gym-background.png" alt="Academia disponível para explorar pelo TotalPass" loading="lazy" />
+          </div>
+          <div class="totalpass-howto-side-copy">
+            <span class="totalpass-howto-side-kicker"><i data-lucide="sparkles"></i> Mais movimento, do seu jeito</span>
+            <h4>Uma rotina de bem-estar começa com um primeiro passo.</h4>
+            <p>Explore as opções disponíveis e escolha a atividade que faz sentido para você.</p>
+            <div class="totalpass-howto-tags" aria-label="Opções disponíveis no TotalPass">
+              <span>Academias</span>
+              <span>Estúdios</span>
+              <span>Check-in</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
@@ -2526,24 +2472,24 @@
   </div>
 </section>
 
-<!-- SAÚDE MENTAL · SETEMBRO AMARELO -->
+<!-- LIDERANÇA · SETEMBRO AMARELO -->
 <section id="evento">
   <div class="container">
     <div class="fade-up">
-      <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo</span>
-      <h2 class="section-title">Saúde mental também se constrói em encontros.</h2>
-      <p class="section-desc">Neste mês, abrimos espaço para falar sobre saúde mental, escuta e cuidado no ambiente de trabalho. Em breve, esta seção também vai reunir as fotos dos encontros e os momentos que fizeram parte dessa conversa.</p>
+      <span class="section-eyebrow"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo · Liderança</span>
+      <h2 class="section-title">Liderar também é cuidar.</h2>
+      <p class="section-desc">Neste Setembro Amarelo, reforçamos uma consultoria especializada com o Instituto Cury, iniciada em agosto, para preparar nossas lideranças para os desafios da NR-1 e fortalecer o cuidado com a saúde mental no ambiente de trabalho.</p>
     </div>
     <div class="health-plan-grid fade-up" style="margin-top:32px">
       <div class="health-plan-card">
         <span class="june-kicker"><i data-lucide="users" style="width:15px;height:15px"></i> Instituto Cury</span>
-        <h3>Um espaço para acolher e aprender</h3>
-        <p>Falar sobre saúde mental é fortalecer a capacidade de reconhecer sinais, acolher diferentes experiências e construir relações mais cuidadosas no dia a dia.</p>
-        <p>Os encontros desta edição vão ampliar essa conversa com a equipe. Assim que as fotos forem enviadas, elas entram aqui para contar visualmente essa jornada.</p>
+        <h3>Um passo importante para nossas lideranças</h3>
+        <p>O objetivo é apoiar nossos gestores na identificação, no acolhimento e no encaminhamento de situações relacionadas aos riscos psicossociais, em conformidade com a NR-1.</p>
+        <p>Investir em nossas lideranças é investir no bem-estar de toda a MB. Esta é a primeira etapa de uma jornada que estamos construindo juntos.</p>
       </div>
       <aside class="health-plan-steps">
         <span class="june-kicker"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Saúde mental</span>
-        <h3>Cuidar de si também é uma forma de presença</h3>
+        <h3>Você sabe os benefícios da terapia?</h3>
         <ul>
           <li><span>Reduzir o estresse e a ansiedade do dia a dia.</span></li>
           <li><span>Melhorar o autoconhecimento e a tomada de decisões.</span></li>
@@ -2752,6 +2698,59 @@
   </div>
 </section>
 
+<!-- FILME DO MÊS — ÚLTIMA SEÇÃO -->
+<!-- INDICAÇÃO DE FILME -->
+<section id="filme" class="film-section">
+  <div class="container">
+    <div class="film-intro fade-up">
+      <span class="section-eyebrow">Indicação de filme · Setembro</span>
+      <h2 class="section-title">Que tal aproveitar o fim de semana?</h2>
+      <p class="section-desc">Um filme leve, divertido e que ainda traz boas reflexões sobre trabalho, relações e equilíbrio.</p>
+    </div>
+
+    <div class="film-feature fade-up">
+      <div class="film-poster-column">
+        <button class="film-poster" type="button"
+          data-lightbox-src="/images/mb-news/setembro/um-senhor-estagiario.png"
+          data-lightbox-alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
+          aria-label="Ampliar o cartaz de Um Senhor Estagiário">
+          <img src="/images/mb-news/setembro/um-senhor-estagiario.png"
+            alt="Cartaz do filme Um Senhor Estagiário, com Robert De Niro e Anne Hathaway"
+            width="500" height="732" loading="lazy" />
+          <span class="film-poster__action" aria-hidden="true"><i data-lucide="maximize-2"></i>Ampliar cartaz</span>
+        </button>
+        <div class="film-poster-meta" aria-label="Informações do filme">
+          <span>2015</span>
+          <span>Nancy Meyers</span>
+          <span>Robert De Niro · Anne Hathaway</span>
+        </div>
+      </div>
+
+      <div class="film-copy">
+        <span class="june-kicker"><span class="yellow-ribbon-mark" aria-hidden="true">🎗️</span> Setembro Amarelo</span>
+        <h3 class="section-title">Um Senhor Estagiário</h3>
+        <p class="film-lede">Uma comédia sobre recomeços, relações e o valor de estar presente — com leveza para o fim de semana e espaço para reflexão.</p>
+        <p>Ben Whittaker (Robert De Niro), um viúvo de 70 anos, decide voltar ao mercado de trabalho e se torna estagiário em uma empresa de moda comandada por Jules Ostin (Anne Hathaway). O que começa como uma experiência profissional acaba se transformando em uma relação de amizade, troca e apoio entre os dois.</p>
+        <p>Por trás da comédia, o filme mostra como os desafios profissionais, pessoais e a dificuldade de equilibrar diferentes áreas da vida podem afetar qualquer pessoa, mesmo aquelas que parecem estar dando conta de tudo.</p>
+        <p>O filme nos lembra da importância de olhar para as pessoas além de suas funções e resultados. Uma conversa, uma escuta atenta, uma amizade ou simplesmente estar presente pode fazer diferença na vida de alguém.</p>
+        <p>Neste Setembro Amarelo, fica o convite para levar essa reflexão também para o nosso dia a dia: cuidar das relações, prestar atenção em quem está ao nosso redor e lembrar que ninguém precisa enfrentar tudo sozinho.</p>
+
+        <aside class="film-takeaways" aria-label="Reflexões do filme">
+          <h3>Um olhar de cuidado para assistir</h3>
+          <ul>
+            <li>Escuta e presença</li>
+            <li>Troca entre gerações</li>
+            <li>Equilíbrio nas relações</li>
+          </ul>
+        </aside>
+
+        <p class="film-closing"><strong>Então, para o fim de semana:</strong> prepare a pipoca, dê o play e assista com um olhar atento às relações!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- FAB NAV -->
 <div class="fab-nav">
   <a href="#home" class="fab-btn main" title="Voltar ao topo" aria-label="Voltar ao topo"><span class="fab-tooltip">Voltar ao topo</span><i data-lucide="arrow-up"></i></a>
@@ -2834,17 +2833,6 @@
       track.appendChild(duplicateGroup);
     });
     birthdayCarousel.classList.add('is-ready');
-
-    const toggle = birthdayCarousel.querySelector('.birthday-carousel-toggle');
-    const toggleLabel = birthdayCarousel.querySelector('[data-birthday-toggle-label]');
-    toggle.addEventListener('click', () => {
-      const isPaused = birthdayCarousel.classList.toggle('is-paused');
-      toggle.setAttribute('aria-pressed', String(isPaused));
-      toggle.setAttribute('aria-label', isPaused
-        ? 'Retomar carrossel dos aniversariantes'
-        : 'Pausar carrossel dos aniversariantes');
-      toggleLabel.textContent = isPaused ? 'Continuar' : 'Pausar';
-    });
   }
 
   document.addEventListener('keydown', e => {

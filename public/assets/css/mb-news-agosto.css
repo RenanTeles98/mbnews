@@ -1,4 +1,18 @@
 /* Destaques de agosto: um retrato por slide, com leitura editorial curta. */
+.section-eyebrow--highlights {
+  gap: 7px;
+  padding: 6px 10px 6px 0;
+  color: var(--blue);
+}
+.section-eyebrow--highlights .lucide {
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #e6f4fb;
+  color: var(--cyan);
+  stroke-width: 2.6;
+}
 .sector-carousel { margin-top: 34px; }
 .sector-carousel-stage { position: relative; }
 .sector-slide { animation: promotionCarouselFade .28s ease-out; }
@@ -26,16 +40,32 @@
   object-position: center 34%;
 }
 .sector-highlight-card__copy {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 0;
   padding: clamp(30px, 5vw, 68px);
   color: var(--gray-600);
+  isolation: isolate;
+}
+.sector-highlight-card__copy::after {
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -112px;
+  bottom: -116px;
+  border: 1px solid rgba(0, 153, 221, .16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 24px rgba(0, 153, 221, .035), 0 0 0 48px rgba(0, 153, 221, .025);
+  pointer-events: none;
+  z-index: -1;
 }
 .sector-highlight-card__number {
   display: inline-flex;
   width: max-content;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
   padding: 7px 11px;
   border-radius: 99px;
   background: #e6f4fb;
@@ -45,12 +75,25 @@
   letter-spacing: .8px;
 }
 .sector-highlight-card__sector {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 0 0 10px;
   color: var(--cyan);
   font-size: .74rem;
   font-weight: 800;
   letter-spacing: .7px;
   text-transform: uppercase;
+}
+.sector-highlight-card__sector .lucide {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  padding: 3px;
+  border-radius: 6px;
+  background: #e6f4fb;
+  color: var(--blue);
+  stroke-width: 2.5;
 }
 .sector-highlight-card h3 {
   margin: 0 0 18px;
@@ -59,11 +102,31 @@
   line-height: 1.05;
   letter-spacing: -1px;
 }
-.sector-highlight-card__copy > p {
-  max-width: 34rem;
-  margin: 0;
-  font-size: .98rem;
-  line-height: 1.8;
+.sector-highlight-card__copy > p:not(.sector-highlight-card__sector) {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: none;
+  margin: 8px 0 0;
+  padding: 28px 30px 28px 58px;
+  border: 1px solid #dceaf2;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f7fbfd 0%, #edf7fb 100%);
+  color: var(--navy);
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+.sector-highlight-card__copy > p:not(.sector-highlight-card__sector)::before {
+  content: '“';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: rgba(0, 153, 221, .35);
+  font-family: Georgia, serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
 }
 .sector-carousel .promotion-carousel-arrow { width: 42px; height: 42px; }
 .sector-carousel .promotion-carousel-arrow[data-carousel-prev] { left: -21px; }
@@ -88,6 +151,14 @@
   .sector-highlight-card__media { min-height: 0; aspect-ratio: 4 / 3; }
   .sector-highlight-card__copy { padding: 30px 24px 36px; }
   .sector-highlight-card__number { margin-bottom: 20px; }
+  .sector-highlight-card__copy::after { width: 170px; height: 170px; right: -88px; bottom: -90px; }
+  .sector-highlight-card__copy > p:not(.sector-highlight-card__sector) {
+    flex: 0 0 auto;
+    align-items: flex-start;
+    margin-top: 4px;
+    padding: 24px 22px 24px 48px;
+    font-size: .98rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
