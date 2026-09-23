@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-09-23 - Nova montagem de liderança
+
+### Modificado
+- Atualizada a imagem de fundo da seção Setembro Amarelo com uma montagem combinando a composição anterior e a nova foto da equipe.
+- Preservada a área central clara para manter a legibilidade dos textos e cards.
+
 ## 2026-09-21 - Conteúdos de setembro
 
 ### Entrevista de Amanda

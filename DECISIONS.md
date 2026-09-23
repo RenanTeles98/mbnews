@@ -1559,3 +1559,20 @@ A seção de liderança precisava de mais presença visual, mas o título, o tex
 ### Escopo
 
 Adicionado `public/images/mb-news/setembro/lideranca-setembro-amarelo.png` e criadas as regras específicas em `public/assets/css/mb-news-setembro.css`, com ajuste responsivo para mobile.
+
+## ADR-079: Atualização da montagem de liderança
+
+**Data:** 2026-09-23
+**Status:** Implementado
+
+### Decisão
+
+Substituir a arte de fundo da seção `#evento` por uma nova montagem que combina a composição anterior com a nova foto de equipe enviada pelo usuário.
+
+### Motivo
+
+Incluir o novo registro fotográfico na seção sem criar um bloco adicional ou comprometer a leitura do conteúdo editorial.
+
+### Escopo
+
+Atualizado `public/images/mb-news/setembro/lideranca-setembro-amarelo.png`; as regras de opacidade, degradê central e responsividade permanecem no CSS existente.

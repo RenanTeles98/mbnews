@@ -769,6 +769,16 @@ Estado atual: guia do TotalPass disponível nas edições de agosto e setembro.
 
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
 
+## Sessão 2026-09-23 — Atualização da montagem de liderança
+
+- Criada uma nova montagem horizontal combinando a composição anterior com a nova foto da equipe enviada pelo usuário.
+- Mantida a área central clara para preservar a leitura do título, da descrição e dos cards da seção Setembro Amarelo.
+- Substituído `public/images/mb-news/setembro/lideranca-setembro-amarelo.png` pela nova arte.
+
+Estado atual: a seção `#evento` usa a nova montagem como fundo com a mesma camada de opacidade e o mesmo tratamento responsivo.
+
+Próximo passo recomendado: validar a nova composição no link local e publicar quando aprovada.
+
 Publicação: commit `776193f` enviado para `main`; a Vercel publicou a atualização em `https://mbnews.vercel.app/`.
 
 Validação em produção: home, edição de agosto e a imagem de Luana responderam com `200 OK`; a página de agosto contém a referência correta da nova foto.

@@ -429,3 +429,9 @@
 - [x] Remover Juan Cavalcante Campello da Rosa da lista de aniversariantes de setembro.
 - [x] Integrar a montagem fotográfica de liderança na seção Setembro Amarelo.
 - [x] Validar opacidade, legibilidade, recursos carregados e comportamento visual da seção localmente.
+
+## Atualização 2026-09-23 — Nova montagem fotográfica
+
+- [x] Combinar a montagem anterior com a nova foto da equipe.
+- [x] Substituir o asset de fundo da seção de liderança.
+- [ ] Validar a nova composição visualmente e publicar após aprovação.

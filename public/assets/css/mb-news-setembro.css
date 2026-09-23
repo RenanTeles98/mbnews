@@ -739,7 +739,7 @@
   pointer-events: none;
   background-image:
     linear-gradient(90deg, rgba(255, 253, 247, .18) 0%, rgba(255, 253, 247, .78) 42%, rgba(255, 253, 247, .78) 58%, rgba(255, 253, 247, .18) 100%),
-    url('/images/mb-news/setembro/lideranca-setembro-amarelo.png');
+    url('/images/mb-news/setembro/lideranca-setembro-amarelo.png?v=20260923-team-v2');
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover, cover;
