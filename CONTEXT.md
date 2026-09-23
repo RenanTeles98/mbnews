@@ -779,6 +779,17 @@ Estado atual: a seção `#evento` usa a nova montagem como fundo com a mesma cam
 
 Próximo passo recomendado: validar a nova composição no link local e publicar quando aprovada.
 
+## Sessão 2026-09-23 — Atualização de fotos pelo Drive
+
+- Conferida novamente a pasta compartilhada do Google Drive.
+- Baixadas e aplicadas 3 fotos de aniversariantes de agosto: Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.
+- Baixadas e aplicadas 4 fotos de aniversariantes de setembro: Bruno de Abreu Couto Monteiro, Mateus Fraga da Silva Caruso, Pablo Henrique de Araujo dos Santos e Thais dos Santos Oliveira.
+- Os novos nomes encontrados no Drive não foram adicionados às listas mensais sem confirmação editorial.
+
+Estado atual: os 7 cards atualizados respondem localmente com `200` e preservam a ordem existente.
+
+Próximo passo recomendado: publicar as fotos após conferência visual do responsável.
+
 Publicação: commit `776193f` enviado para `main`; a Vercel publicou a atualização em `https://mbnews.vercel.app/`.
 
 Validação em produção: home, edição de agosto e a imagem de Luana responderam com `200 OK`; a página de agosto contém a referência correta da nova foto.

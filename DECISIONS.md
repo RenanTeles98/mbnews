@@ -1576,3 +1576,20 @@ Incluir o novo registro fotográfico na seção sem criar um bloco adicional ou 
 ### Escopo
 
 Atualizado `public/images/mb-news/setembro/lideranca-setembro-amarelo.png`; as regras de opacidade, degradê central e responsividade permanecem no CSS existente.
+
+## ADR-080: Sincronização de fotos dos aniversariantes
+
+**Data:** 2026-09-23
+**Status:** Implementado
+
+### Decisão
+
+Atualizar somente fotos do Drive que correspondem com segurança a nomes já presentes nas listas de agosto e setembro.
+
+### Motivo
+
+A pasta recebeu vários arquivos novos, mas parte deles não permite confirmar a qual edição mensal pertence. Adicionar esses nomes por inferência poderia alterar a comunicação editorial.
+
+### Escopo
+
+Aplicadas 3 fotos em `public/pages/mb-news-agosto-2026.html` e 4 fotos em `public/pages/mb-news-setembro-2026.html`, com os arquivos organizados nas respectivas pastas de `public/images/mb-news/`.

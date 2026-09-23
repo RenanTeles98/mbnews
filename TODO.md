@@ -435,3 +435,11 @@
 - [x] Combinar a montagem anterior com a nova foto da equipe.
 - [x] Substituir o asset de fundo da seção de liderança.
 - [ ] Validar a nova composição visualmente e publicar após aprovação.
+
+## Atualização 2026-09-23 — Fotos do Drive
+
+- [x] Conferir novamente a pasta compartilhada do Google Drive.
+- [x] Atualizar 3 fotos correspondentes aos aniversariantes de agosto.
+- [x] Atualizar 4 fotos correspondentes aos aniversariantes de setembro.
+- [x] Validar os 7 cards e os recursos locais com Playwright.
+- [ ] Confirmar a edição e a ordem dos novos nomes que ainda não aparecem nas listas.
