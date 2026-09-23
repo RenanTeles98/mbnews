@@ -433,3 +433,6 @@ Principais marcos conhecidos:
 - Corrigida a estrutura HTML após o redesign do TotalPass, separando novamente as seções de vacinação e filme.
 - Ampliado o card do TotalPass e colocado o título abaixo do rótulo “TotalPass · primeiros passos”.
 - Publicadas as atualizações de aniversariantes na Vercel pelo commit `776193f`.
+- Atualizadas as fotos de Hellene Silva dos Santos e Nathan Almeida Amorim na edição de setembro.
+- Removido o card de Juan Cavalcante Campello da Rosa da lista de aniversariantes de setembro.
+- Adicionada montagem fotográfica de baixa opacidade à seção de liderança do Setembro Amarelo.

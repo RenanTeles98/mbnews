@@ -424,3 +424,8 @@
 - [x] Adicionar a foto de Matheus Felix Ribeiro ao card de aniversariantes de agosto.
 - [x] Adicionar a foto de Luana Alves Maia Silva ao card de aniversariantes de agosto.
 - [x] Criar commit, enviar para `main` e validar o deploy da atualização na Vercel.
+- [x] Atualizar as fotos de Hellene Silva dos Santos e Nathan Almeida Amorim na edição de setembro.
+- [ ] Confirmar a edição e a ordem dos 11 novos nomes encontrados no Drive antes de adicioná-los à lista.
+- [x] Remover Juan Cavalcante Campello da Rosa da lista de aniversariantes de setembro.
+- [x] Integrar a montagem fotográfica de liderança na seção Setembro Amarelo.
+- [x] Validar opacidade, legibilidade, recursos carregados e comportamento visual da seção localmente.

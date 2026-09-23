@@ -724,6 +724,42 @@
   background: linear-gradient(145deg, #fff7d8 0%, #ffefad 100%);
 }
 
+/* Leadership collage: the photos stay present as atmosphere, not as a competing card. */
+.september-theme #evento {
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fffdf7 0%, #fff4c9 100%);
+}
+
+.september-theme #evento::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(255, 253, 247, .18) 0%, rgba(255, 253, 247, .78) 42%, rgba(255, 253, 247, .78) 58%, rgba(255, 253, 247, .18) 100%),
+    url('/images/mb-news/setembro/lideranca-setembro-amarelo.png');
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  filter: saturate(.82) contrast(.92);
+  opacity: .26;
+}
+
+.september-theme #evento > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .september-theme #evento::after {
+    background-position: center, 50% center;
+    background-size: cover, auto 100%;
+    opacity: .16;
+  }
+}
+
 @media (max-width: 760px) {
   .september-theme .yellow-ribbon-lockup {
     width: 100%;

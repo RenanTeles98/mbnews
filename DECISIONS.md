@@ -1508,3 +1508,54 @@ O projeto está configurado para publicar a produção a partir do push para `ma
 ### Resultado
 
 Commit `776193f` enviado com sucesso. Home, página de agosto e a imagem de Luana foram validadas em produção com `200 OK`.
+
+## ADR-076: Atualização segura da lista de setembro
+
+**Data:** 2026-09-23
+**Status:** Parcialmente implementado
+
+### Decisão
+
+Atualizar somente os retratos que correspondem exatamente a pessoas já presentes na lista de setembro: Hellene Silva dos Santos e Nathan Almeida Amorim.
+
+### Motivo
+
+A pasta do Drive recebeu 13 arquivos novos, mas 11 nomes não aparecem na lista atual e não informam a qual edição mensal pertencem. Adicioná-los por inferência poderia colocar aniversariantes na página errada ou alterar a ordem editorial sem confirmação.
+
+### Escopo
+
+Adicionados `hellene-silva-dos-santos.jpeg` e `nathan-almeida-amorim.jpeg` em `public/images/mb-news/setembro/aniversariantes/` e vinculados em `public/pages/mb-news-setembro-2026.html`.
+
+## ADR-077: Remoção de aniversariante desligado
+
+**Data:** 2026-09-23
+**Status:** Implementado
+
+### Decisão
+
+Remover o card de Juan Cavalcante Campello da Rosa da edição de setembro.
+
+### Motivo
+
+O usuário informou que a pessoa foi desligada e solicitou a retirada do card da comunicação interna.
+
+### Escopo
+
+Removido o card de `public/pages/mb-news-setembro-2026.html` e atualizados o texto editorial, o contador numérico e o rótulo acessível da seção de aniversariantes de setembro para 14 pessoas.
+
+## ADR-078: Montagem fotográfica na seção de liderança
+
+**Data:** 2026-09-23
+**Status:** Implementado
+
+### Decisão
+
+Usar uma composição horizontal das fotos da equipe como camada de fundo da seção `#evento`, com opacidade reduzida e uma faixa clara no centro para proteger a leitura do conteúdo.
+
+### Motivo
+
+A seção de liderança precisava de mais presença visual, mas o título, o texto e os cards de saúde mental continuam sendo o conteúdo principal. A montagem cria contexto humano sem transformar as fotos em um novo bloco concorrente.
+
+### Escopo
+
+Adicionado `public/images/mb-news/setembro/lideranca-setembro-amarelo.png` e criadas as regras específicas em `public/assets/css/mb-news-setembro.css`, com ajuste responsivo para mobile.

@@ -773,6 +773,14 @@ Publicação: commit `776193f` enviado para `main`; a Vercel publicou a atualiza
 
 Validação em produção: home, edição de agosto e a imagem de Luana responderam com `200 OK`; a página de agosto contém a referência correta da nova foto.
 
+Atualização 2026-09-23: a pasta do Drive recebeu novos retratos. As fotos de Hellene Silva dos Santos e Nathan Almeida Amorim, que já constavam na lista de setembro, foram baixadas e vinculadas aos cards da edição de setembro.
+
+Os outros 11 nomes novos encontrados no Drive não foram adicionados automaticamente porque não correspondem aos nomes atuais da lista nem indicam, por si só, a edição mensal correta.
+
+Atualização 2026-09-23: removido o card de Juan Cavalcante Campello da Rosa da edição de setembro a pedido do usuário, pois ele não faz mais parte da MB. A contagem da seção foi ajustada para 14 aniversariantes.
+
+Atualização 2026-09-23: criada uma montagem horizontal com as fotos da equipe para a seção `#evento` de Setembro Amarelo. O fundo usa a composição em baixa opacidade, com degradê central para manter o título e os cards legíveis, além de ajuste específico para telas menores.
+
 ## Sessão 2026-09-22 — Foto de equipe do Higor
 
 - Adicionada a foto `public/images/mb-news/setembro/promovidos/higor-campos-equipe.jpeg` a partir do arquivo fornecido.
