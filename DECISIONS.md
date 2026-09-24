@@ -315,7 +315,7 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 ## ADR-083: Separar orientacao e etapas do agendamento na MB News
 
 **Data:** 2026-09-24
-**Status:** Implementado localmente; publicacao pendente
+**Status:** Implementado e publicado
 
 ### Decisao
 

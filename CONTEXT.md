@@ -21,9 +21,9 @@ Arquivos modificados nesta sessao:
 - `CHANGELOG.md`
 - `docs/sessions/2026-09-24.md`
 
-Estado atual: ajuste de espacamento preparado para publicacao.
+Estado atual: a edicao publicada referencia a nova versao do CSS, e a folha servida inclui a margem de 20px entre a introducao e as etapas.
 
-Proximo passo recomendado: publicar e conferir a leitura do bloco em telas pequenas.
+Proximo passo recomendado: conferir o resultado visual em um navegador de celular.
 
 ### Sessao 2026-09-24 - Correcao da orientacao de agendamento na MB News
 
