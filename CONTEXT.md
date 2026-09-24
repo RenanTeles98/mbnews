@@ -7,6 +7,24 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-24 - Espacamento no passo a passo de agendamento
+
+- Adicionado espaco entre a orientacao geral de agendamento e a lista numerada na edicao de setembro.
+- Atualizada a versao do CSS na pagina para evitar que o navegador mantenha a folha de estilos antiga em cache.
+
+Arquivos modificados nesta sessao:
+- `public/assets/css/mb-news-setembro.css`
+- `public/pages/mb-news-setembro-2026.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-24.md`
+
+Estado atual: ajuste de espacamento preparado para publicacao.
+
+Proximo passo recomendado: publicar e conferir a leitura do bloco em telas pequenas.
+
 ### Sessao 2026-09-24 - Correcao da orientacao de agendamento na MB News
 
 - Removida da edicao publicada de setembro a nota interna sobre validacao do RH antes da publicacao.

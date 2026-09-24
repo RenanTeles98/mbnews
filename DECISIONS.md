@@ -312,6 +312,28 @@ Remover o item "Podcast" e renomear "Banners" para "Publicidade" para melhor ali
 
 ---
 
+## ADR-083: Separar orientacao e etapas do agendamento na MB News
+
+**Data:** 2026-09-24
+**Status:** Implementado localmente; publicacao pendente
+
+### Decisao
+
+Adicionar margem superior entre o paragrafo introdutorio e a lista de etapas no bloco de agendamento da edicao de setembro, usando a folha de estilos existente da edicao.
+
+### Motivo
+
+Na tela pequena mostrada pelo usuario, o texto introdutorio e o primeiro passo apareciam visualmente colados. A separacao melhora a leitura sem alterar o conteudo.
+
+### Alternativas consideradas
+
+- Inserir margem inline no HTML: evitar por manter o estilo na folha de estilos da edicao.
+- Alterar a margem de todos os paragrafos do bloco: desnecessario; o ajuste deve separar somente a introducao da lista.
+
+### Escopo
+
+Adicionada margem de 20px ao conjunto de etapas que vem logo apos um paragrafo em `.saude-how-box` dentro de `public/assets/css/mb-news-setembro.css`. Atualizada a versao da folha de estilos referenciada pela pagina para invalidar cache.
+
 ## ADR-042: Separar as edicoes de agosto e setembro da MB News
 
 **Data:** 2026-09-16

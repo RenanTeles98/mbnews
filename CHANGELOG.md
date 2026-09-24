@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-09-24 - Espacamento do passo a passo de agendamento
+
+### Ajustado
+- Aumentado o espaco entre a orientacao de agendamento e a lista numerada na edicao de setembro.
+- Atualizada a referencia versionada do CSS para renovar o cache do navegador.
+
 ## 2026-09-24 - Correcao da orientacao de agendamento da MB News
 
 ### Corrigido

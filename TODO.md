@@ -4,6 +4,12 @@
 
 ---
 
+## Atualizacao 2026-09-24 - Espacamento do passo a passo de agendamento
+
+- [x] Aumentar o espaco entre o texto introdutorio e a lista de etapas.
+- [x] Atualizar a versao do CSS para invalidar cache do navegador.
+- [ ] Publicar e conferir o bloco em telas pequenas.
+
 ## Atualizacao 2026-09-24 - Correcao da orientacao de agendamento
 
 - [x] Remover da edicao de setembro a nota interna sobre validacao do RH antes da publicacao.
