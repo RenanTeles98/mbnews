@@ -5,6 +5,29 @@
 
 ---
 
+## ADR-082: Corrigir orientacao de agendamento na edicao publicada da MB News
+
+**Data:** 2026-09-24
+**Status:** Implementado localmente; publicacao pendente
+
+### Decisao
+
+Substituir a nota interna sobre validacao do RH por uma orientacao publica que informa que as etapas podem variar conforme o plano e direciona o leitor aos canais oficiais da SulAmerica para confirmar o fluxo atualizado.
+
+### Motivo
+
+A nota interna foi publicada por engano na edicao de setembro. Como o passo a passo oficial ainda nao foi confirmado, a correcao deve remover a referencia ao processo editorial sem apresentar as etapas como definitivas.
+
+### Alternativas consideradas
+
+- Manter a nota interna: perpetuaria uma mensagem de bastidor na revista publicada.
+- Apresentar o passo a passo como confirmado: poderia afirmar um fluxo ainda nao validado.
+- Orientar a consulta aos canais oficiais: corrige o texto e deixa explicita a necessidade de confirmar o fluxo do plano.
+
+### Escopo
+
+Alterado o paragrafo introdutorio do bloco de agendamento em `public/pages/mb-news-setembro-2026.html`. A validacao do passo a passo e a publicacao permanecem pendentes.
+
 ## ADR-081: Sincronizar as fotos de aniversariantes de agosto na home
 
 **Data:** 2026-09-24

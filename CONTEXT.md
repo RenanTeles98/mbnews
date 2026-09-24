@@ -7,6 +7,24 @@
 
 ## Estado Atual
 
+### Sessao 2026-09-24 - Correcao da orientacao de agendamento na MB News
+
+- Removida da edicao publicada de setembro a nota interna sobre validacao do RH antes da publicacao.
+- Substituida por uma orientacao ao leitor para confirmar o fluxo atualizado nos canais oficiais da SulAmerica, informando que as etapas podem variar conforme o plano.
+- A verificacao do fluxo oficial detalhado permanece pendente; o texto agora deixa essa limitacao clara.
+
+Arquivos modificados nesta sessao:
+- `public/pages/mb-news-setembro-2026.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-24.md`
+
+Estado atual: a fonte da edicao de setembro foi corrigida localmente; a atualizacao em producao depende do deploy.
+
+Proximo passo recomendado: revisar e publicar a correcao da edicao de setembro.
+
 ### Sessao 2026-09-24 - Fotos ausentes dos aniversariantes de agosto
 
 - Restauradas na home as fotos de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.

@@ -4,6 +4,12 @@
 
 ---
 
+## Atualizacao 2026-09-24 - Correcao da orientacao de agendamento
+
+- [x] Remover da edicao de setembro a nota interna sobre validacao do RH antes da publicacao.
+- [x] Orientar leitores a confirmar o fluxo atualizado de agendamento nos canais oficiais da SulAmerica.
+- [ ] Publicar a correcao da edicao de setembro.
+
 ## Atualizacao 2026-09-24 - Fotos dos aniversariantes de agosto
 
 - [x] Restaurar na home as fotos de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.
@@ -222,7 +228,7 @@
 - [x] Ocultar conteúdo de promoções de julho que não faz parte do briefing de agosto.
 - [ ] Receber do RH os valores oficiais do plano por faixa etária.
 - [ ] Receber do RH a lista e datas dos aniversariantes de agosto.
-- [ ] Validar o fluxo oficial de agendamento SulAmérica.
+- [ ] Validar o fluxo oficial de agendamento SulAmérica nas edições que apresentarem o passo a passo.
 - [ ] Disponibilizar o calendário vacinal oficial da edição de agosto.
 
 ## Atualização 2026-08-12 — MB News Julho

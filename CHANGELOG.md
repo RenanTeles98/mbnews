@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-09-24 - Correcao da orientacao de agendamento da MB News
+
+### Corrigido
+- Removida a nota interna sobre validacao do RH da edicao de setembro.
+- Incluida orientacao para confirmar o fluxo atualizado de agendamento nos canais oficiais da SulAmerica.
+
 ## 2026-09-24 - Fotos dos aniversariantes de agosto
 
 ### Corrigido
