@@ -5,6 +5,28 @@
 
 ---
 
+## ADR-081: Sincronizar as fotos de aniversariantes de agosto na home
+
+**Data:** 2026-09-24
+**Status:** Implementado
+
+### Decisao
+
+Adicionar aos cards de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira, na home, as imagens oficiais que ja estao armazenadas para a edicao de agosto.
+
+### Motivo
+
+Os arquivos existiam e ja eram usados na edicao arquivada, mas os tres cards correspondentes da home ainda exibiam apenas as iniciais.
+
+### Alternativas consideradas
+
+- Manter os cards com iniciais: nao resolvia a ausencia das fotos que ja estavam disponiveis.
+- Criar ou copiar novos arquivos: desnecessario, pois as imagens corretas ja existiam no repositorio.
+
+### Escopo
+
+Atualizado somente o markup dos tres cards em `index.html`, preservando nomes, ordem, arquivos e comportamento do carrossel.
+
 ## ADR-001: HTML estÃ¡tico como pÃ¡gina principal em vez de migrar tudo para Next.js
 
 **Data:** 2026-04-14

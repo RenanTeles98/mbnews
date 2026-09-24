@@ -4,6 +4,12 @@
 
 ---
 
+## Atualizacao 2026-09-24 - Fotos dos aniversariantes de agosto
+
+- [x] Restaurar na home as fotos de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.
+- [x] Manter os caminhos alinhados com os arquivos locais e com a edicao arquivada de agosto.
+- [x] Criar commit, enviar para `main` e acompanhar o deploy automatico da Vercel.
+
 ## Atualizacao 2026-09-01 - Iframe
 
 - [x] Restringir `frame-ancestors` no `vercel.json` a `https://calling.mbfinance.com.br`.

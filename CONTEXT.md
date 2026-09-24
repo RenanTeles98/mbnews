@@ -1,11 +1,29 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-09-21
+> Última atualização: 2026-09-24
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Sessao 2026-09-24 - Fotos ausentes dos aniversariantes de agosto
+
+- Restauradas na home as fotos de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.
+- As imagens ja existiam em `public/images/mb-news/agosto/aniversariantes/` e na edicao arquivada; a home estava sem as referencias nos tres cards.
+- A secao principal e a edicao arquivada de agosto agora exibem as fotos dos dez aniversariantes listados.
+
+Arquivos modificados nesta sessao:
+- `index.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-09-24.md`
+
+Estado atual: referencias das tres fotos restauradas em `index.html`; o push para `main` aciona o deploy automatico da Vercel.
+
+Proximo passo recomendado: acompanhar futuras revisoes da revista e manter as fotos sincronizadas entre a home e a edicao arquivada.
 
 ### Sessao 2026-09-16 - Edicoes de agosto e setembro da MB News
 

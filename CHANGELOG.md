@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-09-24 - Fotos dos aniversariantes de agosto
+
+### Corrigido
+- Restauradas na home as fotos de Luiz Roberto da Silva Santos, Siomara Rodrigues Alexandre e Tatiana Borges Costa Teixeira.
+- Reutilizados os arquivos ja existentes na edicao arquivada de agosto, sem alterar nomes ou ordem.
+
 ## 2026-09-23 - Fotos de aniversariantes
 
 ### Modificado
