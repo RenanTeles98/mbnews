@@ -8,7 +8,7 @@
 ## ADR-086: Usar os retratos da pasta oficial no ranking TotalPass
 
 **Data:** 2026-10-05
-**Status:** Implementado; publicacao pendente
+**Status:** Implementado e publicado
 
 ### Decisao
 

@@ -23,9 +23,9 @@ Arquivos modificados nesta sessao:
 - `CHANGELOG.md`
 - `docs/sessions/2026-10-05.md`
 
-Estado atual: ranking com os tres retratos oficiais, nomes completos e frequencias de setembro; publicacao pendente de commit e deploy.
+Estado atual: ranking com os tres retratos oficiais, nomes completos e frequencias de setembro, publicado e conferido em producao.
 
-Proximo passo recomendado: publicar a atualizacao e conferir os arquivos servidos pela pagina.
+Proximo passo recomendado: manter os retratos sincronizados se o ranking for atualizado.
 
 ### Sessao 2026-10-05 - Remocao do card de primeiros passos TotalPass
 

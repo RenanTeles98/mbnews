@@ -10,7 +10,7 @@
 - [x] Publicar a remocao e confirmar que o card nao aparece mais na pagina publica.
 - [x] Receber o link da pasta do Drive e localizar as tres fotos correspondentes.
 - [x] Substituir as iniciais pelos retratos de Maria Seixas, Antonio Costa e Rodrigo Gomes.
-- [ ] Publicar a atualizacao das fotos e conferir os arquivos servidos pela pagina.
+- [x] Publicar a atualizacao das fotos e confirmar que os tres arquivos sao servidos pela pagina.
 
 ## Atualizacao 2026-10-05 - Ranking TotalPass de setembro
 
