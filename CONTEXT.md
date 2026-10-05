@@ -7,6 +7,26 @@
 
 ## Estado Atual
 
+### Sessao 2026-10-05 - Fotos oficiais do ranking TotalPass
+
+- Recebido o link da pasta do Drive e localizadas as fotos de Maria Seixas, Antonio Costa e Rodrigo Gomes.
+- Substituidas as iniciais do ranking de setembro pelas fotos correspondentes, mantendo nomes e frequencias.
+- Mantida a secao sem o card de primeiros passos "Comece pelo app".
+
+Arquivos modificados nesta sessao:
+- `public/pages/mb-news-setembro-2026.html`
+- `public/assets/css/mb-news-setembro.css`
+- `public/images/mb-news/setembro/totalpass/`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-10-05.md`
+
+Estado atual: ranking com os tres retratos oficiais, nomes completos e frequencias de setembro; publicacao pendente de commit e deploy.
+
+Proximo passo recomendado: publicar a atualizacao e conferir os arquivos servidos pela pagina.
+
 ### Sessao 2026-10-05 - Remocao do card de primeiros passos TotalPass
 
 - Removido da edicao de setembro o card "Comece pelo app", mantendo o foco no ranking.
@@ -21,9 +41,9 @@ Arquivos modificados nesta sessao:
 - `CHANGELOG.md`
 - `docs/sessions/2026-10-05.md`
 
-Estado atual: o card foi removido e a edicao publicada foi conferida. O ranking permanece com iniciais ate localizar as fotos oficiais no Drive.
+Estado naquele momento: o card foi removido e a edicao publicada foi conferida. As fotos foram aplicadas depois que o usuario reenviou o link da pasta correta.
 
-Proximo passo recomendado: usar o link reenviado para associar cada foto ao nome correspondente e atualizar os cards.
+Etapa concluida na sessao seguinte: associar as fotos do Drive aos nomes do ranking e atualizar os cards.
 
 ### Sessao 2026-10-05 - Ranking TotalPass de setembro
 

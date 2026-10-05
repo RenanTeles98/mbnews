@@ -5,6 +5,25 @@
 
 ---
 
+## ADR-086: Usar os retratos da pasta oficial no ranking TotalPass
+
+**Data:** 2026-10-05
+**Status:** Implementado; publicacao pendente
+
+### Decisao
+
+Associar os arquivos `Maria Seixas.png`, `Antonio Costa.jpg` e `Rodrigo Gomes.JPG`, encontrados na pasta do Drive enviada pelo usuario, aos tres colaboradores do ranking TotalPass de setembro. Armazenar os arquivos em `public/images/mb-news/setembro/totalpass/` e exibi-los com texto alternativo contendo o nome completo.
+
+### Motivo
+
+Os nomes dos arquivos correspondem aos nomes dos colaboradores na lista do ranking. O usuario indicou essa pasta como origem das fotos.
+
+### Alternativas consideradas
+
+- Manter as iniciais: deixaria a edicao sem as fotos solicitadas.
+- Reutilizar fotos de outros arquivos: poderia associar retratos a pessoas erradas.
+- Usar os tres arquivos nomeados da pasta indicada: preserva a correspondencia de nomes solicitada.
+
 ## ADR-085: Manter a edicao de setembro focada no ranking TotalPass
 
 **Data:** 2026-10-05

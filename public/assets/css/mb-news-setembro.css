@@ -729,20 +729,6 @@
   justify-content: center;
 }
 
-.september-theme #totalpass .totalpass-photo-initials {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, #e1f4ff 0%, #a9dcef 100%);
-  color: #003956;
-}
-
-.september-theme #totalpass .totalpass-initials {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(4.5rem, 8vw, 6.5rem);
-  font-weight: 900;
-  letter-spacing: -.08em;
-}
-
 @media (max-width: 768px) {
   .september-theme #totalpass .totalpass-podium {
     grid-template-columns: 1fr;

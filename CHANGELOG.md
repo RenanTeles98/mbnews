@@ -2,6 +2,13 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-05 - Fotos do ranking TotalPass
+
+### Atualizado
+- Substituidas as iniciais do ranking de setembro pelos retratos correspondentes encontrados na pasta do Drive enviada pelo usuario.
+- Mantidos nomes completos e frequencias: Maria Clara de Faria Seixas (19), Antonio Augusto de Rezende Costa (18) e Rodrigo Gomes de Souza (17 check-ins).
+- Atualizada a versao da folha de estilos referenciada pela pagina.
+
 ## 2026-10-05 - Remocao do card de primeiros passos da edicao de setembro
 
 ### Ajustado
