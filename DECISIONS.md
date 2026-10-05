@@ -8,7 +8,7 @@
 ## ADR-085: Manter a edicao de setembro focada no ranking TotalPass
 
 **Data:** 2026-10-05
-**Status:** Implementado localmente; publicacao pendente
+**Status:** Implementado e publicado
 
 ### Decisao
 

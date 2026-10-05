@@ -7,6 +7,7 @@
 ## Atualizacao 2026-10-05 - Ajuste final do ranking TotalPass
 
 - [x] Remover o card de primeiros passos da edicao de setembro.
+- [x] Publicar a remocao e confirmar que o card nao aparece mais na pagina publica.
 - [ ] Receber novamente o link do Drive com as fotos oficiais dos tres colaboradores.
 - [ ] Substituir as iniciais pelas fotos corretas e publicar a atualizacao.
 

@@ -21,9 +21,9 @@ Arquivos modificados nesta sessao:
 - `CHANGELOG.md`
 - `docs/sessions/2026-10-05.md`
 
-Estado atual: o card foi removido localmente; a troca das iniciais pelas fotos oficiais aguarda o link correto do Drive.
+Estado atual: o card foi removido e a edicao publicada foi conferida. O ranking permanece com iniciais ate localizar as fotos oficiais no Drive.
 
-Proximo passo recomendado: usar o link reenviado para associar cada foto ao nome correspondente e publicar a atualizacao.
+Proximo passo recomendado: usar o link reenviado para associar cada foto ao nome correspondente e atualizar os cards.
 
 ### Sessao 2026-10-05 - Ranking TotalPass de setembro
 
