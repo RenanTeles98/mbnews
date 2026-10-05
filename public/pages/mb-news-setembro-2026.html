@@ -570,14 +570,6 @@
       font-size: .84rem; line-height: 1.55; text-align: center;
     }
     .totalpass-tie-note .lucide { width: 20px; height: 20px; flex: 0 0 20px; color: #f4b183; }
-    .july-totalpass .totalpass-podium {
-      width: 100%; max-width: 1100px; margin-inline: auto;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      grid-template-areas:'second first third-a';
-      justify-content: center;
-    }
-    .july-totalpass .totalpass-card { min-height:0; display:block; }
-    .july-totalpass .rank-third-b { display:none; }
     .preview-grid {
       display: grid; grid-template-columns: repeat(2,1fr); gap: 18px;
       max-width: 780px; margin: 32px auto 0;
@@ -684,12 +676,11 @@
       }
       .totalpass-header { margin-bottom: 36px; text-align: left; }
       .totalpass-header .section-desc { margin: 0; }
-      .totalpass-podium, .july-totalpass .totalpass-podium {
-        grid-template-columns: 1fr; grid-template-areas: 'first' 'second' 'third-a' 'third-b';
+      .totalpass-podium {
+        grid-template-columns: 1fr; grid-template-areas: 'first' 'second' 'third-a';
         gap: 14px;
       }
       .totalpass-card.rank-first { transform: none; }
-      .july-totalpass .totalpass-card { display:block; min-height:0; }
       .totalpass-card { display: grid; grid-template-columns: 42% 58%; border-radius: 20px; }
       .totalpass-photo { aspect-ratio: 4 / 5; }
       .totalpass-card-copy { padding: 18px 14px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
@@ -1583,7 +1574,7 @@
     }
   </style>
   <link rel="stylesheet" href="/assets/css/mb-news-film.css" />
-  <link rel="stylesheet" href="/assets/css/mb-news-setembro.css?v=20260924-health-spacing-v1" />
+  <link rel="stylesheet" href="/assets/css/mb-news-setembro.css?v=20261005-totalpass-ranking-v1" />
   <link rel="stylesheet" href="/assets/css/mb-news-birthdays.css" />
 </head>
 <body class="september-theme">
@@ -2140,66 +2131,51 @@
   </div>
 </section>
 
-<!-- TOTALPASS — temporariamente oculto na edição de setembro -->
-<section id="totalpass" class="july-totalpass" hidden>
+<!-- RANKING TOTALPASS — SETEMBRO -->
+<section id="totalpass" class="september-totalpass">
   <div class="container">
     <div class="totalpass-header fade-up">
       <span class="section-eyebrow totalpass-brand-tag"><i data-lucide="dumbbell"></i>TotalPass</span>
       <h2 class="section-title">Quem se movimenta, inspira.</h2>
-      <p class="section-desc">
-        Confira quem transformou a atividade física em parte da rotina neste mês. Mais do que posições, este pódio representa constância e cuidado com a saúde.
-      </p>
+      <p class="section-desc">Confira o ranking TotalPass de setembro. Mais do que posições, este pódio reconhece quem manteve a constância e o cuidado com a saúde.</p>
     </div>
 
-    <div class="totalpass-podium fade-up" role="list" aria-label="Classificação do ranking TotalPass">
+    <div class="totalpass-podium fade-up" role="list" aria-label="Classificação do ranking TotalPass de setembro">
       <article class="totalpass-card rank-first" role="listitem">
-        <div class="totalpass-photo">
+        <div class="totalpass-photo totalpass-photo-initials">
           <span class="totalpass-place"><i data-lucide="crown"></i>1º</span>
-          <img src="/images/mb-news/julho/totalpass/antonio-augusto.png" alt="Antonio Augusto, primeiro colocado no ranking TotalPass" width="1080" height="1350" loading="lazy" />
+          <span class="totalpass-initials" aria-hidden="true">MS</span>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Antonio Augusto</h3>
-          <p>Conquistou o primeiro lugar e ocupa o topo do nosso pódio.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>23 check-ins</span>
+          <h3>Maria Clara de Faria Seixas</h3>
+          <p>Conquistou o primeiro lugar no ranking de setembro.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>19 check-ins</span>
           <strong>1º lugar</strong>
         </div>
       </article>
 
       <article class="totalpass-card rank-second" role="listitem">
-        <div class="totalpass-photo">
+        <div class="totalpass-photo totalpass-photo-initials">
           <span class="totalpass-place">2º</span>
-          <img src="/images/mb-news/agosto/totalpass/douglas-reis.jpg" alt="Douglas Reis, segundo colocado no ranking TotalPass" width="4032" height="3024" loading="lazy" />
+          <span class="totalpass-initials" aria-hidden="true">AC</span>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Douglas Reis</h3>
-          <p>Garantiu a segunda posição entre os destaques do ranking.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>21 check-ins</span>
+          <h3>Antonio Augusto de Rezende Costa</h3>
+          <p>Alcançou a segunda posição entre os destaques de setembro.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>18 check-ins</span>
           <strong>2º lugar</strong>
         </div>
       </article>
 
       <article class="totalpass-card rank-third-a" role="listitem">
-        <div class="totalpass-photo">
+        <div class="totalpass-photo totalpass-photo-initials">
           <span class="totalpass-place">3º</span>
-          <img src="/images/mb-news/julho/totalpass/maria-seixas.png" alt="Maria Seixas, terceira colocada no ranking TotalPass" width="1080" height="1350" loading="lazy" />
+          <span class="totalpass-initials" aria-hidden="true">RS</span>
         </div>
         <div class="totalpass-card-copy">
-          <h3>Maria Seixas</h3>
-          <p>Completa o pódio de dedicação deste mês.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>20 check-ins</span>
-          <strong>3º lugar</strong>
-        </div>
-      </article>
-
-      <article class="totalpass-card rank-third-b" role="listitem" style="display:none">
-        <div class="totalpass-photo">
-          <span class="totalpass-place">3º</span>
-          <img src="/images/mb-news/junho/totalpass/rodrigo-gadelha.jpg" alt="Rodrigo Gadelha, terceiro colocado no ranking TotalPass" width="1080" height="1080" loading="lazy" />
-        </div>
-        <div class="totalpass-card-copy">
-          <h3>Rodrigo Gadelha</h3>
-          <p>Também alcançou a terceira posição e completa o ranking.</p>
-          <span class="totalpass-checkins"><i data-lucide="activity"></i>15 check-ins</span>
+          <h3>Rodrigo Gomes de Souza</h3>
+          <p>Completa o pódio TotalPass de setembro.</p>
+          <span class="totalpass-checkins"><i data-lucide="activity"></i>17 check-ins</span>
           <strong>3º lugar</strong>
         </div>
       </article>

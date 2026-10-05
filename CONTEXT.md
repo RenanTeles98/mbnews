@@ -1,11 +1,30 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-09-24
+> Última atualização: 2026-10-05
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Sessao 2026-10-05 - Ranking TotalPass de setembro
+
+- Reativado o bloco TotalPass da edicao de setembro com os dados da lista enviada pelo usuario.
+- Ordenado o podio por frequencia: Maria Clara de Faria Seixas (19), Antonio Augusto de Rezende Costa (18) e Rodrigo Gomes de Souza (17).
+- Usadas iniciais nos cards porque nao foram encontradas fotos dessas tres pessoas nos assets locais.
+
+Arquivos modificados nesta sessao:
+- `public/pages/mb-news-setembro-2026.html`
+- `public/assets/css/mb-news-setembro.css`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-10-05.md`
+
+Estado atual: ranking atualizado localmente; publicacao ainda pendente.
+
+Proximo passo recomendado: publicar e conferir a edicao de setembro.
 
 ### Sessao 2026-09-24 - Espacamento no passo a passo de agendamento
 

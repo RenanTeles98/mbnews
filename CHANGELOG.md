@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-05 - Ranking TotalPass de setembro
+
+### Atualizado
+- Reativado o ranking TotalPass da edicao de setembro com Maria Clara de Faria Seixas (19), Antonio Augusto de Rezende Costa (18) e Rodrigo Gomes de Souza (17 check-ins).
+- Aplicadas iniciais nos cards enquanto fotos correspondentes nao estiverem disponiveis.
+
 ## 2026-09-24 - Espacamento do passo a passo de agendamento
 
 ### Ajustado

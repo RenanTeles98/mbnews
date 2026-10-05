@@ -5,6 +5,29 @@
 
 ---
 
+## ADR-084: Publicar o ranking TotalPass de setembro com iniciais
+
+**Data:** 2026-10-05
+**Status:** Implementado localmente; publicacao pendente
+
+### Decisao
+
+Reativar a secao TotalPass da edicao de setembro e ordenar Maria Clara de Faria Seixas (19 check-ins), Antonio Augusto de Rezende Costa (18) e Rodrigo Gomes de Souza (17). Usar iniciais nos cards ate que fotos correspondentes estejam disponiveis.
+
+### Motivo
+
+A lista recebida contem tres frequencias diferentes, que definem uma classificacao direta. Os arquivos locais nao contem retratos correspondentes aos tres nomes.
+
+### Alternativas consideradas
+
+- Manter a secao oculta: nao atenderia ao pedido de publicar o ranking de setembro.
+- Reutilizar fotos de outros meses: poderia associar imagens as pessoas erradas.
+- Usar iniciais: apresenta os nomes e resultados sem atribuir retratos incorretos.
+
+### Escopo
+
+Atualizados os tres cards do ranking em `public/pages/mb-news-setembro-2026.html`, com estilos para as iniciais em `public/assets/css/mb-news-setembro.css`. A folha de estilos recebeu nova versao na referencia HTML para invalidar cache.
+
 ## ADR-082: Corrigir orientacao de agendamento na edicao publicada da MB News
 
 **Data:** 2026-09-24

@@ -4,6 +4,13 @@
 
 ---
 
+## Atualizacao 2026-10-05 - Ranking TotalPass de setembro
+
+- [x] Incluir os tres colaboradores e as frequencias recebidas do usuario.
+- [x] Ordenar o ranking por frequencia decrescente: 19, 18 e 17 check-ins.
+- [x] Usar iniciais nos cards, sem associar fotos de outras pessoas.
+- [ ] Publicar e confirmar o ranking na edicao de setembro.
+
 ## Atualizacao 2026-09-24 - Espacamento do passo a passo de agendamento
 
 - [x] Aumentar o espaco entre o texto introdutorio e a lista de etapas.
@@ -15,7 +22,7 @@
 
 - [x] Remover da edicao de setembro a nota interna sobre validacao do RH antes da publicacao.
 - [x] Orientar leitores a confirmar o fluxo atualizado de agendamento nos canais oficiais da SulAmerica.
-- [ ] Publicar a correcao da edicao de setembro.
+- [x] Publicar a correcao da edicao de setembro.
 
 ## Atualizacao 2026-09-24 - Fotos dos aniversariantes de agosto
 
