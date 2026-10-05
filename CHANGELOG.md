@@ -2,6 +2,11 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-05 - Remocao do card de primeiros passos da edicao de setembro
+
+### Ajustado
+- Removido o card "Comece pelo app" da secao TotalPass, mantendo o foco no ranking mensal.
+
 ## 2026-10-05 - Ranking TotalPass de setembro
 
 ### Atualizado

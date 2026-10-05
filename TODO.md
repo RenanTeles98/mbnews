@@ -4,6 +4,12 @@
 
 ---
 
+## Atualizacao 2026-10-05 - Ajuste final do ranking TotalPass
+
+- [x] Remover o card de primeiros passos da edicao de setembro.
+- [ ] Receber novamente o link do Drive com as fotos oficiais dos tres colaboradores.
+- [ ] Substituir as iniciais pelas fotos corretas e publicar a atualizacao.
+
 ## Atualizacao 2026-10-05 - Ranking TotalPass de setembro
 
 - [x] Incluir os tres colaboradores e as frequencias recebidas do usuario.

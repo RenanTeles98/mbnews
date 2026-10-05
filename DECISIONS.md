@@ -5,6 +5,28 @@
 
 ---
 
+## ADR-085: Manter a edicao de setembro focada no ranking TotalPass
+
+**Data:** 2026-10-05
+**Status:** Implementado localmente; publicacao pendente
+
+### Decisao
+
+Remover o bloco "Comece pelo app" da secao TotalPass da edicao de setembro e manter o ranking como conteudo principal do bloco.
+
+### Motivo
+
+O pedido do usuario foi incluir o ranking nessa edicao e indicou que o card de primeiros passos nao deve acompanhar esse conteudo.
+
+### Alternativas consideradas
+
+- Manter o card de primeiros passos: adicionava um bloco que o usuario explicitamente dispensou.
+- Remover o card: deixa a secao concentrada no ranking solicitado.
+
+### Escopo
+
+Removido o markup `.totalpass-howto` de `public/pages/mb-news-setembro-2026.html`. A troca das iniciais por fotos oficiais continua pendente do link correto do Drive.
+
 ## ADR-084: Publicar o ranking TotalPass de setembro com iniciais
 
 **Data:** 2026-10-05

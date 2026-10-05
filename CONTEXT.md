@@ -7,6 +7,24 @@
 
 ## Estado Atual
 
+### Sessao 2026-10-05 - Remocao do card de primeiros passos TotalPass
+
+- Removido da edicao de setembro o card "Comece pelo app", mantendo o foco no ranking.
+- As iniciais ainda estao nos tres cards do ranking. O Drive acessivel nao apresentou uma pasta identificavel para essas pessoas; os arquivos encontrados tinham nomes genericos, sem identificacao.
+- Solicitado ao usuario que reenvie o link da pasta correta para localizar e aplicar as tres fotos oficiais.
+
+Arquivos modificados nesta sessao:
+- `public/pages/mb-news-setembro-2026.html`
+- `CONTEXT.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `docs/sessions/2026-10-05.md`
+
+Estado atual: o card foi removido localmente; a troca das iniciais pelas fotos oficiais aguarda o link correto do Drive.
+
+Proximo passo recomendado: usar o link reenviado para associar cada foto ao nome correspondente e publicar a atualizacao.
+
 ### Sessao 2026-10-05 - Ranking TotalPass de setembro
 
 - Reativado o bloco TotalPass da edicao de setembro com os dados da lista enviada pelo usuario.
