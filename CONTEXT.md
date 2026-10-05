@@ -22,9 +22,9 @@ Arquivos modificados nesta sessao:
 - `CHANGELOG.md`
 - `docs/sessions/2026-10-05.md`
 
-Estado atual: ranking atualizado localmente; publicacao ainda pendente.
+Estado atual: ranking publicado na edicao de setembro. A producao foi conferida e serve os tres nomes, as frequencias e a folha de estilos versionada.
 
-Proximo passo recomendado: publicar e conferir a edicao de setembro.
+Proximo passo recomendado: substituir as iniciais por retratos oficiais caso as fotos correspondentes sejam disponibilizadas.
 
 ### Sessao 2026-09-24 - Espacamento no passo a passo de agendamento
 

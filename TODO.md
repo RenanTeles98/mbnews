@@ -9,7 +9,7 @@
 - [x] Incluir os tres colaboradores e as frequencias recebidas do usuario.
 - [x] Ordenar o ranking por frequencia decrescente: 19, 18 e 17 check-ins.
 - [x] Usar iniciais nos cards, sem associar fotos de outras pessoas.
-- [ ] Publicar e confirmar o ranking na edicao de setembro.
+- [x] Publicar e confirmar o ranking na edicao de setembro.
 
 ## Atualizacao 2026-09-24 - Espacamento do passo a passo de agendamento
 

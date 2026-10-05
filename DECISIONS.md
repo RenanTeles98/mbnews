@@ -8,7 +8,7 @@
 ## ADR-084: Publicar o ranking TotalPass de setembro com iniciais
 
 **Data:** 2026-10-05
-**Status:** Implementado localmente; publicacao pendente
+**Status:** Implementado e publicado
 
 ### Decisao
 
