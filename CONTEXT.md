@@ -7,6 +7,17 @@
 
 ## Estado Atual
 
+### Sessao 2026-10-05 - Padronizacao dos nomes das marcas
+
+- Padronizadas as mencoes textuais de marca para `MB Finance` e `MB News` em paginas publicas, componentes, metadados, mensagens, conteudo SEO e documentacao.
+- Preservados slugs, rotas, nomes de assets e caminhos de arquivos usados pelo codigo.
+
+Arquivos modificados nesta sessao: paginas HTML, componentes e rotas Next.js, conteudo SEO, scripts com texto de marca, documentacao do projeto e este registro.
+
+Estado atual: as mencoes textuais encontradas seguem a capitalizacao definida; os identificadores tecnicos continuam com seus caminhos originais.
+
+Proximo passo recomendado: manter `MB Finance` e `MB News` nas novas publicacoes e materiais do projeto.
+
 ### Sessao 2026-10-05 - Fotos oficiais do ranking TotalPass
 
 - Recebido o link da pasta do Drive e localizadas as fotos de Maria Seixas, Antonio Costa e Rodrigo Gomes.

@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-05 - Padronizacao dos nomes das marcas
+
+### Atualizado
+- Padronizadas as mencoes textuais de marca para `MB Finance` e `MB News` em paginas, componentes, mensagens, metadados, conteudo SEO e documentacao.
+- Preservados slugs, rotas, nomes de assets e caminhos de arquivos.
+
 ## 2026-10-05 - Fotos do ranking TotalPass
 
 ### Atualizado

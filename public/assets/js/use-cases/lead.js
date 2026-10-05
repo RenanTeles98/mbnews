@@ -88,15 +88,15 @@ function submitLead(e) {
 
     // Monta mensagem personalizada pro WhatsApp
     const msgsPorProduto = {
-        'Conta Corrente Empresarial': `Olá! Gostaria de abrir uma Conta Corrente Empresarial para minha empresa pela mb finance. Podem me ajudar?`,
-        'Máquina de Cartão': `Olá! Tenho interesse nas soluções de maquininha e gateway de pagamento da mb finance. Podem me passar mais informações?`,
-        'Seguros e Consórcios': `Olá! Gostaria de conhecer as opções de Seguros e Consórcios da mb finance. Podem me ajudar?`,
+        'Conta Corrente Empresarial': `Olá! Gostaria de abrir uma Conta Corrente Empresarial para minha empresa pela MB Finance. Podem me ajudar?`,
+        'Máquina de Cartão': `Olá! Tenho interesse nas soluções de maquininha e gateway de pagamento da MB Finance. Podem me passar mais informações?`,
+        'Seguros e Consórcios': `Olá! Gostaria de conhecer as opções de Seguros e Consórcios da MB Finance. Podem me ajudar?`,
         'Crédito Rápido': `Olá! Preciso de crédito rápido para minha empresa. Gostaria de saber as condições disponíveis.`,
-        'Soluções Tributárias': `Olá! Tenho interesse nas Soluções Tributárias da mb finance. Podem me passar mais detalhes?`,
+        'Soluções Tributárias': `Olá! Tenho interesse nas Soluções Tributárias da MB Finance. Podem me passar mais detalhes?`,
         'Soluções Personalizadas': `Olá! Gostaria de uma proposta de Solução Personalizada para minha empresa. Podem me ajudar?`,
-        'Telemedicina': `Olá! Gostaria de conhecer os planos de Telemedicina da mb finance. Podem me passar mais informações?`,
+        'Telemedicina': `Olá! Gostaria de conhecer os planos de Telemedicina da MB Finance. Podem me passar mais informações?`,
     };
-    let msg = msgsPorProduto[produtoSelecionado] || `Olá! Gostaria de falar com um especialista da mb finance.`;
+    let msg = msgsPorProduto[produtoSelecionado] || `Olá! Gostaria de falar com um especialista da MB Finance.`;
 
     const baseUrl = _leadWaUrl.split('?')[0];
     const waLink = `${baseUrl}?text=${encodeURIComponent(msg)}`;

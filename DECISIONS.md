@@ -5,6 +5,28 @@
 
 ---
 
+## ADR-087: Padronizar a capitalizacao textual de MB Finance e MB News
+
+**Data:** 2026-10-05
+**Status:** Implementado
+
+### Decisao
+
+Usar `MB Finance` e `MB News` como grafia padrao em mencoes textuais do projeto, incluindo paginas, mensagens, metadados, conteudo SEO e documentacao.
+
+### Motivo
+
+O usuario solicitou uma grafia consistente para as duas marcas em todos os lugares do projeto.
+
+### Alternativas consideradas
+
+- Manter capitalizacoes diferentes conforme a pagina: perpetuaria a inconsistencia.
+- Alterar tambem slugs, rotas, nomes de assets e caminhos de arquivos: poderia quebrar referencias tecnicas sem melhorar a apresentacao textual da marca.
+
+### Escopo
+
+Foram atualizadas as mencoes textuais encontradas nos arquivos do projeto. Identificadores tecnicos, incluindo `mb-news` e `mb-finance` em rotas e nomes de arquivos, foram preservados.
+
 ## ADR-086: Usar os retratos da pasta oficial no ranking TotalPass
 
 **Data:** 2026-10-05
