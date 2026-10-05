@@ -27,6 +27,8 @@ O usuario solicitou uma grafia consistente para as duas marcas em todos os lugar
 
 Foram atualizadas as mencoes textuais encontradas nos arquivos do projeto. Identificadores tecnicos, incluindo `mb-news` e `mb-finance` em rotas e nomes de arquivos, foram preservados.
 
+Tambem foram atualizados os logotipos montados com texto em elementos HTML separados para exibir `MB News` no cabecalho, no destaque de abertura e no rodape das paginas editoriais.
+
 ## ADR-086: Usar os retratos da pasta oficial no ranking TotalPass
 
 **Data:** 2026-10-05

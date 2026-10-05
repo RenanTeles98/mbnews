@@ -10,6 +10,7 @@
 ### Sessao 2026-10-05 - Padronizacao dos nomes das marcas
 
 - Padronizadas as mencoes textuais de marca para `MB Finance` e `MB News` em paginas publicas, componentes, metadados, mensagens, conteudo SEO e documentacao.
+- Corrigidos os logotipos de texto compostos por elementos HTML separados no cabecalho, destaque de abertura e rodape das edicoes mensais.
 - Preservados slugs, rotas, nomes de assets e caminhos de arquivos usados pelo codigo.
 
 Arquivos modificados nesta sessao: paginas HTML, componentes e rotas Next.js, conteudo SEO, scripts com texto de marca, documentacao do projeto e este registro.

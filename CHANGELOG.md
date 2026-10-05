@@ -6,6 +6,7 @@
 
 ### Atualizado
 - Padronizadas as mencoes textuais de marca para `MB Finance` e `MB News` em paginas, componentes, mensagens, metadados, conteudo SEO e documentacao.
+- Corrigida a caixa do logotipo `MB News` no cabecalho, no destaque inicial e no rodape da home editorial e das edicoes mensais.
 - Preservados slugs, rotas, nomes de assets e caminhos de arquivos.
 
 ## 2026-10-05 - Fotos do ranking TotalPass

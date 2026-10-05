@@ -7,6 +7,7 @@
 ## Atualizacao 2026-10-05 - Padronizacao dos nomes das marcas
 
 - [x] Padronizar mencoes textuais para `MB Finance` e `MB News` nas paginas, componentes, metadados, mensagens, conteudo SEO e documentacao.
+- [x] Ajustar os logotipos do cabecalho, destaque de abertura e rodape da home editorial e das edicoes mensais.
 - [x] Preservar slugs, rotas, nomes de assets e caminhos de arquivos usados pelo codigo.
 - [x] Revisar as ocorrencias restantes para distinguir texto de marca de identificadores tecnicos.
 
