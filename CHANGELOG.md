@@ -4,6 +4,8 @@
 
 ## 2026-10-15 - Rascunho da edicao de outubro
 
+- Edicao de outubro publicada em producao em 15/10/2026. Commit 437c9bc enviado para main; Vercel confirmou sucesso no deploy EJiUVPA3vQEn7FRL627p9gkHQEyc. https://mbnews.vercel.app/pages/mb-news-outubro-2026.html e 28 recursos responderam HTTP 200. Conferidos entrevista com oito perguntas, Davi primeiro, cinco dropdowns de saude, 12 aniversariantes e acesso pela home. Pendencias: tres fotos e ranking TotalPass.
+
 - Publicacao da edicao de outubro autorizada pelo usuario em 15/10. Conferidos 28 recursos locais, ancoras, IDs, sintaxe dos scripts, navegacao do reconhecimento e acordeao da entrevista. Publicacao por commit na main e integracao GitHub/Vercel; confirmacao em producao pendente.
 
 - Incluida entrevista de Laiane Sousa apos Outubro Rosa, seguindo componente dos meses anteriores: perfil com foto, frase extraida do relato e oito respostas expansiveis. Texto integral do OUTUBRO ROSA.docx preservado em primeira pessoa, sem acrescentar cargo ou informacoes clinicas. Foto Laiane Sousa.JPG identificada na listagem do Drive e copiada da pasta sincronizada para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg. HTML/CSS atualizados e reutilizados CSS/JS compartilhados; links no menu e rodape. Proximo passo: revisar a entrevista localmente e continuar materiais pendentes.

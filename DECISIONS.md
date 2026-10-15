@@ -8,7 +8,7 @@
 ## ADR-104: Publicar outubro pela integracao GitHub e Vercel
 
 **Data:** 2026-10-15
-**Status:** Publicacao autorizada e preparada
+**Status:** Implementado; commit 437c9bc e deploy Vercel confirmados em 15/10/2026.
 
 ### Decisao e motivo
 
@@ -16,7 +16,7 @@ Publicar a edicao em main, incluindo assets e navegacao mensal, conforme pedido 
 
 ### Alternativas e escopo
 
-Descartado deploy da pasta de trabalho inteira por CLI, pois contem materiais de origem nao versionados que nao pertencem a publicacao. O commit inclui somente a implementacao de outubro, navegacao das edicoes e documentacao. Pendencias editoriais continuam indicadas: tres fotos e ranking TotalPass. Proximo passo: push e confirmacao da publicacao.
+Descartado deploy da pasta de trabalho inteira por CLI, pois contem materiais de origem nao versionados que nao pertencem a publicacao. O commit inclui somente a implementacao de outubro, navegacao das edicoes e documentacao. Pendencias editoriais continuam indicadas: tres fotos e ranking TotalPass. Publicacao confirmada: pagina e 28 recursos HTTP 200. Proximo passo: completar fotos restantes e ranking TotalPass.
 
 ## ADR-103: Entrevista da Laiane com componente mensal existente
 

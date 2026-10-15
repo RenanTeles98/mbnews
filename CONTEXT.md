@@ -7,7 +7,9 @@
 
 ## Estado Atual
 
-### Sessao 2026-10-15 - Rascunho da edicao de outubro
+### Sessao 2026-10-15 - Edicao de outubro publicada
+
+- Edicao de outubro publicada em producao em 15/10/2026. Commit 437c9bc enviado para main; Vercel confirmou sucesso no deploy EJiUVPA3vQEn7FRL627p9gkHQEyc. https://mbnews.vercel.app/pages/mb-news-outubro-2026.html e 28 recursos responderam HTTP 200. Conferidos entrevista com oito perguntas, Davi primeiro, cinco dropdowns de saude, 12 aniversariantes e acesso pela home. Pendencias: tres fotos e ranking TotalPass.
 
 - Publicacao da edicao de outubro autorizada pelo usuario em 15/10. Conferidos 28 recursos locais, ancoras, IDs, sintaxe dos scripts, navegacao do reconhecimento e acordeao da entrevista. Publicacao por commit na main e integracao GitHub/Vercel; confirmacao em producao pendente.
 
@@ -48,7 +50,7 @@
 
 Arquivos modificados nesta sessao: pagina de outubro, CSS e JS da edicao, fotos do carrossel, `index.html`, paginas de abril a setembro e documentacao do projeto.
 
-Estado atual: rascunho local acessivel em `/pages/mb-news-outubro-2026.html`; reconhecimento com fotos em `public/images/mb-news/outubro/promovidos/`. Fundo do hero e foto de Outubro Rosa estao em `public/images/mb-news/outubro/`. Aguardando conteudos adicionais da equipe, tres fotos de aniversariantes e fechamento do TotalPass em 31/10. Publicacao autorizada; envio e validacao em producao em andamento.
+Estado atual: rascunho local acessivel em `/pages/mb-news-outubro-2026.html`; reconhecimento com fotos em `public/images/mb-news/outubro/promovidos/`. Fundo do hero e foto de Outubro Rosa estao em `public/images/mb-news/outubro/`. Aguardando conteudos adicionais da equipe, tres fotos de aniversariantes e fechamento do TotalPass em 31/10. Publicada em https://mbnews.vercel.app/pages/mb-news-outubro-2026.html; deploy e recursos confirmados.
 
 Proximo passo recomendado: incorporar os novos materiais recebidos, atualizar os pendentes e revisar o rascunho antes de qualquer publicacao.
 
