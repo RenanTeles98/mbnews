@@ -4,6 +4,50 @@
 
 ---
 
+## Atualizacao 2026-10-15 - Rascunho da edicao de outubro
+
+- [x] Publicacao da edicao de outubro autorizada pelo usuario em 15/10. Conferidos 28 recursos locais, ancoras, IDs, sintaxe dos scripts, navegacao do reconhecimento e acordeao da entrevista. Publicacao por commit na main e integracao GitHub/Vercel; confirmacao em producao pendente.
+
+- [x] Incluida entrevista de Laiane Sousa apos Outubro Rosa, seguindo componente dos meses anteriores: perfil com foto, frase extraida do relato e oito respostas expansiveis. Texto integral do OUTUBRO ROSA.docx preservado em primeira pessoa, sem acrescentar cargo ou informacoes clinicas. Foto Laiane Sousa.JPG identificada na listagem do Drive e copiada da pasta sincronizada para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg. HTML/CSS atualizados e reutilizados CSS/JS compartilhados; links no menu e rodape. Proximo passo: revisar a entrevista localmente e continuar materiais pendentes.
+
+- [x] Reconhecimento agora inicia com Davi Abraao; Gabriel Meruzzi ocupa o segundo slide. Atualizados indicadores, rotulos, anuncio acessivel, prioridade das fotos e enquadramentos associados. Alterados HTML/CSS de outubro. Proximo passo: revisao local e materiais pendentes.
+
+- [x] Alinhados os tres itens da sustentabilidade com a mesma classe, coluna de icones, espacamento e divisorias. Removidos fundo rosa especial, padding interno adicional e negrito exclusivo do kit. Alterados HTML/CSS de outubro; proximo passo: revisao local e materiais pendentes.
+
+- [x] Recomposta a sustentabilidade de outubro em painel visual: ilustracao SVG de garrafa e caneca, duas orientacoes de uso no dia a dia e destaque de kit de boas-vindas para novos integrantes. Paleta rosa e marinho, Inter e conteudo factual preservados. Alterados HTML/CSS e criado public/images/mb-news/outubro/reusable-bottle-mug.svg. Proximo passo: revisar a previa e incorporar os materiais pendentes.
+
+- [x] Ajustado individualmente o enquadramento dos cards de Larissa Helena e Thais Tamyris: aproximacao visual de 1.4x com origem em 50% 60%, reduzindo parede acima da cabeca e destacando rosto e ombros. Arquivos originais preservados; alterados CSS e cache do HTML. Proximo passo: revisar previa local e receber fotos restantes.
+
+- [x] Conferida resolucao dos nove retratos: larguras de 960 a 4032 pixels, copias sem reducao. Beatriz e Larissa inspecionadas visualmente; parte do JPEG ja tem menos detalhe na origem. Cards ampliados para quatro retratos por largura desktop e 196px no celular, movimento desacelerado de 36 para 72 segundos e dimensoes explicitas nas imagens. Nenhum detalhe facial foi gerado ou alterado. HTML e CSS atualizados; proximo passo: revisar previa e substituir originais comprimidos se necessario.
+
+- [x] Incluidos os 12 aniversariantes de outubro da tabela, com nomes e dias/mes, no carrossel de fotos usado nos meses anteriores. Copiadas nove fotos da pasta sincronizada do Drive para public/images/mb-news/outubro/aniversariantes, apos conferir a listagem do conector. Luiza Gabriela, Melissa Melo Costa e Taynara Leticia seguem com iniciais por falta de foto correspondente. Criado JS externo com loop, pausa e respeito a movimento reduzido. Proximo passo: receber as tres fotos restantes e os dados do TotalPass.
+
+- [x] Fotos de Gabriel e Davi agora preenchem toda a area do carrossel: padding removido em todos os breakpoints, imagens em cover e sem bordas internas. Enquadramentos individuais priorizam os rostos. Alterados CSS e referencia de cache no HTML. Proximo passo: revisao local e demais conteudos pendentes.
+
+- [x] Refinado o reconhecimento de outubro: fotos integrais com proporcoes preservadas sobre fundo rosa suave; setas na barra inferior. Ampliados os textos com quatro meses de estagio antes da efetivacao de Gabriel e quase tres anos de casa de Davi, agora Supervisor de TI. Alterados HTML e CSS; proximo passo: revisar a previa e incorporar materiais pendentes.
+
+- [x] Refinada a secao de saude: lista unica com divisorias, cinco titulos fechados, destaque rosa do item aberto e chamada rosa escura. Foto alinhada a base da lista no desktop; ordem mobile: introducao, foto e dropdowns. Fontes foram integradas aos respectivos itens, incluindo a Lei 15.377/2026 no item de direitos. Alterados HTML e CSS de outubro; proximo passo: revisao local e novos conteudos.
+
+- [x] Substituidos os popovers de saude por cinco dropdowns empilhados em uma unica coluna junto da introducao. Fechados por padrao, mostram somente os titulos; orientacoes e fontes aparecem ao expandir. Alterados HTML e CSS de outubro. Proximo passo: revisar a previa local e incorporar conteudos pendentes.
+
+- [x] Criar pagina editorial de outubro com identidade rosa e conteudo inicial do documento recebido.
+- [x] Alinhar tipografia e estrutura visual ao padrao das edicoes anteriores, alterando a paleta para rosa.
+- [x] Criar e aplicar fundo original inspirado na fita rosa enviada, preservando a estrutura e a tipografia existentes.
+- [x] Reduzir a opacidade da imagem do hero para 16% e manter o enquadramento responsivo.
+- [x] Inserir foto vertical de conscientizacao na secao de Outubro Rosa.
+- [x] Integrar a foto ao texto introdutorio e destacar sinais de atencao ao lado dela; reorganizar os demais topicos para leitura em grade responsiva.
+- [x] Refinar a hierarquia visual dos cards de saude e destacar os links para fontes oficiais.
+- [x] Criar carrossel responsivo de reconhecimento com Gabriel Meruzzi (efetivado) e Davi Abraao (promovido a Supervisor de TI), usando as fotos enviadas.
+- [x] Converter os cinco cards de saude em gatilhos acessiveis para popovers, preservando os textos e as fontes oficiais.
+- [x] Habilitar o acesso a outubro pela home editorial e pelas edicoes de abril a setembro.
+- [x] Marcar aniversariantes e ranking TotalPass como pendentes, sem inventar nomes ou resultados.
+- [ ] Incorporar os conteudos adicionais que serao enviados para outubro.
+- [x] Incluir os nomes e datas dos aniversariantes de outubro.
+- [ ] Adicionar fotos de Luiza Gabriela, Melissa Melo Costa e Taynara Leticia quando disponibilizadas.
+- [ ] Atualizar o ranking TotalPass depois do fechamento em 31/10 e do envio dos dados.
+- [x] Revisar recursos locais, ancoras, sintaxe e interacoes antes da publicacao.
+- [ ] Confirmar commit enviado e deploy de outubro em producao.
+
 ## Atualizacao 2026-10-05 - Padronizacao dos nomes das marcas
 
 - [x] Padronizar mencoes textuais para `MB Finance` e `MB News` nas paginas, componentes, metadados, mensagens, conteudo SEO e documentacao.

@@ -5,6 +5,266 @@
 
 ---
 
+## ADR-104: Publicar outubro pela integracao GitHub e Vercel
+
+**Data:** 2026-10-15
+**Status:** Publicacao autorizada e preparada
+
+### Decisao e motivo
+
+Publicar a edicao em main, incluindo assets e navegacao mensal, conforme pedido explicito. Usar a integracao GitHub/Vercel existente, com vercel.json estatico sem comando de build. Validar recursos, ancoras, JavaScript e controles antes de enviar, e confirmar status Vercel e conteudo em producao depois.
+
+### Alternativas e escopo
+
+Descartado deploy da pasta de trabalho inteira por CLI, pois contem materiais de origem nao versionados que nao pertencem a publicacao. O commit inclui somente a implementacao de outubro, navegacao das edicoes e documentacao. Pendencias editoriais continuam indicadas: tres fotos e ranking TotalPass. Proximo passo: push e confirmacao da publicacao.
+
+## ADR-103: Entrevista da Laiane com componente mensal existente
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Reutilizar mb-news-interview.css e mb-news-interview.js para perfil, frase e oito perguntas expansiveis. Servir foto original da Laiane localmente e aplicar apenas cores de outubro. Preservar respostas integrais do documento, em primeira pessoa, e tratar experiencia como relato pessoal.
+
+### Alternativas e escopo
+
+Descartados biografia ou cargo presumidos, condensacao que alterasse nuances sobre perda e mudanca de arquitetura. HTML/CSS de outubro e retrato adicionados, navegacao atualizada. Proximo passo: revisao local da entrevista e materiais pendentes.
+
+## ADR-102: Davi primeiro no reconhecimento
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+A usuaria definiu Davi como primeiro destaque e Gabriel como segundo. Ordem fisica dos slides, indicadores e estado inicial acompanham a escolha. Mantidos textos e enquadramentos individuais, reindexando CSS. Alternativa de apenas abrir o segundo slide descartada para manter ordem e navegacao coerentes. Escopo: HTML/CSS de outubro. Proximo passo: revisao local.
+
+## ADR-101: Mesmo tratamento para os tres itens de sustentabilidade
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+A pedido da usuaria, o kit de boas-vindas usa a mesma classe e o mesmo alinhamento dos itens de garrafa e caneca. Removido tratamento visual exclusivo e regras mobile divergentes. Alternativa de card destacado descartada por preferencia explicita. Escopo: HTML/CSS de outubro. Proximo passo: revisao local.
+
+## ADR-100: Tornar sustentabilidade visual e concreta
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Apresentar garrafa e caneca em ilustracao SVG local, com orientacoes curtas e destaque de kit de boas-vindas em painel responsivo. O pedido foi tornar a secao mais interessante, mantendo identidade editorial e fatos do conteudo.
+
+### Alternativas e escopo
+
+Descartadas fotografias genericas como se fossem o kit oficial e estatisticas ambientais sem fonte. SVG permite ilustracao leve e nitida sem geracao raster. HTML, CSS e novo asset local atualizados; proximo passo: revisao local e materiais pendentes.
+
+## ADR-099: Enquadramento individual de Larissa e Thais Tamyris
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Aplicar aproximacao CSS de 1.4x apenas aos dois retratos indicados, com origem 50% 60%, para reduzir parede vazia e destacar os rostos. As fotos originais foram inspecionadas.
+
+### Alternativas e escopo
+
+Descartado alterar enquadramento de todos os aniversariantes ou regravar os arquivos. CSS de outubro e chave de cache no HTML atualizados; proximo passo: revisao local e fotos pendentes.
+
+## ADR-098: Melhorar legibilidade dos retratos sem modificar os originais
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Originais locais tem de 960 a 4032 pixels de largura; nao foram reduzidos. Aumentar cards, definir largura e min-width explicitamente, desacelerar loop e informar dimensoes intrinsecas. A reclamacao de qualidade pode envolver fotos pequenas e em movimento, alem de limitacoes presentes nos JPEGs originais.
+
+### Alternativas e escopo
+
+Nao ampliar arquivos artificialmente ou gerar rostos: isso nao recupera detalhes reais ausentes. Ajuste restrito a HTML e CSS de outubro; proximo passo: revisar apresentacao e pedir originais melhores caso persistam limitacoes de captura.
+
+## ADR-097: Aniversariantes de outubro no carrossel mensal
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Reutilizar classes do carrossel e CSS compartilhado de aniversarios, aplicando rosa de outubro. Usar os 12 nomes e dias da tabela recebida, mantendo sua ordem. Copiar fotos da pasta local sincronizada correspondente a listagem autenticada do Drive. Nove fotos localizadas; tres pessoas usam iniciais. Maciele Araujo Rodrigues corresponde ao arquivo unico abreviado Maciele Rodrigues.JPG.
+
+### Alternativas e escopo
+
+Descartado inventar fotos ou omitir pessoas sem retrato. Nao exibir anos de nascimento, cargos ou equipes, pois o componente mensal usa nomes e datas de aniversario. Controlador externo faz loop e pausa; movimento reduzido permite rolagem manual. Alterados HTML/CSS de outubro, novo JS e nove assets. Proximo passo: receber fotos faltantes e TotalPass.
+
+## ADR-096: Fotos de reconhecimento preenchendo o painel
+
+**Data:** 2026-10-15
+**Status:** Implementado; substitui o enquadramento da ADR-095.
+
+### Decisao e motivo
+
+Remover margens internas e usar imagens com largura e altura de 100%, object-fit cover e posicoes individuais para preservar rostos. A usuaria pediu preenchimento total apos revisar os retratos com margens. Aplicar a desktop e mobile.
+
+### Alternativas e escopo
+
+Contain foi descartado por deixar faixas vazias. Cover preserva proporcoes e recorta o excedente para preencher o painel. Alterados CSS de outubro e cache no HTML; textos e controles inferiores continuam. Proximo passo: revisao local.
+
+## ADR-095: Retratos completos e trajetorias no reconhecimento
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Usar retratos com object-fit contain e dimensoes naturais em uma coluna com fundo rosa suave. Controles passam para a barra inferior. A coluna de texto ganha espaco e marcos de tempo: quatro meses de estagio do Gabriel e quase tres anos de MB do Davi. O pedido prioriza as fotos e textos mais elaborados.
+
+### Alternativas e escopo
+
+Descartados recorte cover e edicao das fotografias, pois a composicao pode preservar os originais. Alterados HTML e CSS de outubro, sem mudar o controlador do carrossel. Proximo passo: revisar a previa local e continuar os conteudos pendentes.
+
+## ADR-094: Unificar lista de saude e ajustar composicao responsiva
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao e motivo
+
+Aplicar lista unica com divisorias e destaque rosa ao abrir; alinhar a foto ao fim da lista e apresentar introducao, foto e dropdowns no celular. CSS Grid com areas nomeadas e display contents permite manter uma unica copia dos conteudos. Fontes passam para os itens correspondentes. A usuaria aprovou este refinamento para reduzir bordas repetidas e melhorar o equilibrio visual.
+
+### Alternativas e escopo
+
+Descartados recorte da foto e duplicacao de markup mobile. Alterados HTML e CSS de outubro. Proximo passo: revisao local e incorporacao dos materiais pendentes.
+
+## ADR-093: Cinco dropdowns de saude com somente titulos visiveis
+
+**Data:** 2026-10-15
+**Status:** Implementado; substitui ADR-092.
+
+### Decisao e motivo
+
+Usar cinco elementos nativos details/summary fechados inicialmente, empilhados junto da introducao. A usuaria pediu dropdowns mostrando apenas os titulos. Conteudos e fontes permanecem dentro de cada item. O atributo name agrupa a abertura.
+
+### Alternativas e escopo
+
+Popovers foram rejeitados pela usuaria. A expansao no fluxo atende ao pedido com suporte nativo a teclado e sem JavaScript adicional. Alterados pagina e CSS de outubro; proximo passo: revisao local e incorporacao dos materiais pendentes.
+
+## ADR-092: Apresentar orientacoes de saude em popovers
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao
+
+Substituir os cinco cards de texto extenso da secao `#saude` por botoes compactos, mantendo titulos, subtitulos, paleta rosa, tipografia e posicoes da composicao. Cada botao abre um popover HTML nativo com o texto completo e suas fontes. O popover fecha pelo botao proprio, Escape ou clique fora; o foco inicial vai para o titulo.
+
+### Motivo
+
+Os cards extensos ocupavam muito espaco e competiam visualmente com a foto e a introducao. A interacao progressiva permite escolher um assunto e consultar a orientacao sem mudar a identidade da edicao.
+
+### Alternativas consideradas
+
+- Manter os textos expandidos em cinco cards: descartado porque conserva o comprimento que motivou a mudanca.
+- Usar accordions empilhados: descartado para que o conteudo aberto flutue sobre a pagina como popover, conforme solicitado.
+
+### Escopo
+
+`public/pages/mb-news-outubro-2026.html` e `public/assets/css/mb-news-outubro.css`; controles nativos `popover="auto"` evitam dependencia de JavaScript para abertura e fechamento.
+## ADR-091: Criar carrossel de reconhecimento para outubro
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao
+
+Seguir o padrao de carrossel de promovidos das edicoes anteriores na secao Reconhecimento de outubro, com um slide para Gabriel Meruzzi (efetivacao) e outro para Davi Abraao (promocao a Supervisor de TI). Usar as fotos enviadas e manter controles por setas e indicadores, estado anunciado por leitor de tela e enquadramento responsivo. No desktop, posicionar a seta seguinte junto a divisao da foto para liberar a area de texto; no celular, manter ambas as setas sobre a imagem.
+
+### Motivo
+
+A usuaria pediu a mesma experiencia usada nos meses anteriores e dois destaques distintos. O carrossel preserva esse padrao e permite apresentar cada conquista com sua imagem e contexto sem comprimir o conteudo em cards lado a lado.
+
+### Alternativas consideradas
+
+- Manter somente o card individual do Davi: descartado porque nao inclui a efetivacao do Gabriel.
+- Mostrar os dois destaques lado a lado: descartado para preservar o padrao mensal de carrossel.
+
+### Escopo
+
+`public/pages/mb-news-outubro-2026.html`, `public/assets/css/mb-news-outubro.css`, `public/assets/js/ui/mb-news-october-promotions.js` e fotos em `public/images/mb-news/outubro/promovidos/`.
+## ADR-090: Refinar a hierarquia dos cards de saude de outubro
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao
+
+Estilizar os cards de `#saude` com fundo blush sutil, trilho lateral rosa, titulos reforcados, etiquetas para os subtitulos e links oficiais com tratamento visual proprio. Preservar os textos, a ordem e a grade 2x2 no desktop/uma coluna no celular.
+
+### Motivo
+
+Os cards anteriores tinham bordas leves e pouca diferenciacao entre titulo, resumo e texto. A nova hierarquia facilita a leitura e destaca as fontes sem introduzir novos elementos editoriais.
+
+### Alternativas consideradas
+
+- Adicionar icones ou imagens a cada card: descartado por acrescentar elementos sem necessidade e aumentar o ruido visual.
+- Alterar os textos ou a ordem dos topicos: descartado porque a necessidade era visual.
+
+### Escopo
+
+Estilos especificos para `#saude` em `public/assets/css/mb-news-outubro.css`; conteudo e demais secoes preservados.
+
+## ADR-089: Reduzir o destaque da imagem no hero de outubro
+
+**Data:** 2026-10-15
+**Status:** Implementado
+
+### Decisao
+
+Renderizar a imagem de fundo no pseudo-elemento `::before` do hero com opacidade de 16%, sobre um gradiente rosa definido no proprio `.hero`. No celular, ajustar a posicao da imagem nessa camada para preservar o enquadramento existente.
+
+### Motivo
+
+Mesmo com 38% na primeira previa, a fita ainda chamava mais atencao do que o titulo e o conteudo. A opacidade foi reduzida para 16%; a camada independente mantem textos, botoes e cards opacos e legiveis.
+
+### Alternativas consideradas
+
+- Aplicar `opacity` ao hero inteiro: descartado porque afetaria o titulo, as CTAs e os cards.
+- Sobrepor uma camada rosa sem controlar a opacidade da imagem: descartado por oferecer menos controle sobre a intensidade visual.
+
+### Escopo
+
+`public/assets/css/mb-news-outubro.css`; cache da folha renovado em `public/pages/mb-news-outubro-2026.html`. A edicao continua como rascunho local.
+
+## ADR-088: Preparar outubro como edicao editorial local com identidade rosa
+
+**Data:** 2026-10-15
+**Status:** Em revisao editorial
+
+### Decisao
+
+Criar `public/pages/mb-news-outubro-2026.html` como pagina independente, reutilizando a tipografia Inter, hierarquia de secoes e componentes visuais das edicoes anteriores. Usar `public/assets/css/mb-news-outubro.css` para aplicar a paleta rosa do Outubro Rosa. Ligar a navegacao de outubro na home editorial e nas edicoes de abril a setembro. Manter aniversariantes e ranking TotalPass como pendentes ate receber os dados.
+
+Para o hero, criar um fundo original inspirado na referencia de fita rosa enviada pela usuaria e servir a imagem localmente em `public/images/mb-news/outubro/fundo-outubro-rosa.png`. O fundo substitui o watermark de emoji e usa texto claro e cards de alto contraste, mantendo fontes e composicao existentes.
+
+Na secao de saude, usar uma adaptacao vertical da foto de referencia enviada pela usuaria, servida localmente em `public/images/mb-news/outubro/mulher-outubro-rosa-vertical.png`, preservando a imagem inteira sem corte no layout.
+
+Integrar a imagem em uma composicao de duas colunas com a introducao e o card de sinais de atencao; organizar os quatro topicos complementares em duas colunas no desktop e empilhar tudo em uma coluna no celular. A escolha aproxima imagem e conteudo sem alterar a tipografia ou a linguagem visual dos outros meses.
+
+### Motivo
+
+A edicao esta sendo preparada em etapas e tera identidade visual rosa para o Outubro Rosa, preservando a linguagem visual ja reconhecida da MB News. A pagina propria permite evoluir o material sem substituir edicoes ja publicadas. Informacoes de saude e direito foram ajustadas para fontes oficiais.
+
+### Alternativas consideradas
+
+- Criar uma identidade tipografica ou estrutura visual nova para outubro; descartado para manter consistencia com as edicoes anteriores.
+- Usar a propria referencia sem tratamento como fundo; escolhido criar uma ilustracao original inspirada nela para adequar a composicao ao hero e preservar espaco para o conteudo.
+- Alterar a home editorial existente, que representa a edicao de agosto; descartado para preservar a edicao arquivada.
+- Publicar a pagina agora com dados presumidos de aniversarios ou TotalPass; descartado por falta de informacoes.
+
+### Escopo
+
+Rascunho local, sem commit, push ou deploy. Reavaliar quando o conteudo do mes estiver completo.
+
 ## ADR-087: Padronizar a capitalizacao textual de MB Finance e MB News
 
 **Data:** 2026-10-05
