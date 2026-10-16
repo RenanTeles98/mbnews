@@ -7,6 +7,10 @@
 
 ## Estado Atual
 
+### Sessao 2026-10-16 - Inclusao de Rodrigo Gomes
+
+- Incluido Rodrigo Gomes, 23/10, no carrossel de outubro, com foto original Rodrigo Gomes.JPG da pasta sincronizada do Drive copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/rodrigo-gomes.jpg (4032x3024). Contagens atualizadas para 12. Ano de nascimento omitido seguindo o padrao editorial. Alterados HTML, imagem e documentacao. Alteracao local, ainda nao publicada. Proximo passo: publicar atualizacao; seguem pendentes tres fotos e ranking TotalPass.
+
 ### Sessao 2026-10-16 - Aniversariantes atualizados
 
 - Removido o card de Camila Lourenco Alves dos aniversariantes de outubro por solicitacao do usuario. Contagem editorial e acessivel atualizada de 12 para 11. Alterado public/pages/mb-news-outubro-2026.html e documentacao. Publicado no commit b043059 pela integracao GitHub/Vercel, com status de sucesso. Producao HTTP 200: 11 cards, contagem 11 e Camila ausente. Proximo passo: receber tres fotos e ranking TotalPass pendentes.

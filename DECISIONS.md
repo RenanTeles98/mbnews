@@ -5,6 +5,15 @@
 
 ---
 
+## ADR-107: Incluir Rodrigo Gomes no carrossel de outubro
+
+**Data:** 2026-10-16
+**Status:** Implementado localmente
+
+- Decisao: adicionar Rodrigo Gomes com data 23/10 e foto original disponivel na pasta sincronizada, preservando a resolucao. Atualizar contagens para 12.
+- Motivo: inclusao solicitada pelo usuario.
+- Alternativa: card com iniciais; descartado porque existe foto identificada pelo nome completo. Exibir somente dia e mes acompanha o padrao dos demais cards.
+
 ## ADR-106: Remover Camila da lista de outubro
 
 **Data:** 2026-10-16
