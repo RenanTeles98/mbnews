@@ -8,7 +8,7 @@
 ## ADR-107: Incluir Rodrigo Gomes no carrossel de outubro
 
 **Data:** 2026-10-16
-**Status:** Implementado localmente
+**Status:** Publicado; commit 680a078 e deploy Vercel confirmados.
 
 - Decisao: adicionar Rodrigo Gomes com data 23/10 e foto original disponivel na pasta sincronizada, preservando a resolucao. Atualizar contagens para 12.
 - Motivo: inclusao solicitada pelo usuario.

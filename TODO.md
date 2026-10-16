@@ -6,7 +6,7 @@
 
 ## Atualizacao 2026-10-16 - Inclusao de Rodrigo Gomes
 
-- [x] Incluido Rodrigo Gomes, 23/10, no carrossel de outubro, com foto original Rodrigo Gomes.JPG da pasta sincronizada do Drive copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/rodrigo-gomes.jpg (4032x3024). Contagens atualizadas para 12. Ano de nascimento omitido seguindo o padrao editorial. Alterados HTML, imagem e documentacao. Alteracao local, ainda nao publicada. Proximo passo: publicar atualizacao; seguem pendentes tres fotos e ranking TotalPass.
+- [x] Incluido Rodrigo Gomes, 23/10, no carrossel de outubro, com foto original Rodrigo Gomes.JPG da pasta sincronizada do Drive copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/rodrigo-gomes.jpg (4032x3024). Contagens atualizadas para 12. Ano de nascimento omitido seguindo o padrao editorial. Alterados HTML, imagem e documentacao. Publicado no commit 680a078; push em main e deploy Vercel confirmados. Pagina e foto HTTP 200, Rodrigo com 23/10 e 12 cards em producao. Proximo passo: receber tres fotos e ranking TotalPass pendentes.
 
 ## Atualizacao 2026-10-16 - Aniversariantes atualizados
 
