@@ -5,6 +5,15 @@
 
 ---
 
+## ADR-106: Remover Camila da lista de outubro
+
+**Data:** 2026-10-16
+**Status:** Implementado
+
+- Decisao: retirar o card de Camila Lourenco Alves e atualizar todas as contagens da secao para 11.
+- Motivo: solicitacao expressa do usuario.
+- Alternativa considerada: ocultar o card via CSS; removido do HTML para evitar presenca no carrossel clonado e na leitura acessivel.
+
 ## ADR-105: Substituir retrato da Laiane pela nova foto enviada
 
 **Data:** 2026-10-16

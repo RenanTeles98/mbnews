@@ -4,6 +4,10 @@
 
 ---
 
+## Atualizacao 2026-10-16 - Aniversariantes atualizados
+
+- [x] Removido o card de Camila Lourenco Alves dos aniversariantes de outubro por solicitacao do usuario. Contagem editorial e acessivel atualizada de 12 para 11. Alterado public/pages/mb-news-outubro-2026.html e documentacao. Publicacao pela integracao GitHub/Vercel em andamento. Proximo passo: confirmar deploy; continuam pendentes tres fotos e ranking TotalPass.
+
 ## Atualizacao 2026-10-16 - Nova foto da Laiane
 
 - [x] Substituida a foto da entrevista da Laiane pela imagem WhatsApp Image 2026-10-16 at 09.30.37.jpeg enviada pelo usuario. Arquivo original copiado sem recompressao para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg; dimensoes 720x1280 no HTML, texto alternativo atualizado, enquadramento em center 46% e cache de imagem/CSS renovado. Publicada: commit 5f66b1b, deploy Vercel confirmado, pagina e foto HTTP 200; hash SHA-256 remoto igual ao original enviado. Proximo passo: materiais editoriais pendentes.
