@@ -6,7 +6,7 @@
 
 ## Atualizacao 2026-10-16 - Aniversariantes atualizados
 
-- [x] Removido o card de Camila Lourenco Alves dos aniversariantes de outubro por solicitacao do usuario. Contagem editorial e acessivel atualizada de 12 para 11. Alterado public/pages/mb-news-outubro-2026.html e documentacao. Publicacao pela integracao GitHub/Vercel em andamento. Proximo passo: confirmar deploy; continuam pendentes tres fotos e ranking TotalPass.
+- [x] Removido o card de Camila Lourenco Alves dos aniversariantes de outubro por solicitacao do usuario. Contagem editorial e acessivel atualizada de 12 para 11. Alterado public/pages/mb-news-outubro-2026.html e documentacao. Publicado no commit b043059 pela integracao GitHub/Vercel, com status de sucesso. Producao HTTP 200: 11 cards, contagem 11 e Camila ausente. Proximo passo: receber tres fotos e ranking TotalPass pendentes.
 
 ## Atualizacao 2026-10-16 - Nova foto da Laiane
 
