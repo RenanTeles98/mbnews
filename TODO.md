@@ -6,7 +6,7 @@
 
 ## Atualizacao 2026-10-16 - Nova foto da Laiane
 
-- [x] Substituida a foto da entrevista da Laiane pela imagem WhatsApp Image 2026-10-16 at 09.30.37.jpeg enviada pelo usuario. Arquivo original copiado sem recompressao para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg; dimensoes 720x1280 no HTML, texto alternativo atualizado, enquadramento em center 46% e cache de imagem/CSS renovado. Publicacao em andamento; proximo passo: confirmar deploy e foto em producao.
+- [x] Substituida a foto da entrevista da Laiane pela imagem WhatsApp Image 2026-10-16 at 09.30.37.jpeg enviada pelo usuario. Arquivo original copiado sem recompressao para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg; dimensoes 720x1280 no HTML, texto alternativo atualizado, enquadramento em center 46% e cache de imagem/CSS renovado. Publicada: commit 5f66b1b, deploy Vercel confirmado, pagina e foto HTTP 200; hash SHA-256 remoto igual ao original enviado. Proximo passo: materiais editoriais pendentes.
 
 ## Atualizacao 2026-10-15 - Rascunho da edicao de outubro
 

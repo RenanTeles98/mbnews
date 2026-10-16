@@ -8,9 +8,9 @@
 ## ADR-105: Substituir retrato da Laiane pela nova foto enviada
 
 **Data:** 2026-10-16
-**Status:** Implementado; publicacao em andamento
+**Status:** Publicado; commit 5f66b1b e deploy Vercel confirmados em 16/10/2026.
 
-Usar a nova imagem indicada pelo usuario, sem recompressao. Atualizar dimensoes e texto alternativo no HTML e enquadramento CSS para center 46%, preservando rosto e decoracao do Outubro Rosa. Cache versionado evita foto anterior no navegador. Alternativa de criar outro retrato ou editar a foto descartada por haver imagem pronta. Escopo: asset existente, HTML/CSS de outubro e documentacao. Proximo passo: publicar e confirmar em producao.
+Usar a nova imagem indicada pelo usuario, sem recompressao. Atualizar dimensoes e texto alternativo no HTML e enquadramento CSS para center 46%, preservando rosto e decoracao do Outubro Rosa. Cache versionado evita foto anterior no navegador. Alternativa de criar outro retrato ou editar a foto descartada por haver imagem pronta. Escopo: asset existente, HTML/CSS de outubro e documentacao. Foto confirmada em producao com hash identico ao original. Proximo passo: materiais pendentes.
 
 ## ADR-104: Publicar outubro pela integracao GitHub e Vercel
 
