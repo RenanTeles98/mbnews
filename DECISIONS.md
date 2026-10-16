@@ -5,6 +5,24 @@
 
 ---
 
+## ADR-109: Completar e publicar fotos de outubro
+
+**Data:** 2026-10-16
+**Status:** Implementado; publicacao em andamento
+
+- Decisao: usar foto original de Luiza Gabriela identificada pelo nome completo e publicar junto das fotos de Melissa e Taynara. Preservar nomes, datas, contagem e resolucao dos originais.
+- Motivo: usuario disponibilizou a ultima foto e autorizou commit, push e deploy.
+- Alternativa: manter iniciais; descartada porque todas as fotos estao disponiveis.
+
+## ADR-108: Completar fotos de Melissa e Taynara
+
+**Data:** 2026-10-16
+**Status:** Implementado localmente
+
+- Decisao: substituir iniciais pelas fotos originais identificadas pelos nomes completos na pasta sincronizada do Drive, sem recompressao.
+- Motivo: usuario informou disponibilidade das duas fotos faltantes.
+- Alternativa: manter iniciais; descartada apos localizar os arquivos. Nomes, datas e total de 12 preservados. Luiza Gabriela segue com iniciais por falta de foto correspondente.
+
 ## ADR-107: Incluir Rodrigo Gomes no carrossel de outubro
 
 **Data:** 2026-10-16
