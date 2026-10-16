@@ -1,11 +1,15 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-10-15
+> Última atualização: 2026-10-16
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Sessao 2026-10-16 - Nova foto da Laiane
+
+- Substituida a foto da entrevista da Laiane pela imagem WhatsApp Image 2026-10-16 at 09.30.37.jpeg enviada pelo usuario. Arquivo original copiado sem recompressao para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg; dimensoes 720x1280 no HTML, texto alternativo atualizado, enquadramento em center 46% e cache de imagem/CSS renovado. Publicacao em andamento; proximo passo: confirmar deploy e foto em producao.
 
 ### Sessao 2026-10-15 - Edicao de outubro publicada
 

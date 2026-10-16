@@ -1802,7 +1802,7 @@
 .october-theme #entrevista .section-eyebrow { color: var(--october-rose-deep); }
 .october-theme #entrevista .interview-profile { border-color: #efd0dc; box-shadow: 0 20px 48px rgba(143,49,85,.1); }
 .october-theme #entrevista .interview-profile__media { aspect-ratio: 4 / 5; }
-.october-theme #entrevista .interview-profile__media img { object-position: center 32%; }
+.october-theme #entrevista .interview-profile__media img { object-position: center 46%; }
 .october-theme #entrevista .interview-profile__label { color: #f3aac0; }
 .october-theme #entrevista .interview-callout { background: var(--october-rose-deep); box-shadow: 0 16px 36px rgba(143,49,85,.13); }
 .october-theme #entrevista .interview-callout::after { border-color: rgba(247,220,229,.3); }

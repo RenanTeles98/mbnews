@@ -2,6 +2,10 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-16 - Foto da entrevista da Laiane
+
+- Substituida a foto da entrevista da Laiane pela imagem WhatsApp Image 2026-10-16 at 09.30.37.jpeg enviada pelo usuario. Arquivo original copiado sem recompressao para public/images/mb-news/outubro/entrevista/laiane-sousa.jpg; dimensoes 720x1280 no HTML, texto alternativo atualizado, enquadramento em center 46% e cache de imagem/CSS renovado. Publicacao em andamento; proximo passo: confirmar deploy e foto em producao.
+
 ## 2026-10-15 - Rascunho da edicao de outubro
 
 - Edicao de outubro publicada em producao em 15/10/2026. Commit 437c9bc enviado para main; Vercel confirmou sucesso no deploy EJiUVPA3vQEn7FRL627p9gkHQEyc. https://mbnews.vercel.app/pages/mb-news-outubro-2026.html e 28 recursos responderam HTTP 200. Conferidos entrevista com oito perguntas, Davi primeiro, cinco dropdowns de saude, 12 aniversariantes e acesso pela home. Pendencias: tres fotos e ranking TotalPass.
