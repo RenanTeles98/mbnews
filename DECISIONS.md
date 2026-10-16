@@ -8,7 +8,7 @@
 ## ADR-109: Completar e publicar fotos de outubro
 
 **Data:** 2026-10-16
-**Status:** Implementado; publicacao em andamento
+**Status:** Publicado; commit 1ae5707 e deploy Vercel confirmados.
 
 - Decisao: usar foto original de Luiza Gabriela identificada pelo nome completo e publicar junto das fotos de Melissa e Taynara. Preservar nomes, datas, contagem e resolucao dos originais.
 - Motivo: usuario disponibilizou a ultima foto e autorizou commit, push e deploy.

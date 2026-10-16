@@ -9,7 +9,7 @@
 
 ### Sessao 2026-10-16 - Fotos dos aniversariantes completas
 
-- Adicionada foto original de Luiza Gabriela Hilario Alves da Silva (1080x1350), identificada pelo nome completo na pasta sincronizada do Drive e copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/luiza-gabriela-hilario-alves-da-silva.png. Outubro agora tem 12 aniversariantes com foto, incluindo as novas fotos de Melissa e Taynara. Alterados HTML, tres imagens e documentacao. Publicacao autorizada, em andamento por push na main. Proximo passo: confirmar deploy e receber ranking TotalPass.
+- Adicionada foto original de Luiza Gabriela Hilario Alves da Silva (1080x1350), identificada pelo nome completo na pasta sincronizada do Drive e copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/luiza-gabriela-hilario-alves-da-silva.png. Outubro agora tem 12 aniversariantes com foto, incluindo as novas fotos de Melissa e Taynara. Alterados HTML, tres imagens e documentacao. Publicado no commit 1ae5707, push na main e deploy Vercel confirmados. Pagina e tres fotos novas HTTP 200; 12 cards com foto e nenhum com iniciais em producao. Proximo passo: receber ranking TotalPass.
 
 ### Sessao 2026-10-16 - Fotos de Melissa e Taynara
 
