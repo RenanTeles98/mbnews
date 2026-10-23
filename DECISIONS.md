@@ -8,7 +8,7 @@
 ## ADR-110: Usar nova foto de promocao do Davi
 
 **Data:** 2026-10-23
-**Status:** Implementado localmente
+**Status:** Publicado; commit eaf550f e deploy Vercel confirmados.
 
 - Decisao: usar JPEG original enviado pelo usuario, em caminho novo para renovar cache, com dimensoes corretas e alt descritivo. Preservar layout existente.
 - Motivo: atualizacao expressamente solicitada da foto de reconhecimento.

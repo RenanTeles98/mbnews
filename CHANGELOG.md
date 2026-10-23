@@ -4,7 +4,7 @@
 
 ## 2026-10-23 - Foto de promocao do Davi
 
-- Substituida a foto do Davi no reconhecimento de outubro por DAVi Promocao lider.jpeg enviada pelo usuario. Copia original sem recompressao em public/images/mb-news/outubro/promovidos/davi-promocao-lider.jpeg (1200x1600); HTML atualizado com novo caminho, dimensoes e texto alternativo. Layout e enquadramento CSS existentes preservados. Alteracao local, sem publicacao nesta etapa. Proximo passo: publicar quando solicitado; ranking TotalPass continua pendente.
+- Substituida a foto do Davi no reconhecimento de outubro por DAVi Promocao lider.jpeg enviada pelo usuario. Copia original sem recompressao em public/images/mb-news/outubro/promovidos/davi-promocao-lider.jpeg (1200x1600); HTML atualizado com novo caminho, dimensoes e texto alternativo. Layout e enquadramento CSS existentes preservados. Publicado no commit eaf550f, enviado para main; deploy Vercel confirmado. Pagina e nova foto HTTP 200 em producao. Proximo passo: receber ranking TotalPass.
 
 ## 2026-10-16 - Todos os aniversariantes com foto
 
