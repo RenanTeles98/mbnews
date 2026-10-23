@@ -4,6 +4,10 @@
 
 ---
 
+## Atualizacao 2026-10-23 - Nova foto do Davi
+
+- [x] Substituida a foto do Davi no reconhecimento de outubro por DAVi Promocao lider.jpeg enviada pelo usuario. Copia original sem recompressao em public/images/mb-news/outubro/promovidos/davi-promocao-lider.jpeg (1200x1600); HTML atualizado com novo caminho, dimensoes e texto alternativo. Layout e enquadramento CSS existentes preservados. Alteracao local, sem publicacao nesta etapa. Proximo passo: publicar quando solicitado; ranking TotalPass continua pendente.
+
 ## Atualizacao 2026-10-16 - Fotos dos aniversariantes completas
 
 - [x] Adicionada foto original de Luiza Gabriela Hilario Alves da Silva (1080x1350), identificada pelo nome completo na pasta sincronizada do Drive e copiada sem recompressao para public/images/mb-news/outubro/aniversariantes/luiza-gabriela-hilario-alves-da-silva.png. Outubro agora tem 12 aniversariantes com foto, incluindo as novas fotos de Melissa e Taynara. Alterados HTML, tres imagens e documentacao. Publicado no commit 1ae5707, push na main e deploy Vercel confirmados. Pagina e tres fotos novas HTTP 200; 12 cards com foto e nenhum com iniciais em producao. Proximo passo: receber ranking TotalPass.
