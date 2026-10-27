@@ -7,6 +7,13 @@
 
 ## Estado Atual
 
+### Sessão 2026-10-27 — Legenda opcional e carrossel aprovado
+
+- Campo de nome substituído por legenda opcional de até 300 caracteres, aplicada aos arquivos do envio. Servidor aceita envios sem nome e sem legenda; mantém o campo legado author preenchido como “Equipe MB Finance”, sem migração de dados.
+- Criado `sites/mb-momentos/app/approved-carousel.tsx` abaixo do formulário. Usa o feed das fotos selecionadas/autorizadas para MB News, atualiza a cada minuto e ao voltar à aba. Movimento contínuo proporcional à quantidade de fotos, pausa por botão/hover/foco e versão estática para movimento reduzido. Uma foto fica estática; nenhuma foto mantém o carrossel oculto.
+- Alterados componente de entrada, API de upload, CSS e teste do fluxo. TypeScript, build e teste local aprovados, incluindo envio sem nome/legenda e persistência da legenda. Publicado no commit Sites `0e8fa28`, deploy `appgdep_6ae0fed3a18c8191bf5f107fcd7cd28d` concluído. Mesmo link/QR e painel existentes. Feed de produção ainda sem fotos aprovadas nesta verificação.
+- Próximo passo: selecionar fotos no painel para alimentar o carrossel; data/horário do evento seguem pendentes. Revisão visual no aparelho permanece pendente por indisponibilidade de navegador de QA.
+
 ### Sessão 2026-10-27 — Logo oficial no MB Momentos
 
 - Substituída a marca textual do topo pela logo `Design sem nome (8).png` de Downloads. Original PNG 1080x280 com transparência copiado sem recompressão para `sites/mb-momentos/public/images/mb-finance-logo.png`.

@@ -4,6 +4,8 @@
 
 ## 2026-10-27 — MB Momentos e álbum dos eventos
 
+- Substituído nome por legenda opcional no envio. Publicado carrossel automático das fotos aprovadas abaixo do formulário, com pausa e suporte a movimento reduzido.
+
 - Aplicada logo oficial MB Finance fornecida em PNG, com tamanho responsivo, no topo do MB Momentos. Publicado no mesmo endereço.
 
 - Simplificado MB Momentos para uma seção com texto breve e formulário de upload; álbum acessível por botão em janela. Removidos banner e campo de legenda. Versão 2 publicada no mesmo link.

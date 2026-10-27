@@ -5,6 +5,15 @@
 
 ---
 
+## ADR-113: Legenda opcional e carrossel das fotos selecionadas
+
+**Data:** 2026-10-27
+**Status:** Publicado no Sites, commit 0e8fa28.
+
+- Decisão: substituir o nome por legenda opcional de até 300 caracteres, comum ao lote enviado. Aceitar uploads sem nome/legenda no servidor, preenchendo o campo author legado com identificação genérica para preservar compatibilidade sem migração.
+- Usar no carrossel o mesmo feed das fotos selecionadas, autorizadas e visíveis da MB News. Alternativa de mostrar todos os envios foi descartada porque o usuário pediu somente as imagens aprovadas. Álbuns completos continuam no botão existente.
+- Animação CSS de transform em loop linear com velocidade proporcional ao tamanho do conjunto. Duplicatas visuais fora da navegação/leitura assistiva. Pausa por botão, hover e foco; movimento reduzido desativa animação e permite rolagem horizontal. Ocultar se vazio e manter foto única estática.
+
 ## ADR-112: Priorizar o envio em uma única seção
 
 **Data:** 2026-10-27
