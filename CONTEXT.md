@@ -7,6 +7,12 @@
 
 ## Estado Atual
 
+### Sessão 2026-10-27 — Logo oficial no MB Momentos
+
+- Substituída a marca textual do topo pela logo `Design sem nome (8).png` de Downloads. Original PNG 1080x280 com transparência copiado sem recompressão para `sites/mb-momentos/public/images/mb-finance-logo.png`.
+- Componente Brand e CSS ajustados: imagem proporcional de 200px no desktop e 150px no celular, alt MB Finance. Build aprovado e publicação Sites concluída no commit `c19a2a9`; mesmo endereço e links do evento. Arquivo remoto conferido por hash com o original.
+- Trabalho concluído. Próximo passo: data/horário do evento e avaliação do layout pelo usuário.
+
 ### Sessão 2026-10-27 — Página de envio simplificada
 
 - A pedido do usuário, MB Momentos agora tem uma única seção: texto curto à esquerda e formulário à direita, empilhados no celular. Removidos banner ilustrado, seções adicionais e campo de legenda. Álbum preservado em janela aberta pelo botão “Ver álbum da equipe”.

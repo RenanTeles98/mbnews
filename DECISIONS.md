@@ -12,6 +12,7 @@
 
 - Decisão: uma seção com texto objetivo e formulário de upload lado a lado no desktop, empilhados no celular. Remover ilustração principal e campo de legenda; abrir álbum existente por botão em diálogo acessível.
 - Motivo: usuário considerou a página com três seções excessiva e pediu algo simples, moderno e direto para subir arquivos.
+- Atualização posterior: usar a logo oficial PNG enviada pelo usuário no componente Brand, preservando transparência e bytes originais, com largura responsiva. Substitui a identificação textual anterior sem alterar a estrutura da página.
 - Alternativa: remover a visualização compartilhada do álbum; descartada para preservar o requisito anterior de a equipe conseguir ver os registros, sem adicionar seção à página.
 
 ## ADR-111: Álbum independente por evento com seleção editorial

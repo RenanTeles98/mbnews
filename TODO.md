@@ -6,6 +6,8 @@
 
 ## Prioridade atual — 2026-10-27 — Eventos e Outubro Rosa
 
+- [x] Aplicar logo oficial de Downloads no MB Momentos, preservando PNG original e ajustando tamanho responsivo; publicação e hash remoto confirmados.
+
 - [x] Simplificar a página para uma seção com texto direto e formulário lado a lado; álbum em janela e campo de legenda removido. Publicada versão 2 do Sites.
 
 - [x] Criar site separado e reutilizável para eventos mensais, começando pelo Outubro Rosa.
