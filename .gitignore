@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Aplicacao independente, versionada no repositorio proprio do Sites
+/sites/mb-momentos/

@@ -5,6 +5,18 @@
 
 ---
 
+## ADR-111: Álbum independente por evento com seleção editorial
+
+**Data:** 2026-10-27
+**Status:** Site publicado; integração da MB News em publicação.
+
+- Decisão: manter MB Momentos em aplicação/repositório/deploy separados no Sites, com Vinext, D1 e R2. Preservar a MB News estática e consumir um feed CORS somente das fotos selecionadas, visíveis e autorizadas. Alternativas: guardar uploads no repositório ou transformar toda a revista em backend; descartadas para evitar crescimento do Git e mudança de arquitetura da publicação existente.
+- Cada evento tem link com chave aleatória para envio e álbum da equipe. Chave não é senha individual: quem receber o link completo poderá acessar. Administração usa identidade ChatGPT validada pelo Sites e allowlist da conta proprietária. Nenhum secret ou chave de convite em fonte/documentação.
+- O usuário confirmou evento na empresa, cerca de 150 funcionários e álbum visível à equipe. Separar essa visibilidade da autorização opcional de uso público na MB News. Seleção editorial recebe fotos JPG/PNG/WebP; vídeos continuam disponíveis no álbum, preservando os originais e sem transcodificação inicial.
+- Limites iniciais: 20 MB por foto, 80 MB por vídeo, 30 itens por envio na UI e 20 GB por evento. Limite de frequência considera conexão compartilhada na empresa. Streaming com tamanho fixo evita carregar vídeos inteiros na memória. Validação por formato, assinatura e tamanho no servidor.
+- Ocultação é reversível e retira imediatamente o acesso ao arquivo e a seleção editorial; não adicionar exclusão definitiva sem definir retenção. Sem fotos selecionadas ou com falha no feed, a revista não mostra uma seção vazia.
+- A fonte local possui Git próprio e é excluída de Git/deploy/TypeScript da MB News, para impedir inclusão acidental do backend e dos arquivos locais de teste.
+
 ## ADR-110: Usar nova foto de promocao do Davi
 
 **Data:** 2026-10-23

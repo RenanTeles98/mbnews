@@ -4,6 +4,20 @@
 
 ---
 
+## Prioridade atual — 2026-10-27 — Eventos e Outubro Rosa
+
+- [x] Criar site separado e reutilizável para eventos mensais, começando pelo Outubro Rosa.
+- [x] Publicar convite, upload de fotos/vídeos, álbum compartilhado e painel restrito à organização.
+- [x] Gerar QR Code e texto para compartilhar o convite no grupo.
+- [x] Implementar seleção de fotos autorizadas para MB News e revogação ao ocultar.
+- [x] Validar APIs, TypeScript, build e acesso HTTP da publicação Sites.
+- [ ] Confirmar a publicação da integração na MB News.
+- [ ] Receber data e horário do encontro; atualizar o convite pelo painel ou pela API autenticada.
+- [ ] Revisar a experiência em celular real, incluindo envio de arquivos grandes e codecs MOV/HEVC.
+- [ ] Selecionar os registros do evento para a edição de outubro.
+- [ ] Definir com a organização o prazo de retenção dos álbuns e a rotina de exclusão definitiva antes de acumular novos meses.
+- [ ] Backlog: miniaturas, compressão e transcodificação de vídeo se o volume justificar.
+
 ## Atualizacao 2026-10-23 - Nova foto do Davi
 
 - [x] Substituida a foto do Davi no reconhecimento de outubro por DAVi Promocao lider.jpeg enviada pelo usuario. Copia original sem recompressao em public/images/mb-news/outubro/promovidos/davi-promocao-lider.jpeg (1200x1600); HTML atualizado com novo caminho, dimensoes e texto alternativo. Layout e enquadramento CSS existentes preservados. Publicado no commit eaf550f, enviado para main; deploy Vercel confirmado. Pagina e nova foto HTTP 200 em producao. Proximo passo: receber ranking TotalPass.

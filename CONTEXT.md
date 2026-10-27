@@ -1,11 +1,23 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-10-23
+> Última atualização: 2026-10-27
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Sessão 2026-10-27 — MB Momentos e álbum do Outubro Rosa
+
+- Criado e publicado o site independente MB Momentos: https://mb-finance-momentos.renanteles98.chatgpt.site. Projeto Sites `appgprj_6ae0ce0d972c8191a042bee27302ccd4`; versão publicada do código `0890dbf1cac4aeadd62269a855852c6e75edf4fe9`. Fonte em `sites/mb-momentos/`, com Git próprio sincronizado pelo workflow Sites; pasta excluída do Git e do deploy da MB News. Para editar em outra máquina, recuperar o repositório pelo mesmo project_id, nunca criar outro Site.
+- Convite inicial `outubro-rosa-2026`, na empresa, aproximadamente 150 funcionários, todos com acesso ao álbum pelo link completo. Data e horário ainda não informados; exibidos como a confirmar. O link com chave deve ser recuperado no painel `/admin`; não registrar chaves de acesso na documentação.
+- Upload persistente em R2, metadados em D1; fotos até 20 MB e vídeos até 80 MB, até 30 arquivos por envio. Álbum paginado com visualização e download do original. Vídeos dependem do codec aceito pelo navegador, sem transcodificação; HEIC pode exigir download.
+- Painel com login ChatGPT e allowlist da conta proprietária, convites/QR por evento, criação mensal, edição de dados, seleção para MB News, ocultação reversível e encerramento dos envios. Secrets `ADMIN_EMAILS` e `INITIAL_EVENT_KEY` configurados no runtime, sem valores no código. Uso na MB News depende de autorização separada do participante; integração atual publica somente JPG, PNG e WebP selecionados.
+- Integração da edição de outubro em `public/pages/mb-news-outubro-2026.html`, `public/assets/js/ui/mb-news-event-gallery.js` e CSS correspondente. Bloco oculto enquanto não houver selecionados; falhas do álbum não interrompem a revista. CSP em `vercel.json` autoriza somente a origem do Site; `tsconfig.json` exclui a aplicação independente.
+- Testes locais aprovados: autenticação, chaves do convite, upload de foto/vídeo, original preservado, publicação somente após seleção/autorização, revogação ao ocultar, Range de vídeo e encerramento. TypeScript e build aprovados. Publicação Sites confirmada; em produção, convite HTTP 200, álbum com chave 200, sem chave 404, administração anônima 403, feed 200. Navegador indisponível: revisão visual e reprodução com codecs de aparelhos reais ainda pendentes.
+- Artefatos locais em `sites/mb-momentos/outputs/`: QR PNG 1200px e texto do convite. Não versionar esses artefatos, que incluem o link do álbum. Integração na MB News em publicação nesta etapa; confirmar o deploy antes de considerar concluída.
+
+Próximo passo: confirmar data/horário, revisar no celular com a equipe e selecionar as fotos recebidas no painel.
 
 ### Sessao 2026-10-23 - Nova foto do Davi
 

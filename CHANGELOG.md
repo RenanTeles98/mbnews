@@ -2,6 +2,13 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-27 — MB Momentos e álbum dos eventos
+
+- Publicado site independente para convites, QR Code, envio de fotos/vídeos e álbum da equipe, começando pelo Outubro Rosa.
+- Adicionado painel para eventos mensais, seleção editorial de fotos autorizadas, ocultação e encerramento dos envios.
+- Preparada integração automática dos registros selecionados na edição de outubro da MB News; bloco oculto quando vazio. Publicação da integração em andamento.
+- Dados e originais persistidos fora do repositório. TypeScript, build e fluxo das APIs verificados; revisão visual em celular permanece pendente.
+
 ## 2026-10-23 - Foto de promocao do Davi
 
 - Substituida a foto do Davi no reconhecimento de outubro por DAVi Promocao lider.jpeg enviada pelo usuario. Copia original sem recompressao em public/images/mb-news/outubro/promovidos/davi-promocao-lider.jpeg (1200x1600); HTML atualizado com novo caminho, dimensoes e texto alternativo. Layout e enquadramento CSS existentes preservados. Publicado no commit eaf550f, enviado para main; deploy Vercel confirmado. Pagina e nova foto HTTP 200 em producao. Proximo passo: receber ranking TotalPass.
