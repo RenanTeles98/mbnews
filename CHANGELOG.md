@@ -4,6 +4,8 @@
 
 ## 2026-10-27 — MB Momentos e álbum dos eventos
 
+- Simplificado MB Momentos para uma seção com texto breve e formulário de upload; álbum acessível por botão em janela. Removidos banner e campo de legenda. Versão 2 publicada no mesmo link.
+
 - Publicado site independente para convites, QR Code, envio de fotos/vídeos e álbum da equipe, começando pelo Outubro Rosa.
 - Adicionado painel para eventos mensais, seleção editorial de fotos autorizadas, ocultação e encerramento dos envios.
 - Publicada integração automática dos registros selecionados na edição de outubro da MB News; bloco oculto quando vazio. Commit cbb75ae, Vercel READY e recursos HTTP 200.

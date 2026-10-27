@@ -6,6 +6,8 @@
 
 ## Prioridade atual — 2026-10-27 — Eventos e Outubro Rosa
 
+- [x] Simplificar a página para uma seção com texto direto e formulário lado a lado; álbum em janela e campo de legenda removido. Publicada versão 2 do Sites.
+
 - [x] Criar site separado e reutilizável para eventos mensais, começando pelo Outubro Rosa.
 - [x] Publicar convite, upload de fotos/vídeos, álbum compartilhado e painel restrito à organização.
 - [x] Gerar QR Code e texto para compartilhar o convite no grupo.

@@ -7,6 +7,12 @@
 
 ## Estado Atual
 
+### Sessão 2026-10-27 — Página de envio simplificada
+
+- A pedido do usuário, MB Momentos agora tem uma única seção: texto curto à esquerda e formulário à direita, empilhados no celular. Removidos banner ilustrado, seções adicionais e campo de legenda. Álbum preservado em janela aberta pelo botão “Ver álbum da equipe”.
+- Alterados apenas `sites/mb-momentos/app/event-album.tsx` e `app/globals.css`; upload, painel e integração editorial preservados. TypeScript e build aprovados. Publicado pelo Sites, versão 2, commit `e0c863f662c505cac7a789decd76cf0956d6c3a4`, no mesmo endereço e com os mesmos links/QR. Navegador indisponível para inspeção visual nesta sessão.
+- Trabalho concluído e publicado. Próximo passo: receber a avaliação do usuário sobre o layout e data/horário do evento.
+
 ### Sessão 2026-10-27 — MB Momentos e álbum do Outubro Rosa
 
 - Criado e publicado o site independente MB Momentos: https://mb-finance-momentos.renanteles98.chatgpt.site. Projeto Sites `appgprj_6ae0ce0d972c8191a042bee27302ccd4`; versão publicada do código `0890dbf1cac4aeadd62269a855852c6e75edf4fe9`. Fonte em `sites/mb-momentos/`, com Git próprio sincronizado pelo workflow Sites; pasta excluída do Git e do deploy da MB News. Para editar em outra máquina, recuperar o repositório pelo mesmo project_id, nunca criar outro Site.

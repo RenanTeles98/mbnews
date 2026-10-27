@@ -5,6 +5,15 @@
 
 ---
 
+## ADR-112: Priorizar o envio em uma única seção
+
+**Data:** 2026-10-27
+**Status:** Publicado no Sites, versão 2, commit e0c863f.
+
+- Decisão: uma seção com texto objetivo e formulário de upload lado a lado no desktop, empilhados no celular. Remover ilustração principal e campo de legenda; abrir álbum existente por botão em diálogo acessível.
+- Motivo: usuário considerou a página com três seções excessiva e pediu algo simples, moderno e direto para subir arquivos.
+- Alternativa: remover a visualização compartilhada do álbum; descartada para preservar o requisito anterior de a equipe conseguir ver os registros, sem adicionar seção à página.
+
 ## ADR-111: Álbum independente por evento com seleção editorial
 
 **Data:** 2026-10-27
