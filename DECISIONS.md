@@ -8,7 +8,7 @@
 ## ADR-111: Álbum independente por evento com seleção editorial
 
 **Data:** 2026-10-27
-**Status:** Site publicado; integração da MB News em publicação.
+**Status:** Site publicado; integração da MB News publicada no commit cbb75ae, Vercel READY e recursos HTTP 200.
 
 - Decisão: manter MB Momentos em aplicação/repositório/deploy separados no Sites, com Vinext, D1 e R2. Preservar a MB News estática e consumir um feed CORS somente das fotos selecionadas, visíveis e autorizadas. Alternativas: guardar uploads no repositório ou transformar toda a revista em backend; descartadas para evitar crescimento do Git e mudança de arquitetura da publicação existente.
 - Cada evento tem link com chave aleatória para envio e álbum da equipe. Chave não é senha individual: quem receber o link completo poderá acessar. Administração usa identidade ChatGPT validada pelo Sites e allowlist da conta proprietária. Nenhum secret ou chave de convite em fonte/documentação.

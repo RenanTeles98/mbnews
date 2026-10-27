@@ -6,7 +6,7 @@
 
 - Publicado site independente para convites, QR Code, envio de fotos/vídeos e álbum da equipe, começando pelo Outubro Rosa.
 - Adicionado painel para eventos mensais, seleção editorial de fotos autorizadas, ocultação e encerramento dos envios.
-- Preparada integração automática dos registros selecionados na edição de outubro da MB News; bloco oculto quando vazio. Publicação da integração em andamento.
+- Publicada integração automática dos registros selecionados na edição de outubro da MB News; bloco oculto quando vazio. Commit cbb75ae, Vercel READY e recursos HTTP 200.
 - Dados e originais persistidos fora do repositório. TypeScript, build e fluxo das APIs verificados; revisão visual em celular permanece pendente.
 
 ## 2026-10-23 - Foto de promocao do Davi

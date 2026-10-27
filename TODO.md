@@ -11,7 +11,7 @@
 - [x] Gerar QR Code e texto para compartilhar o convite no grupo.
 - [x] Implementar seleção de fotos autorizadas para MB News e revogação ao ocultar.
 - [x] Validar APIs, TypeScript, build e acesso HTTP da publicação Sites.
-- [ ] Confirmar a publicação da integração na MB News.
+- [x] Confirmar a publicação da integração na MB News: commit cbb75ae, Vercel READY, página/JS/CSS HTTP 200 e CSP correta.
 - [ ] Receber data e horário do encontro; atualizar o convite pelo painel ou pela API autenticada.
 - [ ] Revisar a experiência em celular real, incluindo envio de arquivos grandes e codecs MOV/HEVC.
 - [ ] Selecionar os registros do evento para a edição de outubro.
