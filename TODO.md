@@ -4,21 +4,21 @@
 
 ---
 
-## Prioridade atual — 2026-10-28 — Especial de Halloween em outubro
+## Concluído — 2026-10-28 — Especial de Halloween em outubro
 
 - [x] Integrar ao fim de outubro as cinco indicações de filmes, com sinopses, tipos, níveis de terror e cartazes do PDF.
 - [x] Criar carrossel acessível com navegação manual e estilos externos; incluir atalho no menu e no rodapé.
 - [x] Manter a edição disponível localmente em `http://localhost:8080/pages/mb-news-outubro-2026.html`.
-- [ ] Revisar a prévia visualmente, incluindo celular; a automação do Edge foi bloqueada antes da abertura.
-- [ ] Publicar após revisão editorial e autorização específica.
+- [x] Receber aprovação do usuário e publicar na Vercel pelo commit `e9865da` (deploy `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS`, `READY`).
+- [x] Confirmar em produção HTTP 200 para as duas páginas, CSS, JS e cartazes.
 
-## Pendência de publicação — 2026-10-28 — Filme de novembro
+## Concluído — 2026-10-28 — Filme de novembro
 
 - [x] Criar página de novembro com indicação de *Caramelo*, texto do Novembro Azul e cartaz local.
 - [x] Disponibilizar novembro na navegação da home e das edições de abril a outubro.
 - [x] Criar e iniciar `npm run preview:mb-news` para abrir a MB News localmente.
-- [ ] Revisar a prévia visualmente no navegador; a automação do Edge foi bloqueada antes da abertura.
-- [ ] Publicar a edição após revisão editorial e autorização específica.
+- [x] Publicar junto da atualização de outubro pelo commit `e9865da`; deploy Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` está `READY`.
+- [x] Confirmar página e cartaz com HTTP 200 em produção.
 
 Escopo desta tarefa: somente a indicação de filme pedida pelo usuário; entrevista e outros textos do PDF não foram integrados.
 

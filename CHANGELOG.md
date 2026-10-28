@@ -4,13 +4,13 @@
 
 ## 2026-10-28 — Especial de Halloween na edição de outubro
 
-- Adicionada ao fim da edição de outubro uma seção de Halloween com carrossel manual de cinco filmes, cartazes e informações extraídas do PDF. Estilos e comportamento ficam em arquivos externos; alteração local, não publicada.
+- Adicionada ao fim da edição de outubro uma seção de Halloween com carrossel manual de cinco filmes, cartazes e informações extraídas do PDF. Estilos e comportamento ficam em arquivos externos. Publicado no commit `e9865da`; Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).
 
 ## 2026-10-28 — Indicação de filme de novembro
 
-- Criada a página `mb-news-novembro-2026.html` com o conteúdo de *Caramelo* e Novembro Azul. O cartaz foi extraído do PDF enviado e salvo em `public/images/mb-news/novembro/`.
-- Liberado o acesso a novembro na navegação da home editorial e das edições de abril a outubro.
-- Adicionado o comando local `npm run preview:mb-news` para servir a MB News na porta 8080. Alteração não publicada.
+- Criada e publicada a página `mb-news-novembro-2026.html` com o conteúdo de *Caramelo* e Novembro Azul. O cartaz foi extraído do PDF enviado e salvo em `public/images/mb-news/novembro/`.
+- Liberado o acesso a novembro na navegação da home editorial e das edições de abril a outubro. Commit `e9865da`; deploy Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).
+- Adicionado o comando local `npm run preview:mb-news` para servir a MB News na porta 8080.
 
 ## 2026-10-27 — MB Momentos e álbum dos eventos
 

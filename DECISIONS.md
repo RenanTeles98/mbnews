@@ -8,7 +8,7 @@
 ## ADR-115: Especial de Halloween como última seção de outubro
 
 **Data:** 2026-10-28
-**Status:** Implementado localmente; não publicado.
+**Status:** Publicado; commit `e9865da`, deploy Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).
 
 ### Decisão
 
@@ -20,12 +20,12 @@ O pedido posiciona as sugestões na última seção de outubro e pede um carross
 
 ### Escopo
 
-O carrossel tem controles por botões, indicadores e teclas de seta, incluindo estados acessíveis. O menu e o rodapé recebem um atalho para a seção. Prévia disponível localmente na porta 8080; nenhum deploy foi feito.
+O carrossel tem controles por botões, indicadores e teclas de seta, incluindo estados acessíveis. O menu e o rodapé recebem um atalho para a seção. Publicado em `https://mbnews.vercel.app/pages/mb-news-outubro-2026.html`; prévia local permanece na porta 8080.
 
 ## ADR-114: Indicação de filme em edição própria de novembro
 
 **Data:** 2026-10-28
-**Status:** Implementado localmente; não publicado.
+**Status:** Publicado no commit `e9865da`; deploy Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).
 
 ### Decisão
 
@@ -37,7 +37,7 @@ O material está identificado como edição de novembro e as edições anteriore
 
 ### Escopo de publicação
 
-A prévia fica disponível localmente pela porta 8080. Nenhum deploy foi feito.
+A página publicada está em `https://mbnews.vercel.app/pages/mb-news-novembro-2026.html`; a prévia local fica disponível pela porta 8080.
 
 ## ADR-113: Legenda opcional e carrossel das fotos selecionadas
 

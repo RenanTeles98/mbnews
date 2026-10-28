@@ -11,22 +11,22 @@
 
 - Adicionada a última seção da edição de outubro com o especial “Luzes apagadas, play e coragem!” e um carrossel com os cinco filmes do PDF: *Sobrenatural*, *Pânico*, *Fale Comigo*, *Telefone Preto* e *Os Outros*. Cada slide apresenta cartaz, ano, sinopse, tipo, nível de terror e perfil de público.
 - Extraída a arte de abertura e os cinco cartazes para `public/images/mb-news/outubro/halloween/`, em JPEG otimizado. Criados `public/assets/css/mb-news-halloween.css` e `public/assets/js/ui/mb-news-halloween-carousel.js`; navegação por botões, pontos e teclas de seta, sem autoplay.
-- A seção foi inserida no fim de `public/pages/mb-news-outubro-2026.html` e incluída nos atalhos do menu e rodapé. O conteúdo foi preparado localmente, sem publicação.
+- A seção foi inserida no fim de `public/pages/mb-news-outubro-2026.html` e incluída nos atalhos do menu e rodapé. O usuário aprovou a publicação; Halloween e a página de novembro foram publicadas no commit `e9865da`, deploy Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).
 
-Estado atual: a edição de outubro contém o carrossel final de Halloween. A prévia local segue disponível em `http://localhost:8080/pages/mb-news-outubro-2026.html`.
+Estado atual: as edições de outubro e novembro estão disponíveis em `https://mbnews.vercel.app/pages/mb-news-outubro-2026.html` e `https://mbnews.vercel.app/pages/mb-news-novembro-2026.html`. As duas páginas, o CSS, o JS e os cartazes responderam HTTP 200 em produção. A prévia local também segue disponível em `http://localhost:8080/pages/mb-news-outubro-2026.html`.
 
-Próximo passo recomendado: revisar a prévia local, especialmente no celular, antes de autorizar publicação.
+Próximo passo recomendado: seguir com os próximos conteúdos editoriais da MB News.
 
 ### Sessão 2026-10-28 — Filme de novembro no MB News
 
 - Criada a página estática `public/pages/mb-news-novembro-2026.html` com a indicação de *Caramelo* e o texto de cuidado e prevenção do Novembro Azul fornecido no PDF.
 - Extraído o cartaz incorporado ao PDF e copiado sem recompressão para `public/images/mb-news/novembro/caramelo.jpg` (1080×1350). Criada a folha externa `public/assets/css/mb-news-novembro.css`, reutilizando o componente editorial de filme existente.
 - Habilitado o acesso a novembro na navegação da home editorial e das edições de abril a outubro. Criado `npm run preview:mb-news`, servidor local que preserva a raiz `index.html` e mapeia os assets de `public/`.
-- O PDF contém outros materiais editoriais; esta alteração integrou somente o conteúdo do filme solicitado. A página foi criada localmente e não foi publicada.
+- O PDF contém outros materiais editoriais; esta alteração integrou somente o conteúdo do filme solicitado. A página foi publicada junto da atualização de outubro no commit `e9865da`; Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` ficou `READY`.
 
-Estado atual: o servidor local está ativo em `http://localhost:8080`; a nova página responde pelo caminho `/pages/mb-news-novembro-2026.html`.
+Estado atual: a página publicada está disponível em `https://mbnews.vercel.app/pages/mb-news-novembro-2026.html`; a prévia local continua ativa em `http://localhost:8080/pages/mb-news-novembro-2026.html`.
 
-Próximo passo recomendado: revisar a prévia e continuar os demais conteúdos de novembro quando solicitados.
+Próximo passo recomendado: integrar os demais conteúdos de novembro se forem solicitados.
 
 ### Sessão 2026-10-27 — Legenda opcional e carrossel aprovado
 
