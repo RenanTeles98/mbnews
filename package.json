@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview:mb-news": "node scripts/mb-news-preview.mjs"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.9",

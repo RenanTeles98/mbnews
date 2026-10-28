@@ -1,0 +1,359 @@
+.october-theme #halloween {
+  --halloween-ink: #100f14;
+  --halloween-paper: #f6efe7;
+  --halloween-muted: #c5bdc5;
+  --halloween-orange: #f47721;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(58px, 8vw, 106px) 0;
+  scroll-margin-top: 116px;
+  color: var(--halloween-paper);
+  background: var(--halloween-ink);
+}
+
+.october-theme #halloween .halloween-shell {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.october-theme #halloween .halloween-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, .88fr);
+  align-items: center;
+  gap: clamp(34px, 6vw, 82px);
+}
+
+.october-theme #halloween .halloween-cover {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(246, 239, 231, .14);
+  border-radius: 5px;
+  background: #201b21;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, .32);
+}
+
+.october-theme #halloween .halloween-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.october-theme #halloween .halloween-intro-copy {
+  max-width: 500px;
+}
+
+.october-theme #halloween .halloween-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  color: #ff9a4e;
+  font-size: .86rem;
+  font-weight: 700;
+}
+
+.october-theme #halloween .halloween-label::before {
+  width: 28px;
+  height: 2px;
+  background: var(--halloween-orange);
+  content: '';
+}
+
+.october-theme #halloween .halloween-intro-copy h2 {
+  margin: 0 0 22px;
+  color: #fffaf4;
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -.065em;
+  line-height: .99;
+}
+
+.october-theme #halloween .halloween-intro-copy > p:last-child {
+  margin: 0;
+  color: #ded7dc;
+  font-size: clamp(.96rem, 1.35vw, 1.08rem);
+  line-height: 1.8;
+}
+
+.october-theme #halloween .halloween-film-area {
+  width: min(980px, 100%);
+  margin: clamp(58px, 8vw, 92px) auto 0;
+}
+
+.october-theme #halloween .halloween-film-heading {
+  margin-bottom: 24px;
+}
+
+.october-theme #halloween .halloween-film-heading p {
+  margin: 0 0 8px;
+  color: #ff9a4e;
+  font-size: .84rem;
+  font-weight: 700;
+}
+
+.october-theme #halloween .halloween-film-heading h3 {
+  margin: 0;
+  color: #fffaf4;
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  font-weight: 750;
+  letter-spacing: -.04em;
+}
+
+.october-theme #halloween .halloween-film-slide {
+  display: grid;
+  grid-template-columns: minmax(190px, .72fr) minmax(0, 1.28fr);
+  align-items: center;
+  gap: clamp(34px, 6vw, 82px);
+  padding: clamp(28px, 4vw, 46px) 0;
+  border-block: 1px solid rgba(246, 239, 231, .18);
+}
+
+.october-theme #halloween .halloween-film-poster-wrap {
+  width: min(100%, 320px);
+  aspect-ratio: 2 / 3;
+  justify-self: center;
+  overflow: hidden;
+  background: #211e25;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, .38);
+}
+
+.october-theme #halloween .halloween-film-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.october-theme #halloween .halloween-film-number {
+  margin: 0 0 10px;
+  color: #ff9a4e;
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.october-theme #halloween .halloween-film-number span {
+  color: #a9a1aa;
+  font-size: .82rem;
+  font-weight: 600;
+}
+
+.october-theme #halloween .halloween-film-copy h4 {
+  margin: 0 0 16px;
+  color: #fffaf4;
+  font-size: clamp(2rem, 3.6vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1.05;
+}
+
+.october-theme #halloween .halloween-film-year {
+  color: #c5bdc5;
+  font-size: .52em;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+}
+
+.october-theme #halloween .halloween-film-description {
+  margin: 0;
+  color: #e3dde2;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.october-theme #halloween .halloween-film-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .85fr);
+  gap: 24px;
+  margin: 27px 0 24px;
+}
+
+.october-theme #halloween .halloween-film-details > div {
+  min-width: 0;
+}
+
+.october-theme #halloween .halloween-film-details dt {
+  margin: 0 0 6px;
+  color: #b9b0ba;
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.october-theme #halloween .halloween-film-details dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #fffaf4;
+  font-size: .95rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.october-theme #halloween .halloween-meter {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.october-theme #halloween .halloween-meter i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #716a73;
+}
+
+.october-theme #halloween .halloween-meter i.is-filled {
+  background: var(--halloween-orange);
+}
+
+.october-theme #halloween .halloween-film-audience {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--halloween-orange);
+  color: var(--halloween-muted);
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+.october-theme #halloween .halloween-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 22px;
+}
+
+.october-theme #halloween .halloween-carousel-arrow {
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgba(246, 239, 231, .4);
+  border-radius: 50%;
+  color: #fffaf4;
+  background: transparent;
+  font: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease;
+}
+
+.october-theme #halloween .halloween-carousel-arrow:hover {
+  border-color: var(--halloween-orange);
+  color: #fff;
+  background: var(--halloween-orange);
+}
+
+.october-theme #halloween .halloween-carousel-arrow:focus-visible,
+.october-theme #halloween .halloween-carousel-dots button:focus-visible {
+  outline: 3px solid #ffd0ad;
+  outline-offset: 4px;
+}
+
+.october-theme #halloween .halloween-carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.october-theme #halloween .halloween-carousel-dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 99px;
+  background: #766e78;
+  cursor: pointer;
+  transition: width .18s ease, background-color .18s ease;
+}
+
+.october-theme #halloween .halloween-carousel-dots button[aria-current="true"] {
+  width: 26px;
+  background: var(--halloween-orange);
+}
+
+.october-theme #halloween .halloween-signoff {
+  margin: 28px 0 0;
+  color: #e7dfe5;
+  font-size: .98rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.october-theme #halloween .halloween-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.october-theme #halloween [hidden] {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  .october-theme #halloween .halloween-shell {
+    width: min(620px, calc(100% - 36px));
+  }
+
+  .october-theme #halloween .halloween-intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .october-theme #halloween .halloween-intro-copy {
+    max-width: 620px;
+  }
+
+  .october-theme #halloween .halloween-intro-copy h2 {
+    font-size: clamp(2.6rem, 10vw, 3.8rem);
+  }
+
+  .october-theme #halloween .halloween-film-area {
+    margin-top: 62px;
+  }
+
+  .october-theme #halloween .halloween-film-slide {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .october-theme #halloween .halloween-film-poster-wrap {
+    width: min(68vw, 250px);
+  }
+}
+
+@media (max-width: 430px) {
+  .october-theme #halloween .halloween-shell {
+    width: calc(100% - 32px);
+  }
+
+  .october-theme #halloween .halloween-film-details {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .october-theme #halloween .halloween-carousel-controls {
+    gap: 12px;
+  }
+
+  .october-theme #halloween .halloween-carousel-dots {
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .october-theme #halloween .halloween-carousel-arrow,
+  .october-theme #halloween .halloween-carousel-dots button {
+    transition: none;
+  }
+}

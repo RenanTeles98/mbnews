@@ -4,6 +4,24 @@
 
 ---
 
+## Prioridade atual — 2026-10-28 — Especial de Halloween em outubro
+
+- [x] Integrar ao fim de outubro as cinco indicações de filmes, com sinopses, tipos, níveis de terror e cartazes do PDF.
+- [x] Criar carrossel acessível com navegação manual e estilos externos; incluir atalho no menu e no rodapé.
+- [x] Manter a edição disponível localmente em `http://localhost:8080/pages/mb-news-outubro-2026.html`.
+- [ ] Revisar a prévia visualmente, incluindo celular; a automação do Edge foi bloqueada antes da abertura.
+- [ ] Publicar após revisão editorial e autorização específica.
+
+## Pendência de publicação — 2026-10-28 — Filme de novembro
+
+- [x] Criar página de novembro com indicação de *Caramelo*, texto do Novembro Azul e cartaz local.
+- [x] Disponibilizar novembro na navegação da home e das edições de abril a outubro.
+- [x] Criar e iniciar `npm run preview:mb-news` para abrir a MB News localmente.
+- [ ] Revisar a prévia visualmente no navegador; a automação do Edge foi bloqueada antes da abertura.
+- [ ] Publicar a edição após revisão editorial e autorização específica.
+
+Escopo desta tarefa: somente a indicação de filme pedida pelo usuário; entrevista e outros textos do PDF não foram integrados.
+
 ## Prioridade atual — 2026-10-27 — Eventos e Outubro Rosa
 
 - [x] Trocar nome por legenda opcional, aceitar envio sem esses dados no servidor e publicar carrossel contínuo somente das fotos aprovadas abaixo do formulário.

@@ -2,6 +2,16 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-28 — Especial de Halloween na edição de outubro
+
+- Adicionada ao fim da edição de outubro uma seção de Halloween com carrossel manual de cinco filmes, cartazes e informações extraídas do PDF. Estilos e comportamento ficam em arquivos externos; alteração local, não publicada.
+
+## 2026-10-28 — Indicação de filme de novembro
+
+- Criada a página `mb-news-novembro-2026.html` com o conteúdo de *Caramelo* e Novembro Azul. O cartaz foi extraído do PDF enviado e salvo em `public/images/mb-news/novembro/`.
+- Liberado o acesso a novembro na navegação da home editorial e das edições de abril a outubro.
+- Adicionado o comando local `npm run preview:mb-news` para servir a MB News na porta 8080. Alteração não publicada.
+
 ## 2026-10-27 — MB Momentos e álbum dos eventos
 
 - Substituído nome por legenda opcional no envio. Publicado carrossel automático das fotos aprovadas abaixo do formulário, com pausa e suporte a movimento reduzido.

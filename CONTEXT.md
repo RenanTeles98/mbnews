@@ -1,11 +1,32 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-10-27
+> Última atualização: 2026-10-28
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Sessão 2026-10-28 — Especial de Halloween em outubro
+
+- Adicionada a última seção da edição de outubro com o especial “Luzes apagadas, play e coragem!” e um carrossel com os cinco filmes do PDF: *Sobrenatural*, *Pânico*, *Fale Comigo*, *Telefone Preto* e *Os Outros*. Cada slide apresenta cartaz, ano, sinopse, tipo, nível de terror e perfil de público.
+- Extraída a arte de abertura e os cinco cartazes para `public/images/mb-news/outubro/halloween/`, em JPEG otimizado. Criados `public/assets/css/mb-news-halloween.css` e `public/assets/js/ui/mb-news-halloween-carousel.js`; navegação por botões, pontos e teclas de seta, sem autoplay.
+- A seção foi inserida no fim de `public/pages/mb-news-outubro-2026.html` e incluída nos atalhos do menu e rodapé. O conteúdo foi preparado localmente, sem publicação.
+
+Estado atual: a edição de outubro contém o carrossel final de Halloween. A prévia local segue disponível em `http://localhost:8080/pages/mb-news-outubro-2026.html`.
+
+Próximo passo recomendado: revisar a prévia local, especialmente no celular, antes de autorizar publicação.
+
+### Sessão 2026-10-28 — Filme de novembro no MB News
+
+- Criada a página estática `public/pages/mb-news-novembro-2026.html` com a indicação de *Caramelo* e o texto de cuidado e prevenção do Novembro Azul fornecido no PDF.
+- Extraído o cartaz incorporado ao PDF e copiado sem recompressão para `public/images/mb-news/novembro/caramelo.jpg` (1080×1350). Criada a folha externa `public/assets/css/mb-news-novembro.css`, reutilizando o componente editorial de filme existente.
+- Habilitado o acesso a novembro na navegação da home editorial e das edições de abril a outubro. Criado `npm run preview:mb-news`, servidor local que preserva a raiz `index.html` e mapeia os assets de `public/`.
+- O PDF contém outros materiais editoriais; esta alteração integrou somente o conteúdo do filme solicitado. A página foi criada localmente e não foi publicada.
+
+Estado atual: o servidor local está ativo em `http://localhost:8080`; a nova página responde pelo caminho `/pages/mb-news-novembro-2026.html`.
+
+Próximo passo recomendado: revisar a prévia e continuar os demais conteúdos de novembro quando solicitados.
 
 ### Sessão 2026-10-27 — Legenda opcional e carrossel aprovado
 

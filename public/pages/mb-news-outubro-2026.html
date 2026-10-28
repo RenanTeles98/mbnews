@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MB News de outubro de 2026: Outubro Rosa, cuidado, histórias da equipe e sustentabilidade." />
+  <meta name="description" content="MB News de outubro de 2026: Outubro Rosa, histórias da equipe, sustentabilidade e especial de Halloween com sugestões de filmes." />
   <title>MB News | Edição · Outubro 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -11,11 +11,13 @@
   <link rel="stylesheet" href="/assets/css/mb-news-interview.css" />
   <link rel="stylesheet" href="/assets/css/mb-news-outubro.css?v=20261016-laiane-photo" />
   <link rel="stylesheet" href="/assets/css/mb-news-event-gallery.css?v=20261027" />
+  <link rel="stylesheet" href="/assets/css/mb-news-halloween.css?v=20261028" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="/assets/js/ui/mb-news-october-promotions.js" defer></script>
   <script src="/assets/js/ui/mb-news-october-birthdays.js" defer></script>
   <script src="/assets/js/ui/mb-news-interview.js" defer></script>
   <script src="/assets/js/ui/mb-news-event-gallery.js?v=20261027" defer></script>
+  <script src="/assets/js/ui/mb-news-halloween-carousel.js?v=20261028" defer></script>
 </head>
 <body class="october-theme">
 
@@ -30,6 +32,7 @@
     <li><a href="#sustentabilidade">Sustentabilidade</a></li>
     <li><a href="#aniversariantes">Aniversariantes</a></li>
     <li><a href="#totalpass">TotalPass</a></li>
+    <li><a href="#halloween">Halloween</a></li>
   </ul>
   <span class="nav-edition"><span aria-hidden="true">🎀</span> Outubro 2026</span>
 </nav>
@@ -46,7 +49,7 @@
   <a class="month-btn available" href="/pages/mb-news-agosto-2026.html">✓ Ago</a>
   <a class="month-btn available" href="/pages/mb-news-setembro-2026.html">✓ Set</a>
   <button class="month-btn active" type="button" aria-current="page">🎀 Out</button>
-  <button class="month-btn future" type="button" disabled>Nov</button>
+  <a class="month-btn available" href="/pages/mb-news-novembro-2026.html">✓ Nov</a>
   <button class="month-btn future" type="button" disabled>Dez</button>
 </div>
 
@@ -478,6 +481,126 @@
   <div class="event-gallery-grid" data-event-photos></div>
 </section>
 
+<!-- ESPECIAL DE HALLOWEEN -->
+<section class="halloween-section" id="halloween" aria-labelledby="halloween-title">
+  <div class="halloween-shell">
+    <header class="halloween-intro">
+      <figure class="halloween-cover">
+        <img src="/images/mb-news/outubro/halloween/especial-halloween.jpg" alt="Colagem do especial de Halloween com o título cinco filmes para testar sua coragem." width="1536" height="1024" loading="lazy" decoding="async" />
+      </figure>
+      <div class="halloween-intro-copy">
+        <p class="halloween-label">Especial de outubro</p>
+        <h2 id="halloween-title">Luzes apagadas,<br />play e coragem!</h2>
+        <p>Halloween chegando, e com ele a desculpa perfeita para uma sessão de filmes assustadores. Se você gosta de levar sustos, desvendar mistérios ou sentir aquele frio na barriga, preparamos cinco indicações para entrar no clima mais aterrorizante do ano.</p>
+      </div>
+    </header>
+
+    <div class="halloween-film-area">
+      <div class="halloween-film-heading">
+        <p>Sugestões para a sessão</p>
+        <h3 id="halloween-films-title">Escolha seu próximo susto</h3>
+      </div>
+
+      <div class="halloween-carousel" data-halloween-carousel role="region" aria-roledescription="carrossel" aria-label="Sugestões de filmes para o Halloween" aria-labelledby="halloween-films-title" tabindex="0">
+        <article class="halloween-film-slide is-active" data-halloween-slide data-movie-label="Sobrenatural" role="group" aria-roledescription="slide" aria-label="Filme 1 de 5: Sobrenatural (2010)">
+          <div class="halloween-film-poster-wrap">
+            <img class="halloween-film-poster" src="/images/mb-news/outubro/halloween/sobrenatural.jpg" alt="Cartaz do filme Sobrenatural" width="200" height="271" loading="lazy" decoding="async" />
+          </div>
+          <div class="halloween-film-copy">
+            <p class="halloween-film-number" aria-hidden="true">01 <span>/ 05</span></p>
+            <h4>Sobrenatural <span class="halloween-film-year">(2010)</span></h4>
+            <p class="halloween-film-description">Uma família tenta descobrir o que aconteceu com o filho, que entrou em um estado inexplicável. Logo, percebe que forças sobrenaturais podem estar envolvidas.</p>
+            <dl class="halloween-film-details">
+              <div><dt>Tipo</dt><dd>Sobrenatural</dd></div>
+              <div><dt>Nível de terror</dt><dd><span>3 de 5</span><span class="halloween-meter" aria-hidden="true"><i class="is-filled"></i><i class="is-filled"></i><i class="is-filled"></i><i></i><i></i></span></dd></div>
+            </dl>
+            <p class="halloween-film-audience">Para quem gosta de sustos repentinos, espíritos e ambientes assustadores.</p>
+          </div>
+        </article>
+
+        <article class="halloween-film-slide" data-halloween-slide data-movie-label="Pânico" role="group" aria-roledescription="slide" aria-label="Filme 2 de 5: Pânico (1996)" hidden>
+          <div class="halloween-film-poster-wrap">
+            <img class="halloween-film-poster" src="/images/mb-news/outubro/halloween/panico.jpg" alt="Cartaz do filme Pânico" width="500" height="751" loading="lazy" decoding="async" />
+          </div>
+          <div class="halloween-film-copy">
+            <p class="halloween-film-number" aria-hidden="true">02 <span>/ 05</span></p>
+            <h4>Pânico <span class="halloween-film-year">(1996)</span></h4>
+            <p class="halloween-film-description">Um assassino mascarado começa a perseguir jovens de uma pequena cidade, transformando o medo em um jogo de mistério no qual qualquer pessoa pode ser suspeita.</p>
+            <dl class="halloween-film-details">
+              <div><dt>Tipo</dt><dd>Slasher e suspense</dd></div>
+              <div><dt>Nível de terror</dt><dd><span>1 de 5</span><span class="halloween-meter" aria-hidden="true"><i class="is-filled"></i><i></i><i></i><i></i><i></i></span></dd></div>
+            </dl>
+            <p class="halloween-film-audience">Para quem gosta de perseguições, mortes, mistério e reviravoltas.</p>
+          </div>
+        </article>
+
+        <article class="halloween-film-slide" data-halloween-slide data-movie-label="Fale Comigo" role="group" aria-roledescription="slide" aria-label="Filme 3 de 5: Fale Comigo (2022)" hidden>
+          <div class="halloween-film-poster-wrap">
+            <img class="halloween-film-poster" src="/images/mb-news/outubro/halloween/fale-comigo.jpg" alt="Cartaz do filme Fale Comigo" width="300" height="441" loading="lazy" decoding="async" />
+          </div>
+          <div class="halloween-film-copy">
+            <p class="halloween-film-number" aria-hidden="true">03 <span>/ 05</span></p>
+            <h4>Fale Comigo <span class="halloween-film-year">(2022)</span></h4>
+            <p class="halloween-film-description">Uma brincadeira com uma mão capaz de invocar espíritos sai do controle e leva um grupo de jovens a enfrentar consequências aterrorizantes.</p>
+            <dl class="halloween-film-details">
+              <div><dt>Tipo</dt><dd>Sobrenatural</dd></div>
+              <div><dt>Nível de terror</dt><dd><span>4 de 5</span><span class="halloween-meter" aria-hidden="true"><i class="is-filled"></i><i class="is-filled"></i><i class="is-filled"></i><i class="is-filled"></i><i></i></span></dd></div>
+            </dl>
+            <p class="halloween-film-audience">Para quem gosta de terror moderno, cenas fortes e situações perturbadoras.</p>
+          </div>
+        </article>
+
+        <article class="halloween-film-slide" data-halloween-slide data-movie-label="Telefone Preto" role="group" aria-roledescription="slide" aria-label="Filme 4 de 5: Telefone Preto (2021)" hidden>
+          <div class="halloween-film-poster-wrap">
+            <img class="halloween-film-poster" src="/images/mb-news/outubro/halloween/telefone-preto.jpg" alt="Cartaz do filme Telefone Preto" width="716" height="1075" loading="lazy" decoding="async" />
+          </div>
+          <div class="halloween-film-copy">
+            <p class="halloween-film-number" aria-hidden="true">04 <span>/ 05</span></p>
+            <h4>Telefone Preto <span class="halloween-film-year">(2021)</span></h4>
+            <p class="halloween-film-description">Sequestrado por um criminoso, um garoto começa a receber ligações de vítimas anteriores por meio de um telefone desconectado. As vozes podem ser sua única chance de escapar.</p>
+            <dl class="halloween-film-details">
+              <div><dt>Tipo</dt><dd>Terror psicológico e suspense sobrenatural</dd></div>
+              <div><dt>Nível de terror</dt><dd><span>2 de 5</span><span class="halloween-meter" aria-hidden="true"><i class="is-filled"></i><i class="is-filled"></i><i></i><i></i><i></i></span></dd></div>
+            </dl>
+            <p class="halloween-film-audience">Para quem prefere tensão, mistério e uma história de sobrevivência.</p>
+          </div>
+        </article>
+
+        <article class="halloween-film-slide" data-halloween-slide data-movie-label="Os Outros" role="group" aria-roledescription="slide" aria-label="Filme 5 de 5: Os Outros (2001)" hidden>
+          <div class="halloween-film-poster-wrap">
+            <img class="halloween-film-poster" src="/images/mb-news/outubro/halloween/os-outros.jpg" alt="Cartaz do filme Os Outros" width="500" height="705" loading="lazy" decoding="async" />
+          </div>
+          <div class="halloween-film-copy">
+            <p class="halloween-film-number" aria-hidden="true">05 <span>/ 05</span></p>
+            <h4>Os Outros <span class="halloween-film-year">(2001)</span></h4>
+            <p class="halloween-film-description">Em uma mansão isolada, uma mãe e seus filhos começam a vivenciar acontecimentos inexplicáveis. Aos poucos, os segredos da casa tornam tudo mais inquietante.</p>
+            <dl class="halloween-film-details">
+              <div><dt>Tipo</dt><dd>Terror gótico e psicológico</dd></div>
+              <div><dt>Nível de terror</dt><dd><span>2 de 5</span><span class="halloween-meter" aria-hidden="true"><i class="is-filled"></i><i class="is-filled"></i><i></i><i></i><i></i></span></dd></div>
+            </dl>
+            <p class="halloween-film-audience">Para quem gosta de suspense crescente, atmosfera sombria e revelações surpreendentes.</p>
+          </div>
+        </article>
+
+        <div class="halloween-carousel-controls" data-halloween-controls hidden>
+          <button class="halloween-carousel-arrow" type="button" data-halloween-prev aria-label="Ver filme anterior">←</button>
+          <div class="halloween-carousel-dots" role="group" aria-label="Escolher um filme">
+            <button type="button" data-halloween-dot="0" aria-label="Mostrar Sobrenatural" aria-current="true"></button>
+            <button type="button" data-halloween-dot="1" aria-label="Mostrar Pânico" aria-current="false"></button>
+            <button type="button" data-halloween-dot="2" aria-label="Mostrar Fale Comigo" aria-current="false"></button>
+            <button type="button" data-halloween-dot="3" aria-label="Mostrar Telefone Preto" aria-current="false"></button>
+            <button type="button" data-halloween-dot="4" aria-label="Mostrar Os Outros" aria-current="false"></button>
+          </div>
+          <button class="halloween-carousel-arrow" type="button" data-halloween-next aria-label="Ver próximo filme">→</button>
+        </div>
+        <p class="halloween-visually-hidden" id="halloween-carousel-status" aria-live="polite">Filme 1 de 5: Sobrenatural</p>
+      </div>
+
+      <p class="halloween-signoff">Agora é com você: escolha seu filme, prepare a pipoca e boa sessão&hellip; se tiver coragem!</p>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">MB <span>News</span></div>
@@ -487,6 +610,7 @@
     <a href="#saude">Outubro Rosa</a>
     <a href="#entrevista">Entrevista</a>
     <a href="#promocoes">Promovidos</a>
+    <a href="#halloween">Halloween</a>
   </div>
   <hr class="footer-divider" />
   <p class="footer-copy">© 2026 MB News · Material de comunicação interna · Todos os direitos reservados</p>

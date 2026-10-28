@@ -5,6 +5,40 @@
 
 ---
 
+## ADR-115: Especial de Halloween como última seção de outubro
+
+**Data:** 2026-10-28
+**Status:** Implementado localmente; não publicado.
+
+### Decisão
+
+Adicionar ao fim de `public/pages/mb-news-outubro-2026.html` um carrossel editorial com os cinco filmes do PDF de Halloween. Cada slide reúne cartaz, ano, sinopse, tipo, nível de terror e indicação de público. Manter estilos e comportamento em arquivos externos e guardar a arte e os cartazes em `public/images/mb-news/outubro/halloween/`.
+
+### Motivo e alternativas consideradas
+
+O pedido posiciona as sugestões na última seção de outubro e pede um carrossel com informações dos filmes. Uma seção própria preserva os demais assuntos da edição e deixa os cinco títulos acessíveis em um componente navegável. O visual usa a arte e a paleta do material fornecido, mantendo o restante da edição com sua identidade de Outubro Rosa. Autoplay foi evitado para que a leitura e a navegação fiquem sob controle da pessoa.
+
+### Escopo
+
+O carrossel tem controles por botões, indicadores e teclas de seta, incluindo estados acessíveis. O menu e o rodapé recebem um atalho para a seção. Prévia disponível localmente na porta 8080; nenhum deploy foi feito.
+
+## ADR-114: Indicação de filme em edição própria de novembro
+
+**Data:** 2026-10-28
+**Status:** Implementado localmente; não publicado.
+
+### Decisão
+
+Criar uma página estática da edição de novembro e integrar nela a indicação de *Caramelo* e o texto de Novembro Azul do PDF enviado. Reutilizar `mb-news-film.css`, manter os estilos novos em uma folha externa, armazenar o cartaz em `public/images/mb-news/novembro/` e liberar novembro na navegação das edições existentes.
+
+### Motivo e alternativas consideradas
+
+O material está identificado como edição de novembro e as edições anteriores já têm uma navegação mensal compartilhada. Colocar o filme em agosto ou outubro misturaria períodos editoriais; por isso a página própria de novembro preserva o arquivo histórico e torna o novo conteúdo acessível. A solicitação foi restrita ao conteúdo de filmes, então a entrevista e os demais textos do PDF ficaram fora desta alteração.
+
+### Escopo de publicação
+
+A prévia fica disponível localmente pela porta 8080. Nenhum deploy foi feito.
+
 ## ADR-113: Legenda opcional e carrossel das fotos selecionadas
 
 **Data:** 2026-10-27
