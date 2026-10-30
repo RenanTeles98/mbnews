@@ -2308,3 +2308,20 @@ O MOV original usa HEVC Main 10/HDR e o streaming direto do Drive congelava nos 
 ### Alternativas consideradas
 
 Manter a URL do Drive, voltar ao iframe ou servir o MOV original; rejeitadas porque reproduziram o problema relatado ou dependem de codecs menos compatíveis. Manter áudio com controles de volume também foi descartado para cumprir a reprodução silenciosa solicitada.
+
+## ADR-082: Galeria pública de fotos do Outubro Rosa
+
+**Data:** 2026-10-30
+**Status:** Implementado localmente; aguardando seleção das fotos no painel do MB Momentos.
+
+### Decisão
+
+Exibir na edição de outubro uma seção de registros do Outubro Rosa que carrega fotos pelo endpoint público de notícias do MB Momentos. A galeria apresenta somente os registros que o painel já aprovou, recebeu consentimento e selecionou para a MB News.
+
+### Motivo
+
+O link de convite do evento também permite enviar fotos. Colocá-lo no MB News poderia expor uma ação de envio ao público; o feed de notícias separa leitura pública da gestão do evento e permite respeitar aprovação e consentimento.
+
+### Alternativas consideradas
+
+Incorporar o link de convite ou listar diretamente todo o álbum da equipe; rejeitados por não limitar a publicação às fotos aprovadas e autorizadas para uso na edição. No momento da implementação, o feed não tinha fotos selecionadas, então a seção informa que o conteúdo aparecerá após a seleção.

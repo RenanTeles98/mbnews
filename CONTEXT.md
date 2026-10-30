@@ -7,6 +7,14 @@
 
 ## Estado Atual
 
+### Galeria do Outubro Rosa — 2026-10-30
+
+- A edição de outubro agora apresenta uma chamada “Outubro Rosa. Nossos registros.” depois da seção de saúde e antes da entrevista, com o botão “Ver álbum da equipe” levando à galeria.
+- As fotos são carregadas do feed público do MB Momentos, que retorna somente registros selecionados para o MB News e aprovados com consentimento. O link de convite do evento não é usado na página.
+- No momento da implementação, o feed de `outubro-rosa-2026` não tinha fotos selecionadas; a página mostra uma mensagem explicando que elas aparecerão após a seleção. Também há mensagens de carregamento e erro.
+- Arquivos alterados: `public/pages/mb-news-outubro-2026.html`, `public/assets/css/mb-news-event-gallery.css` e `public/assets/js/ui/mb-news-event-gallery.js`.
+- Próximo passo: selecionar no painel do MB Momentos as fotos aprovadas que devem aparecer na edição e confirmar que o feed as entrega.
+
 ### Correção do vídeo e do modal do Dia das Crianças — 2026-10-30
 
 - O MOV original estava em HEVC Main 10/HDR, formato que não reproduzia de forma confiável no navegador. Foi convertido para H.264 Main 720×1280/30 fps, sem áudio, e o segundo MP4 foi remuxado sem áudio. Ambos agora são assets locais em `public/videos/mb-news/outubro/dia-das-criancas/`.

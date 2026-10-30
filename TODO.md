@@ -4,6 +4,13 @@
 
 ---
 
+## Em andamento — 2026-10-30 — Fotos do Outubro Rosa na edição de outubro
+
+- [x] Adicionar chamada e galeria responsiva à página de outubro, com estados de carregamento, álbum vazio e falha de conexão.
+- [x] Conectar somente ao feed público do MB Momentos, que lista fotos aprovadas e selecionadas para a MB News.
+- [ ] Selecionar no painel do MB Momentos as fotos aprovadas que devem ser exibidas; o feed ainda retorna zero fotos.
+- [ ] Publicar a edição após a atualização e confirmar o carregamento dos assets.
+
 ## Concluído — 2026-10-30 — Dia das Crianças em outubro
 
 - [x] Adicionar a seção responsiva e incluir o link no menu e no rodapé.
