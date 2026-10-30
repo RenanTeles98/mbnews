@@ -4,14 +4,14 @@
 
 ---
 
-## Em andamento — 2026-10-30 — Fotos do Outubro Rosa na edição de outubro
+## Concluído — 2026-10-30 — Fotos do Outubro Rosa na edição de outubro
 
 - [x] Adicionar chamada e galeria responsiva à página de outubro, com estados de carregamento, álbum vazio e falha de conexão.
 - [x] Reforçar o visual da chamada e do álbum vazio com a identidade de Outubro Rosa e layout responsivo.
 - [x] Conectar somente ao feed público do MB Momentos, que lista fotos aprovadas e selecionadas para a MB News.
-- [x] Publicar a edição e confirmar página, CSS e JavaScript em produção (deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ`, `READY`, commit `f643077`).
+- [x] Publicar a galeria refinada e confirmar página, CSS e JavaScript em produção (deploy `dpl_3Qvko4yK8PbH4ZWWP1yH6gyUACBo`, `READY`, commit `612a5bb`).
 - [x] Consultar erros de runtime da última hora; nenhum foi encontrado.
-- [ ] Selecionar no painel do MB Momentos as fotos aprovadas que devem ser exibidas; o feed ainda retorna zero fotos.
+- [x] Confirmar a seleção de 17 fotos aprovadas e com consentimento no MB Momentos; o feed público retorna 17 registros.
 
 ## Concluído — 2026-10-30 — Dia das Crianças em outubro
 

@@ -12,10 +12,10 @@
 - A edição de outubro agora apresenta uma chamada “Outubro Rosa. Nossos registros.” depois da seção de saúde e antes da entrevista, com o botão “Ver álbum da equipe” levando à galeria.
 - O visual da chamada foi reforçado com a arte rosa da edição, um cartaz ilustrado, CTA em destaque e um estado vazio em formato de cartão; o cartão não simula fotos do evento.
 - As fotos são carregadas do feed público do MB Momentos, que retorna somente registros selecionados para o MB News e aprovados com consentimento. O link de convite do evento não é usado na página.
-- No momento da implementação, o feed de `outubro-rosa-2026` não tinha fotos selecionadas; a página mostra uma mensagem explicando que elas aparecerão após a seleção. Também há mensagens de carregamento e erro.
+- Na implementação, o feed estava vazio. Em 2026-10-30, a equipe selecionou 17 fotos aprovadas e com consentimento. O endpoint passou a retornar 17 registros com HTTP 200; o CORS permite a leitura pela MB News e a primeira imagem respondeu como `image/jpeg`.
 - Arquivos alterados: `public/pages/mb-news-outubro-2026.html`, `public/assets/css/mb-news-event-gallery.css` e `public/assets/js/ui/mb-news-event-gallery.js`.
-- Publicado na Vercel: commit `f643077352afd92c09bef435fb3e65cb4d449da3`, deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ` (`READY`). A página, o CSS e o JavaScript retornam HTTP 200; a consulta de erros de runtime da última hora não encontrou erros.
-- Próximo passo: selecionar no painel do MB Momentos as fotos aprovadas que devem aparecer na edição e confirmar que o feed as entrega.
+- Publicado na Vercel: versão visual refinada no commit `612a5bb089a78ad83f96da54356b92f684705889`, deploy `dpl_3Qvko4yK8PbH4ZWWP1yH6gyUACBo` (`READY`). Página, CSS, JavaScript e fundo retornaram HTTP 200.
+- A galeria busca os registros ao carregar a edição. Quem já estava com a página aberta precisa atualizá-la para buscar a seleção nova.
 
 ### Correção do vídeo e do modal do Dia das Crianças — 2026-10-30
 

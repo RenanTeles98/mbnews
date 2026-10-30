@@ -2312,7 +2312,7 @@ Manter a URL do Drive, voltar ao iframe ou servir o MOV original; rejeitadas por
 ## ADR-082: Galeria pública de fotos do Outubro Rosa
 
 **Data:** 2026-10-30
-**Status:** Publicado; aguardando seleção das fotos no painel do MB Momentos.
+**Status:** Publicado; 17 fotos selecionadas para a MB News em 2026-10-30.
 
 ### Decisão
 
@@ -2324,12 +2324,12 @@ O link de convite do evento também permite enviar fotos. Colocá-lo no MB News 
 
 ### Alternativas consideradas
 
-Incorporar o link de convite ou listar diretamente todo o álbum da equipe; rejeitados por não limitar a publicação às fotos aprovadas e autorizadas para uso na edição. No momento da implementação, o feed não tinha fotos selecionadas, então a seção informa que o conteúdo aparecerá após a seleção.
+Incorporar o link de convite ou listar diretamente todo o álbum da equipe; rejeitados por não limitar a publicação às fotos aprovadas e autorizadas para uso na edição. Na implementação, o feed estava vazio e a seção mostrava um estado sem fotos; depois, 17 fotos aprovadas e com consentimento foram selecionadas e passaram a ser entregues pelo feed.
 
 ## ADR-083: Reforço visual da galeria do Outubro Rosa
 
 **Data:** 2026-10-30
-**Status:** Implementado localmente; publicação após revisão.
+**Status:** Publicado na Vercel; deploy `dpl_3Qvko4yK8PbH4ZWWP1yH6gyUACBo` (`READY`).
 
 ### Decisão
 

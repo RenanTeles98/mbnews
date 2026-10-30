@@ -7,8 +7,8 @@
 - Adicionada à edição de outubro uma chamada com galeria responsiva e mensagens de carregamento, álbum vazio ou falha.
 - Refinado o layout com a arte de Outubro Rosa, cartaz ilustrado, botão destacado e cartão de estado vazio responsivo.
 - As fotos são lidas do feed público do MB Momentos, que entrega apenas imagens aprovadas e selecionadas para a MB News; o link com capacidade de envio não é exposto.
-- Publicado na Vercel no commit `f643077`, deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ` (`READY`); a página e os dois assets da galeria retornam HTTP 200.
-- O feed ainda não tinha fotos selecionadas quando a seção foi implementada; a seleção no painel do MB Momentos continua pendente.
+- Publicado na Vercel no commit `612a5bb`, deploy `dpl_3Qvko4yK8PbH4ZWWP1yH6gyUACBo` (`READY`); página, CSS, JavaScript e fundo retornam HTTP 200.
+- A equipe selecionou 17 fotos aprovadas e com consentimento no MB Momentos; o feed retorna 17 registros com HTTP 200 e os endereços das fotos são aceitos pela galeria.
 
 ## 2026-10-30 — Vídeos locais e ampliador centralizado
 
