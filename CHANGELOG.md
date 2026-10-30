@@ -18,7 +18,7 @@
 
 - Trocados os iframes por players nativos do Drive que iniciam mudos em loop ao entrarem na tela e pausam ao saírem dela.
 - Adicionada ampliação acessível às quatro fotos, com fechamento por X, clique no fundo e Esc.
-- A publicação está pendente.
+- Publicado pela Vercel, commit `f550806`, deploy `dpl_DigBnvRsqcnUjE9DFHYSthnYQq5v` (`READY`). Página, CSS, JavaScript e CSP foram confirmados em produção.
 
 ## 2026-10-30 — Selo TotalPass verde em outubro
 

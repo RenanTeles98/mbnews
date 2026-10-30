@@ -28,7 +28,8 @@
 - Os players agora usam `<video>` nativo com streaming direto dos arquivos públicos do Drive, `muted`, `loop` e `playsinline`. A reprodução começa quando o vídeo se aproxima da tela e pausa quando sai da área visível.
 - As quatro fotos podem ser abertas em uma janela ampliada com X, clique no fundo ou Esc. A CSP autoriza mídia apenas do site e dos dois hosts do Drive necessários ao streaming.
 - Arquivos alterados: página de outubro, `public/assets/css/mb-news-childrens-day.css`, novo `public/assets/js/ui/mb-news-childrens-day.js` e `vercel.json`.
-- Próximo passo recomendado: publicar e conferir a reprodução dos vídeos no navegador.
+- Publicado no commit `f5508067b24f1112b5595f2adc95c8475ddfaed3`, deploy Vercel `dpl_DigBnvRsqcnUjE9DFHYSthnYQq5v` (`READY`). Página, CSS e JavaScript retornam HTTP 200; a página contém os dois vídeos, os quatro gatilhos de ampliação e o cabeçalho CSP atualizado.
+- Próximo passo recomendado: confirmar a reprodução real dos vídeos em um navegador.
 
 ### Continuação da sessão 2026-10-30 — Selo TotalPass verde
 

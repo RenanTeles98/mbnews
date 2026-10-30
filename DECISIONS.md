@@ -47,7 +47,7 @@ O usuário pediu que todo o material enviado entrasse na seção. As fotos são 
 ## ADR-128: Reproduzir os vídeos do Drive em loop silencioso e ampliar fotos
 
 **Data:** 2026-10-30
-**Status:** Implementado localmente; publicação pendente.
+**Status:** Publicado na Vercel; commit `f5508067b24f1112b5595f2adc95c8475ddfaed3`, deploy `dpl_DigBnvRsqcnUjE9DFHYSthnYQq5v` (`READY`).
 
 ### Decisão
 

@@ -26,7 +26,7 @@
 - [x] Iniciar os vídeos ao aproximar da tela e pausá-los quando saírem da área visível.
 - [x] Abrir as fotos em uma janela ampliada, fechável por X, fundo escuro ou tecla Esc.
 - [x] Liberar na CSP somente os hosts do Drive usados para streaming de mídia.
-- [ ] Publicar as alterações e conferir os recursos em produção.
+- [x] Publicar e confirmar página, CSS, JavaScript e CSP em produção; deploy `dpl_DigBnvRsqcnUjE9DFHYSthnYQq5v` (`READY`), commit `f550806`.
 - [ ] Conferir a reprodução real dos vídeos em um navegador.
 
 ## Concluído — 2026-10-30 — Cor verde no selo TotalPass
