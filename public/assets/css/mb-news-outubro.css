@@ -1629,7 +1629,11 @@
 .october-theme #sustentabilidade { background: linear-gradient(180deg,#fffafd 0%,#fff 100%); }
 .october-theme #aniversariantes { background: linear-gradient(145deg,#fff4f7 0%,#fff 52%,#fff7fa 100%); }
 .october-theme #aniversariantes::before { border-color: rgba(222,120,152,.13); }
-.october-theme #totalpass { background: linear-gradient(180deg,#fff 0%,#fff4f7 100%); }
+.october-theme #totalpass {
+  background:
+    linear-gradient(145deg,rgba(0,26,41,.92) 0%,rgba(0,53,76,.86) 55%,rgba(0,81,112,.8) 100%),
+    url('/images/mb-news/junho/totalpass/totalpass-gym-background.png') center / cover no-repeat;
+}
 .october-theme .promotion-profile { background: rgba(255,255,255,.92); border-color: #edcbd6; }
 .october-theme .promotion-profile strong { color: var(--october-ink); }
 .october-theme .promotion-profile span { color: var(--october-rose-deep); }
