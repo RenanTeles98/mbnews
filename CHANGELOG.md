@@ -7,8 +7,9 @@
 - Convertido o vídeo HEVC/HDR para MP4/H.264 vertical, removido o áudio dos dois arquivos e transferida a reprodução para assets locais, com autoplay mudo e loop.
 - Removidos os links do Drive abaixo dos vídeos e ajustada a CSP para aceitar mídia somente do próprio site.
 - Centralizado o modal de ampliação das fotos no viewport. A validação visual em navegador permanece pendente.
+- Publicado na Vercel: deploy `dpl_3rJ3Y475sYpCD2j35coo1WtEsTwF` (`READY`), commit `ec50d3d`; página, CSS, JavaScript e vídeos retornam HTTP 200.
 
-##2026-10-30 — Seção do Dia das Crianças em outubro
+## 2026-10-30 — Seção do Dia das Crianças em outubro
 
 - Adicionada seção responsiva com player de prévia da gincana hospedada no Drive, além dos atalhos no menu e no rodapé.
 - Permitido `drive.google.com` como origem de frames na CSP para habilitar o player; usuário confirmou que o vídeo está público.

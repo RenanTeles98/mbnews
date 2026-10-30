@@ -27,6 +27,7 @@
 - [x] Remover os links do Drive e restringir `media-src` a `'self'`.
 - [x] Centralizar o ampliador das fotos na janela do navegador.
 - [x] Decodificar os dois MP4s localmente sem erros e validar `vercel.json`.
+- [x] Publicar em produção: deploy `dpl_3rJ3Y475sYpCD2j35coo1WtEsTwF` (`READY`), commit `ec50d3d`; página e assets respondem HTTP 200.
 - [ ] Confirmar visualmente a reprodução e a centralização em navegador; a ferramenta de uso do navegador não conseguiu identificar a URL atual.
 
 ## Concluído — 2026-10-30 — Cor verde no selo TotalPass

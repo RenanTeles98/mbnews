@@ -14,7 +14,7 @@
 - O ampliador recebe `inset: 0` e `margin: auto` para centralizar o diálogo na tela.
 - Os dois arquivos foram decodificados integralmente pelo FFmpeg sem erros, o JSON da Vercel foi validado e `git diff --check` não encontrou erros.
 - A conferência visual em navegador não foi concluída: o serviço de uso do navegador informou que não conseguia determinar a URL atual com confiança.
-- Publicação: aguardando o envio desta atualização; após o deploy, atualizar este registro com o estado de produção.
+- Publicado na Vercel: commit `ec50d3d29490e68804e386e3c316245017706c21`, deploy `dpl_3rJ3Y475sYpCD2j35coo1WtEsTwF` (`READY`). Página, CSS, JavaScript e os dois vídeos retornam HTTP 200; os vídeos usam `video/mp4`, aceitam requisições por intervalo e a CSP limita mídia a `'self'`.
 
 
 ### Continuação da sessão 2026-10-30 — Dia das Crianças em outubro
