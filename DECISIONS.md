@@ -2312,7 +2312,7 @@ Manter a URL do Drive, voltar ao iframe ou servir o MOV original; rejeitadas por
 ## ADR-082: Galeria pública de fotos do Outubro Rosa
 
 **Data:** 2026-10-30
-**Status:** Implementado localmente; aguardando seleção das fotos no painel do MB Momentos.
+**Status:** Publicado; aguardando seleção das fotos no painel do MB Momentos.
 
 ### Decisão
 

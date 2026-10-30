@@ -6,7 +6,8 @@
 
 - Adicionada à edição de outubro uma chamada com galeria responsiva e mensagens de carregamento, álbum vazio ou falha.
 - As fotos são lidas do feed público do MB Momentos, que entrega apenas imagens aprovadas e selecionadas para a MB News; o link com capacidade de envio não é exposto.
-- O feed ainda não tinha fotos selecionadas quando a seção foi implementada. A publicação e a seleção das fotos ficam pendentes.
+- Publicado na Vercel no commit `f643077`, deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ` (`READY`); a página e os dois assets da galeria retornam HTTP 200.
+- O feed ainda não tinha fotos selecionadas quando a seção foi implementada; a seleção no painel do MB Momentos continua pendente.
 
 ## 2026-10-30 — Vídeos locais e ampliador centralizado
 

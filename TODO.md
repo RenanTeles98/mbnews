@@ -8,8 +8,9 @@
 
 - [x] Adicionar chamada e galeria responsiva à página de outubro, com estados de carregamento, álbum vazio e falha de conexão.
 - [x] Conectar somente ao feed público do MB Momentos, que lista fotos aprovadas e selecionadas para a MB News.
+- [x] Publicar a edição e confirmar página, CSS e JavaScript em produção (deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ`, `READY`, commit `f643077`).
+- [x] Consultar erros de runtime da última hora; nenhum foi encontrado.
 - [ ] Selecionar no painel do MB Momentos as fotos aprovadas que devem ser exibidas; o feed ainda retorna zero fotos.
-- [ ] Publicar a edição após a atualização e confirmar o carregamento dos assets.
 
 ## Concluído — 2026-10-30 — Dia das Crianças em outubro
 

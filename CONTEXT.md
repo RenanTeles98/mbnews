@@ -13,6 +13,7 @@
 - As fotos são carregadas do feed público do MB Momentos, que retorna somente registros selecionados para o MB News e aprovados com consentimento. O link de convite do evento não é usado na página.
 - No momento da implementação, o feed de `outubro-rosa-2026` não tinha fotos selecionadas; a página mostra uma mensagem explicando que elas aparecerão após a seleção. Também há mensagens de carregamento e erro.
 - Arquivos alterados: `public/pages/mb-news-outubro-2026.html`, `public/assets/css/mb-news-event-gallery.css` e `public/assets/js/ui/mb-news-event-gallery.js`.
+- Publicado na Vercel: commit `f643077352afd92c09bef435fb3e65cb4d449da3`, deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ` (`READY`). A página, o CSS e o JavaScript retornam HTTP 200; a consulta de erros de runtime da última hora não encontrou erros.
 - Próximo passo: selecionar no painel do MB Momentos as fotos aprovadas que devem aparecer na edição e confirmar que o feed as entrega.
 
 ### Correção do vídeo e do modal do Dia das Crianças — 2026-10-30
