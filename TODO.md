@@ -12,12 +12,13 @@
 - [x] Publicar a edição e o CSS (deploy `dpl_8T8MdFWnEMyxt1dGR79Xd9C5EhmU`, commit `f9e4a22`) e liberar o frame do Drive na CSP (deploy `dpl_z9TiLGGDqvn5QJy3LbmymCAA8r2S`, commit `7d3cb79`); ambos `READY`.
 - [ ] Conferir a reprodução do vídeo em um navegador.
 
-## Em andamento — 2026-10-30 — Galeria do Dia das Crianças
+## Concluído — 2026-10-30 — Galeria do Dia das Crianças
 
 - [x] Receber e conferir a pasta do Drive: quatro fotos JPEG e dois vídeos.
 - [x] Baixar as quatro fotos para `public/images/mb-news/outubro/dia-das-criancas/`.
 - [x] Incluir os dois vídeos do Drive em players verticais 9:16 e adicionar a galeria responsiva de fotos.
-- [ ] Publicar a atualização e confirmar os arquivos em produção.
+- [x] Publicar e confirmar página, CSS e quatro fotos em produção; deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`), commit `2bc7c85`.
+- [ ] Conferir a reprodução dos players em um navegador.
 
 ## Concluído — 2026-10-30 — Cor verde no selo TotalPass
 

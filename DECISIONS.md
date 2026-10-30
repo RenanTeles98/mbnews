@@ -21,7 +21,7 @@ O arquivo tem cerca de 97 MB. A prévia do Drive evita copiar esse arquivo grand
 ## ADR-126: Exibir o vídeo do evento em retrato
 
 **Data:** 2026-10-30
-**Status:** Implementado localmente; publicação da galeria completa pendente.
+**Status:** Publicado na Vercel; commit `2bc7c85734f2ec5b56522b994632658bdbc61972`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`).
 
 ### Decisão
 
@@ -34,7 +34,7 @@ O usuário pediu os vídeos em formato vertical e a inclusão de todo o material
 ## ADR-127: Incluir todas as mídias da pasta do Dia das Crianças
 
 **Data:** 2026-10-30
-**Status:** Implementado localmente; publicação pendente.
+**Status:** Publicado na Vercel; commit `2bc7c85734f2ec5b56522b994632658bdbc61972`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`).
 
 ### Decisão
 

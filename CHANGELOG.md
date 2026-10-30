@@ -12,7 +12,7 @@
 
 - Incluídos os dois vídeos da pasta do Drive em players 9:16 e as quatro fotos originais na seção de outubro.
 - As fotos ficam em `public/images/mb-news/outubro/dia-das-criancas/`; os vídeos continuam incorporados do Drive e carregam sob demanda.
-- A publicação desta atualização está pendente.
+- Publicado pela Vercel, commit `2bc7c85`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`). Página, CSS e fotos retornaram HTTP 200.
 
 ## 2026-10-30 — Selo TotalPass verde em outubro
 

@@ -20,7 +20,8 @@
 - A pasta do Drive informada pelo usuário contém quatro fotos JPEG e dois vídeos (MOV e MP4). As quatro fotos foram salvas em `public/images/mb-news/outubro/dia-das-criancas/`.
 - A seção agora inclui os dois players do Drive em quadros 9:16 e uma galeria responsiva com as quatro fotos, descrições acessíveis e carregamento sob demanda. Os vídeos originais permanecem no Drive.
 - Arquivos de página e estilo: `public/pages/mb-news-outubro-2026.html` e `public/assets/css/mb-news-childrens-day.css`; a seção segue antes de Halloween.
-- Próximo passo recomendado: publicar a galeria e conferir os players no endereço público.
+- Publicado na Vercel no commit `2bc7c85734f2ec5b56522b994632658bdbc61972`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`). Página, CSS e quatro fotos retornam HTTP 200; a página contém os dois vídeos e mantém Halloween depois da seção.
+- Próximo passo recomendado: validar a reprodução dos players em um navegador.
 
 ### Continuação da sessão 2026-10-30 — Selo TotalPass verde
 
