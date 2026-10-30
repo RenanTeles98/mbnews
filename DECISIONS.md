@@ -2325,3 +2325,20 @@ O link de convite do evento também permite enviar fotos. Colocá-lo no MB News 
 ### Alternativas consideradas
 
 Incorporar o link de convite ou listar diretamente todo o álbum da equipe; rejeitados por não limitar a publicação às fotos aprovadas e autorizadas para uso na edição. No momento da implementação, o feed não tinha fotos selecionadas, então a seção informa que o conteúdo aparecerá após a seleção.
+
+## ADR-083: Reforço visual da galeria do Outubro Rosa
+
+**Data:** 2026-10-30
+**Status:** Implementado localmente; publicação após revisão.
+
+### Decisão
+
+Usar o fundo de Outubro Rosa já presente na edição, combinado com um cartaz decorativo criado em CSS, um CTA mais visível e um cartão elaborado para o estado sem fotos. A arte decorativa é identificada como ilustração e não como fotografia do evento.
+
+### Motivo
+
+A primeira versão tinha uma faixa lisa e uma mensagem simples, com pouco destaque em relação às demais seções. A composição acrescenta contraste e hierarquia visual sem apresentar imagens que não tenham sido aprovadas ou selecionadas.
+
+### Alternativas consideradas
+
+Usar fotos genéricas como se fossem registros do evento foi descartado para não confundir a equipe. A inclusão de fotos reais continua condicionada à seleção no painel do MB Momentos.

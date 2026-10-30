@@ -10,6 +10,7 @@
 ### Galeria do Outubro Rosa — 2026-10-30
 
 - A edição de outubro agora apresenta uma chamada “Outubro Rosa. Nossos registros.” depois da seção de saúde e antes da entrevista, com o botão “Ver álbum da equipe” levando à galeria.
+- O visual da chamada foi reforçado com a arte rosa da edição, um cartaz ilustrado, CTA em destaque e um estado vazio em formato de cartão; o cartão não simula fotos do evento.
 - As fotos são carregadas do feed público do MB Momentos, que retorna somente registros selecionados para o MB News e aprovados com consentimento. O link de convite do evento não é usado na página.
 - No momento da implementação, o feed de `outubro-rosa-2026` não tinha fotos selecionadas; a página mostra uma mensagem explicando que elas aparecerão após a seleção. Também há mensagens de carregamento e erro.
 - Arquivos alterados: `public/pages/mb-news-outubro-2026.html`, `public/assets/css/mb-news-event-gallery.css` e `public/assets/js/ui/mb-news-event-gallery.js`.

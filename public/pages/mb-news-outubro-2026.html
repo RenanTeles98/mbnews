@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="/assets/css/mb-news-interview.css" />
   <link rel="stylesheet" href="/assets/css/mb-news-outubro.css?v=20261030-totalpass-green" />
   <link rel="stylesheet" href="/assets/css/mb-news-childrens-day.css?v=20261030-local-video-centered-lightbox" />
-  <link rel="stylesheet" href="/assets/css/mb-news-event-gallery.css?v=20261030-rosa-records" />
+  <link rel="stylesheet" href="/assets/css/mb-news-event-gallery.css?v=20261030-rosa-gallery-v2" />
   <link rel="stylesheet" href="/assets/css/mb-news-halloween.css?v=20261028" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="/assets/js/ui/mb-news-october-promotions.js" defer></script>
   <script src="/assets/js/ui/mb-news-october-birthdays.js" defer></script>
   <script src="/assets/js/ui/mb-news-interview.js" defer></script>
-  <script src="/assets/js/ui/mb-news-event-gallery.js?v=20261030-rosa-records" defer></script>
+  <script src="/assets/js/ui/mb-news-event-gallery.js?v=20261030-rosa-gallery-v2" defer></script>
   <script src="/assets/js/ui/mb-news-childrens-day.js?v=20261030-local-video-centered-lightbox" defer></script>
   <script src="/assets/js/ui/mb-news-halloween-carousel.js?v=20261028" defer></script>
 </head>
@@ -171,17 +171,44 @@
 <section class="event-gallery" id="outubro-rosa-registros" data-event-gallery="outubro-rosa-2026" data-event-source="https://mb-finance-momentos.renanteles98.chatgpt.site" aria-labelledby="event-gallery-title">
   <div class="event-gallery-feature">
     <div class="event-gallery-copy">
-      <p class="event-gallery-tag"><span aria-hidden="true">♥</span> Encontro da equipe</p>
-      <h2 id="event-gallery-title">Outubro Rosa.<br />Nossos registros.</h2>
-      <p class="event-gallery-description">Veja os momentos do nosso encontro que a equipe autorizou para esta edição.</p>
-      <p class="event-gallery-meta"><span>Na MB Finance</span><span>Outubro Rosa · 2026</span></p>
-      <a class="event-gallery-link" href="#event-gallery-grid">Ver álbum da equipe <span aria-hidden="true">↗</span></a>
+      <p class="event-gallery-tag"><span aria-hidden="true">♥</span> Encontro da equipe <span class="event-gallery-tag-divider" aria-hidden="true"></span> Outubro 2026</p>
+      <h2 id="event-gallery-title">Outubro Rosa.<br /><span>Nossos registros.</span></h2>
+      <p class="event-gallery-description">Um encontro de cuidado, conversa e conexão. Relembre os momentos que compartilhamos na MB Finance.</p>
+      <div class="event-gallery-meta" aria-label="Detalhes do encontro">
+        <span class="event-gallery-meta-location">MB Finance</span>
+        <span class="event-gallery-meta-edition">Edição especial · Outubro Rosa</span>
+      </div>
+      <a class="event-gallery-link" href="#event-gallery-grid"><span>Ver álbum da equipe</span><span class="event-gallery-link-arrow" aria-hidden="true">↗</span></a>
+    </div>
+    <div class="event-gallery-art" aria-hidden="true">
+      <div class="event-gallery-poster">
+        <span class="event-gallery-poster-kicker">MB FINANCE · 2026</span>
+        <span class="event-gallery-poster-mark">♥</span>
+        <strong>Um mês<br />de cuidado<br /><em>em equipe.</em></strong>
+        <span class="event-gallery-poster-footer">OUTUBRO ROSA <span>✳</span> JUNTOS POR MAIS CUIDADO</span>
+      </div>
+      <span class="event-gallery-art-caption">Memórias que nos aproximam</span>
     </div>
   </div>
   <div class="event-gallery-content" id="event-gallery-grid">
-    <p class="event-gallery-content-label">Fotos do encontro</p>
+    <div class="event-gallery-content-heading">
+      <div>
+        <p class="event-gallery-content-eyebrow">Memórias da equipe</p>
+        <h3 class="event-gallery-content-label">Fotos do encontro</h3>
+      </div>
+      <span class="event-gallery-content-note"><span aria-hidden="true">♥</span> Registros autorizados pela equipe</span>
+    </div>
     <div class="event-gallery-grid" data-event-photos></div>
-    <p class="event-gallery-status" data-event-gallery-status role="status" aria-live="polite">Carregando os registros…</p>
+    <div class="event-gallery-status" data-event-gallery-status role="status" aria-live="polite">
+      <span class="event-gallery-status-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      </span>
+      <span class="event-gallery-status-copy">
+        <span class="event-gallery-status-label">Álbum em atualização</span>
+        <span class="event-gallery-status-message" data-event-gallery-status-text>Carregando os registros do encontro…</span>
+      </span>
+      <span class="event-gallery-status-edition" aria-hidden="true">OUT<br />2026</span>
+    </div>
   </div>
 </section>
 <!-- ENTREVISTA DE OUTUBRO -->

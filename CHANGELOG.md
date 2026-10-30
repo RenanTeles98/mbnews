@@ -5,6 +5,7 @@
 ## 2026-10-30 — Registros do Outubro Rosa
 
 - Adicionada à edição de outubro uma chamada com galeria responsiva e mensagens de carregamento, álbum vazio ou falha.
+- Refinado o layout com a arte de Outubro Rosa, cartaz ilustrado, botão destacado e cartão de estado vazio responsivo.
 - As fotos são lidas do feed público do MB Momentos, que entrega apenas imagens aprovadas e selecionadas para a MB News; o link com capacidade de envio não é exposto.
 - Publicado na Vercel no commit `f643077`, deploy `dpl_AHHCmi5RXaEhNQkFpqQckc1DsutJ` (`READY`); a página e os dois assets da galeria retornam HTTP 200.
 - O feed ainda não tinha fotos selecionadas quando a seção foi implementada; a seleção no painel do MB Momentos continua pendente.

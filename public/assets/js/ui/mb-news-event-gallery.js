@@ -1,15 +1,20 @@
 (function () {
   'use strict';
 
-  const emptyMessage = 'As fotos aprovadas e selecionadas para a MB News aparecerão aqui.';
-  const errorMessage = 'Não foi possível carregar os registros agora. Recarregue a página para tentar novamente.';
+  const emptyMessage = 'As fotos aprovadas para a MB News aparecerão aqui assim que forem selecionadas para esta edição.';
+  const errorMessage = 'Não conseguimos carregar o álbum agora. Tente atualizar a página em instantes.';
 
   document.querySelectorAll('[data-event-gallery]').forEach(async function (section) {
     const grid = section.querySelector('[data-event-photos]');
     const status = section.querySelector('[data-event-gallery-status]');
+    const statusMessage = section.querySelector('[data-event-gallery-status-text]');
     const setStatus = function (message) {
       if (!status) return;
-      status.textContent = message;
+      if (statusMessage) {
+        statusMessage.textContent = message;
+      } else {
+        status.textContent = message;
+      }
       status.hidden = !message;
     };
 
