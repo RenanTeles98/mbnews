@@ -5,6 +5,162 @@
 
 ---
 
+## ADR-125: Incorporar o vídeo do Dia das Crianças pelo player do Drive
+
+**Data:** 2026-10-30
+**Status:** Publicado na Vercel; commits `f9e4a22` e `7d3cb79`, deployments `dpl_8T8MdFWnEMyxt1dGR79Xd9C5EhmU` e `dpl_z9TiLGGDqvn5QJy3LbmymCAA8r2S` (`READY`).
+
+### Decisão
+
+Adicionar a seção do Dia das Crianças antes do especial de Halloween e carregar o vídeo `RELACIONAMENTOGINCANA.MOV` por uma prévia incorporada do Drive, com `loading="lazy"`. Na CSP global, permitir frames somente de `https://drive.google.com`.
+
+### Motivo e alternativas consideradas
+
+O arquivo tem cerca de 97 MB. A prévia do Drive evita copiar esse arquivo grande para os assets públicos da MB News e só solicita o player quando a seção se aproxima da tela. A diretiva anterior `frame-src 'none'` bloqueava a incorporação; liberar apenas a origem do Drive habilita o player sem abrir frames para outros domínios. O usuário confirmou que o vídeo está público. Hospedar uma versão comprimida localmente também foi considerado.
+
+## ADR-126: Exibir o vídeo do evento em retrato
+
+**Data:** 2026-10-30
+**Status:** Implementado localmente; publicação da galeria completa pendente.
+
+### Decisão
+
+Usar proporção 9:16 nos dois players de vídeo e organizá-los com as fotos da pasta do evento em uma seção responsiva.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu os vídeos em formato vertical e a inclusão de todo o material da pasta. Os vídeos continuam hospedados no Drive e são incorporados sob demanda; as quatro fotos ficam nos assets locais para carregar pela própria MB News. Uma galeria que dependesse do Drive foi descartada para deixar as imagens sob controle do site e com caminhos estáveis.
+
+## ADR-127: Incluir todas as mídias da pasta do Dia das Crianças
+
+**Data:** 2026-10-30
+**Status:** Implementado localmente; publicação pendente.
+
+### Decisão
+
+Adicionar à seção de outubro as quatro fotos da pasta em `public/images/mb-news/outubro/dia-das-criancas/` e incorporar os dois vídeos do Drive em proporção 9:16.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu que todo o material enviado entrasse na seção. As fotos são arquivos leves e ficam disponíveis como assets locais; os vídeos permanecem hospedados no Drive, evitando copiar o MOV de aproximadamente 97 MB para o site. As quatro fotos são exibidas por inteiro sem corte, e os players carregam sob demanda.
+
+## ADR-124: Usar verde-menta no selo TotalPass de outubro
+
+**Data:** 2026-10-30
+**Status:** Publicado na Vercel; commit `dad8237eaa3c2765d72622504538502e090b4bff`, deploy `dpl_HxPLwT6HVi1Kcpq56Pb4aA9azEPC` (`READY`).
+
+### Decisão
+
+Aplicar `#8de1b7` ao texto, ícone e borda do selo TotalPass da edição de outubro, restringindo a regra a esse selo.
+
+### Motivo e alternativas consideradas
+
+O tema de outubro aplica rosa aos rótulos de seção. O usuário pediu verde para o selo TotalPass; o verde-menta usado na mesma identidade do módulo foi escolhido, preservando o rosa nos demais rótulos.
+
+## ADR-123: Usar o fundo de academia de setembro no TotalPass de outubro
+
+**Data:** 2026-10-30
+**Status:** Publicado na Vercel; commit `186be1d0df46d1b2131346f7823084e50bf56f2d`, deploy `dpl_7Gki5VNzPb4Vm3eCmLXh5xUkNFXW` (`READY`).
+
+### Decisão
+
+Usar na seção TotalPass de outubro a mesma imagem `/images/mb-news/junho/totalpass/totalpass-gym-background.png` e a mesma camada azul-petróleo aplicadas na edição de setembro.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu o mesmo fundo da edição de setembro. Um override específico de outubro substituía a imagem por um degradê rosa; ele foi trocado pela composição existente de setembro. Manter o fundo rosa apenas para outubro foi descartado para preservar a identidade solicitada.
+
+## ADR-122: Reutilizar a identidade visual do pódio TotalPass de setembro em outubro
+
+**Data:** 2026-10-30
+**Status:** Publicado na Vercel; commit `99051242d7853f3b60b4207e74213becb3c21060`, deploy `dpl_9HLVmNHhfVwnNksEeEiMJsau8iBR` (`READY`).
+
+### Decisão
+
+Usar a mesma composição de três cartões, retratos, etiquetas de posição e cores do pódio TotalPass de setembro para o ranking de outubro. Usar os retratos encontrados na pasta do Drive indicada pelo usuário e guardá-los em `public/images/mb-news/outubro/totalpass/`.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu que outubro mantivesse a identidade da seção de setembro e que os retratos viessem do Drive. Os arquivos da pasta indicada foram identificados pelos nomes e aplicados às pessoas correspondentes. Retratos locais de outras pessoas foram descartados para evitar qualquer associação incorreta.
+
+## ADR-121: Selecionar a edição mensal pela data atual
+
+**Data:** 2026-10-29
+**Status:** Publicado na Vercel; commit `e646554564405811a107aaaee36c22c007d97ec4`, deploy `dpl_ERLCkYgvrwYhsULdP1bLK1Qz8rf5` (`READY`).
+
+### Decisão
+
+A página raiz consulta a edição do mês atual usando o fuso `America/Sao_Paulo` e redireciona para ela quando publicada. Se ainda não existir, procura para trás a edição publicada mais recente.
+
+### Motivo e alternativas consideradas
+
+A raiz antes carregava agosto fixamente. A seleção no navegador evita manter um mês desatualizado no endereço principal e não exige editar a raiz em cada virada de mês. Usar o fuso de São Paulo mantém a seleção alinhada ao calendário local da equipe. O fallback para a última edição publicada respeita a decisão de deixar novembro indisponível até a liberação.
+
+## ADR-120: Manter novembro indisponível até a liberação
+
+**Data:** 2026-10-29
+**Status:** Publicado na Vercel; commit `d4569eb7a9302d4d186db8710ecb2e6e3d8e3e0d`, deploy `dpl_2qi4bpuq21SmSKmQ8m3dxvvm4Ypn` (`READY`).
+
+### Decisão
+
+Até nova solicitação, manter o botão Novembro desativado nas edições de abril a outubro e remover a página de novembro e seus assets da pasta pública. O conteúdo permanece recuperável pelo histórico Git.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu que novembro não ficasse disponível na versão pública antes da hora. Apenas tirar o atalho deixaria a página acessível por URL direta; por isso a página e seus arquivos exclusivos também saíram de `public/`. Apagar o conteúdo do histórico foi descartado para permitir que a edição seja restaurada quando for liberada.
+
+## ADR-119: Feedback de upload, idempotência e fechamento isolado da prévia
+
+**Data:** 2026-10-28
+**Status:** Publicado no Sites, versão 8, commit `a7f146567cc0a6331d8cda1ed059b6a55e832958`.
+
+### Decisão
+
+Mostrar estados visuais claros de sucesso e erro no formulário, informando que os arquivos aguardam aprovação. Identificar cada tentativa por chave de idempotência persistida no D1 com unicidade por evento, bloquear seleção repetida na fila e deduplicar IDs na paginação do álbum. Eventos de fechar/cancelar o visualizador da foto param de propagar para o diálogo do álbum.
+
+### Motivo e alternativas consideradas
+
+O envio não deve depender apenas do estado de cada linha da fila para comunicar o resultado. Requisições repetidas por clique ou instabilidade de rede precisam reutilizar o mesmo registro; a restrição única no banco complementa o bloqueio na interface. A prévia é um diálogo dentro do álbum, então seu fechamento precisa preservar o diálogo pai. Remover fotos já gravadas automaticamente foi descartado para não apagar registros sem revisão da organização.
+
+## ADR-118: Cache privado para fotos do álbum
+
+**Data:** 2026-10-28
+**Status:** Publicado no Sites, versão 7, commit `c426e44388e1f2e5c7b7cf7b843f992d0d88050b`.
+
+### Decisão
+
+Permitir que respostas inline de imagens usem o cache privado do navegador por 24 horas e exijam revalidação após esse prazo. Downloads originais e vídeos permanecem `no-store`; respostas de fotos não entram em caches compartilhados.
+
+### Motivo e alternativas consideradas
+
+O usuário pediu que as imagens ficassem em cache para facilitar o retorno ao álbum. A política HTTP padrão do navegador evita criar um cache próprio em JavaScript, mantém os arquivos no perfil local e respeita o tempo definido para atualização. Um cache público foi descartado porque os álbuns são acessados por link privado.
+
+## ADR-117: Pré-visualização de HEIC/HEIF no navegador
+
+**Data:** 2026-10-28
+**Status:** Publicado no Sites, versão 6, commit `e0e39a33a0bbdd1ba9d4ee209fea31ddfaa6fc29`.
+
+### Decisão
+
+Adicionar a conversão HEIC/HEIF para JPEG no navegador, sob demanda, para exibir fotos nos cartões e na ampliação do álbum. A biblioteca é importada quando um cartão HEIC/HEIF se aproxima da tela. O objeto original no R2 e o botão de download continuam sem alteração.
+
+### Motivo e alternativas consideradas
+
+As fotos existentes já foram recebidas e armazenadas em HEIC/HEIF, e o navegador não exibia esse formato no componente atual. Converter no navegador atende tanto as fotos já armazenadas quanto os envios futuros, sem criar cópias transformadas no armazenamento. Uma conversão no envio foi considerada, mas não resolveria o histórico existente.
+
+## ADR-116: Aprovação prévia e exclusão de registros no MB Momentos
+
+**Data:** 2026-10-28
+**Status:** Publicado no Sites, versão 5, commit `06a8bd745395b79c45ed80a093b16e5efc4fb507`.
+
+### Decisão
+
+Adicionar um estado `approved` separado da seleção/autorização da MB News. Todo upload novo começa pendente; os feeds e arquivos públicos só liberam registros aprovados. O painel restrito permite aprovar, retirar aprovação e apagar, com confirmação antes da exclusão permanente de D1 e R2. A coluna nova é adicionada sob demanda com valor padrão aprovado para manter visíveis os registros que já existiam.
+
+### Motivo e alternativas consideradas
+
+O pedido exige que a organização aprove os arquivos antes de publicá-los no álbum da equipe e também solicita uma ação de apagar. A aprovação no servidor cobre lista, arquivo e feed editorial, enquanto a seleção da MB News continua uma autorização distinta. A ocultação reversível permanece disponível para moderação temporária; apagar é a ação explícita de remoção permanente.
+
 ## ADR-115: Especial de Halloween como última seção de outubro
 
 **Data:** 2026-10-28

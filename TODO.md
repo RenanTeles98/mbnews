@@ -4,6 +4,91 @@
 
 ---
 
+## Concluído — 2026-10-30 — Dia das Crianças em outubro
+
+- [x] Adicionar a seção responsiva e incluir o link no menu e no rodapé.
+- [x] Incorporar o player de prévia do vídeo do Drive com carregamento sob demanda; manter o original de 97 MB fora dos assets estáticos.
+- [x] Com confirmação do usuário de que o vídeo está público, liberar `drive.google.com` na diretiva CSP `frame-src`.
+- [x] Publicar a edição e o CSS (deploy `dpl_8T8MdFWnEMyxt1dGR79Xd9C5EhmU`, commit `f9e4a22`) e liberar o frame do Drive na CSP (deploy `dpl_z9TiLGGDqvn5QJy3LbmymCAA8r2S`, commit `7d3cb79`); ambos `READY`.
+- [ ] Conferir a reprodução do vídeo em um navegador.
+
+## Em andamento — 2026-10-30 — Galeria do Dia das Crianças
+
+- [x] Receber e conferir a pasta do Drive: quatro fotos JPEG e dois vídeos.
+- [x] Baixar as quatro fotos para `public/images/mb-news/outubro/dia-das-criancas/`.
+- [x] Incluir os dois vídeos do Drive em players verticais 9:16 e adicionar a galeria responsiva de fotos.
+- [ ] Publicar a atualização e confirmar os arquivos em produção.
+
+## Concluído — 2026-10-30 — Cor verde no selo TotalPass
+
+- [x] Aplicar verde-menta ao texto, ícone e borda do selo TotalPass em outubro.
+- [x] Atualizar o parâmetro de versão do CSS e publicar.
+- [x] Confirmar edição e CSS em produção; deploy `dpl_HxPLwT6HVi1Kcpq56Pb4aA9azEPC` (`READY`), commit `dad8237`.
+
+## Concluído — 2026-10-30 — Fundo do TotalPass em outubro
+
+- [x] Aplicar à seção de outubro a imagem de academia e a sobreposição usadas em setembro.
+- [x] Atualizar o parâmetro de versão do CSS para evitar cache antigo.
+- [x] Publicar e confirmar edição, CSS e imagem em produção.
+- [x] Deploy `dpl_7Gki5VNzPb4Vm3eCmLXh5xUkNFXW` (`READY`), commit `186be1d`.
+
+## Concluído — 2026-10-30 — Ranking TotalPass de outubro
+
+- [x] Inserir os três nomes e contagens (21, 20 e 17 check-ins) no pódio da edição de outubro.
+- [x] Aplicar a composição visual do pódio TotalPass de setembro.
+- [x] Salvar os três retratos da pasta do Drive em `public/images/mb-news/outubro/totalpass/`.
+- [x] Publicar e confirmar a edição, o CSS e as fotos em produção.
+- [x] Deploy `dpl_9HLVmNHhfVwnNksEeEiMJsau8iBR` (`READY`), commit `9905124`.
+
+## Concluído — 2026-10-29 — Novembro indisponível na MB News
+
+- [x] Desativar o botão Novembro nas edições públicas de abril a outubro.
+- [x] Retirar da pasta pública a página de novembro, sua folha CSS e o cartaz.
+- [x] Publicar na Vercel e confirmar a URL de novembro com 404 e outubro com 200.
+- [x] Manter a edição recuperável no histórico Git, commit anterior `1838de4`.
+- [x] Deploy `dpl_2qi4bpuq21SmSKmQ8m3dxvvm4Ypn` (`READY`), commit `d4569eb`.
+
+## Concluído — 2026-10-29 — Edição atual na página raiz
+
+- [x] Trocar a edição de agosto fixa por seleção da edição do mês atual no fuso de São Paulo.
+- [x] Quando o mês atual ainda não estiver publicado, abrir a edição publicada mais recente (outubro enquanto novembro segue indisponível).
+- [x] Publicar e confirmar a raiz, assets, outubro (200) e novembro (404) em produção.
+- [x] Deploy `dpl_ERLCkYgvrwYhsULdP1bLK1Qz8rf5` (`READY`), commit `e646554`.
+
+## Concluído — 2026-10-28 — Uploads e visualizador do MB Momentos
+
+- [x] Mostrar confirmação destacada para envios bem-sucedidos e mensagens de erro acessíveis.
+- [x] Impedir a repetição da mesma seleção e tornar tentativas repetidas de upload idempotentes no D1.
+- [x] Evitar cartões duplicados ao paginar e bloquear solicitações simultâneas da mesma página.
+- [x] Fechar a prévia sem fechar o modal do álbum.
+- [x] Compilar e publicar a versão 8 no Sites; commit `a7f1465`, deployment `appgdep_6ae256827f408191b85301538a6021b4` concluído.
+
+## Concluído — 2026-10-28 — Cache de fotos do álbum
+
+- [x] Ativar cache privado do navegador para imagens inline por 24 horas, com revalidação depois do prazo.
+- [x] Manter vídeos e downloads originais sem cache.
+- [x] Compilar e publicar a versão 7 no Sites; commit `c426e44`, deployment `appgdep_6ae2521c8eb881918f1e24223afbd93e` concluído.
+
+As fotos podem ser reutilizadas pelo mesmo navegador ao voltar ao álbum durante o período de cache.
+
+## Concluído — 2026-10-28 — Prévia de fotos HEIC/HEIF
+
+- [x] Exibir HEIC/HEIF nos cartões do álbum e no visualizador ampliado usando uma prévia JPEG no navegador.
+- [x] Carregar o decodificador sob demanda e preservar o original para download.
+- [x] Compilar e publicar a versão 6 no Sites; commit `e0e39a3`, deployment `appgdep_6ae25104aa308191915ee453151609a8a` concluído.
+
+Próximo passo: conferir as fotos HEIC já recebidas no painel e no álbum compartilhado.
+
+## Concluído — 2026-10-28 — Moderação do MB Momentos
+
+- [x] Manter novos uploads pendentes até aprovação explícita no painel `/admin`.
+- [x] Restringir álbum público, arquivo e feed da MB News a registros aprovados.
+- [x] Adicionar fila de pendências e ações de aprovar, revogar e apagar com confirmação.
+- [x] Preservar os registros existentes como aprovados na migração do D1.
+- [x] Compilar e publicar a versão 5 pelo Sites; commit `06a8bd7`, deploy `appgdep_6ae249c98fe48191b3327798e44ee6d6` concluído.
+
+Próximos itens do evento: receber data e horário, revisar em aparelho celular e selecionar registros para a edição de outubro.
+
 ## Concluído — 2026-10-28 — Especial de Halloween em outubro
 
 - [x] Integrar ao fim de outubro as cinco indicações de filmes, com sinopses, tipos, níveis de terror e cartazes do PDF.

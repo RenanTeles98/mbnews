@@ -2,6 +2,66 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-10-30 — Seção do Dia das Crianças em outubro
+
+- Adicionada seção responsiva com player de prévia da gincana hospedada no Drive, além dos atalhos no menu e no rodapé.
+- Permitido `drive.google.com` como origem de frames na CSP para habilitar o player; usuário confirmou que o vídeo está público.
+- Publicado pela Vercel: seção no commit `f9e4a22` / deploy `dpl_8T8MdFWnEMyxt1dGR79Xd9C5EhmU` e ajuste de CSP no commit `7d3cb79` / deploy `dpl_z9TiLGGDqvn5QJy3LbmymCAA8r2S`; ambos `READY`.
+
+## 2026-10-30 — Galeria completa do Dia das Crianças
+
+- Incluídos os dois vídeos da pasta do Drive em players 9:16 e as quatro fotos originais na seção de outubro.
+- As fotos ficam em `public/images/mb-news/outubro/dia-das-criancas/`; os vídeos continuam incorporados do Drive e carregam sob demanda.
+- A publicação desta atualização está pendente.
+
+## 2026-10-30 — Selo TotalPass verde em outubro
+
+- Aplicado verde-menta ao texto, ícone e borda do selo TotalPass.
+- Publicado pela Vercel, commit `dad8237`, deploy `dpl_HxPLwT6HVi1Kcpq56Pb4aA9azEPC` (`READY`).
+
+## 2026-10-30 — Fundo TotalPass de setembro aplicado em outubro
+
+- Restaurado no bloco de outubro o fundo de academia com sobreposição azul-petróleo usado em setembro.
+- Publicado pela Vercel, commit `186be1d`, deploy `dpl_7Gki5VNzPb4Vm3eCmLXh5xUkNFXW` (`READY`).
+
+## 2026-10-30 — Ranking TotalPass de outubro publicado
+
+- Adicionados ao bloco de outubro os três destaques, seus check-ins e os retratos do Drive; o pódio segue a composição visual de setembro.
+- Publicado pela Vercel, commit `9905124`, deploy `dpl_9HLVmNHhfVwnNksEeEiMJsau8iBR` (`READY`).
+
+## 2026-10-29 — Página raiz abre a edição mensal atual
+
+- A raiz detecta o mês corrente no fuso de São Paulo e redireciona para a edição correspondente; se ela não estiver publicada, usa a edição publicada mais recente.
+- Publicada na Vercel, commit `e646554`, deploy `dpl_ERLCkYgvrwYhsULdP1bLK1Qz8rf5` (`READY`). Outubro responde 200 e novembro continua 404.
+
+## 2026-10-29 — Novembro removido da versão pública da MB News
+
+- Desativados os atalhos de novembro e removidos sua página e assets exclusivos de `public/` até a liberação.
+- Confirmado em produção: novembro responde 404 e outubro, incluindo Halloween, responde 200.
+- Publicado pela Vercel, commit `d4569eb`, deploy `dpl_2qi4bpuq21SmSKmQ8m3dxvvm4Ypn` (`READY`).
+
+## 2026-10-28 — Confirmação de uploads no MB Momentos
+
+- Adicionadas mensagens destacadas de sucesso e erro, com aviso de que os arquivos aguardam aprovação.
+- Evitados envios repetidos por reenvio, seleções duplicadas e chamadas concorrentes da paginação; o X da prévia mantém o álbum aberto.
+- Publicada a versão 8 do Site, commit `a7f1465`, deployment `appgdep_6ae256827f408191b85301538a6021b4` concluído.
+
+## 2026-10-28 — Cache de fotos do álbum MB Momentos
+
+- Ativado cache privado de 24 horas para fotos inline do álbum. Downloads originais e vídeos seguem sem cache.
+- Publicada a versão 7 do Site, commit `c426e44`, deployment `appgdep_6ae2521c8eb881918f1e24223afbd93e` concluído.
+
+## 2026-10-28 — Prévia de fotos HEIC/HEIF no MB Momentos
+
+- Adicionada prévia JPEG no navegador para os cartões e o visualizador do álbum; o download do original foi mantido.
+- Publicada a versão 6 do Site, commit `e0e39a3`, deployment `appgdep_6ae25104aa308191915ee453151609a8a` concluído.
+
+## 2026-10-28 — Aprovação de fotos no MB Momentos
+
+- Novos uploads ficam pendentes até aprovação no painel; álbum público, arquivos e feed editorial respeitam a aprovação.
+- Adicionadas ações de aprovação, revogação e exclusão confirmada no admin. Fotos existentes mantêm aprovação na migração do D1.
+- Publicada versão 5 do Site no commit `06a8bd7`; deploy `appgdep_6ae249c98fe48191b3327798e44ee6d6` concluído.
+
 ## 2026-10-28 — Especial de Halloween na edição de outubro
 
 - Adicionada ao fim da edição de outubro uma seção de Halloween com carrossel manual de cinco filmes, cartazes e informações extraídas do PDF. Estilos e comportamento ficam em arquivos externos. Publicado no commit `e9865da`; Vercel `dpl_CHyQ2rXpNS7G5yXx8174N79auQdS` (`READY`).

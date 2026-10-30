@@ -1,11 +1,107 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-10-28
+> Última atualização: 2026-10-30
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Continuação da sessão 2026-10-30 — Dia das Crianças em outubro
+
+- A seção da gincana de relacionamento do Dia das Crianças foi adicionada antes do especial de Halloween, com player do Drive carregado sob demanda. O usuário confirmou que o vídeo está público.
+- A CSP agora permite frames de `https://drive.google.com`; o player antes era bloqueado por `frame-src 'none'`.
+- HTML: `public/pages/mb-news-outubro-2026.html`; CSS: `public/assets/css/mb-news-childrens-day.css`; cabeçalho de segurança: `vercel.json`.
+- Publicado em produção: seção no commit `f9e4a22`, deploy `dpl_8T8MdFWnEMyxt1dGR79Xd9C5EhmU` (`READY`); ajuste de CSP no commit `7d3cb79`, deploy `dpl_z9TiLGGDqvn5QJy3LbmymCAA8r2S` (`READY`). Edição e CSS responderam HTTP 200; o CSP retornado inclui `frame-src https://drive.google.com`.
+- Próximo passo recomendado: conferir a reprodução do vídeo no site em um navegador.
+
+### Continuação — Galeria completa do Dia das Crianças
+
+- A pasta do Drive informada pelo usuário contém quatro fotos JPEG e dois vídeos (MOV e MP4). As quatro fotos foram salvas em `public/images/mb-news/outubro/dia-das-criancas/`.
+- A seção agora inclui os dois players do Drive em quadros 9:16 e uma galeria responsiva com as quatro fotos, descrições acessíveis e carregamento sob demanda. Os vídeos originais permanecem no Drive.
+- Arquivos de página e estilo: `public/pages/mb-news-outubro-2026.html` e `public/assets/css/mb-news-childrens-day.css`; a seção segue antes de Halloween.
+- Próximo passo recomendado: publicar a galeria e conferir os players no endereço público.
+
+### Continuação da sessão 2026-10-30 — Selo TotalPass verde
+
+- O selo TotalPass da edição de outubro usa verde-menta `#8de1b7` no texto e no ícone, com borda combinando. A regra é restrita ao selo para preservar as demais cores do tema.
+- Publicação Vercel `dpl_HxPLwT6HVi1Kcpq56Pb4aA9azEPC`, commit `dad8237eaa3c2765d72622504538502e090b4bff`, status `READY`.
+- Verificados em produção: a edição e o CSS atualizado retornam 200; a folha inclui a regra verde para o selo TotalPass.
+
+### Continuação da sessão 2026-10-30 — Fundo do TotalPass em outubro
+
+- O fundo da seção TotalPass de outubro agora usa a mesma imagem de academia e a mesma sobreposição azul-petróleo da edição de setembro. O tema de outubro estava sobrescrevendo o fundo com um degradê rosa.
+- Publicação Vercel `dpl_7Gki5VNzPb4Vm3eCmLXh5xUkNFXW`, commit `186be1d0df46d1b2131346f7823084e50bf56f2d`, status `READY`.
+- Confirmado em produção: edição e CSS atualizados retornam 200, a página aponta para a nova versão do CSS e o fundo de academia retorna 200.
+
+### Sessão 2026-10-30 — Ranking TotalPass de outubro
+
+- O pódio de outubro agora mostra Maria Clara de Faria Seixas (21 check-ins), Willian Silva da Rocha Amaral (20) e Luan da Silva Carvalho (17), com dados do relatório gerado em 30/10/2026 às 12h43.
+- A composição segue o pódio TotalPass de setembro. Os três retratos foram selecionados na pasta do Drive indicada pelo usuário e salvos em `public/images/mb-news/outubro/totalpass/`.
+- Publicação Vercel `dpl_9HLVmNHhfVwnNksEeEiMJsau8iBR`, commit `99051242d7853f3b60b4207e74213becb3c21060`, status `READY`.
+- Verificados em produção: edição de outubro, CSS e os três retratos retornam HTTP 200; nomes e contagens aparecem no HTML.
+
+Próximo passo recomendado: atualizar o pódio quando o próximo ranking TotalPass estiver disponível.
+
+### Sessão 2026-10-29 — Abertura automática da edição atual
+
+- A página raiz agora identifica o mês corrente no fuso `America/Sao_Paulo` e redireciona para a edição correspondente quando ela está publicada.
+- Quando a edição corrente ainda não existe, procura a edição publicada mais recente. Em outubro, abre `public/pages/mb-news-outubro-2026.html`; novembro continua indisponível até ser publicado.
+- Publicação Vercel `dpl_ERLCkYgvrwYhsULdP1bLK1Qz8rf5`, commit `e646554564405811a107aaaee36c22c007d97ec4`, status `READY`, alias `mbnews.vercel.app`.
+- Verificados em produção: raiz e assets do redirecionamento retornam 200; outubro retorna 200 com Halloween; novembro continua 404.
+
+Próximo passo recomendado: publicar uma edição mensal quando estiver pronta; a raiz passará a selecioná-la automaticamente no mês correspondente.
+
+### Sessão 2026-10-29 — Novembro ainda não liberado na MB News
+
+- O atalho de novembro foi desativado nas edições de abril a outubro. A página, a folha CSS e o cartaz exclusivos de novembro foram removidos de `public/`, portanto o endereço direto não fica disponível.
+- Publicação Vercel `dpl_2qi4bpuq21SmSKmQ8m3dxvvm4Ypn`, commit `d4569eb7a9302d4d186db8710ecb2e6e3d8e3e0d`, status `READY`.
+- Verificado em produção: a URL antiga de novembro retorna 404 e a edição de outubro retorna 200 com o especial de Halloween preservado.
+- O conteúdo de novembro continua recuperável no histórico Git, commit anterior `1838de4`.
+
+Próximo passo recomendado: restaurar e liberar novembro quando o usuário solicitar.
+
+### Sessão 2026-10-28 — Confirmação e duplicação de uploads no MB Momentos
+
+- O formulário mostra confirmação visual quando os arquivos são enviados para aprovação e mensagem destacada quando ocorre erro. A confirmação explica que as fotos aparecem no álbum depois da aprovação.
+- Selecionar novamente um arquivo que ainda está na fila é bloqueado; cada envio usa uma chave de idempotência para que uma tentativa repetida após falha de conexão não crie outro registro. A paginação ignora IDs já carregados e não dispara a mesma página duas vezes.
+- Fechar a prévia da foto agora interrompe a propagação do evento para o modal do álbum, mantendo o álbum aberto.
+- Build concluído e versão 8 publicada no mesmo Site, commit `a7f146567cc0a6331d8cda1ed059b6a55e832958`, deployment `appgdep_6ae256827f408191b85301538a6021b4` (`succeeded`).
+
+Arquivos alterados na aplicação: `sites/mb-momentos/app/event-album.tsx`, `app/globals.css`, rotas de mídia/notícia, `app/server.ts` e `db/schema.ts`.
+
+Próximo passo recomendado: conferir um envio bem-sucedido, um envio com falha e o fechamento da prévia no fluxo real do convite.
+
+### Sessão 2026-10-28 — Cache das fotos do álbum
+
+- Fotos abertas no álbum agora usam cache privado do navegador por 24 horas, com revalidação ao vencer. Vídeos e links de download do original continuam sem cache.
+- Build concluído e versão 7 publicada no mesmo Site, commit `c426e44388e1f2e5c7b7cf7b843f992d0d88050b`, deployment `appgdep_6ae2521c8eb881918f1e24223afbd93e` (`succeeded`).
+- O painel permanece em `https://mb-finance-momentos.renanteles98.chatgpt.site/admin`.
+
+Arquivo alterado: `sites/mb-momentos/app/server.ts`.
+
+Próximo passo recomendado: reabrir o álbum no mesmo dispositivo para reutilizar as fotos baixadas pelo navegador.
+
+### Sessão 2026-10-28 — Prévia de fotos HEIC/HEIF
+
+- A galeria e o visualizador agora convertem HEIC/HEIF em uma prévia JPEG no navegador, carregada quando o cartão se aproxima da tela. A foto original e o download permanecem intactos.
+- Build concluído e versão 6 publicada no mesmo Site, commit `e0e39a33a0bbdd1ba9d4ee209fea31ddfaa6fc29`, deployment `appgdep_6ae25104aa308191915ee453151609a8a` (`succeeded`).
+- Painel atualizado continua em `https://mb-finance-momentos.renanteles98.chatgpt.site/admin`; álbum da equipe usa o mesmo componente de visualização.
+
+Arquivos da aplicação: `sites/mb-momentos/app/event-album.tsx`, `package.json` e `package-lock.json`.
+
+Próximo passo recomendado: conferir no painel e no álbum as fotos HEIC já recebidas.
+
+### Sessão 2026-10-28 — Aprovação de fotos no MB Momentos
+
+- Novos uploads agora ficam pendentes e não aparecem no álbum público nem no feed da MB News até serem aprovados no painel `/admin`. A aprovação do álbum permanece separada da autorização e seleção editorial para a MB News.
+- O painel abre na fila de pendências e inclui ações para aprovar, retirar aprovação, ocultar e apagar um registro. A exclusão pede confirmação e remove o objeto do R2 e o registro do D1.
+- A coluna `approved` é criada sob demanda no D1 com padrão aprovado para preservar as fotos existentes; cada novo upload define explicitamente `approved: false`.
+- Build Sites concluído e versão 5 publicada no commit `06a8bd745395b79c45ed80a093b16e5efc4fb507`, deploy `appgdep_6ae249c98fe48191b3327798e44ee6d6` (`succeeded`). O painel continua no mesmo endereço: `https://mb-finance-momentos.renanteles98.chatgpt.site/admin`.
+
+Arquivos de aplicação: `sites/mb-momentos/app/admin/panel.tsx`, rotas de mídia e notícia, `app/server.ts`, `app/event-defaults.ts`, `app/globals.css`, `db/schema.ts` e nova migração Drizzle. A fonte permanece em repositório Site separado.
+
+Próximo passo recomendado: aprovar no painel os novos registros que a organização quiser mostrar no álbum; informar data e horário do encontro quando definidos.
 
 ### Sessão 2026-10-28 — Especial de Halloween em outubro
 

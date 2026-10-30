@@ -19,16 +19,15 @@
 }
 
 .october-theme #dia-das-criancas .childrens-day-shell {
-  display: grid;
-  grid-template-columns: minmax(270px, .78fr) minmax(0, 1.22fr);
-  align-items: center;
-  gap: clamp(38px, 7vw, 92px);
+  position: relative;
   width: min(1180px, calc(100% - 48px));
   margin-inline: auto;
 }
 
 .october-theme #dia-das-criancas .childrens-day-copy {
-  max-width: 430px;
+  max-width: 780px;
+  margin: 0 auto clamp(42px, 6vw, 72px);
+  text-align: center;
 }
 
 .october-theme #dia-das-criancas .childrens-day-date {
@@ -52,7 +51,7 @@
 }
 
 .october-theme #dia-das-criancas .childrens-day-copy h2 {
-  margin: 0 0 18px;
+  margin: 0 auto 18px;
   color: var(--children-ink);
   font-size: clamp(2.25rem, 4.4vw, 4.1rem);
   font-weight: 800;
@@ -61,11 +60,46 @@
 }
 
 .october-theme #dia-das-criancas .childrens-day-copy > p:last-child {
-  max-width: 39ch;
-  margin: 0;
+  max-width: 60ch;
+  margin: 0 auto;
   color: #36596a;
   font-size: 1rem;
   line-height: 1.8;
+}
+
+.october-theme #dia-das-criancas .childrens-day-media + .childrens-day-media {
+  margin-top: clamp(52px, 7vw, 84px);
+  padding-top: clamp(36px, 5vw, 56px);
+  border-top: 1px solid rgba(7, 54, 75, .14);
+}
+
+.october-theme #dia-das-criancas .childrens-day-media-heading {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.october-theme #dia-das-criancas .childrens-day-media-heading p {
+  margin: 0 0 8px;
+  color: #557487;
+  font-size: .76rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.october-theme #dia-das-criancas .childrens-day-media-heading h3 {
+  margin: 0;
+  color: var(--children-ink);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.october-theme #dia-das-criancas .childrens-day-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 320px));
+  justify-content: center;
+  gap: clamp(18px, 3vw, 32px);
 }
 
 .october-theme #dia-das-criancas .childrens-day-film {
@@ -75,12 +109,12 @@
   border: 1px solid rgba(7, 54, 75, .1);
   border-radius: 16px;
   background: #fff;
-  box-shadow: 14px 14px 0 var(--children-yellow);
+  box-shadow: 12px 12px 0 var(--children-yellow);
 }
 
 .october-theme #dia-das-criancas .childrens-day-video-frame {
   overflow: hidden;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   border-radius: 9px;
   background: #07364b;
 }
@@ -92,22 +126,54 @@
   border: 0;
 }
 
-.october-theme #dia-das-criancas .childrens-day-film figcaption {
+.october-theme #dia-das-criancas .childrens-day-film figcaption,
+.october-theme #dia-das-criancas .childrens-day-photo figcaption {
   padding: 12px 5px 2px;
   color: #36596a;
   font-size: .84rem;
   font-weight: 650;
+  line-height: 1.5;
 }
 
-@media (max-width: 760px) {
-  .october-theme #dia-das-criancas .childrens-day-shell {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 30px;
-    width: min(560px, calc(100% - 36px));
+.october-theme #dia-das-criancas .childrens-day-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.october-theme #dia-das-criancas .childrens-day-photo {
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(7, 54, 75, .1);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 7px 7px 0 rgba(247, 204, 84, .72);
+}
+
+.october-theme #dia-das-criancas .childrens-day-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(170px, 19vw, 240px);
+  border-radius: 8px;
+  background: #f1f7f9;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .october-theme #dia-das-criancas .childrens-day-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
-  .october-theme #dia-das-criancas .childrens-day-copy {
-    max-width: 520px;
+  .october-theme #dia-das-criancas .childrens-day-photo img {
+    height: clamp(200px, 32vw, 280px);
+  }
+}
+
+@media (max-width: 620px) {
+  .october-theme #dia-das-criancas .childrens-day-shell {
+    width: min(560px, calc(100% - 36px));
   }
 
   .october-theme #dia-das-criancas .childrens-day-copy h2 {
@@ -115,7 +181,22 @@
     font-size: clamp(2.4rem, 10vw, 3.4rem);
   }
 
+  .october-theme #dia-das-criancas .childrens-day-video-grid {
+    grid-template-columns: minmax(0, 320px);
+    gap: 22px;
+  }
+
   .october-theme #dia-das-criancas .childrens-day-film {
     box-shadow: 8px 8px 0 var(--children-yellow);
+  }
+}
+
+@media (max-width: 460px) {
+  .october-theme #dia-das-criancas .childrens-day-photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .october-theme #dia-das-criancas .childrens-day-photo img {
+    height: 240px;
   }
 }
