@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/mb-news-birthdays.css?v=20261015" />
   <link rel="stylesheet" href="/assets/css/mb-news-interview.css" />
   <link rel="stylesheet" href="/assets/css/mb-news-outubro.css?v=20261030-totalpass-green" />
-  <link rel="stylesheet" href="/assets/css/mb-news-childrens-day.css?v=20261030-day-children-gallery" />
+  <link rel="stylesheet" href="/assets/css/mb-news-childrens-day.css?v=20261030-day-children-interactions" />
   <link rel="stylesheet" href="/assets/css/mb-news-event-gallery.css?v=20261027" />
   <link rel="stylesheet" href="/assets/css/mb-news-halloween.css?v=20261028" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -18,6 +18,7 @@
   <script src="/assets/js/ui/mb-news-october-birthdays.js" defer></script>
   <script src="/assets/js/ui/mb-news-interview.js" defer></script>
   <script src="/assets/js/ui/mb-news-event-gallery.js?v=20261027" defer></script>
+  <script src="/assets/js/ui/mb-news-childrens-day.js?v=20261030-video-loop-lightbox" defer></script>
   <script src="/assets/js/ui/mb-news-halloween-carousel.js?v=20261028" defer></script>
 </head>
 <body class="october-theme">
@@ -542,29 +543,39 @@
       <div class="childrens-day-video-grid">
         <figure class="childrens-day-film">
           <div class="childrens-day-video-frame">
-            <iframe
-              src="https://drive.google.com/file/d/1_mwQ_ZBpbpD_tIs2g9_1OcZlu5iFEL38/preview"
-              title="Vídeo da gincana de relacionamento do Dia das Crianças"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="fullscreen; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+            <video
+              class="childrens-day-video"
+              data-childrens-day-video
+              aria-label="Vídeo da gincana de relacionamento do Dia das Crianças"
+              poster="/images/mb-news/outubro/dia-das-criancas/equipe-gincana-01.jpg"
+              controls
+              muted
+              loop
+              playsinline
+              preload="none">
+              <source src="https://drive.google.com/uc?export=download&amp;id=1_mwQ_ZBpbpD_tIs2g9_1OcZlu5iFEL38" type="video/quicktime" />
+              Seu navegador não conseguiu abrir o vídeo. <a href="https://drive.google.com/file/d/1_mwQ_ZBpbpD_tIs2g9_1OcZlu5iFEL38/view" target="_blank" rel="noopener">Abrir no Drive</a>.
+            </video>
           </div>
-          <figcaption>Gincana de relacionamento</figcaption>
+          <figcaption><span>Gincana de relacionamento</span><a href="https://drive.google.com/file/d/1_mwQ_ZBpbpD_tIs2g9_1OcZlu5iFEL38/view" target="_blank" rel="noopener">Abrir no Drive</a></figcaption>
         </figure>
         <figure class="childrens-day-film">
           <div class="childrens-day-video-frame">
-            <iframe
-              src="https://drive.google.com/file/d/1hMl1wRa4tJ4EEK5dK4hYSKfCryrInjqH/preview"
-              title="Vídeo de abertura da gincana do Dia das Crianças"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="fullscreen; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+            <video
+              class="childrens-day-video"
+              data-childrens-day-video
+              aria-label="Vídeo de abertura da gincana do Dia das Crianças"
+              poster="/images/mb-news/outubro/dia-das-criancas/gincana-abertura.jpg"
+              controls
+              muted
+              loop
+              playsinline
+              preload="none">
+              <source src="https://drive.google.com/uc?export=download&amp;id=1hMl1wRa4tJ4EEK5dK4hYSKfCryrInjqH" type="video/mp4" />
+              Seu navegador não conseguiu abrir o vídeo. <a href="https://drive.google.com/file/d/1hMl1wRa4tJ4EEK5dK4hYSKfCryrInjqH/view" target="_blank" rel="noopener">Abrir no Drive</a>.
+            </video>
           </div>
-          <figcaption>Abertura da gincana</figcaption>
+          <figcaption><span>Abertura da gincana</span><a href="https://drive.google.com/file/d/1hMl1wRa4tJ4EEK5dK4hYSKfCryrInjqH/view" target="_blank" rel="noopener">Abrir no Drive</a></figcaption>
         </figure>
       </div>
     </section>
@@ -576,23 +587,39 @@
       </div>
       <div class="childrens-day-photo-grid">
         <figure class="childrens-day-photo">
-          <img src="/images/mb-news/outubro/dia-das-criancas/gincana-abertura.jpg" alt="Mesa com lanches preparada para a abertura da gincana do Dia das Crianças." loading="lazy" decoding="async" />
+          <button class="childrens-day-photo-trigger" type="button" data-childrens-day-image aria-haspopup="dialog" aria-label="Ampliar foto: mesa com lanches preparada para a abertura da gincana do Dia das Crianças">
+            <img src="/images/mb-news/outubro/dia-das-criancas/gincana-abertura.jpg" alt="Mesa com lanches preparada para a abertura da gincana do Dia das Crianças." loading="lazy" decoding="async" />
+          </button>
           <figcaption>Abertura da gincana</figcaption>
         </figure>
         <figure class="childrens-day-photo">
-          <img src="/images/mb-news/outubro/dia-das-criancas/gincana-relacionamento.jpg" alt="Mesa com opções de lanche para a equipe durante o encontro." loading="lazy" decoding="async" />
+          <button class="childrens-day-photo-trigger" type="button" data-childrens-day-image aria-haspopup="dialog" aria-label="Ampliar foto: mesa com opções de lanche para a equipe durante o encontro">
+            <img src="/images/mb-news/outubro/dia-das-criancas/gincana-relacionamento.jpg" alt="Mesa com opções de lanche para a equipe durante o encontro." loading="lazy" decoding="async" />
+          </button>
           <figcaption>Um intervalo para recarregar as energias</figcaption>
         </figure>
         <figure class="childrens-day-photo">
-          <img src="/images/mb-news/outubro/dia-das-criancas/equipe-gincana-01.jpg" alt="Equipe MB Finance reunida para a gincana em uma sala de reunião." loading="lazy" decoding="async" />
+          <button class="childrens-day-photo-trigger" type="button" data-childrens-day-image aria-haspopup="dialog" aria-label="Ampliar foto: equipe MB Finance reunida para a gincana em uma sala de reunião">
+            <img src="/images/mb-news/outubro/dia-das-criancas/equipe-gincana-01.jpg" alt="Equipe MB Finance reunida para a gincana em uma sala de reunião." loading="lazy" decoding="async" />
+          </button>
           <figcaption>Equipe reunida para a gincana</figcaption>
         </figure>
         <figure class="childrens-day-photo">
-          <img src="/images/mb-news/outubro/dia-das-criancas/equipe-gincana-02.jpg" alt="Equipe MB Finance reunida durante o evento." loading="lazy" decoding="async" />
+          <button class="childrens-day-photo-trigger" type="button" data-childrens-day-image aria-haspopup="dialog" aria-label="Ampliar foto: equipe MB Finance reunida durante o evento">
+            <img src="/images/mb-news/outubro/dia-das-criancas/equipe-gincana-02.jpg" alt="Equipe MB Finance reunida durante o evento." loading="lazy" decoding="async" />
+          </button>
           <figcaption>Boas lembranças em equipe</figcaption>
         </figure>
       </div>
     </section>
+
+    <dialog class="childrens-day-lightbox" data-childrens-day-lightbox aria-label="Imagem ampliada do Dia das Crianças">
+      <button class="childrens-day-lightbox-close" type="button" data-lightbox-close aria-label="Fechar imagem ampliada">&times;</button>
+      <figure>
+        <img data-lightbox-image alt="" />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+    </dialog>
   </div>
 </section>
 

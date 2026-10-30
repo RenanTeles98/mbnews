@@ -119,11 +119,12 @@
   background: #07364b;
 }
 
-.october-theme #dia-das-criancas .childrens-day-video-frame iframe {
+.october-theme #dia-das-criancas .childrens-day-video-frame video {
   display: block;
   width: 100%;
   height: 100%;
   border: 0;
+  object-fit: contain;
 }
 
 .october-theme #dia-das-criancas .childrens-day-film figcaption,
@@ -133,6 +134,22 @@
   font-size: .84rem;
   font-weight: 650;
   line-height: 1.5;
+}
+
+.october-theme #dia-das-criancas .childrens-day-film figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.october-theme #dia-das-criancas .childrens-day-film figcaption a {
+  flex-shrink: 0;
+  color: #07364b;
+  font-size: .74rem;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .october-theme #dia-das-criancas .childrens-day-photo-grid {
@@ -158,6 +175,85 @@
   border-radius: 8px;
   background: #f1f7f9;
   object-fit: contain;
+}
+
+.october-theme #dia-das-criancas .childrens-day-photo-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.october-theme #dia-das-criancas .childrens-day-photo-trigger:focus-visible {
+  outline: 3px solid var(--children-ink);
+  outline-offset: 3px;
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox {
+  position: fixed;
+  width: min(1100px, calc(100vw - 48px));
+  max-width: none;
+  max-height: calc(100vh - 48px);
+  padding: clamp(12px, 2vw, 24px);
+  overflow: visible;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 18px;
+  color: #fff;
+  background: #062b3b;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, .4);
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox::backdrop {
+  background: rgba(2, 18, 28, .84);
+  backdrop-filter: blur(4px);
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox figure {
+  margin: 0;
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 130px);
+  margin-inline: auto;
+  border-radius: 9px;
+  object-fit: contain;
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox figcaption {
+  padding: 12px 48px 0;
+  color: rgba(255, 255, 255, .86);
+  font-size: .9rem;
+  text-align: center;
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox-close {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .34);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(3, 31, 44, .82);
+  cursor: pointer;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.october-theme #dia-das-criancas .childrens-day-lightbox-close:focus-visible {
+  outline: 3px solid var(--children-yellow);
+  outline-offset: 3px;
 }
 
 @media (max-width: 900px) {
@@ -198,5 +294,15 @@
 
   .october-theme #dia-das-criancas .childrens-day-photo img {
     height: 240px;
+  }
+
+  .october-theme #dia-das-criancas .childrens-day-lightbox {
+    width: calc(100vw - 24px);
+    max-height: calc(100dvh - 24px);
+    padding: 10px;
+  }
+
+  .october-theme #dia-das-criancas .childrens-day-lightbox img {
+    max-height: calc(100dvh - 110px);
   }
 }

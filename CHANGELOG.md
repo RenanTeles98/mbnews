@@ -14,6 +14,12 @@
 - As fotos ficam em `public/images/mb-news/outubro/dia-das-criancas/`; os vídeos continuam incorporados do Drive e carregam sob demanda.
 - Publicado pela Vercel, commit `2bc7c85`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`). Página, CSS e fotos retornaram HTTP 200.
 
+## 2026-10-30 — Loop silencioso e fotos ampliadas
+
+- Trocados os iframes por players nativos do Drive que iniciam mudos em loop ao entrarem na tela e pausam ao saírem dela.
+- Adicionada ampliação acessível às quatro fotos, com fechamento por X, clique no fundo e Esc.
+- A publicação está pendente.
+
 ## 2026-10-30 — Selo TotalPass verde em outubro
 
 - Aplicado verde-menta ao texto, ícone e borda do selo TotalPass.

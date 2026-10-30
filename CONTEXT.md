@@ -23,6 +23,13 @@
 - Publicado na Vercel no commit `2bc7c85734f2ec5b56522b994632658bdbc61972`, deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`). Página, CSS e quatro fotos retornam HTTP 200; a página contém os dois vídeos e mantém Halloween depois da seção.
 - Próximo passo recomendado: validar a reprodução dos players em um navegador.
 
+### Continuação — Loop silencioso e fotos ampliadas
+
+- Os players agora usam `<video>` nativo com streaming direto dos arquivos públicos do Drive, `muted`, `loop` e `playsinline`. A reprodução começa quando o vídeo se aproxima da tela e pausa quando sai da área visível.
+- As quatro fotos podem ser abertas em uma janela ampliada com X, clique no fundo ou Esc. A CSP autoriza mídia apenas do site e dos dois hosts do Drive necessários ao streaming.
+- Arquivos alterados: página de outubro, `public/assets/css/mb-news-childrens-day.css`, novo `public/assets/js/ui/mb-news-childrens-day.js` e `vercel.json`.
+- Próximo passo recomendado: publicar e conferir a reprodução dos vídeos no navegador.
+
 ### Continuação da sessão 2026-10-30 — Selo TotalPass verde
 
 - O selo TotalPass da edição de outubro usa verde-menta `#8de1b7` no texto e no ícone, com borda combinando. A regra é restrita ao selo para preservar as demais cores do tema.

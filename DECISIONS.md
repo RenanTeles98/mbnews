@@ -44,6 +44,19 @@ Adicionar à seção de outubro as quatro fotos da pasta em `public/images/mb-ne
 
 O usuário pediu que todo o material enviado entrasse na seção. As fotos são arquivos leves e ficam disponíveis como assets locais; os vídeos permanecem hospedados no Drive, evitando copiar o MOV de aproximadamente 97 MB para o site. As quatro fotos são exibidas por inteiro sem corte, e os players carregam sob demanda.
 
+## ADR-128: Reproduzir os vídeos do Drive em loop silencioso e ampliar fotos
+
+**Data:** 2026-10-30
+**Status:** Implementado localmente; publicação pendente.
+
+### Decisão
+
+Usar players HTML nativos com `muted`, `loop` e `playsinline`, transmitindo os arquivos públicos do Drive. Iniciar a reprodução quando o vídeo se aproximar da tela e pausá-lo fora da área visível. Exibir fotos em `<dialog>` com fechamento por botão, fundo e tecla Esc.
+
+### Motivo e alternativas consideradas
+
+O iframe de prévia do Drive não permite à página controlar diretamente som e repetição. O endpoint público do Drive aceita streaming por intervalos de bytes; isso permite usar o controle nativo do navegador sem copiar o MOV de 97 MB para o repositório. A galeria de fotos já é local, então um diálogo nativo mantém a ampliação acessível e não exige biblioteca adicional.
+
 ## ADR-124: Usar verde-menta no selo TotalPass de outubro
 
 **Data:** 2026-10-30

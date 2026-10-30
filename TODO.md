@@ -20,6 +20,15 @@
 - [x] Publicar e confirmar página, CSS e quatro fotos em produção; deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`), commit `2bc7c85`.
 - [ ] Conferir a reprodução dos players em um navegador.
 
+## Em andamento — 2026-10-30 — Loop dos vídeos e ampliação das fotos
+
+- [x] Trocar os iframes do Drive por players nativos com reprodução silenciosa em loop.
+- [x] Iniciar os vídeos ao aproximar da tela e pausá-los quando saírem da área visível.
+- [x] Abrir as fotos em uma janela ampliada, fechável por X, fundo escuro ou tecla Esc.
+- [x] Liberar na CSP somente os hosts do Drive usados para streaming de mídia.
+- [ ] Publicar as alterações e conferir os recursos em produção.
+- [ ] Conferir a reprodução real dos vídeos em um navegador.
+
 ## Concluído — 2026-10-30 — Cor verde no selo TotalPass
 
 - [x] Aplicar verde-menta ao texto, ícone e borda do selo TotalPass em outubro.
