@@ -195,6 +195,8 @@
 
 .october-theme #dia-das-criancas .childrens-day-lightbox {
   position: fixed;
+  inset: 0;
+  margin: auto;
   width: min(1100px, calc(100vw - 48px));
   max-width: none;
   max-height: calc(100vh - 48px);

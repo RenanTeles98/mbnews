@@ -2294,3 +2294,17 @@ A pasta recebeu vários arquivos novos, mas parte deles não permite confirmar a
 ### Escopo
 
 Aplicadas 3 fotos em `public/pages/mb-news-agosto-2026.html` e 4 fotos em `public/pages/mb-news-setembro-2026.html`, com os arquivos organizados nas respectivas pastas de `public/images/mb-news/`.
+
+## ADR-081: Vídeos locais compatíveis e ampliador centralizado
+
+### Decisão
+
+Hospedar os dois vídeos do Dia das Crianças em MP4/H.264 dentro do site, sem faixa de áudio, com reprodução automática muda, em loop e em formato vertical. Remover os links de abertura no Drive e centralizar o diálogo das fotos ampliadas usando o viewport como referência.
+
+### Motivo
+
+O MOV original usa HEVC Main 10/HDR e o streaming direto do Drive congelava nos players. O vídeo H.264 local tem compatibilidade mais ampla com navegadores e evita a navegação externa em tela cheia. O diálogo estava ancorado no ponto estático em que aparecia no HTML por não definir os quatro limites da posição fixa.
+
+### Alternativas consideradas
+
+Manter a URL do Drive, voltar ao iframe ou servir o MOV original; rejeitadas porque reproduziram o problema relatado ou dependem de codecs menos compatíveis. Manter áudio com controles de volume também foi descartado para cumprir a reprodução silenciosa solicitada.

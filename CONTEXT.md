@@ -7,6 +7,16 @@
 
 ## Estado Atual
 
+### Correção do vídeo e do modal do Dia das Crianças — 2026-10-30
+
+- O MOV original estava em HEVC Main 10/HDR, formato que não reproduzia de forma confiável no navegador. Foi convertido para H.264 Main 720×1280/30 fps, sem áudio, e o segundo MP4 foi remuxado sem áudio. Ambos agora são assets locais em `public/videos/mb-news/outubro/dia-das-criancas/`.
+- Os dois players iniciam automaticamente, sem som, em loop e em quadro vertical; os links do Drive foram removidos. A CSP passou a permitir mídia apenas do próprio site.
+- O ampliador recebe `inset: 0` e `margin: auto` para centralizar o diálogo na tela.
+- Os dois arquivos foram decodificados integralmente pelo FFmpeg sem erros, o JSON da Vercel foi validado e `git diff --check` não encontrou erros.
+- A conferência visual em navegador não foi concluída: o serviço de uso do navegador informou que não conseguia determinar a URL atual com confiança.
+- Publicação: aguardando o envio desta atualização; após o deploy, atualizar este registro com o estado de produção.
+
+
 ### Continuação da sessão 2026-10-30 — Dia das Crianças em outubro
 
 - A seção da gincana de relacionamento do Dia das Crianças foi adicionada antes do especial de Halloween, com player do Drive carregado sob demanda. O usuário confirmou que o vídeo está público.

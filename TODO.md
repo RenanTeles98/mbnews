@@ -20,14 +20,14 @@
 - [x] Publicar e confirmar página, CSS e quatro fotos em produção; deploy `dpl_8jEstVW9FXnXY4sE1BRMPw69Qe4P` (`READY`), commit `2bc7c85`.
 - [ ] Conferir a reprodução dos players em um navegador.
 
-## Em andamento — 2026-10-30 — Loop dos vídeos e ampliação das fotos
+## Concluído — 2026-10-30 — Correção do vídeo e do ampliador
 
-- [x] Trocar os iframes do Drive por players nativos com reprodução silenciosa em loop.
-- [x] Iniciar os vídeos ao aproximar da tela e pausá-los quando saírem da área visível.
-- [x] Abrir as fotos em uma janela ampliada, fechável por X, fundo escuro ou tecla Esc.
-- [x] Liberar na CSP somente os hosts do Drive usados para streaming de mídia.
-- [x] Publicar e confirmar página, CSS, JavaScript e CSP em produção; deploy `dpl_DigBnvRsqcnUjE9DFHYSthnYQq5v` (`READY`), commit `f550806`.
-- [ ] Conferir a reprodução real dos vídeos em um navegador.
+- [x] Converter o MOV HEVC para MP4 H.264 vertical e remover o áudio dos dois vídeos.
+- [x] Hospedar os vídeos no próprio site e configurar reprodução automática, muda e em loop.
+- [x] Remover os links do Drive e restringir `media-src` a `'self'`.
+- [x] Centralizar o ampliador das fotos na janela do navegador.
+- [x] Decodificar os dois MP4s localmente sem erros e validar `vercel.json`.
+- [ ] Confirmar visualmente a reprodução e a centralização em navegador; a ferramenta de uso do navegador não conseguiu identificar a URL atual.
 
 ## Concluído — 2026-10-30 — Cor verde no selo TotalPass
 
