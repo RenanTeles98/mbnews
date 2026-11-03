@@ -1779,10 +1779,17 @@
 
 /* Individual framing for portraits with excess space above the person. */
 .october-theme #aniversariantes .birthday-image-card img[src$="larissa-helena-da-conceicao-ventura.jpeg"],
-.october-theme #aniversariantes .birthday-image-card img[src$="thais-tamyris-dos-santos-maciel.jpeg"] {
+.october-theme #aniversariantes .birthday-image-card img[src$="thais-tamyris-dos-santos-maciel.jpeg"],
+.october-theme #aniversariantes .birthday-image-card img[src$="taynara-leticia-barros-tavares-outubro-2026.jpeg"] {
   object-position: center 40%;
   transform: scale(1.4);
   transform-origin: 50% 60%;
+}
+
+/* Bring Taynara's face and shoulders closer while keeping the portrait centered. */
+.october-theme #aniversariantes .birthday-image-card img[src$="taynara-leticia-barros-tavares-outubro-2026.jpeg"] {
+  transform: scale(1.5);
+  transform-origin: 50% 42%;
 }
 
 /* Reusable everyday objects make the sustainability story tangible. */

@@ -6,6 +6,7 @@
 
 - Atualizado o retrato de Taynara Letícia Barros Tavares na seção de aniversários de outubro com o JPEG original do Drive, em um caminho novo para evitar cache da imagem anterior. O arquivo antigo foi preservado.
 - Publicado no commit `5b44965289229091079efe89166726a429c92034`; deployment Vercel `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` ficou `READY`. Página e imagem retornaram HTTP 200.
+- Aproximado o rosto e os ombros no card de Taynara com enquadramento CSS individual, mantendo o arquivo original intacto.
 
 ## 2026-10-30 — Registros do Outubro Rosa
 

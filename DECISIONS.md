@@ -236,6 +236,15 @@ A página publicada está em `https://mbnews.vercel.app/pages/mb-news-novembro-2
 - Motivo: o retrato do Drive é diferente da foto que estava no card, e a solicitação pede a atualização visual da aniversariante.
 - Alternativas consideradas: manter a foto antiga ou sobrescrever o mesmo caminho. A foto antiga não atende ao pedido; um caminho novo evita exibir conteúdo em cache do navegador.
 
+## ADR-113: Aproximar o enquadramento do retrato de Taynara
+
+**Data:** 2026-11-03
+**Status:** Implementado; aguardando publicação na Vercel.
+
+- Decisão: aplicar zoom CSS de 1,5× e ancorar a transformação próximo ao rosto no card individual de Taynara; manter o JPEG original sem recorte ou recompressão.
+- Motivo: o retrato aparecia distante no card de aniversariantes, e o pedido foi aproximar o rosto sem alterar as demais fotos.
+- Alternativas consideradas: editar permanentemente o arquivo ou mudar o enquadramento global dos aniversariantes. O zoom CSS é reversível e específico para este card.
+
 ## ADR-111: Álbum independente por evento com seleção editorial
 
 **Data:** 2026-10-27

@@ -10,6 +10,8 @@
 - [x] Copiar o JPEG original sem recompressão, atualizar o card de 02/10 com dimensões 960 × 1280 e manter o arquivo anterior como cópia de segurança.
 - [x] Publicar na Vercel pelo commit `5b44965289229091079efe89166726a429c92034`; deployment `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` ficou `READY`, com a página e a imagem respondendo HTTP 200.
 - [x] Conferir que a consulta de erros de runtime da última hora não encontrou erros.
+- [x] Aproximar o enquadramento do rosto e dos ombros de Taynara sem modificar o JPEG original.
+- [ ] Publicar o ajuste de enquadramento na Vercel e confirmar o deploy de produção.
 
 ## Concluído — 2026-10-30 — Fotos do Outubro Rosa na edição de outubro
 
