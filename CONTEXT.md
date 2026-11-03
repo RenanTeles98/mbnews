@@ -1,11 +1,20 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-10-30
+> Última atualização: 2026-11-03
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Foto de Taynara nos aniversários de outubro — 2026-11-03
+
+- O card de Taynara Letícia Barros Tavares (02/10) agora usa o retrato original localizado na pasta do Drive já compartilhada.
+- O JPEG original, 960 × 1280 e 41.686 bytes, foi copiado sem recompressão para `public/images/mb-news/outubro/aniversariantes/taynara-leticia-barros-tavares-outubro-2026.jpeg`. O HTML aponta para esse nome versionado; o arquivo anterior foi mantido como cópia de segurança.
+- Publicado no commit `5b44965289229091079efe89166726a429c92034`, deployment `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` (`READY`). A página e a nova imagem retornaram HTTP 200 em produção.
+- A consulta de erros de runtime da última hora não encontrou erros. Não há drains configurados para o projeto.
+
+Próximo passo recomendado: nenhum para esta atualização.
 
 ### Galeria do Outubro Rosa — 2026-10-30
 

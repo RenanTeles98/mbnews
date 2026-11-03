@@ -2,6 +2,11 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-11-03 — Foto de Taynara nos aniversários de outubro
+
+- Atualizado o retrato de Taynara Letícia Barros Tavares na seção de aniversários de outubro com o JPEG original do Drive, em um caminho novo para evitar cache da imagem anterior. O arquivo antigo foi preservado.
+- Publicado no commit `5b44965289229091079efe89166726a429c92034`; deployment Vercel `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` ficou `READY`. Página e imagem retornaram HTTP 200.
+
 ## 2026-10-30 — Registros do Outubro Rosa
 
 - Adicionada à edição de outubro uma chamada com galeria responsiva e mensagens de carregamento, álbum vazio ou falha.

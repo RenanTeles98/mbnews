@@ -227,6 +227,15 @@ A página publicada está em `https://mbnews.vercel.app/pages/mb-news-novembro-2
 - Atualização posterior: usar a logo oficial PNG enviada pelo usuário no componente Brand, preservando transparência e bytes originais, com largura responsiva. Substitui a identificação textual anterior sem alterar a estrutura da página.
 - Alternativa: remover a visualização compartilhada do álbum; descartada para preservar o requisito anterior de a equipe conseguir ver os registros, sem adicionar seção à página.
 
+## ADR-112: Atualizar o retrato de Taynara na edição de outubro
+
+**Data:** 2026-11-03
+**Status:** Publicado na Vercel; deployment `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` (`READY`).
+
+- Decisão: usar o JPEG original de Taynara Letícia Barros Tavares encontrado no Drive compartilhado, salvo com um nome novo e dimensões intrínsecas de 960 × 1280. Preservar o arquivo anterior como cópia de segurança.
+- Motivo: o retrato do Drive é diferente da foto que estava no card, e a solicitação pede a atualização visual da aniversariante.
+- Alternativas consideradas: manter a foto antiga ou sobrescrever o mesmo caminho. A foto antiga não atende ao pedido; um caminho novo evita exibir conteúdo em cache do navegador.
+
 ## ADR-111: Álbum independente por evento com seleção editorial
 
 **Data:** 2026-10-27
