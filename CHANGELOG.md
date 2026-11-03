@@ -8,6 +8,7 @@
 - Publicado no commit `5b44965289229091079efe89166726a429c92034`; deployment Vercel `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` ficou `READY`. Página e imagem retornaram HTTP 200.
 - Aproximado o rosto e os ombros no card de Taynara com enquadramento CSS individual, mantendo o arquivo original intacto.
 - Atualizada a versão da folha de estilos na página de outubro para os navegadores carregarem o recorte novo.
+- Publicado no commit `d88fa1a`; deployment Vercel `dpl_9Aji78v6T2vp5wR6EneSGxjqerXt` ficou `READY`. A página e a folha de estilos versionada responderam HTTP 200.
 
 ## 2026-10-30 — Registros do Outubro Rosa
 

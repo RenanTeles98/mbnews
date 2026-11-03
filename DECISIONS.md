@@ -239,7 +239,7 @@ A página publicada está em `https://mbnews.vercel.app/pages/mb-news-novembro-2
 ## ADR-113: Aproximar o enquadramento do retrato de Taynara
 
 **Data:** 2026-11-03
-**Status:** Implementado; aguardando publicação na Vercel.
+**Status:** Publicado na Vercel; deployment `dpl_9Aji78v6T2vp5wR6EneSGxjqerXt` (`READY`).
 
 - Decisão: aplicar zoom CSS de 1,5× e ancorar a transformação próximo ao rosto no card individual de Taynara; versionar a URL da folha de estilos para renovar o cache e manter o JPEG original sem recorte ou recompressão.
 - Motivo: o retrato aparecia distante no card de aniversariantes, e o pedido foi aproximar o rosto sem alterar as demais fotos.

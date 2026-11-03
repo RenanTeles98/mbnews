@@ -12,7 +12,7 @@
 - [x] Conferir que a consulta de erros de runtime da última hora não encontrou erros.
 - [x] Aproximar o enquadramento do rosto e dos ombros de Taynara sem modificar o JPEG original.
 - [x] Versionar o CSS da edição de outubro para atualizar o enquadramento nos navegadores com cache.
-- [ ] Publicar o ajuste de enquadramento na Vercel e confirmar o deploy de produção.
+- [x] Publicar o ajuste de enquadramento na Vercel e confirmar o deploy `dpl_9Aji78v6T2vp5wR6EneSGxjqerXt` (`READY`). Página e CSS versionado responderam HTTP 200.
 
 ## Concluído — 2026-10-30 — Fotos do Outubro Rosa na edição de outubro
 

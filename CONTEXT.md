@@ -13,6 +13,7 @@
 - O JPEG original, 960 × 1280 e 41.686 bytes, foi copiado sem recompressão para `public/images/mb-news/outubro/aniversariantes/taynara-leticia-barros-tavares-outubro-2026.jpeg`. O HTML aponta para esse nome versionado; o arquivo anterior foi mantido como cópia de segurança.
 - O enquadramento do card foi aproximado com zoom CSS individual de 1,5×, focado no rosto e nos ombros; o arquivo original continua intacto.
 - A URL do CSS da edição foi versionada em `public/pages/mb-news-outubro-2026.html` para garantir a atualização em navegadores com arquivos em cache.
+- O enquadramento foi publicado no commit `d88fa1a0f876a6b575137e4139ef5848164e32cf`, deployment `dpl_9Aji78v6T2vp5wR6EneSGxjqerXt` (`READY`). A página, a folha de estilos versionada e a regra de zoom responderam HTTP 200 em produção.
 - Publicado no commit `5b44965289229091079efe89166726a429c92034`, deployment `dpl_AKWGAfvjKHJGpm3E1rnt123Me5tu` (`READY`). A página e a nova imagem retornaram HTTP 200 em produção.
 - A consulta de erros de runtime da última hora não encontrou erros. Não há drains configurados para o projeto.
 
