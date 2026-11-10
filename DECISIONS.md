@@ -5,6 +5,23 @@
 
 ---
 
+## ADR-129: Reativar a edi??o de novembro com o conte?do do PDF
+
+**Data:** 2026-11-10
+**Status:** Publicado na Vercel.
+
+### Decis?o
+
+Restaurar a edi??o de novembro de 2026 e incluir nela o especial de Novembro Azul/Caramelo e a entrevista de Karol do PDF enviado. Habilitar novembro na navega??o das edi??es anteriores e atualizar a alternativa da p?gina inicial.
+
+### Motivo
+
+O usu?rio pediu que o m?s de novembro fosse ativado, revertendo a decis?o anterior de mant?-lo oculto at? a libera??o. A edi??o precisa refletir o material recebido, n?o apenas existir como uma p?gina vazia.
+
+### Alternativas consideradas
+
+Deixar novembro somente como p?gina direta ou manter o conte?do arquivado antigo foram descartados: a edi??o deve estar acess?vel pelo seletor mensal e conter as oito perguntas e respostas da entrevista, al?m do especial j? existente de Caramelo.
+
 ## ADR-125: Incorporar o vídeo do Dia das Crianças pelo player do Drive
 
 **Data:** 2026-10-30

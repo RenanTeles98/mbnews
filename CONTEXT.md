@@ -7,6 +7,19 @@
 
 ## Estado Atual
 
+### Novembro 2026 reativado e completado ? 2026-11-10
+
+- A edi??o de novembro voltou a ficar p?blica. A p?gina de Novembro Azul e o cartaz de Caramelo foram restaurados do hist?rico do projeto.
+- O conte?do do PDF de novembro foi integrado ? p?gina: especial de Novembro Azul/Caramelo e entrevista com Karol em oito perguntas e respostas interativas.
+- As p?ginas de abril a outubro agora ligam para novembro; a p?gina inicial usa novembro como alternativa enquanto a sele??o autom?tica da edi??o atual continua baseada no m?s de S?o Paulo.
+- O menu de novembro inclui atalhos para o filme e para a entrevista. O CSS compartilhado de entrevistas foi reutilizado e complementado com o visual da edi??o.
+- Confer?ncia local por HTTP: p?gina de novembro, CSS, JavaScript, poster e p?gina inicial responderam 200; as sete edi??es anteriores apontam para novembro e a edi??o cont?m oito perguntas.
+- A ferramenta de navegador encerrou a automa??o ao n?o conseguir confirmar a URL aberta; a verifica??o final foi feita pela pr?via local e pelos recursos servidos por HTTP.
+
+Arquivos principais: `index.html`, `public/pages/mb-news-abril-2026.html` at? `public/pages/mb-news-outubro-2026.html`, `public/pages/mb-news-novembro-2026.html`, `public/assets/css/mb-news-novembro.css` e o cartaz em `public/images/mb-news/novembro/`.
+
+Pr?ximo passo recomendado: nenhum para ativar novembro; os pr?ximos conte?dos podem ser acrescentados ? edi??o quando forem enviados.
+
 ### Foto de Taynara nos aniversários de outubro — 2026-11-03
 
 - O card de Taynara Letícia Barros Tavares (02/10) agora usa o retrato original localizado na pasta do Drive já compartilhada.

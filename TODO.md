@@ -4,6 +4,14 @@
 
 ---
 
+## Conclu?do ? 2026-11-10 ? Ativa??o e conte?do de novembro
+
+- [x] Restaurar e publicar a p?gina de novembro, o CSS e o cartaz de Caramelo.
+- [x] Integrar o conte?do do PDF de novembro, incluindo a entrevista com oito perguntas e respostas.
+- [x] Ativar o link de novembro nas edi??es de abril a outubro e atualizar a alternativa da p?gina inicial.
+- [x] Conferir localmente p?gina, navega??o e assets; confirmar que os arquivos respondem HTTP 200.
+- [x] Publicar na Vercel e confirmar o deployment de produ??o em `READY`.
+
 ## Concluído — 2026-11-03 — Nova foto de Taynara nos aniversários
 
 - [x] Localizar no Drive compartilhado o retrato atualizado de Taynara Letícia Barros Tavares e conferir que ele difere da imagem anterior.

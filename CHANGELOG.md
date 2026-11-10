@@ -2,6 +2,12 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-11-10 ? Edi??o de novembro
+
+- Reativada publicamente a edi??o de Novembro Azul, com o especial de Caramelo e a entrevista completa de Karol organizada em oito perguntas e respostas.
+- Reabilitados os atalhos para novembro nas edi??es de abril a outubro; a alternativa da p?gina inicial tamb?m aponta para a edi??o atual.
+- Publicada na Vercel; p?gina, folha de estilos, JavaScript e imagem retornaram HTTP 200 na confer?ncia de produ??o.
+
 ## 2026-11-03 — Foto de Taynara nos aniversários de outubro
 
 - Atualizado o retrato de Taynara Letícia Barros Tavares na seção de aniversários de outubro com o JPEG original do Drive, em um caminho novo para evitar cache da imagem anterior. O arquivo antigo foi preservado.
