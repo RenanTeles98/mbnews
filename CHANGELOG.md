@@ -679,3 +679,4 @@ Principais marcos conhecidos:
 
 - Substituído o monograma da entrevista de novembro pelo retrato de Karol fornecido no Drive.
 - Ajustado o perfil para manter a foto vertical e o rosto visível em telas grandes e pequenas.
+- Publicada a atualização na Vercel pelo commit `867a04a` (deploy `dpl_2Q3KuzqSKDnTT52Fr3Fgfii2Ptpe`).

@@ -1350,4 +1350,5 @@ Próximo passo recomendado: substituir a reprodução pela arte original em amba
 - Adicionada a imagem em `public/images/mb-news/novembro/karol.png` e substituído o monograma do cartão da entrevista.
 - Ajustado o recorte do perfil para retrato 4:5, preservando o enquadramento do rosto em desktop e mobile.
 - A página local respondeu HTTP 200 para HTML, CSS e imagem; o monograma foi removido e o retrato PNG carregou corretamente.
-- A edição de novembro está ativa; a alteração está pronta para publicação na Vercel.
+- Publicação concluída na Vercel pelo commit `867a04a`; o deploy `dpl_2Q3KuzqSKDnTT52Fr3Fgfii2Ptpe` ficou `READY`.
+- Página, CSS e foto responderam HTTP 200 no domínio público; a página usa o retrato novo e não contém mais o placeholder.

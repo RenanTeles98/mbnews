@@ -720,4 +720,4 @@ Escopo desta tarefa: somente a indicação de filme pedida pelo usuário; entrev
 
 - [x] Localizar a foto de Karol na pasta compartilhada do Drive.
 - [x] Substituir o monograma do perfil pela foto e ajustar o recorte vertical.
-- [ ] Conferir a página local e publicar a alteração na Vercel.
+- [x] Conferir a página local e publicar a alteração na Vercel.

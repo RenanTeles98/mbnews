@@ -2381,7 +2381,7 @@ Usar fotos genéricas como se fossem registros do evento foi descartado para nã
 ## ADR-130: Foto da entrevistada na edição de novembro
 
 **Data:** 2026-11-11
-**Status:** Em publicação.
+**Status:** Publicado na Vercel pelo commit `867a04a`; deploy `dpl_2Q3KuzqSKDnTT52Fr3Fgfii2Ptpe` (`READY`).
 
 ### Decisão
 
