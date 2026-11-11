@@ -715,3 +715,9 @@ Escopo desta tarefa: somente a indicação de filme pedida pelo usuário; entrev
 - [x] Atualizar 4 fotos correspondentes aos aniversariantes de setembro.
 - [x] Validar os 7 cards e os recursos locais com Playwright.
 - [ ] Confirmar a edição e a ordem dos novos nomes que ainda não aparecem nas listas.
+
+## Atualização 2026-11-11 — Foto da entrevista de novembro
+
+- [x] Localizar a foto de Karol na pasta compartilhada do Drive.
+- [x] Substituir o monograma do perfil pela foto e ajustar o recorte vertical.
+- [ ] Conferir a página local e publicar a alteração na Vercel.

@@ -674,3 +674,8 @@ Principais marcos conhecidos:
 - Atualizadas as fotos de Hellene Silva dos Santos e Nathan Almeida Amorim na edição de setembro.
 - Removido o card de Juan Cavalcante Campello da Rosa da lista de aniversariantes de setembro.
 - Adicionada montagem fotográfica de baixa opacidade à seção de liderança do Setembro Amarelo.
+
+### 2026-11-11
+
+- Substituído o monograma da entrevista de novembro pelo retrato de Karol fornecido no Drive.
+- Ajustado o perfil para manter a foto vertical e o rosto visível em telas grandes e pequenas.

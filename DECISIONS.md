@@ -2377,3 +2377,20 @@ A primeira versão tinha uma faixa lisa e uma mensagem simples, com pouco destaq
 ### Alternativas consideradas
 
 Usar fotos genéricas como se fossem registros do evento foi descartado para não confundir a equipe. A inclusão de fotos reais continua condicionada à seleção no painel do MB Momentos.
+
+## ADR-130: Foto da entrevistada na edição de novembro
+
+**Data:** 2026-11-11
+**Status:** Em publicação.
+
+### Decisão
+
+Usar no perfil da entrevista de novembro o retrato `Karolina Silva de Jesus.png` fornecido na pasta compartilhada pelo usuário e exibi-lo em uma área vertical 4:5.
+
+### Motivo
+
+A entrevista é apresentada no site pelo nome Karol, e a foto correspondente está identificada pelo nome completo na pasta. O formato vertical aproveita o retrato original e evita cortar o rosto.
+
+### Alternativas consideradas
+
+Manter o monograma usado como placeholder foi descartado porque a foto da entrevistada foi fornecida. Um recorte horizontal foi descartado porque reduziria a parte visível do retrato.

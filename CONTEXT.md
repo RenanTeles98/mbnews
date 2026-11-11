@@ -1343,3 +1343,11 @@ Atualização: a foto `Matheus Felix Ribeiro.jpg` foi localizada na pasta compar
 Atualização: a foto `Luana Alves Maia Silva.jpeg` foi localizada no Drive, organizada em `public/images/mb-news/agosto/aniversariantes/` e vinculada ao card de agosto na home e na edição arquivada.
 
 Próximo passo recomendado: substituir a reprodução pela arte original em ambas as edições caso o PNG/JPG seja anexado.
+
+## Sessão 2026-11-11 — Foto da entrevista de novembro
+
+- Localizada na pasta compartilhada a foto `Karolina Silva de Jesus.png`, correspondente à entrevistada Karol.
+- Adicionada a imagem em `public/images/mb-news/novembro/karol.png` e substituído o monograma do cartão da entrevista.
+- Ajustado o recorte do perfil para retrato 4:5, preservando o enquadramento do rosto em desktop e mobile.
+- A página local respondeu HTTP 200 para HTML, CSS e imagem; o monograma foi removido e o retrato PNG carregou corretamente.
+- A edição de novembro está ativa; a alteração está pronta para publicação na Vercel.

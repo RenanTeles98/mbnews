@@ -516,35 +516,16 @@ a {
 }
 
 .november-interview .interview-profile--november .interview-profile__media {
-  display: grid;
-  aspect-ratio: 4 / 3;
-  place-items: center;
-  background: radial-gradient(circle at 50% 38%, rgba(0, 153, 221, .22), transparent 38%), linear-gradient(145deg, #002840, #075878);
+  aspect-ratio: 4 / 5;
+  background: #dce8ed;
 }
 
 .november-interview .interview-profile--november .interview-profile__media::after {
   display: none;
 }
 
-.november-interview__monogram {
-  display: grid;
-  gap: 6px;
-  justify-items: center;
-  color: rgba(255, 255, 255, .72);
-  font-size: .67rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.november-interview__monogram strong {
-  color: #fff;
-  font-size: clamp(5rem, 12vw, 8rem);
-  font-weight: 900;
-  letter-spacing: -.1em;
-  line-height: .95;
-  text-shadow: 0 12px 40px rgba(0, 0, 0, .24);
+.november-interview .interview-profile--november .interview-profile__media img {
+  object-position: center 15%;
 }
 
 .november-interview .interview-profile__body {
@@ -562,6 +543,6 @@ a {
   }
 
   .november-interview .interview-profile--november .interview-profile__media {
-    aspect-ratio: 1.4 / 1;
+    aspect-ratio: 4 / 5;
   }
 }
