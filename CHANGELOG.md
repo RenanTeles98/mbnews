@@ -2,6 +2,13 @@
 
 > Formato: [versão ou data] — O que mudou
 
+## 2026-11-13 — Artigo de Novembro Azul na MB News
+
+- Incluído o artigo de autocuidado, saúde do homem e agendamento pelo Plano SulAmérica na edição de novembro, com uma mensagem de encerramento e links para fontes oficiais.
+- Preservados o filme Caramelo e a entrevista de Karol; campos marcados como espaços em aberto no DOCX não foram publicados.
+- A recomendação sobre exames foi contextualizada com as orientações do Ministério da Saúde e do INCA.
+- Implementado localmente; aguardando a publicação automática da Vercel.
+
 ## 2026-11-10 ? Edi??o de novembro
 
 - Reativada publicamente a edi??o de Novembro Azul, com o especial de Caramelo e a entrevista completa de Karol organizada em oito perguntas e respostas.

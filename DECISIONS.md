@@ -3,6 +3,32 @@
 > Cada decisÃ£o importante fica registrada aqui com contexto e alternativas.
 > Formato: ADR (Architecture Decision Record)
 
+## ADR-131: Integrar o artigo de saúde do DOCX à edição de novembro
+
+**Data:** 2026-11-13
+**Status:** Implementado localmente; publicação de produção pendente.
+
+### Decisão
+
+Adicionar à edição de novembro o artigo finalizado de Novembro Azul e a mensagem de encerramento do DOCX. Preservar o filme Caramelo e a entrevista de Karol já publicados. Não exibir os campos em aberto para história da MB/C6 Bank, atualizações do mês e TotalPass.
+
+### Motivo e alternativas consideradas
+
+O documento identifica os três campos como espaços para conteúdo futuro e marca a indicação de filme como já existente. Para os exames de próstata, a página explica que pessoas sem sintomas devem conversar com um profissional sobre benefícios e riscos e informa que Ministério da Saúde e INCA não recomendam rastreamento populacional. Essa formulação mantém o convite ao autocuidado sem apresentar exames de rastreamento como recomendação universal.
+
+## ADR-130: Usar o retrato de Karol na entrevista de novembro
+
+**Data:** 2026-11-11
+**Status:** Publicado na Vercel.
+
+### Decisão
+
+Usar o retrato identificado no Drive compartilhado em `public/images/mb-news/novembro/karol.png`, mantendo a foto em orientação vertical na área de perfil da entrevistada.
+
+### Motivo e alternativas consideradas
+
+A imagem corresponde à entrevistada e substitui o monograma provisório. O enquadramento 4:5 preserva uma composição vertical adequada ao cartão; manter o placeholder foi descartado depois de localizar o retrato correspondente.
+
 ---
 
 ## ADR-129: Reativar a edi??o de novembro com o conte?do do PDF

@@ -1,11 +1,21 @@
 # CONTEXT.md — Estado Atual do Projeto
 
-> Última atualização: 2026-11-03
+> Última atualização: 2026-11-13
 > Atualizado por: Codex
 
 ---
 
 ## Estado Atual
+
+### Artigo de Novembro Azul incluído na edição — 2026-11-13
+
+- Incluído na edição de novembro o artigo finalizado do DOCX enviado, com orientações gerais de autocuidado, informação sobre saúde da próstata, instrução para agendar pelo app SulAmérica e a mensagem final do mês.
+- A indicação do filme Caramelo e a entrevista de Karol foram preservadas. Os campos em aberto do documento para história da MB/C6 Bank, atualizações e TotalPass não foram publicados.
+- A explicação sobre exames de rastreamento foi contextualizada conforme Ministério da Saúde e INCA: conversa individual sobre benefícios e riscos, sem recomendação de rastreamento populacional para quem não tem sintomas. A seção inclui links para Ministério da Saúde, INCA e ANS.
+- Arquivos alterados: `public/pages/mb-news-novembro-2026.html` e `public/assets/css/mb-news-novembro.css`.
+- A publicação em produção ainda aguarda o push e o deployment automático da Vercel.
+
+Próximo passo recomendado: publicar a atualização e confirmar o estado `READY` do deployment de produção.
 
 ### Novembro 2026 reativado e completado ? 2026-11-10
 
