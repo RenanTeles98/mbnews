@@ -6,7 +6,7 @@
 ## ADR-131: Integrar o artigo de saúde do DOCX à edição de novembro
 
 **Data:** 2026-11-13
-**Status:** Implementado localmente; publicação de produção pendente.
+**Status:** Publicado na Vercel; commit `0e1221c`, deployment `dpl_9R9PHoyfL1x6Y8N6TkhSvEmxQ3dN` (`READY`).
 
 ### Decisão
 

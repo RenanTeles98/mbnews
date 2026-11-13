@@ -7,7 +7,8 @@
 - Incluído o artigo de autocuidado, saúde do homem e agendamento pelo Plano SulAmérica na edição de novembro, com uma mensagem de encerramento e links para fontes oficiais.
 - Preservados o filme Caramelo e a entrevista de Karol; campos marcados como espaços em aberto no DOCX não foram publicados.
 - A recomendação sobre exames foi contextualizada com as orientações do Ministério da Saúde e do INCA.
-- Implementado localmente; aguardando a publicação automática da Vercel.
+- Publicado na Vercel pelo commit `0e1221c`; deployment `dpl_9R9PHoyfL1x6Y8N6TkhSvEmxQ3dN` ficou `READY`, com página e CSS retornando HTTP 200.
+- A consulta de erros de runtime da última hora não encontrou erros; não há drains configurados para o projeto.
 
 ## 2026-11-10 ? Edi??o de novembro
 

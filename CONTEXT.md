@@ -13,9 +13,10 @@
 - A indicação do filme Caramelo e a entrevista de Karol foram preservadas. Os campos em aberto do documento para história da MB/C6 Bank, atualizações e TotalPass não foram publicados.
 - A explicação sobre exames de rastreamento foi contextualizada conforme Ministério da Saúde e INCA: conversa individual sobre benefícios e riscos, sem recomendação de rastreamento populacional para quem não tem sintomas. A seção inclui links para Ministério da Saúde, INCA e ANS.
 - Arquivos alterados: `public/pages/mb-news-novembro-2026.html` e `public/assets/css/mb-news-novembro.css`.
-- A publicação em produção ainda aguarda o push e o deployment automático da Vercel.
+- Publicado no commit `0e1221c85e101e31ba80b37cf1f1f866ae14e150`, deployment Vercel `dpl_9R9PHoyfL1x6Y8N6TkhSvEmxQ3dN` (`READY`). A página e o CSS atualizado responderam HTTP 200 em produção.
+- A consulta de erros de runtime da última hora não encontrou erros; não há drains configurados para o projeto.
 
-Próximo passo recomendado: publicar a atualização e confirmar o estado `READY` do deployment de produção.
+Próximo passo recomendado: nenhum para esta atualização; acrescentar novos materiais quando forem enviados.
 
 ### Novembro 2026 reativado e completado ? 2026-11-10
 

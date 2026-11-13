@@ -4,12 +4,13 @@
 
 ---
 
-## Em andamento — Artigo de Novembro Azul — 2026-11-13
+## Concluído — Artigo de Novembro Azul — 2026-11-13
 
 - [x] Integrar o conteúdo finalizado do DOCX à edição de novembro e manter a indicação de Caramelo e a entrevista existentes.
 - [x] Não publicar os campos em aberto para C6 Bank, atualizações do mês e TotalPass.
 - [x] Contextualizar as recomendações sobre exames com fontes oficiais e links do Ministério da Saúde, INCA e ANS.
-- [ ] Enviar somente os arquivos desta atualização para `main` e confirmar a publicação Vercel em produção.
+- [x] Enviar somente os arquivos desta atualização para `main`; o deployment `dpl_9R9PHoyfL1x6Y8N6TkhSvEmxQ3dN` ficou `READY`.
+- [x] Confirmar HTTP 200 para a página e o CSS em produção; consultar erros de runtime (nenhum encontrado) e drains (nenhum configurado).
 
 ## Conclu?do ? 2026-11-10 ? Ativa??o e conte?do de novembro
 
